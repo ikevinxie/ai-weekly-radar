@@ -38,5 +38,96 @@
    ]
   }
  ],
- "liftoff": []
+ "liftoff": [
+  {
+   "id": "github:MDX-Tom/gpt-5.6-instruct",
+   "name": "MDX-Tom/gpt-5.6-instruct",
+   "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
+   "week": "2026-W29",
+   "stars_then": 548,
+   "stars_now": 762,
+   "ratio": 1.4
+  },
+  {
+   "id": "github:AlephAITech/WorkBuddyGuide",
+   "name": "AlephAITech/WorkBuddyGuide",
+   "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+   "week": "2026-W29",
+   "stars_then": 395,
+   "stars_now": 552,
+   "ratio": 1.4
+  },
+  {
+   "id": "github:jakubkrehel/skills",
+   "name": "jakubkrehel/skills",
+   "url": "https://github.com/jakubkrehel/skills",
+   "week": "2026-W29",
+   "stars_then": 223,
+   "stars_now": 297,
+   "ratio": 1.3
+  },
+  {
+   "id": "github:cosmtrek/mindwalk",
+   "name": "cosmtrek/mindwalk",
+   "url": "https://github.com/cosmtrek/mindwalk",
+   "week": "2026-W29",
+   "stars_then": 421,
+   "stars_now": 505,
+   "ratio": 1.2
+  },
+  {
+   "id": "github:yetone/kill-ai-slop",
+   "name": "yetone/kill-ai-slop",
+   "url": "https://github.com/yetone/kill-ai-slop",
+   "week": "2026-W29",
+   "stars_then": 384,
+   "stars_now": 409,
+   "ratio": 1.1
+  },
+  {
+   "id": "github:pengchujin/jzsub",
+   "name": "pengchujin/jzsub",
+   "url": "https://github.com/pengchujin/jzsub",
+   "week": "2026-W29",
+   "stars_then": 275,
+   "stars_now": 309,
+   "ratio": 1.1
+  },
+  {
+   "id": "github:xiaotianfotos/homerail",
+   "name": "xiaotianfotos/homerail",
+   "url": "https://github.com/xiaotianfotos/homerail",
+   "week": "2026-W29",
+   "stars_then": 501,
+   "stars_now": 520,
+   "ratio": 1.0
+  },
+  {
+   "id": "github:bkingfilm/lapian-notes",
+   "name": "bkingfilm/lapian-notes",
+   "url": "https://github.com/bkingfilm/lapian-notes",
+   "week": "2026-W29",
+   "stars_then": 308,
+   "stars_now": 314,
+   "ratio": 1.0
+  },
+  {
+   "id": "github:CWS6206/EasyLastSkill",
+   "name": "CWS6206/EasyLastSkill",
+   "url": "https://github.com/CWS6206/EasyLastSkill",
+   "week": "2026-W29",
+   "stars_then": 234,
+   "stars_now": 234,
+   "ratio": 1.0
+  },
+  {
+   "id": "github:KORAYTEACHER/fintech-advisor",
+   "name": "KORAYTEACHER/fintech-advisor",
+   "url": "https://github.com/KORAYTEACHER/fintech-advisor",
+   "week": "2026-W29",
+   "stars_then": 173,
+   "stars_now": 176,
+   "ratio": 1.0
+  }
+ ]
 }
