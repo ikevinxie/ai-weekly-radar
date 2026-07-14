@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ <channel>
+  <title>AI 周报 — 天马行空 · 有趣 · 有钱途</title>
+  <link>https://ikevinxie.github.io/ai-weekly-radar</link>
+  <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
+  <language>zh-cn</language>
+  <item>
+   <title>AI 周报 2026-W29：本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。</title>
+   <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W29</link>
+   <guid isPermaLink="false">2026-W29</guid>
+   <pubDate>Fri, 17 Jul 2026 20:00:00 +0000</pubDate>
+   <description>本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。第二个信号是「AI 反噬经济」的出现——帮人删 AI 烂代码的按周收费服务、清除产品 AI 味的工具、以及黑掉 AI 智能体赢赏金的竞技场，说明 AI 泛滥本身开始养活一批新生意。视频生成的白嫖需求依旧旺盛（Wan2.2 各种镜像霸榜 Hugging Face），而安全侧的提示注入攻击（GitLost 事件）给所有 agent 产品敲了警钟。
+
+1. Playground（22分）— 黑掉 AI 智能体每周赢十万美元赏金，把红队测试做成竞技场，模式够野。
+2. We charge $10k a week to delete AI-generated code（21分）— 「每周一万美元帮你删 AI 生成的烂代码」——AI 泡沫的逆向生意，讽刺又真实地赚钱。
+3. cosmtrek/mindwalk（20分）— 把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。
+4. yetone/kill-ai-slop（20分）— 用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。
+5. Mistral's Robostral Navigate: a state of the art robotics navigation model（18分）— Mistral 的机器人导航模型，具身智能商业化的关键拼图之一。
+6. Microsoft releases Flint, a visualization language for AI agents（18分）— 微软发布给 AI 智能体用的可视化语言，让智能体「画图说话」，生态位重要。
+7. bkingfilm/lapian-notes（17分）— 把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。
+8. xiaotianfotos/homerail（17分）— 语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。
+9. Mesh LLM: distributed AI computing on iroh（17分）— 基于 iroh 的分布式 LLM 网格计算，人人凑显卡跑大模型的极客梦。
+10. Qwen/Qwen3-TTS（17分）— Qwen3 语音合成官方 demo，音色自然、多语种，配音生产力立等可取。</description>
+  </item>
+ </channel>
+</rss>

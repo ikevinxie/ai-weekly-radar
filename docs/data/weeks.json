@@ -1,0 +1,42 @@
+{
+ "weeks": [
+  {
+   "week": "2026-W29",
+   "count": 60,
+   "trend": {
+    "zh": "本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。第二个信号是「AI 反噬经济」的出现——帮人删 AI 烂代码的按周收费服务、清除产品 AI 味的工具、以及黑掉 AI 智能体赢赏金的竞技场，说明 AI 泛滥本身开始养活一批新生意。视频生成的白嫖需求依旧旺盛（Wan2.2 各种镜像霸榜 Hugging Face），而安全侧的提示注入攻击（GitLost 事件）给所有 agent 产品敲了警钟。",
+    "en": "The loudest signal this week is an agent-infrastructure boom: Microsoft shipped a visualization language for AI agents, Product Hunt surfaced an agent data marketplace and a headless iOS publishing pipeline, and a voice-first local orchestration runtime landed on GitHub — a full agent supply chain is taking shape. The second signal is the rise of an 'AI backlash economy': a $10k-a-week AI-code-deletion service, a tool that strips the 'AI look' from products, and an arena that pays bounties for hacking AI agents all show that AI oversupply is now feeding new businesses. Free video-generation demand stays hot (Wan2.2 mirrors dominate Hugging Face trending), while the GitLost prompt-injection disclosure is a warning shot for every agent product."
+   },
+   "awards": [
+    {
+     "key": "best",
+     "emoji": "🏆",
+     "title": {
+      "zh": "本周最佳",
+      "en": "Best of the Week"
+     },
+     "project_id": "producthunt:1194641"
+    },
+    {
+     "key": "wildest",
+     "emoji": "🤪",
+     "title": {
+      "zh": "最离谱奖",
+      "en": "Wildest Idea"
+     },
+     "project_id": "hackernews:48848425"
+    },
+    {
+     "key": "quiet_money",
+     "emoji": "💰",
+     "title": {
+      "zh": "闷声发财奖",
+      "en": "Quiet Money Maker"
+     },
+     "project_id": "producthunt:1189393"
+    }
+   ]
+  }
+ ],
+ "liftoff": []
+}

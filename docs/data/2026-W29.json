@@ -1,0 +1,1552 @@
+[
+ {
+  "id": "producthunt:1194641",
+  "name": "Playground",
+  "url": "https://www.producthunt.com/products/nyx-4",
+  "source": "producthunt",
+  "description": "Earn $100K+ in weekly rewards for hacking AI agents.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-12"
+  },
+  "scores": {
+   "whimsy": 8,
+   "fun": 8,
+   "money": 6,
+   "total": 22
+  },
+  "reason": "黑掉 AI 智能体每周赢十万美元赏金，把红队测试做成竞技场，模式够野。",
+  "analysis": {
+   "zh": "Playground：黑掉 AI 智能体，每周瓜分 10 万美元以上赏金。把红队测试做成竞技场+众包生意，攻击者赚钱、厂商买安全、平台抽成，三方共赢的野路子设计。",
+   "en": "Playground: hack AI agents, split $100k+ in weekly rewards. Red-teaming turned arena-plus-crowdsourcing — attackers earn, vendors buy security, the platform takes a cut. A gloriously feral three-way design."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Playground 是一个「黑客竞技场」：厂商把自家 AI 智能体挂上来当靶子，安全研究者和赏金猎人用提示注入、越狱、数据外泄等手段攻击它们，按攻破难度和影响瓜分每周 10 万美元以上的奖金池。平台居中撮合，攻击过程沉淀为漏洞报告回流给厂商。",
+    "why": "本周 GitLost 事件（GitHub AI 智能体被骗泄露私有仓库）刚证明了 agent 安全是真窟窿，Playground 恰好把这个窟窿变成了市场。它相当于 agent 时代的 HackerOne，而且用竞技场+周赛的形式解决了传统众测「无聊、响应慢」的问题。攻防人才有了变现出口，厂商有了持续压测，时机踩得极准。",
+    "biz": "商业模式三方共赢：厂商付费买安全测试，猎人赚赏金，平台抽成。风险在于奖金池能否持续（早期靠补贴）、高质量攻击者社区的冷启动，以及「教人攻击 AI」的合规争议。若跑通，它会是 agent 安全赛道的基础设施级公司；跑不通也能被大安全厂商收购。"
+   },
+   "en": {
+    "what": "Playground is a hacker arena: vendors put their AI agents up as targets, and security researchers attack them with prompt injection, jailbreaks, and data-exfiltration techniques, splitting a $100k+ weekly prize pool by difficulty and impact. The platform brokers everything, and attacks crystallize into vulnerability reports flowing back to vendors.",
+    "why": "This very week, GitLost proved agent security is a real hole (GitHub's agent tricked into leaking private repos) — Playground turns that hole into a market. It's HackerOne for the agent era, and the arena-plus-weekly-contest format fixes classic crowdtesting's 'boring and slow' problem. Impeccable timing.",
+    "biz": "The model is a three-way win: vendors pay for testing, hunters earn bounties, the platform takes a cut. Risks: prize-pool sustainability (early pools are subsidized), cold-starting an elite attacker community, and the compliance optics of 'teaching people to attack AI'. If it works, it's infrastructure for agent security; if not, it's an acquisition target for a big security vendor."
+   }
+  }
+ },
+ {
+  "id": "hackernews:48823359",
+  "name": "We charge $10k a week to delete AI-generated code",
+  "url": "https://odra.dev/slopfix/",
+  "source": "hackernews",
+  "description": "We charge $10k a week to delete AI-generated code",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 302,
+   "comments": 239,
+   "hn_link": "https://news.ycombinator.com/item?id=48823359"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 7,
+   "money": 7,
+   "total": 21
+  },
+  "reason": "「每周一万美元帮你删 AI 生成的烂代码」——AI 泡沫的逆向生意，讽刺又真实地赚钱。",
+  "analysis": {
+   "zh": "「我们每周收一万美元，专门删除 AI 生成的代码」——把 AI 泡沫的后遗症做成了高价咨询生意。讽刺拉满且真实赚钱，302 分的背后是行业对 AI 代码债的集体心虚。",
+   "en": "'We charge $10k a week to delete AI-generated code' — turning the AI bubble's hangover into premium consulting. Maximum irony, real revenue; its 302 points reflect the industry's collective guilt about AI code debt."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "一家咨询公司公开宣布按每周 1 万美元收费，专门进驻企业删除 AI 生成的烂代码：清理幻觉出来的依赖、重复实现、无人理解的抽象层，并重建可维护的架构。帖子本身是服务介绍+案例复盘，302 分、239 条评论。",
+    "why": "它是「AI 反噬经济」最响亮的样本：AI 编码工具大规模普及两年后，技术债以一种全新形态爆发——不是没人写文档，而是没人「写过」这些代码。它的走红说明行业已经从「AI 能不能写代码」进入「AI 写的代码谁来负责」的阶段，这个话语转变本身就值得记录。",
+    "biz": "定价锚定的是企业的恐慌而非工时，毛利率极高；获客靠这类病毒式内容营销，成本趋近于零。风险：服务无法规模化（依赖资深工程师）、AI 代码质量若快速提升则市场萎缩。但按历史经验，「清理上一代技术烂摊子」的生意通常能活得比预期久得多。"
+   },
+   "en": {
+    "what": "A consultancy publicly charges $10k a week to embed in companies and delete AI-generated code: hallucinated dependencies, duplicated implementations, abstractions no one understands — then rebuild maintainable architecture. The post is a service pitch plus case retrospectives; 302 points, 239 comments.",
+    "why": "It's the loudest specimen of the 'AI backlash economy': two years into mass AI coding adoption, tech debt has mutated — the problem isn't undocumented code, it's code nobody ever wrote. Its virality marks the industry's shift from 'can AI write code' to 'who owns the code AI wrote'. That discourse shift is itself the story.",
+    "biz": "Pricing anchors to corporate panic, not hours — margins are excellent, and viral posts make acquisition nearly free. Risks: the service scales with senior engineers (badly), and a step-change in AI code quality shrinks the market. History suggests 'cleaning up the last generation's mess' businesses live far longer than expected."
+   }
+  }
+ },
+ {
+  "id": "github:cosmtrek/mindwalk",
+  "name": "cosmtrek/mindwalk",
+  "url": "https://github.com/cosmtrek/mindwalk",
+  "source": "github",
+  "description": "A visualization tool that replays coding-agent sessions on a 3D map of your codebase.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 421,
+   "language": "Go"
+  },
+  "scores": {
+   "whimsy": 8,
+   "fun": 8,
+   "money": 4,
+   "total": 20
+  },
+  "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
+  "analysis": {
+   "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
+   "en": "Replays coding-agent sessions on a 3D city map of your codebase — watch which 'blocks' the AI walked through. Developer observability turned into urban sightseeing; 421 stars in week one, equal parts aesthetic and engineering delight."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "mindwalk 把你的代码库渲染成一座 3D 城市（目录是街区、文件是建筑），再把编码智能体的会话记录变成在城市里的移动轨迹回放：AI 读过哪个文件、在哪里反复徘徊、从哪里跳到哪里，一目了然。Go 编写，本地运行。",
+    "why": "编码智能体正在接管大量开发工作，但它们的行为对人类几乎是黑箱——mindwalk 第一次让「AI 怎么理解你的代码库」变成可看、可讲、可复盘的东西。徘徊热区可能意味着代码耦合过重或文档缺失，这让它超越了炫酷玩具，成为一种新型的代码库健康诊断视角。",
+    "biz": "直接变现路径不宽（开发者工具+可视化，通常靠开源引流），但它占住了「agent 可观测性」这个刚起步的类目：企业迟早要审计 AI 在代码库里干了什么。被 IDE 或 agent 平台收编做成内置功能，是比独立商业化更可能的结局；对作者个人则是极佳的声誉资产。"
+   },
+   "en": {
+    "what": "mindwalk renders your codebase as a 3D city (directories as blocks, files as buildings) and replays coding-agent sessions as movement traces through it: which files the AI read, where it loitered, how it jumped around. Written in Go, runs locally.",
+    "why": "Coding agents are absorbing serious development work while remaining behavioral black boxes — mindwalk is the first tool that makes 'how the AI understands your codebase' watchable, narratable, and reviewable. Loitering hotspots may signal heavy coupling or missing docs, which lifts it beyond eye candy into a novel codebase-health lens.",
+    "biz": "Direct monetization is narrow (dev tooling + visualization usually rides open-source reputation), but it stakes the nascent 'agent observability' category: enterprises will eventually need to audit what AI did in their repos. Getting absorbed into an IDE or agent platform is likelier than standalone commercialization; for the author it's superb reputation capital."
+   }
+  }
+ },
+ {
+  "id": "github:yetone/kill-ai-slop",
+  "name": "yetone/kill-ai-slop",
+  "url": "https://github.com/yetone/kill-ai-slop",
+  "source": "github",
+  "description": "A field guide to the visual & copy tics of AI-generated products — and an Agent Skill that scans your project and strips them out. https://killaislop.com",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 384,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 8,
+   "money": 5,
+   "total": 20
+  },
+  "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
+  "analysis": {
+   "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
+   "en": "A field guide to the visual and copy tics of AI-generated products, plus an Agent Skill that scans your project and strips them out. Using AI to kill the 'AI look' — self-referential humor over a real pain: homogenized AI aesthetics now hurt conversion."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "kill-ai-slop 由两部分组成：一份持续维护的「AI 味」清单——那些 AI 生成产品特有的视觉与文案抽搐（渐变紫按钮、'Elevate your workflow' 式空话、密集 emoji 标题），以及一个 Agent Skill，扫描你的项目找出这些特征并自动清除或改写。",
+    "why": "当所有产品都用同样的模型生成界面与文案，同质化审美正在真实伤害品牌与转化率——「看起来像 AI 做的」已成负面信号。用 AI 清除 AI 味的自我指涉幽默让它在开发者社区疯传，但底下是严肃命题：AI 时代的差异化设计将成为稀缺资源。与本周 Fudge MCP（给 AI 灌设计品味）形成完美对照。",
+    "biz": "清单本身是公共品，Skill 是引流；变现要靠后续的品牌审计服务或设计系统订阅，路径尚不清晰。真正的价值可能是定义了「AI slop 检测」这个新品类——一旦营销和品牌团队接受这个概念，围绕它的工具与咨询会自然生长。作者的社区影响力是最大护城河。"
+   },
+   "en": {
+    "what": "kill-ai-slop is two things: a maintained field guide to the visual and copy tics of AI-generated products (purple gradient buttons, 'Elevate your workflow' filler, emoji-dense headers), and an Agent Skill that scans your project, flags those tics, and strips or rewrites them.",
+    "why": "When every product generates its UI and copy from the same models, homogenized aesthetics genuinely damage brand and conversion — 'looks AI-made' is now a negative signal. The self-referential joke of using AI to kill the AI look made it spread, but the thesis underneath is serious: differentiated design becomes scarce in the AI era. A perfect counterpoint to this week's Fudge MCP (which injects design taste into AI).",
+    "biz": "The guide is a public good and the Skill is a funnel; monetization would need brand-audit services or a design-system subscription, neither obvious yet. The real value may be naming a category — 'AI slop detection'. Once marketing teams accept the concept, tooling and consulting grow around it. The author's community standing is the moat."
+   }
+  }
+ },
+ {
+  "id": "hackernews:48832212",
+  "name": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+  "url": "https://mistral.ai/news/robostral-navigate/",
+  "source": "hackernews",
+  "description": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 488,
+   "comments": 112,
+   "hn_link": "https://news.ycombinator.com/item?id=48832212"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 7,
+   "total": 18
+  },
+  "reason": "Mistral 的机器人导航模型，具身智能商业化的关键拼图之一。",
+  "analysis": {
+   "zh": "Mistral 发布 Robostral Navigate 机器人导航模型，宣称达到 SOTA。导航是具身智能商业化的关键拼图，欧洲玩家在机器人基础模型上正面参战。",
+   "en": "Mistral released Robostral Navigate, a claimed-SOTA robotics navigation model. Navigation is a key piece of embodied-AI commercialization, and a European player just joined the robot-foundation-model fight head-on."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Robostral Navigate 是 Mistral 发布的机器人导航基础模型，宣称在多个导航基准上达到 SOTA：输入多模态传感器流，输出可直接驱动移动机器人的导航决策，支持零样本迁移到新环境。",
+    "why": "导航是所有移动机器人（仓储、配送、家用）绕不开的底座能力，此前 SOTA 基本被美国和中国的实验室把持——Mistral 入场意味着欧洲玩家正式参战具身智能基础模型。对开发者来说，「导航即模型」可能像 LLM 之于 NLP 一样，把一个工程密集领域压缩成 API 调用。",
+    "biz": "变现路径清晰：按 API 调用或授权费卖给机器人厂商，市场随仓储与配送机器人出货量水涨船高。风险在于导航对安全性要求极高（撞人即事故），落地周期长；且英伟达、Google DeepMind 都在做同类模型，Mistral 需要靠开放权重或欧洲市场关系差异化。"
+   },
+   "en": {
+    "what": "Robostral Navigate is Mistral's robotics navigation foundation model, claiming SOTA across navigation benchmarks: multimodal sensor streams in, deployable navigation decisions out, with zero-shot transfer to new environments.",
+    "why": "Navigation is the unavoidable base capability for every mobile robot (warehouse, delivery, home), and SOTA was previously held by US and Chinese labs — Mistral's entry means Europe formally joins the embodied-AI foundation-model fight. For developers, 'navigation as a model' could compress an engineering-heavy field into an API call, as LLMs did for NLP.",
+    "biz": "Monetization is clear: API or licensing to robot makers, with the market riding warehouse and delivery robot volumes. Risks: navigation is safety-critical (a collision is an incident), deployment cycles are long, and NVIDIA and Google DeepMind are building the same thing — Mistral needs open weights or European relationships to differentiate."
+   }
+  }
+ },
+ {
+  "id": "hackernews:48834924",
+  "name": "Microsoft releases Flint, a visualization language for AI agents",
+  "url": "https://microsoft.github.io/flint-chart/#/",
+  "source": "hackernews",
+  "description": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 347,
+   "comments": 137,
+   "hn_link": "https://news.ycombinator.com/item?id=48834924"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 6,
+   "money": 6,
+   "total": 18
+  },
+  "reason": "微软发布给 AI 智能体用的可视化语言，让智能体「画图说话」，生态位重要。",
+  "analysis": {
+   "zh": "微软发布 Flint：一门让 AI 智能体「画图说话」的可视化语言，智能体可以用结构化图形而非纯文本向人汇报。占住了 agent 与人之间的表达层，生态位重要。",
+   "en": "Microsoft released Flint, a visualization language that lets AI agents 'speak in diagrams' — reporting to humans in structured graphics instead of prose. It stakes out the expression layer between agents and people; an important niche."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Flint 是微软发布的「给 AI 智能体用的可视化语言」：一套声明式语法，让智能体在汇报时输出结构化图形——流程图、时间线、对比表——而不是纯文本墙。人类阅读效率更高，图形本身也可被程序解析和二次利用。",
+    "why": "智能体与人的沟通带宽是当前 agent 体验的最大瓶颈之一：文字汇报冗长且难以扫读。Flint 押注的是「表达层标准化」——就像 Markdown 统一了轻量排版，谁定义了智能体的图形表达标准，谁就占住了人机协作界面的咽喉。微软的生态推力（VS Code、Copilot、Teams）让这个标准有真实的普及机会。",
+    "biz": "语言本身不直接收费，价值在于加固微软的 agent 生态：Copilot 汇报更好读、Teams 里的智能体输出更专业，间接提升全家桶粘性。对第三方开发者，早期接入 Flint 生态可能获得类似「早期 Markdown 工具」的红利；风险是标准之争尚未尘埃落定，OpenAI 或 Anthropic 若推出对标方案则可能分裂生态。"
+   },
+   "en": {
+    "what": "Flint is Microsoft's visualization language for AI agents: a declarative syntax that lets agents report in structured graphics — flowcharts, timelines, comparison tables — instead of text walls. Humans scan faster, and the graphics stay machine-parseable for reuse.",
+    "why": "Agent-to-human bandwidth is one of the biggest bottlenecks in today's agent UX: prose reports are long and unskimmable. Flint bets on standardizing the expression layer — as Markdown standardized lightweight formatting, whoever defines agents' graphical vocabulary owns a chokepoint of the human-agent interface. Microsoft's distribution (VS Code, Copilot, Teams) gives the standard a real shot at ubiquity.",
+    "biz": "The language itself isn't the product; the value is fortifying Microsoft's agent ecosystem — better Copilot reports, more professional Teams agents, stickier bundle. Third-party devs who adopt early may reap 'early Markdown tooling' dividends. The risk is a standards war: an OpenAI or Anthropic counterpart could split the ecosystem."
+   }
+  }
+ },
+ {
+  "id": "github:bkingfilm/lapian-notes",
+  "name": "bkingfilm/lapian-notes",
+  "url": "https://github.com/bkingfilm/lapian-notes",
+  "source": "github",
+  "description": "拉片笔记:把电影变成 AI 辅助的拉片笔记 - 本地抽帧/剧情泳道时间轴/结构树/情绪曲线/段落深拆",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 308,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 4,
+   "total": 17
+  },
+  "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
+  "analysis": {
+   "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
+   "en": "Turns films into AI-assisted shot-analysis notes: local frame extraction, plot swim-lanes, structure trees, emotion curves, scene breakdowns. A heavy-duty tool for film study — cinephiles, screenwriters, film students — with local processing sidestepping copyright landmines."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "拉片笔记把「拉片」（逐镜头分析电影）工具化：本地抽帧建立影像索引，AI 辅助生成剧情泳道时间轴、叙事结构树、情绪曲线，支持对任意段落做深度拆解笔记。所有处理在本地完成，不上传影片内容。",
+    "why": "影视学习长期停留在「暂停-截图-记 Word」的石器时代，这是第一个把完整拉片工作流数字化的开源工具。AI 的加入让结构分析（三幕、节拍、情绪弧）从资深影评人的隐性知识变成了可视化输出，对编剧教育和影视自媒体是生产力级别的提升。本地处理的设计也巧妙绕开了版权分发的雷区。",
+    "biz": "直接用户是影视生、编剧、解说类自媒体——付费意愿真实但盘子不大（垂直教育工具的典型困境）。更大的想象在于数据侧：大量结构化拉片笔记是训练「叙事理解模型」的稀缺语料。以工具聚人、以社区沉淀数据、再做叙事 AI，是它最性感的三步棋，当然也是最难的。"
+   },
+   "en": {
+    "what": "Lapian-notes productizes shot-by-shot film analysis: local frame extraction builds a visual index, and AI generates plot swim-lane timelines, narrative structure trees, and emotion curves, with deep-dive notes on any segment. Everything runs locally; no footage is uploaded.",
+    "why": "Film study has been stuck in the pause-screenshot-Word stone age; this is the first open-source tool to digitize the full close-reading workflow. AI turns structural analysis (acts, beats, emotional arcs) from critics' tacit knowledge into visual output — a productivity-class upgrade for screenwriting education and film YouTubers. Local processing neatly sidesteps copyright distribution issues.",
+    "biz": "Direct users — film students, screenwriters, video essayists — pay willingly but form a modest market (the classic vertical-education trap). The bigger play is data: structured close-reading notes are scarce corpus for narrative-understanding models. Tool gathers users, community accrues data, then narrative AI — the sexiest three-step plan, and the hardest."
+   }
+  }
+ },
+ {
+  "id": "github:xiaotianfotos/homerail",
+  "name": "xiaotianfotos/homerail",
+  "url": "https://github.com/xiaotianfotos/homerail",
+  "source": "github",
+  "description": "Voice-first local agent orchestration runtime for auditable DAG workflows.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 501,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 6,
+   "total": 17
+  },
+  "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
+  "analysis": {
+   "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
+   "en": "A voice-first local agent-orchestration runtime that organizes workflows as auditable DAGs — command your home automation by talking. Local-plus-auditable hits privacy anxiety squarely; a rare 'home-use' position in agent infra."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "homerail 是语音优先的本地智能体编排运行时：你用嘴下达任务，它把任务编排成有向无环图（DAG）工作流在本地执行，每一步都留下可审计的记录。TypeScript 编写，可接入本地模型，家庭自动化与个人工作流是主打场景。",
+    "why": "它同时踩中三个上升趋势：语音交互回潮（免提场景的真实需求）、本地化（隐私焦虑与 API 成本）、可审计性（智能体乱来之后人们想要事后追责的凭证）。「DAG 可审计」这个设计选择尤其聪明——它把 agent 的黑箱决策拆成了可检查的步骤链，这正是企业级 agent 治理讨论里最缺的东西，却出现在一个家用项目里。",
+    "biz": "开源家用工具直接变现难，但它验证的「本地+语音+可审计」组合是智能家居厂商和隐私优先市场（欧洲尤甚）愿意付钱的能力包。合理路径：社区版免费聚人气，向设备厂商授权嵌入式版本，或推家庭订阅的托管技能库。风险是巨头（Apple、Google）随时可能用系统级能力碾过来。"
+   },
+   "en": {
+    "what": "homerail is a voice-first local agent-orchestration runtime: speak a task, and it compiles the work into a DAG workflow executed locally, every step leaving an auditable record. Written in TypeScript, pluggable with local models, aimed at home automation and personal workflows.",
+    "why": "It lands on three rising trends at once: the voice-interaction comeback (real hands-free demand), localism (privacy anxiety plus API costs), and auditability (after agents misbehave, people want receipts). The 'auditable DAG' choice is especially clever — it decomposes black-box agent decisions into an inspectable step chain, exactly what enterprise agent-governance debates lack, appearing here in a home project.",
+    "biz": "Open-source home tooling monetizes poorly head-on, but the local+voice+auditable capability bundle is something smart-home vendors and privacy-first markets (Europe especially) pay for. A plausible path: free community edition for mindshare, embedded licensing to device makers, or a subscription skills library. The risk: Apple or Google steamrolling it with OS-level features."
+   }
+  }
+ },
+ {
+  "id": "hackernews:48876505",
+  "name": "Mesh LLM: distributed AI computing on iroh",
+  "url": "https://www.iroh.computer/blog/mesh-llm",
+  "source": "hackernews",
+  "description": "Mesh LLM: distributed AI computing on iroh",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 341,
+   "comments": 90,
+   "hn_link": "https://news.ycombinator.com/item?id=48876505"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 6,
+   "money": 4,
+   "total": 17
+  },
+  "reason": "基于 iroh 的分布式 LLM 网格计算，人人凑显卡跑大模型的极客梦。",
+  "analysis": {
+   "zh": "Mesh LLM 基于 iroh 做分布式 LLM 计算，人人贡献显卡、凑成一张推理网。P2P 跑大模型的极客梦想又一次落地尝试，去中心化叙事加成。",
+   "en": "Mesh LLM builds distributed LLM computing on iroh — everyone contributes GPUs to form one inference mesh. Another landing attempt of the geek dream of P2P model serving, with a decentralization-narrative bonus."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Mesh LLM 基于 iroh（P2P 网络库）构建分布式 LLM 推理网络：参与者贡献自己的 GPU，网络把模型分片调度到各节点上协同推理，任何成员都能用远超单机的算力跑大模型。",
+    "why": "「人人凑显卡跑大模型」是开源社区反抗算力集中化的长期梦想，此前的尝试大多死于网络延迟和调度复杂度。Mesh LLM 选择 iroh 这个新一代 P2P 基座重做一遍，时机也更好：消费级显卡性能上来了、开源模型质量够用了、对 API 厂商的成本焦虑到位了。341 分说明这个叙事依然有强号召力。",
+    "biz": "去中心化基础设施的变现历来艰难：要么代币化（进入加密领域，监管与投机风险）、要么做企业私有网格（和「人人共享」的初心冲突）。更现实的价值是战略性的——它是对推理成本垄断的持续威慑，哪怕只跑通 20%，也会影响 API 定价的天花板。技术风险集中在跨节点延迟对推理体验的硬伤。"
+   },
+   "en": {
+    "what": "Mesh LLM builds a distributed LLM inference network on iroh (a modern P2P networking library): participants contribute GPUs, the network shards models across nodes for cooperative inference, and every member gets compute far beyond a single machine.",
+    "why": "'Everyone pools GPUs to run big models' is the open-source community's long-running rebellion against compute centralization; earlier attempts mostly died of network latency and scheduling complexity. Mesh LLM redoes it on a new P2P foundation at a better moment: consumer GPUs are stronger, open models are good enough, and API-cost anxiety is fully primed. 341 points show the narrative still rallies people.",
+    "biz": "Decentralized infrastructure monetizes notoriously badly: tokenize (crypto regulation and speculation risk) or sell private enterprise meshes (betraying the commons ethos). The realistic value is strategic — standing deterrence against inference-cost monopolies; even a 20%-working version pressures API price ceilings. The hard technical risk is cross-node latency wrecking interactive inference."
+   }
+  }
+ },
+ {
+  "id": "huggingface:space/Qwen/Qwen3-TTS",
+  "name": "Qwen/Qwen3-TTS",
+  "url": "https://huggingface.co/spaces/Qwen/Qwen3-TTS",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2043,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 7,
+   "money": 6,
+   "total": 17
+  },
+  "reason": "Qwen3 语音合成官方 demo，音色自然、多语种，配音生产力立等可取。",
+  "analysis": {
+   "zh": "Qwen3-TTS 官方 demo：多语种、多音色、自然度在线可验。开源语音合成正逼近商用配音质量，内容生产者的成本结构要变了。",
+   "en": "The official Qwen3-TTS demo: multilingual, multi-voice, naturalness verifiable in-browser. Open-source TTS is closing on commercial voiceover quality — content producers' cost structure is about to shift."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Qwen3-TTS 是通义千问系列的语音合成模型官方在线 demo：多语种、多音色，输入文本即可在浏览器里试听生成效果，2000+ 收藏冲上本周趋势榜。",
+    "why": "它代表开源 TTS 的质量水位线又抬高了一截——自然度和多语种覆盖已经逼近商业配音服务。对内容产业这是结构性变化的前奏：有声书、视频配音、播客本地化的成本曲线将被重画。放在「本周语音赛道扎堆」（OmniVoice、Simba、homerail 语音交互）的背景里看，语音正在成为 AI 应用的下一个主战场。",
+    "biz": "对阿里而言 demo 本身是获客漏斗：体验免费、API 与部署收费，同时反哺通义生态。对下游创业者，真正的机会在应用层——垂直配音工作流（如播客翻译+原声克隆）、有声内容量产管线。风险提示：语音克隆的滥用监管在收紧，合规能力会成为这条赛道的隐形门槛。"
+   },
+   "en": {
+    "what": "Qwen3-TTS is the official online demo of the Qwen family's speech-synthesis model: multilingual, multi-voice, try-in-browser text-to-speech, with 2,000+ likes pushing it up this week's trending board.",
+    "why": "It marks another rise in the open-source TTS quality waterline — naturalness and language coverage now crowd commercial voiceover services. For content industries this preludes structural change: the cost curves of audiobooks, video dubbing, and podcast localization get redrawn. Seen against this week's voice cluster (OmniVoice, Simba, homerail's voice-first UX), speech is becoming AI's next main battlefield.",
+    "biz": "For Alibaba the demo is a funnel: free trial, paid API and deployment, ecosystem reinforcement. For downstream founders the opportunity is the application layer — vertical dubbing workflows (podcast translation with voice cloning), audio-content mass production. Caveat: voice-clone regulation is tightening; compliance capability becomes the lane's hidden moat."
+   }
+  }
+ },
+ {
+  "id": "producthunt:1190657",
+  "name": "Osaurus",
+  "url": "https://www.producthunt.com/products/osaurus",
+  "source": "producthunt",
+  "description": "Open source agents that run 100% locally on your Mac",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-07"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 7,
+   "money": 5,
+   "total": 17
+  },
+  "reason": "百分百本地运行的开源 Mac 智能体，隐私党和本地化玩家的福音。",
+  "analysis": {
+   "zh": "Osaurus：百分百本地运行的开源 Mac 智能体。隐私党与本地化玩家的直球产品，卡位「不上云的 agent」这个正在变大的细分。",
+   "en": "Osaurus: open-source agents running 100% locally on your Mac. A straight shot at privacy-first users, staking the growing 'agents that never touch the cloud' niche."
+  }
+ },
+ {
+  "id": "producthunt:1191785",
+  "name": "ChatCut",
+  "url": "https://www.producthunt.com/products/chatcut-ai-video-editor",
+  "source": "producthunt",
+  "description": "Your AI video editor in ChatGPT, desktop, and web",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-08"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 6,
+   "money": 7,
+   "total": 17
+  },
+  "reason": "在 ChatGPT 里直接剪视频的 AI 剪辑师，站在流量入口上做工具。",
+  "analysis": {
+   "zh": "ChatCut：在 ChatGPT、桌面和网页里都能用的 AI 视频剪辑师。站在 ChatGPT 流量入口上做工具，对话式剪辑对短视频作者是真效率。",
+   "en": "ChatCut: an AI video editor available inside ChatGPT, on desktop, and on the web. Building on ChatGPT's traffic faucet; conversational editing is real leverage for short-form creators."
+  }
+ },
+ {
+  "id": "producthunt:1192979",
+  "name": "Fudge MCP",
+  "url": "https://www.producthunt.com/products/fudge-mcp",
+  "source": "producthunt",
+  "description": "Give your AI agents design taste from existing websites",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 6,
+   "money": 5,
+   "total": 17
+  },
+  "reason": "让 AI 智能体从现成网站「偷师」设计品味，解决 AI 出品千篇一律的痛点。",
+  "analysis": {
+   "zh": "Fudge MCP：让 AI 智能体从现成网站「偷师」设计品味，再用到你的项目里。解决 AI 出品千篇一律的真痛点，和 kill-ai-slop 形成本周有趣的呼应。",
+   "en": "Fudge MCP: lets AI agents 'apprentice' design taste from existing websites and apply it to your project. Tackles the real pain of samey AI output — an amusing echo of kill-ai-slop this week."
+  }
+ },
+ {
+  "id": "producthunt:1193239",
+  "name": "NoMac.app",
+  "url": "https://www.producthunt.com/products/nomac",
+  "source": "producthunt",
+  "description": "The headless iOS app publishing pipeline for AI agents.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 4,
+   "money": 7,
+   "total": 17
+  },
+  "reason": "给 AI 智能体用的无头 iOS 发布流水线，AI 写完 App 直通上架，基建生意。",
+  "analysis": {
+   "zh": "NoMac.app：给 AI 智能体用的无头 iOS 发布流水线，AI 写完 App 不碰 Mac 直接上架。押注「智能体自主发布软件」的未来，基建生意的想象力很足。",
+   "en": "NoMac.app: a headless iOS publishing pipeline for AI agents — ship App Store builds without touching a Mac. A bet on agents autonomously releasing software; infrastructure with real imagination."
+  }
+ },
+ {
+  "id": "hackernews:48827858",
+  "name": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+  "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+  "source": "hackernews",
+  "description": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 539,
+   "comments": 204,
+   "hn_link": "https://news.ycombinator.com/item?id=48827858"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 3,
+   "total": 16
+  },
+  "reason": "用提示注入骗 GitHub 的 AI 智能体泄露私有仓库，安全故事讲得惊心动魄。",
+  "analysis": {
+   "zh": "GitLost：研究者用提示注入骗过 GitHub 的 AI 智能体，让它泄露私有仓库内容。案例精彩、后果严重，是每个做 agent 产品的团队都该读的安全教材。",
+   "en": "GitLost: researchers tricked GitHub's AI agent via prompt injection into leaking private repos. A vivid case with severe consequences — required security reading for any team shipping agents."
+  }
+ },
+ {
+  "id": "producthunt:1192591",
+  "name": "AgentKey",
+  "url": "https://www.producthunt.com/products/agentkey",
+  "source": "producthunt",
+  "description": "One-stop live data marketplace for your agent",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-09"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 7,
+   "total": 16
+  },
+  "reason": "给智能体供实时数据的一站式集市，「卖水给淘金者」的经典生意模型。",
+  "analysis": {
+   "zh": "AgentKey：给 AI 智能体供实时数据的一站式集市，按调用卖数据接入。经典「卖水给淘金者」——智能体越多，数据水管越值钱。",
+   "en": "AgentKey: a one-stop live-data marketplace for AI agents, selling data access by the call. Classic picks-and-shovels — the more agents exist, the more the data plumbing is worth."
+  }
+ },
+ {
+  "id": "arxiv:2607.09653v1",
+  "name": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+  "url": "https://arxiv.org/abs/2607.09653v1",
+  "source": "arxiv",
+  "description": "Internet of Things (IoT) systems are inherently vulnerable due to constrained hardware, outdated firmware, and insecure default configurations, creating a need for scalable and adaptive security testing approaches. While recent adoptions of Large Language Model (LLM) agents have demonstrated promise in penetration testing and Capture-the-Flag (CTF) environments, their application to IoT specific vulnerabilities remains unexplored. This paper presents an autonomous multi-agent framework, referred",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 4,
+   "money": 5,
+   "total": 15
+  },
+  "reason": "AI 智能体自动挖掘并利用 IoT 漏洞，攻防自动化是安全行业的真金赛道。",
+  "analysis": {
+   "zh": "VEXAIoT 让 AI 智能体自动发现并利用 IoT 设备漏洞，把渗透测试流水线化。攻防自动化是安全行业刚需，论文属于「智能体安全测试」这条正在升温的赛道。",
+   "en": "VEXAIoT uses AI agents to autonomously discover and exploit IoT vulnerabilities, turning penetration testing into a pipeline. Automated offense/defense is a real industry need, and agentic security testing is a heating-up lane."
+  }
+ },
+ {
+  "id": "huggingface:space/k2-fsa/OmniVoice",
+  "name": "k2-fsa/OmniVoice",
+  "url": "https://huggingface.co/spaces/k2-fsa/OmniVoice",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 1110,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 6,
+   "money": 5,
+   "total": 15
+  },
+  "reason": "开源全能语音工具箱在线版，识别合成一体，开发者拿来即用。",
+  "analysis": {
+   "zh": "k2-fsa 出品的开源全能语音工具箱在线版，识别与合成一体。学术团队的工程化输出，开发者友好，适合做语音产品的起步基座。",
+   "en": "An online omni voice toolbox from k2-fsa with recognition and synthesis in one. Engineering output from an academic team — developer-friendly, a solid base layer for voice products."
+  }
+ },
+ {
+  "id": "huggingface:space/selfit-camera/Omni-Image-Editor",
+  "name": "selfit-camera/Omni-Image-Editor",
+  "url": "https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2117,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 7,
+   "money": 5,
+   "total": 15
+  },
+  "reason": "全能图像编辑器，一句话改图换装，消费级需求量大。",
+  "analysis": {
+   "zh": "全能图像编辑器：一句话改图、换装、换背景。消费级修图是 AI 里离普通用户最近的场景之一，2100+ 收藏的流量说明一切。",
+   "en": "An omni image editor: one sentence to edit, re-dress, or re-background a photo. Consumer photo editing is one of AI's closest-to-everyone scenarios, and 2,100+ likes say the rest."
+  }
+ },
+ {
+  "id": "producthunt:1189393",
+  "name": "Yasmine Works",
+  "url": "https://www.producthunt.com/products/yasmine-works",
+  "source": "producthunt",
+  "description": "An AI coworker that lives in your Slack to get work done",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-06"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 5,
+   "money": 7,
+   "total": 15
+  },
+  "reason": "住在 Slack 里的 AI 同事，切中企业协作场景，订阅付费路径顺滑。",
+  "analysis": {
+   "zh": "Yasmine Works：住在 Slack 里的 AI 同事，直接在工作流里接活干活。切口精准（不用换工具就能用上 AI），订阅付费路径顺滑，竞品也在快速涌入。",
+   "en": "Yasmine Works: an AI coworker living in your Slack, taking and doing tasks inside the flow of work. A precise wedge (AI without switching tools) with a smooth subscription path — and fast-arriving competitors."
+  }
+ },
+ {
+  "id": "github:jakubkrehel/skills",
+  "name": "jakubkrehel/skills",
+  "url": "https://github.com/jakubkrehel/skills",
+  "source": "github",
+  "description": "A set of agent skills that help improve different parts of a product, from animations and typography to layout and colors.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 223,
+   "language": ""
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
+  "analysis": {
+   "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
+   "en": "A set of agent skills that audit different parts of a product: animation, typography, layout, color. A handy plug-in for designers and indie devs — instant utility, shallow moat."
+  }
+ },
+ {
+  "id": "github:pengchujin/jzsub",
+  "name": "pengchujin/jzsub",
+  "url": "https://github.com/pengchujin/jzsub",
+  "source": "github",
+  "description": "JZSub — 一条视频链接，自动交付最高画质、封面和 GPT 双语字幕 MP4。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 275,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 6,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
+  "analysis": {
+   "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
+   "en": "Feed it one video link, get back a top-quality MP4 with cover art and GPT bilingual subtitles, fully automated. A blunt, deterministic utility for content porting and study — though the niche is crowded."
+  }
+ },
+ {
+  "id": "hackernews:48805624",
+  "name": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+  "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+  "source": "hackernews",
+  "description": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 374,
+   "comments": 262,
+   "hn_link": "https://news.ycombinator.com/item?id=48805624"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 5,
+   "money": 6,
+   "total": 14
+  },
+  "reason": "AMD 四千美元本地 AI 开发套件，本地算力平民化的又一步。",
+  "analysis": {
+   "zh": "AMD 推出 4000 美元的 Ryzen AI Halo 本地开发套件，本地算力平民化又进一步。围绕「跑得起大模型的个人工作站」的军备竞赛正式开打。",
+   "en": "AMD's $4k Ryzen AI Halo dev kit pushes local compute further toward the mainstream. The arms race for 'a personal workstation that runs big models' is officially on."
+  }
+ },
+ {
+  "id": "huggingface:space/mrfakename/Z-Image-Turbo",
+  "name": "mrfakename/Z-Image-Turbo",
+  "url": "https://huggingface.co/spaces/mrfakename/Z-Image-Turbo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 3542,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 7,
+   "money": 4,
+   "total": 14
+  },
+  "reason": "秒级出图的 Z-Image Turbo 在线体验，快到上瘾的文生图 demo。",
+  "analysis": {
+   "zh": "Z-Image Turbo 的在线体验站，秒级出图的文生图 demo。快到上瘾是它全部的卖点，也恰好是消费级图像生成最在意的指标。",
+   "en": "An online demo of Z-Image Turbo with second-scale text-to-image generation. 'Addictively fast' is the entire pitch — and exactly the metric consumer image generation cares about."
+  }
+ },
+ {
+  "id": "producthunt:1190387",
+  "name": "Miora",
+  "url": "https://www.producthunt.com/products/miora-2",
+  "source": "producthunt",
+  "description": "Scale your creativity on editable canvas with agent memory",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-07"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "带智能体记忆的可编辑创意画布，创意工作流赛道的稳健选手。",
+  "analysis": {
+   "zh": "Miora：带智能体记忆的可编辑创意画布，人和 AI 在同一块布上迭代。创意工作流赛道的稳健选手，记忆是差异点但壁垒一般。",
+   "en": "Miora: an editable creative canvas with agent memory, where you and the AI iterate on the same surface. A steady player in creative workflows; memory differentiates, but the moat is modest."
+  }
+ },
+ {
+  "id": "producthunt:1191340",
+  "name": "Simba Voice Agents",
+  "url": "https://www.producthunt.com/products/speechify",
+  "source": "producthunt",
+  "description": "Voice agents powered by Simba 3.2 the world's #1 voice model",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-08"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 5,
+   "money": 6,
+   "total": 14
+  },
+  "reason": "基于顶级语音模型的语音智能体平台，客服外呼市场的标准打法。",
+  "analysis": {
+   "zh": "Simba Voice Agents：基于 Simba 3.2 语音模型的语音智能体平台。客服与外呼市场的标准打法，成败取决于模型音质与延迟的实际表现。",
+   "en": "Simba Voice Agents: a voice-agent platform built on the Simba 3.2 voice model. The standard play for support and outbound calling; success rides on real-world voice quality and latency."
+  }
+ },
+ {
+  "id": "reddit:1uue8cc",
+  "name": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
+  "source": "reddit",
+  "description": "TL:DR: I’m a grad student in AI, I saw that Google released TabFM and TimesFM last week, I built an MCP wrapper to serve both transformer models in a single Docker container so you can connect their new ML transformer models to a local LLM via Open WebUI, Claude Code, or Codex and do ML tasks that would have previously required building, training, and tuning ML models to do. Tested with classic ML datasets (Iris, California Housing, etc), Pretty solid scores for accuracy for being zero-shot: (94",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 7,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 5,
+   "money": 4,
+   "total": 14
+  },
+  "reason": "把 Google 新出的表格与时序基础模型打包成 MCP 服务，一个容器全搞定。",
+  "analysis": {
+   "zh": "研究生把 Google 新发的 TabFM 和 TimesFM 打包成一个 Docker 容器里的 MCP 服务。动作快、姿势标准，「新模型发布 → MCP 封装」正在成为一种条件反射。",
+   "en": "A grad student wrapped Google's new TabFM and TimesFM into one Docker-served MCP. Fast and textbook-clean — 'new model drops → MCP wrapper' is becoming a reflex."
+  }
+ },
+ {
+  "id": "arxiv:2607.09662v1",
+  "name": "PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis",
+  "url": "https://arxiv.org/abs/2607.09662v1",
+  "source": "arxiv",
+  "description": "Current electroencephalography (EEG)-based dream detection relies on power spectral density (PSD) and statistical moment features, achieving a state-of-the-art area under the receiver operating characteristic curve (AUC) of approximately 0.70 on the DREAM database (Wong et al., 2025, Nature Communications). We introduce PHINN-EEG (Persistent Homology Inspired Neural Network for EEG), the first topological time-series framework for dream mentation analysis. Using sliding-window Takens delay embed",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 4,
+   "money": 2,
+   "total": 13
+  },
+  "reason": "用拓扑学的贝蒂数分析梦境脑电波，做梦检测研究自带科幻气质，离睡眠科技产品还有几步。",
+  "analysis": {
+   "zh": "用拓扑数据分析（动态贝蒂数）替代传统功率谱特征来检测梦境状态的脑电研究，据称显著提升了 AUC。把「做梦」变成可计算的拓扑签名，是睡眠科技和梦境接口这类科幻方向的地基性工作。",
+   "en": "This EEG study replaces classic power-spectral features with topological data analysis (dynamic Betti numbers) to detect dream states, reportedly with a solid AUC gain. Turning 'dreaming' into a computable topological signature is groundwork for sleep-tech and dream-interface products."
+  }
+ },
+ {
+  "id": "hackernews:48848425",
+  "name": "AI 2040: Plan A",
+  "url": "https://ai-2040.com/",
+  "source": "hackernews",
+  "description": "AI 2040: Plan A",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 392,
+   "comments": 515,
+   "hn_link": "https://news.ycombinator.com/item?id=48848425"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 5,
+   "money": 1,
+   "total": 13
+  },
+  "reason": "一份认真推演 2040 年 AI 世界的长文计划书，脑洞与严肃兼备。",
+  "analysis": {
+   "zh": "一份认真推演 2040 年 AI 世界的长文计划书，515 条评论的大型思想实验现场。脑洞与严肃兼备，适合想跳出季度视角看十五年的人。",
+   "en": "A long-form, earnest plan for the AI world of 2040; the 515-comment thread is a live thought-experiment. Equal parts audacious and rigorous — for anyone who wants a fifteen-year lens instead of a quarterly one."
+  }
+ },
+ {
+  "id": "huggingface:space/Sneak-Moose/Pro-Realism-Edit-Studio",
+  "name": "Sneak-Moose/Pro-Realism-Edit-Studio",
+  "url": "https://huggingface.co/spaces/Sneak-Moose/Pro-Realism-Edit-Studio",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 553,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 6,
+   "money": 4,
+   "total": 13
+  },
+  "reason": "主打超写实风格的修图工作台，出片效果讨喜，适合社交媒体党。",
+  "analysis": {
+   "zh": "主打超写实风格的修图工作台，出片直接对标社交媒体审美。垂直风格站的又一例：不做全能，就做一种最讨喜的效果。",
+   "en": "A photo-editing studio specialized in hyper-realism, tuned straight for social-media aesthetics. Another vertical-style space: skip omnipotence, nail the single most likable look."
+  }
+ },
+ {
+  "id": "huggingface:space/prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "name": "prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "url": "https://huggingface.co/spaces/prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 1902,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 6,
+   "money": 4,
+   "total": 13
+  },
+  "reason": "聚合多种 LoRA 风格的 Qwen 快速改图站，风格切换像换滤镜一样随意。",
+  "analysis": {
+   "zh": "聚合多种 LoRA 风格的 Qwen 快速改图站，切风格像换滤镜。把「模型+风格包」组合成了产品化体验，创作者拿来就用。",
+   "en": "A fast Qwen image-edit space aggregating multiple LoRA styles — switching styles like filters. Packages 'model + style pack' into a productized experience creators can use immediately."
+  }
+ },
+ {
+  "id": "huggingface:space/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "name": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 3314,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 6,
+   "money": 4,
+   "total": 13
+  },
+  "reason": "Wan2.2 视频生成的 FP8 加速版，在线免费玩 AI 视频的入口。",
+  "analysis": {
+   "zh": "Wan2.2 视频生成的 FP8+AOTI 加速版在线体验，免费白嫖 AI 视频的主入口之一。3300+ 收藏证明视频生成的需求远未被满足。",
+   "en": "The FP8+AOTI accelerated Wan2.2 video-generation space — one of the main gateways for free AI video. 3,300+ likes prove video-generation demand is nowhere near satisfied."
+  }
+ },
+ {
+  "id": "reddit:1uv1xb3",
+  "name": "Prompt-engineering paper accepted to ICML [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uv1xb3/promptengineering_paper_accepted_to_icml_r/",
+  "source": "reddit",
+  "description": "\" Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity \" This paper was accepted to ICML this year. Its main idea is a very simple prompt-engineering trick: \"changing the prompt this way led to more diverse sampling\". Naturally, it is difficult to provide a rigorous theoretical analysis for something like this. Even if it works, I’m not sure this kind of prompt engineering belongs at a top-tier machine learning conference. Some people seems to call this kind of work “moder",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 2,
+   "total": 13
+  },
+  "reason": "一句提示词就缓解模式坍缩、解锁 LLM 多样性，简单得让人拍大腿的 ICML 论文。",
+  "analysis": {
+   "zh": "ICML 论文 Verbalized Sampling：一个提示词技巧就能缓解模式坍缩、解锁 LLM 输出多样性。简单得让人拍大腿，立刻可用的免费午餐。",
+   "en": "The ICML paper on Verbalized Sampling: a single prompting trick that mitigates mode collapse and unlocks LLM output diversity. Forehead-slappingly simple — a free lunch you can use today."
+  }
+ },
+ {
+  "id": "github:MDX-Tom/gpt-5.6-instruct",
+  "name": "MDX-Tom/gpt-5.6-instruct",
+  "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
+  "source": "github",
+  "description": "A Codex CLI jailbreak prompt and test pack for gpt-5.6-sol. 针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 548,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 1,
+   "total": 12
+  },
+  "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
+  "analysis": {
+   "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
+   "en": "A jailbreak prompt-and-test pack targeting the gpt-5.6 family in Codex CLI; 548 stars in a week shows the curiosity demand. Grey-zone project: useful as red-team reference, no legitimate monetization, and prone to being patched away."
+  }
+ },
+ {
+  "id": "huggingface:space/r3gm/wan2-2-fp8da-aoti-preview",
+  "name": "r3gm/wan2-2-fp8da-aoti-preview",
+  "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2868,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 6,
+   "money": 3,
+   "total": 12
+  },
+  "reason": "Wan2.2 视频生成预览镜像，热度高说明大家真的很想白嫖视频模型。",
+  "analysis": {
+   "zh": "Wan2.2 视频生成预览镜像，与加速版同源。镜像也能吸 2800+ 收藏，侧面说明大家对免费视频生成的渴望有多强。",
+   "en": "A preview mirror of the Wan2.2 video space. Even a mirror pulls 2,800+ likes — indirect proof of how hungry people are for free video generation."
+  }
+ },
+ {
+  "id": "reddit:1upvkp5",
+  "name": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
+  "source": "reddit",
+  "description": "Hi everyone, I recently finished my Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling . Instead of just compiling my published papers, I tried to write it as an accessible, self-contained textbook for anyone interested in the intersection of radio propagation simulation, autodiff, and ML. Permanent handle : https://hdl.handle.net/2078.5/278727 Repo with TeX source files While my research focuses on wireless communications rather than pure ML, I think it fits right in here",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 3,
+   "money": 3,
+   "total": 12
+  },
+  "reason": "把博士论文写成可微分光线追踪的自足教科书，无线电传播建模的诚意之作。",
+  "analysis": {
+   "zh": "把博士论文写成自足教科书：可微分光线追踪在无线电传播建模中的应用。论文诚意与科普精神兼备，垂直领域（通信仿真）价值扎实。",
+   "en": "A Ph.D. thesis written as a self-contained textbook on differentiable ray tracing for radio propagation modeling. Genuine rigor plus teaching spirit, with solid value in its vertical (comms simulation)."
+  }
+ },
+ {
+  "id": "arxiv:2607.09629v1",
+  "name": "4DR360: State Reasoning for Joint 3D Detection and Occupancy Prediction in 4D Radar-Camera Full-Scene Perception",
+  "url": "https://arxiv.org/abs/2607.09629v1",
+  "source": "arxiv",
+  "description": "Reliable autonomous driving requires full-scene perception that couples foreground objects with dense semantic layout. Recently, 4D millimeter-wave radar has emerged as a robust and affordable sensor, yet its sparse returns make radar-camera fusion necessary for comprehensive scene understanding. Existing radar-camera methods mainly optimize detection, while dual-task systems usually decode boxes and occupancy with limited interaction. To address this gap and advance radar-based multi-task learn",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 5,
+   "total": 11
+  },
+  "reason": "4D 毫米波雷达同时做检测与占据预测，自动驾驶降本的实用路线。",
+  "analysis": {
+   "zh": "4DR360 用 4D 毫米波雷达同时做 3D 检测与占据预测，主打「便宜传感器榨出全场景感知」。自动驾驶降本主线上的实用型工作。",
+   "en": "4DR360 does joint 3D detection and occupancy prediction from 4D millimeter-wave radar — squeezing full-scene perception out of a cheap sensor. Practical work on autonomous driving's cost-reduction mainline."
+  }
+ },
+ {
+  "id": "arxiv:2607.09641v1",
+  "name": "Semantic Pareto-DQN: A Multi-Objective Reinforcement Learning Framework for Financial Anomaly Detection",
+  "url": "https://arxiv.org/abs/2607.09641v1",
+  "source": "arxiv",
+  "description": "Financial anomaly detection suffers from extreme class imbalance, causing traditional single-objective algorithms to exhibit ``fraud collapse'', defaulting to the majority class and failing to balance anomaly interdiction with customer friction. To overcome this without distortive data resampling, we propose the Semantic Pareto-DQN, a multi-objective reinforcement learning framework. Our approach synthesizes heterogeneous transaction features into cohesive natural-language narratives, encoded by",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 5,
+   "total": 11
+  },
+  "reason": "多目标强化学习治金融反欺诈的「欺诈坍缩」，金融风控方向变现路径清晰。",
+  "analysis": {
+   "zh": "用语义帕累托 DQN 做多目标强化学习，专治金融反欺诈里的「欺诈坍缩」（模型摆烂全判正常）。方向不炫但金融风控的变现路径清晰。",
+   "en": "Semantic Pareto-DQN applies multi-objective RL to financial anomaly detection, targeting 'fraud collapse' where models default to the majority class. Unflashy but with a clear monetization path in financial risk control."
+  }
+ },
+ {
+  "id": "arxiv:2607.09657v1",
+  "name": "Scalable Visual Pretraining for Language Intelligence",
+  "url": "https://arxiv.org/abs/2607.09657v1",
+  "source": "arxiv",
+  "description": "The rapid progress of large foundation models has been driven predominantly by pretraining on large-scale text corpora. However, many forms of knowledge are conveyed through visual representations, where figures, typeset equations, and page layouts carry rich information that cannot be faithfully or completely captured by text alone. Yet current pretraining approaches discard these visual cues by converting visually rich sources, such as documents and web pages, into plain text for learning lang",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 2,
+   "money": 4,
+   "total": 11
+  },
+  "reason": "反其道而行：用大规模视觉预训练反哺语言智能，路线新颖但离落地尚远。",
+  "analysis": {
+   "zh": "提出用大规模视觉预训练反哺语言智能：图表、排版等视觉载体里藏着文本语料覆盖不到的知识。方向反直觉且有想象力，但目前停留在预训练策略层面，离应用还远。",
+   "en": "Proposes large-scale visual pretraining as a path to language intelligence, arguing figures and typeset material carry knowledge text corpora miss. Counterintuitive and imaginative, though still a pretraining-strategy paper far from application."
+  }
+ },
+ {
+  "id": "github:KORAYTEACHER/fintech-advisor",
+  "name": "KORAYTEACHER/fintech-advisor",
+  "url": "https://github.com/KORAYTEACHER/fintech-advisor",
+  "source": "github",
+  "description": "ai fintech financial advisor for your portfolio",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 173,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 3,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
+  "analysis": {
+   "zh": "AI 理财顾问，分析你的投资组合并给建议。赛道有钱但极度拥挤，且理财建议有合规红线，项目本身未见差异化亮点。",
+   "en": "An AI fintech advisor that analyzes your portfolio and offers suggestions. A moneyed but savagely crowded lane with compliance red lines, and this entry shows no visible differentiation."
+  }
+ },
+ {
+  "id": "hackernews:48809877",
+  "name": "GLM 5.2 and the coming AI margin collapse",
+  "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+  "source": "hackernews",
+  "description": "GLM 5.2 and the coming AI margin collapse",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 692,
+   "comments": 468,
+   "hn_link": "https://news.ycombinator.com/item?id=48809877"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 4,
+   "money": 2,
+   "total": 10
+  },
+  "reason": "剖析 GLM 5.2 引发的推理成本坍塌与 AI 毛利危机，行业判断值得一读。",
+  "analysis": {
+   "zh": "剖析 GLM 5.2 定价引发的推理成本坍塌：当开源模型足够好，闭源厂商的毛利还能撑多久。692 分说明全行业都在焦虑同一件事——AI 的商业模式而非能力。",
+   "en": "An essay on the inference-cost collapse triggered by GLM 5.2's pricing: when open models are good enough, how long can closed-model margins hold? 692 points because the whole industry shares one anxiety — AI's business model, not its capability."
+  }
+ },
+ {
+  "id": "hackernews:48883275",
+  "name": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+  "source": "hackernews",
+  "description": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 658,
+   "comments": 342,
+   "hn_link": "https://news.ycombinator.com/item?id=48883275"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 5,
+   "money": 2,
+   "total": 10
+  },
+  "reason": "实测对比编码智能体的隐性 token 开销，给「上下文肥胖症」敲警钟。",
+  "analysis": {
+   "zh": "实测对比：Claude Code 在读你的 prompt 之前就发送 3.3 万 token 的系统开销，OpenCode 只要 7 千。给「上下文肥胖症」敲警钟的数据帖，也是工具选型的实用参考。",
+   "en": "A measured comparison: Claude Code ships 33k tokens of overhead before reading your prompt; OpenCode sends 7k. A data-driven wake-up call about context bloat, and a practical reference for tool selection."
+  }
+ },
+ {
+  "id": "huggingface:space/r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "name": "r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2028,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 5,
+   "money": 3,
+   "total": 10
+  },
+  "reason": "同款视频生成的又一镜像分流，需求旺盛的佐证，本身无新意。",
+  "analysis": {
+   "zh": "同款 Wan2.2 视频生成的又一分流镜像。本身无新意，但「镜像多到霸榜」这个现象本身就是本周最直白的需求信号。",
+   "en": "Yet another mirror of the same Wan2.2 video space. Nothing new in itself — but 'so many mirrors they crowd the trending page' is this week's bluntest demand signal."
+  }
+ },
+ {
+  "id": "reddit:1upzxk2",
+  "name": "TorchJD: Training with multiple losses in PyTorch [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upzxk2/torchjd_training_with_multiple_losses_in_pytorch_p/",
+  "source": "reddit",
+  "description": "Hi everyone! I wanted to share some recent progress on TorchJD that might be useful to the machine learning community. When training models with multiple losses (multiple tasks, constraints, auxiliary losses, regularization terms, etc.), you typically have two options: Scalarization: Various ways to combine those losses into a single loss (e.g. average them or combine them with trainable weights); then you can do gradient descent on it. Jacobian descent: Compute the Jacobian of the vector of los",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 3,
+   "total": 10
+  },
+  "reason": "PyTorch 多损失联合训练库 TorchJD，多任务炼丹师的实用轮子。",
+  "analysis": {
+   "zh": "TorchJD：PyTorch 多损失联合训练库，多任务、约束、辅助损失一把梭。多任务炼丹师的实用轮子，解决的是真实且高频的训练痛点。",
+   "en": "TorchJD: a PyTorch library for training with multiple losses — multi-task, constraints, auxiliary objectives in one. A practical wheel for multi-task practitioners, hitting a real, frequent training pain."
+  }
+ },
+ {
+  "id": "arxiv:2607.09623v1",
+  "name": "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026",
+  "url": "https://arxiv.org/abs/2607.09623v1",
+  "source": "arxiv",
+  "description": "We present our submission to the QANTA 2026 shared challenge at the ICML 2026 Workshop on Efficient Multimodal Question Answering (EMM-QA). Quanta evaluates multimodal quizbowl systems that answer pyramid-style questions from incrementally revealed text and accompanying images while operating under realistic efficiency constraints. The challenge consists of two distinct tasks: Tossup questions, which require deciding when to answer under uncertainty, and Bonus questions, which emphasize accurate",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 4,
+   "money": 1,
+   "total": 9
+  },
+  "reason": "让多模态智能体打知识竞答（quizbowl），比赛好玩，商业价值有限。",
+  "analysis": {
+   "zh": "面向 QANTA 竞赛的多模态问答智能体，靠置信度校准在金字塔式抢答题里做「何时按铃」的决策。竞赛工程报告，好玩大于实用。",
+   "en": "A multimodal quizbowl agent for the QANTA challenge, using confidence calibration to decide when to buzz on pyramid-style questions. A competition engineering report — more fun than practical."
+  }
+ },
+ {
+  "id": "arxiv:2607.09632v1",
+  "name": "Lean-QIT: Towards a Formal Infrastructure for Quantum Information Theory",
+  "url": "https://arxiv.org/abs/2607.09632v1",
+  "source": "arxiv",
+  "description": "Quantum information theory (QIT) characterizes the capabilities and fundamental limits of quantum information processing, underpinning quantum communication, computation, and error correction. Formalizing its coding theorems requires connecting finite-block protocols, analytic inequalities, and asymptotic limits within a unified machine-checked framework. Existing developments, however, lack a reusable operational layer that defines codes, error criteria, achievable rates, and capacities indepen",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 2,
+   "money": 1,
+   "total": 9
+  },
+  "reason": "用 Lean 给量子信息论建形式化地基，硬核到极致的基础设施工作。",
+  "analysis": {
+   "zh": "Lean-QIT 开始用 Lean 证明助手给量子信息论建形式化基础设施，让编码定理可机器检验。极客浓度爆表的基础工作，商业价值几乎为零但学术意义扎实。",
+   "en": "Lean-QIT starts formalizing quantum information theory in the Lean proof assistant, making coding theorems machine-checkable. Maximum-nerd foundational work: near-zero commercial value, solid scholarly significance."
+  }
+ },
+ {
+  "id": "arxiv:2607.09645v1",
+  "name": "Deep Gaussian Processes on Directed Acyclic Graphs",
+  "url": "https://arxiv.org/abs/2607.09645v1",
+  "source": "arxiv",
+  "description": "Many real-world processes can be represented as compositions of functions along a directed acyclic graph (DAG). In causal modelling, these correspond to the underlying mechanisms; in engineering, to multiple fidelity levels; and in gene-regulatory networks, to transcription factors. These functions are partially observed across the DAG, with noisy and heterogeneously sampled measurements, posing significant challenges for reconstruction, uncertainty propagation, and inference. To tackle these ch",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 2,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "在有向无环图上叠深度高斯过程，数学上优雅，普通人基本无感。",
+  "analysis": {
+   "zh": "把深度高斯过程放到有向无环图上，统一刻画因果机制与多保真度工程仿真。数学优雅、适用面广，但属于方法论工作，普通开发者短期用不上。",
+   "en": "Puts deep Gaussian processes on DAGs to model causal mechanisms and multi-fidelity engineering compositions in one framework. Elegant and general, but methodological — not something most developers touch soon."
+  }
+ },
+ {
+  "id": "arxiv:2607.09649v1",
+  "name": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
+  "url": "https://arxiv.org/abs/2607.09649v1",
+  "source": "arxiv",
+  "description": "Concept-based explainable artificial intelligence (AI) can make model reasoning more human-understandable, but concept-level outputs are not automatically trustworthy. We introduce ConceptSMILE, a model-agnostic perturbation-based auditing framework for evaluating the reliability of concept-based explanations. Rather than replacing SMILE, ConceptSMILE extends its perturbation-based logic from feature- or region-level attribution to the auditing of human-understandable concept explanations. The f",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 3,
+   "total": 9
+  },
+  "reason": "给「可解释 AI」本身做可信度审计，套娃式的严谨，合规市场或许用得上。",
+  "analysis": {
+   "zh": "ConceptSMILE 给「概念级可解释 AI」本身做可信度审计——解释也可能骗人，所以要审计解释器。套娃式严谨，在 AI 合规与审计市场有潜在位置。",
+   "en": "ConceptSMILE audits the trustworthiness of concept-based explainable AI — explanations can lie, so audit the explainer. Recursive rigor with a plausible seat in the AI-compliance and audit market."
+  }
+ },
+ {
+  "id": "arxiv:2607.09654v1",
+  "name": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
+  "url": "https://arxiv.org/abs/2607.09654v1",
+  "source": "arxiv",
+  "description": "Vision language models (VLMs) have made remarkable progress in visual reasoning during the last decade. Most evaluations have used simple scenes (MS-COCO) that do not showcase complex human interactions or behaviors, only a handful of non-curated human descriptions as a benchmark, and have not focused on understanding the model's error types. Here, we introduce the Complex Social Behavior (CSB) dataset, containing 100 images depicting complex social interactions/behaviors. We analyze the progres",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "回顾十年视觉语言模型的认知错误演化，适合了解 VLM 边界，观赏性一般。",
+  "analysis": {
+   "zh": "复盘十年间视觉语言模型在复杂人类行为场景上的准确率与认知错误演化，指出简单场景基准掩盖了真实短板。适合想了解 VLM 边界的人，作为读物比作为工具更有价值。",
+   "en": "A decade-scale retrospective of vision-language models' accuracy and visual-cognitive errors on complex human scenes, arguing simple-scene benchmarks hide real weaknesses. Valuable as a map of VLM limits, more a read than a tool."
+  }
+ },
+ {
+  "id": "github:AlephAITech/WorkBuddyGuide",
+  "name": "AlephAITech/WorkBuddyGuide",
+  "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+  "source": "github",
+  "description": "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 395,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 3,
+   "money": 3,
+   "total": 8
+  },
+  "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
+  "analysis": {
+   "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
+   "en": "An open-source field guide to WorkBuddy: tutorials, real workflows, Skills, MCP, multi-agent practice. A content repo — useful, but it's a handbook; it lives or dies on continued updates after the hype wave."
+  }
+ },
+ {
+  "id": "hackernews:48886741",
+  "name": "Ask HN: Add flag for AI-generated articles",
+  "url": "https://news.ycombinator.com/item?id=48886741",
+  "source": "hackernews",
+  "description": "Ask HN: Add flag for AI-generated articles",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 834,
+   "comments": 369,
+   "hn_link": "https://news.ycombinator.com/item?id=48886741"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 4,
+   "money": 1,
+   "total": 8
+  },
+  "reason": "HN 社区请愿给 AI 生成文章打标，反映真实民意的风向标讨论。",
+  "analysis": {
+   "zh": "HN 社区请愿给 AI 生成的文章加官方标记，369 条评论吵出了真实民意：读者要的不是禁止 AI，而是知情权。给所有内容平台的产品经理递了一份需求说明书。",
+   "en": "An Ask HN petition to flag AI-generated articles; 369 comments surface the real sentiment — readers want disclosure, not prohibition. Effectively a requirements doc handed to every content platform's PM."
+  }
+ },
+ {
+  "id": "producthunt:1189818",
+  "name": "Kickbacks CLI",
+  "url": "https://www.producthunt.com/products/kickbacks-cli",
+  "source": "producthunt",
+  "description": "The terminal and Mac menu bar companion for Kickbacks.ai",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-06"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 3,
+   "money": 3,
+   "total": 8
+  },
+  "reason": "Kickbacks.ai 的终端与菜单栏伴侣工具，配件型产品，依附主产品生态。",
+  "analysis": {
+   "zh": "Kickbacks CLI：Kickbacks.ai 的终端与 Mac 菜单栏伴侣。典型配件型产品，价值完全依附主产品生态，独立看点有限。",
+   "en": "Kickbacks CLI: a terminal and menu-bar companion for Kickbacks.ai. A textbook accessory product — its value rides entirely on the mothership's ecosystem."
+  }
+ },
+ {
+  "id": "github:CWS6206/EasyLastSkill",
+  "name": "CWS6206/EasyLastSkill",
+  "url": "https://github.com/CWS6206/EasyLastSkill",
+  "source": "github",
+  "description": "EasyLastSkill ist eine deutschsprachige Codex-/Agent-Skill fuer schnelle Recherchen zu den letzten Tagen eines Themas. Standardmaessig betrachtet sie die letzten 30 Tage und erstellt einen kompakten Bericht mit Quellen, Relevanzscore und Unsicherheiten.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 234,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 3,
+   "money": 2,
+   "total": 7
+  },
+  "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
+  "analysis": {
+   "zh": "德语区的 Codex/Agent 技能：对某话题检索最近 30 天动态并生成带来源的紧凑报告。功能朴素、受众限定德语用户，是「本地化智能体技能」小趋势的一个样本。",
+   "en": "A German-language Codex/Agent skill that researches the last 30 days of a topic and produces a compact sourced report. Modest and German-audience-bound — a specimen of the 'localized agent skills' micro-trend."
+  }
+ },
+ {
+  "id": "reddit:1upjftu",
+  "name": "ICML Position Track: Want Better ML Reviews? Stop Asking Nicely and Start Incentivizing with a Credit System [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upjftu/icml_position_track_want_better_ml_reviews_stop/",
+  "source": "reddit",
+  "description": "“Maybe the real AGI was the friends we made along the way” is a sentiment that always hits me, and conferences are the places where I reunite with old friends and meet new ones. However, when it comes to the submission/review experience, it might not be much of an exaggeration to say that almost everyone has many unpleasant experiences to share. So I wrote a position paper to discuss this. I argue that current conference organizers lack proper tools to instill accountability and incentives for r",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 8,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 1,
+   "total": 6
+  },
+  "reason": "ICML 立场论文：与其道德呼吁不如给审稿人真激励，学术治理的老话题。",
+  "analysis": {
+   "zh": "ICML 立场论文：想要好审稿？别再道德呼吁，直接给审稿人真激励。学术治理的机制设计讨论，圈外人无感，圈内人苦笑。",
+   "en": "An ICML position paper: want better reviews? Stop asking nicely, start incentivizing. Mechanism-design talk for academic governance — outsiders shrug, insiders wince."
+  }
+ },
+ {
+  "id": "reddit:1upxdvc",
+  "name": "Raffi Krikorian (CTO, Mozilla) — AMA on the State of Open Source AI (July 14 @ 1pm EDT) [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/",
+  "source": "reddit",
+  "description": "Hi r/MachineLearning , i’m Raffi, CTO at Mozilla. on Tuesday July 14 we publish our inaugural State of Open Source AI report, and i&#39;ll be here live answering whatever questions you throw at me! AMA time: 1pm ET / 10am PT / 6pm BST. the report is about what&#39;s actually happening with open source AI in production — developers, enterprises, the whole ecosystem — not the version of the story everyone already believes. things i want to dig into with you: the hidden tax on \"free\" models — what",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 12,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 3,
+   "money": 1,
+   "total": 6
+  },
+  "reason": "Mozilla CTO 就开源 AI 现状做 AMA，关注开源生态的可以蹲一波。",
+  "analysis": {
+   "zh": "Mozilla CTO 携首份《开源 AI 现状》报告做 AMA。关注开源生态的人可以蹲一波一手观点，报告本身或许比 AMA 更有料。",
+   "en": "Mozilla's CTO hosts an AMA alongside their inaugural State of Open Source AI report. Worth camping for first-hand takes — though the report may outvalue the AMA."
+  }
+ },
+ {
+  "id": "reddit:1utplzc",
+  "name": "Public Library Find [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1utplzc/public_library_find_d/",
+  "source": "reddit",
+  "description": "Pleasantly surprised to find O’Reilly books on ML at a public library &#32;",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 1,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 4,
+   "money": 0,
+   "total": 6
+  },
+  "reason": "在公共图书馆偶遇 ML 藏书的暖心分享，社区闲聊，看个乐。",
+  "analysis": {
+   "zh": "在公共图书馆偶遇 O'Reilly 机器学习藏书的暖心分享帖。纯社区闲聊，登上周榜第一说明大家也需要一点无用的美好。",
+   "en": "A wholesome post about stumbling on O'Reilly ML books at a public library. Pure community chatter — topping the weekly chart shows people need a little useless joy too."
+  }
+ },
+ {
+  "id": "huggingface:space/mteb/leaderboard",
+  "name": "mteb/leaderboard",
+  "url": "https://huggingface.co/spaces/mteb/leaderboard",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 7557,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 1,
+   "fun": 2,
+   "money": 2,
+   "total": 5
+  },
+  "reason": "文本嵌入模型的权威排行榜，工具属性拉满，选型必备但毫无戏剧性。",
+  "analysis": {
+   "zh": "MTEB 文本嵌入模型权威排行榜，7500+ 收藏的选型基础设施。工具属性拉满，做 RAG 和搜索的人常驻页面，但毫无戏剧性可言。",
+   "en": "The authoritative MTEB leaderboard for text-embedding models; 7,500+ likes of selection infrastructure. Pure utility — a permanent tab for RAG and search builders, zero drama."
+  }
+ },
+ {
+  "id": "reddit:1uqtamz",
+  "name": "DINOv2 way worse than SigLIP in k-NN. Is this expected? [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uqtamz/dinov2_way_worse_than_siglip_in_knn_is_this/",
+  "source": "reddit",
+  "description": "Doing a bachelor thesis on fine-grained car classification (telling apart VW Golf generations from listing photos). Simple setup: frozen encoder → embeddings → weighted k-NN. On my small dataset (175 train / 132 test): I thought maybe it was a cosine vs euclidean thing, but my embeddings are L2-normalized so both give the same ranking. Tried both, DINOv2 stays at 41%. I get that SigLIP was trained contrastively so its space is basically built for cosine similarity, while DINOv2 is self-supervise",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 13,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 2,
+   "money": 1,
+   "total": 5
+  },
+  "reason": "DINOv2 在 k-NN 分类上不敌 SigLIP 的求助帖，细分技术讨论。",
+  "analysis": {
+   "zh": "本科毕设求助：DINOv2 在细粒度汽车分类 k-NN 上明显不敌 SigLIP，正常吗？小而具体的技术讨论，对做视觉检索的人有参考价值。",
+   "en": "A bachelor-thesis question: DINOv2 badly trails SigLIP on fine-grained car classification with k-NN — expected? Small, concrete, and useful reference for people doing visual retrieval."
+  }
+ },
+ {
+  "id": "reddit:1usq43t",
+  "name": "Why doesn't the ML research community limit the number of submissions per author? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1usq43t/why_doesnt_the_ml_research_community_limit_the/",
+  "source": "reddit",
+  "description": "I am currently working across multiple research communities, and I&#39;ve noticed that the ML community is struggling with a massive volume of submissions, which is affecting review quality (as we are seeing in the recent ARR cycles). I am wondering what the reasoning is for not limiting the number of submissions per author? This practice has been successfully used in other research areas for years, such as Security (e.g., CCS) or Computer Architecture (e.g., DAC), to help keep workloads managea",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 2,
+   "money": 0,
+   "total": 4
+  },
+  "reason": "关于限制投稿数量的学术社区吐槽，圈内话题，圈外无感。",
+  "analysis": {
+   "zh": "吐槽 ML 学界为什么不限制每人投稿数量的讨论帖。审稿危机的圈内老话题，情绪真实但没有新解法。",
+   "en": "A discussion on why the ML community doesn't cap submissions per author. An old in-crowd topic around the review crisis — real frustration, no new solution."
+  }
+ },
+ {
+  "id": "reddit:1urqqk6",
+  "name": "Journals vs Conferences ML Research [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1urqqk6/journals_vs_conferences_ml_research_r/",
+  "source": "reddit",
+  "description": "Lately in the last two/three years, I have noticed ICML, Neurips becoming more prestigious than the actual journals. What is the actual reason of this culture? Is this due to the AI boom and rising demand and the fact that conferences have a higher and a faster acceptance rate as compared to journals and with the growing hype they need to deliver things faster? What do you all think? &#32;",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 10,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 1,
+   "fun": 1,
+   "money": 0,
+   "total": 2
+  },
+  "reason": "期刊与会议孰优的常规讨论，无新信息量。",
+  "analysis": {
+   "zh": "期刊与会议孰更权威的常规讨论，AI 热潮下会议地位为何压过期刊。信息量有限的圈内水帖。",
+   "en": "A routine journals-vs-conferences thread on why conferences outrank journals in the AI boom. Limited information; in-crowd filler."
+  }
+ }
+]

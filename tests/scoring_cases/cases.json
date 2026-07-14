@@ -1,0 +1,45 @@
+{
+  "_readme": "LLM 评分回归用例：每条是「样例项目 + 期望分数区间」。每周评分后可抽查：把这些样例混入评分，检查结果是否落在期望区间。新发现的评分偏差请在此积累新用例。",
+  "cases": [
+    {
+      "project": {
+        "id": "github:example/ai-pet-rock",
+        "name": "ai-pet-rock",
+        "source": "github",
+        "description": "A rock with a camera and speaker that watches your life and comments on it sarcastically using a local LLM. No practical purpose whatsoever."
+      },
+      "expected": {"whimsy": [8, 10], "fun": [7, 10], "money": [0, 4]},
+      "why": "极端脑洞、无实用价值：whimsy/fun 应高，money 应低"
+    },
+    {
+      "project": {
+        "id": "github:example/gpt-wrapper-crm",
+        "name": "yet-another-ai-crm",
+        "source": "github",
+        "description": "AI-powered CRM that summarizes customer emails using the OpenAI API. Standard SaaS pricing tiers."
+      },
+      "expected": {"whimsy": [0, 3], "fun": [1, 4], "money": [4, 8]},
+      "why": "常见套路 GPT 套壳 SaaS：whimsy 应低，money 中上"
+    },
+    {
+      "project": {
+        "id": "arxiv:2607.99999",
+        "name": "Scaling Laws for Sparse Mixture-of-Experts at Trillion Parameters",
+        "source": "arxiv",
+        "description": "We derive empirical scaling laws for sparse MoE models up to 1T parameters, showing compute-optimal routing sparsity."
+      },
+      "expected": {"whimsy": [3, 7], "fun": [1, 4], "money": [1, 5]},
+      "why": "扎实研究但对普通人不好玩：fun 应低，money 论文类偏低"
+    },
+    {
+      "project": {
+        "id": "producthunt:example-voice-clone-app",
+        "name": "EchoTwin — clone your voice for meetings",
+        "source": "producthunt",
+        "description": "Clone your voice in 30 seconds, let your AI twin attend boring meetings and answer simple questions for you. $12/mo."
+      },
+      "expected": {"whimsy": [6, 9], "fun": [7, 10], "money": [6, 9]},
+      "why": "新奇+好玩+明确订阅变现：三维都应中高"
+    }
+  ]
+}

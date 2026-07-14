@@ -1,0 +1,772 @@
+[
+ {
+  "id": "arxiv:2607.09662v1",
+  "name": "PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis",
+  "url": "https://arxiv.org/abs/2607.09662v1",
+  "source": "arxiv",
+  "description": "Current electroencephalography (EEG)-based dream detection relies on power spectral density (PSD) and statistical moment features, achieving a state-of-the-art area under the receiver operating characteristic curve (AUC) of approximately 0.70 on the DREAM database (Wong et al., 2025, Nature Communications). We introduce PHINN-EEG (Persistent Homology Inspired Neural Network for EEG), the first topological time-series framework for dream mentation analysis. Using sliding-window Takens delay embed",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09657v1",
+  "name": "Scalable Visual Pretraining for Language Intelligence",
+  "url": "https://arxiv.org/abs/2607.09657v1",
+  "source": "arxiv",
+  "description": "The rapid progress of large foundation models has been driven predominantly by pretraining on large-scale text corpora. However, many forms of knowledge are conveyed through visual representations, where figures, typeset equations, and page layouts carry rich information that cannot be faithfully or completely captured by text alone. Yet current pretraining approaches discard these visual cues by converting visually rich sources, such as documents and web pages, into plain text for learning lang",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09654v1",
+  "name": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
+  "url": "https://arxiv.org/abs/2607.09654v1",
+  "source": "arxiv",
+  "description": "Vision language models (VLMs) have made remarkable progress in visual reasoning during the last decade. Most evaluations have used simple scenes (MS-COCO) that do not showcase complex human interactions or behaviors, only a handful of non-curated human descriptions as a benchmark, and have not focused on understanding the model's error types. Here, we introduce the Complex Social Behavior (CSB) dataset, containing 100 images depicting complex social interactions/behaviors. We analyze the progres",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09653v1",
+  "name": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+  "url": "https://arxiv.org/abs/2607.09653v1",
+  "source": "arxiv",
+  "description": "Internet of Things (IoT) systems are inherently vulnerable due to constrained hardware, outdated firmware, and insecure default configurations, creating a need for scalable and adaptive security testing approaches. While recent adoptions of Large Language Model (LLM) agents have demonstrated promise in penetration testing and Capture-the-Flag (CTF) environments, their application to IoT specific vulnerabilities remains unexplored. This paper presents an autonomous multi-agent framework, referred",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09649v1",
+  "name": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
+  "url": "https://arxiv.org/abs/2607.09649v1",
+  "source": "arxiv",
+  "description": "Concept-based explainable artificial intelligence (AI) can make model reasoning more human-understandable, but concept-level outputs are not automatically trustworthy. We introduce ConceptSMILE, a model-agnostic perturbation-based auditing framework for evaluating the reliability of concept-based explanations. Rather than replacing SMILE, ConceptSMILE extends its perturbation-based logic from feature- or region-level attribution to the auditing of human-understandable concept explanations. The f",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09645v1",
+  "name": "Deep Gaussian Processes on Directed Acyclic Graphs",
+  "url": "https://arxiv.org/abs/2607.09645v1",
+  "source": "arxiv",
+  "description": "Many real-world processes can be represented as compositions of functions along a directed acyclic graph (DAG). In causal modelling, these correspond to the underlying mechanisms; in engineering, to multiple fidelity levels; and in gene-regulatory networks, to transcription factors. These functions are partially observed across the DAG, with noisy and heterogeneously sampled measurements, posing significant challenges for reconstruction, uncertainty propagation, and inference. To tackle these ch",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09641v1",
+  "name": "Semantic Pareto-DQN: A Multi-Objective Reinforcement Learning Framework for Financial Anomaly Detection",
+  "url": "https://arxiv.org/abs/2607.09641v1",
+  "source": "arxiv",
+  "description": "Financial anomaly detection suffers from extreme class imbalance, causing traditional single-objective algorithms to exhibit ``fraud collapse'', defaulting to the majority class and failing to balance anomaly interdiction with customer friction. To overcome this without distortive data resampling, we propose the Semantic Pareto-DQN, a multi-objective reinforcement learning framework. Our approach synthesizes heterogeneous transaction features into cohesive natural-language narratives, encoded by",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09632v1",
+  "name": "Lean-QIT: Towards a Formal Infrastructure for Quantum Information Theory",
+  "url": "https://arxiv.org/abs/2607.09632v1",
+  "source": "arxiv",
+  "description": "Quantum information theory (QIT) characterizes the capabilities and fundamental limits of quantum information processing, underpinning quantum communication, computation, and error correction. Formalizing its coding theorems requires connecting finite-block protocols, analytic inequalities, and asymptotic limits within a unified machine-checked framework. Existing developments, however, lack a reusable operational layer that defines codes, error criteria, achievable rates, and capacities indepen",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09629v1",
+  "name": "4DR360: State Reasoning for Joint 3D Detection and Occupancy Prediction in 4D Radar-Camera Full-Scene Perception",
+  "url": "https://arxiv.org/abs/2607.09629v1",
+  "source": "arxiv",
+  "description": "Reliable autonomous driving requires full-scene perception that couples foreground objects with dense semantic layout. Recently, 4D millimeter-wave radar has emerged as a robust and affordable sensor, yet its sparse returns make radar-camera fusion necessary for comprehensive scene understanding. Existing radar-camera methods mainly optimize detection, while dual-task systems usually decode boxes and occupancy with limited interaction. To address this gap and advance radar-based multi-task learn",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "arxiv:2607.09623v1",
+  "name": "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026",
+  "url": "https://arxiv.org/abs/2607.09623v1",
+  "source": "arxiv",
+  "description": "We present our submission to the QANTA 2026 shared challenge at the ICML 2026 Workshop on Efficient Multimodal Question Answering (EMM-QA). Quanta evaluates multimodal quizbowl systems that answer pyramid-style questions from incrementally revealed text and accompanying images while operating under realistic efficiency constraints. The challenge consists of two distinct tasks: Tossup questions, which require deciding when to answer under uncertainty, and Bonus questions, which emphasize accurate",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "github:MDX-Tom/gpt-5.6-instruct",
+  "name": "MDX-Tom/gpt-5.6-instruct",
+  "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
+  "source": "github",
+  "description": "A Codex CLI jailbreak prompt and test pack for gpt-5.6-sol. 针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 548,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:xiaotianfotos/homerail",
+  "name": "xiaotianfotos/homerail",
+  "url": "https://github.com/xiaotianfotos/homerail",
+  "source": "github",
+  "description": "Voice-first local agent orchestration runtime for auditable DAG workflows.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 501,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:cosmtrek/mindwalk",
+  "name": "cosmtrek/mindwalk",
+  "url": "https://github.com/cosmtrek/mindwalk",
+  "source": "github",
+  "description": "A visualization tool that replays coding-agent sessions on a 3D map of your codebase.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 421,
+   "language": "Go"
+  }
+ },
+ {
+  "id": "github:AlephAITech/WorkBuddyGuide",
+  "name": "AlephAITech/WorkBuddyGuide",
+  "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+  "source": "github",
+  "description": "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 395,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:yetone/kill-ai-slop",
+  "name": "yetone/kill-ai-slop",
+  "url": "https://github.com/yetone/kill-ai-slop",
+  "source": "github",
+  "description": "A field guide to the visual & copy tics of AI-generated products — and an Agent Skill that scans your project and strips them out. https://killaislop.com",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 384,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:bkingfilm/lapian-notes",
+  "name": "bkingfilm/lapian-notes",
+  "url": "https://github.com/bkingfilm/lapian-notes",
+  "source": "github",
+  "description": "拉片笔记:把电影变成 AI 辅助的拉片笔记 - 本地抽帧/剧情泳道时间轴/结构树/情绪曲线/段落深拆",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 308,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:pengchujin/jzsub",
+  "name": "pengchujin/jzsub",
+  "url": "https://github.com/pengchujin/jzsub",
+  "source": "github",
+  "description": "JZSub — 一条视频链接，自动交付最高画质、封面和 GPT 双语字幕 MP4。",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 275,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:CWS6206/EasyLastSkill",
+  "name": "CWS6206/EasyLastSkill",
+  "url": "https://github.com/CWS6206/EasyLastSkill",
+  "source": "github",
+  "description": "EasyLastSkill ist eine deutschsprachige Codex-/Agent-Skill fuer schnelle Recherchen zu den letzten Tagen eines Themas. Standardmaessig betrachtet sie die letzten 30 Tage und erstellt einen kompakten Bericht mit Quellen, Relevanzscore und Unsicherheiten.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 234,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:jakubkrehel/skills",
+  "name": "jakubkrehel/skills",
+  "url": "https://github.com/jakubkrehel/skills",
+  "source": "github",
+  "description": "A set of agent skills that help improve different parts of a product, from animations and typography to layout and colors.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 223,
+   "language": ""
+  }
+ },
+ {
+  "id": "github:KORAYTEACHER/fintech-advisor",
+  "name": "KORAYTEACHER/fintech-advisor",
+  "url": "https://github.com/KORAYTEACHER/fintech-advisor",
+  "source": "github",
+  "description": "ai fintech financial advisor for your portfolio",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "stars": 173,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "hackernews:48886741",
+  "name": "Ask HN: Add flag for AI-generated articles",
+  "url": "https://news.ycombinator.com/item?id=48886741",
+  "source": "hackernews",
+  "description": "Ask HN: Add flag for AI-generated articles",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 834,
+   "comments": 369,
+   "hn_link": "https://news.ycombinator.com/item?id=48886741"
+  }
+ },
+ {
+  "id": "hackernews:48809877",
+  "name": "GLM 5.2 and the coming AI margin collapse",
+  "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+  "source": "hackernews",
+  "description": "GLM 5.2 and the coming AI margin collapse",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 692,
+   "comments": 468,
+   "hn_link": "https://news.ycombinator.com/item?id=48809877"
+  }
+ },
+ {
+  "id": "hackernews:48883275",
+  "name": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+  "source": "hackernews",
+  "description": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 658,
+   "comments": 342,
+   "hn_link": "https://news.ycombinator.com/item?id=48883275"
+  }
+ },
+ {
+  "id": "hackernews:48827858",
+  "name": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+  "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+  "source": "hackernews",
+  "description": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 539,
+   "comments": 204,
+   "hn_link": "https://news.ycombinator.com/item?id=48827858"
+  }
+ },
+ {
+  "id": "hackernews:48832212",
+  "name": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+  "url": "https://mistral.ai/news/robostral-navigate/",
+  "source": "hackernews",
+  "description": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 488,
+   "comments": 112,
+   "hn_link": "https://news.ycombinator.com/item?id=48832212"
+  }
+ },
+ {
+  "id": "hackernews:48848425",
+  "name": "AI 2040: Plan A",
+  "url": "https://ai-2040.com/",
+  "source": "hackernews",
+  "description": "AI 2040: Plan A",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 392,
+   "comments": 515,
+   "hn_link": "https://news.ycombinator.com/item?id=48848425"
+  }
+ },
+ {
+  "id": "hackernews:48805624",
+  "name": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+  "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+  "source": "hackernews",
+  "description": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 374,
+   "comments": 262,
+   "hn_link": "https://news.ycombinator.com/item?id=48805624"
+  }
+ },
+ {
+  "id": "hackernews:48834924",
+  "name": "Microsoft releases Flint, a visualization language for AI agents",
+  "url": "https://microsoft.github.io/flint-chart/#/",
+  "source": "hackernews",
+  "description": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 347,
+   "comments": 137,
+   "hn_link": "https://news.ycombinator.com/item?id=48834924"
+  }
+ },
+ {
+  "id": "hackernews:48876505",
+  "name": "Mesh LLM: distributed AI computing on iroh",
+  "url": "https://www.iroh.computer/blog/mesh-llm",
+  "source": "hackernews",
+  "description": "Mesh LLM: distributed AI computing on iroh",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 341,
+   "comments": 90,
+   "hn_link": "https://news.ycombinator.com/item?id=48876505"
+  }
+ },
+ {
+  "id": "hackernews:48823359",
+  "name": "We charge $10k a week to delete AI-generated code",
+  "url": "https://odra.dev/slopfix/",
+  "source": "hackernews",
+  "description": "We charge $10k a week to delete AI-generated code",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "points": 302,
+   "comments": 239,
+   "hn_link": "https://news.ycombinator.com/item?id=48823359"
+  }
+ },
+ {
+  "id": "huggingface:space/mteb/leaderboard",
+  "name": "mteb/leaderboard",
+  "url": "https://huggingface.co/spaces/mteb/leaderboard",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 7557,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/mrfakename/Z-Image-Turbo",
+  "name": "mrfakename/Z-Image-Turbo",
+  "url": "https://huggingface.co/spaces/mrfakename/Z-Image-Turbo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 3542,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "name": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 3314,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/r3gm/wan2-2-fp8da-aoti-preview",
+  "name": "r3gm/wan2-2-fp8da-aoti-preview",
+  "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2868,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/selfit-camera/Omni-Image-Editor",
+  "name": "selfit-camera/Omni-Image-Editor",
+  "url": "https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2117,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Qwen/Qwen3-TTS",
+  "name": "Qwen/Qwen3-TTS",
+  "url": "https://huggingface.co/spaces/Qwen/Qwen3-TTS",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2043,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "name": "r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview-2c",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 2028,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "name": "prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "url": "https://huggingface.co/spaces/prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 1902,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/k2-fsa/OmniVoice",
+  "name": "k2-fsa/OmniVoice",
+  "url": "https://huggingface.co/spaces/k2-fsa/OmniVoice",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 1110,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Sneak-Moose/Pro-Realism-Edit-Studio",
+  "name": "Sneak-Moose/Pro-Realism-Edit-Studio",
+  "url": "https://huggingface.co/spaces/Sneak-Moose/Pro-Realism-Edit-Studio",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "likes": 553,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "producthunt:1192591",
+  "name": "AgentKey",
+  "url": "https://www.producthunt.com/products/agentkey",
+  "source": "producthunt",
+  "description": "One-stop live data marketplace for your agent",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-09"
+  }
+ },
+ {
+  "id": "producthunt:1194641",
+  "name": "Playground",
+  "url": "https://www.producthunt.com/products/nyx-4",
+  "source": "producthunt",
+  "description": "Earn $100K+ in weekly rewards for hacking AI agents.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-12"
+  }
+ },
+ {
+  "id": "producthunt:1190657",
+  "name": "Osaurus",
+  "url": "https://www.producthunt.com/products/osaurus",
+  "source": "producthunt",
+  "description": "Open source agents that run 100% locally on your Mac",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-07"
+  }
+ },
+ {
+  "id": "producthunt:1191340",
+  "name": "Simba Voice Agents",
+  "url": "https://www.producthunt.com/products/speechify",
+  "source": "producthunt",
+  "description": "Voice agents powered by Simba 3.2 the world's #1 voice model",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-08"
+  }
+ },
+ {
+  "id": "producthunt:1192979",
+  "name": "Fudge MCP",
+  "url": "https://www.producthunt.com/products/fudge-mcp",
+  "source": "producthunt",
+  "description": "Give your AI agents design taste from existing websites",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "producthunt:1193239",
+  "name": "NoMac.app",
+  "url": "https://www.producthunt.com/products/nomac",
+  "source": "producthunt",
+  "description": "The headless iOS app publishing pipeline for AI agents.",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-10"
+  }
+ },
+ {
+  "id": "producthunt:1190387",
+  "name": "Miora",
+  "url": "https://www.producthunt.com/products/miora-2",
+  "source": "producthunt",
+  "description": "Scale your creativity on editable canvas with agent memory",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-07"
+  }
+ },
+ {
+  "id": "producthunt:1189818",
+  "name": "Kickbacks CLI",
+  "url": "https://www.producthunt.com/products/kickbacks-cli",
+  "source": "producthunt",
+  "description": "The terminal and Mac menu bar companion for Kickbacks.ai",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-06"
+  }
+ },
+ {
+  "id": "producthunt:1189393",
+  "name": "Yasmine Works",
+  "url": "https://www.producthunt.com/products/yasmine-works",
+  "source": "producthunt",
+  "description": "An AI coworker that lives in your Slack to get work done",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-06"
+  }
+ },
+ {
+  "id": "producthunt:1191785",
+  "name": "ChatCut",
+  "url": "https://www.producthunt.com/products/chatcut-ai-video-editor",
+  "source": "producthunt",
+  "description": "Your AI video editor in ChatGPT, desktop, and web",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "published": "2026-07-08"
+  }
+ },
+ {
+  "id": "reddit:1utplzc",
+  "name": "Public Library Find [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1utplzc/public_library_find_d/",
+  "source": "reddit",
+  "description": "Pleasantly surprised to find O’Reilly books on ML at a public library &#32;",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 1,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1uv1xb3",
+  "name": "Prompt-engineering paper accepted to ICML [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uv1xb3/promptengineering_paper_accepted_to_icml_r/",
+  "source": "reddit",
+  "description": "\" Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity \" This paper was accepted to ICML this year. Its main idea is a very simple prompt-engineering trick: \"changing the prompt this way led to more diverse sampling\". Naturally, it is difficult to provide a rigorous theoretical analysis for something like this. Even if it works, I’m not sure this kind of prompt engineering belongs at a top-tier machine learning conference. Some people seems to call this kind of work “moder",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1upzxk2",
+  "name": "TorchJD: Training with multiple losses in PyTorch [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upzxk2/torchjd_training_with_multiple_losses_in_pytorch_p/",
+  "source": "reddit",
+  "description": "Hi everyone! I wanted to share some recent progress on TorchJD that might be useful to the machine learning community. When training models with multiple losses (multiple tasks, constraints, auxiliary losses, regularization terms, etc.), you typically have two options: Scalarization: Various ways to combine those losses into a single loss (e.g. average them or combine them with trainable weights); then you can do gradient descent on it. Jacobian descent: Compute the Jacobian of the vector of los",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1upvkp5",
+  "name": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
+  "source": "reddit",
+  "description": "Hi everyone, I recently finished my Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling . Instead of just compiling my published papers, I tried to write it as an accessible, self-contained textbook for anyone interested in the intersection of radio propagation simulation, autodiff, and ML. Permanent handle : https://hdl.handle.net/2078.5/278727 Repo with TeX source files While my research focuses on wireless communications rather than pure ML, I think it fits right in here",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1usq43t",
+  "name": "Why doesn't the ML research community limit the number of submissions per author? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1usq43t/why_doesnt_the_ml_research_community_limit_the/",
+  "source": "reddit",
+  "description": "I am currently working across multiple research communities, and I&#39;ve noticed that the ML community is struggling with a massive volume of submissions, which is affecting review quality (as we are seeing in the recent ARR cycles). I am wondering what the reasoning is for not limiting the number of submissions per author? This practice has been successfully used in other research areas for years, such as Security (e.g., CCS) or Computer Architecture (e.g., DAC), to help keep workloads managea",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1uue8cc",
+  "name": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
+  "source": "reddit",
+  "description": "TL:DR: I’m a grad student in AI, I saw that Google released TabFM and TimesFM last week, I built an MCP wrapper to serve both transformer models in a single Docker container so you can connect their new ML transformer models to a local LLM via Open WebUI, Claude Code, or Codex and do ML tasks that would have previously required building, training, and tuning ML models to do. Tested with classic ML datasets (Iris, California Housing, etc), Pretty solid scores for accuracy for being zero-shot: (94",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 7,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1upjftu",
+  "name": "ICML Position Track: Want Better ML Reviews? Stop Asking Nicely and Start Incentivizing with a Credit System [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upjftu/icml_position_track_want_better_ml_reviews_stop/",
+  "source": "reddit",
+  "description": "“Maybe the real AGI was the friends we made along the way” is a sentiment that always hits me, and conferences are the places where I reunite with old friends and meet new ones. However, when it comes to the submission/review experience, it might not be much of an exaggeration to say that almost everyone has many unpleasant experiences to share. So I wrote a position paper to discuss this. I argue that current conference organizers lack proper tools to instill accountability and incentives for r",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 8,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1urqqk6",
+  "name": "Journals vs Conferences ML Research [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1urqqk6/journals_vs_conferences_ml_research_r/",
+  "source": "reddit",
+  "description": "Lately in the last two/three years, I have noticed ICML, Neurips becoming more prestigious than the actual journals. What is the actual reason of this culture? Is this due to the AI boom and rising demand and the fact that conferences have a higher and a faster acceptance rate as compared to journals and with the growing hype they need to deliver things faster? What do you all think? &#32;",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 10,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1upxdvc",
+  "name": "Raffi Krikorian (CTO, Mozilla) — AMA on the State of Open Source AI (July 14 @ 1pm EDT) [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/",
+  "source": "reddit",
+  "description": "Hi r/MachineLearning , i’m Raffi, CTO at Mozilla. on Tuesday July 14 we publish our inaugural State of Open Source AI report, and i&#39;ll be here live answering whatever questions you throw at me! AMA time: 1pm ET / 10am PT / 6pm BST. the report is about what&#39;s actually happening with open source AI in production — developers, enterprises, the whole ecosystem — not the version of the story everyone already believes. things i want to dig into with you: the hidden tax on \"free\" models — what",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 12,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1uqtamz",
+  "name": "DINOv2 way worse than SigLIP in k-NN. Is this expected? [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uqtamz/dinov2_way_worse_than_siglip_in_knn_is_this/",
+  "source": "reddit",
+  "description": "Doing a bachelor thesis on fine-grained car classification (telling apart VW Golf generations from listing photos). Simple setup: frozen encoder → embeddings → weighted k-NN. On my small dataset (175 train / 132 test): I thought maybe it was a cosine vs euclidean thing, but my embeddings are L2-normalized so both give the same ranking. Tried both, DINOv2 stays at 41%. I get that SigLIP was trained contrastively so its space is basically built for cosine similarity, while DINOv2 is self-supervise",
+  "collected_at": "2026-07-13",
+  "week": "2026-W29",
+  "metrics": {
+   "week_rank": 13,
+   "subreddit": "MachineLearning"
+  }
+ }
+]
