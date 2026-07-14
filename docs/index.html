@@ -10,17 +10,20 @@
   --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
   --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,0.10);
   --whimsy: #2a78d6; --fun: #1baf7a; --money: #eda100;
+  --shadow: 0 6px 18px rgba(11,11,11,0.10);
 }
 :root[data-theme="dark"] {
   --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
   --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
   --whimsy: #3987e5; --fun: #199e70; --money: #c98500;
+  --shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
     --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
     --whimsy: #3987e5; --fun: #199e70; --money: #c98500;
+    --shadow: 0 6px 18px rgba(0,0,0,0.5);
   }
 }
 * { box-sizing: border-box; margin: 0; }
@@ -33,7 +36,7 @@ header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margi
 h1 { font-size: 22px; font-weight: 700; }
 .sub { color: var(--ink-2); font-size: 13px; }
 .head-links { margin-left: auto; display: flex; gap: 8px; }
-.head-links a, #theme-toggle {
+.head-links a, .head-links button {
   border: 1px solid var(--border); background: var(--surface); text-decoration: none;
   color: var(--ink-2); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: 13px;
 }
@@ -42,18 +45,37 @@ h1 { font-size: 22px; font-weight: 700; }
   border: 1px solid var(--border); border-radius: 12px; font-size: 14px;
 }
 .banner .label { font-weight: 700; margin-right: 6px; }
+#trend-deep-btn {
+  display: inline-block; margin-left: 8px; border: 0; background: none; cursor: pointer;
+  color: var(--whimsy); font-size: 13px; padding: 0;
+}
+#trend-deep { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--grid);
+              color: var(--ink-2); font-size: 13.5px; }
 .awards { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
 .award {
   font-size: 12.5px; border: 1px solid var(--grid); border-radius: 999px;
   padding: 3px 10px; background: var(--page); cursor: pointer;
 }
 .award b { font-weight: 650; }
-.liftoff { margin-top: 10px; }
-.liftoff summary { cursor: pointer; font-size: 13.5px; font-weight: 650; }
-.liftoff table { border-collapse: collapse; margin-top: 8px; font-size: 13px; width: 100%; max-width: 720px; }
-.liftoff td, .liftoff th { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid var(--grid); }
+section.fold { margin-top: 10px; }
+section.fold > details > summary { cursor: pointer; font-size: 13.5px; font-weight: 650; padding: 4px 0; }
+.liftoff table { border-collapse: collapse; margin-top: 8px; font-size: 13px; width: 100%; max-width: 860px; }
+.liftoff td, .liftoff th { text-align: left; padding: 5px 12px 5px 0; border-bottom: 1px solid var(--grid); vertical-align: top; }
 .liftoff th { color: var(--muted); font-weight: 500; font-size: 12px; }
-.liftoff .num { font-variant-numeric: tabular-nums; }
+.liftoff .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.liftoff .intro { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
+#quadrant-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+                 padding: 10px; margin-top: 8px; max-width: 720px; }
+#quadrant { width: 100%; height: auto; display: block; }
+.q-label { font-size: 11px; fill: var(--muted); }
+.q-axis { font-size: 11.5px; fill: var(--ink-2); font-weight: 600; }
+.q-dot { fill: var(--whimsy); fill-opacity: .78; stroke: var(--surface); stroke-width: 1.5; cursor: pointer;
+         transition: r .12s ease; }
+.q-dot:hover { fill-opacity: 1; }
+.q-name { font-size: 10.5px; fill: var(--ink-2); pointer-events: none; }
+#q-tip { position: fixed; z-index: 30; background: var(--surface); border: 1px solid var(--border);
+         border-radius: 8px; box-shadow: var(--shadow); padding: 6px 10px; font-size: 12px;
+         pointer-events: none; display: none; max-width: 260px; }
 .filters {
   display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
   margin: 14px 0 6px; padding: 10px 12px;
@@ -64,7 +86,7 @@ select, input[type="search"] {
   background: var(--page); color: var(--ink); border: 1px solid var(--grid);
   border-radius: 8px; padding: 5px 8px; font-size: 13px;
 }
-input[type="search"] { min-width: 180px; flex: 1; }
+input[type="search"] { min-width: 160px; flex: 1; }
 .lang-switch { display: flex; border: 1px solid var(--grid); border-radius: 8px; overflow: hidden; }
 .lang-switch button {
   border: 0; background: var(--page); color: var(--ink-2); padding: 5px 10px;
@@ -76,16 +98,28 @@ input[type="search"] { min-width: 180px; flex: 1; }
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
   padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.card-head { display: flex; gap: 8px; align-items: flex-start; }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--whimsy); }
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: border-color .15s ease; }
+  .card:hover { transform: none; box-shadow: none; }
+}
+.card.flash { border-color: var(--money); box-shadow: var(--shadow); }
+.card-head { display: flex; gap: 8px; align-items: flex-start; flex-wrap: wrap; }
 .name { color: var(--ink); font-weight: 650; font-size: 15px; text-decoration: none; word-break: break-word; }
 .name:hover { text-decoration: underline; }
 .tag {
   margin-left: auto; flex: none; font-size: 11px; color: var(--ink-2);
   border: 1px solid var(--grid); border-radius: 999px; padding: 1px 8px; white-space: nowrap;
 }
-.hot { flex: none; font-size: 11px; border-radius: 999px; padding: 1px 8px;
+.hot, .medal { flex: none; font-size: 11px; border-radius: 999px; padding: 1px 8px;
        background: var(--page); border: 1px solid var(--grid); }
+.medal { cursor: default; }
+.topic { font-size: 11px; color: var(--ink-2); border: 1px dashed var(--grid);
+         border-radius: 999px; padding: 1px 8px; cursor: pointer; background: none; }
+.topic:hover { border-color: var(--whimsy); color: var(--whimsy); }
+.topics { display: flex; gap: 6px; flex-wrap: wrap; }
 .reason { font-size: 13.5px; color: var(--ink); }
 .reason::before { content: "💡 "; }
 .analysis { font-size: 12.5px; color: var(--ink-2); }
@@ -103,53 +137,138 @@ input[type="search"] { min-width: 180px; flex: 1; }
 .meta { margin-left: auto; font-size: 11px; color: var(--muted); }
 .meta a { color: var(--muted); }
 .empty { color: var(--muted); padding: 40px 8px; text-align: center; grid-column: 1 / -1; }
+/* 归档时间线 */
+#archive-view { display: none; max-width: 860px; }
+#archive-view h2 { font-size: 17px; margin: 18px 0 6px; }
+.timeline { position: relative; margin-top: 14px; padding-left: 22px; }
+.timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px;
+                    width: 2px; background: var(--grid); }
+.tl-item { position: relative; margin-bottom: 16px; }
+.tl-item::before { content: ""; position: absolute; left: -20px; top: 14px; width: 10px; height: 10px;
+                   border-radius: 50%; background: var(--whimsy); border: 2px solid var(--page); }
+.tl-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+           padding: 12px 16px; cursor: pointer;
+           transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.tl-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--whimsy); }
+.tl-head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.tl-week { font-weight: 700; font-size: 15px; }
+.tl-date, .tl-count { color: var(--muted); font-size: 12px; }
+.tl-trend { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+.tl-awards { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; font-size: 12px; color: var(--ink-2); }
+.tl-top3 { margin-top: 6px; font-size: 12.5px; color: var(--ink-2); }
+/* 分享 */
+#share-fab { position: fixed; right: 22px; bottom: 22px; z-index: 20;
+  width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border);
+  background: var(--surface); box-shadow: var(--shadow); cursor: pointer; font-size: 20px; }
+#share-panel { position: fixed; right: 22px; bottom: 80px; z-index: 20; display: none;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: var(--shadow); padding: 14px; width: 230px; text-align: center; }
+#share-panel.open { display: block; }
+#qr-canvas { width: 160px; height: 160px; image-rendering: pixelated;
+             background: #fff; padding: 6px; border-radius: 8px; }
+.share-hint { font-size: 11.5px; color: var(--muted); margin: 6px 0 10px; }
+.share-row { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+.share-row a, .share-row button { border: 1px solid var(--grid); background: var(--page);
+  color: var(--ink-2); text-decoration: none; border-radius: 8px; padding: 4px 8px;
+  font-size: 12px; cursor: pointer; }
 </style>
 </head>
 <body>
 <header>
   <h1>AI 周报</h1>
-  <span class="sub">天马行空 · 有趣 · 有钱途 — 每周五自动收集</span>
+  <span class="sub" data-ui="sub"></span>
   <div class="head-links">
-    <a href="feed.xml" title="RSS 订阅">📡 RSS</a>
-    <button id="theme-toggle" type="button">🌓 主题</button>
+    <button id="nav-archive" type="button"></button>
+    <a href="feed.xml" title="RSS">📡 RSS</a>
+    <button id="theme-toggle" type="button">🌓</button>
   </div>
 </header>
-<div class="banner" id="trend" hidden>
-  <span class="label">🧭 <span data-i18n="trend">本周风向</span></span><span id="trend-text"></span>
-  <div class="awards" id="awards"></div>
+
+<div id="week-view">
+  <div class="banner" id="trend" hidden>
+    <span class="label">🧭 <span data-ui="trend"></span></span><span id="trend-text"></span>
+    <button id="trend-deep-btn" type="button"></button>
+    <div id="trend-deep" hidden></div>
+    <div class="awards" id="awards"></div>
+  </div>
+  <section class="fold"><details id="quadrant-det" open>
+    <summary data-ui="quadrant"></summary>
+    <div id="quadrant-wrap"></div>
+  </details></section>
+  <section class="fold liftoff"><details id="liftoff" hidden>
+    <summary data-ui="liftoff"></summary>
+    <table><thead><tr id="liftoff-head"></tr></thead><tbody id="liftoff-body"></tbody></table>
+  </details></section>
+  <div class="filters">
+    <label data-ui="week"></label><select id="f-week"></select>
+    <label data-ui="source"></label><select id="f-source"></select>
+    <label data-ui="tag"></label><select id="f-tag"></select>
+    <label data-ui="sort"></label><select id="f-sort"></select>
+    <span class="lang-switch" id="lang-switch">
+      <button data-lang="zh" class="on">中</button><button data-lang="en">EN</button>
+    </span>
+    <input id="f-q" type="search">
+  </div>
+  <div class="count" id="count"></div>
+  <main id="cards"></main>
 </div>
-<details class="liftoff" id="liftoff" hidden>
-  <summary>🚀 起飞榜 — 历史高分项目 star 增长追踪</summary>
-  <table><thead><tr><th>项目</th><th>入库时 ★</th><th>当前 ★</th><th>增幅</th><th>收录周</th></tr></thead>
-  <tbody id="liftoff-body"></tbody></table>
-</details>
-<div class="filters">
-  <label>周</label><select id="f-week"></select>
-  <label>来源</label><select id="f-source"><option value="all">全部</option></select>
-  <label>排序</label>
-  <select id="f-sort">
-    <option value="total">总分</option><option value="whimsy">天马行空</option>
-    <option value="fun">有趣</option><option value="money">有钱途</option>
-  </select>
-  <span class="lang-switch" id="lang-switch">
-    <button data-lang="zh" class="on">中</button><button data-lang="en">EN</button>
-  </span>
-  <input id="f-q" type="search" placeholder="搜索名称 / 描述 / 解读…">
+
+<div id="archive-view">
+  <h2 data-ui="archiveTitle"></h2>
+  <div class="timeline" id="timeline"></div>
 </div>
-<div class="count" id="count"></div>
-<main id="cards"></main>
+
+<div id="q-tip"></div>
+<button id="share-fab" type="button" title="Share">📤</button>
+<div id="share-panel">
+  <canvas id="qr-canvas" width="160" height="160"></canvas>
+  <div class="share-hint" data-ui="scanQr"></div>
+  <div class="share-row" id="share-links"></div>
+</div>
+
 <script>
-const DIMS = [["whimsy","天马行空"],["fun","有趣"],["money","有钱途"]];
-const DEEP_TITLES = {zh: {what: "是什么", why: "为什么值得看", biz: "商业潜力与风险"},
-                     en: {what: "What it is", why: "Why it matters", biz: "Business & risks"}};
+const SITE_URL = "https://ikevinxie.github.io/ai-weekly-radar";
+const DIM_KEYS = ["whimsy", "fun", "money"];
 const SOURCE_LABELS = {github:"GitHub", hackernews:"Hacker News", producthunt:"Product Hunt",
                        arxiv:"arXiv", huggingface:"Hugging Face", reddit:"Reddit"};
+const TAG_EN = {"agent":"Agent","视频":"Video","语音":"Voice","图像":"Image","文本":"Text",
+  "编码":"Coding","安全":"Security","基建":"Infra","硬件":"Hardware","机器人":"Robotics",
+  "论文":"Paper","数据":"Data","效率":"Productivity","创意":"Creative","社区":"Community",
+  "商业":"Business","教育":"Education","金融":"Finance","游戏":"Gaming","医疗":"Health"};
+const UI = {
+  zh: {sub:"天马行空 · 有趣 · 有钱途 — 每周五自动收集", archive:"📅 历史周报", back:"◀ 返回周报",
+    trend:"本周风向", trendDeepShow:"展开深度分析 ▾", trendDeepHide:"收起深度分析 ▴",
+    quadrant:"🎯 本周象限图 — 天马行空 × 有钱途", liftoff:"🚀 起飞榜 — 历史高分项目 star 增长追踪",
+    week:"周", source:"来源", tag:"标签", sort:"排序", all:"全部", allWeeks:"全部周",
+    search:"搜索名称 / 描述 / 解读…", items:"个项目", totalOf:"总分", deep:"深度解读",
+    top10:"Top 10", noMatch:"没有匹配的项目", noData:"还没有数据", copyLink:"复制链接",
+    copied:"已复制 ✓", scanQr:"扫码打开当前页面", discuss:"讨论", weekRank:"周榜",
+    dims:{whimsy:"天马行空", fun:"有趣", money:"有钱途"},
+    deepTitles:{what:"是什么", why:"为什么值得看", biz:"商业潜力与风险"},
+    quad:["🚀 又疯又赚", "💼 闷声发财", "🎈 纯属好玩", "😴 安静路过"],
+    liftoffCols:["项目", "入库时 ★", "当前 ★", "增幅", "收录周"],
+    archiveTitle:"📅 历史周报时间线", top3:"当周 Top 3", points:"分"},
+  en: {sub:"Whimsical · Fun · Money-smelling — auto-collected every Friday", archive:"📅 Archive",
+    back:"◀ Back to weekly", trend:"This Week's Trend", trendDeepShow:"Show deep analysis ▾",
+    trendDeepHide:"Hide deep analysis ▴", quadrant:"🎯 Quadrant — Whimsy × Money",
+    liftoff:"🚀 Liftoff Board — star growth of past high scorers",
+    week:"Week", source:"Source", tag:"Tag", sort:"Sort", all:"All", allWeeks:"All weeks",
+    search:"Search name / description / analysis…", items:"projects", totalOf:"Total",
+    deep:"Deep dive", top10:"Top 10", noMatch:"No matching projects", noData:"No data yet",
+    copyLink:"Copy link", copied:"Copied ✓", scanQr:"Scan to open this page", discuss:"discuss",
+    weekRank:"rank", dims:{whimsy:"Whimsy", fun:"Fun", money:"Money"},
+    deepTitles:{what:"What it is", why:"Why it matters", biz:"Business & risks"},
+    quad:["🚀 Wild & rich", "💼 Quiet money", "🎈 Just for fun", "😴 Passing by"],
+    liftoffCols:["Project", "★ then", "★ now", "Growth", "Week"],
+    archiveTitle:"📅 Weekly Archive Timeline", top3:"Top 3", points:"pts"},
+};
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g,
   c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const t = () => UI[LANG];
 
-const saved = localStorage.getItem("theme");
-if (saved) document.documentElement.dataset.theme = saved;
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) document.documentElement.dataset.theme = savedTheme;
 $("theme-toggle").onclick = () => {
   const dark = getComputedStyle(document.documentElement).getPropertyValue("--page").trim() === "#0d0d0d";
   const next = dark ? "light" : "dark";
@@ -157,127 +276,333 @@ $("theme-toggle").onclick = () => {
   localStorage.setItem("theme", next);
 };
 
-let WEEKS = [], LIFTOFF = [], CURRENT = [], LANG = localStorage.getItem("lang") || "zh";
+let WEEKS = [], LIFTOFF = [], QR_SITE = [], CURRENT = [], AWARD_BY_ID = {};
+let LANG = localStorage.getItem("lang") || "zh";
 const weekCache = {};
 
 async function fetchWeek(week) {
   if (!weekCache[week]) weekCache[week] = await (await fetch(`data/${week}.json`)).json();
   return weekCache[week];
 }
+const weekInfo = () => WEEKS.find(w => w.week === $("f-week").value);
+const inArchive = () => location.hash === "#archive";
+
+function applyUiStrings() {
+  document.documentElement.lang = LANG === "zh" ? "zh-CN" : "en";
+  document.querySelectorAll("[data-ui]").forEach(el => {
+    const val = t()[el.dataset.ui];
+    if (val) el.textContent = val;
+  });
+  $("nav-archive").textContent = inArchive() ? t().back : t().archive;
+  $("f-q").placeholder = t().search;
+  $("f-sort").innerHTML = [["total", t().totalOf], ...DIM_KEYS.map(k => [k, t().dims[k]])]
+    .map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
+  document.querySelectorAll("#lang-switch button").forEach(b =>
+    b.classList.toggle("on", b.dataset.lang === LANG));
+}
+
+function tagLabel(tag) { return LANG === "zh" ? tag : (TAG_EN[tag] || tag); }
 
 function metricsLine(p) {
   const m = p.metrics || {};
   const parts = [];
   if (m.stars) parts.push(`★ ${m.stars}`);
-  if (m.points) parts.push(`▲ ${m.points} 分`);
+  if (m.points) parts.push(`▲ ${m.points}`);
   if (m.upvotes) parts.push(`▲ ${m.upvotes}`);
   if (m.likes) parts.push(`♥ ${m.likes}`);
-  if (m.week_rank) parts.push(`周榜 #${m.week_rank}`);
+  if (m.week_rank) parts.push(`${t().weekRank} #${m.week_rank}`);
   if (m.subreddit) parts.push(`r/${esc(m.subreddit)}`);
   if (m.comments) parts.push(`💬 ${m.comments}`);
   return parts.join(" · ");
 }
 
 function card(p) {
-  const bars = DIMS.map(([key, label]) => `
-    <span class="dim">${label}</span>
+  const bars = DIM_KEYS.map(key => `
+    <span class="dim">${t().dims[key]}</span>
     <span class="track"><span class="fill" style="width:${(p.scores[key] || 0) * 10}%;background:var(--${key})"></span></span>
     <span class="val">${p.scores[key]}</span>`).join("");
   const discuss = (p.metrics || {}).hn_link || (p.metrics || {}).reddit_link;
   const analysis = (p.analysis || {})[LANG];
   const dd = (p.deep_dive || {})[LANG];
-  const deepHtml = dd ? `<details class="deep"><summary>🔥 ${LANG === "zh" ? "深度解读" : "Deep dive"}</summary>
-      ${["what","why","biz"].map(k => `<h4>${DEEP_TITLES[LANG][k]}</h4><p>${esc(dd[k])}</p>`).join("")}
+  const medals = (AWARD_BY_ID[p.id] || []).map(a =>
+    `<span class="medal" title="${esc(a.title[LANG] || a.title.zh)}">${a.emoji}</span>`).join("");
+  const topics = (p.tags || []).map(tag =>
+    `<button class="topic" data-tag="${esc(tag)}" type="button">#${esc(tagLabel(tag))}</button>`).join("");
+  const deepHtml = dd ? `<details class="deep"><summary>🔍 ${t().deep}</summary>
+      ${["what","why","biz"].map(k => `<h4>${t().deepTitles[k]}</h4><p>${esc(dd[k])}</p>`).join("")}
     </details>` : "";
   return `<article class="card" id="${esc(p.id)}">
     <div class="card-head">
       <a class="name" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
-      ${p.deep_dive ? '<span class="hot">🔥 Top 10</span>' : ""}
+      ${p.rank && p.rank <= 10 ? `<span class="hot">🔥 ${t().top10}</span>` : ""}
+      ${medals}
       <span class="tag">${SOURCE_LABELS[p.source] || esc(p.source)}</span>
     </div>
     <p class="reason">${esc(p.reason)}</p>
     ${analysis ? `<p class="analysis">${esc(analysis)}</p>` : ""}
     ${deepHtml}
+    ${topics ? `<div class="topics">${topics}</div>` : ""}
     <div class="scores">${bars}</div>
     <div class="total-row">
-      <span class="total">总分 ${p.scores.total} / 30</span>
-      <span class="meta">${metricsLine(p)}${discuss ? ` · <a href="${esc(discuss)}" target="_blank" rel="noopener">讨论</a>` : ""} · ${p.week}</span>
+      <span class="total">${t().totalOf} ${p.scores.total} / 30</span>
+      <span class="meta">${metricsLine(p)}${discuss ? ` · <a href="${esc(discuss)}" target="_blank" rel="noopener">${t().discuss}</a>` : ""} · ${p.week}</span>
     </div>
   </article>`;
 }
 
-function renderBanner(weekInfo) {
-  if (!weekInfo) { $("trend").hidden = true; return; }
-  const trend = (weekInfo.trend || {})[LANG] || (weekInfo.trend || {}).zh;
-  const byId = Object.fromEntries(CURRENT.map(p => [p.id, p]));
-  const awardsHtml = (weekInfo.awards || []).map(a => {
-    const p = byId[a.project_id];
-    return `<span class="award" onclick="document.getElementById('${esc(a.project_id)}')?.scrollIntoView({behavior:'smooth'})">
-      ${a.emoji} <b>${esc(a.title[LANG] || a.title.zh)}</b>${p ? " · " + esc(p.name) : ""}</span>`;
-  }).join("");
-  $("trend-text").textContent = trend || "";
-  $("awards").innerHTML = awardsHtml;
-  $("trend").hidden = !trend && !awardsHtml;
+function scrollToCard(pid) {
+  const el = document.getElementById(pid);
+  if (!el) return;
+  el.scrollIntoView({behavior: "smooth", block: "center"});
+  el.classList.add("flash");
+  setTimeout(() => el.classList.remove("flash"), 1600);
 }
 
+function renderBanner(info) {
+  if (!info) { $("trend").hidden = true; return; }
+  const trend = (info.trend || {})[LANG] || (info.trend || {}).zh;
+  const deep = ((info.trend || {}).deep || {})[LANG] || ((info.trend || {}).deep || {}).zh;
+  const awardsHtml = (info.awards || []).map(a => `<span class="award" data-pid="${esc(a.project_id)}">
+      ${a.emoji} <b>${esc(a.title[LANG] || a.title.zh)}</b>${a.project_name ? " · " + esc(a.project_name) : ""}</span>`).join("");
+  $("trend-text").textContent = trend || "";
+  $("trend-deep").hidden = true;
+  $("trend-deep").textContent = deep || "";
+  $("trend-deep-btn").textContent = t().trendDeepShow;
+  $("trend-deep-btn").style.display = deep ? "" : "none";
+  $("awards").innerHTML = awardsHtml;
+  document.querySelectorAll("#awards .award").forEach(el =>
+    el.onclick = () => scrollToCard(el.dataset.pid));
+  $("trend").hidden = !trend && !awardsHtml;
+}
+$("trend-deep-btn").onclick = () => {
+  const box = $("trend-deep");
+  box.hidden = !box.hidden;
+  $("trend-deep-btn").textContent = box.hidden ? t().trendDeepShow : t().trendDeepHide;
+};
+
 function renderLiftoff() {
-  if (!LIFTOFF.length) { $("liftoff").hidden = true; return; }
-  $("liftoff").hidden = false;
-  $("liftoff-body").innerHTML = LIFTOFF.slice(0, 10).map(r => `<tr>
-    <td><a class="name" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a></td>
+  const det = $("liftoff");
+  if (!LIFTOFF.length) { det.hidden = true; return; }
+  det.hidden = false;
+  $("liftoff-head").innerHTML = t().liftoffCols.map(c => `<th>${c}</th>`).join("");
+  $("liftoff-body").innerHTML = LIFTOFF.slice(0, 10).map(r => {
+    const intro = LANG === "zh" ? (r.reason || "") : ((r.analysis || {}).en || r.reason || "");
+    return `<tr>
+    <td><a class="name" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>
+      ${intro ? `<div class="intro">${esc(intro)}</div>` : ""}</td>
     <td class="num">${r.stars_then}</td><td class="num">${r.stars_now}</td>
-    <td class="num">×${r.ratio}</td><td>${esc(r.week)}</td></tr>`).join("");
+    <td class="num">×${r.ratio}</td><td class="num">${esc(r.week)}</td></tr>`;
+  }).join("");
+}
+
+function hash32(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return (h >>> 0) / 4294967295;
+}
+
+function renderQuadrant() {
+  const W = 720, H = 460, P = 44;
+  const sx = v => P + v / 10 * (W - 2 * P);
+  const sy = v => H - P - v / 10 * (H - 2 * P);
+  const pts = CURRENT.map(p => {
+    const jx = (hash32(p.id) - 0.5) * 0.62, jy = (hash32(p.id + "y") - 0.5) * 0.62;
+    return {p, x: sx(Math.min(10, Math.max(0, p.scores.whimsy + jx))),
+            y: sy(Math.min(10, Math.max(0, p.scores.money + jy)))};
+  });
+  const awarded = new Set(Object.keys(AWARD_BY_ID));
+  const labels = pts.filter(o => awarded.has(o.p.id)).slice(0, 6).map(o =>
+    `<text class="q-name" x="${o.x + 8}" y="${o.y + 3}">${esc(o.p.name.slice(0, 22))}</text>`).join("");
+  const [q1, q2, q3, q4] = t().quad;
+  $("quadrant-wrap").innerHTML = `<svg id="quadrant" viewBox="0 0 ${W} ${H}" role="img">
+    <line x1="${P}" y1="${sy(5)}" x2="${W - P}" y2="${sy(5)}" stroke="var(--grid)" stroke-dasharray="4 4"/>
+    <line x1="${sx(5)}" y1="${P}" x2="${sx(5)}" y2="${H - P}" stroke="var(--grid)" stroke-dasharray="4 4"/>
+    <line x1="${P}" y1="${H - P}" x2="${W - P}" y2="${H - P}" stroke="var(--grid)"/>
+    <line x1="${P}" y1="${P}" x2="${P}" y2="${H - P}" stroke="var(--grid)"/>
+    <text class="q-axis" x="${W - P}" y="${H - P + 26}" text-anchor="end">${t().dims.whimsy} →</text>
+    <text class="q-axis" x="${P - 30}" y="${P - 12}">${t().dims.money} ↑</text>
+    <text class="q-label" x="${W - P - 4}" y="${P + 12}" text-anchor="end">${q1}</text>
+    <text class="q-label" x="${P + 4}" y="${P + 12}">${q2}</text>
+    <text class="q-label" x="${W - P - 4}" y="${H - P - 8}" text-anchor="end">${q3}</text>
+    <text class="q-label" x="${P + 4}" y="${H - P - 8}">${q4}</text>
+    ${pts.map(o => `<circle class="q-dot" r="5.5" cx="${o.x}" cy="${o.y}" data-pid="${esc(o.p.id)}"/>`).join("")}
+    ${labels}
+  </svg>`;
+  const tip = $("q-tip");
+  document.querySelectorAll(".q-dot").forEach(dot => {
+    const p = CURRENT.find(x => x.id === dot.dataset.pid);
+    dot.onmousemove = e => {
+      tip.style.display = "block";
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - 280) + "px";
+      tip.style.top = (e.clientY + 14) + "px";
+      tip.innerHTML = `<b>${esc(p.name)}</b><br>${DIM_KEYS.map(k =>
+        `${t().dims[k]} ${p.scores[k]}`).join(" · ")}`;
+    };
+    dot.onmouseleave = () => tip.style.display = "none";
+    dot.onclick = () => { tip.style.display = "none"; scrollToCard(p.id); };
+  });
 }
 
 function render() {
-  const source = $("f-source").value, sort = $("f-sort").value,
-        q = $("f-q").value.trim().toLowerCase();
+  const source = $("f-source").value, tag = $("f-tag").value,
+        sort = $("f-sort").value, q = $("f-q").value.trim().toLowerCase();
   let rows = CURRENT.filter(p =>
     (source === "all" || p.source === source) &&
+    (tag === "all" || (p.tags || []).includes(tag)) &&
     (!q || `${p.name} ${p.description} ${p.reason} ${JSON.stringify(p.analysis || "")}`.toLowerCase().includes(q)));
   rows = [...rows].sort((a, b) => (b.scores[sort] ?? 0) - (a.scores[sort] ?? 0)
                                   || b.scores.total - a.scores.total);
-  $("cards").innerHTML = rows.map(card).join("") || `<div class="empty">没有匹配的项目</div>`;
-  $("count").textContent = `${rows.length} 个项目`;
+  $("cards").innerHTML = rows.map(card).join("") || `<div class="empty">${t().noMatch}</div>`;
+  $("count").textContent = `${rows.length} ${t().items}`;
+  document.querySelectorAll(".topic").forEach(el => el.onclick = () => {
+    $("f-tag").value = el.dataset.tag;
+    render();
+  });
+}
+
+function rebuildFilters() {
+  const keep = (sel, val) => [...sel.options].some(o => o.value === val) ? val : "all";
+  const src = $("f-source").value, tg = $("f-tag").value;
+  const sources = [...new Set(CURRENT.map(p => p.source))].sort();
+  $("f-source").innerHTML = `<option value="all">${t().all}</option>` +
+    sources.map(s => `<option value="${s}">${SOURCE_LABELS[s] || s}</option>`).join("");
+  $("f-source").value = keep($("f-source"), src);
+  const tags = [...new Set(CURRENT.flatMap(p => p.tags || []))].sort();
+  $("f-tag").innerHTML = `<option value="all">${t().all}</option>` +
+    tags.map(x => `<option value="${x}">#${tagLabel(x)}</option>`).join("");
+  $("f-tag").value = keep($("f-tag"), tg);
 }
 
 async function loadWeek(week) {
   CURRENT = week === "all"
     ? (await Promise.all(WEEKS.map(w => fetchWeek(w.week)))).flat()
     : await fetchWeek(week);
-  const sources = [...new Set(CURRENT.map(p => p.source))].sort();
-  const cur = $("f-source").value;
-  $("f-source").innerHTML = `<option value="all">全部</option>` +
-    sources.map(s => `<option value="${s}">${SOURCE_LABELS[s] || s}</option>`).join("");
-  if ([...$("f-source").options].some(o => o.value === cur)) $("f-source").value = cur;
-  renderBanner(week === "all" ? null : WEEKS.find(w => w.week === week));
+  const info = week === "all" ? null : weekInfo();
+  AWARD_BY_ID = {};
+  for (const a of (info?.awards || [])) (AWARD_BY_ID[a.project_id] ??= []).push(a);
+  rebuildFilters();
+  renderBanner(info);
+  renderQuadrant();
   render();
+  renderShare();
 }
+
+function renderArchive() {
+  $("timeline").innerHTML = WEEKS.map(w => {
+    const trend = (w.trend || {})[LANG] || (w.trend || {}).zh || "";
+    const awards = (w.awards || []).map(a =>
+      `<span>${a.emoji} ${esc(a.title[LANG] || a.title.zh)} · ${esc(a.project_name)}</span>`).join("");
+    const top3 = (w.top3 || []).map((p, i) =>
+      `${i + 1}. ${esc(p.name)}（${p.total}${t().points}）`).join("　");
+    return `<div class="tl-item"><div class="tl-card" data-week="${w.week}">
+      <div class="tl-head"><span class="tl-week">${w.week}</span>
+        <span class="tl-date">${w.date || ""}</span>
+        <span class="tl-count">${w.count} ${t().items}</span></div>
+      ${trend ? `<div class="tl-trend">🧭 ${esc(trend)}</div>` : ""}
+      ${top3 ? `<div class="tl-top3">${t().top3}: ${top3}</div>` : ""}
+      ${awards ? `<div class="tl-awards">${awards}</div>` : ""}
+    </div></div>`;
+  }).join("") || `<div class="empty">${t().noData}</div>`;
+  document.querySelectorAll(".tl-card").forEach(el =>
+    el.onclick = () => { location.hash = el.dataset.week; });
+}
+
+/* ---- 分享 ---- */
+function currentShare() {
+  if (inArchive()) return {url: SITE_URL + "/#archive", qr: QR_SITE};
+  const info = weekInfo();
+  if (info) return {url: `${SITE_URL}/#${info.week}`, qr: info.qr || QR_SITE};
+  return {url: SITE_URL + "/", qr: QR_SITE};
+}
+
+function drawQr(rows) {
+  const canvas = $("qr-canvas");
+  const ctx = canvas.getContext("2d");
+  const n = rows.length;
+  const scale = Math.floor(160 / n) || 1;
+  canvas.width = canvas.height = n * scale;
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#000000";
+  for (let r = 0; r < n; r++)
+    for (let c = 0; c < n; c++)
+      if (rows[r][c] === "1") ctx.fillRect(c * scale, r * scale, scale, scale);
+}
+
+function renderShare() {
+  const {url, qr} = currentShare();
+  if (qr && qr.length) drawQr(qr);
+  const text = document.title;
+  const enc = encodeURIComponent;
+  $("share-links").innerHTML = `
+    <button id="copy-link" type="button">🔗 ${t().copyLink}</button>
+    <a href="https://service.weibo.com/share/share.php?url=${enc(url)}&title=${enc(text)}" target="_blank" rel="noopener">微博</a>
+    <a href="https://twitter.com/intent/tweet?url=${enc(url)}&text=${enc(text)}" target="_blank" rel="noopener">X</a>
+    <a href="https://t.me/share/url?url=${enc(url)}&text=${enc(text)}" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=${enc(url)}" target="_blank" rel="noopener">LinkedIn</a>`;
+  $("copy-link").onclick = async () => {
+    try { await navigator.clipboard.writeText(url); } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = url; document.body.appendChild(ta); ta.select();
+      document.execCommand("copy"); ta.remove();
+    }
+    $("copy-link").textContent = t().copied;
+    setTimeout(renderShare, 1200);
+  };
+}
+$("share-fab").onclick = () => $("share-panel").classList.toggle("open");
+document.addEventListener("click", e => {
+  if (!$("share-panel").contains(e.target) && e.target !== $("share-fab"))
+    $("share-panel").classList.remove("open");
+});
+
+/* ---- 路由 ---- */
+async function route() {
+  applyUiStrings();
+  if (inArchive()) {
+    $("week-view").style.display = "none";
+    $("archive-view").style.display = "block";
+    renderArchive();
+  } else {
+    $("archive-view").style.display = "none";
+    $("week-view").style.display = "block";
+    const hashWeek = location.hash.replace("#", "");
+    if (WEEKS.some(w => w.week === hashWeek)) $("f-week").value = hashWeek;
+    else if (hashWeek === "all") $("f-week").value = "all";
+    await loadWeek($("f-week").value);
+  }
+  renderShare();
+}
+
+$("nav-archive").onclick = () => {
+  location.hash = inArchive() ? ($("f-week").value || "") : "archive";
+};
+window.addEventListener("hashchange", route);
 
 async function init() {
   const meta = await (await fetch("data/weeks.json")).json();
   WEEKS = meta.weeks || [];
   LIFTOFF = meta.liftoff || [];
-  if (!WEEKS.length) { $("cards").innerHTML = `<div class="empty">还没有数据</div>`; return; }
+  QR_SITE = meta.qr_site || [];
+  applyUiStrings();
+  if (!WEEKS.length) { $("cards").innerHTML = `<div class="empty">${t().noData}</div>`; return; }
   $("f-week").innerHTML = WEEKS.map(w => `<option value="${w.week}">${w.week}</option>`).join("")
-                          + `<option value="all">全部周</option>`;
-  const hashWeek = location.hash.replace("#", "");
-  if (WEEKS.some(w => w.week === hashWeek)) $("f-week").value = hashWeek;
+                          + `<option value="all">${t().allWeeks}</option>`;
   renderLiftoff();
   document.querySelectorAll("#lang-switch button").forEach(b => {
-    b.classList.toggle("on", b.dataset.lang === LANG);
     b.onclick = () => {
       LANG = b.dataset.lang; localStorage.setItem("lang", LANG);
-      document.querySelectorAll("#lang-switch button").forEach(x =>
-        x.classList.toggle("on", x.dataset.lang === LANG));
-      renderBanner($("f-week").value === "all" ? null : WEEKS.find(w => w.week === $("f-week").value));
-      render();
+      applyUiStrings(); renderLiftoff();
+      if (inArchive()) renderArchive();
+      else { rebuildFilters(); renderBanner($("f-week").value === "all" ? null : weekInfo());
+             renderQuadrant(); render(); }
+      renderShare();
     };
   });
-  $("f-week").onchange = () => { location.hash = $("f-week").value; loadWeek($("f-week").value); };
-  for (const id of ["f-source", "f-sort"]) $(id).onchange = render;
+  $("f-week").onchange = () => { location.hash = $("f-week").value; };
+  for (const id of ["f-source", "f-tag", "f-sort"]) $(id).onchange = render;
   $("f-q").oninput = render;
-  await loadWeek($("f-week").value);
+  await route();
 }
 init();
 </script>

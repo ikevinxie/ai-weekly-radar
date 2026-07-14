@@ -1,10 +1,10 @@
 """LLM 评分环节：prompt 模板、评分文件校验、评分合并。
 
-v2 评分文件 data/scored/<week>.json 是对象（见 SPEC.md「评分文件格式」）：
-    {"week": "...", "trend": {"zh": "...", "en": "..."},
-     "entries": [{"id", "scores", "reason", "analysis", "deep_dive"?}, ...]}
-deep_dive 仅出现在总分 Top 10（并列按 id 字典序）。
-v1 纯数组格式仅在合并历史数据时兼容读取。
+v3 评分文件 data/scored/<week>.json 是对象（见 SPEC.md「评分文件格式」）：
+    {"week": "...", "trend": {"zh", "en", "deep": {"zh", "en"}},
+     "entries": [{"id", "scores", "reason", "analysis", "deep_dive", "tags"}, ...]}
+全部条目必须有 deep_dive 与 1-3 个词表内 tags。
+v1/v2 旧格式仅在合并历史数据时兼容读取。
 """
 from __future__ import annotations
 
@@ -12,9 +12,12 @@ import json
 
 from .schema import validate_scores
 
-DEEP_DIVE_COUNT = 10
+TOP_BADGE_COUNT = 10
 DEEP_DIVE_KEYS = ("what", "why", "biz")
 LANGS = ("zh", "en")
+TAGS = ("agent", "视频", "语音", "图像", "文本", "编码", "安全", "基建", "硬件", "机器人",
+        "论文", "数据", "效率", "创意", "社区", "商业", "教育", "金融", "游戏", "医疗")
+MAX_TAGS = 3
 
 PROMPT_TEMPLATE = """\
 你是「每周 AI 项目收集器」的评审。请对下面 {count} 个候选项目逐一评分并撰写双语解读。
@@ -30,19 +33,18 @@ PROMPT_TEMPLATE = """\
 
 1. reason：一句中文推荐钩子（20-60 字，说人话，突出它为什么值得看）
 2. analysis：双语简读，zh 和 en 各 2-3 句——比 reason 更具体：它做了什么、亮点/局限是什么
-
-## Top 10 深度解读（deep_dive）
-
-全部打分后，按 total 降序（并列按 id 字典序升序）取前 {deep_dive_count} 个项目，
-**恰好这 {deep_dive_count} 个**要多写 deep_dive（其余项目不允许有此字段），中英各三段：
-- what：它是什么、怎么运作（3-5 句）
-- why：为什么值得关注、放在本周/行业背景里看意味着什么（3-5 句）
-- biz：商业潜力与风险——市场、变现路径、竞争与隐忧（3-5 句）
+3. deep_dive：双语深度解读，中英各三段：
+   - what：它是什么、怎么运作（3-5 句）
+   - why：为什么值得关注、放在本周/行业背景里看意味着什么（3-5 句）
+   - biz：商业潜力与风险——市场、变现路径、竞争与隐忧（3-5 句）
+4. tags：1-{max_tags} 个主题标签，只能从这个词表里选：
+   {tags}
 
 ## 本周风向（trend）
 
-纵览全部候选，写一段本周趋势归纳（zh 和 en 各 3-5 句）：哪些主题扎堆出现、
-风往哪吹、有什么值得玩味的信号。
+纵览全部候选，写本周趋势归纳：
+- zh / en：概览版各 3-5 句——哪些主题扎堆出现、风往哪吹、有什么值得玩味的信号
+- deep.zh / deep.en：深度版各 5-8 句——主题展开、点名代表项目串讲、下周值得盯什么
 
 ## 输出
 
@@ -50,14 +52,15 @@ PROMPT_TEMPLATE = """\
 
 {{
   "week": "{week}",
-  "trend": {{"zh": "...", "en": "..."}},
+  "trend": {{"zh": "...", "en": "...", "deep": {{"zh": "...", "en": "..."}}}},
   "entries": [{{
     "id": "<候选id>",
     "scores": {{"whimsy": 0, "fun": 0, "money": 0, "total": 0}},
     "reason": "...",
     "analysis": {{"zh": "...", "en": "..."}},
     "deep_dive": {{"zh": {{"what": "...", "why": "...", "biz": "..."}},
-                  "en": {{"what": "...", "why": "...", "biz": "..."}}}}
+                  "en": {{"what": "...", "why": "...", "biz": "..."}}}},
+    "tags": ["agent"]
   }}]
 }}
 
@@ -77,11 +80,11 @@ def build_prompt(candidates: list[dict], week: str, output_path: str) -> str:
         lines.append(f"- id: {p['id']}\n  名称: {p['name']}\n  来源: {p['source']} ({metrics})\n"
                      f"  链接: {p['url']}\n  描述: {p.get('description') or '(无)'}")
     return PROMPT_TEMPLATE.format(count=len(candidates), week=week,
-                                  deep_dive_count=DEEP_DIVE_COUNT,
+                                  max_tags=MAX_TAGS, tags=" ".join(TAGS),
                                   output_path=output_path, candidates="\n".join(lines))
 
 
-def top_ids(entries: list[dict], count: int = DEEP_DIVE_COUNT) -> set[str]:
+def top_ids(entries: list[dict], count: int = TOP_BADGE_COUNT) -> set[str]:
     """总分降序、并列按 id 字典序升序，取前 count 个 id。"""
     def key(e):
         scores = e.get("scores") or {}
@@ -134,7 +137,10 @@ def validate_scored(candidates: list[dict], scored) -> list[str]:
     errors = []
     if not isinstance(scored.get("week"), str) or not scored["week"].strip():
         errors.append("缺少 week 字段")
-    errors.extend(_validate_bilingual(scored.get("trend"), "trend", "trend"))
+    trend = scored.get("trend")
+    errors.extend(_validate_bilingual(trend, "trend", "trend"))
+    if isinstance(trend, dict):
+        errors.extend(_validate_bilingual(trend.get("deep"), "trend", "trend.deep"))
     entries = scored.get("entries")
     if not isinstance(entries, list):
         errors.append("entries 必须是数组")
@@ -158,19 +164,22 @@ def validate_scored(candidates: list[dict], scored) -> list[str]:
         valid_entries.append(entry)
         errors.extend(validate_scores(entry, entry_id))
         errors.extend(_validate_bilingual(entry.get("analysis"), entry_id, "analysis"))
+        errors.extend(_validate_deep_dive(entry.get("deep_dive"), entry_id))
+        errors.extend(_validate_tags(entry.get("tags"), entry_id))
     for entry_id in sorted(candidate_ids - seen):
         errors.append(f"{entry_id}: 缺少评分")
+    return errors
 
-    expected_deep = top_ids(valid_entries)
-    for entry in valid_entries:
-        entry_id = entry["id"]
-        if entry_id in expected_deep:
-            if "deep_dive" not in entry:
-                errors.append(f"{entry_id}: 总分 Top {DEEP_DIVE_COUNT}，缺少 deep_dive")
-            else:
-                errors.extend(_validate_deep_dive(entry["deep_dive"], entry_id))
-        elif "deep_dive" in entry:
-            errors.append(f"{entry_id}: 不在总分 Top {DEEP_DIVE_COUNT}，不应有 deep_dive")
+
+def _validate_tags(tags, ident: str) -> list[str]:
+    if not isinstance(tags, list) or not 1 <= len(tags) <= MAX_TAGS:
+        return [f"{ident}: tags 必须是 1-{MAX_TAGS} 个标签的数组"]
+    errors = []
+    for tag in tags:
+        if tag not in TAGS:
+            errors.append(f"{ident}: 标签 {tag!r} 不在词表内（见 SPEC.md「标签词表」）")
+    if len(set(tags)) != len(tags):
+        errors.append(f"{ident}: tags 有重复")
     return errors
 
 
@@ -185,7 +194,7 @@ def merge_scored(candidates: list[dict], scored) -> list[dict]:
         full = dict(p)
         full["scores"] = entry["scores"]
         full["reason"] = entry["reason"]
-        for extra in ("analysis", "deep_dive"):
+        for extra in ("analysis", "deep_dive", "tags"):
             if extra in entry:
                 full[extra] = entry[extra]
         merged.append(full)

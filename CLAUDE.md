@@ -31,4 +31,5 @@ python3 -m pytest                     # 全量测试
 - 纯 Python 标准库，无第三方运行时依赖（pytest 仅用于开发）
 - `docs/` 整个目录是生成产物，不要手改；改样式/交互去 `collector/report.py`
 - `data/` 下的 JSON 是数据资产，谨慎删改
+- 项目标签只能取 SPEC.md「标签词表」里的值；要加新标签先改 SPEC
 - **本仓库是公开的**：飞书 webhook 等秘密只放环境变量或 `~/.config/ai-weekly-radar/`，绝不写进仓库内任何文件

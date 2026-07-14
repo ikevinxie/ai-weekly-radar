@@ -76,9 +76,10 @@ def build_card(week: str, trend_zh: str, top10: list[dict], awards: list[dict],
         "msg_type": "interactive",
         "card": {
             "config": {"wide_screen_mode": True},
+            # 标题必须含字面量「AI项目」：机器人配置了关键词校验（见 SPEC.md「飞书推送」）
             "header": {"template": "blue",
                        "title": {"tag": "plain_text",
-                                 "content": f"AI 周报 {week} · 最值得看的 {len(top10)} 个项目"}},
+                                 "content": f"AI项目周报 {week} · 最值得看的 {len(top10)} 个项目"}},
             "elements": elements,
         },
     }

@@ -1,7 +1,8 @@
 import datetime
 
 from collector.schema import make_project
-from collector.scoring import build_prompt, merge_scored, top_ids, validate_scored
+from collector.scoring import (MAX_TAGS, TAGS, build_prompt, merge_scored, top_ids,
+                               validate_scored)
 
 
 def cand(pid, name="Robot painter"):
@@ -12,24 +13,25 @@ def cand(pid, name="Robot painter"):
     )
 
 
-def entry(pid, whimsy=8, fun=7, money=5, reason="脑洞大且能落地", deep=True):
-    e = {
+def entry(pid, whimsy=8, fun=7, money=5, reason="脑洞大且能落地", tags=("创意",)):
+    return {
         "id": f"github:{pid}", "reason": reason,
         "scores": {"whimsy": whimsy, "fun": fun, "money": money,
                    "total": whimsy + fun + money},
         "analysis": {"zh": "它用机械臂画画，思路大胆。", "en": "It paints with a robot arm; bold idea."},
-    }
-    if deep:
-        e["deep_dive"] = {
+        "deep_dive": {
             "zh": {"what": "机械臂绘画系统。", "why": "跨界结合罕见。", "biz": "艺术市场小众但溢价高。"},
             "en": {"what": "A robot-arm painting system.", "why": "Rare crossover.", "biz": "Niche art market."},
-        }
-    return e
+        },
+        "tags": list(tags),
+    }
 
 
 def scored_doc(entries, week="2026-W29"):
     return {"week": week,
-            "trend": {"zh": "本周智能体基建扎堆。", "en": "Agent infra everywhere this week."},
+            "trend": {"zh": "本周智能体基建扎堆。", "en": "Agent infra everywhere this week.",
+                      "deep": {"zh": "深度：基建、反噬经济、视频白嫖三条线。",
+                               "en": "Deep: infra, backlash economy, free video."}},
             "entries": entries}
 
 
@@ -41,10 +43,12 @@ class TestBuildPrompt:
         assert "data/scored/2026-W29.json" in prompt
         assert "validate 2026-W29" in prompt
 
-    def test_mentions_v2_requirements(self):
+    def test_mentions_v3_requirements(self):
         prompt = build_prompt([cand("a")], "2026-W29", "out.json")
-        for token in ("trend", "analysis", "deep_dive", "Top 10", "zh", "en"):
+        for token in ("trend", "analysis", "deep_dive", "tags", "deep.zh", "zh", "en"):
             assert token in prompt, token
+        for tag in TAGS:
+            assert tag in prompt
 
     def test_internal_links_excluded_from_metrics(self):
         c = cand("a")
@@ -62,20 +66,27 @@ class TestTopIds:
 
 
 class TestValidateScored:
-    def test_valid_v2(self):
+    def test_valid_v3(self):
         assert validate_scored([cand("a"), cand("b")], scored_doc([entry("a"), entry("b")])) == []
 
     def test_legacy_list_rejected_by_validate(self):
         errors = validate_scored([cand("a")], [entry("a")])
-        assert errors == ["评分文件必须是对象 {week, trend, entries}（v2 格式，见 SPEC.md）"]
+        assert len(errors) == 1 and "必须是对象" in errors[0]
 
     def test_missing_week_and_trend_lang(self):
         doc = scored_doc([entry("a")])
         del doc["week"]
-        doc["trend"] = {"zh": "只有中文"}
+        doc["trend"] = {"zh": "只有中文", "deep": {"zh": "深", "en": "deep"}}
         errors = validate_scored([cand("a")], doc)
         assert any("week" in e for e in errors)
         assert any("trend.en" in e for e in errors)
+
+    def test_trend_deep_required(self):
+        doc = scored_doc([entry("a")])
+        del doc["trend"]["deep"]
+        assert any("trend.deep" in e for e in validate_scored([cand("a")], doc))
+        doc["trend"]["deep"] = {"zh": "只有中文"}
+        assert any("trend.deep.en" in e for e in validate_scored([cand("a")], doc))
 
     def test_missing_candidate_and_unknown_and_duplicate(self):
         doc = scored_doc([entry("a"), entry("a"), entry("ghost")])
@@ -99,16 +110,11 @@ class TestValidateScored:
         errors = validate_scored([cand("a")], scored_doc([bad]))
         assert any("analysis.en" in e for e in errors)
 
-    def test_top10_missing_deep_dive(self):
-        errors = validate_scored([cand("a")], scored_doc([entry("a", deep=False)]))
-        assert any("缺少 deep_dive" in e for e in errors)
-
-    def test_non_top10_must_not_have_deep_dive(self):
-        candidates = [cand(f"p{i:02d}") for i in range(11)]
-        entries = [entry(f"p{i:02d}", whimsy=9) for i in range(10)]        # total 21 → Top 10
-        entries.append(entry("p10", whimsy=0, fun=0, money=0, deep=True))  # 第 11 名却带 deep_dive
-        errors = validate_scored(candidates, scored_doc(entries))
-        assert any("不应有 deep_dive" in e for e in errors)
+    def test_every_entry_requires_deep_dive(self):
+        bad = entry("a")
+        del bad["deep_dive"]
+        errors = validate_scored([cand("a")], scored_doc([bad]))
+        assert any("deep_dive" in e for e in errors)
 
     def test_deep_dive_missing_section(self):
         bad = entry("a")
@@ -118,15 +124,33 @@ class TestValidateScored:
         assert any("deep_dive.en.biz" in e for e in errors)
         assert any("deep_dive.zh.what" in e for e in errors)
 
+    def test_tags_required_and_bounded(self):
+        for bad_tags in (None, [], ["创意"] * (MAX_TAGS + 1), "创意"):
+            bad = entry("a")
+            bad["tags"] = bad_tags
+            if bad_tags is None:
+                del bad["tags"]
+            errors = validate_scored([cand("a")], scored_doc([bad]))
+            assert any("tags" in e for e in errors), bad_tags
+
+    def test_tags_must_be_in_vocabulary(self):
+        bad = entry("a", tags=("创意", "区块链"))
+        errors = validate_scored([cand("a")], scored_doc([bad]))
+        assert any("区块链" in e and "词表" in e for e in errors)
+
+    def test_duplicate_tags_rejected(self):
+        bad = entry("a", tags=("创意", "创意"))
+        assert any("重复" in e for e in validate_scored([cand("a")], scored_doc([bad])))
+
 
 class TestMergeScored:
-    def test_merges_v2_with_analysis_and_deep_dive(self):
+    def test_merges_v3_fields(self):
         candidates = [cand("low"), cand("high")]
-        doc = scored_doc([entry("low", 1, 1, 1, deep=False), entry("high", 9, 9, 9)])
+        doc = scored_doc([entry("low", 1, 1, 1), entry("high", 9, 9, 9, tags=("agent", "安全"))])
         merged = merge_scored(candidates, doc)
         assert [p["id"] for p in merged] == ["github:high", "github:low"]
         assert merged[0]["deep_dive"]["en"]["what"]
-        assert "deep_dive" not in merged[1]
+        assert merged[0]["tags"] == ["agent", "安全"]
         assert merged[1]["analysis"]["zh"]
         assert merged[0]["metrics"]["stars"] == 120   # 候选字段保留
 

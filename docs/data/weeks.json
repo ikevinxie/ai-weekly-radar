@@ -2,10 +2,15 @@
  "weeks": [
   {
    "week": "2026-W29",
+   "date": "2026-07-17",
    "count": 60,
    "trend": {
     "zh": "本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。第二个信号是「AI 反噬经济」的出现——帮人删 AI 烂代码的按周收费服务、清除产品 AI 味的工具、以及黑掉 AI 智能体赢赏金的竞技场，说明 AI 泛滥本身开始养活一批新生意。视频生成的白嫖需求依旧旺盛（Wan2.2 各种镜像霸榜 Hugging Face），而安全侧的提示注入攻击（GitLost 事件）给所有 agent 产品敲了警钟。",
-    "en": "The loudest signal this week is an agent-infrastructure boom: Microsoft shipped a visualization language for AI agents, Product Hunt surfaced an agent data marketplace and a headless iOS publishing pipeline, and a voice-first local orchestration runtime landed on GitHub — a full agent supply chain is taking shape. The second signal is the rise of an 'AI backlash economy': a $10k-a-week AI-code-deletion service, a tool that strips the 'AI look' from products, and an arena that pays bounties for hacking AI agents all show that AI oversupply is now feeding new businesses. Free video-generation demand stays hot (Wan2.2 mirrors dominate Hugging Face trending), while the GitLost prompt-injection disclosure is a warning shot for every agent product."
+    "en": "The loudest signal this week is an agent-infrastructure boom: Microsoft shipped a visualization language for AI agents, Product Hunt surfaced an agent data marketplace and a headless iOS publishing pipeline, and a voice-first local orchestration runtime landed on GitHub — a full agent supply chain is taking shape. The second signal is the rise of an 'AI backlash economy': a $10k-a-week AI-code-deletion service, a tool that strips the 'AI look' from products, and an arena that pays bounties for hacking AI agents all show that AI oversupply is now feeding new businesses. Free video-generation demand stays hot (Wan2.2 mirrors dominate Hugging Face trending), while the GitLost prompt-injection disclosure is a warning shot for every agent product.",
+    "deep": {
+     "zh": "把这 60 个项目摊开看，本周有三条清晰主线。第一条是「智能体基建大爆发」：微软的 Flint 给智能体造可视化表达语言、AgentKey 做智能体数据集市、NoMac.app 做智能体的 iOS 发布流水线、homerail 做语音优先的本地编排、Osaurus 做纯本地 Mac 智能体——从表达层、数据层、发布层到运行时，一条完整的 agent 供应链正在同一周里成形。第二条是「AI 反噬经济」的抬头：按周收一万美元帮企业删 AI 烂代码的服务、扫描并清除产品「AI 味」的 kill-ai-slop、以及黑掉 AI 智能体赢十万美元赏金的 Playground——AI 泛滥本身开始养活一批逆向生意。第三条是「生成消费的白热化」：Hugging Face 趋势榜被 Wan2.2 视频生成的各种加速镜像和 Qwen3-TTS、图像编辑器霸占，说明视频/语音/图像生成的免费体验需求远未被满足。安全侧的 GitLost 提示注入事件则给所有 agent 产品敲了警钟。下周值得盯的是：Flint 这类「智能体表达标准」会不会被跟进、以及本地化 agent（homerail/Osaurus）能不能借隐私焦虑跑出差异化。",
+     "en": "Laid out across all 60 projects, three clear storylines run through the week. First, an agent-infrastructure boom: Microsoft's Flint gives agents a visual expression language, AgentKey builds an agent data marketplace, NoMac.app a headless iOS pipeline for agents, homerail a voice-first local orchestrator, Osaurus a fully local Mac agent — expression, data, publishing, and runtime layers of a full agent supply chain all forming in one week. Second, the rise of an 'AI backlash economy': a $10k-a-week service to delete AI slop code, kill-ai-slop that scans and strips the 'AI look' from products, and Playground that pays $100k bounties for hacking agents — AI oversupply is now feeding reverse businesses. Third, red-hot generative consumption: Hugging Face trending is dominated by Wan2.2 video mirrors, Qwen3-TTS, and image editors, showing free generative demand for video/voice/image is far from saturated. On security, the GitLost prompt-injection incident is a warning shot for every agent product. Worth watching next week: whether 'agent expression standards' like Flint get followed, and whether local agents (homerail/Osaurus) can differentiate on privacy anxiety."
+    }
    },
    "awards": [
     {
@@ -15,7 +20,8 @@
       "zh": "本周最佳",
       "en": "Best of the Week"
      },
-     "project_id": "producthunt:1194641"
+     "project_id": "producthunt:1194641",
+     "project_name": "Playground"
     },
     {
      "key": "wildest",
@@ -24,7 +30,8 @@
       "zh": "最离谱奖",
       "en": "Wildest Idea"
      },
-     "project_id": "hackernews:48848425"
+     "project_id": "hackernews:48848425",
+     "project_name": "AI 2040: Plan A"
     },
     {
      "key": "quiet_money",
@@ -33,8 +40,101 @@
       "zh": "闷声发财奖",
       "en": "Quiet Money Maker"
      },
-     "project_id": "producthunt:1189393"
+     "project_id": "producthunt:1189393",
+     "project_name": "Yasmine Works"
+    },
+    {
+     "key": "dark_horse",
+     "emoji": "🐴",
+     "title": {
+      "zh": "黑马奖",
+      "en": "Dark Horse"
+     },
+     "project_id": "hackernews:48823359",
+     "project_name": "We charge $10k a week to delete AI-generated code"
+    },
+    {
+     "key": "hardcore",
+     "emoji": "🔬",
+     "title": {
+      "zh": "硬核奖",
+      "en": "Hardcore Research"
+     },
+     "project_id": "arxiv:2607.09653v1",
+     "project_name": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents"
+    },
+    {
+     "key": "funnest",
+     "emoji": "🎪",
+     "title": {
+      "zh": "最好玩奖",
+      "en": "Most Fun"
+     },
+     "project_id": "producthunt:1194641",
+     "project_name": "Playground"
+    },
+    {
+     "key": "polarized",
+     "emoji": "⚖️",
+     "title": {
+      "zh": "两极分化奖",
+      "en": "Most Polarizing"
+     },
+     "project_id": "hackernews:48848425",
+     "project_name": "AI 2040: Plan A"
     }
+   ],
+   "top3": [
+    {
+     "id": "producthunt:1194641",
+     "name": "Playground",
+     "total": 22
+    },
+    {
+     "id": "hackernews:48823359",
+     "name": "We charge $10k a week to delete AI-generated code",
+     "total": 21
+    },
+    {
+     "id": "github:cosmtrek/mindwalk",
+     "name": "cosmtrek/mindwalk",
+     "total": 20
+    }
+   ],
+   "qr": [
+    "111111100100100011111101001111111",
+    "100000100111000110100000001000001",
+    "101110101010001100001110101011101",
+    "101110101010000100101001101011101",
+    "101110101101111111110011101011101",
+    "100000101110000000100010001000001",
+    "111111101010101010101010101111111",
+    "000000001010001010110101000000000",
+    "101111100110010001001011101111100",
+    "010010011110010011011111001101101",
+    "100100100000111111001000100010110",
+    "001001010001110011100101001011110",
+    "011011110001001010011000110011010",
+    "010111010101110100110011101001111",
+    "111110110110111110001100111001110",
+    "110111001111110100011101111011100",
+    "000101100011100101000010010110001",
+    "001101011111010000111101001101101",
+    "100101110100111110101100000110110",
+    "100100010011000010011100010111111",
+    "110100100010000000101000010111010",
+    "100011010000101110001011001100001",
+    "101000100001010001101100001001010",
+    "100000010110001010101110110111110",
+    "100010101010010001110010111110010",
+    "000000001111011011111100100010111",
+    "111111100101111111000001101010110",
+    "100000101110100101111101100011110",
+    "101110101110110010010000111111011",
+    "101110101001111101110111010011011",
+    "101110101101000111000110001100100",
+    "100000100011110100111110010011100",
+    "111111101111101101000001100101010"
    ]
   }
  ],
@@ -46,7 +146,12 @@
    "week": "2026-W29",
    "stars_then": 548,
    "stars_now": 762,
-   "ratio": 1.4
+   "ratio": 1.4,
+   "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
+   "analysis": {
+    "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
+    "en": "A jailbreak prompt-and-test pack targeting the gpt-5.6 family in Codex CLI; 548 stars in a week shows the curiosity demand. Grey-zone project: useful as red-team reference, no legitimate monetization, and prone to being patched away."
+   }
   },
   {
    "id": "github:AlephAITech/WorkBuddyGuide",
@@ -55,7 +160,12 @@
    "week": "2026-W29",
    "stars_then": 395,
    "stars_now": 552,
-   "ratio": 1.4
+   "ratio": 1.4,
+   "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
+   "analysis": {
+    "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
+    "en": "An open-source field guide to WorkBuddy: tutorials, real workflows, Skills, MCP, multi-agent practice. A content repo — useful, but it's a handbook; it lives or dies on continued updates after the hype wave."
+   }
   },
   {
    "id": "github:jakubkrehel/skills",
@@ -64,7 +174,12 @@
    "week": "2026-W29",
    "stars_then": 223,
    "stars_now": 297,
-   "ratio": 1.3
+   "ratio": 1.3,
+   "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
+   "analysis": {
+    "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
+    "en": "A set of agent skills that audit different parts of a product: animation, typography, layout, color. A handy plug-in for designers and indie devs — instant utility, shallow moat."
+   }
   },
   {
    "id": "github:cosmtrek/mindwalk",
@@ -73,7 +188,12 @@
    "week": "2026-W29",
    "stars_then": 421,
    "stars_now": 505,
-   "ratio": 1.2
+   "ratio": 1.2,
+   "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
+   "analysis": {
+    "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
+    "en": "Replays coding-agent sessions on a 3D city map of your codebase — watch which 'blocks' the AI walked through. Developer observability turned into urban sightseeing; 421 stars in week one, equal parts aesthetic and engineering delight."
+   }
   },
   {
    "id": "github:yetone/kill-ai-slop",
@@ -82,7 +202,12 @@
    "week": "2026-W29",
    "stars_then": 384,
    "stars_now": 409,
-   "ratio": 1.1
+   "ratio": 1.1,
+   "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
+   "analysis": {
+    "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
+    "en": "A field guide to the visual and copy tics of AI-generated products, plus an Agent Skill that scans your project and strips them out. Using AI to kill the 'AI look' — self-referential humor over a real pain: homogenized AI aesthetics now hurt conversion."
+   }
   },
   {
    "id": "github:pengchujin/jzsub",
@@ -91,7 +216,12 @@
    "week": "2026-W29",
    "stars_then": 275,
    "stars_now": 309,
-   "ratio": 1.1
+   "ratio": 1.1,
+   "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
+   "analysis": {
+    "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
+    "en": "Feed it one video link, get back a top-quality MP4 with cover art and GPT bilingual subtitles, fully automated. A blunt, deterministic utility for content porting and study — though the niche is crowded."
+   }
   },
   {
    "id": "github:xiaotianfotos/homerail",
@@ -100,7 +230,12 @@
    "week": "2026-W29",
    "stars_then": 501,
    "stars_now": 520,
-   "ratio": 1.0
+   "ratio": 1.0,
+   "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
+   "analysis": {
+    "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
+    "en": "A voice-first local agent-orchestration runtime that organizes workflows as auditable DAGs — command your home automation by talking. Local-plus-auditable hits privacy anxiety squarely; a rare 'home-use' position in agent infra."
+   }
   },
   {
    "id": "github:bkingfilm/lapian-notes",
@@ -109,7 +244,12 @@
    "week": "2026-W29",
    "stars_then": 308,
    "stars_now": 314,
-   "ratio": 1.0
+   "ratio": 1.0,
+   "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
+   "analysis": {
+    "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
+    "en": "Turns films into AI-assisted shot-analysis notes: local frame extraction, plot swim-lanes, structure trees, emotion curves, scene breakdowns. A heavy-duty tool for film study — cinephiles, screenwriters, film students — with local processing sidestepping copyright landmines."
+   }
   },
   {
    "id": "github:CWS6206/EasyLastSkill",
@@ -118,7 +258,12 @@
    "week": "2026-W29",
    "stars_then": 234,
    "stars_now": 234,
-   "ratio": 1.0
+   "ratio": 1.0,
+   "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
+   "analysis": {
+    "zh": "德语区的 Codex/Agent 技能：对某话题检索最近 30 天动态并生成带来源的紧凑报告。功能朴素、受众限定德语用户，是「本地化智能体技能」小趋势的一个样本。",
+    "en": "A German-language Codex/Agent skill that researches the last 30 days of a topic and produces a compact sourced report. Modest and German-audience-bound — a specimen of the 'localized agent skills' micro-trend."
+   }
   },
   {
    "id": "github:KORAYTEACHER/fintech-advisor",
@@ -127,7 +272,47 @@
    "week": "2026-W29",
    "stars_then": 173,
    "stars_now": 176,
-   "ratio": 1.0
+   "ratio": 1.0,
+   "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
+   "analysis": {
+    "zh": "AI 理财顾问，分析你的投资组合并给建议。赛道有钱但极度拥挤，且理财建议有合规红线，项目本身未见差异化亮点。",
+    "en": "An AI fintech advisor that analyzes your portfolio and offers suggestions. A moneyed but savagely crowded lane with compliance red lines, and this entry shows no visible differentiation."
+   }
   }
+ ],
+ "qr_site": [
+  "111111100011010011111001001111111",
+  "100000100011011111000010001000001",
+  "101110101001110101101000101011101",
+  "101110101001001110001111101011101",
+  "101110101010110101100000101011101",
+  "100000101100100110101010001000001",
+  "111111101010101010101010101111111",
+  "000000001100001100100101000000000",
+  "101111100111110101001011101111100",
+  "101101001100100010011111001101101",
+  "010111101100000110101100100010110",
+  "111000001111001010000111001011110",
+  "101011111010100000110100110011010",
+  "010110001101001110001011101001111",
+  "000100110110100000010100111001110",
+  "100000010101001010011101111011100",
+  "101101110101010001010010010110001",
+  "001011011001011001111001001101101",
+  "111011101000110111001010000110110",
+  "101010001010011011111000010111111",
+  "010010111011111010001110010111010",
+  "101010010110101100100001001100001",
+  "100000100001010111101100001001010",
+  "100101000100011100100110110111100",
+  "100011101100101101100010111110011",
+  "000000001001011010111100100010111",
+  "111111100111010110100101101010110",
+  "100000101111110100011111100011110",
+  "101110101000111000110100111111011",
+  "101110101101000111001111010011001",
+  "101110101100110001010110001100100",
+  "100000100101000010111110010011100",
+  "111111101110001001010001100101010"
  ]
 }

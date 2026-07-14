@@ -9,6 +9,7 @@ from collector import tracking
 def gh(pid, total=20, stars=100):
     return {"id": f"github:{pid}", "name": pid, "url": f"https://github.com/{pid}",
             "source": "github", "week": "2026-W29", "metrics": {"stars": stars},
+            "reason": f"{pid} 的推荐理由", "analysis": {"zh": "简读", "en": "brief"},
             "scores": {"whimsy": 8, "fun": 7, "money": total - 15, "total": total}}
 
 
@@ -78,6 +79,7 @@ class TestComputeLiftoff:
         rows = tracking.compute_liftoff(history, track)
         assert [r["id"] for r in rows] == ["github:fast", "github:slow"]
         assert rows[0]["ratio"] == 9.0 and rows[0]["stars_then"] == 100
+        assert rows[0]["reason"] and rows[0]["analysis"]["en"]   # 起飞榜带介绍
 
     def test_zero_baseline_and_missing_project_skipped(self):
         history = [gh("z", stars=0)]

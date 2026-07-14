@@ -6,11 +6,11 @@
 
 1. **收集**：运行 `python3 -m collector collect`。个别数据源失败（警告）可接受；若全部失败则停止并报告。
 2. **评分与解读**：运行 `python3 -m collector prompt <本周>`（collect 的输出里有周编号），按输出的 prompt 要求产出：
-   - 每个候选：三维分（whimsy / fun / money，各 0–10 整数）+ 中文一句话 reason + **中英双语 analysis（各 2-3 句）**
-   - 总分 Top 10（并列按 id 字典序）：**双语 deep_dive**（what / why / biz 各 3-5 句）
-   - **本周风向 trend**（双语各 3-5 句）
-   结果写入 `data/scored/<本周>.json`（v2 对象格式）。
+   - 每个候选：三维分（whimsy / fun / money，各 0–10 整数）+ 中文一句话 reason + **中英双语 analysis（各 2-3 句）** + **中英双语 deep_dive（what / why / biz 各 3-5 句）** + **1-3 个 tags**（只能取 SPEC.md「标签词表」内的值）
+   - **本周风向 trend**：概览 zh/en（各 3-5 句）+ deep.zh/deep.en 深度版（各 5-8 句）
+   结果写入 `data/scored/<本周>.json`（v3 对象格式）。
    - 评分口径参考 `tests/scoring_cases/cases.json` 里的样例区间，保持跨周一致。
+   - 项目多、解读量大时，可拆分成几组并行撰写深度解读，再合并成一个评分文件。
 3. **校验**：运行 `python3 -m collector validate <本周>`。若报错，修正评分文件后重跑，直到通过。
 4. **出报告**：运行 `python3 -m collector report`，确认输出「已合并周」并生成 `docs/` 站点。
 5. **飞书推送**：运行 `python3 -m collector feishu <本周>`。webhook 未配置时会打印配置指引并跳过，不算失败。

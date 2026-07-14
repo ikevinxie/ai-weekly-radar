@@ -21,12 +21,17 @@ def card_text(card):
 
 
 class TestBuildCard:
+    def test_title_contains_keyword_ai_xiangmu(self):
+        # 回归锁死：机器人配置了关键词「AI项目」，标题必须含该字面量，否则消息被拒收
+        card = feishu.build_card("2026-W29", "", [proj("p0", "X")], [])
+        assert "AI项目" in card["card"]["header"]["title"]["content"]
+
     def test_contains_top10_trend_awards_and_link(self):
         top10 = [proj(f"p{i}", f"Project-{i}") for i in range(10)]
         card = feishu.build_card("2026-W29", "本周风向如此。", top10, AWARDS)
         text = card_text(card)
         assert card["msg_type"] == "interactive"
-        assert "AI 周报 2026-W29" in text
+        assert "AI项目周报 2026-W29" in text
         for i in range(10):
             assert f"Project-{i}" in text
         assert "本周风向如此。" in text

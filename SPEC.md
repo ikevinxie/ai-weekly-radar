@@ -13,7 +13,7 @@
 | 调度方式 | Claude Code 定时任务：每周五 20:00 周报；每月 1 日 20:30 起飞追踪 |
 | 数据源 | 全部免费、无需付费 API |
 | 筛选评分 | 规则粗筛 + Claude 三维评分与双语解读（定时任务中的 Claude 完成，零额外 API 成本） |
-| 解读分层 | 全部项目：中英双语简读（analysis）；总分 Top 10：结构化深度解读（deep_dive） |
+| 解读深度 | **全部项目**：中英双语简读（analysis）+ 结构化深度解读（deep_dive）+ 主题标签（tags）；Top 10 徽章按当周总分排名标记 |
 | 产出形式 | GitHub Pages 公开站点（`docs/`，仓库 ikevinxie/ai-weekly-radar）+ RSS + 飞书推送 + 累积库（`data/projects.json`） |
 | 秘密管理 | 飞书 webhook 等秘密只放环境变量或 `~/.config/ai-weekly-radar/`，**绝不进入仓库** |
 | 技术栈 | Python 3（纯标准库，无第三方运行时依赖）+ pytest |
@@ -54,20 +54,29 @@
 - `metrics`：各源原始热度指标（stars / points / upvotes / likes 等），键名不强制
 - `scores`：三维各 0–10 整数，`total` = 三者之和；候选阶段无此字段
 - `reason` / `analysis`：评分时由 Claude 撰写，analysis 双语各 2-3 句；候选阶段无
-- `deep_dive`：**仅总分 Top 10**（并列时按 id 字典序断绝）必须有、其余不允许有；六个子字段均非空
+- `deep_dive`：**全部项目必须有**，六个子字段均非空
+- `tags`：1–3 个主题标签，取值限定于下方词表
+
+## 标签词表（tags）
+
+`agent` `视频` `语音` `图像` `文本` `编码` `安全` `基建` `硬件` `机器人` `论文` `数据` `效率` `创意` `社区` `商业` `教育` `金融` `游戏` `医疗`
+
+中文为规范值（`agent` 除外）；EN 显示映射放前端。新增词表条目先改 SPEC。
 
 ## 评分文件格式（data/scored/\<week\>.json）
 
 ```json
 {
   "week": "2026-W29",
-  "trend": {"zh": "本周风向 3-5 句", "en": "This week's trend, 3-5 sentences"},
-  "entries": [{"id": "...", "scores": {...}, "reason": "...", "analysis": {...}, "deep_dive": {...}}]
+  "trend": {"zh": "本周风向 3-5 句", "en": "...",
+            "deep": {"zh": "风向深度解读 5-8 句", "en": "..."}},
+  "entries": [{"id": "...", "scores": {...}, "reason": "...", "analysis": {...},
+               "deep_dive": {...}, "tags": ["agent", "安全"]}]
 }
 ```
 
-`trend`（本周风向）：Claude 评分时对当周项目做主题归纳，双语；用于站点横幅、RSS、飞书推送开头。
-（v1 的纯数组格式仅在合并历史数据时兼容读取。）
+`trend`（本周风向）：Claude 评分时对当周项目做主题归纳，双语；`trend.deep` 是点击展开的深度版（主题展开、代表项目串讲、下周值得盯什么）。用于站点横幅、RSS、飞书推送开头。
+（v1/v2 旧格式仅在合并历史数据时兼容读取。）
 
 ## 彩蛋奖（awards，实时计算不入库）
 
@@ -76,8 +85,12 @@
 | 🏆 本周最佳 | total 最高 |
 | 🤪 最离谱奖 | whimsy − money 最大 |
 | 💰 闷声发财奖 | money − whimsy 最大 |
+| 🐴 黑马奖 | 有数值热度（stars/points/upvotes/likes）且 total 进入当周前 1/3 的项目中，热度最低者 |
+| 🔬 硬核奖 | 论文类（arxiv 或 huggingface kind=paper）中 total 最高 |
+| 🎪 最好玩奖 | fun 最高 |
+| ⚖️ 两极分化奖 | 三维分数极差（max−min）最大 |
 
-并列时依次按 total、id 字典序断绝；同一项目可兼得多个奖。
+并列时依次按（奖项指标降序 → total 降序 → id 字典序升序）断绝；同一项目可兼得多个奖；无符合条件项目时该奖空缺（如当周无论文则硬核奖不发）。奖项徽章展示在项目卡片上并进飞书卡片。
 
 ## 每周流水线
 
@@ -92,17 +105,29 @@
 
 | 文件 | 内容 |
 |---|---|
-| `docs/index.html` | Dashboard：fetch 加载周数据；风向横幅、奖项徽章、Top 10 🔥 卡片可展开深度解读、解读中/EN 切换、🚀 起飞榜；保留周选择/排序/来源筛选/搜索/明暗主题 |
-| `docs/data/<week>.json` | 每周全量已合并项目（含解读） |
-| `docs/data/weeks.json` | 周索引 + 各周 trend + 起飞榜数据 |
+| `docs/index.html` | Dashboard，全部资源内嵌无外链；界面文案随中/EN 切换完整双语，`<html lang>` 同步 |
+| `docs/data/<week>.json` | 每周全量已合并项目（含解读、tags），按 total 降序并带 `rank` 字段 |
+| `docs/data/weeks.json` | 周索引：各周 trend（含 deep）、awards、top3、count、该周 URL 二维码矩阵 `qr`；顶层 `qr_site`、`liftoff` |
 | `docs/feed.xml` | RSS 2.0，每周一条 item：标题含风向首句，描述含 Top 10 |
 
+### Dashboard 功能
+
+- **周报视图**（`#<week>`）：风向横幅（含「展开深度分析」显示 trend.deep）、奖项徽章条、🎯 本周象限图（whimsy×money SVG 散点，确定性抖散、hover tooltip、点击滚动到卡片、四象限角标）、🚀 起飞榜（行内含项目介绍，随语言切 reason/analysis）、筛选行（周/来源/标签/排序/中英/搜索）、项目卡片流
+- **归档视图**（`#archive`）：竖向时间线，每周一卡（周编号、周五日期、项目数、风向首句、奖项得主、Top 3 链接），点击进入该周；即「风向连续剧」
+- **项目卡片**：hover 上浮+边框高亮+阴影（prefers-reduced-motion 降级）；奖项 emoji 徽章（title 提示奖名）；Top 10 徽章（rank ≤ 10）；标签 chips（点击即筛选）；深度解读折叠区
+- **分享**：右下角悬浮按钮（随滚动固定），面板含当前周二维码（canvas 渲染 weeks.json 内嵌矩阵）、复制链接、微博/X/Telegram/LinkedIn 分享链接
+
 本地预览：`.claude/launch.json` 的 dashboard 服务（fetch 需要 http，file:// 打不开）。
+
+## 二维码（collector/qr.py）
+
+纯标准库实现：byte 模式、EC=M、版本 1–6 自适应、Reed-Solomon（GF 256）、8 掩码评估。build 时为站点根与每周 URL 生成矩阵嵌入 weeks.json；正确性以 python-qrcode 交叉比对录制的 fixture 快照锁定。
 
 ## 飞书推送（collector/feishu.py）
 
 - 群自定义机器人 webhook；URL 读取顺序：环境变量 `FEISHU_WEBHOOK_URL` → `~/.config/ai-weekly-radar/feishu_webhook` 文件；都缺失时报配置指引并跳过（不算失败）
-- 交互式卡片：标题（周编号）+ 风向（中文）+ Top 10（名称链接、三维分、reason + analysis.zh）+ 彩蛋奖 + 站点深度解读链接；卡片 JSON < 30KB
+- 交互式卡片：标题「AI项目周报 {week} · 最值得看的 10 个项目」+ 风向（中文）+ Top 10（名称链接、三维分、reason + analysis.zh）+ 彩蛋奖 + 站点深度解读链接；卡片 JSON < 30KB
+- **卡片标题必须含字面量「AI项目」**：机器人配置了关键词安全校验，缺关键词消息会被拒收（有回归测试锁死）
 
 ## 起飞追踪（collector/tracking.py，每月 1 日）
 

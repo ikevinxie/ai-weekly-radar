@@ -95,6 +95,8 @@ def compute_liftoff(history: list[dict], tracking: dict) -> list[dict]:
             "stars_then": stars_then,
             "stars_now": stars_now,
             "ratio": round(stars_now / stars_then, 1),
+            "reason": p.get("reason", ""),
+            "analysis": p.get("analysis") or {},
         })
     rows.sort(key=lambda r: (-r["ratio"], -r["stars_now"], r["id"]))
     return rows
