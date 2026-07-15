@@ -46,7 +46,7 @@ collector/
 - **v1**：6 源收集+三维评分（whimsy/fun/money）+本地 dashboard。Reddit JSON 403→改走逐版块 RSS（无票数，靠周榜排序）；Papers with Code 已关停→用 HF 替代；macOS python 证书问题→net.py 里 certifi/系统证书回退链
 - **v2**：双语解读分层、GitHub Pages 公开(ikevinxie/ai-weekly-radar, Pages 从 /docs)、飞书 webhook 推送、彩蛋奖、RSS、月度起飞追踪。dashboard 由内嵌数据改为 fetch 式（数据会逐周增长）
 - **v3**：用户要求全员深度解读（60 个/周都要 what/why/biz 双语）+tags(1-3, 限词表)+trend.deep；7 个奖项；归档时间线 #archive；象限图；分享按钮+纯标准库 QR（与 python-qrcode 逐位交叉验证，快照 fixture 锁定）；界面完整英化。飞书机器人设了关键词「AI项目」→卡片标题必须含该字面量（有回归测试）
-- **v4.1**：修奖项徽章条排版——单枚徽章限 max-width 260px，奖项名全显、项目名过长时省略号截断（完整文案进 title 悬浮提示），修复长论文标题（如硬核奖 VEXAIoT…）撑爆整行的问题
+- **v4.1**：修奖项徽章条排版——单枚徽章限 max-width 260px，奖项名全显、项目名过长时省略号截断（完整文案进 title 悬浮提示），修复长论文标题（如硬核奖 VEXAIoT…）撑爆整行的问题。奖项条由「单行横向滚动」改为「flex-wrap 自动换行多行铺满」（桌面 2 行、移动端每枚一行），所有奖项一屏看全无需滚动
 - **v4**：大佬之声（follow-builders 公开 feed，日采不发布、周汇总渐进式呈现+融入风向）；象限图改默认收起；奖项点击定位加脉冲动画(card-locate)；卡片降密度（analysis 收进深度解读折叠区）；🥇🥈🥉 Top3 徽章；周导航 ◀▶；trend.deep 加深(8-12句可分段)；本 HANDOFF 机制确立
 
 ## 当前状态（每次迭代更新此节）

@@ -172,8 +172,7 @@ h1 { font-size: 22px; font-weight: 700; }
 #trend-deep { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--grid);
               color: var(--ink-2); font-size: 13.5px; }
 #trend-deep p + p { margin-top: 8px; }
-.awards { display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; margin-top: 10px;
-          padding-bottom: 4px; scrollbar-width: thin; }
+.awards { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
 .award {
   flex: none; display: inline-flex; align-items: baseline; gap: 4px; max-width: 260px;
   font-size: 12px; border: 1px solid var(--grid); border-radius: 999px;
