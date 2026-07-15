@@ -30,6 +30,14 @@ def scored_proj(pid, name="AI Pet Rock", week_date=datetime.date(2026, 7, 17),
     return p
 
 
+VOICES = {"week": "2026-W29",
+          "overview": {"zh": "大家都在聊 agent。", "en": "All about agents."},
+          "themes": [{"title": {"zh": "智能体", "en": "Agents"},
+                      "summary": {"zh": "共识形成。", "en": "Consensus forming."},
+                      "quotes": [{"author": "Swyx", "handle": "swyx", "text": "agents!",
+                                  "url": "https://x.com/swyx/status/1", "date": "2026-07-14"}]}]}
+
+
 @pytest.fixture
 def site(tmp_path):
     history = [
@@ -40,7 +48,8 @@ def site(tmp_path):
     liftoff = [{"id": "github:a", "name": "a", "url": "https://github.com/a",
                 "week": "2026-W29", "stars_then": 99, "stars_now": 500, "ratio": 5.1,
                 "reason": "毫无用处但让人想要", "analysis": {"zh": "简读", "en": "brief"}}]
-    generate(history, trends={"2026-W29": TREND}, liftoff=liftoff, out_dir=tmp_path)
+    generate(history, trends={"2026-W29": TREND}, liftoff=liftoff,
+             voices={"2026-W29": VOICES}, out_dir=tmp_path)
     return tmp_path
 
 
@@ -89,6 +98,29 @@ class TestGenerate:
         assert not re.search(r"<script[^>]+src=", html)
         assert not re.search(r'<link(?![^>]*feed\.xml)[^>]*href=', html)   # 仅允许 RSS link
         assert "@import" not in html
+
+    def test_voices_embedded_per_week(self, site):
+        meta = json.loads((site / "data" / "weeks.json").read_text(encoding="utf-8"))
+        weeks = {w["week"]: w for w in meta["weeks"]}
+        assert weeks["2026-W29"]["voices"]["overview"]["zh"] == "大家都在聊 agent。"
+        assert weeks["2026-W29"]["voices"]["themes"][0]["quotes"][0]["url"].startswith("https://x.com/")
+        assert weeks["2026-W28"]["voices"] is None       # 无数据的周为空
+
+    def test_quadrant_collapsed_by_default(self, site):
+        # 回归：象限图默认收起（用户要求手动展开）
+        html = (site / "index.html").read_text(encoding="utf-8")
+        m = re.search(r'<details id="quadrant-det"([^>]*)>', html)
+        assert m and "open" not in m.group(1)
+
+    def test_card_locate_flash_animation_exists(self, site):
+        # 回归：奖项点击定位需要明显的脉冲动画
+        html = (site / "index.html").read_text(encoding="utf-8")
+        assert "@keyframes card-locate" in html
+        assert "animation: card-locate" in html
+
+    def test_voices_section_markup_present(self, site):
+        html = (site / "index.html").read_text(encoding="utf-8")
+        assert 'id="voices"' in html and "renderVoices" in html
 
     def test_score_bar_fill_is_block_level(self, site):
         # 回归：.fill 必须 display:block 否则 width 百分比不渲染（浏览器实测发现）

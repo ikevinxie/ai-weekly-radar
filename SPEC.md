@@ -112,9 +112,17 @@
 
 ### Dashboard 功能
 
-- **周报视图**（`#<week>`）：风向横幅（含「展开深度分析」显示 trend.deep）、奖项徽章条、🎯 本周象限图（whimsy×money SVG 散点，确定性抖散、hover tooltip、点击滚动到卡片、四象限角标）、🚀 起飞榜（行内含项目介绍，随语言切 reason/analysis）、筛选行（周/来源/标签/排序/中英/搜索）、项目卡片流
-- **归档视图**（`#archive`）：竖向时间线，每周一卡（周编号、周五日期、项目数、风向首句、奖项得主、Top 3 链接），点击进入该周；即「风向连续剧」
-- **项目卡片**：hover 上浮+边框高亮+阴影（prefers-reduced-motion 降级）；奖项 emoji 徽章（title 提示奖名）；Top 10 徽章（rank ≤ 10）；标签 chips（点击即筛选）；深度解读折叠区
+信息架构遵循**渐进披露**：默认界面只给「入口级」信息，细节都在一次点击之后；避免信息大爆炸。
+
+- **周报视图**（`#<week>`），自上而下：
+  1. 风向横幅：概览常显 +「展开深度分析」显示 trend.deep（**按空行分段渲染**）
+  2. 奖项徽章条：紧凑单行（溢出横向滚动），点击平滑滚动并**闪烁定位**到项目卡片（keyframes 脉冲光环 ≈2.4s，读者能明确看到是哪块）
+  3. 🎙️ 大佬之声：overview 常显，主题折叠条展开见归纳与原文引用
+  4. 🎯 本周象限图：**默认收起**，手动展开（whimsy×money SVG 散点、hover tooltip、点击滚动定位、四象限角标）
+  5. 🚀 起飞榜：默认收起，行内含项目介绍（随语言切）
+  6. 筛选行（周选择 + ◀▶ 上一周/下一周、来源/标签/排序/中英/搜索）与项目卡片流
+- **归档视图**（`#archive`）：竖向时间线，每周一卡（周编号、周五日期、项目数、风向首句、奖项得主、Top 3 链接），点击进入该周
+- **项目卡片（降密度）**：默认只显示 名称+徽章+来源、reason 钩子、标签 chips、三维分数条与总分；**双语 analysis 收进「深度解读」折叠区作为导语**，其后接 what/why/biz。排名 1-3 显示 🥇🥈🥉，4-10 显示 🔥 Top 10。hover 上浮+边框高亮+阴影（prefers-reduced-motion 降级）
 - **分享**：右下角悬浮按钮（随滚动固定），面板含当前周二维码（canvas 渲染 weeks.json 内嵌矩阵）、复制链接、微博/X/Telegram/LinkedIn 分享链接
 
 本地预览：`.claude/launch.json` 的 dashboard 服务（fetch 需要 http，file:// 打不开）。
@@ -128,6 +136,30 @@
 - 群自定义机器人 webhook；URL 读取顺序：环境变量 `FEISHU_WEBHOOK_URL` → `~/.config/ai-weekly-radar/feishu_webhook` 文件；都缺失时报配置指引并跳过（不算失败）
 - 交互式卡片：标题「AI项目周报 {week} · 最值得看的 10 个项目」+ 风向（中文）+ Top 10（名称链接、三维分、reason + analysis.zh）+ 彩蛋奖 + 站点深度解读链接；卡片 JSON < 30KB
 - **卡片标题必须含字面量「AI项目」**：机器人配置了关键词安全校验，缺关键词消息会被拒收（有回归测试锁死）
+
+## 大佬之声（collector/voices.py）
+
+追踪 AI 建设者在社交媒体的发言，数据源为 [follow-builders](https://github.com/zarazhangrui/follow-builders) 的公开聚合 feed（`feed-x.json`，免 key，24 小时滚动窗口，约 16 位 builder）。
+
+- **每日采集**（定时任务 `daily-voices-collect`，每天 21:30）：`python3 -m collector voices` 拉取 feed 归一化后写 `data/voices/daily/YYYY-MM-DD.json`（同日重跑覆盖）。**每日原始数据不发布**——`data/voices/daily/` 在 .gitignore 中，只留本地。
+- **每周汇总**（并入周五周报任务）：`python3 -m collector voices-prompt <week>` 输出该周去重后的全部发言 + 汇总指令；Claude 写 `data/voices/<week>.json`：
+
+```json
+{
+  "week": "2026-W30",
+  "overview": {"zh": "本周大佬叙事总览 2-4 句", "en": "..."},
+  "themes": [{
+    "title": {"zh": "主题名", "en": "Theme"},
+    "summary": {"zh": "该主题 2-4 句归纳", "en": "..."},
+    "quotes": [{"author": "Swyx", "handle": "swyx", "text": "原文摘录",
+                "url": "https://x.com/...", "date": "2026-07-14"}]
+  }]
+}
+```
+
+- 站点呈现为**渐进式**（全局→局部）：overview 常显 → 每个主题一个折叠条（标题+一句话）→ 展开见主题归纳与原文引用（保留原链接）；绝不平铺罗列。
+- 本周风向（trend / trend.deep）撰写时**必须融入当周大佬发言的信号**；trend.deep 加深加长（8-12 句，可用空行分段，站点按段渲染）。
+- 该周无 voices 文件时站点自动隐藏该区块（如历史周）。report 合并时校验结构，不合格则警告跳过。
 
 ## 起飞追踪（collector/tracking.py，每月 1 日）
 

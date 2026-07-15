@@ -72,8 +72,10 @@ def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
 
 def generate(history: list[dict], trends: dict[str, dict] | None = None,
              liftoff: list[dict] | None = None,
+             voices: dict[str, dict] | None = None,
              out_dir: pathlib.Path = DOCS_DIR) -> pathlib.Path:
     trends = trends or {}
+    voices = voices or {}
     scored = [p for p in history if isinstance(p.get("scores"), dict)]
     data_dir = out_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -94,6 +96,7 @@ def generate(history: list[dict], trends: dict[str, dict] | None = None,
             "date": _week_friday(week).isoformat(),
             "count": len(projects),
             "trend": trends.get(week),
+            "voices": voices.get(week),
             "awards": awards,
             "top3": [{"id": p["id"], "name": p["name"], "total": p["scores"]["total"]}
                      for p in projects[:3]],
@@ -168,12 +171,32 @@ h1 { font-size: 22px; font-weight: 700; }
 }
 #trend-deep { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--grid);
               color: var(--ink-2); font-size: 13.5px; }
-.awards { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+#trend-deep p + p { margin-top: 8px; }
+.awards { display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; margin-top: 10px;
+          padding-bottom: 4px; scrollbar-width: thin; }
 .award {
-  font-size: 12.5px; border: 1px solid var(--grid); border-radius: 999px;
-  padding: 3px 10px; background: var(--page); cursor: pointer;
+  flex: none; font-size: 12px; border: 1px solid var(--grid); border-radius: 999px;
+  padding: 3px 10px; background: var(--page); cursor: pointer; white-space: nowrap;
+  transition: border-color .15s ease;
 }
+.award:hover { border-color: var(--whimsy); }
 .award b { font-weight: 650; }
+/* 大佬之声 */
+.voices { margin-top: 10px; padding: 12px 16px; background: var(--surface);
+          border: 1px solid var(--border); border-radius: 12px; }
+.voices .label { font-weight: 700; font-size: 14px; }
+.voices-overview { font-size: 13.5px; color: var(--ink-2); margin-top: 6px; }
+.voice-theme { border: 1px solid var(--grid); border-radius: 10px; margin-top: 8px; padding: 8px 12px; }
+.voice-theme summary { cursor: pointer; font-size: 13px; font-weight: 650; }
+.voice-theme summary .hint { font-weight: 400; color: var(--muted); font-size: 12px; }
+.voice-summary { font-size: 12.5px; color: var(--ink-2); margin: 8px 0 4px; }
+.quote { border-left: 3px solid var(--grid); padding: 4px 0 4px 10px; margin-top: 8px; }
+.quote .q-author { font-size: 12px; font-weight: 650; }
+.quote .q-author a { color: var(--ink); text-decoration: none; }
+.quote .q-author .q-date { color: var(--muted); font-weight: 400; }
+.quote .q-text { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; white-space: pre-line; }
+.quote .q-link { font-size: 11.5px; }
+.quote .q-link a { color: var(--whimsy); text-decoration: none; }
 section.fold { margin-top: 10px; }
 section.fold > details > summary { cursor: pointer; font-size: 13.5px; font-weight: 650; padding: 4px 0; }
 .liftoff table { border-collapse: collapse; margin-top: 8px; font-size: 13px; width: 100%; max-width: 860px; }
@@ -203,6 +226,9 @@ select, input[type="search"] {
   background: var(--page); color: var(--ink); border: 1px solid var(--grid);
   border-radius: 8px; padding: 5px 8px; font-size: 13px;
 }
+.week-nav { border: 1px solid var(--grid); background: var(--page); color: var(--ink-2);
+            border-radius: 8px; padding: 5px 7px; font-size: 11px; cursor: pointer; }
+.week-nav:disabled { opacity: .35; cursor: default; }
 input[type="search"] { min-width: 160px; flex: 1; }
 .lang-switch { display: flex; border: 1px solid var(--grid); border-radius: 8px; overflow: hidden; }
 .lang-switch button {
@@ -222,7 +248,15 @@ input[type="search"] { min-width: 160px; flex: 1; }
   .card { transition: border-color .15s ease; }
   .card:hover { transform: none; box-shadow: none; }
 }
-.card.flash { border-color: var(--money); box-shadow: var(--shadow); }
+@keyframes card-locate {
+  0%, 50% { border-color: var(--money); box-shadow: 0 0 0 4px color-mix(in srgb, var(--money) 45%, transparent), var(--shadow); transform: scale(1.015); }
+  25%, 75% { border-color: var(--money); box-shadow: 0 0 0 1px color-mix(in srgb, var(--money) 25%, transparent); transform: scale(1); }
+  100% { border-color: var(--border); box-shadow: none; transform: scale(1); }
+}
+.card.flash { animation: card-locate 2.4s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .card.flash { animation: none; border-color: var(--money); box-shadow: 0 0 0 3px color-mix(in srgb, var(--money) 40%, transparent); }
+}
 .card-head { display: flex; gap: 8px; align-items: flex-start; flex-wrap: wrap; }
 .name { color: var(--ink); font-weight: 650; font-size: 15px; text-decoration: none; word-break: break-word; }
 .name:hover { text-decoration: underline; }
@@ -308,7 +342,12 @@ input[type="search"] { min-width: 160px; flex: 1; }
     <div id="trend-deep" hidden></div>
     <div class="awards" id="awards"></div>
   </div>
-  <section class="fold"><details id="quadrant-det" open>
+  <div class="voices" id="voices" hidden>
+    <span class="label">🎙️ <span data-ui="voices"></span></span>
+    <div class="voices-overview" id="voices-overview"></div>
+    <div id="voices-themes"></div>
+  </div>
+  <section class="fold"><details id="quadrant-det">
     <summary data-ui="quadrant"></summary>
     <div id="quadrant-wrap"></div>
   </details></section>
@@ -317,7 +356,10 @@ input[type="search"] { min-width: 160px; flex: 1; }
     <table><thead><tr id="liftoff-head"></tr></thead><tbody id="liftoff-body"></tbody></table>
   </details></section>
   <div class="filters">
-    <label data-ui="week"></label><select id="f-week"></select>
+    <label data-ui="week"></label>
+    <button id="week-prev" type="button" class="week-nav" title="◀">◀</button>
+    <select id="f-week"></select>
+    <button id="week-next" type="button" class="week-nav" title="▶">▶</button>
     <label data-ui="source"></label><select id="f-source"></select>
     <label data-ui="tag"></label><select id="f-tag"></select>
     <label data-ui="sort"></label><select id="f-sort"></select>
@@ -358,6 +400,7 @@ const UI = {
     quadrant:"🎯 本周象限图 — 天马行空 × 有钱途", liftoff:"🚀 起飞榜 — 历史高分项目 star 增长追踪",
     week:"周", source:"来源", tag:"标签", sort:"排序", all:"全部", allWeeks:"全部周",
     search:"搜索名称 / 描述 / 解读…", items:"个项目", totalOf:"总分", deep:"深度解读",
+    voices:"大佬之声 — 本周他们在说什么", quotesN:"条原文",
     top10:"Top 10", noMatch:"没有匹配的项目", noData:"还没有数据", copyLink:"复制链接",
     copied:"已复制 ✓", scanQr:"扫码打开当前页面", discuss:"讨论", weekRank:"周榜",
     dims:{whimsy:"天马行空", fun:"有趣", money:"有钱途"},
@@ -371,7 +414,8 @@ const UI = {
     liftoff:"🚀 Liftoff Board — star growth of past high scorers",
     week:"Week", source:"Source", tag:"Tag", sort:"Sort", all:"All", allWeeks:"All weeks",
     search:"Search name / description / analysis…", items:"projects", totalOf:"Total",
-    deep:"Deep dive", top10:"Top 10", noMatch:"No matching projects", noData:"No data yet",
+    deep:"Deep dive", voices:"Builder Voices — what they said this week", quotesN:"quotes",
+    top10:"Top 10", noMatch:"No matching projects", noData:"No data yet",
     copyLink:"Copy link", copied:"Copied ✓", scanQr:"Scan to open this page", discuss:"discuss",
     weekRank:"rank", dims:{whimsy:"Whimsy", fun:"Fun", money:"Money"},
     deepTitles:{what:"What it is", why:"Why it matters", biz:"Business & risks"},
@@ -445,18 +489,21 @@ function card(p) {
     `<span class="medal" title="${esc(a.title[LANG] || a.title.zh)}">${a.emoji}</span>`).join("");
   const topics = (p.tags || []).map(tag =>
     `<button class="topic" data-tag="${esc(tag)}" type="button">#${esc(tagLabel(tag))}</button>`).join("");
-  const deepHtml = dd ? `<details class="deep"><summary>🔍 ${t().deep}</summary>
-      ${["what","why","biz"].map(k => `<h4>${t().deepTitles[k]}</h4><p>${esc(dd[k])}</p>`).join("")}
+  // 降密度：双语简读收进「深度解读」折叠区作导语
+  const deepHtml = (analysis || dd) ? `<details class="deep"><summary>🔍 ${t().deep}</summary>
+      ${analysis ? `<p class="analysis">${esc(analysis)}</p>` : ""}
+      ${dd ? ["what","why","biz"].map(k => `<h4>${t().deepTitles[k]}</h4><p>${esc(dd[k])}</p>`).join("") : ""}
     </details>` : "";
+  const rankBadge = p.rank === 1 ? "🥇" : p.rank === 2 ? "🥈" : p.rank === 3 ? "🥉"
+                    : (p.rank && p.rank <= 10 ? "🔥" : "");
   return `<article class="card" id="${esc(p.id)}">
     <div class="card-head">
       <a class="name" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
-      ${p.rank && p.rank <= 10 ? `<span class="hot">🔥 ${t().top10}</span>` : ""}
+      ${rankBadge ? `<span class="hot">${rankBadge} ${p.rank <= 3 ? "#" + p.rank : t().top10}</span>` : ""}
       ${medals}
       <span class="tag">${SOURCE_LABELS[p.source] || esc(p.source)}</span>
     </div>
     <p class="reason">${esc(p.reason)}</p>
-    ${analysis ? `<p class="analysis">${esc(analysis)}</p>` : ""}
     ${deepHtml}
     ${topics ? `<div class="topics">${topics}</div>` : ""}
     <div class="scores">${bars}</div>
@@ -471,25 +518,50 @@ function scrollToCard(pid) {
   const el = document.getElementById(pid);
   if (!el) return;
   el.scrollIntoView({behavior: "smooth", block: "center"});
+  el.classList.remove("flash");
+  void el.offsetWidth;             // 重启动画，连续点击也能再次闪烁
   el.classList.add("flash");
-  setTimeout(() => el.classList.remove("flash"), 1600);
+  setTimeout(() => el.classList.remove("flash"), 2600);
 }
 
 function renderBanner(info) {
-  if (!info) { $("trend").hidden = true; return; }
+  if (!info) { $("trend").hidden = true; $("voices").hidden = true; return; }
   const trend = (info.trend || {})[LANG] || (info.trend || {}).zh;
   const deep = ((info.trend || {}).deep || {})[LANG] || ((info.trend || {}).deep || {}).zh;
   const awardsHtml = (info.awards || []).map(a => `<span class="award" data-pid="${esc(a.project_id)}">
       ${a.emoji} <b>${esc(a.title[LANG] || a.title.zh)}</b>${a.project_name ? " · " + esc(a.project_name) : ""}</span>`).join("");
   $("trend-text").textContent = trend || "";
   $("trend-deep").hidden = true;
-  $("trend-deep").textContent = deep || "";
+  // 深度分析按空行分段渲染
+  $("trend-deep").innerHTML = (deep || "").split(/\\n{2,}|\\n/).filter(s => s.trim())
+    .map(s => `<p>${esc(s)}</p>`).join("");
   $("trend-deep-btn").textContent = t().trendDeepShow;
   $("trend-deep-btn").style.display = deep ? "" : "none";
   $("awards").innerHTML = awardsHtml;
   document.querySelectorAll("#awards .award").forEach(el =>
     el.onclick = () => scrollToCard(el.dataset.pid));
   $("trend").hidden = !trend && !awardsHtml;
+  renderVoices(info.voices);
+}
+
+function renderVoices(v) {
+  if (!v || !v.overview) { $("voices").hidden = true; return; }
+  $("voices").hidden = false;
+  $("voices-overview").textContent = v.overview[LANG] || v.overview.zh || "";
+  $("voices-themes").innerHTML = (v.themes || []).map(theme => {
+    const title = (theme.title || {})[LANG] || (theme.title || {}).zh || "";
+    const summary = (theme.summary || {})[LANG] || (theme.summary || {}).zh || "";
+    const quotes = (theme.quotes || []).map(q => `<div class="quote">
+      <div class="q-author"><a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.author)}</a>
+        <span class="q-date">@${esc(q.handle || "")} · ${esc(q.date || "")}</span></div>
+      <div class="q-text">${esc(q.text)}</div>
+      <div class="q-link"><a href="${esc(q.url)}" target="_blank" rel="noopener">↗ ${LANG === "zh" ? "原文" : "source"}</a></div>
+    </div>`).join("");
+    return `<details class="voice-theme"><summary>${esc(title)}
+        <span class="hint">· ${(theme.quotes || []).length} ${t().quotesN}</span></summary>
+      <div class="voice-summary">${esc(summary)}</div>${quotes}
+    </details>`;
+  }).join("");
 }
 $("trend-deep-btn").onclick = () => {
   const box = $("trend-deep");
@@ -602,6 +674,10 @@ async function loadWeek(week) {
   renderQuadrant();
   render();
   renderShare();
+  const opts = [...$("f-week").options].map(o => o.value).filter(v => v !== "all");
+  const idx = opts.indexOf($("f-week").value);
+  $("week-prev").disabled = idx < 0 || idx >= opts.length - 1;
+  $("week-next").disabled = idx <= 0;
 }
 
 function renderArchive() {
@@ -717,6 +793,14 @@ async function init() {
     };
   });
   $("f-week").onchange = () => { location.hash = $("f-week").value; };
+  const stepWeek = dir => {
+    const options = [...$("f-week").options].map(o => o.value).filter(v => v !== "all");
+    const i = options.indexOf($("f-week").value);
+    const next = options[i + dir];                 // 列表按新→旧排；▶=更新的一周
+    if (next) location.hash = next;
+  };
+  $("week-prev").onclick = () => stepWeek(1);
+  $("week-next").onclick = () => stepWeek(-1);
   for (const id of ["f-source", "f-tag", "f-sort"]) $(id).onchange = render;
   $("f-q").oninput = render;
   await route();

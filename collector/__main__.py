@@ -79,7 +79,7 @@ def cmd_validate(args: list[str]) -> int:
 
 
 def cmd_report(args: list[str]) -> int:
-    from . import report, tracking
+    from . import report, tracking, voices as voices_mod
 
     history = store.load()
     merged_weeks, trends = [], {}
@@ -101,7 +101,18 @@ def cmd_report(args: list[str]) -> int:
 
     store.save(history)
     liftoff = tracking.compute_liftoff(history, tracking.load_tracking())
-    html_path = report.generate(history, trends=trends, liftoff=liftoff)
+    all_voices = {}
+    for voices_path in sorted(voices_mod.WEEKLY_DIR.glob("*.json")):
+        week = voices_path.stem
+        if not week.count("-W"):
+            continue
+        try:
+            doc = voices_mod.load_weekly(week)
+            if doc:
+                all_voices[week] = doc
+        except ValueError as e:
+            print(f"警告: {week} 大佬之声未通过校验，跳过 — {e}", file=sys.stderr)
+    html_path = report.generate(history, trends=trends, liftoff=liftoff, voices=all_voices)
     print(f"已合并周: {', '.join(merged_weeks) or '(无新增)'}；累积 {len(history)} 条")
     print(f"站点 → {html_path}（线上 {report.SITE_URL}）")
     return 0
@@ -143,6 +154,31 @@ def cmd_feishu(args: list[str]) -> int:
     return 0
 
 
+def cmd_voices(args: list[str]) -> int:
+    from . import voices
+
+    today = datetime.date.fromisoformat(args[0]) if args else datetime.date.today()
+    path = voices.collect_daily(today)
+    posts = json.loads(path.read_text(encoding="utf-8"))
+    authors = sorted({p["author"] for p in posts})
+    print(f"已采集 {len(posts)} 条发言（{len(authors)} 人）→ {path}")
+    print("  " + ", ".join(authors[:8]) + ("…" if len(authors) > 8 else ""))
+    print("（每日快照仅本地保存，不发布；周五由周报任务汇总）")
+    return 0
+
+
+def cmd_voices_prompt(args: list[str]) -> int:
+    from . import voices
+
+    week = args[0] if args else week_of(datetime.date.today())
+    posts = voices.load_week_posts(week)
+    if not posts:
+        print(f"本周（{week}）没有每日采集数据；周报的大佬之声区块将自动隐藏。")
+        return 0
+    print(voices.build_prompt(posts, week))
+    return 0
+
+
 def cmd_track(args: list[str]) -> int:
     from . import tracking
 
@@ -160,7 +196,8 @@ def cmd_track(args: list[str]) -> int:
 
 
 COMMANDS = {"collect": cmd_collect, "prompt": cmd_prompt, "validate": cmd_validate,
-            "report": cmd_report, "feishu": cmd_feishu, "track": cmd_track}
+            "report": cmd_report, "feishu": cmd_feishu, "track": cmd_track,
+            "voices": cmd_voices, "voices-prompt": cmd_voices_prompt}
 
 
 def main() -> int:

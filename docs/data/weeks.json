@@ -8,9 +8,183 @@
     "zh": "本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。第二个信号是「AI 反噬经济」的出现——帮人删 AI 烂代码的按周收费服务、清除产品 AI 味的工具、以及黑掉 AI 智能体赢赏金的竞技场，说明 AI 泛滥本身开始养活一批新生意。视频生成的白嫖需求依旧旺盛（Wan2.2 各种镜像霸榜 Hugging Face），而安全侧的提示注入攻击（GitLost 事件）给所有 agent 产品敲了警钟。",
     "en": "The loudest signal this week is an agent-infrastructure boom: Microsoft shipped a visualization language for AI agents, Product Hunt surfaced an agent data marketplace and a headless iOS publishing pipeline, and a voice-first local orchestration runtime landed on GitHub — a full agent supply chain is taking shape. The second signal is the rise of an 'AI backlash economy': a $10k-a-week AI-code-deletion service, a tool that strips the 'AI look' from products, and an arena that pays bounties for hacking AI agents all show that AI oversupply is now feeding new businesses. Free video-generation demand stays hot (Wan2.2 mirrors dominate Hugging Face trending), while the GitLost prompt-injection disclosure is a warning shot for every agent product.",
     "deep": {
-     "zh": "把这 60 个项目摊开看，本周有三条清晰主线。第一条是「智能体基建大爆发」：微软的 Flint 给智能体造可视化表达语言、AgentKey 做智能体数据集市、NoMac.app 做智能体的 iOS 发布流水线、homerail 做语音优先的本地编排、Osaurus 做纯本地 Mac 智能体——从表达层、数据层、发布层到运行时，一条完整的 agent 供应链正在同一周里成形。第二条是「AI 反噬经济」的抬头：按周收一万美元帮企业删 AI 烂代码的服务、扫描并清除产品「AI 味」的 kill-ai-slop、以及黑掉 AI 智能体赢十万美元赏金的 Playground——AI 泛滥本身开始养活一批逆向生意。第三条是「生成消费的白热化」：Hugging Face 趋势榜被 Wan2.2 视频生成的各种加速镜像和 Qwen3-TTS、图像编辑器霸占，说明视频/语音/图像生成的免费体验需求远未被满足。安全侧的 GitLost 提示注入事件则给所有 agent 产品敲了警钟。下周值得盯的是：Flint 这类「智能体表达标准」会不会被跟进、以及本地化 agent（homerail/Osaurus）能不能借隐私焦虑跑出差异化。",
-     "en": "Laid out across all 60 projects, three clear storylines run through the week. First, an agent-infrastructure boom: Microsoft's Flint gives agents a visual expression language, AgentKey builds an agent data marketplace, NoMac.app a headless iOS pipeline for agents, homerail a voice-first local orchestrator, Osaurus a fully local Mac agent — expression, data, publishing, and runtime layers of a full agent supply chain all forming in one week. Second, the rise of an 'AI backlash economy': a $10k-a-week service to delete AI slop code, kill-ai-slop that scans and strips the 'AI look' from products, and Playground that pays $100k bounties for hacking agents — AI oversupply is now feeding reverse businesses. Third, red-hot generative consumption: Hugging Face trending is dominated by Wan2.2 video mirrors, Qwen3-TTS, and image editors, showing free generative demand for video/voice/image is far from saturated. On security, the GitLost prompt-injection incident is a warning shot for every agent product. Worth watching next week: whether 'agent expression standards' like Flint get followed, and whether local agents (homerail/Osaurus) can differentiate on privacy anxiety."
+     "zh": "把这 60 个项目摊开看，本周有三条清晰主线。第一条是「智能体基建大爆发」：微软的 Flint 给智能体造可视化表达语言、AgentKey 做智能体数据集市、NoMac.app 做智能体的 iOS 发布流水线、homerail 做语音优先的本地编排、Osaurus 做纯本地 Mac 智能体——从表达层、数据层、发布层到运行时，一条完整的 agent 供应链正在同一周里成形。\n\n第二条是「AI 反噬经济」的抬头：按周收一万美元帮企业删 AI 烂代码的服务、扫描并清除产品「AI 味」的 kill-ai-slop、以及黑掉 AI 智能体赢十万美元赏金的 Playground——AI 泛滥本身开始养活一批逆向生意。\n\n第三条是「生成消费的白热化」：Hugging Face 趋势榜被 Wan2.2 视频生成的各种加速镜像和 Qwen3-TTS、图像编辑器霸占，说明视频/语音/图像生成的免费体验需求远未被满足。安全侧的 GitLost 提示注入事件则给所有 agent 产品敲了警钟。\n\n下周值得盯的是：Flint 这类「智能体表达标准」会不会被跟进、以及本地化 agent（homerail/Osaurus）能不能借隐私焦虑跑出差异化。",
+     "en": "Laid out across all 60 projects, three clear storylines run through the week. First, an agent-infrastructure boom: Microsoft's Flint gives agents a visual expression language, AgentKey builds an agent data marketplace, NoMac.app a headless iOS pipeline for agents, homerail a voice-first local orchestrator, Osaurus a fully local Mac agent — expression, data, publishing, and runtime layers of a full agent supply chain all forming in one week. \n\nSecond, the rise of an 'AI backlash economy': a $10k-a-week service to delete AI slop code, kill-ai-slop that scans and strips the 'AI look' from products, and Playground that pays $100k bounties for hacking agents — AI oversupply is now feeding reverse businesses. \n\nThird, red-hot generative consumption: Hugging Face trending is dominated by Wan2.2 video mirrors, Qwen3-TTS, and image editors, showing free generative demand for video/voice/image is far from saturated. On security, the GitLost prompt-injection incident is a warning shot for every agent product. \n\nWorth watching next week: whether 'agent expression standards' like Flint get followed, and whether local agents (homerail/Osaurus) can differentiate on privacy anxiety."
     }
+   },
+   "voices": {
+    "week": "2026-W29",
+    "overview": {
+     "zh": "本周大佬圈两种情绪并行：一边是模型厂商之间的火药味——Sam Altman 连发三条夹枪带棒的推文，OpenAI 应用负责人预告 800 万活跃用户里程碑；另一边是 builder 们把智能体推进真实生产的兴奋——云端维护智能体已经开始「打架」，自动调实验的 agent 成为新积木。最硬的数据信号来自 Guillermo Rauch：开源权重模型的网关 token 占比从 4 月的 11% 飙到 29%。同时「绅士科学家时代回归」——用 AI 改电子书固件、边开车边语音写应用，个人黑客文艺复兴正在发生。",
+     "en": "Two moods ran in parallel among builders this week: model-vendor friction — Sam Altman fired off three pointed tweets while OpenAI's app lead teased an 8M-active-user milestone — and the thrill of pushing agents into real production, where cloud maintainer agents are already 'fighting' and experiment-tuning agents became a new building block. The hardest data point came from Guillermo Rauch: open-weight models now serve 29% of gateway tokens, up from 11% in April. Meanwhile the 'Gentleman Scientist era' is back — AI-hacked e-reader firmware and voice-coding apps while driving mark a personal-hacker renaissance."
+    },
+    "themes": [
+     {
+      "title": {
+       "zh": "模型厂商暗战与里程碑",
+       "en": "Model-vendor jabs & milestones"
+      },
+      "summary": {
+       "zh": "Sam Altman 本周格外活跃：一边罕见承认「看到我们的模型终于擅长设计，还是有点难以置信」，一边连发两条暗讽竞品的推文（包括那条「我以为是讽刺号，一直在找 c1audeai 的拼写」）。OpenAI 应用负责人 Thibault 则预告 800 万活跃用户庆祝日并发布 ChatGPT Work。头部厂商的竞争已经从发布会打到了时间线上。",
+       "en": "Sam Altman had an unusually loud week: a rare admission that 'it still sorta breaks my brain to see our models be good at design finally,' plus two pointed jabs at competitors (including the 'kept looking for the handle to be spelled c1audeai' one). OpenAI's app lead Thibault teased an 8M-active-user celebration and ChatGPT Work. Frontier-lab competition has moved from launch events to the timeline."
+      },
+      "quotes": [
+       {
+        "author": "Sam Altman",
+        "handle": "sama",
+        "text": "still sorta breaks my brain to see our models be good at design finally",
+        "url": "https://x.com/sama/status/2076823209589313910",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Sam Altman",
+        "handle": "sama",
+        "text": "i thought this was satire, kept looking for the handle to be spelled c1audeai or something",
+        "url": "https://x.com/sama/status/2076824686307271125",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "text": "Tomorrow might be 8M active user celebration day. Just saying",
+        "url": "https://x.com/thsottiaux/status/2076907789763621237",
+        "date": "2026-07-14"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "智能体进入生产环境",
+       "en": "Agents hit production"
+      },
+      "summary": {
+       "zh": "智能体不再是 demo：Peter Steinberger 把维护者智能体搬上云端（「它们已经开始打架了」）；Vercel 给智能体开放了 feature flag 实验能力，让网站自我优化；Aaron Levie 给出企业落地模板——前沿模型当管理者、低成本模型干粗活。Swyx 晒出的「大项目工作栈」则展示了多模型分工（规划/评审/编码各司其职）已是资深玩家的日常。",
+       "en": "Agents are past the demo stage: Peter Steinberger moved maintainer agents to the cloud ('they are fighting already'); Vercel gave agents the power to set up and tune feature-flag experiments toward self-optimizing sites; Aaron Levie sketched the enterprise template — frontier intelligence as manager, cheaper models as workhorses. Swyx's 'Big Boy projects' stack shows multi-model division of labor is now routine for power users."
+      },
+      "quotes": [
+       {
+        "author": "Peter Steinberger",
+        "handle": "steipete",
+        "text": "I moved our maintainer agent to the cloud and they are fighting already.",
+        "url": "https://x.com/steipete/status/2076923300593422560",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Guillermo Rauch",
+        "handle": "rauchg",
+        "text": "Powerful building block for autonomous, self-optimizing websites and applications. Give agents the ability to set up and tune experiments with feature flags.",
+        "url": "https://x.com/rauchg/status/2076786138195595704",
+        "date": "2026-07-13"
+       },
+       {
+        "author": "Aaron Levie",
+        "handle": "levie",
+        "text": "Here's a great post on driving down costs, while maintaining high performance, with frontier intelligence as a manager and lower cost models for the workhorse tasks. This will be the template.",
+        "url": "https://x.com/levie/status/2076839463410671637",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Swyx",
+        "handle": "swyx",
+        "text": "where i'm currently at for Big Boy projects: sol ultra to plan / fable 5 to critique / sonnet 5, terra ultra, swe 1.7 to ultracode…",
+        "url": "https://x.com/swyx/status/2076811977918484795",
+        "date": "2026-07-13"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "绅士科学家时代回归",
+       "en": "The Gentleman Scientist is back"
+      },
+      "summary": {
+       "zh": "Garry Tan 一句「绅士科学家时代回归了」（1000+ 赞）点破本周最浪漫的趋势：Ryo Lu 用 Cursor 给电子书阅读器写了带中日文竖排排版的自制固件；Nikunj Kothari 边开车边用语音提示词一把梭出报销自动化工具并开源；Amjad Masad 在训练「个人模型」时感叹这就是早期氛围编程的感觉。AI 把硬件黑客和个人软件的门槛打到了地板上。",
+       "en": "Garry Tan's 'Era of the Gentleman Scientist is so back' (1,000+ likes) named the week's most romantic trend: Ryo Lu shipped custom e-reader firmware with beautiful CJK vertical typography using Cursor; Nikunj Kothari one-shotted an expense-automation tool by voice prompt while driving, then open-sourced it; Amjad Masad said training personal models 'feels like early vibe coding.' AI has floored the barrier to hardware hacking and personal software."
+      },
+      "quotes": [
+       {
+        "author": "Garry Tan",
+        "handle": "garrytan",
+        "text": "Era of the Gentleman Scientist is so back",
+        "url": "https://x.com/garrytan/status/2076587412516421945",
+        "date": "2026-07-13"
+       },
+       {
+        "author": "Ryo Lu",
+        "handle": "ryolu_",
+        "text": "built a custom e-reader firmware with Cursor, hardware hacking is fun! made for: beautiful latin + CJK typography, vertical layout, line breaking, large character sets (縱書．禁則)…",
+        "url": "https://x.com/ryolu_/status/2076713331113734641",
+        "date": "2026-07-13"
+       },
+       {
+        "author": "Nikunj Kothari",
+        "handle": "nikunj",
+        "text": "Btw this was one-shot by fable with a voice prompt while driving on the way to SF with some steering and edits obviously",
+        "url": "https://x.com/nikunj/status/2076878668149002669",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Amjad Masad",
+        "handle": "amasad",
+        "text": "Getting realtime progress updates on my model training runs. This feels like early vibe coding except it's making personal models.",
+        "url": "https://x.com/amasad/status/2076776737074184661",
+        "date": "2026-07-13"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "开源权重的硬数据",
+       "en": "Open weights, hard numbers"
+      },
+      "summary": {
+       "zh": "本周最值得存档的一条数据：Guillermo Rauch 披露开源权重模型在其网关的 token 占比从 4 月的 11% 涨到 29%。结合 Levie 对「前沿模型指挥+廉价模型干活」成本结构的判断，闭源模型的定价压力正在从舆论走向账本——这与本周周报里 GLM 5.2 毛利坍塌的讨论互为印证。",
+       "en": "The week's most archivable data point: Guillermo Rauch disclosed that open-weight models' share of gateway tokens jumped from 11% in April to 29%. Read alongside Levie's manager/workhorse cost-structure thesis, pricing pressure on closed models is moving from discourse to ledgers — corroborating this week's GLM 5.2 margin-collapse debate in the radar."
+      },
+      "quotes": [
+       {
+        "author": "Guillermo Rauch",
+        "handle": "rauchg",
+        "text": "\"Open-weight models ran 29% of gateway tokens, up from 11% in April\"",
+        "url": "https://x.com/rauchg/status/2076713720731042174",
+        "date": "2026-07-13"
+       },
+       {
+        "author": "Aaron Levie",
+        "handle": "levie",
+        "text": "A few thoughts on what we will see in AI structurally for the foreseeable future: Frontier intelligence continues unabated and pushes the industry forward continuously…",
+        "url": "https://x.com/levie/status/2076882332821373381",
+        "date": "2026-07-14"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "反 slop 战线",
+       "en": "The anti-slop front"
+      },
+      "summary": {
+       "zh": "与本周周报「AI 反噬经济」主线呼应：Peter Yang 公开征讨那些秒回大号的 AI 机器人账号（「每周都要拉黑一批」）；Zara Zhang 分享「不靠 slop 涨粉」的创作心法。当 AI 内容泛滥成为默认状态，「人味」本身正在成为稀缺资产。",
+       "en": "Echoing this week's 'AI backlash economy' storyline in the radar: Peter Yang called out AI bot accounts that instantly reply to big accounts ('I block a bunch every week'), and Zara Zhang shared how she grows an audience 'without the slop.' As AI content floods becomes the default, humanness itself is turning into the scarce asset."
+      },
+      "quotes": [
+       {
+        "author": "Peter Yang",
+        "handle": "petergyang",
+        "text": "is it possible to find accounts that just instantly reply to posts from bigger accounts? Those are usually AI bots worth banning? I block a bunch every week.",
+        "url": "https://x.com/petergyang/status/2076897407439454577",
+        "date": "2026-07-14"
+       },
+       {
+        "author": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "text": "Back in March I recorded a 45-min conversation with @ashebytes on building in public, growing my audience on X (without the slop), and my thoughts on vibe coding",
+        "url": "https://x.com/zarazhangrui/status/2076860372993388663",
+        "date": "2026-07-14"
+       }
+      ]
+     }
+    ]
    },
    "awards": [
     {
