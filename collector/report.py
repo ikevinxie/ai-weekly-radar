@@ -175,12 +175,15 @@ h1 { font-size: 22px; font-weight: 700; }
 .awards { display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; margin-top: 10px;
           padding-bottom: 4px; scrollbar-width: thin; }
 .award {
-  flex: none; font-size: 12px; border: 1px solid var(--grid); border-radius: 999px;
+  flex: none; display: inline-flex; align-items: baseline; gap: 4px; max-width: 260px;
+  font-size: 12px; border: 1px solid var(--grid); border-radius: 999px;
   padding: 3px 10px; background: var(--page); cursor: pointer; white-space: nowrap;
   transition: border-color .15s ease;
 }
 .award:hover { border-color: var(--whimsy); }
 .award b { font-weight: 650; }
+.award .award-lead { flex: none; }
+.award .award-proj { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 /* 大佬之声 */
 .voices { margin-top: 10px; padding: 12px 16px; background: var(--surface);
           border: 1px solid var(--border); border-radius: 12px; }
@@ -528,8 +531,14 @@ function renderBanner(info) {
   if (!info) { $("trend").hidden = true; $("voices").hidden = true; return; }
   const trend = (info.trend || {})[LANG] || (info.trend || {}).zh;
   const deep = ((info.trend || {}).deep || {})[LANG] || ((info.trend || {}).deep || {}).zh;
-  const awardsHtml = (info.awards || []).map(a => `<span class="award" data-pid="${esc(a.project_id)}">
-      ${a.emoji} <b>${esc(a.title[LANG] || a.title.zh)}</b>${a.project_name ? " · " + esc(a.project_name) : ""}</span>`).join("");
+  const awardsHtml = (info.awards || []).map(a => {
+    const title = a.title[LANG] || a.title.zh;
+    const full = a.emoji + " " + title + (a.project_name ? " · " + a.project_name : "");
+    return `<span class="award" data-pid="${esc(a.project_id)}" title="${esc(full)}">` +
+      `<span class="award-lead">${a.emoji} <b>${esc(title)}</b></span>` +
+      (a.project_name ? `<span class="award-proj">· ${esc(a.project_name)}</span>` : "") +
+      `</span>`;
+  }).join("");
   $("trend-text").textContent = trend || "";
   $("trend-deep").hidden = true;
   // 深度分析按空行分段渲染
