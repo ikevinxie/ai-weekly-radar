@@ -319,8 +319,8 @@
    "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
    "week": "2026-W29",
    "stars_then": 548,
-   "stars_now": 762,
-   "ratio": 1.4,
+   "stars_now": 1791,
+   "ratio": 3.3,
    "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
    "analysis": {
     "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
@@ -333,12 +333,26 @@
    "url": "https://github.com/AlephAITech/WorkBuddyGuide",
    "week": "2026-W29",
    "stars_then": 395,
-   "stars_now": 552,
-   "ratio": 1.4,
+   "stars_now": 1030,
+   "ratio": 2.6,
    "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
    "analysis": {
     "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
     "en": "An open-source field guide to WorkBuddy: tutorials, real workflows, Skills, MCP, multi-agent practice. A content repo — useful, but it's a handbook; it lives or dies on continued updates after the hype wave."
+   }
+  },
+  {
+   "id": "github:pengchujin/jzsub",
+   "name": "pengchujin/jzsub",
+   "url": "https://github.com/pengchujin/jzsub",
+   "week": "2026-W29",
+   "stars_then": 275,
+   "stars_now": 725,
+   "ratio": 2.6,
+   "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
+   "analysis": {
+    "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
+    "en": "Feed it one video link, get back a top-quality MP4 with cover art and GPT bilingual subtitles, fully automated. A blunt, deterministic utility for content porting and study — though the niche is crowded."
    }
   },
   {
@@ -347,8 +361,8 @@
    "url": "https://github.com/jakubkrehel/skills",
    "week": "2026-W29",
    "stars_then": 223,
-   "stars_now": 297,
-   "ratio": 1.3,
+   "stars_now": 540,
+   "ratio": 2.4,
    "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
    "analysis": {
     "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
@@ -361,8 +375,8 @@
    "url": "https://github.com/cosmtrek/mindwalk",
    "week": "2026-W29",
    "stars_then": 421,
-   "stars_now": 505,
-   "ratio": 1.2,
+   "stars_now": 765,
+   "ratio": 1.8,
    "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
    "analysis": {
     "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
@@ -375,26 +389,12 @@
    "url": "https://github.com/yetone/kill-ai-slop",
    "week": "2026-W29",
    "stars_then": 384,
-   "stars_now": 409,
-   "ratio": 1.1,
+   "stars_now": 573,
+   "ratio": 1.5,
    "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
    "analysis": {
     "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
     "en": "A field guide to the visual and copy tics of AI-generated products, plus an Agent Skill that scans your project and strips them out. Using AI to kill the 'AI look' — self-referential humor over a real pain: homogenized AI aesthetics now hurt conversion."
-   }
-  },
-  {
-   "id": "github:pengchujin/jzsub",
-   "name": "pengchujin/jzsub",
-   "url": "https://github.com/pengchujin/jzsub",
-   "week": "2026-W29",
-   "stars_then": 275,
-   "stars_now": 309,
-   "ratio": 1.1,
-   "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
-   "analysis": {
-    "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
-    "en": "Feed it one video link, get back a top-quality MP4 with cover art and GPT bilingual subtitles, fully automated. A blunt, deterministic utility for content porting and study — though the niche is crowded."
    }
   },
   {
@@ -403,8 +403,8 @@
    "url": "https://github.com/xiaotianfotos/homerail",
    "week": "2026-W29",
    "stars_then": 501,
-   "stars_now": 520,
-   "ratio": 1.0,
+   "stars_now": 591,
+   "ratio": 1.2,
    "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
    "analysis": {
     "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
@@ -417,8 +417,8 @@
    "url": "https://github.com/bkingfilm/lapian-notes",
    "week": "2026-W29",
    "stars_then": 308,
-   "stars_now": 314,
-   "ratio": 1.0,
+   "stars_now": 361,
+   "ratio": 1.2,
    "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
    "analysis": {
     "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
@@ -431,7 +431,7 @@
    "url": "https://github.com/CWS6206/EasyLastSkill",
    "week": "2026-W29",
    "stars_then": 234,
-   "stars_now": 234,
+   "stars_now": 236,
    "ratio": 1.0,
    "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
    "analysis": {
@@ -445,7 +445,7 @@
    "url": "https://github.com/KORAYTEACHER/fintech-advisor",
    "week": "2026-W29",
    "stars_then": 173,
-   "stars_now": 176,
+   "stars_now": 165,
    "ratio": 1.0,
    "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
    "analysis": {
