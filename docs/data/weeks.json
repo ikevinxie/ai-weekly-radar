@@ -319,8 +319,8 @@
    "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
    "week": "2026-W29",
    "stars_then": 548,
-   "stars_now": 1791,
-   "ratio": 3.3,
+   "stars_now": 2818,
+   "ratio": 5.1,
    "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
    "analysis": {
     "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
@@ -333,8 +333,8 @@
    "url": "https://github.com/AlephAITech/WorkBuddyGuide",
    "week": "2026-W29",
    "stars_then": 395,
-   "stars_now": 1030,
-   "ratio": 2.6,
+   "stars_now": 1253,
+   "ratio": 3.2,
    "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
    "analysis": {
     "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
@@ -347,8 +347,8 @@
    "url": "https://github.com/pengchujin/jzsub",
    "week": "2026-W29",
    "stars_then": 275,
-   "stars_now": 725,
-   "ratio": 2.6,
+   "stars_now": 857,
+   "ratio": 3.1,
    "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
    "analysis": {
     "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
@@ -361,8 +361,8 @@
    "url": "https://github.com/jakubkrehel/skills",
    "week": "2026-W29",
    "stars_then": 223,
-   "stars_now": 540,
-   "ratio": 2.4,
+   "stars_now": 629,
+   "ratio": 2.8,
    "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
    "analysis": {
     "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
@@ -375,8 +375,8 @@
    "url": "https://github.com/cosmtrek/mindwalk",
    "week": "2026-W29",
    "stars_then": 421,
-   "stars_now": 765,
-   "ratio": 1.8,
+   "stars_now": 904,
+   "ratio": 2.1,
    "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
    "analysis": {
     "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
@@ -389,8 +389,8 @@
    "url": "https://github.com/yetone/kill-ai-slop",
    "week": "2026-W29",
    "stars_then": 384,
-   "stars_now": 573,
-   "ratio": 1.5,
+   "stars_now": 726,
+   "ratio": 1.9,
    "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
    "analysis": {
     "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
@@ -403,8 +403,8 @@
    "url": "https://github.com/xiaotianfotos/homerail",
    "week": "2026-W29",
    "stars_then": 501,
-   "stars_now": 591,
-   "ratio": 1.2,
+   "stars_now": 667,
+   "ratio": 1.3,
    "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
    "analysis": {
     "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
@@ -417,26 +417,12 @@
    "url": "https://github.com/bkingfilm/lapian-notes",
    "week": "2026-W29",
    "stars_then": 308,
-   "stars_now": 361,
-   "ratio": 1.2,
+   "stars_now": 414,
+   "ratio": 1.3,
    "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
    "analysis": {
     "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
     "en": "Turns films into AI-assisted shot-analysis notes: local frame extraction, plot swim-lanes, structure trees, emotion curves, scene breakdowns. A heavy-duty tool for film study — cinephiles, screenwriters, film students — with local processing sidestepping copyright landmines."
-   }
-  },
-  {
-   "id": "github:CWS6206/EasyLastSkill",
-   "name": "CWS6206/EasyLastSkill",
-   "url": "https://github.com/CWS6206/EasyLastSkill",
-   "week": "2026-W29",
-   "stars_then": 234,
-   "stars_now": 236,
-   "ratio": 1.0,
-   "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
-   "analysis": {
-    "zh": "德语区的 Codex/Agent 技能：对某话题检索最近 30 天动态并生成带来源的紧凑报告。功能朴素、受众限定德语用户，是「本地化智能体技能」小趋势的一个样本。",
-    "en": "A German-language Codex/Agent skill that researches the last 30 days of a topic and produces a compact sourced report. Modest and German-audience-bound — a specimen of the 'localized agent skills' micro-trend."
    }
   },
   {
@@ -445,12 +431,26 @@
    "url": "https://github.com/KORAYTEACHER/fintech-advisor",
    "week": "2026-W29",
    "stars_then": 173,
-   "stars_now": 165,
+   "stars_now": 166,
    "ratio": 1.0,
    "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
    "analysis": {
     "zh": "AI 理财顾问，分析你的投资组合并给建议。赛道有钱但极度拥挤，且理财建议有合规红线，项目本身未见差异化亮点。",
     "en": "An AI fintech advisor that analyzes your portfolio and offers suggestions. A moneyed but savagely crowded lane with compliance red lines, and this entry shows no visible differentiation."
+   }
+  },
+  {
+   "id": "github:CWS6206/EasyLastSkill",
+   "name": "CWS6206/EasyLastSkill",
+   "url": "https://github.com/CWS6206/EasyLastSkill",
+   "week": "2026-W29",
+   "stars_then": 234,
+   "stars_now": 175,
+   "ratio": 0.7,
+   "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
+   "analysis": {
+    "zh": "德语区的 Codex/Agent 技能：对某话题检索最近 30 天动态并生成带来源的紧凑报告。功能朴素、受众限定德语用户，是「本地化智能体技能」小趋势的一个样本。",
+    "en": "A German-language Codex/Agent skill that researches the last 30 days of a topic and produces a compact sourced report. Modest and German-audience-bound — a specimen of the 'localized agent skills' micro-trend."
    }
   }
  ],
