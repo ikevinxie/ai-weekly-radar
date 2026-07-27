@@ -19,6 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Show commit (debug)
+        run: |
+          echo "=== weekly workflow running on commit $(git rev-parse HEAD) ==="
+          git log -1 --pretty='%h %s'
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

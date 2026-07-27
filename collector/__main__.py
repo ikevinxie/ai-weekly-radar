@@ -205,18 +205,28 @@ def cmd_track(args: list[str]) -> int:
 
 def cmd_score(args: list[str]) -> int:
     from . import llm
+    import subprocess
 
     week = args[0] if args else week_of(datetime.date.today())
+    # 版本标记：每次跑都先打印 commit hash，方便从日志一眼看出跑的是不是最新代码。
+    # 之前多次"修了还是挂"的根因就是 workflow 跑的是旧 commit，肉眼看不出来。
+    try:
+        rev = subprocess.run(["git", "rev-parse", "--short", "HEAD"],
+                             capture_output=True, text=True, timeout=5).stdout.strip()
+    except Exception:
+        rev = "?"
+    print(f"[score] code @ {rev or '?'}  week={week}", flush=True)
     candidates, _, scored_path = _load_week(week)
-    print(f"调用百炼 API 为 {len(candidates)} 个候选评分…")
+    print(f"调用百炼 API 为 {len(candidates)} 个候选评分…", flush=True)
     scored = llm.score_candidates(candidates, week)
     scored, warnings = scoring.sanitize_scored(scored)
     if warnings:
-        print(f"sanitize: 自动修正 {len(warnings)} 处 tags 偏差：", file=sys.stderr)
+        print(f"sanitize: 自动修正 {len(warnings)} 处 tags 偏差：",
+              file=sys.stderr, flush=True)
         for w in warnings:
-            print(f"  - {w}", file=sys.stderr)
+            print(f"  - {w}", file=sys.stderr, flush=True)
     store.save(scored, scored_path)
-    print(f"评分完成 → {scored_path}")
+    print(f"评分完成 → {scored_path}", flush=True)
     # validate 只看 sanitize 留下的 entry：tag 漂移被 sanitize 消化的那些
     # 不应再被 validate 当成「缺少评分」硬错。
     surviving_ids = {e.get("id") for e in scored.get("entries", [])
@@ -224,11 +234,12 @@ def cmd_score(args: list[str]) -> int:
     scored_candidates = [c for c in candidates if c.get("id") in surviving_ids]
     errors = scoring.validate_scored(scored_candidates, scored)
     if errors:
-        print(f"校验失败，共 {len(errors)} 处：", file=sys.stderr)
+        print(f"校验失败，共 {len(errors)} 处：", file=sys.stderr, flush=True)
         for e in errors:
-            print(f"  - {e}", file=sys.stderr)
+            print(f"  - {e}", file=sys.stderr, flush=True)
         return 1
-    print(f"校验通过：{len(scored['entries'])} 条评分。下一步：python3 -m collector report")
+    print(f"校验通过：{len(scored['entries'])} 条评分。下一步：python3 -m collector report",
+          flush=True)
     return 0
 
 
