@@ -120,10 +120,12 @@ def cmd_report(args: list[str]) -> int:
 
 def cmd_feishu(args: list[str]) -> int:
     from . import feishu
+    from . import feishu_sent
     from .awards import compute_awards
 
     dry_run = "--dry-run" in args
-    args = [a for a in args if a != "--dry-run"]
+    force = "--force" in args
+    args = [a for a in args if a not in ("--dry-run", "--force")]
     week = args[0] if args else week_of(datetime.date.today())
 
     history = store.load()
@@ -149,8 +151,14 @@ def cmd_feishu(args: list[str]) -> int:
     if not url:
         print(feishu.SETUP_HINT)
         return 0
+    if feishu_sent.was_sent(week) and not force:
+        print(f"跳过: {week} 已推送过飞书（标记 {feishu_sent.SENT_DIR / (week + '.txt')}）。"
+              f"如需重发请加 --force。")
+        return 0
     feishu.send(card, url)
-    print(f"已推送 {week} Top {min(10, len(week_projects))} 到飞书")
+    feishu_sent.mark_sent(week)
+    print(f"已推送 {week} Top {min(10, len(week_projects))} 到飞书；"
+          f"幂等标记已写入 data/feishu_sent/{week}.txt")
     return 0
 
 
@@ -202,6 +210,11 @@ def cmd_score(args: list[str]) -> int:
     candidates, _, scored_path = _load_week(week)
     print(f"调用百炼 API 为 {len(candidates)} 个候选评分…")
     scored = llm.score_candidates(candidates, week)
+    scored, warnings = scoring.sanitize_scored(scored)
+    if warnings:
+        print(f"sanitize: 自动修正 {len(warnings)} 处 tags 偏差：", file=sys.stderr)
+        for w in warnings:
+            print(f"  - {w}", file=sys.stderr)
     store.save(scored, scored_path)
     print(f"评分完成 → {scored_path}")
     errors = scoring.validate_scored(candidates, scored)
@@ -246,7 +259,7 @@ def main() -> int:
     if not argv or argv[0] not in COMMANDS:
         print("用法: python3 -m collector "
               "{collect [日期]|prompt [周]|score [周]|validate [周]|report|"
-              "feishu [周] [--dry-run]|track [--limit N]|voices [日期]|"
+              "feishu [周] [--dry-run] [--force]|track [--limit N]|voices [日期]|"
               "voices-prompt [周]|voices-sum [周]}",
               file=sys.stderr)
         return 2

@@ -1,8 +1,8 @@
 import datetime
 
 from collector.schema import make_project
-from collector.scoring import (MAX_TAGS, TAGS, build_prompt, merge_scored, top_ids,
-                               validate_scored)
+from collector.scoring import (MAX_TAGS, TAGS, build_prompt, merge_scored, sanitize_scored,
+                               top_ids, validate_scored)
 
 
 def cand(pid, name="Robot painter"):
@@ -141,6 +141,60 @@ class TestValidateScored:
     def test_duplicate_tags_rejected(self):
         bad = entry("a", tags=("创意", "创意"))
         assert any("重复" in e for e in validate_scored([cand("a")], scored_doc([bad])))
+
+
+class TestSanitizeScored:
+    def test_drops_unknown_tags_keeps_valid(self):
+        e = entry("a", tags=("创意", "开源", "区块链"))
+        doc = scored_doc([e])
+        out, warns = sanitize_scored(doc)
+        assert out["entries"][0]["tags"] == ["创意", "开源"]
+        assert any("区块链" in w for w in warns)
+
+    def test_drops_entry_when_all_tags_unknown(self):
+        e = entry("a", tags=("区块链", "元宇宙"))
+        doc = scored_doc([e, entry("b")])
+        out, warns = sanitize_scored(doc)
+        assert [x["id"] for x in out["entries"]] == ["github:b"]
+        assert any("整条丢弃" in w for w in warns)
+
+    def test_drops_entry_when_tags_not_list(self):
+        e = entry("a")
+        e["tags"] = "创意"
+        doc = scored_doc([e])
+        out, warns = sanitize_scored(doc)
+        assert out["entries"] == []
+        assert any("不是数组" in w for w in warns)
+
+    def test_drops_entry_when_tags_empty_list(self):
+        e = entry("a")
+        e["tags"] = []
+        doc = scored_doc([e])
+        out, warns = sanitize_scored(doc)
+        assert out["entries"] == []
+        assert any("整条丢弃" in w for w in warns)
+
+    def test_dedups_and_truncates(self):
+        e = entry("a", tags=("创意", "创意", "agent", "视频", "数据"))
+        doc = scored_doc([e])
+        out, warns = sanitize_scored(doc)
+        assert out["entries"][0]["tags"] == ["创意", "agent", "视频"]
+        assert any("重复" in w for w in warns)
+
+    def test_clean_doc_unchanged_no_warnings(self):
+        doc = scored_doc([entry("a", tags=("创意", "开源")), entry("b", tags=("agent",))])
+        out, warns = sanitize_scored(doc)
+        assert warns == []
+        assert [e["tags"] for e in out["entries"]] == [["创意", "开源"], ["agent"]]
+
+    def test_non_dict_scored_passes_through(self):
+        out, warns = sanitize_scored([entry("a")])
+        assert warns == []
+        assert isinstance(out, list)
+
+    def test_kaizen_yuan_in_vocab(self):
+        # 回归锁死：开源 必须在词表内，否则 sanitize 会把它当未知 tag 丢掉
+        assert "开源" in TAGS
 
 
 class TestMergeScored:

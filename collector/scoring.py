@@ -16,7 +16,7 @@ TOP_BADGE_COUNT = 10
 DEEP_DIVE_KEYS = ("what", "why", "biz")
 LANGS = ("zh", "en")
 TAGS = ("agent", "视频", "语音", "图像", "文本", "编码", "安全", "基建", "硬件", "机器人",
-        "论文", "数据", "效率", "创意", "社区", "商业", "教育", "金融", "游戏", "医疗")
+        "论文", "数据", "效率", "创意", "社区", "商业", "教育", "金融", "游戏", "医疗", "开源")
 MAX_TAGS = 3
 
 PROMPT_TEMPLATE = """\
@@ -181,6 +181,51 @@ def _validate_tags(tags, ident: str) -> list[str]:
     if len(set(tags)) != len(tags):
         errors.append(f"{ident}: tags 有重复")
     return errors
+
+
+def sanitize_scored(scored) -> tuple[object, list[str]]:
+    """LLM 偶发不守词表 / 返回空 tags：丢弃未知 tag、丢弃 tags 为空的 entry。
+
+    就地修改 scored，返回 (scored, warnings)。warnings 非空时调用方应打印。
+    校验仍由 validate_scored 兜底——sanitize 只处理 tags 这一类已知偏差。
+    """
+    warnings: list[str] = []
+    if not isinstance(scored, dict):
+        return scored, warnings
+    entries = scored.get("entries")
+    if not isinstance(entries, list):
+        return scored, warnings
+    tag_set = set(TAGS)
+    kept: list = []
+    for e in entries:
+        if not isinstance(e, dict):
+            kept.append(e)
+            continue
+        ident = e.get("id", "?")
+        raw = e.get("tags")
+        if not isinstance(raw, list):
+            warnings.append(f"{ident}: tags 不是数组（{type(raw).__name__}），整条丢弃")
+            continue
+        cleaned = [t for t in raw if isinstance(t, str) and t in tag_set]
+        dropped = [t for t in raw if t not in cleaned]
+        if dropped:
+            warnings.append(f"{ident}: 丢弃非词表 tag {dropped}")
+        if not cleaned:
+            warnings.append(f"{ident}: 清洗后无有效 tag，整条丢弃")
+            continue
+        # 去重保序，截断到 MAX_TAGS
+        seen: set = set()
+        deduped: list = []
+        for t in cleaned:
+            if t not in seen:
+                seen.add(t)
+                deduped.append(t)
+            else:
+                warnings.append(f"{ident}: 去除重复 tag {t!r}")
+        e["tags"] = deduped[:MAX_TAGS]
+        kept.append(e)
+    scored["entries"] = kept
+    return scored, warnings
 
 
 def merge_scored(candidates: list[dict], scored) -> list[dict]:
