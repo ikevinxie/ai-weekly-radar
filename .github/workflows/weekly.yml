@@ -63,4 +63,7 @@ jobs:
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "weekly: $WEEK
           Co-Authored-By: Claude <noreply@anthropic.com>"
+          # 并发 push 兜底：别的 workflow run / 手动 push 可能让远端超前，
+          # 直接 push 会被拒（fetch first）。rebase 把本地 commit 接到最新远端上再推。
+          git pull --rebase origin main || { echo "rebase 冲突，放弃 push"; exit 1; }
           git push
