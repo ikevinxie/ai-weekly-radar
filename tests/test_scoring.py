@@ -264,6 +264,29 @@ class TestSanitizeScored:
         errors = validate_scored([cand("a")], sanitized)
         assert errors == []
 
+    def test_hallucinated_id_dropped(self):
+        # 根因回归：LLM 抄错 / 编造 id（如把 1207407 抄成 12207407）时，
+        # sanitize 必须丢整条，避免 validate 报「不在候选列表」硬错。
+        good = entry("a")
+        hallucinated = entry("zzz_does_not_exist")
+        doc = scored_doc([good, hallucinated])
+        cands = [cand("a"), cand("b")]   # 注意：candidates 里没有 zzz
+        sanitized, warns = sanitize_scored(doc, candidates=cands)
+        assert any("zzz_does_not_exist" in w and "不在候选列表" in w for w in warns)
+        assert [e["id"] for e in sanitized["entries"]] == ["github:a"]
+        # cmd_score 会把 cands 过滤到 surviving ids 再 validate
+        surviving = {e["id"] for e in sanitized["entries"]}
+        scored_cands = [c for c in cands if c["id"] in surviving]
+        errors = validate_scored(scored_cands, sanitized)
+        assert errors == []
+
+    def test_sanitize_without_candidates_skips_id_check(self):
+        # 兼容旧调用 / 单测：不传 candidates 时不做 ID 检查
+        doc = scored_doc([entry("ghost")])
+        sanitized, warns = sanitize_scored(doc)
+        assert not any("不在候选列表" in w for w in warns)
+        assert [e["id"] for e in sanitized["entries"]] == ["github:ghost"]
+
 
 class TestMergeScored:
     def test_merges_v3_fields(self):

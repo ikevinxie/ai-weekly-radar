@@ -188,16 +188,19 @@ def _validate_tags(tags, ident: str) -> list[str]:
     return errors
 
 
-def sanitize_scored(scored) -> tuple[object, list[str]]:
+def sanitize_scored(scored, candidates: list[dict] | None = None) -> tuple[object, list[str]]:
     """LLM 输出的统一规范化层：把"概率模型必然发生的偏差"在 validate 之前消化掉。
 
-    处理两类偏差：
-    1. tag 漂移：丢未知 tag、丢清洗后 tags 为空的 entry、去重、截断到 MAX_TAGS。
-    2. 必填字段漏写 / 空字符串：reason / analysis.{zh,en} /
+    处理三类偏差：
+    1. ID 幻觉：entry.id 不在 candidates 列表里 → 整条丢弃（LLM 抄错 id / 编造 id）。
+    2. tag 漂移：丢未知 tag、丢清洗后 tags 为空的 entry、去重、截断到 MAX_TAGS。
+    3. 必填字段漏写 / 空字符串：reason / analysis.{zh,en} /
        deep_dive.{zh,en}.{what,why,biz} / trend.{zh,en,deep.*} 自动填占位符。
 
     就地修改 scored，返回 (scored, warnings)。warnings 非空时调用方应打印，
     便于运维观察 LLM 偏差频率；但 pipeline 不会因为这些偏差挂掉。
+
+    candidates 为 None 时跳过 ID 检查（兼容旧调用 / 单测）。
 
     校验仍由 validate_scored 兜底——sanitize 之后 validate 应该 0 错；
     如果还有错，说明出现了 sanitize 没覆盖到的结构性问题（比如 scores 不是 dict），
@@ -223,6 +226,7 @@ def sanitize_scored(scored) -> tuple[object, list[str]]:
     entries = scored.get("entries")
     if not isinstance(entries, list):
         return scored, warnings
+    candidate_ids = {c.get("id") for c in (candidates or []) if c.get("id")}
     tag_set = set(TAGS)
     kept: list = []
     for e in entries:
@@ -230,6 +234,11 @@ def sanitize_scored(scored) -> tuple[object, list[str]]:
             kept.append(e)
             continue
         ident = e.get("id", "?")
+
+        # ID 幻觉检查：LLM 抄错 / 编造 id 时整条丢，避免 validate 硬错
+        if candidate_ids and ident not in candidate_ids:
+            warnings.append(f"{ident}: 不在候选列表（疑似 LLM 抄错 id），整条丢弃")
+            continue
 
         # tag 规范化
         raw = e.get("tags")

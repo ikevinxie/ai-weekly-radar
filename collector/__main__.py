@@ -216,12 +216,29 @@ def cmd_score(args: list[str]) -> int:
     except Exception:
         rev = "?"
     print(f"[score] code @ {rev or '?'}  week={week}", flush=True)
+    # 自检：如果 origin/main 比 HEAD 新，说明 workflow 跑的是旧 commit，
+    # 直接 stderr 警告，避免再次"修了还是挂"的猜谜。
+    try:
+        subprocess.run(["git", "fetch", "origin", "main"],
+                       capture_output=True, text=True, timeout=15)
+        ahead = subprocess.run(["git", "rev-list", "--count", "HEAD..origin/main"],
+                               capture_output=True, text=True, timeout=5).stdout.strip()
+        if ahead and ahead != "0":
+            remote_head = subprocess.run(["git", "rev-parse", "--short", "origin/main"],
+                                         capture_output=True, text=True,
+                                         timeout=5).stdout.strip()
+            print(f"⚠ [score] 警告：当前 HEAD={rev} 落后 origin/main={remote_head} "
+                  f"{ahead} 个 commit。本次跑的是旧代码，结果可能不反映最新修复。"
+                  f"请 cancel 掉所有 queued run 后重新触发。",
+                  file=sys.stderr, flush=True)
+    except Exception as e:
+        print(f"[score] 版本自检跳过: {e}", file=sys.stderr, flush=True)
     candidates, _, scored_path = _load_week(week)
     print(f"调用百炼 API 为 {len(candidates)} 个候选评分…", flush=True)
     scored = llm.score_candidates(candidates, week)
-    scored, warnings = scoring.sanitize_scored(scored)
+    scored, warnings = scoring.sanitize_scored(scored, candidates=candidates)
     if warnings:
-        print(f"sanitize: 自动修正 {len(warnings)} 处 tags 偏差：",
+        print(f"sanitize: 自动修正 {len(warnings)} 处 LLM 输出偏差：",
               file=sys.stderr, flush=True)
         for w in warnings:
             print(f"  - {w}", file=sys.stderr, flush=True)
