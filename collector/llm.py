@@ -9,6 +9,7 @@ import json
 import os
 import re
 import ssl
+import sys
 import time
 import urllib.request
 import urllib.error
@@ -19,6 +20,7 @@ API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 DEFAULT_MODEL = "qwen-max"
 BATCH_SIZE = 20
 MAX_RETRIES = 2
+PARSE_RETRIES = 2   # LLM 返回畸形 JSON 时，把错误喂回去让它修，最多额外试这么多次
 TIMEOUT = 300
 
 
@@ -101,7 +103,9 @@ def extract_json(text: str) -> dict | list:
 
 _SCORE_SYSTEM = (
     "你是「每周 AI 项目收集器」的评审。严格按用户要求的 JSON 结构输出，"
-    "不要输出任何 JSON 以外的文字。")
+    "不要输出任何 JSON 以外的文字。\n"
+    "JSON 必须语法合法：所有字符串用双引号、无尾随逗号、无注释、无孤立括号或多余字符；"
+    "字符串值内部如需引号请用 \\\" 转义，不要直接换行打断 JSON 结构。")
 
 _BATCH_TEMPLATE = """\
 请对下面 {count} 个候选项目逐一评分并撰写双语解读。
@@ -156,7 +160,10 @@ def _format_candidates(candidates: list[dict]) -> str:
 
 
 def score_candidates(candidates: list[dict], week: str) -> dict:
-    """对全部候选评分，返回 v3 scored 文档。候选多时自动分批。"""
+    """对全部候选评分，返回 v3 scored 文档。候选多时自动分批。
+
+    每个 batch 解析失败时，把错误和原文喂回 LLM 重试，最多 PARSE_RETRIES 次。
+    """
     all_entries: list[dict] = []
     batches = [candidates[i:i + BATCH_SIZE] for i in range(0, len(candidates), BATCH_SIZE)]
     for idx, batch in enumerate(batches):
@@ -164,8 +171,8 @@ def score_candidates(candidates: list[dict], week: str) -> dict:
             print(f"  评分批次 {idx + 1}/{len(batches)}（{len(batch)} 个项目）…")
         prompt = _BATCH_TEMPLATE.format(count=len(batch),
                                         candidates=_format_candidates(batch))
-        reply = chat(prompt, system=_SCORE_SYSTEM)
-        parsed = extract_json(reply)
+        parsed = _chat_json_with_retry(prompt, _SCORE_SYSTEM,
+                                       label=f"批次 {idx + 1}/{len(batches)}")
         if isinstance(parsed, dict) and "entries" in parsed:
             parsed = parsed["entries"]
         if not isinstance(parsed, list):
@@ -177,12 +184,35 @@ def score_candidates(candidates: list[dict], week: str) -> dict:
     proj_lines = "\n".join(f"- {e['id']}  total={e['scores']['total']}" for e in all_entries)
     trend_prompt = _TREND_TEMPLATE.format(week=week, count=len(all_entries),
                                           projects=proj_lines)
-    trend_reply = chat(trend_prompt, system=_SCORE_SYSTEM)
-    trend = extract_json(trend_reply)
+    trend = _chat_json_with_retry(trend_prompt, _SCORE_SYSTEM, label="trend")
     if not isinstance(trend, dict):
         raise ValueError("trend: 期望 JSON 对象")
 
     return {"week": week, "trend": trend, "entries": all_entries}
+
+
+def _chat_json_with_retry(prompt: str, system: str, *, label: str):
+    """调 chat 并 extract_json；解析失败时把错误+原文喂回 LLM 重试。"""
+    reply = chat(prompt, system=system)
+    last_err: ValueError | None = None
+    for attempt in range(PARSE_RETRIES + 1):
+        try:
+            return extract_json(reply)
+        except ValueError as e:
+            last_err = e
+            if attempt == PARSE_RETRIES:
+                break
+            print(f"  ⚠ {label} 第 {attempt + 1} 次解析失败，回喂 LLM 修正：{e}",
+                  file=sys.stderr)
+            fix_prompt = (
+                f"你上一次输出无法被 JSON 解析器接受，错误：{e}\n\n"
+                f"上一次输出原文：\n{reply}\n\n"
+                "请只输出修正后的合法 JSON，不要任何解释、不要 markdown 围栏、"
+                "不要前后缀文字。检查：双引号转义、无尾随逗号、无孤立括号、"
+                "字符串内不要直接换行。")
+            reply = chat(fix_prompt, system=system)
+    assert last_err is not None
+    raise last_err
 
 
 # ---------------------------------------------------------------------------
@@ -191,7 +221,9 @@ def score_candidates(candidates: list[dict], week: str) -> dict:
 
 _VOICES_SYSTEM = (
     "你是「AI 周报·大佬之声」栏目的编辑。严格按用户要求的 JSON 结构输出，"
-    "不要输出任何 JSON 以外的文字。")
+    "不要输出任何 JSON 以外的文字。\n"
+    "JSON 必须语法合法：所有字符串用双引号、无尾随逗号、无注释、无孤立括号或多余字符；"
+    "字符串值内部如需引号请用 \\\" 转义，不要直接换行打断 JSON 结构。")
 
 _VOICES_TEMPLATE = """\
 下面是本周（{week}）AI 建设者们在 X 上的 {count} 条发言。
@@ -213,8 +245,7 @@ def summarize_voices(posts: list[dict], week: str) -> dict:
              f"  {p['text']}\n  {p['url']}" for p in posts]
     prompt = _VOICES_TEMPLATE.format(week=week, count=len(posts),
                                      posts="\n".join(lines))
-    reply = chat(prompt, system=_VOICES_SYSTEM)
-    doc = extract_json(reply)
+    doc = _chat_json_with_retry(prompt, _VOICES_SYSTEM, label="voices")
     if not isinstance(doc, dict):
         raise ValueError("voices: 期望 JSON 对象")
     if doc.get("week") != week:

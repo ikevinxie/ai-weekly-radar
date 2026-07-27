@@ -147,6 +147,29 @@ class TestScoreCandidates:
             result = score_candidates(cands, "2026-W31")
         assert len(result["entries"]) == 2
 
+    def test_retries_on_malformed_json_then_succeeds(self):
+        # 第一次返回畸形 JSON（模拟 LLM 写错括号），第二次返回合法 JSON
+        cands = _make_candidates(2)
+        entries = [_fake_entry(c["id"]) for c in cands]
+        trend = {"zh": "z", "en": "e", "deep": {"zh": "dz", "en": "de"}}
+        malformed = '[{"id": "github:test/0", "analysis": )'   # 语法错
+        replies = [malformed, json.dumps(entries), json.dumps(trend)]
+        with mock.patch("collector.llm.chat", side_effect=replies) as m:
+            result = score_candidates(cands, "2026-W31")
+        assert len(result["entries"]) == 2
+        # 1 次原始 + 1 次修正 + 1 次 trend = 3
+        assert m.call_count == 3
+
+    def test_raises_after_parse_retries_exhausted(self):
+        from collector.llm import PARSE_RETRIES
+        cands = _make_candidates(1)
+        # 全部返回无法解析的文本：原始 1 次 + PARSE_RETRIES 次修正
+        replies = ["not json at all"] * (PARSE_RETRIES + 1)
+        with mock.patch("collector.llm.chat", side_effect=replies) as m, \
+             pytest.raises(ValueError, match="无法从 LLM 回复中提取 JSON"):
+            score_candidates(cands, "2026-W31")
+        assert m.call_count == PARSE_RETRIES + 1
+
 
 # ---------------------------------------------------------------------------
 # summarize_voices（mock chat）
