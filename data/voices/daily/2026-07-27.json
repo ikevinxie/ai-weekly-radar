@@ -1,0 +1,170 @@
+[
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Vibes are strong. Never seen OpenAI more focused and humming.",
+  "url": "https://x.com/thsottiaux/status/2081534792903147881",
+  "date": "2026-07-27",
+  "likes": 3397
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Let ChatGPT *work* for you. How many time have you wanted to negotiate your internet bill, get rid of all those spam emails you’re subscribed to, or find the perfect deal for something you wanted to do or buy. It’s quite literally just one prompt away, all from the comfort of your phone. It does at least 20 things for me every single day and I’m still surprised.",
+  "url": "https://x.com/thsottiaux/status/2081444811647963244",
+  "date": "2026-07-26",
+  "likes": 3803
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Living life on the edge everyday https://t.co/t5rgfthg5f",
+  "url": "https://x.com/petergyang/status/2081559330537734574",
+  "date": "2026-07-27",
+  "likes": 31
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Just call me Jean Luc Peter https://t.co/LLLvPOnan6 https://t.co/VXzhsaL5FD",
+  "url": "https://x.com/petergyang/status/2081558653300355083",
+  "date": "2026-07-27",
+  "likes": 11
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's \"do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.\"",
+  "url": "https://x.com/petergyang/status/2081555286817648738",
+  "date": "2026-07-27",
+  "likes": 69
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "When people say AI hasn’t led to shipped impact in products, here’s the piece they are missing.\n\nThis is phase 1. Companies with distribution are rapidly expanding to adjacent problem areas - AI helps them execute fast and build functionality that previously required a bunch custom sw (e.g. clothes try on).\n\nCompanies are figuring out the playbook and the impact is not yet visible at the ecosystem level.\n\nPhase 2 will be a lot more net new features and innovation.\n\nThat’s when we will see the undeniable impact of AI on the shape of the software ecosystem.",
+  "url": "https://x.com/realmadhuguru/status/2081437850466451736",
+  "date": "2026-07-26",
+  "likes": 32
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Interesting drop from former Anthropic employee: Hackers prefer to use massively subsidized labs AI subscriptions for attacks as opposed to open models. https://t.co/gSVw9tv346 https://t.co/e6nOCeo0Mj",
+  "url": "https://x.com/amasad/status/2081576172656456076",
+  "date": "2026-07-27",
+  "likes": 189
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "👨‍💻 https://t.co/e8wWoxxSi4 https://t.co/S2kthc0VMF",
+  "url": "https://x.com/rauchg/status/2081571905157714199",
+  "date": "2026-07-27",
+  "likes": 450
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. \n\nOpen source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world.\n\nOpen weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
+  "url": "https://x.com/rauchg/status/2081546513885622760",
+  "date": "2026-07-27",
+  "likes": 1291
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "I compiled 𝚟𝚎𝚛𝚌𝚎𝚕 CLI TypeScript to native with 𝚜𝚌𝚛𝚒𝚙𝚝𝚌. Incredible.\n\n✓ Resulting binary size: 1.28mb \n✓ Startup overhead: 1.5ms (mean)\n✓ Compiles in 2.94s (mean)\n✓ Uses 𝚗𝚘𝚍𝚎:𝚑𝚝𝚝𝚙𝚜, 𝚗𝚘𝚍𝚎:𝚏𝚜, 𝚗𝚘𝚍𝚎:𝚙𝚊𝚝𝚑, 𝚗𝚘𝚍𝚎:𝚘𝚜, 𝚗𝚘𝚍𝚎:𝚌𝚛𝚢𝚙𝚝𝚘\n✓ Highly readable TypeScript\n✓ Code translated by GLM 5.2 Fast\n✓ Deploys like a charm!\n\nNo embedded v8 / QuickJS, fully static.",
+  "url": "https://x.com/rauchg/status/2081517519303737559",
+  "date": "2026-07-26",
+  "likes": 577
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "There’s still so much opportunity in the diffusion of AI into the real world. Most enterprises are going to need a ton of support to be able to apply the model breakthroughs to their workflows.\n\nIntelligence alone is not enough to transform most processes because you need to bridge that intelligence with real world feedback loops. That requires connecting to various enterprise systems, getting the right data to the AI, enabling humans to make decisions at different steps in a process through the right UX, having workflows that improve the underlying data and models over time, dealing with regulatory and compliance challenges, and more. \n\nThe way you implement AI agents for doing client onboarding in a bank is entirely different from contract review in a legal team. In life sciences, financial services, legal, manufacturing, and many other critical industries, AI is only valuable if it makes contact with the real world in a contextual way. \n\nThe way that interaction is going to happen is through an applied AI layer. Some of that will come from the labs directly, but lots of the opportunity will necessarily come from independent companies that can go deep in each industry.\n\nAnd counter to some beliefs, this need isn’t reduced even as AI model capability improves over time. In fact, the better the models get, the more ambitious you can be in the workflows you can automate, which generally requires even more of this applied layer. Tons of opportunity right now.",
+  "url": "https://x.com/levie/status/2081491621162668207",
+  "date": "2026-07-26",
+  "likes": 321
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Thank you @sama \n\nCouldn’t imagine a better close out anchor to YC Startup School 2026\n\nThat’s a wrap! See you next year https://t.co/j3VtThbaMN",
+  "url": "https://x.com/garrytan/status/2081602195292864532",
+  "date": "2026-07-27",
+  "likes": 592
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Don’t LARP\n\nBe earnest",
+  "url": "https://x.com/garrytan/status/2081586567211348432",
+  "date": "2026-07-27",
+  "likes": 899
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Stop measuring your AI adoption in tokens burned\n\nMeasure the time from a user need arriving to that thing shipping",
+  "url": "https://x.com/zarazhangrui/status/2081627581997269192",
+  "date": "2026-07-27",
+  "likes": 22
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "The reason there are so many AI tutorials: the more general a chat product is, the harder it is to use. People face a blank box and freeze, because they genuinely don't know what to ask for",
+  "url": "https://x.com/zarazhangrui/status/2081627109299310684",
+  "date": "2026-07-27",
+  "likes": 17
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "I post on X about 3 times a day on average. Posting takes me maybe 15 to 20 minutes a day at most\n\nI don't overthink it, I post the moment I think of something, and most of the material is stuff I've already said out loud to someone in person",
+  "url": "https://x.com/zarazhangrui/status/2081304884469809295",
+  "date": "2026-07-26",
+  "likes": 145
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "proof of prompt is soon going to replace proof of work",
+  "url": "https://x.com/nikunj/status/2081383934928068619",
+  "date": "2026-07-26",
+  "likes": 70
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "subscribe to @every to get it when it comes out: https://t.co/9wRhOCUCAk",
+  "url": "https://x.com/danshipper/status/2081413625382653985",
+  "date": "2026-07-26",
+  "likes": 2
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "i am taking the week off to write the definitive history of how codex happened (as told by deep interviews with insiders @openai) \n\npublishing on @every in a few weeks\n\ni will be dropping breadcrumbs and learnings as i go :)",
+  "url": "https://x.com/danshipper/status/2081412243388788988",
+  "date": "2026-07-26",
+  "likes": 246
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "agreed feels big, i want a new kind of computer https://t.co/c7VFXFf4uv",
+  "url": "https://x.com/sama/status/2081513071135346814",
+  "date": "2026-07-26",
+  "likes": 5511
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "chatgpt work is remarkable, and \"work\" undersells it.\n\nfrom my phone i sent:\n\n\"use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready.\"\n\nit...just worked.",
+  "url": "https://x.com/sama/status/2081396796174282900",
+  "date": "2026-07-26",
+  "likes": 14718
+ }
+]
