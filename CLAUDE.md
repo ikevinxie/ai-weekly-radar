@@ -17,17 +17,20 @@
 
 ```bash
 python3 -m collector collect          # 抓取 + 粗筛 → data/candidates/<week>.json
-python3 -m collector prompt <week>    # 输出评分 prompt（Claude 按此评分+双语解读）
-python3 -m collector validate <week>  # 校验 data/scored/<week>.json（v2 结构）
+python3 -m collector prompt <week>    # 输出评分 prompt（本地 LLM 按此评分+双语解读）
+python3 -m collector score <week>     # 百炼 API 自动评分（需 DASHSCOPE_API_KEY）
+python3 -m collector validate <week>  # 校验 data/scored/<week>.json（v3 结构）
 python3 -m collector report           # 合并入库 + 生成 docs/ 全套站点
 python3 -m collector feishu <week> [--dry-run]  # 推送 Top 10 卡片到飞书
 python3 -m collector track [--limit N]          # 月度起飞追踪快照
 python3 -m collector voices                     # 每日采集大佬发言（本地，不发布）
-python3 -m collector voices-prompt <week>       # 输出该周发言汇总 prompt（Claude 写周汇总）
+python3 -m collector voices-prompt <week>       # 输出该周发言汇总 prompt（本地 LLM 写周汇总）
+python3 -m collector voices-sum <week>          # 百炼 API 自动汇总大佬之声（需 DASHSCOPE_API_KEY）
 python3 -m pytest                     # 全量测试
 ```
 
 每周五 20:00 的定时任务执行说明见 [scripts/run_weekly.md](scripts/run_weekly.md)。
+GitHub Actions 自动化见 `.github/workflows/weekly.yml`（需配置 Secrets: `DASHSCOPE_API_KEY`、`FEISHU_WEBHOOK_URL`）。
 
 ## 技术约束
 

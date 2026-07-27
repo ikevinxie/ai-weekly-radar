@@ -1,0 +1,87 @@
+# AI Weekly Radar — 每周自动收集 + 百炼 API 评分 + 发布
+# 见 SPEC.md「GitHub Actions 自动化」
+
+name: weekly
+
+on:
+  schedule:
+    # 每周五 20:00 CST = UTC 12:00
+    - cron: "0 12 * * 5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect candidates
+        run: python3 -m collector collect
+
+      - name: Score with DashScope API
+        env:
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+        run: |
+          WEEK=$(python3 -c "from collector.schema import week_of; import datetime; print(week_of(datetime.date.today()))")
+          echo "WEEK=$WEEK" >> "$GITHUB_ENV"
+          python3 -m collector score "$WEEK"
+
+      - name: Voices summary (skip if no daily data)
+        env:
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+        run: python3 -m collector voices-sum "$WEEK" || true
+
+      - name: Validate
+        run: python3 -m collector validate "$WEEK"
+
+      - name: Generate site
+        run: python3 -m collector report
+
+      - name: Feishu push
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: python3 -m collector feishu "$WEEK"
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "weekly: $WEEK
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+
+  # 每月 1 日 20:30 CST = UTC 12:30 起飞追踪
+  liftoff:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '30 12 1 * *'
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Track stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 -m collector track
+      - name: Regenerate site
+        run: python3 -m collector report
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "monthly: liftoff tracking"
+          git push

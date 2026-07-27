@@ -10,12 +10,12 @@
 
 | 决策点 | 结论 |
 |---|---|
-| 调度方式 | Claude Code 定时任务：每周五 20:00 周报；每月 1 日 20:30 起飞追踪 |
+| 调度方式 | **GitHub Actions**（`.github/workflows/weekly.yml`）：每周五 20:00 CST 周报；每月 1 日 20:30 起飞追踪；支持手动 `workflow_dispatch`。本地 Claude Code / Qwen Code 定时任务作为备选 |
 | 数据源 | 全部免费、无需付费 API |
-| 筛选评分 | 规则粗筛 + Claude 三维评分与双语解读（定时任务中的 Claude 完成，零额外 API 成本） |
+| 筛选评分 | 规则粗筛 + **百炼 DashScope API**（`collector/llm.py`）三维评分与双语解读；本地 LLM（Claude Code / Qwen Code）亦可完成（`prompt` 子命令输出模板） |
 | 解读深度 | **全部项目**：中英双语简读（analysis）+ 结构化深度解读（deep_dive）+ 主题标签（tags）；Top 10 徽章按当周总分排名标记 |
 | 产出形式 | GitHub Pages 公开站点（`docs/`，仓库 ikevinxie/ai-weekly-radar）+ RSS + 飞书推送 + 累积库（`data/projects.json`） |
-| 秘密管理 | 飞书 webhook 等秘密只放环境变量或 `~/.config/ai-weekly-radar/`，**绝不进入仓库** |
+| 秘密管理 | 飞书 webhook、百炼 API key 等秘密只放 GitHub Actions Secrets 或环境变量或 `~/.config/ai-weekly-radar/`，**绝不进入仓库** |
 | 技术栈 | Python 3（纯标准库，无第三方运行时依赖）+ pytest |
 
 ## 数据源
@@ -95,11 +95,17 @@
 ## 每周流水线
 
 1. `python3 -m collector collect` — 抓取全部源 → 归一化 → 规则粗筛 → 与 `data/projects.json` 历史去重 → 写 `data/candidates/<week>.json`
-2. **Claude 评分与解读** — 按 `python3 -m collector prompt <week>` 输出的模板，产出 trend + 每项 scores/reason/analysis + Top 10 deep_dive，写 `data/scored/<week>.json`
-3. `python3 -m collector validate <week>` — 校验 v2 结构（分数、双语字段、deep_dive 恰好覆盖 Top 10），失败则退出码非 0
+2. **评分与解读**（二选一）：
+   - **云端 API**：`python3 -m collector score <week>` — 调用百炼 DashScope API 自动评分，写 `data/scored/<week>.json`（见下方「LLM API 评分」）
+   - **本地 LLM**：按 `python3 -m collector prompt <week>` 输出的模板，由 Claude Code / Qwen Code 手动产出
+3. `python3 -m collector validate <week>` — 校验 v3 结构（分数、双语字段、deep_dive 全覆盖），失败则退出码非 0
 4. `python3 -m collector report` — 合并入累积库，生成 `docs/` 全套站点文件
 5. `python3 -m collector feishu <week>` — 推送 Top 10 卡片到飞书群（webhook 未配置时跳过并提示）
 6. `git add -A && git commit && git push` — 发布到 GitHub Pages
+
+大佬之声（若本周有每日采集数据）：
+- **云端 API**：`python3 -m collector voices-sum <week>` — 调用百炼 API 写 `data/voices/<week>.json`
+- **本地 LLM**：按 `python3 -m collector voices-prompt <week>` 输出的模板手动产出
 
 ## 站点结构（docs/，GitHub Pages 从此目录服务）
 
@@ -192,3 +198,28 @@
 ## 测试约定
 
 见 [CLAUDE.md](CLAUDE.md)。核心：所有测试离线（fixture 录制真实响应）、每次功能变更同步积累测试用例、收尾前 `python3 -m pytest` 全绿。
+
+## LLM API 评分（collector/llm.py）
+
+通过百炼 DashScope OpenAI 兼容接口自动完成评分与解读，替代本地 LLM 手工操作。
+
+- **接口**：`POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions`
+- **认证**：环境变量 `DASHSCOPE_API_KEY`（GitHub Actions Secrets 或本地 `.env`）
+- **模型**：默认 `qwen-max`，可通过环境变量 `DASHSCOPE_MODEL` 覆盖
+- **纯标准库**：复用 `collector/net.py` 的 `post_json` + SSL 回退链，不引入第三方依赖
+- **子命令**：
+  - `python3 -m collector score <week>` — 读取候选 → 构建 prompt → 调 API → 解析 JSON → 写 `data/scored/<week>.json` → 自动 validate
+  - `python3 -m collector voices-sum <week>` — 读取每日发言 → 构建 prompt → 调 API → 写 `data/voices/<week>.json`
+- **分批策略**：候选 > 20 个时按 20 个一组拆分，每组独立调 API，最后合并 entries；trend 在全部 entries 就绪后单独生成
+- **JSON 提取**：LLM 回复可能包裹在 markdown 代码块中，需健壮解析（去 ```json 围栏、截断修复）
+- **重试**：API 调用失败（超时、限流）自动重试 2 次，指数退避
+- **超时**：单次 API 调用 300 秒（评分输出量大）
+
+## GitHub Actions 自动化（.github/workflows/weekly.yml）
+
+- **触发**：`schedule` cron `0 12 * * 5`（UTC 12:00 = 北京时间周五 20:00）+ `workflow_dispatch`（手动）
+- **月度起飞追踪**：`schedule` cron `30 12 1 * *`（每月 1 日 20:30 CST）
+- **Secrets**：`DASHSCOPE_API_KEY`、`FEISHU_WEBHOOK_URL`（可选）、`GITHUB_TOKEN`（内置）
+- **步骤**：collect → score → voices-sum（有数据时）→ validate → report → feishu → commit & push
+- **提交信息**：`weekly: <week>`，末尾 `Co-Authored-By: Claude <noreply@anthropic.com>`
+- **失败处理**：个别数据源失败不中断（collect 已内置容错）；API 评分失败则 workflow 失败并通知

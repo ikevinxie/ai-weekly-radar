@@ -48,16 +48,17 @@ collector/
 - **v3**：用户要求全员深度解读（60 个/周都要 what/why/biz 双语）+tags(1-3, 限词表)+trend.deep；7 个奖项；归档时间线 #archive；象限图；分享按钮+纯标准库 QR（与 python-qrcode 逐位交叉验证，快照 fixture 锁定）；界面完整英化。飞书机器人设了关键词「AI项目」→卡片标题必须含该字面量（有回归测试）
 - **v4.1**：修奖项徽章条排版——单枚徽章限 max-width 260px，奖项名全显、项目名过长时省略号截断（完整文案进 title 悬浮提示），修复长论文标题（如硬核奖 VEXAIoT…）撑爆整行的问题。奖项条由「单行横向滚动」改为「flex-wrap 自动换行多行铺满」（桌面 2 行、移动端每枚一行），所有奖项一屏看全无需滚动
 - **v4**：大佬之声（follow-builders 公开 feed，日采不发布、周汇总渐进式呈现+融入风向）；象限图改默认收起；奖项点击定位加脉冲动画(card-locate)；卡片降密度（analysis 收进深度解读折叠区）；🥇🥈🥉 Top3 徽章；周导航 ◀▶；trend.deep 加深(8-12句可分段)；本 HANDOFF 机制确立
+- **v5**：云端自动化——新增 `collector/llm.py`（百炼 DashScope OpenAI 兼容接口，纯标准库 urllib）；新增 `score` / `voices-sum` CLI 子命令（自动评分+汇总，分批策略 >20 个/批，JSON 围栏提取，指数退避重试）；新增 `.github/workflows/weekly.yml`（周五 20:00 CST 周报 + 每月 1 日起飞追踪 + workflow_dispatch）；SPEC.md 核心决策表更新（调度方式→GitHub Actions，评分→百炼 API）；16 个新离线测试
 
 ## 当前状态（每次迭代更新此节）
 
 - 最新周报：**2026-W31**（59 项目全解读；大佬之声无数据自动隐藏）
 - 累积库：119 条（W29 + W31）
-- 测试：**171 个全绿**
+- 测试：**187 个全绿**（含 16 个 llm.py 新测试）
 - 起飞追踪：data/tracking.json 有首批快照；起飞榜已渲染（榜首 gpt-5.6-instruct）
 - 飞书：webhook 已配置并实推验证过（W31 卡片已送达）
 - 大佬之声：daily 采集已跑通；W31 无每日数据（区块自动隐藏）
-- 自动化：用户计划接入百炼 API + GitHub Actions 实现云端自动化（替代本地 Claude Code 定时任务）
+- 云端自动化：`collector/llm.py` + `.github/workflows/weekly.yml` 已就绪；**待用户在 GitHub 仓库 Settings → Secrets 中配置 `DASHSCOPE_API_KEY`（必需）和 `FEISHU_WEBHOOK_URL`（可选）后生效**
 
 ## Backlog（提过但未做，可作为新点子候选）
 

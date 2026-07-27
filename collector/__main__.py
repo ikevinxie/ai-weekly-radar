@@ -195,16 +195,59 @@ def cmd_track(args: list[str]) -> int:
     return 0
 
 
+def cmd_score(args: list[str]) -> int:
+    from . import llm
+
+    week = args[0] if args else week_of(datetime.date.today())
+    candidates, _, scored_path = _load_week(week)
+    print(f"调用百炼 API 为 {len(candidates)} 个候选评分…")
+    scored = llm.score_candidates(candidates, week)
+    store.save(scored, scored_path)
+    print(f"评分完成 → {scored_path}")
+    errors = scoring.validate_scored(candidates, scored)
+    if errors:
+        print(f"校验失败，共 {len(errors)} 处：", file=sys.stderr)
+        for e in errors:
+            print(f"  - {e}", file=sys.stderr)
+        return 1
+    print(f"校验通过：{len(scored['entries'])} 条评分。下一步：python3 -m collector report")
+    return 0
+
+
+def cmd_voices_sum(args: list[str]) -> int:
+    from . import llm, voices
+
+    week = args[0] if args else week_of(datetime.date.today())
+    posts = voices.load_week_posts(week)
+    if not posts:
+        print(f"本周（{week}）没有每日采集数据；跳过大佬之声汇总。")
+        return 0
+    print(f"调用百炼 API 汇总 {len(posts)} 条发言…")
+    doc = llm.summarize_voices(posts, week)
+    path = voices.weekly_path(week)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    errors = voices.validate_weekly(doc)
+    if errors:
+        print(f"校验失败：{'；'.join(errors)}", file=sys.stderr)
+        return 1
+    print(f"大佬之声汇总完成 → {path}")
+    return 0
+
+
 COMMANDS = {"collect": cmd_collect, "prompt": cmd_prompt, "validate": cmd_validate,
             "report": cmd_report, "feishu": cmd_feishu, "track": cmd_track,
-            "voices": cmd_voices, "voices-prompt": cmd_voices_prompt}
+            "voices": cmd_voices, "voices-prompt": cmd_voices_prompt,
+            "score": cmd_score, "voices-sum": cmd_voices_sum}
 
 
 def main() -> int:
     argv = sys.argv[1:]
     if not argv or argv[0] not in COMMANDS:
         print("用法: python3 -m collector "
-              "{collect [日期]|prompt [周]|validate [周]|report|feishu [周] [--dry-run]|track [--limit N]}",
+              "{collect [日期]|prompt [周]|score [周]|validate [周]|report|"
+              "feishu [周] [--dry-run]|track [--limit N]|voices [日期]|"
+              "voices-prompt [周]|voices-sum [周]}",
               file=sys.stderr)
         return 2
     return COMMANDS[argv[0]](argv[1:])
