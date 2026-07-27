@@ -20,6 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Reject stale checkout
+        run: |
+          git fetch origin main
+          AHEAD=$(git rev-list --count HEAD..origin/main)
+          if [ "$AHEAD" != "0" ]; then
+            echo "::error::本次 run checkout 的是 $(git rev-parse --short HEAD)，落后 origin/main $AHEAD 个 commit。请 cancel 所有 queued run 后重触发。"
+            exit 1
+          fi
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

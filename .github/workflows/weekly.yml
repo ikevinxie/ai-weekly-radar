@@ -24,6 +24,24 @@ jobs:
           echo "=== weekly workflow running on commit $(git rev-parse HEAD) ==="
           git log -1 --pretty='%h %s'
 
+      - name: Reject stale checkout
+        # workflow_dispatch 会把"被触发那一刻的 HEAD"钉死给这次 run。
+        # 如果用户在 push 新 commit 之前点了 Run workflow，或者 queue 里
+        # 还有旧 dispatch 没 cancel，这次 run 就会跑旧代码，浪费 7 分钟
+        # LLM API 时间后才在某个已修复的 bug 上挂掉。
+        # 这里硬性 fail：落后 origin/main 任何 commit 都直接退出，
+        # 让用户 cancel 后重触发，避免再次"修了还是挂"的猜谜。
+        run: |
+          git fetch origin main
+          AHEAD=$(git rev-list --count HEAD..origin/main)
+          if [ "$AHEAD" != "0" ]; then
+            echo "::error::本次 run checkout 的是 $(git rev-parse --short HEAD)，但 origin/main 已经是 $(git rev-parse --short origin/main)，落后 $AHEAD 个 commit。"
+            echo "::error::这通常意味着：(1) 你在 push 最新修复之前点了 Run workflow；或 (2) Actions 列表里还有更早的 queued dispatch 没 cancel。"
+            echo "::error::请去 Actions 页 cancel 掉所有 Queued / In progress 的 weekly run，等列表清空后再点 Run workflow。"
+            exit 1
+          fi
+          echo "✓ HEAD == origin/main，跑的是最新代码。"
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
