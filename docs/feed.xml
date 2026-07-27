@@ -6,11 +6,11 @@
   <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
   <language>zh-cn</language>
   <item>
-   <title>AI 周报 2026-W31：本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。</title>
+   <title>AI 周报 2026-W31：本周AI项目集中在图像生成与处理、自然语言处理和开发者工具领域。</title>
    <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W31</link>
    <guid isPermaLink="false">2026-W31</guid>
    <pubDate>Fri, 31 Jul 2026 20:00:00 +0000</pubDate>
-   <description>本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。与此同时，开放权重的地缘政治博弈白热化：三篇 HN 热帖同时讨论中国开源 AI 的战略优势与美国政策走向，startup founders 集体上书反对封锁。另一条暗线是「AI 祛魅」：pelicanmaxxing 的讽刺、AI 公司隐藏债务的曝光、Anthropic 15 亿美元版权和解，都在提醒行业回归理性。创意 AI 则继续下沉——手绘动画、3D 生成、实时语音，创作者工具越来越触手可及。
+   <description>本周AI项目集中在图像生成与处理、自然语言处理和开发者工具领域。高分项目多涉及创新性的技术应用，如图像编辑、代码优化和对话系统改进。下周可关注这些领域的进一步发展。
 
 1. gnipbao/story-to-handdrawn-video（23分）— 把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。
 2. Are AI labs pelicanmaxxing?（22分）— 「AI 实验室在 pelicanmaxxing 吗？」——本周最好笑也最扎心的 AI 文化批评。

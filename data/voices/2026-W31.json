@@ -1,0 +1,92 @@
+{
+  "week": "2026-W31",
+  "overview": {
+    "zh": "本周，AI 建设者们讨论了 AI 在日常工作中的应用、信任问题以及其对企业的影响。他们还强调了开放权重的重要性，并探讨了未来发展的方向。",
+    "en": "This week, AI builders discussed the practical applications of AI in daily work, trust issues, and its impact on businesses. They also emphasized the importance of open weights and explored future directions."
+  },
+  "themes": [
+    {
+      "title": {
+        "zh": "AI 的实际应用",
+        "en": "Practical Applications of AI"
+      },
+      "summary": {
+        "zh": "多位专家分享了 AI 如何在日常生活中提供帮助，从处理琐事到规划旅行，展示了 AI 的广泛用途。",
+        "en": "Several experts shared how AI can help in daily life, from handling mundane tasks to planning trips, showcasing its wide-ranging applications."
+      },
+      "quotes": [
+        {
+          "author": "Thibault Sottiaux",
+          "handle": "@thsottiaux",
+          "text": "Let ChatGPT *work* for you. How many time have you wanted to negotiate your internet bill, get rid of all those spam emails you’re subscribed to, or find the perfect deal for something you wanted to do or buy. It’s quite literally just one prompt away, all from the comfort of your phone. It does at least 20 things for me every single day and I’m still surprised.",
+          "url": "https://x.com/thsottiaux/status/2081444811647963244",
+          "date": "2026-07-26"
+        },
+        {
+          "author": "Sam Altman",
+          "handle": "@sama",
+          "text": "chatgpt work is remarkable, and \"work\" undersells it. from my phone i sent: \"use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready.\" it...just worked.",
+          "url": "https://x.com/sama/status/2081396796174282900",
+          "date": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "企业中的 AI 应用",
+        "en": "AI in Enterprises"
+      },
+      "summary": {
+        "zh": "讨论了企业在采用 AI 技术时面临的挑战和机会，特别是在与现有系统集成和满足合规要求方面。",
+        "en": "Discussed the challenges and opportunities enterprises face when adopting AI, particularly in integrating with existing systems and meeting compliance requirements."
+      },
+      "quotes": [
+        {
+          "author": "Aaron Levie",
+          "handle": "@levie",
+          "text": "There’s still so much opportunity in the diffusion of AI into the real world. Most enterprises are going to need a ton of support to be able to apply the model breakthroughs to their workflows. Intelligence alone is not enough to transform most processes because you need to bridge that intelligence with real world feedback loops. That requires connecting to various enterprise systems, getting the right data to the AI, enabling humans to make decisions at different steps in a process through the right UX, having workflows that improve the underlying data and models over time, dealing with regulatory and compliance challenges, and more.",
+          "url": "https://x.com/levie/status/2081491621162668207",
+          "date": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "AI 的信任与安全",
+        "en": "Trust and Security in AI"
+      },
+      "summary": {
+        "zh": "提到了用户对 AI 的信任问题，特别是关于数据隐私和安全的担忧。",
+        "en": "Mentioned the issue of user trust in AI, especially concerning data privacy and security."
+      },
+      "quotes": [
+        {
+          "author": "Peter Yang",
+          "handle": "@petergyang",
+          "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's \"do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.\"",
+          "url": "https://x.com/petergyang/status/2081555286817648738",
+          "date": "2026-07-27"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "开放权重的重要性",
+        "en": "Importance of Open Weights"
+      },
+      "summary": {
+        "zh": "强调了开放权重对于推动技术创新和发展的重要性。",
+        "en": "Emphasized the importance of open weights in driving technological innovation and development."
+      },
+      "quotes": [
+        {
+          "author": "Guillermo Rauch",
+          "handle": "@rauchg",
+          "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. Open source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world. Open weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
+          "url": "https://x.com/rauchg/status/2081546513885622760",
+          "date": "2026-07-27"
+        }
+      ]
+    }
+  ]
+}

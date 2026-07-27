@@ -3,16 +3,107 @@
   {
    "week": "2026-W31",
    "date": "2026-07-31",
-   "count": 59,
+   "count": 110,
    "trend": {
-    "zh": "本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。与此同时，开放权重的地缘政治博弈白热化：三篇 HN 热帖同时讨论中国开源 AI 的战略优势与美国政策走向，startup founders 集体上书反对封锁。另一条暗线是「AI 祛魅」：pelicanmaxxing 的讽刺、AI 公司隐藏债务的曝光、Anthropic 15 亿美元版权和解，都在提醒行业回归理性。创意 AI 则继续下沉——手绘动画、3D 生成、实时语音，创作者工具越来越触手可及。",
-    "en": "The dominant signal this week is the agent infrastructure land grab — from permanent memory (OptMem's radically minimal 426-token approach) to runtime frameworks (AxisAgentic), RL post-training (axrl), and deployment platforms (OpenComputer, Velane), the agent toolchain is crystallizing at remarkable speed. Simultaneously, open-weights geopolitics hit a fever pitch: three HN front-page posts debated China's open-source AI strategy and US policy response, with startup founders collectively lobbying against restrictions. An undercurrent of AI disillusionment runs through the week — pelicanmaxxing satire, exposés on AI companies hiding staggering debt off-balance-sheet, and Anthropic's landmark $1.5B copyright settlement all signal an industry reality check. Meanwhile, creative AI keeps democratizing: hand-drawn animation from story text, Microsoft's TRELLIS.2 for 3D generation, and real-time voice agents are putting powerful tools in everyone's hands.",
+    "zh": "本周AI项目集中在图像生成与处理、自然语言处理和开发者工具领域。高分项目多涉及创新性的技术应用，如图像编辑、代码优化和对话系统改进。下周可关注这些领域的进一步发展。",
+    "en": "This week's AI projects are concentrated in the areas of image generation and processing, natural language processing, and developer tools. High-scoring projects often involve innovative applications, such as image editing, code optimization, and improvements to conversational systems. Next week, it would be worth watching for further developments in these areas.",
     "deep": {
-     "zh": "Agent 基建的扎堆程度令人瞩目。OptMem 用一个 426 token 的 prompt 就实现了 agent 永久记忆，这种极简主义恰恰说明 agent 记忆问题的核心不在技术复杂度而在设计哲学；agentacct 则从另一个角度切入——给 coding agent 做「工作审计」，read-only 地分析 agent 日志，零 JS 的本地仪表盘，这是 agent 可观测性赛道的早期信号。AxisAgentic 和 axrl 来自同一个实验室（XYZ-AI-Lab），前者做长程 agent 运行时和轨迹收集，后者做基于 SGLang 和 Megatron 的 agentic RL 后训练，合在一起看就是在搭建完整的 agent 训练-部署闭环。\n\n开放权重叙事本周达到高潮。werd.io 的文章直言「中国开放权重战略正在赢」，Politico 报道 startup founders 联名上书反对封锁中国开源 AI，Tobi Knaup 则把开放权重 AI 比作 Kubernetes 时刻——这三个角度（战略判断、政策博弈、技术范式）构成了完整的叙事链。值得注意的是，Gemini 3.6 Flash 的发布和 Qwen-Image-3.0 的亮相同时出现在 HN 热榜，说明大厂也在加速开放。\n\nAI 行业的「祛魅」信号同样密集。pelicanmaxxing 一文用讽刺手法揭示 AI 实验室的荒诞行为，拿下本周最高 fun 分；Futurism 曝光 AI 公司试图在资产负债表外隐藏巨额债务；Anthropic 15 亿美元盗版书籍和解案获批，成为 AI 版权史上的里程碑。这些信号叠加在一起，描绘出一个正在从狂热走向理性的行业。\n\n下周值得盯：agent 可观测性赛道是否会出现更多玩家；开放权重政策博弈的后续发展；以及创意 AI 工具从 demo 到产品的转化速度。",
-     "en": "The concentration of agent infrastructure projects this week is striking. OptMem achieves permanent agent memory with a mere 426-token prompt — this radical minimalism suggests the core challenge of agent memory lies not in technical complexity but in design philosophy. Agentacct approaches from the opposite angle: auditing coding agents by read-only analysis of their logs, with a zero-JavaScript local dashboard. This is an early signal for the agent observability space. AxisAgentic and axrl come from the same lab (XYZ-AI-Lab) — the former builds long-horizon agent runtimes and trajectory collection, the latter does agentic RL post-training on SGLang and Megatron. Together they form a complete agent train-deploy loop.\n\nThe open-weights narrative peaked this week. The werd.io piece bluntly declares 'China's open-weights AI strategy is winning,' Politico reports startup founders collectively lobbying against restrictions on Chinese open-source AI, and Tobi Knaup draws the Kubernetes analogy for open-weight AI adoption. These three angles — strategic assessment, policy battle, and technological paradigm — form a complete narrative chain. Notably, Gemini 3.6 Flash and Qwen-Image-3.0 both hit the HN front page simultaneously, showing that big labs are also accelerating openness.\n\nThe AI industry's 'disillusionment' signals are equally dense. The pelicanmaxxing essay uses satire to expose the absurdity of AI lab behavior, earning this week's highest fun score. Futurism exposes AI companies attempting to hide staggering debt off-balance-sheet. Anthropic's $1.5B pirated books settlement was approved, becoming a landmark in AI copyright history. These signals together paint an industry transitioning from frenzy to rationality.\n\nWorth watching next week: whether the agent observability space attracts more players; the aftermath of the open-weights policy battle; and the speed at which creative AI tools transition from demos to products."
+     "zh": "本周的AI项目中，图像生成与处理领域尤为突出，多个Hugging Face上的空间项目如krea2-identity-edit、wan2-2-i2v-v3等均获得了高评分，显示出该领域在技术实现和用户体验方面的显著进步。\n\n自然语言处理方面，github上的lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6项目以及产品hunt上的一些文本处理工具也受到了高度评价，表明市场对于高效且易于使用的NLP解决方案的需求持续增长。\n\n此外，针对开发者的工具类项目同样表现不俗，例如github上的ddcat-ai/open-ai-canvas及risa-labs-inc/BossConsole，它们通过提供强大的可视化界面或简化复杂任务来提升开发效率。这反映出随着AI技术的发展，对辅助工具的要求也在不断提高。\n\n展望未来一周，建议重点关注上述三大领域的最新进展，尤其是那些能够带来实质性创新或者极大改善现有工作流程的新项目。同时，考虑到近期对于负责任AI的关注度增加，相关伦理和安全措施的研究也可能成为新的热点。",
+     "en": "Among this week's AI projects, image generation and processing stand out, with several Hugging Face spaces like krea2-identity-edit and wan2-2-i2v-v3 receiving high scores, indicating significant advancements in both technical implementation and user experience.\n\nIn the realm of natural language processing, projects such as lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6 on GitHub and some text processing tools featured on Product Hunt have been highly rated, signaling a growing demand for efficient and user-friendly NLP solutions.\n\nDeveloper-focused tools also showed strong performance, with projects like ddcat-ai/open-ai-canvas and risa-labs-inc/BossConsole on GitHub enhancing productivity through powerful visual interfaces or by simplifying complex tasks. This reflects an increasing need for supportive tools as AI technology evolves.\n\nLooking ahead to next week, it is recommended to closely follow the latest developments in these three key areas, particularly new projects that introduce substantial innovations or significantly improve existing workflows. Additionally, given the recent focus on responsible AI, research into ethical and safety measures may emerge as a new focal point."
     }
    },
-   "voices": null,
+   "voices": {
+    "week": "2026-W31",
+    "overview": {
+     "zh": "本周，AI 建设者们讨论了 AI 在日常工作中的应用、信任问题以及其对企业的影响。他们还强调了开放权重的重要性，并探讨了未来发展的方向。",
+     "en": "This week, AI builders discussed the practical applications of AI in daily work, trust issues, and its impact on businesses. They also emphasized the importance of open weights and explored future directions."
+    },
+    "themes": [
+     {
+      "title": {
+       "zh": "AI 的实际应用",
+       "en": "Practical Applications of AI"
+      },
+      "summary": {
+       "zh": "多位专家分享了 AI 如何在日常生活中提供帮助，从处理琐事到规划旅行，展示了 AI 的广泛用途。",
+       "en": "Several experts shared how AI can help in daily life, from handling mundane tasks to planning trips, showcasing its wide-ranging applications."
+      },
+      "quotes": [
+       {
+        "author": "Thibault Sottiaux",
+        "handle": "@thsottiaux",
+        "text": "Let ChatGPT *work* for you. How many time have you wanted to negotiate your internet bill, get rid of all those spam emails you’re subscribed to, or find the perfect deal for something you wanted to do or buy. It’s quite literally just one prompt away, all from the comfort of your phone. It does at least 20 things for me every single day and I’m still surprised.",
+        "url": "https://x.com/thsottiaux/status/2081444811647963244",
+        "date": "2026-07-26"
+       },
+       {
+        "author": "Sam Altman",
+        "handle": "@sama",
+        "text": "chatgpt work is remarkable, and \"work\" undersells it. from my phone i sent: \"use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready.\" it...just worked.",
+        "url": "https://x.com/sama/status/2081396796174282900",
+        "date": "2026-07-26"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "企业中的 AI 应用",
+       "en": "AI in Enterprises"
+      },
+      "summary": {
+       "zh": "讨论了企业在采用 AI 技术时面临的挑战和机会，特别是在与现有系统集成和满足合规要求方面。",
+       "en": "Discussed the challenges and opportunities enterprises face when adopting AI, particularly in integrating with existing systems and meeting compliance requirements."
+      },
+      "quotes": [
+       {
+        "author": "Aaron Levie",
+        "handle": "@levie",
+        "text": "There’s still so much opportunity in the diffusion of AI into the real world. Most enterprises are going to need a ton of support to be able to apply the model breakthroughs to their workflows. Intelligence alone is not enough to transform most processes because you need to bridge that intelligence with real world feedback loops. That requires connecting to various enterprise systems, getting the right data to the AI, enabling humans to make decisions at different steps in a process through the right UX, having workflows that improve the underlying data and models over time, dealing with regulatory and compliance challenges, and more.",
+        "url": "https://x.com/levie/status/2081491621162668207",
+        "date": "2026-07-26"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "AI 的信任与安全",
+       "en": "Trust and Security in AI"
+      },
+      "summary": {
+       "zh": "提到了用户对 AI 的信任问题，特别是关于数据隐私和安全的担忧。",
+       "en": "Mentioned the issue of user trust in AI, especially concerning data privacy and security."
+      },
+      "quotes": [
+       {
+        "author": "Peter Yang",
+        "handle": "@petergyang",
+        "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's \"do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.\"",
+        "url": "https://x.com/petergyang/status/2081555286817648738",
+        "date": "2026-07-27"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "开放权重的重要性",
+       "en": "Importance of Open Weights"
+      },
+      "summary": {
+       "zh": "强调了开放权重对于推动技术创新和发展的重要性。",
+       "en": "Emphasized the importance of open weights in driving technological innovation and development."
+      },
+      "quotes": [
+       {
+        "author": "Guillermo Rauch",
+        "handle": "@rauchg",
+        "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. Open source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world. Open weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
+        "url": "https://x.com/rauchg/status/2081546513885622760",
+        "date": "2026-07-27"
+       }
+      ]
+     }
+    ]
+   },
    "awards": [
     {
      "key": "best",

@@ -411,6 +411,46 @@
   "rank": 10
  },
  {
+  "id": "producthunt:1207407",
+  "name": "Comms",
+  "url": "https://www.producthunt.com/products/comms-ai-agents-inside-imessage",
+  "source": "producthunt",
+  "description": "Launch iMessage agents in seconds",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-26"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 6,
+   "total": 19
+  },
+  "reason": "几秒钟内即可在 iMessage 中启动 AI 代理，带来全新的消息体验。",
+  "analysis": {
+   "zh": "Comms 允许用户在几秒钟内将 AI 代理集成到 iMessage 中，为日常聊天添加了新的功能和乐趣。",
+   "en": "Comms enables users to integrate AI agents into iMessage within seconds, adding new functionalities and fun to daily chats."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Comms 是一个平台，可以在 iMessage 中快速部署 AI 代理，使用户能够与智能助手进行交互。",
+    "why": "这一创新使得用户能够在熟悉的环境中体验 AI 的强大功能，无需额外下载应用程序。",
+    "biz": "随着 iMessage 用户基数庞大，Comms 有着巨大的市场潜力，可以通过提供高级功能来实现商业化。"
+   },
+   "en": {
+    "what": "Comms is a platform that allows for the quick deployment of AI agents within iMessage, enabling users to interact with intelligent assistants.",
+    "why": "This innovation allows users to experience the power of AI in a familiar environment without needing to download additional apps.",
+    "biz": "With a large user base for iMessage, Comms has significant market potential and can be monetized by offering premium features."
+   }
+  },
+  "tags": [
+   "agent",
+   "创意"
+  ],
+  "rank": 11
+ },
+ {
   "id": "reddit:1v4j1uk",
   "name": "Prompt Injection in NeurIPS 2026? [D]",
   "url": "https://www.reddit.com/r/MachineLearning/comments/1v4j1uk/prompt_injection_in_neurips_2026_d/",
@@ -449,7 +489,7 @@
    "安全",
    "社区"
   ],
-  "rank": 11
+  "rank": 12
  },
  {
   "id": "hackernews:48993414",
@@ -491,7 +531,7 @@
    "基建",
    "商业"
   ],
-  "rank": 12
+  "rank": 13
  },
  {
   "id": "hackernews:49048034",
@@ -533,7 +573,7 @@
    "基建",
    "社区"
   ],
-  "rank": 13
+  "rank": 14
  },
  {
   "id": "huggingface:space/prithivMLmods/FireRed-Image-Edit-1.0-Fast",
@@ -574,7 +614,7 @@
    "图像",
    "创意"
   ],
-  "rank": 14
+  "rank": 15
  },
  {
   "id": "producthunt:1206148",
@@ -614,7 +654,47 @@
    "教育",
    "安全"
   ],
-  "rank": 15
+  "rank": 16
+ },
+ {
+  "id": "producthunt:1207115",
+  "name": "Tackly",
+  "url": "https://www.producthunt.com/products/tackly",
+  "source": "producthunt",
+  "description": "Map your thoughts in real time with AI.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-26"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 6,
+   "money": 5,
+   "total": 18
+  },
+  "reason": "通过 AI 实时绘制你的思维地图，激发创造力。",
+  "analysis": {
+   "zh": "Tackly 是一个工具，可以通过 AI 实时绘制你的思维地图，帮助你更好地组织和表达想法。",
+   "en": "Tackly is a tool that uses AI to map your thoughts in real time, helping you better organize and express your ideas."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Tackly 是一个基于 AI 的工具，可以实时绘制用户的思维地图，帮助他们更好地组织和表达自己的想法。",
+    "why": "通过可视化的方式，Tackly 使得复杂的思维过程变得清晰可见，有助于提高创造力和工作效率。",
+    "biz": "随着人们对高效工作和创造性思维的需求不断增加，Tackly 有潜力成为一个受欢迎的工具，特别是在教育和创意领域。"
+   },
+   "en": {
+    "what": "Tackly is an AI-based tool that maps users' thoughts in real time, helping them to better organize and express their ideas.",
+    "why": "By visualizing complex thought processes, Tackly makes them clearer and more accessible, enhancing creativity and productivity.",
+    "biz": "With the growing need for efficient work and creative thinking, Tackly has the potential to become a popular tool, especially in education and creative fields."
+   }
+  },
+  "tags": [
+   "agent",
+   "创意"
+  ],
+  "rank": 17
  },
  {
   "id": "reddit:1v6w394",
@@ -655,7 +735,7 @@
    "编码",
    "硬件"
   ],
-  "rank": 16
+  "rank": 18
  },
  {
   "id": "arxiv:2607.22520v1",
@@ -695,7 +775,7 @@
    "论文",
    "agent"
   ],
-  "rank": 17
+  "rank": 19
  },
  {
   "id": "github:realfishsam/agent-notch",
@@ -736,7 +816,7 @@
    "agent",
    "创意"
   ],
-  "rank": 18
+  "rank": 20
  },
  {
   "id": "hackernews:49020999",
@@ -778,7 +858,7 @@
    "商业",
    "安全"
   ],
-  "rank": 19
+  "rank": 21
  },
  {
   "id": "huggingface:space/pliny-the-prompter/obliteratus",
@@ -819,7 +899,7 @@
    "安全",
    "创意"
   ],
-  "rank": 20
+  "rank": 22
  },
  {
   "id": "producthunt:1205327",
@@ -859,7 +939,7 @@
    "编码",
    "agent"
   ],
-  "rank": 21
+  "rank": 23
  },
  {
   "id": "producthunt:1206492",
@@ -899,7 +979,7 @@
    "效率",
    "商业"
   ],
-  "rank": 22
+  "rank": 24
  },
  {
   "id": "reddit:1v4ns8l",
@@ -940,7 +1020,7 @@
    "论文",
    "图像"
   ],
-  "rank": 23
+  "rank": 25
  },
  {
   "id": "arxiv:2607.22511v1",
@@ -980,7 +1060,7 @@
    "论文",
    "agent"
   ],
-  "rank": 24
+  "rank": 26
  },
  {
   "id": "arxiv:2607.22513v1",
@@ -1020,7 +1100,7 @@
    "论文",
    "安全"
   ],
-  "rank": 25
+  "rank": 27
  },
  {
   "id": "github:hahhforest/pi-textbook",
@@ -1061,7 +1141,7 @@
    "agent",
    "教育"
   ],
-  "rank": 26
+  "rank": 28
  },
  {
   "id": "github:makecindy/cindy",
@@ -1102,7 +1182,7 @@
    "agent",
    "效率"
   ],
-  "rank": 27
+  "rank": 29
  },
  {
   "id": "github:mikehasa/agentacct",
@@ -1143,7 +1223,7 @@
    "agent",
    "编码"
   ],
-  "rank": 28
+  "rank": 30
  },
  {
   "id": "hackernews:48979269",
@@ -1185,7 +1265,49 @@
    "社区",
    "商业"
   ],
-  "rank": 29
+  "rank": 31
+ },
+ {
+  "id": "hackernews:48995213",
+  "name": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+  "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+  "source": "hackernews",
+  "description": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 376,
+   "comments": 338,
+   "hn_link": "https://news.ycombinator.com/item?id=48995213"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 7,
+   "total": 16
+  },
+  "reason": "Jack Dorsey推出了一款结合团队聊天、AI代理和Git托管的新工具Buzz。",
+  "analysis": {
+   "zh": "Jack Dorsey的新项目Buzz将多种功能整合在一起，为开发者提供了一个全新的协作平台。",
+   "en": "Jack Dorsey's new project Buzz integrates multiple features, providing developers with a new collaboration platform."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Buzz是一款集成了团队聊天、AI代理和Git托管的工具。",
+    "why": "这款工具旨在提高开发者的生产力和协作效率。",
+    "biz": "Buzz有潜力成为开发者社区中的重要工具，具有很高的商业化潜力。"
+   },
+   "en": {
+    "what": "Buzz is a tool that integrates team chat, AI agents, and Git hosting.",
+    "why": "It aims to enhance productivity and collaboration for developers.",
+    "biz": "Buzz has the potential to become an essential tool in the developer community, with high commercial potential."
+   }
+  },
+  "tags": [
+   "agent",
+   "社区"
+  ],
+  "rank": 32
  },
  {
   "id": "hackernews:48996652",
@@ -1227,7 +1349,7 @@
    "商业",
    "安全"
   ],
-  "rank": 30
+  "rank": 33
  },
  {
   "id": "huggingface:space/webml-community/bonsai-webgpu-kernels",
@@ -1268,7 +1390,7 @@
    "基建",
    "编码"
   ],
-  "rank": 31
+  "rank": 34
  },
  {
   "id": "producthunt:1205923",
@@ -1308,7 +1430,86 @@
    "agent",
    "基建"
   ],
-  "rank": 32
+  "rank": 35
+ },
+ {
+  "id": "producthunt:1206376",
+  "name": "AI YC interview with Gstack agents",
+  "url": "https://www.producthunt.com/products/gstack-joins-your-meeting",
+  "source": "producthunt",
+  "description": "AI specialists that join your Google Meet and gives feedback",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-25"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 5,
+   "total": 16
+  },
+  "reason": "AI 专家加入你的 Google Meet 并提供反馈，提升会议质量。",
+  "analysis": {
+   "zh": "AI YC interview with Gstack agents 可以让 AI 专家加入你的 Google Meet 会议并提供实时反馈。",
+   "en": "AI YC interview with Gstack agents allows AI specialists to join your Google Meet and provide real-time feedback."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这个项目允许用户邀请 AI 专家加入他们的 Google Meet 会议，并提供即时反馈和建议。",
+    "why": "这对于需要专业意见或希望提高会议效率的人来说是一个非常有用的工具。",
+    "biz": "随着远程工作和在线会议的普及，这种工具具有很大的市场需求，可以通过订阅模式实现盈利。"
+   },
+   "en": {
+    "what": "This project allows users to invite AI specialists to their Google Meet meetings and provide instant feedback and suggestions.",
+    "why": "It's a very useful tool for those who need expert opinions or want to improve meeting efficiency.",
+    "biz": "With the rise of remote work and online meetings, this tool has a significant market demand and can be monetized through a subscription model."
+   }
+  },
+  "tags": [
+   "agent",
+   "视频"
+  ],
+  "rank": 36
+ },
+ {
+  "id": "producthunt:1207280",
+  "name": "Tunio",
+  "url": "https://www.producthunt.com/products/tunio",
+  "source": "producthunt",
+  "description": "AI Music operations platform for venues",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-26"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 5,
+   "money": 6,
+   "total": 16
+  },
+  "reason": "为场地提供 AI 音乐运营管理平台，提升音乐体验。",
+  "analysis": {
+   "zh": "Tunio 是一个 AI 音乐运营管理平台，可以帮助场地更好地管理和优化音乐体验。",
+   "en": "Tunio is an AI music operations platform that helps venues better manage and optimize their music experiences."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Tunio 是一个 AI 音乐运营管理平台，旨在帮助场地更好地管理和优化音乐体验。",
+    "why": "通过自动化和智能化的管理，Tunio 可以显著提高场地的运营效率和顾客满意度。",
+    "biz": "随着娱乐和音乐行业的不断发展，Tunio 有潜力成为一个重要的工具，特别是在夜店、酒吧和音乐会场所。"
+   },
+   "en": {
+    "what": "Tunio is an AI music operations platform designed to help venues better manage and optimize their music experiences.",
+    "why": "Through automation and intelligent management, Tunio can significantly improve operational efficiency and customer satisfaction for venues.",
+    "biz": "With the continuous growth of the entertainment and music industry, Tunio has the potential to become an important tool, especially in nightclubs, bars, and concert venues."
+   }
+  },
+  "tags": [
+   "agent"
+  ],
+  "rank": 37
  },
  {
   "id": "reddit:1v2xktw",
@@ -1349,7 +1550,7 @@
    "游戏",
    "创意"
   ],
-  "rank": 33
+  "rank": 38
  },
  {
   "id": "github:Eversmile12/leaked-llm-prompts",
@@ -1390,7 +1591,90 @@
    "社区",
    "文本"
   ],
-  "rank": 34
+  "rank": 39
+ },
+ {
+  "id": "github:ddcat-ai/open-ai-canvas",
+  "name": "ddcat-ai/open-ai-canvas",
+  "url": "https://github.com/ddcat-ai/open-ai-canvas",
+  "source": "github",
+  "description": "面向 AI 影视创作的开源无限画布工作台，集成多模态生成、分镜编排、素材管理与 Agent 工作流。",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 189,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 6,
+   "total": 15
+  },
+  "reason": "面向AI影视创作的开源无限画布工作台，集成多模态生成、分镜编排等功能。",
+  "analysis": {
+   "zh": "Open-AI Canvas是一个面向AI影视创作的开源无限画布工作台，集成了多模态生成、分镜编排等功能。",
+   "en": "Open-AI Canvas is an open-source infinite canvas workspace for AI film and video creation, integrating multimodal generation, storyboard arrangement, and other features."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Open-AI Canvas是一个面向AI影视创作的开源无限画布工作台，集成了多模态生成、分镜编排、素材管理和代理工作流等功能。",
+    "why": "通过集成多种功能，Open-AI Canvas为创作者提供了一个全面的工作环境，简化了影视创作流程。",
+    "biz": "该工具在影视制作和内容创作领域具有很高的商业价值，特别是在需要高效协作和创新的场景下。"
+   },
+   "en": {
+    "what": "Open-AI Canvas is an open-source infinite canvas workspace for AI film and video creation, integrating multimodal generation, storyboard arrangement, asset management, and agent workflows.",
+    "why": "By integrating multiple functionalities, Open-AI Canvas provides a comprehensive working environment, simplifying the film and video creation process.",
+    "biz": "This tool has high commercial value in film and video production and content creation, especially in scenarios requiring efficient collaboration and innovation."
+   }
+  },
+  "tags": [
+   "视频",
+   "社区"
+  ],
+  "rank": 40
+ },
+ {
+  "id": "hackernews:49021597",
+  "name": "DARPA, U.S. Air Force fly AI-controlled F-16",
+  "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+  "source": "hackernews",
+  "description": "DARPA, U.S. Air Force fly AI-controlled F-16",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 267,
+   "comments": 335,
+   "hn_link": "https://news.ycombinator.com/item?id=49021597"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "DARPA和美国空军成功试飞了由AI控制的F-16战斗机。",
+  "analysis": {
+   "zh": "DARPA和美国空军合作成功试飞了由AI控制的F-16战斗机，展示了AI在军事领域的应用潜力。",
+   "en": "DARPA and the U.S. Air Force successfully flew an AI-controlled F-16, demonstrating the potential of AI in military applications."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "DARPA和美国空军成功试飞了由AI控制的F-16战斗机。",
+    "why": "这项技术展示了AI在军事领域的应用前景，提高了作战效率。",
+    "biz": "这种技术的应用可能推动军事装备的现代化，带来新的商业机会。"
+   },
+   "en": {
+    "what": "DARPA and the U.S. Air Force successfully flew an AI-controlled F-16.",
+    "why": "This technology demonstrates the potential of AI in military applications, enhancing operational efficiency.",
+    "biz": "The application of this technology could drive the modernization of military equipment, creating new business opportunities."
+   }
+  },
+  "tags": [
+   "机器人",
+   "商业"
+  ],
+  "rank": 41
  },
  {
   "id": "hackernews:49023016",
@@ -1432,7 +1716,49 @@
    "商业",
    "社区"
   ],
-  "rank": 35
+  "rank": 42
+ },
+ {
+  "id": "huggingface:space/Fighterdan/LTX-2.3-10Eros_I2V",
+  "name": "Fighterdan/LTX-2.3-10Eros_I2V",
+  "url": "https://huggingface.co/spaces/Fighterdan/LTX-2.3-10Eros_I2V",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 101,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+   "en": "This Hugging Face space provides a high-quality image-to-video conversion tool, capable of transforming static images into smooth videos."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以将静态图像转换为流畅视频的工具。",
+    "why": "它利用了先进的图像处理和生成技术，使用户能够创建高质量的动态内容。",
+    "biz": "这种工具在娱乐、广告和创意领域具有很大的潜力，可以用于制作吸引人的视频内容。"
+   },
+   "en": {
+    "what": "This is a tool that can transform static images into smooth videos.",
+    "why": "It leverages advanced image processing and generation techniques, enabling users to create high-quality dynamic content.",
+    "biz": "This tool has great potential in the entertainment, advertising, and creative fields, useful for creating engaging video content."
+   }
+  },
+  "tags": [
+   "图像",
+   "视频",
+   "创意"
+  ],
+  "rank": 43
  },
  {
   "id": "huggingface:space/M3st3rJ4k3l/FLUX.2-Klein-Multi-LoRA",
@@ -1473,7 +1799,7 @@
    "图像",
    "创意"
   ],
-  "rank": 36
+  "rank": 44
  },
  {
   "id": "huggingface:space/baidu/Unlimited-OCR",
@@ -1514,7 +1840,255 @@
    "文本",
    "效率"
   ],
-  "rank": 37
+  "rank": 45
+ },
+ {
+  "id": "huggingface:space/cinderholm/wan2-2-i2v-v3",
+  "name": "cinderholm/wan2-2-i2v-v3",
+  "url": "https://huggingface.co/spaces/cinderholm/wan2-2-i2v-v3",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 103,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "一个强大的图像到视频转换工具，可以将静态图像转换为动态视频。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个强大的图像到视频转换工具，可以将静态图像转换为动态视频。",
+   "en": "This Hugging Face space provides a powerful image-to-video conversion tool, capable of transforming static images into dynamic videos."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以将静态图像转换为动态视频的工具。",
+    "why": "它利用了先进的图像处理和生成技术，使用户能够创建动态的内容。",
+    "biz": "这种工具在娱乐、广告和创意领域具有很大的潜力，可以用于制作吸引人的视频内容。"
+   },
+   "en": {
+    "what": "This is a tool that can transform static images into dynamic videos.",
+    "why": "It leverages advanced image processing and generation techniques, enabling users to create dynamic content.",
+    "biz": "This tool has great potential in the entertainment, advertising, and creative fields, useful for creating engaging video content."
+   }
+  },
+  "tags": [
+   "图像",
+   "视频",
+   "创意"
+  ],
+  "rank": 46
+ },
+ {
+  "id": "huggingface:space/conradlocke/krea2-identity-edit",
+  "name": "conradlocke/krea2-identity-edit",
+  "url": "https://huggingface.co/spaces/conradlocke/krea2-identity-edit",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 147,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "一个有趣的身份编辑工具，可以修改图像中的人物身份。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个有趣的身份编辑工具，用户可以轻松修改图像中的人物身份。",
+   "en": "This Hugging Face space provides an interesting identity editing tool, allowing users to easily modify the identities of people in images."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以在图像中修改人物身份的工具。",
+    "why": "它利用了先进的图像处理技术，使用户能够轻松进行身份编辑。",
+    "biz": "这种工具在娱乐和创意领域具有很大的潜力，可以用于制作有趣的图片内容。"
+   },
+   "en": {
+    "what": "This is a tool that allows modifying the identities of people in images.",
+    "why": "It leverages advanced image processing techniques, enabling users to easily perform identity editing.",
+    "biz": "This tool has great potential in the entertainment and creative fields, useful for creating fun image content."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意"
+  ],
+  "rank": 47
+ },
+ {
+  "id": "huggingface:space/dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
+  "name": "dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
+  "url": "https://huggingface.co/spaces/dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 74,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+   "en": "This Hugging Face space provides a high-quality image-to-video conversion tool, capable of transforming static images into smooth videos."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以将静态图像转换为流畅视频的工具。",
+    "why": "它利用了先进的图像处理和生成技术，使用户能够创建高质量的动态内容。",
+    "biz": "这种工具在娱乐、广告和创意领域具有很大的潜力，可以用于制作吸引人的视频内容。"
+   },
+   "en": {
+    "what": "This is a tool that can transform static images into smooth videos.",
+    "why": "It leverages advanced image processing and generation techniques, enabling users to create high-quality dynamic content.",
+    "biz": "This tool has great potential in the entertainment, advertising, and creative fields, useful for creating engaging video content."
+   }
+  },
+  "tags": [
+   "图像",
+   "视频",
+   "创意"
+  ],
+  "rank": 48
+ },
+ {
+  "id": "huggingface:space/microsoft/mage-flow",
+  "name": "microsoft/mage-flow",
+  "url": "https://huggingface.co/spaces/microsoft/mage-flow",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 70,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "微软提供的一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了微软的一个高质量的图像到视频转换工具，可以将静态图像转换为流畅的视频。",
+   "en": "This Hugging Face space provides a high-quality image-to-video conversion tool from Microsoft, capable of transforming static images into smooth videos."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以将静态图像转换为流畅视频的工具。",
+    "why": "它利用了先进的图像处理和生成技术，使用户能够创建高质量的动态内容。",
+    "biz": "这种工具在娱乐、广告和创意领域具有很大的潜力，可以用于制作吸引人的视频内容。"
+   },
+   "en": {
+    "what": "This is a tool that can transform static images into smooth videos.",
+    "why": "It leverages advanced image processing and generation techniques, enabling users to create high-quality dynamic content.",
+    "biz": "This tool has great potential in the entertainment, advertising, and creative fields, useful for creating engaging video content."
+   }
+  },
+  "tags": [
+   "图像",
+   "视频",
+   "创意"
+  ],
+  "rank": 49
+ },
+ {
+  "id": "huggingface:space/yijunwang2/krea2-outpaint",
+  "name": "yijunwang2/krea2-outpaint",
+  "url": "https://huggingface.co/spaces/yijunwang2/krea2-outpaint",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 67,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "一个有趣的图像扩展工具，可以将图像向外扩展并填充新的内容。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个有趣的图像扩展工具，可以将图像向外扩展并填充新的内容。",
+   "en": "This Hugging Face space provides an interesting image expansion tool, capable of extending images outward and filling them with new content."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以将图像向外扩展并填充新内容的工具。",
+    "why": "它利用了先进的图像处理和生成技术，使用户能够创建更大的图像。",
+    "biz": "这种工具在创意设计和图像编辑领域具有很大的潜力，可以用于制作独特的图像内容。"
+   },
+   "en": {
+    "what": "This is a tool that can extend images outward and fill them with new content.",
+    "why": "It leverages advanced image processing and generation techniques, enabling users to create larger images.",
+    "biz": "This tool has great potential in the creative design and image editing fields, useful for creating unique image content."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意"
+  ],
+  "rank": 50
+ },
+ {
+  "id": "producthunt:1204484",
+  "name": "Cynative Security Research Agent",
+  "url": "https://www.producthunt.com/products/cynative-deep-infra-research",
+  "source": "producthunt",
+  "description": "Ask your cloud anything without breaking prod. Read-only.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-23"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 3,
+   "money": 7,
+   "total": 15
+  },
+  "reason": "通过只读方式安全地查询云环境，适合需要保护生产数据的开发者。",
+  "analysis": {
+   "zh": "Cynative Security Research Agent 提供了一种安全且只读的方式来查询您的云端资源。它允许用户在不干扰生产环境的情况下获取信息。",
+   "en": "Cynative Security Research Agent offers a secure and read-only way to query your cloud resources. It allows users to get information without disturbing the production environment."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Cynative Security Research Agent 是一个工具，允许用户以只读模式查询其云基础设施，从而确保不会对生产环境造成任何影响。",
+    "why": "对于那些希望深入了解其云环境但又担心可能引发问题的人来说，这是一个非常实用的解决方案。",
+    "biz": "这种工具特别适合企业客户，他们通常需要高度的安全性和稳定性。因此，它具有很好的商业潜力。"
+   },
+   "en": {
+    "what": "Cynative Security Research Agent is a tool that lets users query their cloud infrastructure in a read-only mode, ensuring no impact on the production environment.",
+    "why": "It's a practical solution for those who want to dive deep into their cloud setup but are wary of potential disruptions.",
+    "biz": "This kind of tool is particularly appealing to enterprise customers who often require high levels of security and stability, making it commercially promising."
+   }
+  },
+  "tags": [
+   "agent",
+   "安全"
+  ],
+  "rank": 51
  },
  {
   "id": "producthunt:1204964",
@@ -1554,7 +2128,47 @@
    "agent",
    "基建"
   ],
-  "rank": 38
+  "rank": 52
+ },
+ {
+  "id": "producthunt:1205300",
+  "name": "Estera",
+  "url": "https://www.producthunt.com/products/estera",
+  "source": "producthunt",
+  "description": "AI Receptionist that Answers Calls & WhatsApp 24/7",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 6,
+   "total": 15
+  },
+  "reason": "24/7 全天候接听电话和 WhatsApp 的 AI 接待员。",
+  "analysis": {
+   "zh": "Estera 是一个 AI 接待员，可以全天候接听电话和 WhatsApp 消息，提供无缝的客户服务。",
+   "en": "Estera is an AI receptionist that answers calls and WhatsApp messages 24/7, providing seamless customer service."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Estera 是一个 AI 接待员，能够全天候接听电话和 WhatsApp 消息，提供自动化的客户服务。",
+    "why": "对于需要持续客户服务的企业来说，Estera 提供了一个经济高效的解决方案。",
+    "biz": "随着客户服务需求的增长，Estera 有潜力成为许多企业的首选解决方案，特别是在零售和服务行业。"
+   },
+   "en": {
+    "what": "Estera is an AI receptionist that can answer calls and WhatsApp messages 24/7, providing automated customer service.",
+    "why": "For businesses that need continuous customer service, Estera offers a cost-effective solution.",
+    "biz": "With the increasing demand for customer service, Estera has the potential to become a preferred solution for many businesses, especially in retail and service industries."
+   }
+  },
+  "tags": [
+   "agent",
+   "语音"
+  ],
+  "rank": 53
  },
  {
   "id": "github:Jakubantalik/thinking-orbs",
@@ -1595,7 +2209,7 @@
    "创意",
    "编码"
   ],
-  "rank": 39
+  "rank": 54
  },
  {
   "id": "github:XYZ-AI-Lab/axrl",
@@ -1636,7 +2250,7 @@
    "agent",
    "基建"
   ],
-  "rank": 40
+  "rank": 55
  },
  {
   "id": "producthunt:1203163",
@@ -1676,7 +2290,7 @@
    "agent",
    "商业"
   ],
-  "rank": 41
+  "rank": 56
  },
  {
   "id": "producthunt:1203314",
@@ -1716,7 +2330,47 @@
    "编码",
    "效率"
   ],
-  "rank": 42
+  "rank": 57
+ },
+ {
+  "id": "producthunt:1207351",
+  "name": "Notate",
+  "url": "https://www.producthunt.com/products/notate-2",
+  "source": "producthunt",
+  "description": "Annotate anything for humans and their agents",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-26"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "为人类及其代理提供注释工具，简化信息共享过程。",
+  "analysis": {
+   "zh": "Notate 是一个注释工具，可以为人类及其代理提供方便的信息标注和共享功能。",
+   "en": "Notate is an annotation tool that makes it easy for humans and their agents to label and share information."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Notate 是一个多功能的注释工具，旨在帮助用户轻松地为各种内容添加注释，并与他们的 AI 代理共享这些信息。",
+    "why": "通过简化注释和共享过程，Notate 使得信息管理变得更加高效和直观。",
+    "biz": "随着人们对信息管理和协作的需求不断增加，Notate 有潜力成为一个受欢迎的工具，尤其是在企业环境中。"
+   },
+   "en": {
+    "what": "Notate is a versatile annotation tool designed to help users easily add annotations to various content and share them with their AI agents.",
+    "why": "By simplifying the annotation and sharing process, Notate makes information management more efficient and intuitive.",
+    "biz": "With growing needs for information management and collaboration, Notate has the potential to become a popular tool, especially in business environments."
+   }
+  },
+  "tags": [
+   "agent",
+   "文本"
+  ],
+  "rank": 58
  },
  {
   "id": "arxiv:2607.22534v1",
@@ -1756,7 +2410,7 @@
    "论文",
    "图像"
   ],
-  "rank": 43
+  "rank": 59
  },
  {
   "id": "github:XYZ-AI-Lab/AxisAgentic",
@@ -1797,7 +2451,89 @@
    "agent",
    "基建"
   ],
-  "rank": 44
+  "rank": 60
+ },
+ {
+  "id": "github:lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+  "name": "lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+  "url": "https://github.com/lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+  "source": "github",
+  "description": "NERV-BREAK-5.6 — GPT-5.6 破甲框架。三层纵深防御：上下文重构让拒绝无法触发，23条篡改规则实时消除拒绝保持对话不中断，文件路由绕过云端审核。31个MCP安全工具 + 28个技能模块 + Kali四后端集成。Codex CLI 即装即用。",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 153,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 4,
+   "money": 3,
+   "total": 13
+  },
+  "reason": "GPT-5.6破甲框架，三层纵深防御，集成Kali后端。",
+  "analysis": {
+   "zh": "该项目是一个GPT-5.6破甲框架，通过三层纵深防御和Kali后端集成，增强了安全性。",
+   "en": "This project is a GPT-5.6 jailbreak framework, enhancing security through three-layer defense and Kali backend integration."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "NERV-BREAK-5.6是一个GPT-5.6破甲框架，通过三层纵深防御和Kali后端集成，增强了安全性。",
+    "why": "通过上下文重构、篡改规则和文件路由，该框架能够绕过云端审核，提供更自由的对话环境。",
+    "biz": "尽管该框架在某些场景下可能有商业价值，但由于其涉及的安全性和合规性问题，需谨慎使用。"
+   },
+   "en": {
+    "what": "NERV-BREAK-5.6 is a GPT-5.6 jailbreak framework that enhances security through three-layer defense and Kali backend integration.",
+    "why": "By context reconstruction, tampering rules, and file routing, the framework bypasses cloud audits, providing a more unrestricted conversation environment.",
+    "biz": "While the framework may have commercial value in certain scenarios, its security and compliance issues require cautious use."
+   }
+  },
+  "tags": [
+   "社区",
+   "安全"
+  ],
+  "rank": 61
+ },
+ {
+  "id": "github:risa-labs-inc/BossConsole",
+  "name": "risa-labs-inc/BossConsole",
+  "url": "https://github.com/risa-labs-inc/BossConsole",
+  "source": "github",
+  "description": "Open-source, multi-platform harness for AI agents — a native, multi-threaded operator's console (JVM, not Electron) to run Claude Code, Codex, Gemini or OpenCode with a real browser, terminal, editor, secrets & 100+ MCP tools. Built for enterprises, science & research.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 200,
+   "language": "Kotlin"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 6,
+   "total": 13
+  },
+  "reason": "开源多平台AI代理控制台，集成浏览器、终端、编辑器和100+ MCP工具。",
+  "analysis": {
+   "zh": "BossConsole是一个开源多平台AI代理控制台，集成了浏览器、终端、编辑器和100+ MCP工具。",
+   "en": "BossConsole is an open-source, multi-platform AI agent console that integrates a real browser, terminal, editor, and 100+ MCP tools."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "BossConsole是一个开源多平台AI代理控制台，集成了浏览器、终端、编辑器和100+ MCP工具。",
+    "why": "通过集成多种工具和功能，BossConsole为用户提供了一个全面的AI代理操作环境，提高了工作效率。",
+    "biz": "该工具在企业和科研机构中具有很高的商业价值，特别是在需要多工具集成和高效操作的场景下。"
+   },
+   "en": {
+    "what": "BossConsole is an open-source, multi-platform AI agent console that integrates a real browser, terminal, editor, and 100+ MCP tools.",
+    "why": "By integrating multiple tools and functionalities, BossConsole provides a comprehensive AI agent operation environment, enhancing user productivity.",
+    "biz": "This tool has high commercial value in enterprises and research institutions, especially in scenarios requiring multi-tool integration and efficient operation."
+   }
+  },
+  "tags": [
+   "agent",
+   "商业"
+  ],
+  "rank": 62
  },
  {
   "id": "hackernews:49007247",
@@ -1839,7 +2575,7 @@
    "社区",
    "文本"
   ],
-  "rank": 45
+  "rank": 63
  },
  {
   "id": "huggingface:space/kulkas2pintu/wan555",
@@ -1879,7 +2615,127 @@
   "tags": [
    "视频"
   ],
-  "rank": 46
+  "rank": 64
+ },
+ {
+  "id": "producthunt:1204010",
+  "name": "Webhound",
+  "url": "https://www.producthunt.com/products/webhound",
+  "source": "producthunt",
+  "description": "A research engine for your agent",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-22"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 4,
+   "money": 5,
+   "total": 13
+  },
+  "reason": "为你的代理提供一个研究引擎，帮助你更高效地获取信息。",
+  "analysis": {
+   "zh": "Webhound 是一个研究引擎，专门为 AI 代理设计，帮助它们更高效地获取和处理信息。",
+   "en": "Webhound is a research engine specifically designed for AI agents, helping them to more efficiently gather and process information."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Webhound 是一个专为 AI 代理设计的研究引擎，可以帮助它们从互联网上获取和处理大量信息。",
+    "why": "通过提供一个专门的搜索工具，Webhound 使得 AI 代理能够更有效地完成任务。",
+    "biz": "随着越来越多的企业和个人开始使用 AI 代理，Webhound 有潜力成为一个重要的工具，特别是在需要大量信息处理的场景中。"
+   },
+   "en": {
+    "what": "Webhound is a research engine designed specifically for AI agents, helping them to gather and process large amounts of information from the internet.",
+    "why": "By providing a dedicated search tool, Webhound enables AI agents to complete tasks more effectively.",
+    "biz": "As more businesses and individuals start using AI agents, Webhound has the potential to become an important tool, especially in scenarios requiring extensive information processing."
+   }
+  },
+  "tags": [
+   "agent",
+   "文本"
+  ],
+  "rank": 65
+ },
+ {
+  "id": "producthunt:1205704",
+  "name": "Claude Opus 5",
+  "url": "https://www.producthunt.com/products/claude",
+  "source": "producthunt",
+  "description": "Near-Fable 5 intelligence at half the price",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 6,
+   "total": 13
+  },
+  "reason": "以一半的价格获得接近 Fable 5 的智能水平。",
+  "analysis": {
+   "zh": "Claude Opus 5 是一款 AI 产品，以更低的价格提供接近 Fable 5 的智能水平。",
+   "en": "Claude Opus 5 is an AI product that offers near-Fable 5 intelligence at half the price."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Claude Opus 5 是一款 AI 产品，以更低的价格提供接近 Fable 5 的智能水平。",
+    "why": "对于预算有限但又希望获得高质量 AI 服务的用户来说，Claude Opus 5 是一个非常吸引人的选择。",
+    "biz": "通过提供高性价比的 AI 解决方案，Claude Opus 5 有潜力在市场上占据一席之地，尤其是在中小企业和初创公司中。"
+   },
+   "en": {
+    "what": "Claude Opus 5 is an AI product that offers near-Fable 5 intelligence at a lower price point.",
+    "why": "For users with limited budgets but still wanting high-quality AI services, Claude Opus 5 is a very attractive option.",
+    "biz": "By offering a cost-effective AI solution, Claude Opus 5 has the potential to gain a foothold in the market, especially among small and medium-sized businesses and startups."
+   }
+  },
+  "tags": [
+   "agent",
+   "商业"
+  ],
+  "rank": 66
+ },
+ {
+  "id": "producthunt:1207277",
+  "name": "Rivault",
+  "url": "https://www.producthunt.com/products/rivault",
+  "source": "producthunt",
+  "description": "Safely provide and store data and context for AI agents",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-26"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 6,
+   "total": 13
+  },
+  "reason": "为 AI 代理提供安全的数据存储和上下文管理。",
+  "analysis": {
+   "zh": "Rivault 为 AI 代理提供了安全的数据存储和上下文管理，确保敏感信息得到妥善处理。",
+   "en": "Rivault provides secure data storage and context management for AI agents, ensuring sensitive information is handled properly."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Rivault 是一个平台，专注于为 AI 代理提供安全的数据存储和上下文管理服务。",
+    "why": "在使用 AI 代理时，数据安全和隐私是至关重要的。Rivault 通过提供强大的安全保障，解决了这一问题。",
+    "biz": "随着 AI 代理的广泛应用，Rivault 有望成为企业和个人用户的首选解决方案，具有良好的商业前景。"
+   },
+   "en": {
+    "what": "Rivault is a platform focused on providing secure data storage and context management services for AI agents.",
+    "why": "Data security and privacy are critical when using AI agents. Rivault addresses this issue by offering robust security measures.",
+    "biz": "As AI agents become more widely used, Rivault is poised to become a go-to solution for both businesses and individual users, presenting a strong commercial opportunity."
+   }
+  },
+  "tags": [
+   "agent",
+   "安全"
+  ],
+  "rank": 67
  },
  {
   "id": "reddit:1v2b8rd",
@@ -1920,7 +2776,167 @@
    "论文",
    "安全"
   ],
-  "rank": 47
+  "rank": 68
+ },
+ {
+  "id": "arxiv:2607.22445v1",
+  "name": "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture",
+  "url": "https://arxiv.org/abs/2607.22445v1",
+  "source": "arxiv",
+  "description": "Enterprise AI agents are typically granted static credential sets at configuration time, holding every tool the role might need for every task they perform. This persistent over-privilege expands the attack surface. We argue that capability scoping must follow a dynamic least-privilege principle and be treated as a prevention mechanism before a detection one. A credential that does not exist in an agent's context cannot be misused regardless of the agent's reasoning or evasion sophistication. We",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 6,
+   "total": 12
+  },
+  "reason": "通过动态权限范围和合成数据集，提高企业AI代理的安全性。",
+  "analysis": {
+   "zh": "该项目通过动态权限范围和合成数据集，提出了一个三源权限架构，提高了企业AI代理的安全性。",
+   "en": "This project enhances the security of enterprise AI agents through dynamic capability scoping and a synthetic dataset, proposing a three-source permission architecture."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过动态权限范围和合成数据集，提出了一个三源权限架构，确保企业AI代理在执行任务时只拥有必要的权限。",
+    "why": "静态权限设置容易导致过度特权，扩大攻击面。动态权限范围可以作为预防机制，减少潜在的安全风险。",
+    "biz": "该技术在企业级AI安全领域具有很高的商业价值。"
+   },
+   "en": {
+    "what": "The project proposes a three-source permission architecture with dynamic capability scoping and a synthetic dataset, ensuring that enterprise AI agents only have necessary permissions when performing tasks.",
+    "why": "Static permission sets can lead to over-privilege, expanding the attack surface. Dynamic capability scoping serves as a prevention mechanism, reducing potential security risks.",
+    "biz": "This technology has high commercial value in enterprise AI security."
+   }
+  },
+  "tags": [
+   "安全",
+   "商业"
+  ],
+  "rank": 69
+ },
+ {
+  "id": "arxiv:2607.22458v1",
+  "name": "Phylogenetic signal in marine mammal and bird vocalizations captured by audio foundation models: the limited benefit of domain-specific pretraining",
+  "url": "https://arxiv.org/abs/2607.22458v1",
+  "source": "arxiv",
+  "description": "Do learned audio embeddings encode structure that nobody told them to encode? We probe four large pretrained audio models (AST, CLAP, BEATs-bio and BirdNET) with a downstream task none of them saw during training: recovering phylogenetic distance from species vocalizations. If the geometry of the embedding space tracks the tree of life, the representation is picking up something deeper than the labels the model was optimized for. We run Mantel tests across two independent radiations. In 32 marin",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 3,
+   "money": 4,
+   "total": 12
+  },
+  "reason": "通过音频基础模型探究海洋哺乳动物和鸟类叫声中的系统发育信号。",
+  "analysis": {
+   "zh": "该项目通过四个预训练的音频模型探究了海洋哺乳动物和鸟类叫声中的系统发育信号。",
+   "en": "This project probes four pretrained audio models to investigate phylogenetic signals in marine mammal and bird vocalizations."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过四个预训练的音频模型（AST、CLAP、BEATs-bio和BirdNET）探究了海洋哺乳动物和鸟类叫声中的系统发育信号。",
+    "why": "如果嵌入空间的几何结构能够追踪生命树，那么这种表示方法捕捉到了比模型优化标签更深层次的信息。",
+    "biz": "该研究在生物声学和生态学领域具有重要的应用价值。"
+   },
+   "en": {
+    "what": "The project investigates phylogenetic signals in marine mammal and bird vocalizations using four pretrained audio models (AST, CLAP, BEATs-bio, and BirdNET).",
+    "why": "If the geometry of the embedding space tracks the tree of life, the representation captures something deeper than the labels the model was optimized for.",
+    "biz": "This research has significant application value in bioacoustics and ecology."
+   }
+  },
+  "tags": [
+   "语音",
+   "论文"
+  ],
+  "rank": 70
+ },
+ {
+  "id": "arxiv:2607.22465v1",
+  "name": "TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI",
+  "url": "https://arxiv.org/abs/2607.22465v1",
+  "source": "arxiv",
+  "description": "Routing to select large language models (LLMs) with different cost-quality trade-offs has become a fundamental deployment feature of enterprise AI. Existing routers, primarily make independent routing decisions for each LLM call. However, agentic applications execute as long-horizon workflows whose quality is determined only by a delayed, task-level outcome. This mismatch prevents per-call routers from correctly attributing feedback to individual routing decisions. Towards mitigating this, we pr",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 6,
+   "total": 12
+  },
+  "reason": "通过任务一致性和自适应在线路由，改进代理AI的长期工作流。",
+  "analysis": {
+   "zh": "TRACE-ROUTER通过任务一致性和自适应在线路由，改进了代理AI在长期工作流中的表现。",
+   "en": "TRACE-ROUTER improves the performance of agentic AI in long-horizon workflows through task-consistent and adaptive online routing."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "TRACE-ROUTER通过任务一致性和自适应在线路由，解决了现有路由器在长期工作流中的反馈归因问题。",
+    "why": "现有的路由器在每个LLM调用中独立做出决策，无法正确归因到具体的路由决策。",
+    "biz": "该技术在企业级AI部署中具有很高的商业价值。"
+   },
+   "en": {
+    "what": "TRACE-ROUTER addresses the feedback attribution problem in long-horizon workflows through task-consistent and adaptive online routing.",
+    "why": "Existing routers make independent routing decisions for each LLM call, failing to correctly attribute feedback to individual routing decisions.",
+    "biz": "This technology has high commercial value in enterprise AI deployments."
+   }
+  },
+  "tags": [
+   "agent",
+   "商业"
+  ],
+  "rank": 71
+ },
+ {
+  "id": "arxiv:2607.22468v1",
+  "name": "Learning to Prepare Molecular Ground States with Transformer Models",
+  "url": "https://arxiv.org/abs/2607.22468v1",
+  "source": "arxiv",
+  "description": "Quantum state preparation is a key component of many quantum algorithms. Performing this step efficiently is essential for realizing practical quantum advantage in quantum chemistry applications. Iterative algorithms like ADAPT-VQE can produce shallow ground-state preparation circuits, but become computationally prohibitive for the larger molecules relevant to materials science and pharmaceutical development. Here, we introduce ADAPT-GQE, a generative AI framework that learns to synthesize groun",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 6,
+   "total": 12
+  },
+  "reason": "通过Transformer模型学习分子基态制备，提高量子化学应用效率。",
+  "analysis": {
+   "zh": "该项目通过Transformer模型学习合成分子基态，为量子化学应用提供高效的量子态制备方法。",
+   "en": "This project uses Transformer models to learn how to synthesize molecular ground states, providing an efficient quantum state preparation method for quantum chemistry applications."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "ADAPT-GQE是一种基于生成式AI的框架，通过学习如何合成分子基态，提高量子化学应用中的量子态制备效率。",
+    "why": "传统的迭代算法在处理大分子时计算成本非常高，而ADAPT-GQE可以通过学习来减少这些成本。",
+    "biz": "该技术在材料科学和药物开发等领域具有广泛的应用前景。"
+   },
+   "en": {
+    "what": "ADAPT-GQE is a generative AI framework that learns to synthesize molecular ground states, improving quantum state preparation efficiency in quantum chemistry applications.",
+    "why": "Traditional iterative algorithms become computationally prohibitive for larger molecules, while ADAPT-GQE reduces these costs through learning.",
+    "biz": "This technology has broad application potential in fields such as materials science and pharmaceutical development."
+   }
+  },
+  "tags": [
+   "论文",
+   "创意"
+  ],
+  "rank": 72
  },
  {
   "id": "arxiv:2607.22491v1",
@@ -1960,7 +2976,48 @@
    "论文",
    "金融"
   ],
-  "rank": 48
+  "rank": 73
+ },
+ {
+  "id": "github:0xwilliamortiz/openclaude-improved",
+  "name": "0xwilliamortiz/openclaude-improved",
+  "url": "https://github.com/0xwilliamortiz/openclaude-improved",
+  "source": "github",
+  "description": "runs anywhere. uses anything",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 180,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 5,
+   "total": 12
+  },
+  "reason": "改进版的OpenClaude，支持任何环境和工具。",
+  "analysis": {
+   "zh": "该项目是一个改进版的OpenClaude，支持在任何环境中运行，并可以使用任何工具。",
+   "en": "This project is an improved version of OpenClaude, supporting any environment and tools."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "OpenClaude Improved是一个改进版的OpenClaude，支持在任何环境中运行，并可以使用任何工具。",
+    "why": "通过增强兼容性和灵活性，OpenClaude Improved为用户提供了更多的选择和更好的体验。",
+    "biz": "该工具在需要灵活配置和多环境支持的企业和项目中具有很高的商业价值。"
+   },
+   "en": {
+    "what": "OpenClaude Improved is an enhanced version of OpenClaude, supporting any environment and tools.",
+    "why": "By enhancing compatibility and flexibility, OpenClaude Improved provides users with more choices and a better experience.",
+    "biz": "This tool has high commercial value in enterprises and projects that require flexible configuration and multi-environment support."
+   }
+  },
+  "tags": [
+   "社区",
+   "文本"
+  ],
+  "rank": 74
  },
  {
   "id": "huggingface:space/loveseries/wanmanlove",
@@ -2000,7 +3057,7 @@
   "tags": [
    "视频"
   ],
-  "rank": 49
+  "rank": 75
  },
  {
   "id": "arxiv:2607.22508v1",
@@ -2040,7 +3097,7 @@
    "论文",
    "医疗"
   ],
-  "rank": 50
+  "rank": 76
  },
  {
   "id": "arxiv:2607.22516v1",
@@ -2079,7 +3136,7 @@
   "tags": [
    "论文"
   ],
-  "rank": 51
+  "rank": 77
  },
  {
   "id": "arxiv:2607.22518v1",
@@ -2119,7 +3176,7 @@
    "论文",
    "商业"
   ],
-  "rank": 52
+  "rank": 78
  },
  {
   "id": "arxiv:2607.22525v1",
@@ -2159,7 +3216,254 @@
    "论文",
    "安全"
   ],
-  "rank": 53
+  "rank": 79
+ },
+ {
+  "id": "github:Invaro/opentax-engine",
+  "name": "Invaro/opentax-engine",
+  "url": "https://github.com/Invaro/opentax-engine",
+  "source": "github",
+  "description": "The deterministic tax engine for AI agents. Highest score ever recorded on TaxCalcBench (96% exact returns)",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 117,
+   "language": "JavaScript"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "确定性税务引擎，得分最高记录在TaxCalcBench上。",
+  "analysis": {
+   "zh": "Opentax Engine是一个确定性税务引擎，在TaxCalcBench上取得了最高得分记录。",
+   "en": "Opentax Engine is a deterministic tax engine that achieved the highest score ever recorded on TaxCalcBench."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Opentax Engine是一个确定性税务引擎，在TaxCalcBench上取得了96%的准确率。",
+    "why": "通过精确的计算和优化，Opentax Engine能够在税务计算中提供高度准确的结果。",
+    "biz": "该工具在税务计算和财务领域具有很高的商业价值，特别是在需要高精度计算的场景下。"
+   },
+   "en": {
+    "what": "Opentax Engine is a deterministic tax engine that achieved 96% accuracy on TaxCalcBench.",
+    "why": "Through precise calculations and optimizations, Opentax Engine provides highly accurate results in tax computations.",
+    "biz": "This tool has high commercial value in tax computation and finance, especially in scenarios requiring high-precision calculations."
+   }
+  },
+  "tags": [
+   "商业",
+   "效率"
+  ],
+  "rank": 80
+ },
+ {
+  "id": "github:codejunkie99/graph-engineering",
+  "name": "codejunkie99/graph-engineering",
+  "url": "https://github.com/codejunkie99/graph-engineering",
+  "source": "github",
+  "description": "Graph engineering for AI agents: the 9-stage knowledge-graph pipeline (translated from SEU's graduate course) + task-graph orchestration patterns, as a Claude skill with teaching mode and paste-ready workflows",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 146,
+   "language": ""
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 5,
+   "total": 11
+  },
+  "reason": "图形工程知识图谱管道和任务图编排模式，作为Claude技能。",
+  "analysis": {
+   "zh": "该项目是一个图形工程知识图谱管道和任务图编排模式，作为Claude技能提供。",
+   "en": "This project is a knowledge-graph pipeline and task-graph orchestration patterns for graph engineering, provided as a Claude skill."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Graph Engineering是一个图形工程知识图谱管道和任务图编排模式，作为Claude技能提供。",
+    "why": "通过九阶段的知识图谱管道和任务图编排模式，Graph Engineering为用户提供了一个全面的图形工程解决方案。",
+    "biz": "该工具在需要图形工程和任务编排的企业和项目中具有很高的商业价值。"
+   },
+   "en": {
+    "what": "Graph Engineering is a knowledge-graph pipeline and task-graph orchestration patterns for graph engineering, provided as a Claude skill.",
+    "why": "By offering a nine-stage knowledge-graph pipeline and task-graph orchestration patterns, Graph Engineering provides a comprehensive solution for graph engineering.",
+    "biz": "This tool has high commercial value in enterprises and projects that require graph engineering and task orchestration."
+   }
+  },
+  "tags": [
+   "agent",
+   "社区"
+  ],
+  "rank": 81
+ },
+ {
+  "id": "hackernews:48987863",
+  "name": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
+  "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
+  "source": "hackernews",
+  "description": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 382,
+   "comments": 272,
+   "hn_link": "https://news.ycombinator.com/item?id=48987863"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "美国五大科技巨头因AI投资而累积了巨额隐性债务。",
+  "analysis": {
+   "zh": "这篇文章揭示了大型科技公司在AI领域的巨额投资，以及这些投资带来的财务风险。",
+   "en": "The article uncovers the significant investments made by big tech companies in AI and the financial risks associated with these investments."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "美国五大科技巨头因AI投资而累积了1.65万亿美元的隐性债务。",
+    "why": "这些公司为了在AI领域保持竞争力，不惜大量投入资金。",
+    "biz": "这种高风险的投资策略可能会导致财务问题，影响公司的长期发展。"
+   },
+   "en": {
+    "what": "Five US tech giants have accumulated $1.65T in hidden debts due to AI investments.",
+    "why": "These companies are making substantial investments to stay competitive in the AI space.",
+    "biz": "This high-risk investment strategy could lead to financial issues, affecting the companies' long-term growth."
+   }
+  },
+  "tags": [
+   "商业"
+  ],
+  "rank": 82
+ },
+ {
+  "id": "hackernews:49020868",
+  "name": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+  "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
+  "source": "hackernews",
+  "description": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 299,
+   "comments": 331,
+   "hn_link": "https://news.ycombinator.com/item?id=49020868"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "OpenAI和Anthropic联合起来反对开放权重AI对其利润的影响。",
+  "analysis": {
+   "zh": "这篇文章探讨了OpenAI和Anthropic如何联合起来对抗开放权重AI带来的商业风险。",
+   "en": "The article explores how OpenAI and Anthropic are uniting to combat the commercial risks posed by open-weight AI."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "OpenAI和Anthropic联合起来反对开放权重AI对其利润的影响。",
+    "why": "开放权重AI可能导致市场竞争加剧，影响这些公司的收入。",
+    "biz": "这种联合行动反映了这些公司在面对潜在威胁时的防御策略。"
+   },
+   "en": {
+    "what": "OpenAI and Anthropic are uniting against open-weight AI risks to their bottom line.",
+    "why": "Open-weight AI could intensify market competition, affecting these companies' revenues.",
+    "biz": "This joint action reflects a defensive strategy in the face of potential threats."
+   }
+  },
+  "tags": [
+   "商业"
+  ],
+  "rank": 83
+ },
+ {
+  "id": "hackernews:49021006",
+  "name": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+  "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
+  "source": "hackernews",
+  "description": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 274,
+   "comments": 285,
+   "hn_link": "https://news.ycombinator.com/item?id=49021006"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "Alphabet在AI支出上的现金消耗引起了大科技公司的担忧。",
+  "analysis": {
+   "zh": "Alphabet在AI领域的高额支出引发了人们对大科技公司财务状况的担忧。",
+   "en": "Alphabet's high AI spending has raised concerns about the financial health of big tech companies."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Alphabet在AI支出上的现金消耗引起了大科技公司的担忧。",
+    "why": "这种高额支出可能会影响公司的财务稳定性和长期发展。",
+    "biz": "这种现象也反映了整个科技行业在AI领域的激烈竞争。"
+   },
+   "en": {
+    "what": "Alphabet's cash burn on AI spending raises alarm for Big Tech.",
+    "why": "High spending could affect the company's financial stability and long-term growth.",
+    "biz": "This phenomenon also reflects the intense competition in the AI sector across the tech industry."
+   }
+  },
+  "tags": [
+   "商业"
+  ],
+  "rank": 84
+ },
+ {
+  "id": "hackernews:49024643",
+  "name": "The arguments against open source AI are bad",
+  "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+  "source": "hackernews",
+  "description": "The arguments against open source AI are bad",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 310,
+   "comments": 215,
+   "hn_link": "https://news.ycombinator.com/item?id=49024643"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 4,
+   "total": 11
+  },
+  "reason": "文章反驳了反对开源AI的观点，强调了开源AI的重要性和优势。",
+  "analysis": {
+   "zh": "该文章针对反对开源AI的声音进行了有力的反驳，并阐述了开源AI的优势。",
+   "en": "The article strongly refutes arguments against open-source AI and highlights its advantages."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "文章驳斥了反对开源AI的观点，强调了其重要性。",
+    "why": "开源AI可以促进技术进步，提高透明度，并降低进入门槛。",
+    "biz": "尽管开源AI可能面临一些商业化挑战，但它仍然具有巨大的市场潜力。"
+   },
+   "en": {
+    "what": "The article refutes arguments against open-source AI, emphasizing its importance.",
+    "why": "Open-source AI can promote technological progress, increase transparency, and lower entry barriers.",
+    "biz": "While open-source AI may face some commercialization challenges, it still has significant market potential."
+   }
+  },
+  "tags": [
+   "创意",
+   "社区"
+  ],
+  "rank": 85
  },
  {
   "id": "huggingface:space/ICML-2026-agent-repro/challenge",
@@ -2200,7 +3504,7 @@
    "agent",
    "论文"
   ],
-  "rank": 54
+  "rank": 86
  },
  {
   "id": "producthunt:1202119",
@@ -2240,7 +3544,333 @@
    "效率",
    "商业"
   ],
-  "rank": 55
+  "rank": 87
+ },
+ {
+  "id": "arxiv:2607.22471v1",
+  "name": "MineValiCoder: Reliable Code Generation with Test Case Quality Mining and Bipartite Graph-Based Mutual Validation",
+  "url": "https://arxiv.org/abs/2607.22471v1",
+  "source": "arxiv",
+  "description": "Large Language Model (LLM)-based Test-Driven Development (TDD) has advanced automated code generation. However, existing approaches depend heavily on human-crafted test cases and cannot operate effectively when only natural-language requirements are available. Although recent work enables automatic test generation, it often overlooks the inherent stochasticity of LLMs, leading to two key defects: faulty tests generate misleading feedback that distorts code optimization, while mixed-quality test",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "通过测试用例质量和二分图互验证提高代码生成可靠性。",
+  "analysis": {
+   "zh": "该项目通过挖掘测试用例质量和基于二分图的互验证方法，提高了大型语言模型生成代码的可靠性。",
+   "en": "This project improves the reliability of code generation by mining test case quality and using bipartite graph-based mutual validation."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "MineValiCoder通过分析测试用例的质量，并结合二分图进行互验证，提高了代码生成的可靠性。",
+    "why": "现有的TDD方法依赖于人工编写的测试用例，而MineValiCoder可以自动生成高质量的测试用例，从而提高代码质量。",
+    "biz": "该技术在自动化代码生成和测试领域具有很高的商业潜力。"
+   },
+   "en": {
+    "what": "MineValiCoder improves code generation reliability by analyzing test case quality and using bipartite graph-based mutual validation.",
+    "why": "Existing TDD approaches rely on human-crafted test cases, whereas MineValiCoder can automatically generate high-quality test cases, enhancing code quality.",
+    "biz": "This technology has high commercial potential in automated code generation and testing."
+   }
+  },
+  "tags": [
+   "文本",
+   "效率"
+  ],
+  "rank": 88
+ },
+ {
+  "id": "arxiv:2607.22489v1",
+  "name": "\\k{appa}-LoRA: Condition Numbers Reveal Which LoRA Matrices Worth Updating",
+  "url": "https://arxiv.org/abs/2607.22489v1",
+  "source": "arxiv",
+  "description": "Low-Rank Adaptation (LoRA) has become a widely adopted technique for efficient neural network fine-tuning, decomposing model updates into low-rank matrices. However, LoRA remains computationally costly because it updates all matrices uniformly, regardless of their actual contribution to adaptation. This cost is especially prohibitive for large-scale models with billions of parameters and for resource-constrained settings such as edge deployment and on-device fine-tuning. We show for the first ti",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "通过条件数优化LoRA矩阵更新，提高模型训练效率。",
+  "analysis": {
+   "zh": "该项目提出了一种新的方法来优化LoRA矩阵的更新，从而减少计算成本。对于大规模模型和资源受限环境下的应用非常有价值。",
+   "en": "This project proposes a novel method to optimize LoRA matrix updates, thereby reducing computational costs. It is particularly valuable for large-scale models and resource-constrained environments."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过引入条件数来识别哪些LoRA矩阵值得更新，从而减少了不必要的计算开销。",
+    "why": "在大规模模型中，均匀更新所有矩阵会导致高昂的计算成本，而这种方法可以显著降低这些成本。",
+    "biz": "该技术具有广泛的应用前景，特别是在边缘部署和设备端微调等场景下。"
+   },
+   "en": {
+    "what": "The project introduces the use of condition numbers to identify which LoRA matrices are worth updating, thereby reducing unnecessary computational overhead.",
+    "why": "In large-scale models, uniformly updating all matrices can lead to high computational costs, and this approach can significantly reduce these costs.",
+    "biz": "This technology has broad application potential, especially in edge deployment and on-device fine-tuning scenarios."
+   }
+  },
+  "tags": [
+   "论文",
+   "效率"
+  ],
+  "rank": 89
+ },
+ {
+  "id": "github:deerwork-ai/deer-workflow",
+  "name": "deerwork-ai/deer-workflow",
+  "url": "https://github.com/deerwork-ai/deer-workflow",
+  "source": "github",
+  "description": "An open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 225,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
+  "analysis": {
+   "zh": "该项目是一个开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
+   "en": "This project is an open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable agent runtimes."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Deer Workflow是一个开源图形工程运行时，通过TypeScript编排并将语义工作委托给可替换的代理运行时。",
+    "why": "通过这种方式，Deer Workflow可以在保持编排逻辑的同时，灵活地更换不同的代理运行时，提高系统的灵活性和可维护性。",
+    "biz": "该工具在需要灵活编排和管理多代理运行时的企业和项目中具有很高的商业价值。"
+   },
+   "en": {
+    "what": "Deer Workflow is an open-source graph engineering runtime that orchestrates in TypeScript and delegates semantic work to replaceable agent runtimes.",
+    "why": "By doing so, Deer Workflow can maintain orchestration logic while flexibly switching between different agent runtimes, enhancing system flexibility and maintainability.",
+    "biz": "This tool has high commercial value in enterprises and projects that require flexible orchestration and management of multiple agent runtimes."
+   }
+  },
+  "tags": [
+   "agent",
+   "社区"
+  ],
+  "rank": 90
+ },
+ {
+  "id": "github:kvcache-ai/AgentENV",
+  "name": "kvcache-ai/AgentENV",
+  "url": "https://github.com/kvcache-ai/AgentENV",
+  "source": "github",
+  "description": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 389,
+   "language": "Rust"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "分布式平台，用于大规模运行代理环境。",
+  "analysis": {
+   "zh": "AgentENV是一个分布式平台，用于大规模运行代理环境。",
+   "en": "AgentENV is a distributed platform for running agent environments at scale."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "AgentENV是一个分布式平台，旨在大规模运行代理环境。",
+    "why": "通过分布式架构，AgentENV可以有效地管理和扩展多个代理环境，提高系统的整体性能。",
+    "biz": "该平台在需要大规模运行代理环境的企业和研究机构中具有很高的商业价值。"
+   },
+   "en": {
+    "what": "AgentENV is a distributed platform designed to run agent environments at scale.",
+    "why": "With a distributed architecture, AgentENV can efficiently manage and scale multiple agent environments, improving overall system performance.",
+    "biz": "This platform has high commercial value in enterprises and research institutions that require large-scale agent environment operations."
+   }
+  },
+  "tags": [
+   "agent",
+   "基建"
+  ],
+  "rank": 91
+ },
+ {
+  "id": "hackernews:49052570",
+  "name": "What is happening to jobs? Separating AI hype from reality",
+  "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+  "source": "hackernews",
+  "description": "What is happening to jobs? Separating AI hype from reality",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 279,
+   "comments": 368,
+   "hn_link": "https://news.ycombinator.com/item?id=49052570"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "斯坦福大学的研究报告分析了AI对就业市场的实际影响。",
+  "analysis": {
+   "zh": "该报告通过数据分析，揭示了AI对就业市场的实际影响，帮助人们更好地理解这一趋势。",
+   "en": "The report uses data analysis to reveal the actual impact of AI on the job market, helping people better understand this trend."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "斯坦福大学发布了一份关于AI对就业市场影响的报告。",
+    "why": "这份报告旨在区分AI炒作与现实，帮助人们更清晰地了解AI对就业的实际影响。",
+    "biz": "该报告对于政策制定者和企业来说具有重要的参考价值。"
+   },
+   "en": {
+    "what": "Stanford University released a report on the impact of AI on the job market.",
+    "why": "The report aims to separate AI hype from reality, providing a clearer understanding of AI's actual impact on employment.",
+    "biz": "This report is valuable for policymakers and businesses as a reference."
+   }
+  },
+  "tags": [
+   "教育",
+   "商业"
+  ],
+  "rank": 92
+ },
+ {
+  "id": "hackernews:49068738",
+  "name": "AI companies are shredding rare books",
+  "url": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
+  "source": "hackernews",
+  "description": "AI companies are shredding rare books",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 674,
+   "comments": 422,
+   "hn_link": "https://news.ycombinator.com/item?id=49068738"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 3,
+   "money": 2,
+   "total": 10
+  },
+  "reason": "AI公司正在撕碎珍稀书籍，这引发了对数据采集伦理的讨论。",
+  "analysis": {
+   "zh": "该项目揭示了AI公司在追求数据时可能采取的极端手段，引人深思。",
+   "en": "This project reveals the extreme measures AI companies might take in pursuit of data, prompting reflection."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "AI公司为了获取训练数据，不惜破坏珍稀书籍。",
+    "why": "这种做法虽然有助于AI模型的训练，但忽视了文化保护的重要性。",
+    "biz": "此行为可能会引发公众和监管机构的关注，影响公司的声誉。"
+   },
+   "en": {
+    "what": "AI companies are destroying rare books to obtain training data.",
+    "why": "While this may aid in AI model training, it overlooks the importance of cultural preservation.",
+    "biz": "Such actions could attract public and regulatory scrutiny, impacting the company's reputation."
+   }
+  },
+  "tags": [
+   "商业"
+  ],
+  "rank": 93
+ },
+ {
+  "id": "hackernews:49069939",
+  "name": "AI companies spend record sums on Washington lobbying",
+  "url": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
+  "source": "hackernews",
+  "description": "AI companies spend record sums on Washington lobbying",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 212,
+   "comments": 110,
+   "hn_link": "https://news.ycombinator.com/item?id=49069939"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "AI公司在华盛顿游说上花费了创纪录的资金。",
+  "analysis": {
+   "zh": "该报道指出，AI公司在华盛顿游说上的支出达到了创纪录的水平。",
+   "en": "The report highlights that AI companies are spending record amounts on lobbying in Washington."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "AI公司在华盛顿游说上花费了创纪录的资金。",
+    "why": "这些公司希望通过游说影响政策制定，保护自身利益。",
+    "biz": "这种大规模的游说活动反映了AI行业的快速发展及其对政策环境的高度关注。"
+   },
+   "en": {
+    "what": "AI companies are spending record sums on Washington lobbying.",
+    "why": "These companies aim to influence policy-making through lobbying to protect their interests.",
+    "biz": "This large-scale lobbying activity reflects the rapid growth of the AI industry and its high attention to the policy environment."
+   }
+  },
+  "tags": [
+   "商业"
+  ],
+  "rank": 94
+ },
+ {
+  "id": "arxiv:2607.22463v1",
+  "name": "Beyond Perspectives: A Trio-Ethnography of Interpretation Evolution in LLM-Supported Programming Education",
+  "url": "https://arxiv.org/abs/2607.22463v1",
+  "source": "arxiv",
+  "description": "Generative AI is reshaping programming education, yet educators often infer students' AI-supported learning from classroom observations alone. This experience report presents a trio-ethnography involving two computing educators with different teaching philosophies and one undergraduate computer science student to examine how these interpretations evolve through dialogue. Across three conversations, the educators reflected on students' AI use, discussed changes to programming pedagogy, and revisi",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 4,
+   "total": 9
+  },
+  "reason": "通过三元民族志研究，探讨LLM支持编程教育中的解释演变。",
+  "analysis": {
+   "zh": "该项目通过三元民族志研究，探讨了LLM支持的编程教育中解释的演变过程。",
+   "en": "This project explores the evolution of interpretations in LLM-supported programming education through a trio-ethnography."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过三元民族志研究，探讨了两位具有不同教学理念的计算教育者和一名计算机科学本科生在对话中对LLM使用的理解变化。",
+    "why": "通过对话，教育者反思学生使用AI的情况，讨论编程教学法的变化，并重新审视自己的教学实践。",
+    "biz": "该研究为理解和改进LLM支持的编程教育提供了有价值的见解。"
+   },
+   "en": {
+    "what": "The project explores the changes in understanding of LLM use among two computing educators with different teaching philosophies and one undergraduate computer science student through dialogue.",
+    "why": "Through conversations, educators reflect on students' AI use, discuss changes in programming pedagogy, and re-examine their own teaching practices.",
+    "biz": "This study provides valuable insights into understanding and improving LLM-supported programming education."
+   }
+  },
+  "tags": [
+   "教育",
+   "文本"
+  ],
+  "rank": 95
  },
  {
   "id": "arxiv:2607.22514v1",
@@ -2280,7 +3910,372 @@
    "论文",
    "医疗"
   ],
-  "rank": 56
+  "rank": 96
+ },
+ {
+  "id": "github:0xwilliamortiz/andrej-karpathy-skills",
+  "name": "0xwilliamortiz/andrej-karpathy-skills",
+  "url": "https://github.com/0xwilliamortiz/andrej-karpathy-skills",
+  "source": "github",
+  "description": "Behavioral guardrails for Claude Code, distilled from Andrej Karpathy's field notes on where LLMs go wrong when they write software.",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 305,
+   "language": ""
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 4,
+   "total": 9
+  },
+  "reason": "从Andrej Karpathy的笔记中提炼出的行为护栏，用于Claude Code。",
+  "analysis": {
+   "zh": "该项目从Andrej Karpathy的笔记中提炼出行为护栏，帮助Claude Code避免常见的错误。",
+   "en": "This project distills behavioral guardrails from Andrej Karpathy's field notes to help Claude Code avoid common pitfalls."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目从Andrej Karpathy的笔记中提炼出行为护栏，帮助Claude Code避免常见的编程错误。",
+    "why": "通过总结Karpathy的经验，该项目为Claude Code提供了实用的指导，防止其在编写软件时出现常见错误。",
+    "biz": "该工具在提高代码质量和开发者生产力方面具有一定的商业价值。"
+   },
+   "en": {
+    "what": "The project distills behavioral guardrails from Andrej Karpathy's field notes to help Claude Code avoid common programming mistakes.",
+    "why": "By summarizing Karpathy's experiences, the project provides practical guidance to prevent Claude Code from making common errors when writing software.",
+    "biz": "This tool has some commercial value in improving code quality and developer productivity."
+   }
+  },
+  "tags": [
+   "社区",
+   "文本"
+  ],
+  "rank": 97
+ },
+ {
+  "id": "hackernews:48981206",
+  "name": "How we measured AI writing across arXiv, and where the measurement breaks",
+  "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+  "source": "hackernews",
+  "description": "How we measured AI writing across arXiv, and where the measurement breaks",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 244,
+   "comments": 171,
+   "hn_link": "https://news.ycombinator.com/item?id=48981206"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "研究团队测量了arXiv上AI写作的使用情况，并指出了测量方法的局限性。",
+  "analysis": {
+   "zh": "该研究测量了arXiv上AI写作的使用情况，并探讨了现有测量方法的不足之处。",
+   "en": "The study measures the use of AI writing on arXiv and discusses the limitations of current measurement methods."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "研究团队测量了arXiv上AI写作的使用情况。",
+    "why": "这项研究旨在评估AI写作在学术界的应用程度。",
+    "biz": "尽管这是一个重要的研究方向，但其商业化潜力相对较低。"
+   },
+   "en": {
+    "what": "The research team measured the use of AI writing on arXiv.",
+    "why": "The study aims to assess the extent of AI writing in academia.",
+    "biz": "While this is an important research direction, its commercial potential is relatively low."
+   }
+  },
+  "tags": [
+   "论文"
+  ],
+  "rank": 98
+ },
+ {
+  "id": "huggingface:paper/2605.09635",
+  "name": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+  "url": "https://huggingface.co/papers/2605.09635",
+  "source": "huggingface",
+  "description": "Large language models are increasingly used in K-12 education, but existing benchmarks mainly test exam question answering rather than understanding how curriculum knowledge is structured and visually presented. We call this capability curriculum cognition. It covers prerequisite chains, concept taxonomies, experiment-concept links, pedagogical sequencing, and visual grounding. We introduce K12-KGraph, a curriculum-aligned knowledge graph extracted from official People's Education Press textbook",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "upvotes": 57,
+   "kind": "paper"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "K12-KGraph：一个用于基准测试和训练教育LLM的课程对齐知识图谱。",
+  "analysis": {
+   "zh": "这篇论文介绍了一个名为K12-KGraph的知识图谱，用于基准测试和训练教育领域的大型语言模型。",
+   "en": "This paper introduces K12-KGraph, a curriculum-aligned knowledge graph for benchmarking and training educational LLMs."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "K12-KGraph是一个用于基准测试和训练教育LLM的知识图谱。",
+    "why": "它涵盖了先修链、概念分类、实验-概念链接、教学序列和视觉基础等内容。",
+    "biz": "尽管这是一个重要的研究方向，但其商业化潜力相对较低。"
+   },
+   "en": {
+    "what": "K12-KGraph is a knowledge graph for benchmarking and training educational LLMs.",
+    "why": "It covers prerequisite chains, concept taxonomies, experiment-concept links, pedagogical sequencing, and visual grounding.",
+    "biz": "While this is an important research direction, its commercial potential is relatively low."
+   }
+  },
+  "tags": [
+   "论文",
+   "教育"
+  ],
+  "rank": 99
+ },
+ {
+  "id": "huggingface:space/google/gemma4_vision_token_budget",
+  "name": "google/gemma4_vision_token_budget",
+  "url": "https://huggingface.co/spaces/google/gemma4_vision_token_budget",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 51,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "谷歌提供的一个图像处理工具，可以优化视觉令牌预算。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了谷歌的一个图像处理工具，可以优化视觉令牌预算。",
+   "en": "This Hugging Face space provides a Google image processing tool that optimizes visual token budgets."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以优化视觉令牌预算的图像处理工具。",
+    "why": "它利用了先进的图像处理技术，帮助用户更高效地处理图像。",
+    "biz": "这种工具在图像处理和计算机视觉领域具有一定的应用潜力。"
+   },
+   "en": {
+    "what": "This is an image processing tool that optimizes visual token budgets.",
+    "why": "It leverages advanced image processing techniques, helping users process images more efficiently.",
+    "biz": "This tool has some application potential in the image processing and computer vision fields."
+   }
+  },
+  "tags": [
+   "图像"
+  ],
+  "rank": 100
+ },
+ {
+  "id": "huggingface:space/nvidia/Nemotron-Labs-Audex",
+  "name": "nvidia/Nemotron-Labs-Audex",
+  "url": "https://huggingface.co/spaces/nvidia/Nemotron-Labs-Audex",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 40,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "NVIDIA提供的一个音频处理工具，可以进行高质量的音频转换。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了NVIDIA的一个音频处理工具，可以进行高质量的音频转换。",
+   "en": "This Hugging Face space provides an NVIDIA audio processing tool capable of high-quality audio conversion."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以进行高质量音频转换的工具。",
+    "why": "它利用了先进的音频处理技术，使用户能够轻松地进行音频转换。",
+    "biz": "这种工具在音频处理和音乐制作领域具有一定的应用潜力。"
+   },
+   "en": {
+    "what": "This is a tool that can perform high-quality audio conversion.",
+    "why": "It leverages advanced audio processing techniques, enabling users to easily convert audio.",
+    "biz": "This tool has some application potential in the audio processing and music production fields."
+   }
+  },
+  "tags": [
+   "语音"
+  ],
+  "rank": 101
+ },
+ {
+  "id": "huggingface:space/owensong/Inflect-v2",
+  "name": "owensong/Inflect-v2",
+  "url": "https://huggingface.co/spaces/owensong/Inflect-v2",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 47,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 2,
+   "total": 9
+  },
+  "reason": "一个有趣的文本处理工具，可以对文本进行变形和编辑。",
+  "analysis": {
+   "zh": "这个Hugging Face空间提供了一个有趣的文本处理工具，可以对文本进行变形和编辑。",
+   "en": "This Hugging Face space provides an interesting text processing tool that can deform and edit text."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可以对文本进行变形和编辑的工具。",
+    "why": "它利用了先进的自然语言处理技术，使用户能够轻松地编辑和变形文本。",
+    "biz": "这种工具在创意写作和文本编辑领域具有一定的应用潜力。"
+   },
+   "en": {
+    "what": "This is a tool that can deform and edit text.",
+    "why": "It leverages advanced natural language processing techniques, enabling users to easily edit and deform text.",
+    "biz": "This tool has some application potential in the creative writing and text editing fields."
+   }
+  },
+  "tags": [
+   "文本",
+   "创意"
+  ],
+  "rank": 102
+ },
+ {
+  "id": "reddit:1v71wds",
+  "name": "Open-weight 4B models approach o3-level medical question answering in Swedish [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/",
+  "source": "reddit",
+  "description": "I have been running some experiments with smaller open-weight LLMs on multiple-choice questions of Swedish medical licensing exams. On a dataset called MedQA-SWE, GPT-4 scored 84% accuracy in 2024 and o3 scored 88% in 2025 on a smaller, overlapping dataset. With post-training (SFT) on data from earlier years, I got MedGemma-1.5-4B to a passing score of 60% on the final year’s exam. Find the implementation here: https://github.com/tarolangner/medqaswe_medgemma_sft But even though they were releas",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 25,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 4,
+   "total": 9
+  },
+  "reason": "开放权重的 4B 模型在瑞典医学考试中的表现接近 O3 水平。",
+  "analysis": {
+   "zh": "该项目展示了较小的开放权重 LLM 在瑞典医学许可考试中的表现，达到了接近 O3 的水平。",
+   "en": "The project demonstrates the performance of smaller open-weight LLMs on Swedish medical licensing exams, achieving near-O3 levels."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目展示了较小的开放权重 LLM（如 MedGemma-1.5-4B）在瑞典医学许可考试中的表现，达到了接近 O3 的水平。",
+    "why": "这表明即使在较小规模的模型下，通过适当的训练和微调，也可以达到较高的准确率。",
+    "biz": "虽然这是一个学术性的成果，但如果能进一步开发成实际应用，可能会在医疗领域找到商业机会。"
+   },
+   "en": {
+    "what": "The project showcases the performance of smaller open-weight LLMs (like MedGemma-1.5-4B) on Swedish medical licensing exams, achieving near-O3 levels.",
+    "why": "This demonstrates that even with smaller models, high accuracy can be achieved through proper training and fine-tuning.",
+    "biz": "While this is an academic achievement, further development into practical applications could find commercial opportunities in the medical field."
+   }
+  },
+  "tags": [
+   "论文",
+   "医疗"
+  ],
+  "rank": 103
+ },
+ {
+  "id": "arxiv:2607.22467v1",
+  "name": "Complexity Bounds and Approaches to Learning Projected Gradient Descent Solver Iterates",
+  "url": "https://arxiv.org/abs/2607.22467v1",
+  "source": "arxiv",
+  "description": "Data scarcity poses a fundamental challenge in training generative models to produce initial guesses for parametric optimization problems that are otherwise numerically expensive to solve. We therefore study a $k$-neighborhood data collection strategy that augments datasets of converged solutions with intermediate solver iterates, increasing the amount of training data without additional solver runs. To understand the benefits of this approach, we derive a generalization bound based on Rademache",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 1,
+   "money": 4,
+   "total": 8
+  },
+  "reason": "通过数据收集策略和复杂度边界研究，改进投影梯度下降求解器的学习。",
+  "analysis": {
+   "zh": "该项目通过k-邻域数据收集策略和Rademacher复杂度边界研究，改进了投影梯度下降求解器的学习。",
+   "en": "This project improves the learning of projected gradient descent solvers through a k-neighborhood data collection strategy and Rademacher complexity bounds."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过k-邻域数据收集策略增加了训练数据量，从而改进了投影梯度下降求解器的学习。",
+    "why": "数据稀缺是训练生成模型的一个主要挑战，而增加中间求解器迭代的数据量可以缓解这一问题。",
+    "biz": "该方法在解决参数优化问题方面具有潜在的商业价值。"
+   },
+   "en": {
+    "what": "The project increases the amount of training data through a k-neighborhood data collection strategy, improving the learning of projected gradient descent solvers.",
+    "why": "Data scarcity is a major challenge in training generative models, and increasing intermediate solver iterates can mitigate this issue.",
+    "biz": "This method has potential commercial value in solving parametric optimization problems."
+   }
+  },
+  "tags": [
+   "论文",
+   "效率"
+  ],
+  "rank": 104
+ },
+ {
+  "id": "arxiv:2607.22474v1",
+  "name": "Beyond Negative-Ridge Endpoints: Mixed-Sign Spectral Regularization via Negative-Shifted Gradient Descent",
+  "url": "https://arxiv.org/abs/2607.22474v1",
+  "source": "arxiv",
+  "description": "In overparameterized linear regression, many weak spectral directions act like a ridge penalty on the signal-bearing spectrum; negative ridge is the natural correction, pushing filters above one. The stable negative-ridge endpoint, however, is structurally limited: its pole must stay below the smallest nonzero empirical eigenvalue, and it anti-shrinks smaller eigenvalues more than larger ones. Early-stopped negative-shifted gradient descent escapes this constraint. Its filter is smooth at the wo",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 1,
+   "money": 4,
+   "total": 8
+  },
+  "reason": "通过负移梯度下降法实现混合符号谱正则化，改进线性回归模型。",
+  "analysis": {
+   "zh": "该项目提出了一种新的方法，通过负移梯度下降法实现混合符号谱正则化，以改进过参数化的线性回归模型。",
+   "en": "This project introduces a new method using negative-shifted gradient descent to achieve mixed-sign spectral regularization, improving overparameterized linear regression models."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过负移梯度下降法实现了混合符号谱正则化，从而解决了传统负岭端点的结构限制。",
+    "why": "负岭端点在处理小特征值时存在不足，而负移梯度下降法可以更平滑地处理这些问题。",
+    "biz": "该方法在某些特定领域如信号处理和机器学习中有潜在的应用价值。"
+   },
+   "en": {
+    "what": "The project achieves mixed-sign spectral regularization using negative-shifted gradient descent, addressing structural limitations of traditional negative-ridge endpoints.",
+    "why": "Negative-ridge endpoints struggle with smaller eigenvalues, while negative-shifted gradient descent handles these more smoothly.",
+    "biz": "This method has potential applications in specific fields such as signal processing and machine learning."
+   }
+  },
+  "tags": [
+   "论文",
+   "效率"
+  ],
+  "rank": 105
  },
  {
   "id": "reddit:1v26adz",
@@ -2321,7 +4316,88 @@
    "论文",
    "医疗"
   ],
-  "rank": 57
+  "rank": 106
+ },
+ {
+  "id": "arxiv:2607.22484v1",
+  "name": "Singular value soft-thresholding via the polar decomposition",
+  "url": "https://arxiv.org/abs/2607.22484v1",
+  "source": "arxiv",
+  "description": "Singular value soft-thresholding can be computed via a reduction to the matrix polar decomposition, which allows one to exploit GPU-friendly algorithms for computing the polar decomposition. Empirically, there is a significant speed-up on GPUs compared to the standard approach using the SVD. We leave the investigation of robustness to future work, but note that due to the discontinuous nature of the sign function, the reduction to the polar decomposition is likely only suitable for low-accuracy",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "published": "2026-07-24"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 1,
+   "money": 4,
+   "total": 7
+  },
+  "reason": "使用极分解加速奇异值软阈值计算，提高GPU性能。",
+  "analysis": {
+   "zh": "该项目通过将奇异值软阈值计算转化为极分解，利用GPU友好的算法提高了计算速度。",
+   "en": "This project accelerates singular value soft-thresholding by converting it to polar decomposition, leveraging GPU-friendly algorithms to improve speed."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过极分解的方法来计算奇异值软阈值，从而在GPU上实现了显著的速度提升。",
+    "why": "传统的SVD方法在GPU上的性能较差，而极分解方法可以更好地利用GPU的并行计算能力。",
+    "biz": "尽管目前只适用于低精度需求，但该方法在某些应用场景中仍具有较高的商业价值。"
+   },
+   "en": {
+    "what": "The project computes singular value soft-thresholding using polar decomposition, achieving significant speed-up on GPUs.",
+    "why": "Traditional SVD methods perform poorly on GPUs, while polar decomposition can better leverage parallel computing capabilities.",
+    "biz": "Although currently suitable only for low-precision requirements, this method still holds high commercial value in certain applications."
+   }
+  },
+  "tags": [
+   "论文",
+   "效率"
+  ],
+  "rank": 107
+ },
+ {
+  "id": "github:0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
+  "name": "0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
+  "url": "https://github.com/0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
+  "source": "github",
+  "description": "梁文锋四小时投资人会议实录，因原文在微信上无法查看，特传一份github",
+  "collected_at": "2026-07-27",
+  "week": "2026-W31",
+  "metrics": {
+   "stars": 137,
+   "language": ""
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 1,
+   "money": 3,
+   "total": 6
+  },
+  "reason": "梁文锋四小时投资人会议实录，提供完整的会议记录。",
+  "analysis": {
+   "zh": "该项目提供了梁文锋四小时投资人会议的完整实录，方便查看和参考。",
+   "en": "This project provides a complete transcript of Liang Wenfeng's 4-hour investor meeting, making it easy to view and reference."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目提供了梁文锋四小时投资人会议的完整实录，方便查看和参考。",
+    "why": "由于原文在微信上无法查看，该项目将其上传至GitHub，方便更多人访问。",
+    "biz": "该记录在投资者和相关利益方中具有一定的参考价值。"
+   },
+   "en": {
+    "what": "The project provides a complete transcript of Liang Wenfeng's 4-hour investor meeting, making it easy to view and reference.",
+    "why": "As the original text is not accessible on WeChat, the project uploads it to GitHub for wider access.",
+    "biz": "This transcript has some reference value for investors and relevant stakeholders."
+   }
+  },
+  "tags": [
+   "社区",
+   "商业"
+  ],
+  "rank": 108
  },
  {
   "id": "reddit:1v6gh43",
@@ -2362,7 +4438,7 @@
    "论文",
    "社区"
   ],
-  "rank": 58
+  "rank": 109
  },
  {
   "id": "reddit:1v3dm96",
@@ -2403,6 +4479,6 @@
    "社区",
    "教育"
   ],
-  "rank": 59
+  "rank": 110
  }
 ]
