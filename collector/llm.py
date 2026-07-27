@@ -15,6 +15,7 @@ import urllib.request
 import urllib.error
 
 from .net import USER_AGENT, _CTX
+from .scoring import TAGS as _TAGS
 
 API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 DEFAULT_MODEL = "qwen-max"
@@ -122,8 +123,8 @@ _BATCH_TEMPLATE = """\
 1. reason：一句中文推荐钩子（20-60 字，说人话，突出它为什么值得看）
 2. analysis：双语简读，zh 和 en 各 2-3 句
 3. deep_dive：双语深度解读，中英各三段（what / why / biz 各 3-5 句）
-4. tags：1-3 个主题标签，只能从这个词表里选：
-   agent 视频 语音 图像 文本 编码 安全 基建 硬件 机器人 论文 数据 效率 创意 社区 商业 教育 金融 游戏 医疗
+4. tags：1-3 个主题标签，只能从这个词表里选（**严禁使用词表外的词，如「开源/通信/音频/云/编程/AI」等都不允许，开源项目请用「社区」或主题词代替**）：
+   {tags}
 
 ## 输出
 
@@ -170,6 +171,7 @@ def score_candidates(candidates: list[dict], week: str) -> dict:
         if len(batches) > 1:
             print(f"  评分批次 {idx + 1}/{len(batches)}（{len(batch)} 个项目）…")
         prompt = _BATCH_TEMPLATE.format(count=len(batch),
+                                        tags=" ".join(_TAGS),
                                         candidates=_format_candidates(batch))
         parsed = _chat_json_with_retry(prompt, _SCORE_SYSTEM,
                                        label=f"批次 {idx + 1}/{len(batches)}")

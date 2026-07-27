@@ -170,6 +170,19 @@ class TestScoreCandidates:
             score_candidates(cands, "2026-W31")
         assert m.call_count == PARSE_RETRIES + 1
 
+    def test_prompt_tag_list_in_sync_with_TAGS(self):
+        # 回归锁死：_BATCH_TEMPLATE 的词表必须从 scoring.TAGS 动态生成，
+        # 否则加新词表时只改 scoring.TAGS 不改 prompt，LLM 仍会乱写。
+        from collector.llm import _BATCH_TEMPLATE, _TAGS
+        from collector.scoring import TAGS
+        assert _TAGS is TAGS or set(_TAGS) == set(TAGS)
+        rendered = _BATCH_TEMPLATE.format(count=1, tags=" ".join(_TAGS),
+                                          candidates="- id: x\n  名称: X\n  来源: github\n  链接: u\n  描述: d")
+        for tag in TAGS:
+            assert tag in rendered, f"prompt 缺词表项 {tag!r}"
+        # 反向断言：prompt 里不应再硬编码旧词表（如果硬编码，加新词后会缺）
+        assert "开源" in rendered
+
 
 # ---------------------------------------------------------------------------
 # summarize_voices（mock chat）
