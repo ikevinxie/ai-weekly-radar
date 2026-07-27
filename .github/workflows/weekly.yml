@@ -1,4 +1,4 @@
-# AI Weekly Radar — 每周自动收集 + 百炼 API 评分 + 发布
+# AI Weekly Radar — 每周五自动收集 + 百炼 API 评分 + 发布
 # 见 SPEC.md「GitHub Actions 自动化」
 
 name: weekly
@@ -59,29 +59,4 @@ jobs:
           git commit -m "weekly: $WEEK
 
 Co-Authored-By: Claude <noreply@anthropic.com>"
-          git push
-
-  # 每月 1 日 20:30 CST = UTC 12:30 起飞追踪
-  liftoff:
-    runs-on: ubuntu-latest
-    if: github.event.schedule == '30 12 1 * *'
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Track stars
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 -m collector track
-      - name: Regenerate site
-        run: python3 -m collector report
-      - name: Commit & push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "monthly: liftoff tracking"
           git push

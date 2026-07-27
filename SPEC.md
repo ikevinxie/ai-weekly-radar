@@ -215,11 +215,17 @@
 - **重试**：API 调用失败（超时、限流）自动重试 2 次，指数退避
 - **超时**：单次 API 调用 300 秒（评分输出量大）
 
-## GitHub Actions 自动化（.github/workflows/weekly.yml）
+## GitHub Actions 自动化（.github/workflows/）
 
-- **触发**：`schedule` cron `0 12 * * 5`（UTC 12:00 = 北京时间周五 20:00）+ `workflow_dispatch`（手动）
-- **月度起飞追踪**：`schedule` cron `30 12 1 * *`（每月 1 日 20:30 CST）
-- **Secrets**：`DASHSCOPE_API_KEY`、`FEISHU_WEBHOOK_URL`（可选）、`GITHUB_TOKEN`（内置）
-- **步骤**：collect → score → voices-sum（有数据时）→ validate → report → feishu → commit & push
-- **提交信息**：`weekly: <week>`，末尾 `Co-Authored-By: Claude <noreply@anthropic.com>`
+三个独立 workflow，互不干扰：
+
+| 文件 | 触发 | 做什么 |
+|---|---|---|
+| `weekly.yml` | cron `0 12 * * 5`（周五 20:00 CST）+ `workflow_dispatch` | collect → score → voices-sum → validate → report → feishu → commit & push |
+| `daily-voices.yml` | cron `30 13 * * *`（每天 21:30 CST）+ `workflow_dispatch` | `collector voices` → commit `data/voices/daily/` |
+| `monthly-liftoff.yml` | cron `30 12 1 * *`（每月 1 日 20:30 CST）+ `workflow_dispatch` | `collector track` → report → commit & push |
+
+- **Secrets**：`DASHSCOPE_API_KEY`（必需）、`FEISHU_WEBHOOK_URL`（可选）、`GITHUB_TOKEN`（内置）
+- **提交信息**：`weekly: <week>` / `daily: voices <date>` / `monthly: liftoff tracking`
 - **失败处理**：个别数据源失败不中断（collect 已内置容错）；API 评分失败则 workflow 失败并通知
+- **每日发言数据**：`data/voices/daily/` 已从 .gitignore 移除（数据来自公开 feed，需提交才能跨 run 累积供周五汇总）

@@ -1,0 +1,234 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "unironically this is happening right tf now https://t.co/8E0EI7Gq38 https://t.co/FxVx5B9jIi",
+  "url": "https://x.com/swyx/status/2079438448956788964",
+  "date": "2026-07-21",
+  "likes": 35
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "very notable trajectory comparison writeup here buried in the RLM paper from @a1zhang and @lateinteraction.\n\nan open secret of \"frontier\" model training is that even without training on test, you can basically cheat by training on test lookalikes, enabling you to goalseek almost any benchmark number you want.\n\nhowever when they are released open weights, 99% of the time the norm is that you do not get the datasets/rlenvs that would easily show you if someone was training on Temu Tbench, so there is plausible deniability. Alex and Omar discuss applying standard NLP distance metrics on hidden trajectories. There's no ultimate solution here, but they have some prelim explorations. It happens to support the finding that RLMs can generalize to unseen tasks that share latent structure observed in training.",
+  "url": "https://x.com/swyx/status/2079411861150429402",
+  "date": "2026-07-21",
+  "likes": 62
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "https://t.co/74kfnYzuE9",
+  "url": "https://x.com/swyx/status/2079400293075452195",
+  "date": "2026-07-21",
+  "likes": 3
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Never a dull moment when you work at OpenAI. Absolutely incredible place.",
+  "url": "https://x.com/thsottiaux/status/2079355529101705264",
+  "date": "2026-07-20",
+  "likes": 3672
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "1) What https://t.co/kHWwdn0ZQs",
+  "url": "https://x.com/petergyang/status/2079324894320603619",
+  "date": "2026-07-20",
+  "likes": 52
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Banning Chinese models will be the same self own as banning Chinese EVs.",
+  "url": "https://x.com/petergyang/status/2079273815004303477",
+  "date": "2026-07-20",
+  "likes": 1019
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Use one agent to do the work and another to review it against a rubric.\n\n@trq212 explains how this works for video shorts:\n\n“For something like, ‘Is this a good video short or not?’ you don’t have a deterministic answer.\n\nYou should have a separate verification agent read a rubric, review the short, and give feedback.\n\nWe call it self-preferential bias. When a model prefers its own output, it’s going to be more lenient at verifying it.”\n\n📌 Watch the full episode here: https://t.co/mMrt4D5qU7",
+  "url": "https://x.com/petergyang/status/2079257646939742542",
+  "date": "2026-07-20",
+  "likes": 47
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "it's literally the greatest time ever to have product sense https://t.co/BkzV0sLwgP",
+  "url": "https://x.com/realmadhuguru/status/2079387984852668780",
+  "date": "2026-07-21",
+  "likes": 100
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "The road to AGI is paved with economically valuable tasks.\n\nThat’s why enterprise AI is one of the most important frontiers. It’s where many of those tasks live.",
+  "url": "https://x.com/realmadhuguru/status/2079369965569003691",
+  "date": "2026-07-21",
+  "likes": 24
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Four years post peak web3 and crypto tokenomics debates…\n\nturns out the tokenomics debate that matters is open vs closed weight, inference costs and model routing. https://t.co/THz3HEyx1d",
+  "url": "https://x.com/realmadhuguru/status/2079227605031829700",
+  "date": "2026-07-20",
+  "likes": 4
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "this was a bug that was only live for a few minutes, ran into it on my personal account while doing some late night coding though",
+  "url": "https://x.com/trq212/status/2079105479125741675",
+  "date": "2026-07-20",
+  "likes": 124
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Tools https://t.co/b8MxIORFp2",
+  "url": "https://x.com/amasad/status/2079421913089335677",
+  "date": "2026-07-21",
+  "likes": 91
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "“Being cancelled is a choice” turned out to be a nice sound bite. https://t.co/POBo82Kx6z",
+  "url": "https://x.com/amasad/status/2079401256448340378",
+  "date": "2026-07-21",
+  "likes": 155
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "First physical product shipped by a coding agent? https://t.co/1PSIT9yvOT",
+  "url": "https://x.com/amasad/status/2079282869063786541",
+  "date": "2026-07-20",
+  "likes": 270
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "The big lesson from AI is that everything is code. A slide deck is code. Design is code. That cool promo video? Code. Excel automation? Code. The universe? Probably made of code too.",
+  "url": "https://x.com/rauchg/status/2079274102129304026",
+  "date": "2026-07-20",
+  "likes": 4300
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Multi-model agentic systems clearly are the future. Great post by cursor. Their new research shows that a frontier model as a planner and orchestrator with a workhorse cheaper model can materially lower the cost of total tokens on a project, resulting in a 15X cost improvement.\n\n“Few moments in a large task genuinely require frontier intelligence, such as the original decomposition, the design decisions, and certain trade-offs. Once a frontier planner has collapsed the ambiguity into a detailed, explicit instruction, less expensive models simply have to follow it.”\n\nThis is increasingly becoming the core design pattern of complex agents, because the tokens used on large amounts of work on many tasks don’t require the same intelligence threshold as the planning step. By routing to different models based on where you are in the task, you get much greater efficiency overall. \n\nThis provides the template for where the applied layer in AI will differentiate. You can only drive this efficiency if you know the domain well and have the ability to work with multiple model tiers; companies that can do this will across coding, finance, legal, healthcare, life sciences, and other critical spaces will be in a strong position to get larger workloads that would otherwise be too expensive for the customer to deploy.",
+  "url": "https://x.com/levie/status/2079402164988895293",
+  "date": "2026-07-21",
+  "likes": 206
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "The asset seizure tax will only make California more impoverished\n\nSEIU-UHW should be ashamed of itself for the naked cash grab for their own personal benefit https://t.co/wfG9MyVpzc",
+  "url": "https://x.com/garrytan/status/2079369233218306285",
+  "date": "2026-07-21",
+  "likes": 225
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Compute rules everything around me CREAM https://t.co/LkOQBYaDfu",
+  "url": "https://x.com/garrytan/status/2079240755135357356",
+  "date": "2026-07-20",
+  "likes": 216
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Great reminder to stay frosty https://t.co/mJNqrKnYt5",
+  "url": "https://x.com/garrytan/status/2079196804315521332",
+  "date": "2026-07-20",
+  "likes": 704
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "OpenAI and Anthropic when a top free Chinese open source model drops  https://t.co/Dh3hjgv0y1",
+  "url": "https://x.com/mattturck/status/2079198838741458989",
+  "date": "2026-07-20",
+  "likes": 70
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "If I were to hire today, this is how I would structure the interview process:\n\nRound 1: in-person & no AI allowed; test domain expertise and knowledge on the fly\n\nRound 2: a project that must be done with AI (impossible to complete without AI). Candidate assessed not just on the result but also the chat transcript with agents",
+  "url": "https://x.com/zarazhangrui/status/2079409165424799889",
+  "date": "2026-07-21",
+  "likes": 154
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Just reached 80k followers 🙏🏻\n\n“all signal no noise no slop no hacks and still finds a way to grow her audience” is what I do here https://t.co/pI8h5ImgnC",
+  "url": "https://x.com/zarazhangrui/status/2079395028485488707",
+  "date": "2026-07-21",
+  "likes": 127
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "There are basically two kinds of companies now. The ones built before coding agents showed up, scrambling to retrofit. And the ones founded after. \n\nThe second type is different from day one:\n- Teams under ten people because they actually don't need more\n- Work organized by projects, not departments\n- Each person closes their own loop\n- Almost no internal meetings",
+  "url": "https://x.com/zarazhangrui/status/2079225776545968166",
+  "date": "2026-07-20",
+  "likes": 162
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Many founders in the last 18 months are going to realize that just because there are no “moats” in AI left anymore doesn’t mean “scale and capital” become your main moat.\n\nWe have seen this movie before.. all of us will benefit from reading a little bit of history.\n\nWebvan\nGroupon\nMySpace\nYahoo\nAltaVista\nBlockbuster\nNokia\n(zombiecorns of 2021)\n\nEach one was structurally and capital-wise in a very good position, but eventually got beat by a company with a much better unique insight. Or just collapsed under the weight of their own scale. \n\nThis is the needle founders have to thread: find a unique insight worth a 10+ year journey, while being prudent enough to not let capital & scale become a substitute for it.",
+  "url": "https://x.com/nikunj/status/2079328912912355470",
+  "date": "2026-07-20",
+  "likes": 107
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "This VC to “fast growing startup” train is insane to watch.. another three people just this past week. \n\nI guess it’s similar to the IB/consultant to BizOps train I saw in 2012. \n\nTop title for this cohort? \n\nSpecial projects ⚡️ https://t.co/FqarRFC8Iw",
+  "url": "https://x.com/nikunj/status/2079211477127291350",
+  "date": "2026-07-20",
+  "likes": 79
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "https://t.co/HfFp5SlucN",
+  "url": "https://x.com/danshipper/status/2079338909801071021",
+  "date": "2026-07-20",
+  "likes": 68
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "we’re hiring a senior engineer to help work on our agent @every \n\nmust love agents. dm if you’re interested (for now preferencing for people I know on here!) https://t.co/RNbNiBQVoL",
+  "url": "https://x.com/danshipper/status/2079331654359818503",
+  "date": "2026-07-20",
+  "likes": 47
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "guys I’m basically Brian Johnson https://t.co/vgDGWhxBlZ",
+  "url": "https://x.com/danshipper/status/2079320969802400200",
+  "date": "2026-07-20",
+  "likes": 45
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "it is good now! https://t.co/eiG0VDwrTe",
+  "url": "https://x.com/sama/status/2079258683884917013",
+  "date": "2026-07-20",
+  "likes": 2820
+ }
+]
