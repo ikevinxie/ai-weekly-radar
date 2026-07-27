@@ -1,0 +1,67 @@
+{
+ "week": "2026-W30",
+ "overview": {
+  "zh": "本周大佬叙事的主线是「智能体的经济学」：Aaron Levie 用两条长推把「模型越便宜、消耗越多」和「前沿模型管人、廉价模型干活可省 15 倍成本」讲成了一套完整方法论，Anthropic 经济学负责人的报告则从数据上印证了「AI 目前是助力而非替代」。同时开源权重模型的地缘讨论持续发酵——从「封杀等于自伤」到「开源权重不代表数据泄露」的科普。builder 们也在分享具体的智能体实践：Cat Wu 用 Claude Cowork 管日历、Thariq 讲自我审查智能体的「自我偏好偏差」、Guillermo Rauch 晒出 Fable 自主优化 Next.js 内存的「WTF/天」时刻。",
+  "en": "This week's dominant thread was 'agent economics': Aaron Levie laid out a full thesis across two long posts — cheaper tokens drive up total AI spend, and a frontier-model-as-manager-plus-cheap-workhorse pattern can cut costs 15x — while Anthropic's head of economics backed it with data showing AI so far augments jobs more than it replaces them. Geopolitics of open-weight models kept simmering too, from 'banning them is a self-own' takes to plain explainers that open weights don't mean your data leaks to the trainer. Builders swapped concrete agent practices: Cat Wu runs her calendar through Claude Cowork, Thariq described the 'self-preferential bias' problem in agent-reviews-agent setups, and Guillermo Rauch shared Fable autonomously shaving memory usage in Next.js/Turbopack as his weekly 'holy s*** moment.'"
+ },
+ "themes": [
+  {
+   "title": {"zh": "智能体的经济学", "en": "The economics of agents"},
+   "summary": {
+    "zh": "Aaron Levie 本周贡献了两条最硬核的长推：一是「AI 越便宜，消耗反而越多」——因为便宜到可以塞进更多任务，token 需求只会涨不会跌；二是引用 Cursor 的研究，「前沿模型做规划+廉价模型干活」的多模型架构能带来 15 倍的总成本优化，且只有懂具体行业的公司才能吃到这个红利。这两条推文基本给出了应用层 AI 公司下一步的成本结构模板。",
+    "en": "Aaron Levie posted the week's two hardest-headed threads: cheaper AI drives up total consumption rather than shrinking spend, because affordability lets you throw it at far more tasks; and, citing Cursor's research, routing a frontier model as planner with a cheap workhorse model underneath can cut total token cost 15x — a pattern only companies with deep domain knowledge can fully capture. Together they sketch the cost-structure playbook for the applied-AI layer."
+   },
+   "quotes": [
+    {"author": "Aaron Levie", "handle": "levie", "text": "A lot of people make the mistake of thinking that when AI costs drop, that spend on AI drops with it. Usually the opposite happens... Thus, for the foreseeable future, anything that lowers the cost of tokens will drive up inference demand.", "url": "https://x.com/levie/status/2078968158006939716", "date": "2026-07-19"},
+    {"author": "Aaron Levie", "handle": "levie", "text": "Multi-model agentic systems clearly are the future. Great post by cursor... a frontier model as a planner and orchestrator with a workhorse cheaper model can materially lower the cost of total tokens on a project, resulting in a 15X cost improvement.", "url": "https://x.com/levie/status/2079402164988895293", "date": "2026-07-21"},
+    {"author": "Aaron Levie", "handle": "levie", "text": "Very good post from the Head of Economics at Anthropic... So far, AI is both skill-biased and labor-augmenting. It complements domain expertise. It relies on humans in the loop to direct and evaluate the most complex work.", "url": "https://x.com/levie/status/2080156917373214900", "date": "2026-07-23"}
+   ]
+  },
+  {
+   "title": {"zh": "开源权重的地缘辩论", "en": "Open weights go geopolitical"},
+   "summary": {
+    "zh": "开源权重模型从技术话题变成了政策话题。Aaron Levie 直言「封杀开源模型等于自伤」——别的生态不会跟着禁，反而占了便宜；Peter Yang 把「禁用中国模型」类比成「禁用中国电动车」的自我伤害；Madhu Guru 则做了一次通俗科普，解释「用中国训练的模型≠数据被对方拿走」，因为开放权重意味着推理完全在自己的云上跑。",
+    "en": "Open-weight models moved from a technical debate to a policy one. Aaron Levie argued banning open models is a self-own since other ecosystems won't follow suit and will gain an edge; Peter Yang compared banning Chinese models to banning Chinese EVs — same self-inflicted wound; Madhu Guru wrote a plain-language explainer that using a Chinese-trained LLM doesn't mean the trainer gets your data, since open weights means inference runs entirely on your own infrastructure."
+   },
+   "quotes": [
+    {"author": "Aaron Levie", "handle": "levie", "text": "In a world where there are strong open source alternatives that are only just behind the frontier models, you make yourself less secure and competitive by gatekeeping access to frontier model capabilities.", "url": "https://x.com/levie/status/2078992778449850769", "date": "2026-07-19"},
+    {"author": "Peter Yang", "handle": "petergyang", "text": "Banning Chinese models will be the same self own as banning Chinese EVs.", "url": "https://x.com/petergyang/status/2079273815004303477", "date": "2026-07-20"},
+    {"author": "Madhu Guru", "handle": "realmadhuguru", "text": "Using a Chinese-trained LLM doesn't mean they get your data... Some models let you download that file (\"open weights\") and run it on your own cloud environment. The model trainer is out of the picture now.", "url": "https://x.com/realmadhuguru/status/2080150245011509593", "date": "2026-07-23"}
+   ]
+  },
+  {
+   "title": {"zh": "智能体审智能体，怎么避免自我偏好", "en": "Agents reviewing agents — and their bias problem"},
+   "summary": {
+    "zh": "「用一个智能体干活、另一个按规则审」正在成为标准架构，但 Thariq 提醒了一个反直觉的坑：模型倾向于更宽容地通过自己生成的输出——「自我偏好偏差」。这解释了为什么单智能体自检往往不可靠，也让「独立评审智能体」成为本周多条推文里反复出现的落地细节。",
+    "en": "'One agent does the work, another reviews it against a rubric' is becoming a standard architecture — but Thariq flagged a counterintuitive trap: models tend to be more lenient when judging their own output, a 'self-preferential bias.' It's why single-agent self-review is unreliable, and why an independent verifier agent kept showing up as the concrete implementation detail across this week's posts."
+   },
+   "quotes": [
+    {"author": "Peter Yang", "handle": "petergyang", "text": "Use one agent to do the work and another to review it against a rubric. @trq212 explains how this works for video shorts... We call it self-preferential bias. When a model prefers its own output, it's going to be more lenient at verifying it.", "url": "https://x.com/petergyang/status/2079257646939742542", "date": "2026-07-20"},
+    {"author": "Guillermo Rauch", "handle": "rauchg", "text": "Fable just found a 15-30% memory efficiency improvement in Turbopack / Next.js, nearly autonomously... 'WTFs/day' might just be my favorite metric for AI progress.", "url": "https://x.com/rauchg/status/2080098518535110913", "date": "2026-07-23"}
+   ]
+  },
+  {
+   "title": {"zh": "智能体已经嵌进日常工作流", "en": "Agents embedded in daily workflows"},
+   "summary": {
+    "zh": "本周多位 builder 分享了具体到「怎么写 prompt」的智能体使用心得：Cat Wu 用一段结构化 prompt 让 Claude Cowork 管理日历（去重会议、参考历史决策模式）；Zara Zhang 提出「厚上下文、薄提示词」——不给方案只给问题，模型常给出更好答案；Thariq 则说自己已经离不开 Claude Design + Claude Code 的前端组合。这些都指向同一个信号：智能体的价值正从「демо 惊艳」转向「日常肌肉记忆」。",
+    "en": "Several builders shared concrete, prompt-level agent habits this week: Cat Wu runs a structured prompt through Claude Cowork to manage her calendar (dedupe conflicts, learn from past decline patterns); Zara Zhang described a 'thick context, thin prompt' style — describing the problem without prescribing a solution often gets a better answer than she'd have designed herself; Thariq said he can't go back from the Claude Design + Claude Code frontend combo. The common thread: agent value is shifting from demo-wow to daily muscle memory."
+   },
+   "quotes": [
+    {"author": "Cat Wu", "handle": "_catwu", "text": "I love using Claude Cowork to manage my calendar. Here's my prompt for it: Manage my calendar for the week. Requirements: 1. <20 hours of meetings 2. Dedupe conflicting meetings. Look at past weeks to see what kinds of meetings I decline.", "url": "https://x.com/_catwu/status/2079011428380602526", "date": "2026-07-20"},
+    {"author": "Zara Zhang", "handle": "zarazhangrui", "text": "Sometimes I just describe my problem without specifying a solution/spec. The model often pleasantly surprises me with a better solution that I could have thought of. Thick context, thin prompt", "url": "https://x.com/zarazhangrui/status/2080103288834510939", "date": "2026-07-23"},
+    {"author": "Thariq", "handle": "trq212", "text": "I'm sad it took me this long to actually type /design but working on frontend with Claude Design and Claude Code is actually so good", "url": "https://x.com/trq212/status/2080090919832084753", "date": "2026-07-23"}
+   ]
+  },
+  {
+   "title": {"zh": "组织形态正在被智能体重写", "en": "Agents are rewriting the org chart"},
+   "summary": {
+    "zh": "Zara Zhang 观察到一个结构性分野：智能体出现前成立的公司在手忙脚乱地改造流程，之后成立的公司则天生不同——十人以下团队、按项目而非部门组织、几乎没有内部会议。呼应了 Nikunj Kothari「AI 时代没有护城河，规模和资本也不是护城河」的警告：历史上 Webvan、MySpace、诺基亚都曾资本雄厚却输给了更懂洞察的对手。",
+    "en": "Zara Zhang spotted a structural split: companies founded before coding agents are scrambling to retrofit their processes, while post-agent companies are different from day one — sub-ten-person teams, project-based rather than departmental organization, almost no internal meetings. It echoes Nikunj Kothari's warning that in the AI era neither scale nor capital is a moat — Webvan, MySpace, and Nokia were all capital-rich but lost to sharper insight."
+   },
+   "quotes": [
+    {"author": "Zara Zhang", "handle": "zarazhangrui", "text": "There are basically two kinds of companies now. The ones built before coding agents showed up, scrambling to retrofit. And the ones founded after... Teams under ten people because they actually don't need more. Almost no internal meetings.", "url": "https://x.com/zarazhangrui/status/2079225776545968166", "date": "2026-07-20"},
+    {"author": "Nikunj Kothari", "handle": "nikunj", "text": "Many founders in the last 18 months are going to realize that just because there are no 'moats' in AI left anymore doesn't mean 'scale and capital' become your main moat. We have seen this movie before.", "url": "https://x.com/nikunj/status/2079328912912355470", "date": "2026-07-20"}
+   ]
+  }
+ ]
+}

@@ -6,6 +6,24 @@
   <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
   <language>zh-cn</language>
   <item>
+   <title>AI 周报 2026-W31：本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。</title>
+   <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W31</link>
+   <guid isPermaLink="false">2026-W31</guid>
+   <pubDate>Fri, 31 Jul 2026 20:00:00 +0000</pubDate>
+   <description>本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。与此同时，开放权重的地缘政治博弈白热化：三篇 HN 热帖同时讨论中国开源 AI 的战略优势与美国政策走向，startup founders 集体上书反对封锁。另一条暗线是「AI 祛魅」：pelicanmaxxing 的讽刺、AI 公司隐藏债务的曝光、Anthropic 15 亿美元版权和解，都在提醒行业回归理性。创意 AI 则继续下沉——手绘动画、3D 生成、实时语音，创作者工具越来越触手可及。
+
+1. gnipbao/story-to-handdrawn-video（23分）— 把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。
+2. Are AI labs pelicanmaxxing?（22分）— 「AI 实验室在 pelicanmaxxing 吗？」——本周最好笑也最扎心的 AI 文化批评。
+3. microsoft/TRELLIS.2（22分）— 微软 TRELLIS.2：从图片生成 3D 资产，1854 赞的 HF 热门 Space。
+4. Heard（22分）— 给 Claude Code 和 Codex 装上嘴巴——Heard 让 coding agent 开口说话。
+5. Speechius（21分）— 「会听你说话的提词器」——Speechius 让演讲者不再被提词器牵着走。
+6. VictorTaelin/OptMem（20分）— 426 个 token 实现 AI agent 永久记忆——极简到让人怀疑是不是在开玩笑。
+7. Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge（20分）— Qwen-Image-3.0 发布：富内容、真细节、深知识——阿里的图像生成新旗舰。
+8. smolagents/hf-realtime-voice（20分）— HuggingFace 官方实时语音 agent——482 赞，和 AI 实时对话的未来感。
+9. I built a compiler that turns computation graphs into the weights of a vanilla transformer — no training anywhere [P]（20分）— 把计算图「编译」成 transformer 权重，零训练——这可能是本周最烧脑的项目。
+10. Businesses with ugly AI menu redesigns（19分）— 「那些被 AI 重新设计得很丑的菜单」——381 赞的 AI 设计灾难大赏。</description>
+  </item>
+  <item>
    <title>AI 周报 2026-W29：本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。</title>
    <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W29</link>
    <guid isPermaLink="false">2026-W29</guid>

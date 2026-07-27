@@ -1,0 +1,772 @@
+[
+ {
+  "id": "arxiv:2607.21595v1",
+  "name": "3D-Aware VLMs with Implicit and Explicit Geometries",
+  "url": "https://arxiv.org/abs/2607.21595v1",
+  "source": "arxiv",
+  "description": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors f",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21585v1",
+  "name": "Expanding Flow Maps",
+  "url": "https://arxiv.org/abs/2607.21585v1",
+  "source": "arxiv",
+  "description": "Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed dimensions or fixed sequence lengths. Here, we introduce Expanding Generative Flows (EFlows), which define flows between distributions of increasing dimensionality along an expanding interpolant that grows the state by augmenting it with conditional noise. Building on this construction, we propose Ex",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21580v1",
+  "name": "GraphVid: Interactive Graph-Controllable Video Generation",
+  "url": "https://arxiv.org/abs/2607.21580v1",
+  "source": "arxiv",
+  "description": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\\textbf{GraphVid}$, a graph-co",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21579v1",
+  "name": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+  "url": "https://arxiv.org/abs/2607.21579v1",
+  "source": "arxiv",
+  "description": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initialization. We provide a negative answer to this question. Specifically, for every finite dimension $n\\geq4$, we construct a nonempty open, hence positive-Lebesgue-measure, family of strictly convex quadra",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21577v1",
+  "name": "Synthetic data generation framework for quality control automation in gravure printing",
+  "url": "https://arxiv.org/abs/2607.21577v1",
+  "source": "arxiv",
+  "description": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this pa",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21573v1",
+  "name": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+  "url": "https://arxiv.org/abs/2607.21573v1",
+  "source": "arxiv",
+  "description": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, existing sufficiency-oriented methods can assign high importance to spurious subsequences that support the prediction without being essential to the model's decision. We introduce \\textbf{TimePNS}, a necessity-aware framework for time-series explanation. Inspired by Pearl's counterfactual notion of n",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21561v1",
+  "name": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
+  "url": "https://arxiv.org/abs/2607.21561v1",
+  "source": "arxiv",
+  "description": "Molecular property prediction from structure often uses a single representative conformation, even though many molecules exist as conformational ensembles in solution. We introduce EnsembleEGNN, a molecular ensemble foundation model that encodes an ensemble by first encoding each conformer with shared Equivariant Graph Neural Network (EGNN) layers, then pooling the resulting conformer representations with a Set Attention Block. We pretrain the model on CREMP, a cyclic peptide ensemble dataset, u",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21559v1",
+  "name": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
+  "url": "https://arxiv.org/abs/2607.21559v1",
+  "source": "arxiv",
+  "description": "A consensus anomaly detection framework was applied to monthly malaria surveillance data from Ghana (2014-2023) to identify atypical transmission patterns. Anomalies were highly structured in space and time. Ashanti and Northern Regions accounted for most recurrent anomalies, with persistent hotspots at Tamale, Kumasi, and Accra. A key finding was the spatial distinction between anomaly burden (cumulative cases during anomalous periods) and anomaly frequency (persistence of unusual behaviour). T",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21558v1",
+  "name": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+  "url": "https://arxiv.org/abs/2607.21558v1",
+  "source": "arxiv",
+  "description": "Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must distinguish when to incorporate others' perspectives from when to maintain a well-grounded moral judgment. We study the broader resistance-compliance process governing this distinction. Across three studies, we show that models' judgment revision is structured along three dimensions that parallel cla",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "arxiv:2607.21557v1",
+  "name": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+  "url": "https://arxiv.org/abs/2607.21557v1",
+  "source": "arxiv",
+  "description": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "github:lopopolo/harness-engineering",
+  "name": "lopopolo/harness-engineering",
+  "url": "https://github.com/lopopolo/harness-engineering",
+  "source": "github",
+  "description": "🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 2295,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:Jakubantalik/thinking-orbs",
+  "name": "Jakubantalik/thinking-orbs",
+  "url": "https://github.com/Jakubantalik/thinking-orbs",
+  "source": "github",
+  "description": "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 872,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:pireel/pireel",
+  "name": "pireel/pireel",
+  "url": "https://github.com/pireel/pireel",
+  "source": "github",
+  "description": "Open-source, backend-free AI video editor for talking-head video — storyboarding, designed graphics, kinetic captions, themes and in-browser WebCodecs export. Drivable by any AI agent over MCP.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 683,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:gnipbao/story-to-handdrawn-video",
+  "name": "gnipbao/story-to-handdrawn-video",
+  "url": "https://github.com/gnipbao/story-to-handdrawn-video",
+  "source": "github",
+  "description": "Agent skill: convert Chinese story copy or ordered images into a hand-drawn diary-comic animation (silent MP4 picture track).",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 589,
+   "language": "JavaScript"
+  }
+ },
+ {
+  "id": "github:KinetiNode/claude-fable-5-system-prompt-clean",
+  "name": "KinetiNode/claude-fable-5-system-prompt-clean",
+  "url": "https://github.com/KinetiNode/claude-fable-5-system-prompt-clean",
+  "source": "github",
+  "description": "the optimized, token-efficient version of the leaked Claude Fable 5 / Mythos 5 system prompt. Re-engineered into clean Markdown for universal execution on Gemini 3.1 Pro, ChatGPT 5.6, and advanced LLM agents.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 397,
+   "language": ""
+  }
+ },
+ {
+  "id": "github:Kritt-ai/open-kritt",
+  "name": "Kritt-ai/open-kritt",
+  "url": "https://github.com/Kritt-ai/open-kritt",
+  "source": "github",
+  "description": "Orchestrate AI agents to find real vulnerabilities in code.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 366,
+   "language": "JavaScript"
+  }
+ },
+ {
+  "id": "github:SeanJ1ang/design-judge-skills",
+  "name": "SeanJ1ang/design-judge-skills",
+  "url": "https://github.com/SeanJ1ang/design-judge-skills",
+  "source": "github",
+  "description": "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 313,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:joeseesun/qiaomu-cut-skill",
+  "name": "joeseesun/qiaomu-cut-skill",
+  "url": "https://github.com/joeseesun/qiaomu-cut-skill",
+  "source": "github",
+  "description": "乔木智能视频导演 Skill：素材治理、双语字幕、品牌包装与可复现渲染 | Agent-native video director with governed sourcing and verifiable rendering",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 263,
+   "language": "JavaScript"
+  }
+ },
+ {
+  "id": "github:realfishsam/agent-notch",
+  "name": "realfishsam/agent-notch",
+  "url": "https://github.com/realfishsam/agent-notch",
+  "source": "github",
+  "description": "The open-source alternative to vibe-island",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 262,
+   "language": "Swift"
+  }
+ },
+ {
+  "id": "github:RinDig/icm-architect",
+  "name": "RinDig/icm-architect",
+  "url": "https://github.com/RinDig/icm-architect",
+  "source": "github",
+  "description": "Claude skill: design any process, idea, or problem into an ICM workspace (folder structure as agent architecture), or restructure an existing folder into one",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "stars": 247,
+   "language": ""
+  }
+ },
+ {
+  "id": "hackernews:48979269",
+  "name": "China’s open-weights AI strategy is winning",
+  "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+  "source": "hackernews",
+  "description": "China’s open-weights AI strategy is winning",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 1238,
+   "comments": 931,
+   "hn_link": "https://news.ycombinator.com/item?id=48979269"
+  }
+ },
+ {
+  "id": "hackernews:49023016",
+  "name": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+  "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+  "source": "hackernews",
+  "description": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 915,
+   "comments": 759,
+   "hn_link": "https://news.ycombinator.com/item?id=49023016"
+  }
+ },
+ {
+  "id": "hackernews:48993414",
+  "name": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+  "source": "hackernews",
+  "description": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 749,
+   "comments": 573,
+   "hn_link": "https://news.ycombinator.com/item?id=48993414"
+  }
+ },
+ {
+  "id": "hackernews:49010129",
+  "name": "Are AI labs pelicanmaxxing?",
+  "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+  "source": "hackernews",
+  "description": "Are AI labs pelicanmaxxing?",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 665,
+   "comments": 240,
+   "hn_link": "https://news.ycombinator.com/item?id=49010129"
+  }
+ },
+ {
+  "id": "hackernews:49020999",
+  "name": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+  "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+  "source": "hackernews",
+  "description": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 646,
+   "comments": 342,
+   "hn_link": "https://news.ycombinator.com/item?id=49020999"
+  }
+ },
+ {
+  "id": "hackernews:48962983",
+  "name": "NYC may require landlords and realtors to disclose the use of AI in listings",
+  "url": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
+  "source": "hackernews",
+  "description": "NYC may require landlords and realtors to disclose the use of AI in listings",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 591,
+   "comments": 265,
+   "hn_link": "https://news.ycombinator.com/item?id=48962983"
+  }
+ },
+ {
+  "id": "hackernews:48989701",
+  "name": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
+  "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+  "source": "hackernews",
+  "description": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 567,
+   "comments": 215,
+   "hn_link": "https://news.ycombinator.com/item?id=48989701"
+  }
+ },
+ {
+  "id": "hackernews:48952880",
+  "name": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+  "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+  "source": "hackernews",
+  "description": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 562,
+   "comments": 379,
+   "hn_link": "https://news.ycombinator.com/item?id=48952880"
+  }
+ },
+ {
+  "id": "hackernews:48996652",
+  "name": "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
+  "url": "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63",
+  "source": "hackernews",
+  "description": "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 559,
+   "comments": 620,
+   "hn_link": "https://news.ycombinator.com/item?id=48996652"
+  }
+ },
+ {
+  "id": "hackernews:48947825",
+  "name": "The state of open source AI",
+  "url": "https://stateofopensource.ai/",
+  "source": "hackernews",
+  "description": "The state of open source AI",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "points": 486,
+   "comments": 357,
+   "hn_link": "https://news.ycombinator.com/item?id=48947825"
+  }
+ },
+ {
+  "id": "huggingface:space/microsoft/TRELLIS.2",
+  "name": "microsoft/TRELLIS.2",
+  "url": "https://huggingface.co/spaces/microsoft/TRELLIS.2",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 1836,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/kulkas2pintu/wan555",
+  "name": "kulkas2pintu/wan555",
+  "url": "https://huggingface.co/spaces/kulkas2pintu/wan555",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 728,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/smolagents/hf-realtime-voice",
+  "name": "smolagents/hf-realtime-voice",
+  "url": "https://huggingface.co/spaces/smolagents/hf-realtime-voice",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 461,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/webml-community/bonsai-webgpu-kernels",
+  "name": "webml-community/bonsai-webgpu-kernels",
+  "url": "https://huggingface.co/spaces/webml-community/bonsai-webgpu-kernels",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 307,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/baidu/Unlimited-OCR",
+  "name": "baidu/Unlimited-OCR",
+  "url": "https://huggingface.co/spaces/baidu/Unlimited-OCR",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 288,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/M3st3rJ4k3l/FLUX.2-Klein-Multi-LoRA",
+  "name": "M3st3rJ4k3l/FLUX.2-Klein-Multi-LoRA",
+  "url": "https://huggingface.co/spaces/M3st3rJ4k3l/FLUX.2-Klein-Multi-LoRA",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 211,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/EldMans/wan2.2_14b_i2v_480p_lightning_nsfw_diffusers",
+  "name": "EldMans/wan2.2_14b_i2v_480p_lightning_nsfw_diffusers",
+  "url": "https://huggingface.co/spaces/EldMans/wan2.2_14b_i2v_480p_lightning_nsfw_diffusers",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 210,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/ICML-2026-agent-repro/challenge",
+  "name": "ICML-2026-agent-repro/challenge",
+  "url": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 178,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/loveseries/wanmanlove",
+  "name": "loveseries/wanmanlove",
+  "url": "https://huggingface.co/spaces/loveseries/wanmanlove",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 166,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/victor/gemma-avatar",
+  "name": "victor/gemma-avatar",
+  "url": "https://huggingface.co/spaces/victor/gemma-avatar",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "likes": 157,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "producthunt:1203163",
+  "name": "HarnessRouter",
+  "url": "https://www.producthunt.com/products/epsilla",
+  "source": "producthunt",
+  "description": "Bring the world's best AI agents into your app, with one API",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-21"
+  }
+ },
+ {
+  "id": "producthunt:1205055",
+  "name": "Buzz",
+  "url": "https://www.producthunt.com/products/buzz-3",
+  "source": "producthunt",
+  "description": "Your people, your agents, your project — all in one place",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-23"
+  }
+ },
+ {
+  "id": "producthunt:1200227",
+  "name": "Prosed",
+  "url": "https://www.producthunt.com/products/prosed-turn-your-content-into-a-book",
+  "source": "producthunt",
+  "description": "The AI book service that shows its work",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-18"
+  }
+ },
+ {
+  "id": "producthunt:1204113",
+  "name": "HOL Guard",
+  "url": "https://www.producthunt.com/products/hol-guard",
+  "source": "producthunt",
+  "description": "The 1st Firewall for AI Agents",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-22"
+  }
+ },
+ {
+  "id": "producthunt:1202953",
+  "name": "Caw",
+  "url": "https://www.producthunt.com/products/caw",
+  "source": "producthunt",
+  "description": "Open source web terminal multiplexer for AI agents",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-21"
+  }
+ },
+ {
+  "id": "producthunt:1202928",
+  "name": "Blaxel Agent Drive",
+  "url": "https://www.producthunt.com/products/blaxel",
+  "source": "producthunt",
+  "description": "A shared filesystem for AI agents",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-21"
+  }
+ },
+ {
+  "id": "producthunt:1203296",
+  "name": "Drawsy",
+  "url": "https://www.producthunt.com/products/drawsy",
+  "source": "producthunt",
+  "description": "An AI workspace where your canvas and code work together.",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-22"
+  }
+ },
+ {
+  "id": "producthunt:1202917",
+  "name": "LapuAi",
+  "url": "https://www.producthunt.com/products/lapuai",
+  "source": "producthunt",
+  "description": "OS Driver for AI to use computers",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-21"
+  }
+ },
+ {
+  "id": "producthunt:1199558",
+  "name": "PromptQL",
+  "url": "https://www.producthunt.com/products/promptql",
+  "source": "producthunt",
+  "description": "Multiplayer AI that replaces Slack",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-17"
+  }
+ },
+ {
+  "id": "producthunt:1202670",
+  "name": "Motionly",
+  "url": "https://www.producthunt.com/products/motionly",
+  "source": "producthunt",
+  "description": "AI-native motion graphics editor",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "published": "2026-07-21"
+  }
+ },
+ {
+  "id": "reddit:1uzyf66",
+  "name": "Did blatant AI Slop just win a 25K USD Deepmind / Kaggle Grand Prize? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uzyf66/did_blatant_ai_slop_just_win_a_25k_usd_deepmind/",
+  "source": "reddit",
+  "description": "The Google DeepMind-sponsored Kaggle challenge \"Measuring Progress Toward AGI - Cognitive Abilities\" asked participants to design new cognitive-science-based AI benchmarks and they just announced the results this week. In my two posts I present evidence that deepmind & kaggle rewarded a nonsensical number generation machine and a litany of unfounded claims with 25k and a grand prize stamp. What the authors of the work I analyze intended to do was to present an LLM with alternative viewpoints of",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 1,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1v2g9bc",
+  "name": "CEO of Hugging Face: Banning open-source AI would hurt defenders 10x more than attackers, which would make the world 10x more dangerous and this is a good example why!",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2g9bc/ceo_of_hugging_face_banning_opensource_ai_would/",
+  "source": "reddit",
+  "description": "From clem 🤗 on 𝕏: https://x.com/ClementDelangue/status/2079301434357456931 Fortune: Hugging Face says it resorted to a Chinese AI model to battle a fully autonomous cyberattack because U.S. model guardrails stymied its defense: https://fortune.com/2026/07/20/hugging-face-turns-to-chinese-open-source-ai-to-fend-off-autonomous-ai-cyber-attack-after-american-ai-guardrails-stymie-defense/ &#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 1,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1v4ns8l",
+  "name": "GPT-5.5 Scores 10.6% on ActiveVision, Humans Hit 96.1% [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v4ns8l/gpt55_scores_106_on_activevision_humans_hit_961_r/",
+  "source": "reddit",
+  "description": "The interesting finding from a new [arXiv paper]( https://arxiv.org/abs/2607.16165 ) isn&#39;t that a frontier vision model failed a new benchmark, that happens weekly, but the specific shape of the failure and the fact that the models cannot patch it by writing their own code. The benchmark, called ActiveVision, contains 17 tasks across 3 categories designed, in the authors&#39; words, to \"force repeated visual perception rather than a single static description.\" GPT-5.5 at the highest exposed",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1v0lewq",
+  "name": "Prepare your (v)ram - Qwen3.8 is coming!",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0lewq/prepare_your_vram_qwen38_is_coming/",
+  "source": "reddit",
+  "description": "&#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1v2w7jl",
+  "name": "OpenAI admits responsibility for HuggingFace Attack - an agent from an internal evaluation is reportedly the cause.",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2w7jl/openai_admits_responsibility_for_huggingface/",
+  "source": "reddit",
+  "description": "&#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1uzqspl",
+  "name": "What kind of dark magic is Deepseek using?",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uzqspl/what_kind_of_dark_magic_is_deepseek_using/",
+  "source": "reddit",
+  "description": "I was taking a look at Kimi K3 scores on the Artificial analysis leaderboard and was quite baffled when I saw this chart. Granted, Deepseek has always been the king of price to performance, but this is still incredible. Is it just API subsidization or have they optimized their models truly this much? &#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 4,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1v4j1uk",
+  "name": "Prompt Injection in NeurIPS 2026? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v4j1uk/prompt_injection_in_neurips_2026_d/",
+  "source": "reddit",
+  "description": "The reviews were just released, and I downloaded my paper from OpenReview to identify areas that needed improvement. However, GPT warned me that the PDF contained a prompt injection. I never inserted such a prompt. After comparing my original submission with the version downloaded from OpenReview, it appears that the injection may have been added by NeurIPS. I would like to know whether anyone else has encountered the same issue. Also, check your reviews for suspiciously formulaic wording. If a",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1v4avga",
+  "name": "CEO of Hugging face: Heading to San Francisco to have a little chat with that “rogue agent”",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v4avga/ceo_of_hugging_face_heading_to_san_francisco_to/",
+  "source": "reddit",
+  "description": "From clem 🤗 on 𝕏: https://x.com/ClementDelangue/status/2080247567493837047 &#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1v4moxy",
+  "name": "The LLM distillation process simplified for politicians:",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v4moxy/the_llm_distillation_process_simplified_for/",
+  "source": "reddit",
+  "description": "/s &#32;",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "LocalLLaMA"
+  }
+ },
+ {
+  "id": "reddit:1v2xktw",
+  "name": "Looking for feedback on my GPU-accelerated Snake AI project [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v2xktw/looking_for_feedback_on_my_gpuaccelerated_snake/",
+  "source": "reddit",
+  "description": "I&#39;ve been building an AI that learns to play the classic Snake game through reinforcement learning. The goal is to reach high scores while keeping training time as low as possible. The current version averages 86 points (87 is the maximum) after less than 10 hours of training on a single free Google Colab T4 GPU. To keep training fast, it runs 4,096 Snake games directly on the GPU, combines GPU-native environment simulation with PPO + GAE, and uses a spatially-preserving CoordConv architectu",
+  "collected_at": "2026-07-24",
+  "week": "2026-W30",
+  "metrics": {
+   "week_rank": 8,
+   "subreddit": "MachineLearning"
+  }
+ }
+]

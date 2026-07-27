@@ -1,6 +1,144 @@
 {
  "weeks": [
   {
+   "week": "2026-W31",
+   "date": "2026-07-31",
+   "count": 59,
+   "trend": {
+    "zh": "本周 AI 圈最显著的信号是「agent 基建大爆发」——从永久记忆（OptMem 的 426 token 极简方案）到运行时框架（AxisAgentic）、RL 后训练（axrl）、部署平台（OpenComputer、Velane），agent 工具链正在快速成型。与此同时，开放权重的地缘政治博弈白热化：三篇 HN 热帖同时讨论中国开源 AI 的战略优势与美国政策走向，startup founders 集体上书反对封锁。另一条暗线是「AI 祛魅」：pelicanmaxxing 的讽刺、AI 公司隐藏债务的曝光、Anthropic 15 亿美元版权和解，都在提醒行业回归理性。创意 AI 则继续下沉——手绘动画、3D 生成、实时语音，创作者工具越来越触手可及。",
+    "en": "The dominant signal this week is the agent infrastructure land grab — from permanent memory (OptMem's radically minimal 426-token approach) to runtime frameworks (AxisAgentic), RL post-training (axrl), and deployment platforms (OpenComputer, Velane), the agent toolchain is crystallizing at remarkable speed. Simultaneously, open-weights geopolitics hit a fever pitch: three HN front-page posts debated China's open-source AI strategy and US policy response, with startup founders collectively lobbying against restrictions. An undercurrent of AI disillusionment runs through the week — pelicanmaxxing satire, exposés on AI companies hiding staggering debt off-balance-sheet, and Anthropic's landmark $1.5B copyright settlement all signal an industry reality check. Meanwhile, creative AI keeps democratizing: hand-drawn animation from story text, Microsoft's TRELLIS.2 for 3D generation, and real-time voice agents are putting powerful tools in everyone's hands.",
+    "deep": {
+     "zh": "Agent 基建的扎堆程度令人瞩目。OptMem 用一个 426 token 的 prompt 就实现了 agent 永久记忆，这种极简主义恰恰说明 agent 记忆问题的核心不在技术复杂度而在设计哲学；agentacct 则从另一个角度切入——给 coding agent 做「工作审计」，read-only 地分析 agent 日志，零 JS 的本地仪表盘，这是 agent 可观测性赛道的早期信号。AxisAgentic 和 axrl 来自同一个实验室（XYZ-AI-Lab），前者做长程 agent 运行时和轨迹收集，后者做基于 SGLang 和 Megatron 的 agentic RL 后训练，合在一起看就是在搭建完整的 agent 训练-部署闭环。\n\n开放权重叙事本周达到高潮。werd.io 的文章直言「中国开放权重战略正在赢」，Politico 报道 startup founders 联名上书反对封锁中国开源 AI，Tobi Knaup 则把开放权重 AI 比作 Kubernetes 时刻——这三个角度（战略判断、政策博弈、技术范式）构成了完整的叙事链。值得注意的是，Gemini 3.6 Flash 的发布和 Qwen-Image-3.0 的亮相同时出现在 HN 热榜，说明大厂也在加速开放。\n\nAI 行业的「祛魅」信号同样密集。pelicanmaxxing 一文用讽刺手法揭示 AI 实验室的荒诞行为，拿下本周最高 fun 分；Futurism 曝光 AI 公司试图在资产负债表外隐藏巨额债务；Anthropic 15 亿美元盗版书籍和解案获批，成为 AI 版权史上的里程碑。这些信号叠加在一起，描绘出一个正在从狂热走向理性的行业。\n\n下周值得盯：agent 可观测性赛道是否会出现更多玩家；开放权重政策博弈的后续发展；以及创意 AI 工具从 demo 到产品的转化速度。",
+     "en": "The concentration of agent infrastructure projects this week is striking. OptMem achieves permanent agent memory with a mere 426-token prompt — this radical minimalism suggests the core challenge of agent memory lies not in technical complexity but in design philosophy. Agentacct approaches from the opposite angle: auditing coding agents by read-only analysis of their logs, with a zero-JavaScript local dashboard. This is an early signal for the agent observability space. AxisAgentic and axrl come from the same lab (XYZ-AI-Lab) — the former builds long-horizon agent runtimes and trajectory collection, the latter does agentic RL post-training on SGLang and Megatron. Together they form a complete agent train-deploy loop.\n\nThe open-weights narrative peaked this week. The werd.io piece bluntly declares 'China's open-weights AI strategy is winning,' Politico reports startup founders collectively lobbying against restrictions on Chinese open-source AI, and Tobi Knaup draws the Kubernetes analogy for open-weight AI adoption. These three angles — strategic assessment, policy battle, and technological paradigm — form a complete narrative chain. Notably, Gemini 3.6 Flash and Qwen-Image-3.0 both hit the HN front page simultaneously, showing that big labs are also accelerating openness.\n\nThe AI industry's 'disillusionment' signals are equally dense. The pelicanmaxxing essay uses satire to expose the absurdity of AI lab behavior, earning this week's highest fun score. Futurism exposes AI companies attempting to hide staggering debt off-balance-sheet. Anthropic's $1.5B pirated books settlement was approved, becoming a landmark in AI copyright history. These signals together paint an industry transitioning from frenzy to rationality.\n\nWorth watching next week: whether the agent observability space attracts more players; the aftermath of the open-weights policy battle; and the speed at which creative AI tools transition from demos to products."
+    }
+   },
+   "voices": null,
+   "awards": [
+    {
+     "key": "best",
+     "emoji": "🏆",
+     "title": {
+      "zh": "本周最佳",
+      "en": "Best of the Week"
+     },
+     "project_id": "github:gnipbao/story-to-handdrawn-video",
+     "project_name": "gnipbao/story-to-handdrawn-video"
+    },
+    {
+     "key": "wildest",
+     "emoji": "🤪",
+     "title": {
+      "zh": "最离谱奖",
+      "en": "Wildest Idea"
+     },
+     "project_id": "hackernews:49010129",
+     "project_name": "Are AI labs pelicanmaxxing?"
+    },
+    {
+     "key": "quiet_money",
+     "emoji": "💰",
+     "title": {
+      "zh": "闷声发财奖",
+      "en": "Quiet Money Maker"
+     },
+     "project_id": "hackernews:48996652",
+     "project_name": "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude"
+    },
+    {
+     "key": "dark_horse",
+     "emoji": "🐴",
+     "title": {
+      "zh": "黑马奖",
+      "en": "Dark Horse"
+     },
+     "project_id": "github:realfishsam/agent-notch",
+     "project_name": "realfishsam/agent-notch"
+    },
+    {
+     "key": "hardcore",
+     "emoji": "🔬",
+     "title": {
+      "zh": "硬核奖",
+      "en": "Hardcore Research"
+     },
+     "project_id": "arxiv:2607.22520v1",
+     "project_name": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents"
+    },
+    {
+     "key": "funnest",
+     "emoji": "🎪",
+     "title": {
+      "zh": "最好玩奖",
+      "en": "Most Fun"
+     },
+     "project_id": "github:gnipbao/story-to-handdrawn-video",
+     "project_name": "gnipbao/story-to-handdrawn-video"
+    },
+    {
+     "key": "polarized",
+     "emoji": "⚖️",
+     "title": {
+      "zh": "两极分化奖",
+      "en": "Most Polarizing"
+     },
+     "project_id": "hackernews:49005973",
+     "project_name": "Businesses with ugly AI menu redesigns"
+    }
+   ],
+   "top3": [
+    {
+     "id": "github:gnipbao/story-to-handdrawn-video",
+     "name": "gnipbao/story-to-handdrawn-video",
+     "total": 23
+    },
+    {
+     "id": "hackernews:49010129",
+     "name": "Are AI labs pelicanmaxxing?",
+     "total": 22
+    },
+    {
+     "id": "huggingface:space/microsoft/TRELLIS.2",
+     "name": "microsoft/TRELLIS.2",
+     "total": 22
+    }
+   ],
+   "qr": [
+    "111111101011111001100110001111111",
+    "100000100101100010000100101000001",
+    "101110101001010111010101101011101",
+    "101110100010000000001101001011101",
+    "101110100100100100101000101011101",
+    "100000101010100100001110101000001",
+    "111111101010101010101010101111111",
+    "000000000111101110010001100000000",
+    "101000110100001010010000100100101",
+    "010110011110110111111011101001001",
+    "111110111011100100010011111001101",
+    "011100010101010111000001101111010",
+    "100001101110010001000011101000001",
+    "110010001011110000010111001101011",
+    "101001110100000101010111100010101",
+    "011011011010010000111001011111000",
+    "010110101001111110011001001101010",
+    "101011011011100100011001101001001",
+    "001100101011110101110111011101101",
+    "000010010101100110111000110011011",
+    "001101110001000011110011001100001",
+    "000010000100101010101111101000101",
+    "110111100011101010110111010010001",
+    "001100001010101110001010010011010",
+    "111001100000001010101001111111001",
+    "000000001011111111011000100010011",
+    "111111101000101100011010101011101",
+    "100000100010001001011001100011010",
+    "101110100101101001001011111110000",
+    "101110100101011001010011110111111",
+    "101110101111111100011101010111111",
+    "100000100111010000011010110111000",
+    "111111101100110110011010111110001"
+   ]
+  },
+  {
    "week": "2026-W29",
    "date": "2026-07-17",
    "count": 60,
