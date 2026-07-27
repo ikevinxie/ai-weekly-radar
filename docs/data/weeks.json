@@ -457,12 +457,26 @@
    "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
    "week": "2026-W29",
    "stars_then": 548,
-   "stars_now": 2818,
-   "ratio": 5.1,
+   "stars_now": 3143,
+   "ratio": 5.7,
    "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
    "analysis": {
     "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
     "en": "A jailbreak prompt-and-test pack targeting the gpt-5.6 family in Codex CLI; 548 stars in a week shows the curiosity demand. Grey-zone project: useful as red-team reference, no legitimate monetization, and prone to being patched away."
+   }
+  },
+  {
+   "id": "github:jakubkrehel/skills",
+   "name": "jakubkrehel/skills",
+   "url": "https://github.com/jakubkrehel/skills",
+   "week": "2026-W29",
+   "stars_then": 223,
+   "stars_now": 930,
+   "ratio": 4.2,
+   "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
+   "analysis": {
+    "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
+    "en": "A set of agent skills that audit different parts of a product: animation, typography, layout, color. A handy plug-in for designers and indie devs — instant utility, shallow moat."
    }
   },
   {
@@ -471,8 +485,8 @@
    "url": "https://github.com/AlephAITech/WorkBuddyGuide",
    "week": "2026-W29",
    "stars_then": 395,
-   "stars_now": 1253,
-   "ratio": 3.2,
+   "stars_now": 1323,
+   "ratio": 3.3,
    "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
    "analysis": {
     "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
@@ -485,26 +499,12 @@
    "url": "https://github.com/pengchujin/jzsub",
    "week": "2026-W29",
    "stars_then": 275,
-   "stars_now": 857,
-   "ratio": 3.1,
+   "stars_now": 879,
+   "ratio": 3.2,
    "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
    "analysis": {
     "zh": "一条视频链接进去，最高画质、封面加 GPT 双语字幕的 MP4 出来，全自动交付。需求直白、效果确定的效率工具，适合内容搬运和学习场景，但同类竞品不少。",
     "en": "Feed it one video link, get back a top-quality MP4 with cover art and GPT bilingual subtitles, fully automated. A blunt, deterministic utility for content porting and study — though the niche is crowded."
-   }
-  },
-  {
-   "id": "github:jakubkrehel/skills",
-   "name": "jakubkrehel/skills",
-   "url": "https://github.com/jakubkrehel/skills",
-   "week": "2026-W29",
-   "stars_then": 223,
-   "stars_now": 629,
-   "ratio": 2.8,
-   "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
-   "analysis": {
-    "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
-    "en": "A set of agent skills that audit different parts of a product: animation, typography, layout, color. A handy plug-in for designers and indie devs — instant utility, shallow moat."
    }
   },
   {
@@ -513,8 +513,8 @@
    "url": "https://github.com/cosmtrek/mindwalk",
    "week": "2026-W29",
    "stars_then": 421,
-   "stars_now": 904,
-   "ratio": 2.1,
+   "stars_now": 931,
+   "ratio": 2.2,
    "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
    "analysis": {
     "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
@@ -527,8 +527,8 @@
    "url": "https://github.com/yetone/kill-ai-slop",
    "week": "2026-W29",
    "stars_then": 384,
-   "stars_now": 726,
-   "ratio": 1.9,
+   "stars_now": 790,
+   "ratio": 2.1,
    "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
    "analysis": {
     "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
@@ -541,8 +541,8 @@
    "url": "https://github.com/xiaotianfotos/homerail",
    "week": "2026-W29",
    "stars_then": 501,
-   "stars_now": 667,
-   "ratio": 1.3,
+   "stars_now": 703,
+   "ratio": 1.4,
    "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
    "analysis": {
     "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
@@ -555,12 +555,152 @@
    "url": "https://github.com/bkingfilm/lapian-notes",
    "week": "2026-W29",
    "stars_then": 308,
-   "stars_now": 414,
-   "ratio": 1.3,
+   "stars_now": 424,
+   "ratio": 1.4,
    "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
    "analysis": {
     "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
     "en": "Turns films into AI-assisted shot-analysis notes: local frame extraction, plot swim-lanes, structure trees, emotion curves, scene breakdowns. A heavy-duty tool for film study — cinephiles, screenwriters, film students — with local processing sidestepping copyright landmines."
+   }
+  },
+  {
+   "id": "github:makecindy/cindy",
+   "name": "makecindy/cindy",
+   "url": "https://github.com/makecindy/cindy",
+   "week": "2026-W31",
+   "stars_then": 677,
+   "stars_now": 716,
+   "ratio": 1.1,
+   "reason": "「想到就能做到」的开源 AI Agent，开箱即用是最大卖点。",
+   "analysis": {
+    "zh": "Cindy 是一个开源 AI agent 框架，主打开箱即用。677 star 说明市场对「不需要折腾就能用的 agent」有需求，但 agent 框架赛道已经非常拥挤。",
+    "en": "Cindy is an open-source AI agent framework emphasizing out-of-the-box usability. 677 stars indicate market demand for 'agents that just work without tinkering,' but the agent framework space is already very crowded."
+   }
+  },
+  {
+   "id": "github:VictorTaelin/OptMem",
+   "name": "VictorTaelin/OptMem",
+   "url": "https://github.com/VictorTaelin/OptMem",
+   "week": "2026-W31",
+   "stars_then": 417,
+   "stars_now": 456,
+   "ratio": 1.1,
+   "reason": "426 个 token 实现 AI agent 永久记忆——极简到让人怀疑是不是在开玩笑。",
+   "analysis": {
+    "zh": "OptMem 用仅 426 token 的 prompt 和一个脚本为 AI agent 提供永久记忆。417 star 证明了极简方案的吸引力，但实际效果和可靠性需要更多验证。",
+    "en": "OptMem provides permanent memory for AI agents with just a 426-token prompt and a script. 417 stars prove the appeal of radical minimalism, but actual effectiveness and reliability need more validation."
+   }
+  },
+  {
+   "id": "github:Eversmile12/leaked-llm-prompts",
+   "name": "Eversmile12/leaked-llm-prompts",
+   "url": "https://github.com/Eversmile12/leaked-llm-prompts",
+   "week": "2026-W31",
+   "stars_then": 243,
+   "stars_now": 258,
+   "ratio": 1.1,
+   "reason": "各大 LLM 的系统 prompt 泄露合集——窥探 AI 的「潜意识」，吃瓜群众最爱。",
+   "analysis": {
+    "zh": "这是一个收集各大 LLM 泄露系统 prompt 的仓库。243 star 说明人们对 AI 内部指令有强烈好奇心。有研究和教育价值，但法律和伦理边界模糊。",
+    "en": "This is a repository collecting leaked system prompts from major LLMs. 243 stars confirm strong public curiosity about AI internal instructions. It has research and educational value, but legal and ethical boundaries are blurry."
+   }
+  },
+  {
+   "id": "github:XYZ-AI-Lab/axrl",
+   "name": "XYZ-AI-Lab/axrl",
+   "url": "https://github.com/XYZ-AI-Lab/axrl",
+   "week": "2026-W31",
+   "stars_then": 210,
+   "stars_now": 229,
+   "ratio": 1.1,
+   "reason": "基于 SGLang + Megatron 的 agentic RL 后训练框架，和 AxisAgentic 是亲兄弟。",
+   "analysis": {
+    "zh": "AxisRL 是一个 agentic RL 后训练框架，构建在 SGLang 推理和 Megatron 训练之上。210 star 说明 agent RL 训练有需求，但技术门槛极高。",
+    "en": "AxisRL is an agentic RL post-training framework built on SGLang rollout and Megatron training. 210 stars indicate demand for agent RL training, but the technical barrier is extremely high."
+   }
+  },
+  {
+   "id": "github:Jakubantalik/thinking-orbs",
+   "name": "Jakubantalik/thinking-orbs",
+   "url": "https://github.com/Jakubantalik/thinking-orbs",
+   "week": "2026-W31",
+   "stars_then": 1114,
+   "stars_now": 1119,
+   "ratio": 1.0,
+   "reason": "给 AI 界面做的「思考中」加载动画，六种状态两种尺寸，小而美的 UI 组件。",
+   "analysis": {
+    "zh": "thinking-orbs 是一套为 AI 和 agent 界面设计的点阵思考球加载指示器，提供六种调优状态、两种尺寸和自动明暗适配。1100+ star 说明 AI UI 组件的需求真实存在。",
+    "en": "thinking-orbs is a set of dotted thought-orb loading indicators designed for AI and agent UIs, offering six tuned states, two sizes, and auto dark/light adaptation. 1100+ stars confirm real demand for AI UI components."
+   }
+  },
+  {
+   "id": "github:gnipbao/story-to-handdrawn-video",
+   "name": "gnipbao/story-to-handdrawn-video",
+   "url": "https://github.com/gnipbao/story-to-handdrawn-video",
+   "week": "2026-W31",
+   "stars_then": 656,
+   "stars_now": 657,
+   "ratio": 1.0,
+   "reason": "把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。",
+   "analysis": {
+    "zh": "story-to-handdrawn-video 将中文故事文案或有序图片转换为手绘日记漫画风格的动画 MP4。656 star 证明了「AI+手绘+视频」组合的大众吸引力，是本周最有趣的创意工具。",
+    "en": "story-to-handdrawn-video converts Chinese story copy or ordered images into hand-drawn diary-comic style animation MP4s. 656 stars prove the mass appeal of the 'AI + hand-drawn + video' combination, making it this week's most delightful creative tool."
+   }
+  },
+  {
+   "id": "github:hahhforest/pi-textbook",
+   "name": "hahhforest/pi-textbook",
+   "url": "https://github.com/hahhforest/pi-textbook",
+   "week": "2026-W31",
+   "stars_then": 520,
+   "stars_now": 532,
+   "ratio": 1.0,
+   "reason": "沿 15 个真实 checkpoint 从零构建 Pi-style Agent，学 agent 开发的好教材。",
+   "analysis": {
+    "zh": "《动手学 Pi》是一本交互式教材，通过 15 个真实 checkpoint 教读者从零构建 Pi 风格的 agent。520 star 说明 agent 开发教育有市场，但内容深度有待验证。",
+    "en": "'Hands-on Pi' is an interactive textbook teaching readers to build a Pi-style agent from scratch through 15 real checkpoints. 520 stars indicate a market for agent development education, though content depth remains to be verified."
+   }
+  },
+  {
+   "id": "github:mikehasa/agentacct",
+   "name": "mikehasa/agentacct",
+   "url": "https://github.com/mikehasa/agentacct",
+   "week": "2026-W31",
+   "stars_then": 446,
+   "stars_now": 457,
+   "ratio": 1.0,
+   "reason": "给 coding agent 做「工作审计」：read-only 分析日志，零 JS 本地仪表盘。",
+   "analysis": {
+    "zh": "agentacct 是一个本地优先的 agent 工作智能工具，只读分析 coding agent 日志，提供使用真相和工作记录。446 star 说明 agent 可观测性是一个真实痛点。",
+    "en": "agentacct is a local-first agent work intelligence tool that read-only analyzes coding agent logs, providing usage truth and work records. 446 stars confirm agent observability is a real pain point."
+   }
+  },
+  {
+   "id": "github:realfishsam/agent-notch",
+   "name": "realfishsam/agent-notch",
+   "url": "https://github.com/realfishsam/agent-notch",
+   "week": "2026-W31",
+   "stars_then": 280,
+   "stars_now": 281,
+   "ratio": 1.0,
+   "reason": "把 Mac 刘海变成 agent 状态栏——开源版 vibe-island，创意满分。",
+   "analysis": {
+    "zh": "agent-notch 是 vibe-island 的开源替代品，将 Mac 刘海区域变成 AI agent 的状态显示区。280 star 说明 Mac 用户对 agent 可视化有需求，但受众有限。",
+    "en": "agent-notch is an open-source alternative to vibe-island, turning the Mac notch area into an AI agent status display. 280 stars indicate Mac users want agent visualization, but the audience is limited."
+   }
+  },
+  {
+   "id": "github:XYZ-AI-Lab/AxisAgentic",
+   "name": "XYZ-AI-Lab/AxisAgentic",
+   "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+   "week": "2026-W31",
+   "stars_then": 225,
+   "stars_now": 228,
+   "ratio": 1.0,
+   "reason": "长程 agent 的运行时和轨迹收集框架，和 axrl 一起构成训练-部署闭环。",
+   "analysis": {
+    "zh": "AxisAgentic 是一个可扩展的长程 agent 运行时和轨迹收集框架。225 star 说明专业 agent 基建有需求，但门槛高、受众窄。",
+    "en": "AxisAgentic is an extensible runtime and trajectory-collection framework for long-horizon agents. 225 stars indicate demand for professional agent infrastructure, but the barrier is high and audience narrow."
    }
   },
   {
@@ -569,7 +709,7 @@
    "url": "https://github.com/KORAYTEACHER/fintech-advisor",
    "week": "2026-W29",
    "stars_then": 173,
-   "stars_now": 166,
+   "stars_now": 167,
    "ratio": 1.0,
    "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
    "analysis": {
