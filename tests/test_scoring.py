@@ -220,6 +220,50 @@ class TestSanitizeScored:
         assert [e["id"] for e in sanitized["entries"]] == ["github:b", "github:d"]
         assert sanitized["entries"][0]["tags"] == ["agent"]
 
+    def test_missing_required_fields_auto_filled(self):
+        # 根因回归：LLM 漏写 reason / analysis / deep_dive 也是必然事件。
+        # sanitize 必须自动填占位符，让 validate 通过，pipeline 不挂。
+        e = entry("a")
+        e["reason"] = ""                              # 空 reason
+        e["analysis"] = {"zh": "中文"}                 # 缺 en
+        e["deep_dive"] = {"zh": {"what": "w", "why": "y", "biz": "b"},
+                          "en": {"what": "", "why": "y", "biz": "b"}}  # en.what 空
+        doc = scored_doc([e])
+        doc["trend"] = {"zh": "", "en": "trend",       # trend.zh 空
+                        "deep": {"zh": "deep", "en": ""}}  # trend.deep.en 空
+        sanitized, warns = sanitize_scored(doc)
+        assert any("reason 缺失" in w for w in warns)
+        assert any("analysis.en 缺失" in w for w in warns)
+        assert any("deep_dive.en.what 缺失" in w for w in warns)
+        assert any("trend.zh 缺失" in w for w in warns)
+        assert any("trend.deep.en 缺失" in w for w in warns)
+        # validate 必须 0 错
+        errors = validate_scored([cand("a")], sanitized)
+        assert errors == [], f"auto-fill 后 validate 不应再报错: {errors}"
+
+    def test_completely_missing_blocks_auto_filled(self):
+        # LLM 整个 analysis / deep_dive 字段都没写
+        e = entry("a")
+        del e["analysis"]
+        del e["deep_dive"]
+        doc = scored_doc([e])
+        sanitized, warns = sanitize_scored(doc)
+        assert any("analysis.zh 缺失" in w for w in warns)
+        assert any("deep_dive.zh 缺失" in w for w in warns)
+        errors = validate_scored([cand("a")], sanitized)
+        assert errors == []
+
+    def test_trend_missing_entirely_auto_filled(self):
+        # LLM 返回的 scored 文档根本没 trend 字段
+        doc = {"week": "2026-W31", "entries": [entry("a")]}
+        sanitized, warns = sanitize_scored(doc)
+        assert any("trend.zh 缺失" in w for w in warns)
+        assert isinstance(sanitized["trend"], dict)
+        assert sanitized["trend"]["zh"] and sanitized["trend"]["en"]
+        assert sanitized["trend"]["deep"]["zh"] and sanitized["trend"]["deep"]["en"]
+        errors = validate_scored([cand("a")], sanitized)
+        assert errors == []
+
 
 class TestMergeScored:
     def test_merges_v3_fields(self):

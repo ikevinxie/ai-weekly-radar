@@ -189,14 +189,37 @@ def _validate_tags(tags, ident: str) -> list[str]:
 
 
 def sanitize_scored(scored) -> tuple[object, list[str]]:
-    """LLM 偶发不守词表 / 返回空 tags：丢弃未知 tag、丢弃 tags 为空的 entry。
+    """LLM 输出的统一规范化层：把"概率模型必然发生的偏差"在 validate 之前消化掉。
 
-    就地修改 scored，返回 (scored, warnings)。warnings 非空时调用方应打印。
-    校验仍由 validate_scored 兜底——sanitize 只处理 tags 这一类已知偏差。
+    处理两类偏差：
+    1. tag 漂移：丢未知 tag、丢清洗后 tags 为空的 entry、去重、截断到 MAX_TAGS。
+    2. 必填字段漏写 / 空字符串：reason / analysis.{zh,en} /
+       deep_dive.{zh,en}.{what,why,biz} / trend.{zh,en,deep.*} 自动填占位符。
+
+    就地修改 scored，返回 (scored, warnings)。warnings 非空时调用方应打印，
+    便于运维观察 LLM 偏差频率；但 pipeline 不会因为这些偏差挂掉。
+
+    校验仍由 validate_scored 兜底——sanitize 之后 validate 应该 0 错；
+    如果还有错，说明出现了 sanitize 没覆盖到的结构性问题（比如 scores 不是 dict），
+    那才是真该硬卡的。
     """
     warnings: list[str] = []
     if not isinstance(scored, dict):
         return scored, warnings
+
+    # ---- trend 兜底 ----
+    trend = scored.get("trend")
+    if not isinstance(trend, dict):
+        scored["trend"] = trend = {}
+    _ensure_bilingual(trend, "trend", warnings,
+                      default_zh="（本周风向暂缺）", default_en="(Trend summary unavailable.)")
+    deep = trend.get("deep")
+    if not isinstance(deep, dict):
+        trend["deep"] = deep = {}
+    _ensure_bilingual(deep, "trend.deep", warnings,
+                      default_zh="（深度解读暂缺）", default_en="(Deep dive unavailable.)")
+
+    # ---- entries 兜底 ----
     entries = scored.get("entries")
     if not isinstance(entries, list):
         return scored, warnings
@@ -207,6 +230,8 @@ def sanitize_scored(scored) -> tuple[object, list[str]]:
             kept.append(e)
             continue
         ident = e.get("id", "?")
+
+        # tag 规范化
         raw = e.get("tags")
         if not isinstance(raw, list):
             warnings.append(f"{ident}: tags 不是数组（{type(raw).__name__}），整条丢弃")
@@ -218,7 +243,6 @@ def sanitize_scored(scored) -> tuple[object, list[str]]:
         if not cleaned:
             warnings.append(f"{ident}: 清洗后无有效 tag，整条丢弃")
             continue
-        # 去重保序，截断到 MAX_TAGS
         seen: set = set()
         deduped: list = []
         for t in cleaned:
@@ -228,9 +252,56 @@ def sanitize_scored(scored) -> tuple[object, list[str]]:
             else:
                 warnings.append(f"{ident}: 去除重复 tag {t!r}")
         e["tags"] = deduped[:MAX_TAGS]
+
+        # reason 兜底
+        reason = e.get("reason")
+        if not isinstance(reason, str) or not reason.strip():
+            e["reason"] = "（推荐语暂缺，详见深度解读）"
+            warnings.append(f"{ident}: reason 缺失，已填占位符")
+
+        # analysis 兜底
+        analysis = e.get("analysis")
+        if not isinstance(analysis, dict):
+            e["analysis"] = analysis = {}
+        _ensure_bilingual(analysis, f"{ident}: analysis", warnings,
+                          default_zh="（中文简读暂缺）", default_en="(Brief analysis unavailable.)")
+
+        # deep_dive 兜底
+        dd = e.get("deep_dive")
+        if not isinstance(dd, dict):
+            e["deep_dive"] = dd = {}
+        for lang in LANGS:
+            section = dd.get(lang)
+            if not isinstance(section, dict):
+                dd[lang] = section = {}
+                warnings.append(f"{ident}: deep_dive.{lang} 缺失，已填占位符")
+            for key in DEEP_DIVE_KEYS:
+                text = section.get(key)
+                if not isinstance(text, str) or not text.strip():
+                    section[key] = _DEEP_DIVE_PLACEHOLDER[lang][key]
+                    warnings.append(f"{ident}: deep_dive.{lang}.{key} 缺失，已填占位符")
+
         kept.append(e)
     scored["entries"] = kept
     return scored, warnings
+
+
+def _ensure_bilingual(obj: dict, label: str, warnings: list[str],
+                      *, default_zh: str, default_en: str) -> None:
+    """确保 obj 有非空 zh / en 字符串字段，缺失则填默认值并记 warning。"""
+    for lang, default in (("zh", default_zh), ("en", default_en)):
+        text = obj.get(lang)
+        if not isinstance(text, str) or not text.strip():
+            obj[lang] = default
+            warnings.append(f"{label}.{lang} 缺失，已填占位符")
+
+
+_DEEP_DIVE_PLACEHOLDER = {
+    "zh": {"what": "（项目内容暂缺）", "why": "（关注理由暂缺）", "biz": "（商业分析暂缺）"},
+    "en": {"what": "(What-it-is unavailable.)",
+           "why": "(Why-it-matters unavailable.)",
+           "biz": "(Business analysis unavailable.)"},
+}
 
 
 def merge_scored(candidates: list[dict], scored) -> list[dict]:
