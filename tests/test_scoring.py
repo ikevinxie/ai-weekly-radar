@@ -124,23 +124,23 @@ class TestValidateScored:
         assert any("deep_dive.en.biz" in e for e in errors)
         assert any("deep_dive.zh.what" in e for e in errors)
 
-    def test_tags_required_and_bounded(self):
-        for bad_tags in (None, [], ["创意"] * (MAX_TAGS + 1), "创意"):
+    def test_tags_only_structural_check_in_validator(self):
+        # 词表合规 / 数量 / 去重 全部由 sanitize_scored 软处理；validate 只查
+        # 「tags 字段若存在必须是 list」这一条结构性约束，避免下游崩。
+        # 这些情况 validate 都不应报错（sanitize 会处理）：
+        for soft_bad in (None, [], ["创意"] * (MAX_TAGS + 1), ["区块链"], ["创意", "创意"]):
             bad = entry("a")
-            bad["tags"] = bad_tags
-            if bad_tags is None:
+            if soft_bad is None:
                 del bad["tags"]
+            else:
+                bad["tags"] = soft_bad
             errors = validate_scored([cand("a")], scored_doc([bad]))
-            assert any("tags" in e for e in errors), bad_tags
-
-    def test_tags_must_be_in_vocabulary(self):
-        bad = entry("a", tags=("创意", "区块链"))
+            assert not any("tags" in e for e in errors), (soft_bad, errors)
+        # 唯一硬错：tags 字段存在但不是 list
+        bad = entry("a")
+        bad["tags"] = "创意"
         errors = validate_scored([cand("a")], scored_doc([bad]))
-        assert any("区块链" in e and "词表" in e for e in errors)
-
-    def test_duplicate_tags_rejected(self):
-        bad = entry("a", tags=("创意", "创意"))
-        assert any("重复" in e for e in validate_scored([cand("a")], scored_doc([bad])))
+        assert any("tags 必须是数组" in e for e in errors)
 
 
 class TestSanitizeScored:
@@ -195,6 +195,30 @@ class TestSanitizeScored:
     def test_kaizen_yuan_in_vocab(self):
         # 回归锁死：开源 必须在词表内，否则 sanitize 会把它当未知 tag 丢掉
         assert "开源" in TAGS
+
+    def test_arbitrary_tag_drift_never_fails_pipeline(self):
+        # 根因回归：LLM 是概率模型，tag 漂移是必然事件。无论它写什么词，
+        # sanitize + validate 组合都不应让 cmd_score 返回 1。
+        # 模拟 LLM 写了一堆词表外的 tag（科研 / 多模态 / RAG / LLM / 区块链 / 元宇宙）
+        drift_entries = [
+            entry("a", tags=("科研", "多模态")),         # 全未知 → sanitize 丢整条
+            entry("b", tags=("RAG", "agent")),           # 部分未知 → sanitize 留 agent
+            entry("c", tags=("LLM", "区块链", "元宇宙")), # 全未知 → sanitize 丢整条
+            entry("d", tags=("创意",)),                  # 合规 → 原样保留
+        ]
+        doc = scored_doc(drift_entries)
+        sanitized, warns = sanitize_scored(doc)
+        assert warns, "漂移场景必须产生 warning 供运维观察"
+        # cmd_score 在 sanitize 后会把 candidates 过滤到 surviving ids 再 validate，
+        # 这样被 sanitize 丢掉的 entry 不会被当成「缺少评分」硬错。
+        all_cands = [cand("a"), cand("b"), cand("c"), cand("d")]
+        surviving = {e["id"] for e in sanitized["entries"]}
+        scored_cands = [c for c in all_cands if c["id"] in surviving]
+        errors = validate_scored(scored_cands, sanitized)
+        assert errors == [], f"sanitize 后 validate 不应再报错: {errors}"
+        # 留下的 entry 是 b 和 d
+        assert [e["id"] for e in sanitized["entries"]] == ["github:b", "github:d"]
+        assert sanitized["entries"][0]["tags"] == ["agent"]
 
 
 class TestMergeScored:

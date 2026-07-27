@@ -165,7 +165,12 @@ def validate_scored(candidates: list[dict], scored) -> list[str]:
         errors.extend(validate_scores(entry, entry_id))
         errors.extend(_validate_bilingual(entry.get("analysis"), entry_id, "analysis"))
         errors.extend(_validate_deep_dive(entry.get("deep_dive"), entry_id))
-        errors.extend(_validate_tags(entry.get("tags"), entry_id))
+        # 注意：tag 词表合规 / 数量 / 去重 全部由 sanitize_scored 软处理，
+        # 不再作为硬校验。LLM 是概率模型，tag 漂移是必然事件，不应熔断 pipeline。
+        # 这里只保留最低限度的结构检查：tags 字段若存在必须是 list，
+        # 否则下游 report / feishu 会崩。
+        if "tags" in entry and not isinstance(entry["tags"], list):
+            errors.append(f"{entry_id}: tags 必须是数组")
     for entry_id in sorted(candidate_ids - seen):
         errors.append(f"{entry_id}: 缺少评分")
     return errors

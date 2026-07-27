@@ -217,7 +217,12 @@ def cmd_score(args: list[str]) -> int:
             print(f"  - {w}", file=sys.stderr)
     store.save(scored, scored_path)
     print(f"评分完成 → {scored_path}")
-    errors = scoring.validate_scored(candidates, scored)
+    # validate 只看 sanitize 留下的 entry：tag 漂移被 sanitize 消化的那些
+    # 不应再被 validate 当成「缺少评分」硬错。
+    surviving_ids = {e.get("id") for e in scored.get("entries", [])
+                     if isinstance(e, dict)}
+    scored_candidates = [c for c in candidates if c.get("id") in surviving_ids]
+    errors = scoring.validate_scored(scored_candidates, scored)
     if errors:
         print(f"校验失败，共 {len(errors)} 处：", file=sys.stderr)
         for e in errors:
