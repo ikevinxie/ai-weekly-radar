@@ -57,6 +57,5 @@ jobs:
           git add -A
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "weekly: $WEEK
-
-Co-Authored-By: Claude <noreply@anthropic.com>"
+          Co-Authored-By: Claude <noreply@anthropic.com>"
           git push
