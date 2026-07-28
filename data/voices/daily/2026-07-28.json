@@ -1,0 +1,234 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "@ArtificialAnlys i love you @Kimi_Moonshot https://t.co/4lLeh8OHbH",
+  "url": "https://x.com/swyx/status/2081979163117052311",
+  "date": "2026-07-28",
+  "likes": 3
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "incidentally, $ per input/output tokens died as a relevant cost measure sometime last year\n\nif you haven’t updated your x axes to $/task per @ArtificialAnlys then idk if you can be taken seriously anymore these days https://t.co/EJPJiNwT8I",
+  "url": "https://x.com/swyx/status/2081904230768816487",
+  "date": "2026-07-28",
+  "likes": 94
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "as the progenitor of the agent lab thesis which got the evals/routing/interactivity/ROI focus right\n\n i gotta say the biggest argument against myself is that Claude Code got accidentally \"open sourced\" this year and approximately ~nothing happened to either it or its competitors' roadmaps",
+  "url": "https://x.com/swyx/status/2081890955070980416",
+  "date": "2026-07-27",
+  "likes": 55
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Update. I have decided to take a break from x to recharge a bit. See you back tomorrow for more ChatGPT and Codex fun. It's going to be a fun week.",
+  "url": "https://x.com/thsottiaux/status/2081979033261412537",
+  "date": "2026-07-28",
+  "likes": 3199
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Back at the laptop. The usage limits have been reset for all paid users of Codex and ChatGPT Work. Weeeeeeeee. It's a good day! https://t.co/Li7De9EDHz",
+  "url": "https://x.com/thsottiaux/status/2081940052154933696",
+  "date": "2026-07-28",
+  "likes": 8471
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "We’re celebrating the fast adoption of chatGPT Work and all the incredible effort that went into it today. I’m feeling like a limit reset.\n\nHold on tight to your ultra and /fast and see you in a few hours when I’m back at the laptop!",
+  "url": "https://x.com/thsottiaux/status/2081899343091843463",
+  "date": "2026-07-28",
+  "likes": 9474
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I asked @jxnlco (DevEx at OpenAI): “What’s the craziest thing Codex did for you?”\n\nHere’s his answer:\n\n“I was on a bike ride when a coworker asked me to fix a launch video. So I connected remotely from my phone and asked Codex to use computer use to edit the video, export it, and post it back to Slack.\n\nTwenty minutes later, there was a new video in the Slack thread. Then I told Codex:\n\n‘Every 30 minutes, check the thread for feedback and export V2, V3, V4.’\n\nBy the time I got home, the launch video was greenlit.”\n\nCodex had handled the revisions by repeatedly checking Slack for feedback.\n\n📌 Watch the full episode here: https://t.co/DulNtYvqGD",
+  "url": "https://x.com/petergyang/status/2081775399097549083",
+  "date": "2026-07-27",
+  "likes": 338
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "More takeaways and prompts in this written post:\nhttps://t.co/BgPIKOfA9L",
+  "url": "https://x.com/petergyang/status/2081767570198401263",
+  "date": "2026-07-27",
+  "likes": 3
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Jason walked through how he uses Codex throughout his workday in our interview.\n\n📌 Watch it here if you missed it: https://t.co/K0gpWLQw4H",
+  "url": "https://x.com/petergyang/status/2081767558408175867",
+  "date": "2026-07-27",
+  "likes": 4
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Eclipse where u at https://t.co/DM9r6rsOYH",
+  "url": "https://x.com/thenanyu/status/2081926688250691884",
+  "date": "2026-07-28",
+  "likes": 4
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "A lot of very smart people work very hard to make the product very good and nice to use. \n\nIf you have very smart people, you should have them make your own product very good and nice to use. And pay us a nominal fee to use our product. https://t.co/tS6cSzIUg0",
+  "url": "https://x.com/thenanyu/status/2081768780045156358",
+  "date": "2026-07-27",
+  "likes": 247
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Most product review meetings are annoying because they’re poorly run.\n\nThe best product reviews compress months of learnings into an hour by simulating the market reaction to your ideas. \n\nThat only works if the people in the room deeply understand the space, have great product sense, strong opinions, and are often right.\n\nToo many product reviews have drifted toward status updates, leadership visibility, and cross-functional alignment.\n\nWhen that happens, people naturally resent them because it feels more like overhead and less like learning.",
+  "url": "https://x.com/realmadhuguru/status/2081781952437486052",
+  "date": "2026-07-27",
+  "likes": 36
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "We’re entering a new era of exploration.\n\nOur ancestors mapped the Earth. Then they explored space.\n\nOur generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search. https://t.co/UWK6nBPVQ8",
+  "url": "https://x.com/amasad/status/2082000490066592127",
+  "date": "2026-07-28",
+  "likes": 6
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "In our latest https://t.co/p9AoezbuGt benchmarks, Grok 4.5 has emerged as the best cybersecurity AI model on price-performance.\n\nIt's 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, yet at Kimi-like perf.\n\nSol remains the frontier, ahead of Opus 5. https://t.co/kcSDIqnXsN",
+  "url": "https://x.com/rauchg/status/2081852481517318560",
+  "date": "2026-07-27",
+  "likes": 622
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "🇪🇺/acc https://t.co/mpwxrMi5FP",
+  "url": "https://x.com/rauchg/status/2081845695112446364",
+  "date": "2026-07-27",
+  "likes": 122
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Kimi's paper underlines the importance of the right security boundary for agents to run in.\n\ntl:DR: container-level isolation is not enough. In their experiments, agents crashed the underlying machine (via kernel panics).\n\nFirecracker microVMs (as in Vercel Sandbox) are safe. https://t.co/wvbdBo5Ng8 https://t.co/OFCWYaiKw7",
+  "url": "https://x.com/rauchg/status/2081842439304995169",
+  "date": "2026-07-27",
+  "likes": 295
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "The negative AI jobs outcome just continues to not be happening as some predicted. A large portion of enterprises I talk with -across industries- are still hiring, just with a tilt in the kind of roles they’re going after.\n\nThey’re finding that AI is letting them do more, and Jevons paradox is actually playing out. They’re hiring engineers to go after problems they couldn’t tackle before. They’re hiring in sales because they can go deeper in client relationships now with the help of AI. They’re hiring in internal FDEs to help them deploy AI. And so on.\n\nAnyone using AI merely to cut costs eventually just gets outcompeted by companies that use AI to better serve their customers and drive more breakthroughs in their business. \n\nCould this trend change at some point? Sure. But for now this appears to be the trajectory we’re on.",
+  "url": "https://x.com/levie/status/2081930301752942703",
+  "date": "2026-07-28",
+  "likes": 219
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "The k3 weights have arrived https://t.co/3v8u3myvGA",
+  "url": "https://x.com/levie/status/2081760710108012702",
+  "date": "2026-07-27",
+  "likes": 341
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "New study shows that less than 40% of VCs have any successful investment\n\nEvery VC: “I’m so glad I’m in the 40%!” https://t.co/SosBeNiFrf",
+  "url": "https://x.com/mattturck/status/2081679801769668980",
+  "date": "2026-07-27",
+  "likes": 44
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "How I get endless content ideas, in one picture https://t.co/UFpOlNKd82",
+  "url": "https://x.com/zarazhangrui/status/2081983750658044079",
+  "date": "2026-07-28",
+  "likes": 61
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "“The magic you’re looking for is in the work you’re avoiding” https://t.co/kWosMDyt3z",
+  "url": "https://x.com/zarazhangrui/status/2081976736854737164",
+  "date": "2026-07-28",
+  "likes": 21
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "I used Claude Code as my primary interface for my two week trip and then asked it to do a full retrospective on what we can do better next time around.. https://t.co/o0ejibRT33",
+  "url": "https://x.com/nikunj/status/2081992618649547100",
+  "date": "2026-07-28",
+  "likes": 4
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "TIL Micro, the company that makes those kids scooters you see everywhere , also makes a fully electric car that opens from the front.. \n\nIt’s so freaking cute! https://t.co/pu3AqjMTLF",
+  "url": "https://x.com/nikunj/status/2081805464757485706",
+  "date": "2026-07-27",
+  "likes": 41
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "&gt; be @santa_kaus \n&gt; be a rockstar engineer at @openai\n&gt; have infinite rizz and taste\n&gt; burns tokens like no one else\n&gt; (sometimes) posts performative tennis photos to show he touches grass\n&gt; but still refuses to get a gf\n&gt; X do your thing, please slide into his DMs 🙏 https://t.co/BHpood23Q7",
+  "url": "https://x.com/nikunj/status/2081750712761852341",
+  "date": "2026-07-27",
+  "likes": 35
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "See you this weekend! https://t.co/zXgLnQvZJp",
+  "url": "https://x.com/steipete/status/2081865727443902654",
+  "date": "2026-07-27",
+  "likes": 49
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "We do all the amazing security work with some of the best teams in the world and people still think we're unsafe. 🙃 https://t.co/S0m1yJVRtj",
+  "url": "https://x.com/steipete/status/2081790109415002468",
+  "date": "2026-07-27",
+  "likes": 690
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "My agent reported a bug, their agent fixed it. [in the same night]\n@jarredsumner's robobun setup is future. https://t.co/KQI5cqvzRP",
+  "url": "https://x.com/steipete/status/2081767828278170002",
+  "date": "2026-07-27",
+  "likes": 325
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "if true, this sucks and shouldn't continue with rare books https://t.co/iRUJbl5UKR",
+  "url": "https://x.com/danshipper/status/2081754482568835152",
+  "date": "2026-07-27",
+  "likes": 232
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "wrong https://t.co/RdhTY34gQW",
+  "url": "https://x.com/sama/status/2081832600591892712",
+  "date": "2026-07-27",
+  "likes": 7993
+ }
+]
