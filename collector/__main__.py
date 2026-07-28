@@ -127,6 +127,11 @@ def cmd_feishu(args: list[str]) -> int:
     force = "--force" in args
     args = [a for a in args if a not in ("--dry-run", "--force")]
     week = args[0] if args else week_of(datetime.date.today())
+    # 幂等 key 用「日期」而不是「周」：发布节奏是周五，但 ISO 周从周一开始，
+    # 周一和周五在同一个 ISO 周里。周级标记会让周一的手动 run 挡掉周五的
+    # 自动 cron run。日级标记让同一天重复 run 不重发，但不同天即使同周
+    # 也能各自发，匹配真实发布节奏。
+    date_key = datetime.date.today().isoformat()
 
     history = store.load()
     week_projects = sorted(
@@ -151,14 +156,14 @@ def cmd_feishu(args: list[str]) -> int:
     if not url:
         print(feishu.SETUP_HINT)
         return 0
-    if feishu_sent.was_sent(week) and not force:
-        print(f"跳过: {week} 已推送过飞书（标记 {feishu_sent.SENT_DIR / (week + '.txt')}）。"
-              f"如需重发请加 --force。")
+    if feishu_sent.was_sent(date_key) and not force:
+        print(f"跳过: 今日 {date_key} 已推送过飞书（标记 "
+              f"{feishu_sent.SENT_DIR / (date_key + '.txt')}）。如需重发请加 --force。")
         return 0
     feishu.send(card, url)
-    feishu_sent.mark_sent(week)
+    feishu_sent.mark_sent(date_key)
     print(f"已推送 {week} Top {min(10, len(week_projects))} 到飞书；"
-          f"幂等标记已写入 data/feishu_sent/{week}.txt")
+          f"幂等标记已写入 data/feishu_sent/{date_key}.txt")
     return 0
 
 

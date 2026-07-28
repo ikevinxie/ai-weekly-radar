@@ -1,3 +1,4 @@
+import datetime
 import json
 
 import pytest
@@ -101,29 +102,44 @@ class TestSend:
 class TestFeishuSent:
     def test_was_sent_false_initially(self, monkeypatch, tmp_path):
         monkeypatch.setattr(feishu_sent, "SENT_DIR", tmp_path)
-        assert feishu_sent.was_sent("2026-W31") is False
+        assert feishu_sent.was_sent("2026-07-31") is False
 
     def test_mark_then_was_sent(self, monkeypatch, tmp_path):
         monkeypatch.setattr(feishu_sent, "SENT_DIR", tmp_path)
-        p = feishu_sent.mark_sent("2026-W31")
+        p = feishu_sent.mark_sent("2026-07-31")
         assert p.exists()
-        assert feishu_sent.was_sent("2026-W31") is True
+        assert feishu_sent.was_sent("2026-07-31") is True
         # 标记内容是 UTC ISO 时间戳，便于排查
         assert "Z" in p.read_text(encoding="utf-8")
 
-    def test_different_weeks_independent(self, monkeypatch, tmp_path):
+    def test_different_dates_independent(self, monkeypatch, tmp_path):
         monkeypatch.setattr(feishu_sent, "SENT_DIR", tmp_path)
-        feishu_sent.mark_sent("2026-W30")
-        assert feishu_sent.was_sent("2026-W30") is True
-        assert feishu_sent.was_sent("2026-W31") is False
+        feishu_sent.mark_sent("2026-07-27")
+        assert feishu_sent.was_sent("2026-07-27") is True
+        assert feishu_sent.was_sent("2026-07-31") is False
 
 
 class TestCmdFeishuIdempotent:
-    """cmd_feishu 的周级幂等：标记存在则跳过，--force 才重发。"""
+    """cmd_feishu 的日级幂等：当日标记存在则跳过，--force 才重发。
+
+    为什么是日级而不是周级：发布节奏是周五，但 ISO 周从周一开始，
+    周一和周五在同一个 ISO 周里。周级标记会让周一的手动 run 挡掉
+    周五的自动 cron run。日级标记匹配真实发布节奏。
+    """
+
+    # 测试里固定「今天」= 2026-07-31（周五），跟 week=2026-W31 同周但不同天，
+    # 用来验证「同周不同天能各自发」这个关键性质。
+    FIXED_TODAY = datetime.date(2026, 7, 31)
 
     def _setup(self, monkeypatch, tmp_path):
         monkeypatch.setattr(feishu_sent, "SENT_DIR", tmp_path)
         monkeypatch.setenv("FEISHU_WEBHOOK_URL", "https://open.feishu.cn/hook/test")
+        # 把 datetime.date.today() 钉死，cmd_feishu 用它算 date_key
+        class _FixedDate(datetime.date):
+            @classmethod
+            def today(cls):
+                return TestCmdFeishuIdempotent.FIXED_TODAY
+        monkeypatch.setattr(datetime, "date", _FixedDate)
         from collector import store
         week = "2026-W31"
         project = {
@@ -161,11 +177,13 @@ class TestCmdFeishuIdempotent:
         from collector.__main__ import cmd_feishu
         assert cmd_feishu([week]) == 0
         assert calls == ["https://open.feishu.cn/hook/test"]
-        assert feishu_sent.was_sent(week) is True
+        # 标记是 date-keyed，不是 week-keyed
+        assert feishu_sent.was_sent(self.FIXED_TODAY.isoformat()) is True
+        assert feishu_sent.was_sent(week) is False
 
-    def test_second_send_skipped_without_force(self, monkeypatch, tmp_path, capsys):
+    def test_second_send_same_day_skipped_without_force(self, monkeypatch, tmp_path, capsys):
         week = self._setup(monkeypatch, tmp_path)
-        feishu_sent.mark_sent(week)
+        feishu_sent.mark_sent(self.FIXED_TODAY.isoformat())
         calls = []
         monkeypatch.setattr(feishu, "send", lambda card, url: calls.append(url))
         from collector.__main__ import cmd_feishu
@@ -175,7 +193,7 @@ class TestCmdFeishuIdempotent:
 
     def test_force_resends_even_when_marked(self, monkeypatch, tmp_path):
         week = self._setup(monkeypatch, tmp_path)
-        feishu_sent.mark_sent(week)
+        feishu_sent.mark_sent(self.FIXED_TODAY.isoformat())
         calls = []
         monkeypatch.setattr(feishu, "send", lambda card, url: calls.append(url))
         from collector.__main__ import cmd_feishu
@@ -186,4 +204,16 @@ class TestCmdFeishuIdempotent:
         week = self._setup(monkeypatch, tmp_path)
         from collector.__main__ import cmd_feishu
         assert cmd_feishu([week, "--dry-run"]) == 0
-        assert feishu_sent.was_sent(week) is False
+        assert feishu_sent.was_sent(self.FIXED_TODAY.isoformat()) is False
+
+    def test_different_day_same_week_still_sends(self, monkeypatch, tmp_path):
+        # 根因回归：周一 (2026-07-27) 发过 W31，周五 (2026-07-31) 跑同周 W31
+        # 必须能再发一次，不能被周级幂等挡掉。
+        week = self._setup(monkeypatch, tmp_path)
+        feishu_sent.mark_sent("2026-07-27")  # 周一的标记
+        calls = []
+        monkeypatch.setattr(feishu, "send", lambda card, url: calls.append(url))
+        from collector.__main__ import cmd_feishu
+        # 今天 = 2026-07-31（FIXED_TODAY），跟周一不同天
+        assert cmd_feishu([week]) == 0
+        assert calls == ["https://open.feishu.cn/hook/test"]
