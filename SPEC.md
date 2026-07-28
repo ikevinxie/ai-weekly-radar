@@ -10,7 +10,7 @@
 
 | 决策点 | 结论 |
 |---|---|
-| 调度方式 | **GitHub Actions**（`.github/workflows/weekly.yml`）：每周五 20:00 CST 周报；每月 1 日 20:30 起飞追踪；支持手动 `workflow_dispatch`。本地 Claude Code / Qwen Code 定时任务作为备选 |
+| 调度方式 | **GitHub Actions**（`.github/workflows/weekly.yml`）：每周五 20:00 CST 周报 + 起飞追踪；每天 21:30 CST 大佬发言抓取；支持手动 `workflow_dispatch`。本地 Claude Code / Qwen Code 定时任务作为备选 |
 | 数据源 | 全部免费、无需付费 API |
 | 筛选评分 | 规则粗筛 + **百炼 DashScope API**（`collector/llm.py`）三维评分与双语解读；本地 LLM（Claude Code / Qwen Code）亦可完成（`prompt` 子命令输出模板） |
 | 解读深度 | **全部项目**：中英双语简读（analysis）+ 结构化深度解读（deep_dive）+ 主题标签（tags）；Top 10 徽章按当周总分排名标记 |
@@ -167,11 +167,12 @@
 - 本周风向（trend / trend.deep）撰写时**必须融入当周大佬发言的信号**；trend.deep 加深加长（8-12 句，可用空行分段，站点按段渲染）。
 - 该周无 voices 文件时站点自动隐藏该区块（如历史周）。report 合并时校验结构，不合格则警告跳过。
 
-## 起飞追踪（collector/tracking.py，每月 1 日）
+## 起飞追踪（collector/tracking.py，每周五随周报一起跑）
 
 - 取累积库中 GitHub 项目按 total 前 50，GitHub API 查当前 star（可选 `GITHUB_TOKEN` 提额；未配 token 时限速并截断）
 - 快照追加进 `data/tracking.json`：`{"github:a/b": [{"date": "2026-08-01", "stars": 2100}]}`，只追加不覆盖
 - 增幅榜 = 当前 star 对比入库时 `metrics.stars`，倍数降序；渲染进站点「🚀 起飞榜」
+- **频次**：原本每月 1 日跑一次，2026-07-28 起合并进 `weekly.yml`，每周五随周报一起跑。周级快照让增幅榜对短期爆发更敏感（一周涨 50% 比一个月涨 50% 信号强）。`track` 步骤用 `|| true` 兜底，GitHub API 限流不会阻断周报发布。
 
 ## 粗筛规则（filter.py）
 
@@ -217,15 +218,103 @@
 
 ## GitHub Actions 自动化（.github/workflows/）
 
-三个独立 workflow，互不干扰：
+两个独立 workflow，互不干扰：
 
 | 文件 | 触发 | 做什么 |
 |---|---|---|
-| `weekly.yml` | cron `0 12 * * 5`（周五 20:00 CST）+ `workflow_dispatch` | collect → score → voices-sum → validate → report → feishu → commit & push |
+| `weekly.yml` | cron `0 12 * * 5`（周五 20:00 CST）+ `workflow_dispatch` | collect → score → voices-sum → **track** → validate → report → feishu → commit & push |
 | `daily-voices.yml` | cron `30 13 * * *`（每天 21:30 CST）+ `workflow_dispatch` | `collector voices` → commit `data/voices/daily/` |
-| `monthly-liftoff.yml` | cron `30 12 1 * *`（每月 1 日 20:30 CST）+ `workflow_dispatch` | `collector track` → report → commit & push |
 
 - **Secrets**：`DASHSCOPE_API_KEY`（必需）、`FEISHU_WEBHOOK_URL`（可选）、`GITHUB_TOKEN`（内置）
-- **提交信息**：`weekly: <week>` / `daily: voices <date>` / `monthly: liftoff tracking`
-- **失败处理**：个别数据源失败不中断（collect 已内置容错）；API 评分失败则 workflow 失败并通知
+- **提交信息**：`weekly: <week>` / `daily: voices <date>`
+- **失败处理**：个别数据源失败不中断（collect 已内置容错）；API 评分失败则 workflow 失败并通知；`track` / `voices-sum` 用 `|| true` 兜底，不阻断周报
 - **每日发言数据**：`data/voices/daily/` 已从 .gitignore 移除（数据来自公开 feed，需提交才能跨 run 累积供周五汇总）
+
+## 修改调度时间 / 频次（小白指南）
+
+所有自动调度都写在 `.github/workflows/*.yml` 文件顶部的 `on.schedule.cron` 字段里。**改完 commit & push 就生效**，不用重启任何东西。
+
+### cron 表达式速查
+
+cron 是 5 个空格分隔的字段：`分 时 日 月 星期`。**GitHub Actions 的 cron 用 UTC 时间**，不是北京时间。北京时间 = UTC + 8，所以「北京 20:00」要写成「UTC 12:00」。
+
+| 字段 | 取值 | 例子 |
+|---|---|---|
+| 分 | 0-59 | `0` = 整点，`30` = 半点 |
+| 时 | 0-23（UTC） | `12` = UTC 12:00 = 北京 20:00 |
+| 日 | 1-31 | `1` = 每月 1 号，`*` = 每天 |
+| 月 | 1-12 | `*` = 每月 |
+| 星期 | 0-6（0=周日，5=周五） | `5` = 每周五，`*` = 每天 |
+
+### 常用配方（直接抄）
+
+| 想要的节奏 | cron 表达式 | 北京时间 |
+|---|---|---|
+| 每周五 20:00 | `0 12 * * 5` | 周五 20:00 |
+| 每周五 21:30 | `30 13 * * 5` | 周五 21:30 |
+| 每天 21:30 | `30 13 * * *` | 每天 21:30 |
+| 每周一、四 20:00 | `0 12 * * 1,4` | 周一、四 20:00 |
+| 每月 1 号 20:00 | `0 12 1 * *` | 每月 1 号 20:00 |
+| 每小时整点 | `0 * * * *` | 每小时 |
+| 每 6 小时 | `0 */6 * * *` | 0:00 / 6:00 / 12:00 / 18:00 UTC |
+
+### 改的步骤（以「把周报从周五改到周六 21:00」为例）
+
+1. 在本地用任意编辑器打开 `.github/workflows/weekly.yml`。
+2. 找到顶部这几行：
+   ```yaml
+   on:
+     schedule:
+       # 每周五 20:00 CST = UTC 12:00
+       - cron: "0 12 * * 5"
+     workflow_dispatch: {}
+   ```
+3. 把 `cron` 那一行改成：
+   ```yaml
+       # 每周六 21:00 CST = UTC 13:00
+       - cron: "0 13 * * 6"
+   ```
+   （周六 = 6，北京 21:00 = UTC 13:00）
+4. 保存文件。
+5. 在终端跑：
+   ```bash
+   cd "/Users/kevin/Downloads/Claude/自动收集天马行空且有趣或有钱途的AI项目"
+   git add .github/workflows/weekly.yml
+   git commit -m "schedule: weekly -> 周六 21:00 CST"
+   git push
+   ```
+6. 完事。下一次自动触发就是新的时间。**不需要**手动点 Run workflow。
+
+### 想加多个触发时间？
+
+`schedule` 是个列表，加一行 `- cron: ...` 就行：
+
+```yaml
+on:
+  schedule:
+    - cron: "0 12 * * 5"   # 周五 20:00
+    - cron: "0 12 * * 2"   # 周二 20:00 也跑一次
+  workflow_dispatch: {}
+```
+
+### 想暂时停掉自动调度？
+
+把 `schedule:` 整段注释掉（每行前面加 `#`），保留 `workflow_dispatch: {}`，这样只能手动点 Run workflow 触发：
+
+```yaml
+on:
+  # schedule:
+  #   - cron: "0 12 * * 5"
+  workflow_dispatch: {}
+```
+
+### 改完怎么验证？
+
+push 之后去 GitHub 仓库 → Actions 页 → 左侧选你改的那个 workflow → 右上角会显示「Next scheduled run: <UTC 时间>」。把那个 UTC 时间 + 8 小时，应该等于你想要的北京时间。如果不对，说明 cron 写错了，回去再改。
+
+### 常见坑
+
+- **GitHub cron 不准时**：官方文档明说「schedule 在高负载时段可能延迟几分钟到几十分钟」。不要依赖秒级精度。
+- **GitHub 不会为 fork 仓库跑 schedule**：只在主仓库跑。
+- **改了 cron 但没 push**：本地改完不 push，GitHub 那边还是旧的。
+- **想立刻跑一次看效果**：不用等 cron，去 Actions 页点 `Run workflow` 手动触发。

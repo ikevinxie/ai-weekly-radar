@@ -1,4 +1,4 @@
-# AI Weekly Radar — 每周五自动收集 + 百炼 API 评分 + 发布
+# AI Weekly Radar — 每周五自动收集 + 百炼 API 评分 + 起飞追踪 + 发布
 # 见 SPEC.md「GitHub Actions 自动化」
 
 name: weekly
@@ -61,6 +61,16 @@ jobs:
         env:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: python3 -m collector voices-sum "$WEEK" || true
+
+      - name: Liftoff tracking (star snapshot)
+        # 每周抓一次历史 Top 项目的 star 数，追加进 data/tracking.json。
+        # 放在 score 之后：本周新入库的高分项目立刻纳入追踪。
+        # 放在 report 之前：compute_liftoff 结果会进 weeks.json，
+        # 飞书卡片和站点都能渲染最新起飞榜。
+        # || true 兜底：GitHub API 偶发限流不应阻断周报发布。
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 -m collector track || true
 
       - name: Validate
         run: python3 -m collector validate "$WEEK"
