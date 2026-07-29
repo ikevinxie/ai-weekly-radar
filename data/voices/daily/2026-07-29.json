@@ -1,0 +1,186 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "https://t.co/uwzHs4G1nt https://t.co/K6E6EHYPeh",
+  "url": "https://x.com/swyx/status/2082287480687272053",
+  "date": "2026-07-29",
+  "likes": 2
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "i'm just reporting; many counter examples if you dislike this trend: https://t.co/YZ7z66bEVk\n\nsee Edison on @latentspacepod https://t.co/3BDUegJrWf here",
+  "url": "https://x.com/swyx/status/2082255848492183583",
+  "date": "2026-07-29",
+  "likes": 10
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "re: hiring right now\n\nit's a huge bull market for AI-native IC's/player-coaches\nit's a huge bear market for \"heads of X\" managers\n\nnever seen such furious bifurcation. to oversimplify: 1 year experience managing 10 agents &gt; 10 years experience managing 10-100 people",
+  "url": "https://x.com/swyx/status/2082199414656127010",
+  "date": "2026-07-28",
+  "likes": 721
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "One day we created the reset button and the rest is history.",
+  "url": "https://x.com/thsottiaux/status/2082326593532473523",
+  "date": "2026-07-29",
+  "likes": 4056
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Hello people of Sol! I've reset usage limits for all ChatGPT Work and Codex users. Together with that, a quick update on GPT-5.6 Sol usage limits.\n\nOver the past few weeks, many of you have told us that Sol was using your Codex limits faster than expected. To be clear, we have not reduced usage on any subscription plans.\n\nWe’ve been digging into what was happening and have landed several improvements. As a result, we expect your usage to last around 18% longer during typical use of Sol. Some of you should already see significantly larger improvements from today. Tomorrow, we’ll also restore the five-hour limit that we temporarily paused while investigating.\n\nHere’s what we found:\n- GPT-5.6 Sol is much more willing to work for longer, make additional tool calls, and coordinate complex workflows across tools and subagents. That makes it better at solving hard problems, but some tasks were using far more than we intended.\n- Sol also works harder at the same reasoning effort than previous models. High on Sol can use more tokens than High did on GPT-5.5.\n- Programmatic tool calling, also referred to as code mode, gives Sol much more flexibility to run tool calls in parallel or continue working while waiting. But it also led to more responses per turn, more cached input tokens, and higher usage than expected.\n- This was particularly noticeable when Sol was waiting for tool calls to finish or running many web searches. We’ve improved how we handle both cases and are continuing to make code mode more efficient.\n- The impact was also very uneven. The median user actually found Sol quite token efficient, while some power users working on harder tasks saw their usage drain much faster. We were very focused on average and median usage before launch and missed some cases where the long tail could use significantly more usage.\n\nSol is a significant step forward in what Codex can do, but capability and efficiency do not always improve at the same pace, and some issues only become clear once people are using the model at real-world scale. We should have recognized this sooner and been more upfront about it.\n\nYou keep pushing the frontier and we’ll keep improving efficiency and sharing updates as we go.",
+  "url": "https://x.com/thsottiaux/status/2082317452755751098",
+  "date": "2026-07-29",
+  "likes": 11970
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "More opensource goodness. We have just released a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code. Scan repositories, review changes, track findings over time, and run security checks in CI.\n\nhttps://t.co/nkfTbw8p7b",
+  "url": "https://x.com/thsottiaux/status/2082241164850364555",
+  "date": "2026-07-28",
+  "likes": 5812
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "These are all valid criticisms of Codex, even though I love the product too!\n\nI actually had no idea that Sol Pro even existed - is this better than Sol High? Why isn’t it available in Codex? https://t.co/nrPsjAgfk1 https://t.co/nFmz6awv7d",
+  "url": "https://x.com/petergyang/status/2082323512069685575",
+  "date": "2026-07-29",
+  "likes": 34
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I also built Tastemaker to see if I could turn a rough idea into a useful product with Claude Design and Claude Code.\n\nI made a video walking through my full process, including:\n\n1. Creating a design.md and HTML spec\n2. Prototyping screens in Claude Design\n3. Building and iterating with Claude Code\n\n📌 Subscribe to get the full tutorial tomorrow: https://t.co/NSTj7ijxE0",
+  "url": "https://x.com/petergyang/status/2082254852600873376",
+  "date": "2026-07-29",
+  "likes": 4
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I got tired of using IMDb to rate movies and TV shows, and Letterboxd doesn’t support video games.\n\nSo I built Tastemaker to let anyone curate their favorite movies, TV shows, and games all in one beautiful profile.\n\nYou can use it to:\n\n→ Rate and review your favorites\n→ Create and share lists\n→ Discover what to watch or play next\n\nBecause of API limits, I’m launching this as a limited release for the first 100 profiles only.\n\n📌 Claim your free profile now: https://t.co/HLkDespYE8",
+  "url": "https://x.com/petergyang/status/2082254840655405293",
+  "date": "2026-07-29",
+  "likes": 48
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "I saw a SWE at work today. No Claude. No wispr. No tab key.\n\nJust writing code. With his bare hands. https://t.co/kfV3qV62T7",
+  "url": "https://x.com/realmadhuguru/status/2082112941814661236",
+  "date": "2026-07-28",
+  "likes": 18
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Who’s writing an open letter against destroying rare books? https://t.co/6xOyRREqw1",
+  "url": "https://x.com/amasad/status/2082317323445387514",
+  "date": "2026-07-29",
+  "likes": 122
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Imagine SETI@Home, where you donated compute to search for aliens, but instead you donate compute to search math proofs. https://t.co/5Stl475G4a",
+  "url": "https://x.com/amasad/status/2082316553740284060",
+  "date": "2026-07-29",
+  "likes": 40
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "1300 Elo!\n\nhttps://t.co/4WJ9SYmr1o https://t.co/87CcHf43N7 https://t.co/pk1AR8uNzd",
+  "url": "https://x.com/amasad/status/2082316150273360316",
+  "date": "2026-07-29",
+  "likes": 63
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Great piece and vision for AI from Zuckerberg https://t.co/kO0oQbx3CC https://t.co/XjwKwvBZIu",
+  "url": "https://x.com/levie/status/2082168124733116537",
+  "date": "2026-07-28",
+  "likes": 323
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "https://t.co/Zgd4HPRMyi https://t.co/qrbpAbZifu",
+  "url": "https://x.com/levie/status/2082114876873597239",
+  "date": "2026-07-28",
+  "likes": 8594
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "It's OK to joke, but when it comes to your life, your intention, and your weltanschauung, be earnest as fuck https://t.co/cgQF2NPElz",
+  "url": "https://x.com/garrytan/status/2082176112906711452",
+  "date": "2026-07-28",
+  "likes": 228
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "The original drafter of Sanctuary Cities never meant for this to happen \n https://t.co/KqUOnhS8DG",
+  "url": "https://x.com/garrytan/status/2082170934182756411",
+  "date": "2026-07-28",
+  "likes": 25
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Sanctuary city policy was never meant to be used to protect fentanyl dealers or violent criminals https://t.co/jLsQzhfcuU",
+  "url": "https://x.com/garrytan/status/2082169572212584877",
+  "date": "2026-07-28",
+  "likes": 93
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "Serving large models is hard. https://t.co/nCbfTx9lp3",
+  "url": "https://x.com/steipete/status/2082337130299457652",
+  "date": "2026-07-29",
+  "likes": 115
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "or the reason is you don’t have the illness i have where wading through dense, abstract sentences is extremely calming https://t.co/yZH95T9H6p",
+  "url": "https://x.com/danshipper/status/2082273076352315440",
+  "date": "2026-07-29",
+  "likes": 16
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "This is why i do anti depressants and stimulants. \n\nDynamism x2. Join me America! https://t.co/yXB5FbDGsJ",
+  "url": "https://x.com/danshipper/status/2082270947793350785",
+  "date": "2026-07-29",
+  "likes": 40
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "i spent the morning writing the definitive history of codex on my couch \n\nit comes from hours of in-depth interviews with the team including @thsottiaux, @ajambrosino, and @gdb \n\nmy hands didn’t touch the keyboard or mouse once …i did the whole thing, including organizing the interviews, building a timeline, writing, editing, and revising via ChatGPT for Work’s voice mode \n\nabsolutely goated for creative work. \n\nwhole piece will be published on @every in a few weeks",
+  "url": "https://x.com/danshipper/status/2082130836485259530",
+  "date": "2026-07-28",
+  "likes": 178
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "A decade ago…as I was going through my own Minus One journey and was lost in the fog of uncertainty, I got 2 pieces of deep personal insight:\n\n1/ I want to build new things in the world\n2/ I want to work with brilliant and intense people\n\nOn days such as this both feel abundant. https://t.co/muLvlHqTp1",
+  "url": "https://x.com/adityaag/status/2082214798935326833",
+  "date": "2026-07-28",
+  "likes": 107
+ }
+]
