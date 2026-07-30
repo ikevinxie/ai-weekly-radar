@@ -1,0 +1,258 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "today i tried to sign up for @docusign and was presented a captcha that i could not solve\n\nthis is an $11B company that everyone hates\n\npeople who say \"make something people want\" dont have the full picture https://t.co/DHT1CcVMbk https://t.co/j7J7irkwIB",
+  "url": "https://x.com/swyx/status/2082617801362313527",
+  "date": "2026-07-30",
+  "likes": 24
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "This week is all about intelligence too cheap to meter. Tomorrow we ship again.",
+  "url": "https://x.com/thsottiaux/status/2082655731204096275",
+  "date": "2026-07-30",
+  "likes": 6473
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Terrific work by @ilanbigio and @sandersted on the investigation and post. Seems like it was a lot of fun.\n\nTake care of your harnesses out there, your model will thank you. https://t.co/3Enah7xd4t",
+  "url": "https://x.com/thsottiaux/status/2082637967852806207",
+  "date": "2026-07-30",
+  "likes": 1020
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Turns out GPT-5.6 Sol is actually SoTA on ARC-AGI-3. \n\nJust took two setting changes. You just have to allow it to reason and work over multiple context windows with the help of our canonical compaction implementation.\n\nhttps://t.co/wHjaNsvIv8",
+  "url": "https://x.com/thsottiaux/status/2082609662231502932",
+  "date": "2026-07-29",
+  "likes": 6926
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "AI has been great for my productivity, but I’m starting to recognize three dark patterns:\n\n1. Becoming too lazy to read anything\n\nIt's too easy to just read AI summaries over the original piece or let agents go wild changing my files without reviewing what they did.\n\n2. Getting distracted by agents while I’m out\n\nIt’s too easy to open ChatGPT or Claude on my phone while I’m out to give feedback my agents and feel “productive,” even when I’m supposed to be watching my kids or doing literally anything else.\n\n3. Preferring to talk to the agent vs. a human\n\nThis is a new pattern with ChatGPT Voice, I sometimes find myself preferring to brainstorm with the agent instead of the actual human in the room.",
+  "url": "https://x.com/petergyang/status/2082642205811106158",
+  "date": "2026-07-30",
+  "likes": 201
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "One of my favorite features in Claude Design is a simple one:\n\nIt always asks clarifying questions before creating anything.\n\nI’ve found these questions consistently help me think through my design requirements with AI. I’m surprised other AI design tools haven’t copied this yet.\n\n📌 Here’s how I use Claude Design to prototype: https://t.co/DYtxQdhytA",
+  "url": "https://x.com/petergyang/status/2082579428090192192",
+  "date": "2026-07-29",
+  "likes": 34
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "We’ve gone from AI defaulting to designs that look like purple slop to those that have that recognizable Claude look.\n\nTo avoid this, I always create a design md file with guidelines for color, typography, and more.\nHere are a few places to find inspiration for your design md:\n\n1. Go to @mobbin and install its MCP to find design patterns and app screens you like. Paste the screens and ask AI to make a design md.\n\n2. Check out designmd sh, which has a library of design md files for popular websites and apps.\n\n📌 I walk through an example of creating a design md in my new tutorial: https://t.co/3LIw4UXbpi",
+  "url": "https://x.com/petergyang/status/2082519030859264086",
+  "date": "2026-07-29",
+  "likes": 412
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "That is why we must pace https://t.co/CoIo5Y5Mf5",
+  "url": "https://x.com/thenanyu/status/2082550710160310587",
+  "date": "2026-07-29",
+  "likes": 27
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Love this POV -- what products do you use which would absolutely suck to switch to an alternative, besides apple products?\n\nWhen I think about it, a couple of mundane examples come to mind. 3M post-it notes, and Expo whiteboard markers are unmatched. The alternatives are garbage https://t.co/DbY8Ltyg3F",
+  "url": "https://x.com/thenanyu/status/2082480369543065855",
+  "date": "2026-07-29",
+  "likes": 49
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "7 months on, this continues to be true. Biggest alpha lies in understanding the model frontier. https://t.co/x4EPGKFvSQ",
+  "url": "https://x.com/realmadhuguru/status/2082629168035201459",
+  "date": "2026-07-30",
+  "likes": 2
+ },
+ {
+  "author": "Google Labs",
+  "handle": "GoogleLabs",
+  "text": "Expecting A Minor update? We prefer to B Major. 🎶\n\n@GoogleDeepMind just released Lyria 3.5, and we’ve plugged it directly into @GoogleFlowMusic to power your next session.\n\nWhat this means for your tracks:\n\n✨ Better prompt adherence: Flow Music understands your creative direction with much more accuracy. Set exact BPMs and export stems for full-length songs!\n\n🎤 Upgraded vocals: More expressive, dynamic, and rich singing.\n\n🎸 Richer musicality: Arrangements flow more naturally from note to note.\n\nHear it for yourself and start creating at https://t.co/3XMUc2pkzU 👇",
+  "url": "https://x.com/GoogleLabs/status/2082501360466174163",
+  "date": "2026-07-29",
+  "likes": 308
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations.\n\nReplit Design is powered by the best of open and closed models to generate superior aesthetics. https://t.co/qt5XNdHfQ8 https://t.co/Nqjzz7EyVO",
+  "url": "https://x.com/amasad/status/2082508826767679668",
+  "date": "2026-07-29",
+  "likes": 404
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Post-prompt era https://t.co/fUiEzr3Fik",
+  "url": "https://x.com/amasad/status/2082505558293467363",
+  "date": "2026-07-29",
+  "likes": 253
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "This is hands down the best AI design tool, both in taste and how fun and easy it is to use.\n\nTry it out! https://t.co/Nqjzz7EyVO",
+  "url": "https://x.com/amasad/status/2082504898801999990",
+  "date": "2026-07-29",
+  "likes": 1417
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Thought provoking post by Dwarkesh. In general - as AI gets more powerful - we should expect on the margin that inference goes toward the most economically useful task, and everything else gets priced out. \n\nThis in theory in a very scarce environment would cause the cost of inference to skyrocket because those tasks would be far more valuable than today. \n\nBut I don’t think it plays out in the way that’s laid out just simply due to market forces competing for inference demand as a way of continuing to drive down prices until capacity can catch up.\n\nThere are too many model providers and infra players that want these workloads to cause the effect that’s proposed here. But will see!",
+  "url": "https://x.com/levie/status/2082658870523248967",
+  "date": "2026-07-30",
+  "likes": 133
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more.\n\nEven in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse.\n\nIn theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend any amount of time on a task, don’t actually face any *real* risks by going rogue, and don’t have the inherent judgment (yet) that a person does that a task might make no sense. This means you need an all new way of managing data and protecting environments.\n\nThis obviously creates a huge opportunity for the startup and security ecosystems because there will be many different approaches to how we lock down agents or at least the underlying systems they work with. It should update everyone’s timelines on diffusion, though, as it also means that enterprises will have another step of work they have to go through for agents to handle more autonomous work.",
+  "url": "https://x.com/levie/status/2082514776392175844",
+  "date": "2026-07-29",
+  "likes": 148
+ },
+ {
+  "author": "Ryo Lu",
+  "handle": "ryolu_",
+  "text": "your agents, anywhere\n\ntry Cursor on iOS today https://t.co/cUpj159sqj",
+  "url": "https://x.com/ryolu_/status/2082539893729972320",
+  "date": "2026-07-29",
+  "likes": 371
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our noses, and it's winning in every blue state\n\nhttps://t.co/svoLRmiRhD https://t.co/90vXFe4Ydq https://t.co/SdOOWXAZ7b",
+  "url": "https://x.com/garrytan/status/2082529714162536926",
+  "date": "2026-07-29",
+  "likes": 189
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Manhattan Institute is the truth https://t.co/mN8Qi19I0u",
+  "url": "https://x.com/garrytan/status/2082518742752461268",
+  "date": "2026-07-29",
+  "likes": 113
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Seasoned founders in the age of intelligence are aging like fine wine https://t.co/XVdaAVdine https://t.co/PXnKOcAQ9Q",
+  "url": "https://x.com/garrytan/status/2082472533337813241",
+  "date": "2026-07-29",
+  "likes": 2046
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "If you both have deep domain expertise &amp; experience AND you’re AI-native and constantly reinventing yourself to adopt the new ways that work get done, you’re basically invincible https://t.co/vRwyZoTf3a",
+  "url": "https://x.com/zarazhangrui/status/2082705944782520462",
+  "date": "2026-07-30",
+  "likes": 24
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Being good at marketing is not just good for your marketing; it’s good for your product \n\nSo many technical people are building for imaginary audiences with no contact with the reality of how people actually perceive and use these products https://t.co/d9TuyWeVpW",
+  "url": "https://x.com/zarazhangrui/status/2082684904136134881",
+  "date": "2026-07-30",
+  "likes": 26
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Evergreen post - wrote this as I held my son who’s now 20 months old! https://t.co/ZYutlcl2c2",
+  "url": "https://x.com/nikunj/status/2082507794889220545",
+  "date": "2026-07-29",
+  "likes": 3
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "First kid teaches you unconditional love. \n\nSecond kid teaches you unbridled joy. \n\nAs AGI (digital & physical) comes close, having close family and friends is going to be the most important (only?) human connection we have. So if you are on the fence, let this be a vote in the yes direction!\n\nDon’t get me wrong having kids is really hard and one of life’s only irreversible choices - the highs are really high and the lows well sometimes can be very low (mostly temporary though). \n\nBut oh my, it’s such a privilege to have these two and I honestly wouldn’t trade it for anything else!",
+  "url": "https://x.com/nikunj/status/2082460273005433192",
+  "date": "2026-07-29",
+  "likes": 50
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victory”-tweet?\nhttps://t.co/DPdPc04YZT https://t.co/ObXC5D8g4v",
+  "url": "https://x.com/steipete/status/2082617409408762124",
+  "date": "2026-07-30",
+  "likes": 2884
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "Almost every single person @every is freaking out about how good voice mode in ChatGPT for Work is\n\nHave not seen vibes this high in a while. If you haven’t tried it yet, you should https://t.co/L6c67tNeF2",
+  "url": "https://x.com/danshipper/status/2082613916706693560",
+  "date": "2026-07-29",
+  "likes": 217
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "incredibly good write up \n\nbad actors will obviously try to use models to do stuff like this on purpose in the future. \n\non the bright side:\n\n- OpenAI’s safety classifiers were turned off, the model was explicitly directed to do exploits\n- HG’s AI actually surfaced the attack automatically (though not with a high enough criticality) \n\nWill obviously require any company dealing with sensitive customer data to have automated agentic defense systems, massive opportunity and seems effective",
+  "url": "https://x.com/danshipper/status/2082608994275725650",
+  "date": "2026-07-29",
+  "likes": 27
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "usually the most honest answer ime https://t.co/tqDureRmzo",
+  "url": "https://x.com/danshipper/status/2082605739256734153",
+  "date": "2026-07-29",
+  "likes": 100
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "Imagine if you were LeBron at 19 years old but believed you only had 2 years to maximize earnings before basketball was played by robots.\n\nThis is what AI researchers are going through and explains all the goddamn drama.\n\nThey are MVPs with 18 months on the shot clock.",
+  "url": "https://x.com/adityaag/status/2082558632705896899",
+  "date": "2026-07-29",
+  "likes": 147
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "Some observations from our Demo Faire yesterday:\n\n1/ There is a tremendous amount of interest from the larger investor community for frontier technology. Robots. Drones. Semiconductors. Bring it all. \n\n2/ The interest in Frontier Tech is legitimately Based. People want 🇺🇸 to win.\n\n3/ The bar for \"great\" in software has gone up a lot. If you are building something that resembles vertical SaaS or agent-for-X, then you have to show something truly different in terms of vision or on a bonkers ramp.\n\n4/ You should only do early stage investing if you love building the future. That is the real joy of it. It was so cool to see everyone deeply engaging with our founders about what they were building (as opposed to simply asking for up and to the right graphs).\n\n5/ Silicon Valley does best when we understand that it takes a village to build something special for many decades.",
+  "url": "https://x.com/adityaag/status/2082538703432630398",
+  "date": "2026-07-29",
+  "likes": 66
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "so excited for this.\n\nvery close to models that will significantly accelerate scientific discovery; the best way to do this is for us to empower scientists, not to try to figure out everything ourselves.\n\nwe all deserve the benefits. https://t.co/nzfHpb96re",
+  "url": "https://x.com/sama/status/2082628413769003269",
+  "date": "2026-07-30",
+  "likes": 3117
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "goblin-level blog post https://t.co/pmcqmDjE4f",
+  "url": "https://x.com/sama/status/2082627724040884667",
+  "date": "2026-07-30",
+  "likes": 2817
+ }
+]
