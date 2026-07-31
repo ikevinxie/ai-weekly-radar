@@ -6,22 +6,22 @@
   <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
   <language>zh-cn</language>
   <item>
-   <title>AI 周报 2026-W31：本周AI项目集中在图像生成与处理、自然语言处理和开发者工具领域。</title>
+   <title>AI 周报 2026-W31：本周AI项目中，图像处理与生成、自然语言处理和金融分析成为热门主题。</title>
    <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W31</link>
    <guid isPermaLink="false">2026-W31</guid>
    <pubDate>Fri, 31 Jul 2026 20:00:00 +0000</pubDate>
-   <description>本周AI项目集中在图像生成与处理、自然语言处理和开发者工具领域。高分项目多涉及创新性的技术应用，如图像编辑、代码优化和对话系统改进。下周可关注这些领域的进一步发展。
+   <description>本周AI项目中，图像处理与生成、自然语言处理和金融分析成为热门主题。尤其在图像编辑与生成领域，多个项目如Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo、ForzaHorizon6-VisionAI等受到关注。此外，涉及金融数据分析的ai-stock-pool也表现不俗。
 
 1. gnipbao/story-to-handdrawn-video（23分）— 把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。
-2. Are AI labs pelicanmaxxing?（22分）— 「AI 实验室在 pelicanmaxxing 吗？」——本周最好笑也最扎心的 AI 文化批评。
-3. microsoft/TRELLIS.2（22分）— 微软 TRELLIS.2：从图片生成 3D 资产，1854 赞的 HF 热门 Space。
-4. Heard（22分）— 给 Claude Code 和 Codex 装上嘴巴——Heard 让 coding agent 开口说话。
-5. Speechius（21分）— 「会听你说话的提词器」——Speechius 让演讲者不再被提词器牵着走。
-6. VictorTaelin/OptMem（20分）— 426 个 token 实现 AI agent 永久记忆——极简到让人怀疑是不是在开玩笑。
-7. Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge（20分）— Qwen-Image-3.0 发布：富内容、真细节、深知识——阿里的图像生成新旗舰。
-8. smolagents/hf-realtime-voice（20分）— HuggingFace 官方实时语音 agent——482 赞，和 AI 实时对话的未来感。
-9. I built a compiler that turns computation graphs into the weights of a vanilla transformer — no training anywhere [P]（20分）— 把计算图「编译」成 transformer 权重，零训练——这可能是本周最烧脑的项目。
-10. Businesses with ugly AI menu redesigns（19分）— 「那些被 AI 重新设计得很丑的菜单」——381 赞的 AI 设计灾难大赏。</description>
+2. Gemini Robotics 2 brings whole body intelligence to robots（23分）— Gemini Robotics 2为机器人带来了全身智能控制能力。
+3. Are AI labs pelicanmaxxing?（22分）— 「AI 实验室在 pelicanmaxxing 吗？」——本周最好笑也最扎心的 AI 文化批评。
+4. microsoft/TRELLIS.2（22分）— 微软 TRELLIS.2：从图片生成 3D 资产，1854 赞的 HF 热门 Space。
+5. Heard（22分）— 给 Claude Code 和 Codex 装上嘴巴——Heard 让 coding agent 开口说话。
+6. Speechius（21分）— 「会听你说话的提词器」——Speechius 让演讲者不再被提词器牵着走。
+7. 0xwilliamortiz/ponytail-improved（20分）— Ponytail-Improved让AI代理像最懒的高级开发人员一样思考，追求最少的代码量。
+8. Ayin1412/ForzaHorizon6-VisionAI（20分）— ForzaHorizon6-VisionAI是一个基于摄像头的闭环驾驶代理，用于Forza Horizon 6游戏。
+9. VictorTaelin/OptMem（20分）— 426 个 token 实现 AI agent 永久记忆——极简到让人怀疑是不是在开玩笑。
+10. Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge（20分）— Qwen-Image-3.0 发布：富内容、真细节、深知识——阿里的图像生成新旗舰。</description>
   </item>
   <item>
    <title>AI 周报 2026-W29：本周最强的信号是「智能体基建大爆发」：从微软给智能体造可视化语言、Product Hunt 上的智能体数据集市和 iOS 发布流水线，到语音优先的本地编排运行时，一条完整的 agent 供应链正在成形。</title>

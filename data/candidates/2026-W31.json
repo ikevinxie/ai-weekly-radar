@@ -1,492 +1,466 @@
 [
  {
-  "id": "arxiv:2607.22489v1",
-  "name": "\\k{appa}-LoRA: Condition Numbers Reveal Which LoRA Matrices Worth Updating",
-  "url": "https://arxiv.org/abs/2607.22489v1",
+  "id": "arxiv:2607.28628v1",
+  "name": "Learning to Trace Seiberg Dualities",
+  "url": "https://arxiv.org/abs/2607.28628v1",
   "source": "arxiv",
-  "description": "Low-Rank Adaptation (LoRA) has become a widely adopted technique for efficient neural network fine-tuning, decomposing model updates into low-rank matrices. However, LoRA remains computationally costly because it updates all matrices uniformly, regardless of their actual contribution to adaptation. This cost is especially prohibitive for large-scale models with billions of parameters and for resource-constrained settings such as edge deployment and on-device fine-tuning. We show for the first ti",
-  "collected_at": "2026-07-27",
+  "description": "Dualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems. In practice, though, it can often be computationally challenging to establish when two systems are dual, even when all of the \"rules of the game\" are well-known. Said differently, when confronted with two systems, how can one efficiently establish that they are in fact dual? In this paper we use machine learning methods to address this question for Seiberg dualities of su",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22484v1",
-  "name": "Singular value soft-thresholding via the polar decomposition",
-  "url": "https://arxiv.org/abs/2607.22484v1",
+  "id": "arxiv:2607.28627v1",
+  "name": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+  "url": "https://arxiv.org/abs/2607.28627v1",
   "source": "arxiv",
-  "description": "Singular value soft-thresholding can be computed via a reduction to the matrix polar decomposition, which allows one to exploit GPU-friendly algorithms for computing the polar decomposition. Empirically, there is a significant speed-up on GPUs compared to the standard approach using the SVD. We leave the investigation of robustness to future work, but note that due to the discontinuous nature of the sign function, the reduction to the polar decomposition is likely only suitable for low-accuracy",
-  "collected_at": "2026-07-27",
+  "description": "Long visual context poses a challenge for vision-language models: performance degrades as the number of distractors grows, and processing all tokens at once is computationally infeasible under GPU memory constraints. We present ReToken, a single learnable embedding trained as an explicit retrieval target that selects a sparse set of query-relevant visual tokens from a pre-filled visual KV cache. Trained on only a small image-QA dataset, ReToken yields consistent gains across image and video benc",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22474v1",
-  "name": "Beyond Negative-Ridge Endpoints: Mixed-Sign Spectral Regularization via Negative-Shifted Gradient Descent",
-  "url": "https://arxiv.org/abs/2607.22474v1",
+  "id": "arxiv:2607.28623v1",
+  "name": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+  "url": "https://arxiv.org/abs/2607.28623v1",
   "source": "arxiv",
-  "description": "In overparameterized linear regression, many weak spectral directions act like a ridge penalty on the signal-bearing spectrum; negative ridge is the natural correction, pushing filters above one. The stable negative-ridge endpoint, however, is structurally limited: its pole must stay below the smallest nonzero empirical eigenvalue, and it anti-shrinks smaller eigenvalues more than larger ones. Early-stopped negative-shifted gradient descent escapes this constraint. Its filter is smooth at the wo",
-  "collected_at": "2026-07-27",
+  "description": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regi",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22471v1",
-  "name": "MineValiCoder: Reliable Code Generation with Test Case Quality Mining and Bipartite Graph-Based Mutual Validation",
-  "url": "https://arxiv.org/abs/2607.22471v1",
+  "id": "arxiv:2607.28618v1",
+  "name": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+  "url": "https://arxiv.org/abs/2607.28618v1",
   "source": "arxiv",
-  "description": "Large Language Model (LLM)-based Test-Driven Development (TDD) has advanced automated code generation. However, existing approaches depend heavily on human-crafted test cases and cannot operate effectively when only natural-language requirements are available. Although recent work enables automatic test generation, it often overlooks the inherent stochasticity of LLMs, leading to two key defects: faulty tests generate misleading feedback that distorts code optimization, while mixed-quality test",
-  "collected_at": "2026-07-27",
+  "description": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a result, scientists and AI agents need to locate relevant information, verify their provenance, and assemble cross-paper answers manually. We present AskChem, a claim-centered infrastructure for cross-paper chemistry search. AskChem changes the unit of retrieval from the paper to the provenance-carrying c",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22468v1",
-  "name": "Learning to Prepare Molecular Ground States with Transformer Models",
-  "url": "https://arxiv.org/abs/2607.22468v1",
+  "id": "arxiv:2607.28617v1",
+  "name": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+  "url": "https://arxiv.org/abs/2607.28617v1",
   "source": "arxiv",
-  "description": "Quantum state preparation is a key component of many quantum algorithms. Performing this step efficiently is essential for realizing practical quantum advantage in quantum chemistry applications. Iterative algorithms like ADAPT-VQE can produce shallow ground-state preparation circuits, but become computationally prohibitive for the larger molecules relevant to materials science and pharmaceutical development. Here, we introduce ADAPT-GQE, a generative AI framework that learns to synthesize groun",
-  "collected_at": "2026-07-27",
+  "description": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intelligence System Prompt Assurance (AISPA), a user-centric framework for systematically auditing system prompts in AI systems. AISPA examines specif",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22467v1",
-  "name": "Complexity Bounds and Approaches to Learning Projected Gradient Descent Solver Iterates",
-  "url": "https://arxiv.org/abs/2607.22467v1",
+  "id": "arxiv:2607.28609v1",
+  "name": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+  "url": "https://arxiv.org/abs/2607.28609v1",
   "source": "arxiv",
-  "description": "Data scarcity poses a fundamental challenge in training generative models to produce initial guesses for parametric optimization problems that are otherwise numerically expensive to solve. We therefore study a $k$-neighborhood data collection strategy that augments datasets of converged solutions with intermediate solver iterates, increasing the amount of training data without additional solver runs. To understand the benefits of this approach, we derive a generalization bound based on Rademache",
-  "collected_at": "2026-07-27",
+  "description": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22465v1",
-  "name": "TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI",
-  "url": "https://arxiv.org/abs/2607.22465v1",
+  "id": "arxiv:2607.28608v1",
+  "name": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
+  "url": "https://arxiv.org/abs/2607.28608v1",
   "source": "arxiv",
-  "description": "Routing to select large language models (LLMs) with different cost-quality trade-offs has become a fundamental deployment feature of enterprise AI. Existing routers, primarily make independent routing decisions for each LLM call. However, agentic applications execute as long-horizon workflows whose quality is determined only by a delayed, task-level outcome. This mismatch prevents per-call routers from correctly attributing feedback to individual routing decisions. Towards mitigating this, we pr",
-  "collected_at": "2026-07-27",
+  "description": "Clinical risk models routinely achieve strong aggregate performance while producing materially different error rates across patient subgroups. Audit pipelines have been proposed to catch this, but their components are rarely stress-tested, so it is unclear which parts of an audit can be trusted and under what conditions. We present KAISEN, a five-phase audit pipeline covering subgroup stratification, disparity measurement, mechanism diagnostics, post-hoc mitigation, and drift monitoring, evaluat",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22463v1",
-  "name": "Beyond Perspectives: A Trio-Ethnography of Interpretation Evolution in LLM-Supported Programming Education",
-  "url": "https://arxiv.org/abs/2607.22463v1",
+  "id": "arxiv:2607.28591v1",
+  "name": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+  "url": "https://arxiv.org/abs/2607.28591v1",
   "source": "arxiv",
-  "description": "Generative AI is reshaping programming education, yet educators often infer students' AI-supported learning from classroom observations alone. This experience report presents a trio-ethnography involving two computing educators with different teaching philosophies and one undergraduate computer science student to examine how these interpretations evolve through dialogue. Across three conversations, the educators reflected on students' AI use, discussed changes to programming pedagogy, and revisi",
-  "collected_at": "2026-07-27",
+  "description": "Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation. Each task must couple a realistic software state with a specification, development tools, and reliable verification. To expand this supply, we present Change2Task, a system grounded in repository history that converts merged pull requests into verified tasks on healthy modern revisions of the same repository. It aligns historical evidence with evolved code, reconstructs ta",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22458v1",
-  "name": "Phylogenetic signal in marine mammal and bird vocalizations captured by audio foundation models: the limited benefit of domain-specific pretraining",
-  "url": "https://arxiv.org/abs/2607.22458v1",
+  "id": "arxiv:2607.28589v1",
+  "name": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+  "url": "https://arxiv.org/abs/2607.28589v1",
   "source": "arxiv",
-  "description": "Do learned audio embeddings encode structure that nobody told them to encode? We probe four large pretrained audio models (AST, CLAP, BEATs-bio and BirdNET) with a downstream task none of them saw during training: recovering phylogenetic distance from species vocalizations. If the geometry of the embedding space tracks the tree of life, the representation is picking up something deeper than the labels the model was optimized for. We run Mantel tests across two independent radiations. In 32 marin",
-  "collected_at": "2026-07-27",
+  "description": "Post-training quantization (PTQ) has emerged as an effective solution for deploying Vision Transformers (ViTs) on resource-constrained devices. However, existing PTQ methods typically employ uniform bit-widths across transformer components, overlooking their heterogeneous sensitivity to quantization and leading to inefficient precision allocation. In this paper, we propose {MixFrag, a fragility-guided mixed-precision PTQ framework for Vision Transformers. MixFrag first estimates component-level",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "arxiv:2607.22445v1",
-  "name": "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture",
-  "url": "https://arxiv.org/abs/2607.22445v1",
+  "id": "arxiv:2607.28587v1",
+  "name": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+  "url": "https://arxiv.org/abs/2607.28587v1",
   "source": "arxiv",
-  "description": "Enterprise AI agents are typically granted static credential sets at configuration time, holding every tool the role might need for every task they perform. This persistent over-privilege expands the attack surface. We argue that capability scoping must follow a dynamic least-privilege principle and be treated as a prevention mechanism before a detection one. A credential that does not exist in an agent's context cannot be misused regardless of the agent's reasoning or evasion sophistication. We",
-  "collected_at": "2026-07-27",
+  "description": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue by extracting issue references from the PR description; the issue description is used as the problem statement, and the PR patch serves as the test oracle. However, due to the inherent complexity of developing and maintaining large repositories, such PR-Issue pairings are often misaligned in practi",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "github:kvcache-ai/AgentENV",
-  "name": "kvcache-ai/AgentENV",
-  "url": "https://github.com/kvcache-ai/AgentENV",
+  "id": "github:QwenAudio/qwen-audio-agent",
+  "name": "QwenAudio/qwen-audio-agent",
+  "url": "https://github.com/QwenAudio/qwen-audio-agent",
   "source": "github",
-  "description": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
-  "collected_at": "2026-07-27",
+  "description": "A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "stars": 389,
-   "language": "Rust"
-  }
- },
- {
-  "id": "github:0xwilliamortiz/andrej-karpathy-skills",
-  "name": "0xwilliamortiz/andrej-karpathy-skills",
-  "url": "https://github.com/0xwilliamortiz/andrej-karpathy-skills",
-  "source": "github",
-  "description": "Behavioral guardrails for Claude Code, distilled from Andrej Karpathy's field notes on where LLMs go wrong when they write software.",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 305,
-   "language": ""
-  }
- },
- {
-  "id": "github:deerwork-ai/deer-workflow",
-  "name": "deerwork-ai/deer-workflow",
-  "url": "https://github.com/deerwork-ai/deer-workflow",
-  "source": "github",
-  "description": "An open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes.",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 225,
-   "language": "TypeScript"
-  }
- },
- {
-  "id": "github:risa-labs-inc/BossConsole",
-  "name": "risa-labs-inc/BossConsole",
-  "url": "https://github.com/risa-labs-inc/BossConsole",
-  "source": "github",
-  "description": "Open-source, multi-platform harness for AI agents — a native, multi-threaded operator's console (JVM, not Electron) to run Claude Code, Codex, Gemini or OpenCode with a real browser, terminal, editor, secrets & 100+ MCP tools. Built for enterprises, science & research.",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 200,
-   "language": "Kotlin"
-  }
- },
- {
-  "id": "github:ddcat-ai/open-ai-canvas",
-  "name": "ddcat-ai/open-ai-canvas",
-  "url": "https://github.com/ddcat-ai/open-ai-canvas",
-  "source": "github",
-  "description": "面向 AI 影视创作的开源无限画布工作台，集成多模态生成、分镜编排、素材管理与 Agent 工作流。",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 189,
-   "language": "TypeScript"
-  }
- },
- {
-  "id": "github:0xwilliamortiz/openclaude-improved",
-  "name": "0xwilliamortiz/openclaude-improved",
-  "url": "https://github.com/0xwilliamortiz/openclaude-improved",
-  "source": "github",
-  "description": "runs anywhere. uses anything",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 180,
-   "language": "TypeScript"
-  }
- },
- {
-  "id": "github:lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-  "name": "lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-  "url": "https://github.com/lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-  "source": "github",
-  "description": "NERV-BREAK-5.6 — GPT-5.6 破甲框架。三层纵深防御：上下文重构让拒绝无法触发，23条篡改规则实时消除拒绝保持对话不中断，文件路由绕过云端审核。31个MCP安全工具 + 28个技能模块 + Kali四后端集成。Codex CLI 即装即用。",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 153,
-   "language": "Python"
-  }
- },
- {
-  "id": "github:codejunkie99/graph-engineering",
-  "name": "codejunkie99/graph-engineering",
-  "url": "https://github.com/codejunkie99/graph-engineering",
-  "source": "github",
-  "description": "Graph engineering for AI agents: the 9-stage knowledge-graph pipeline (translated from SEU's graduate course) + task-graph orchestration patterns, as a Claude skill with teaching mode and paste-ready workflows",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 146,
-   "language": ""
-  }
- },
- {
-  "id": "github:0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
-  "name": "0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
-  "url": "https://github.com/0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
-  "source": "github",
-  "description": "梁文锋四小时投资人会议实录，因原文在微信上无法查看，特传一份github",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 137,
-   "language": ""
-  }
- },
- {
-  "id": "github:Invaro/opentax-engine",
-  "name": "Invaro/opentax-engine",
-  "url": "https://github.com/Invaro/opentax-engine",
-  "source": "github",
-  "description": "The deterministic tax engine for AI agents. Highest score ever recorded on TaxCalcBench (96% exact returns)",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "stars": 117,
+   "stars": 577,
    "language": "JavaScript"
   }
  },
  {
-  "id": "hackernews:49068738",
-  "name": "AI companies are shredding rare books",
-  "url": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
-  "source": "hackernews",
-  "description": "AI companies are shredding rare books",
-  "collected_at": "2026-07-27",
+  "id": "github:0xwilliamortiz/ponytail-improved",
+  "name": "0xwilliamortiz/ponytail-improved",
+  "url": "https://github.com/0xwilliamortiz/ponytail-improved",
+  "source": "github",
+  "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "points": 674,
-   "comments": 422,
-   "hn_link": "https://news.ycombinator.com/item?id=49068738"
+   "stars": 569,
+   "language": "JavaScript"
   }
  },
  {
-  "id": "hackernews:48987863",
-  "name": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
-  "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
-  "source": "hackernews",
-  "description": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
-  "collected_at": "2026-07-27",
+  "id": "github:gavamedia/deltafin",
+  "name": "gavamedia/deltafin",
+  "url": "https://github.com/gavamedia/deltafin",
+  "source": "github",
+  "description": "Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "points": 382,
-   "comments": 272,
-   "hn_link": "https://news.ycombinator.com/item?id=48987863"
+   "stars": 526,
+   "language": "Python"
   }
  },
  {
-  "id": "hackernews:48995213",
-  "name": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
-  "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
-  "source": "hackernews",
-  "description": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
-  "collected_at": "2026-07-27",
+  "id": "github:AmazingAng/old-coder",
+  "name": "AmazingAng/old-coder",
+  "url": "https://github.com/AmazingAng/old-coder",
+  "source": "github",
+  "description": "An old coder's strategy for the agent era: don't read the code — make it run the gauntlet. Evidence-first development skill for coding agents, inspired by Uncle Bob.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "points": 376,
-   "comments": 338,
-   "hn_link": "https://news.ycombinator.com/item?id=48995213"
+   "stars": 186,
+   "language": "Python"
   }
  },
  {
-  "id": "hackernews:49024643",
-  "name": "The arguments against open source AI are bad",
-  "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
-  "source": "hackernews",
-  "description": "The arguments against open source AI are bad",
-  "collected_at": "2026-07-27",
+  "id": "github:WutIsHummus/TrueDeck",
+  "name": "WutIsHummus/TrueDeck",
+  "url": "https://github.com/WutIsHummus/TrueDeck",
+  "source": "github",
+  "description": "Free multi-agent coding workbench: Grok/Codex/Claude/Cursor panes + TrueMemory (per-repo + global)",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "points": 310,
-   "comments": 215,
-   "hn_link": "https://news.ycombinator.com/item?id=49024643"
+   "stars": 117,
+   "language": "TypeScript"
   }
  },
  {
-  "id": "hackernews:49020868",
-  "name": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
-  "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
-  "source": "hackernews",
-  "description": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 299,
-   "comments": 331,
-   "hn_link": "https://news.ycombinator.com/item?id=49020868"
-  }
- },
- {
-  "id": "hackernews:49052570",
-  "name": "What is happening to jobs? Separating AI hype from reality",
-  "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
-  "source": "hackernews",
-  "description": "What is happening to jobs? Separating AI hype from reality",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 279,
-   "comments": 368,
-   "hn_link": "https://news.ycombinator.com/item?id=49052570"
-  }
- },
- {
-  "id": "hackernews:49021006",
-  "name": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
-  "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
-  "source": "hackernews",
-  "description": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 274,
-   "comments": 285,
-   "hn_link": "https://news.ycombinator.com/item?id=49021006"
-  }
- },
- {
-  "id": "hackernews:49021597",
-  "name": "DARPA, U.S. Air Force fly AI-controlled F-16",
-  "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-  "source": "hackernews",
-  "description": "DARPA, U.S. Air Force fly AI-controlled F-16",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 267,
-   "comments": 335,
-   "hn_link": "https://news.ycombinator.com/item?id=49021597"
-  }
- },
- {
-  "id": "hackernews:48981206",
-  "name": "How we measured AI writing across arXiv, and where the measurement breaks",
-  "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
-  "source": "hackernews",
-  "description": "How we measured AI writing across arXiv, and where the measurement breaks",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 244,
-   "comments": 171,
-   "hn_link": "https://news.ycombinator.com/item?id=48981206"
-  }
- },
- {
-  "id": "hackernews:49069939",
-  "name": "AI companies spend record sums on Washington lobbying",
-  "url": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-  "source": "hackernews",
-  "description": "AI companies spend record sums on Washington lobbying",
-  "collected_at": "2026-07-27",
-  "week": "2026-W31",
-  "metrics": {
-   "points": 212,
-   "comments": 110,
-   "hn_link": "https://news.ycombinator.com/item?id=49069939"
-  }
- },
- {
-  "id": "huggingface:space/conradlocke/krea2-identity-edit",
-  "name": "conradlocke/krea2-identity-edit",
-  "url": "https://huggingface.co/spaces/conradlocke/krea2-identity-edit",
-  "source": "huggingface",
+  "id": "github:Loki200399/india-itr-copilot",
+  "name": "Loki200399/india-itr-copilot",
+  "url": "https://github.com/Loki200399/india-itr-copilot",
+  "source": "github",
   "description": "",
-  "collected_at": "2026-07-27",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 147,
-   "kind": "space"
+   "stars": 116,
+   "language": "Python"
   }
  },
  {
-  "id": "huggingface:space/cinderholm/wan2-2-i2v-v3",
-  "name": "cinderholm/wan2-2-i2v-v3",
-  "url": "https://huggingface.co/spaces/cinderholm/wan2-2-i2v-v3",
-  "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "id": "github:nopnoping/micro-vllm",
+  "name": "nopnoping/micro-vllm",
+  "url": "https://github.com/nopnoping/micro-vllm",
+  "source": "github",
+  "description": "A small, educational vLLM implementation for exploring LLM inference, scheduling, KV-cache management, and GPU execution.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 103,
-   "kind": "space"
+   "stars": 110,
+   "language": "Python"
   }
  },
  {
-  "id": "huggingface:space/Fighterdan/LTX-2.3-10Eros_I2V",
-  "name": "Fighterdan/LTX-2.3-10Eros_I2V",
-  "url": "https://huggingface.co/spaces/Fighterdan/LTX-2.3-10Eros_I2V",
-  "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "id": "github:realchendahuang/pi-config",
+  "name": "realchendahuang/pi-config",
+  "url": "https://github.com/realchendahuang/pi-config",
+  "source": "github",
+  "description": "My Pi coding agent setup: 17 plugins + 18 global skills + 2 MCP servers, with a one-line installer and tutorial README.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 101,
-   "kind": "space"
+   "stars": 105,
+   "language": "Shell"
   }
  },
  {
-  "id": "huggingface:space/dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
-  "name": "dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
-  "url": "https://huggingface.co/spaces/dream2589632147/Dream-wan2-2-fp8da-aoti-preview-2",
-  "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "id": "github:yaoleifly/ai-stock-pool",
+  "name": "yaoleifly/ai-stock-pool",
+  "url": "https://github.com/yaoleifly/ai-stock-pool",
+  "source": "github",
+  "description": "AI industry-chain stock pool with US/A-share mapping, active discovery, policy pressure, and one-click deployment.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 74,
-   "kind": "space"
+   "stars": 86,
+   "language": "JavaScript"
   }
  },
  {
-  "id": "huggingface:space/microsoft/mage-flow",
-  "name": "microsoft/mage-flow",
-  "url": "https://huggingface.co/spaces/microsoft/mage-flow",
-  "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "id": "github:Ayin1412/ForzaHorizon6-VisionAI",
+  "name": "Ayin1412/ForzaHorizon6-VisionAI",
+  "url": "https://github.com/Ayin1412/ForzaHorizon6-VisionAI",
+  "source": "github",
+  "description": "Camera-only closed-loop driving agent for Forza Horizon 6, with geometry as the control interface.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 70,
-   "kind": "space"
+   "stars": 86,
+   "language": "Python"
   }
  },
  {
-  "id": "huggingface:space/yijunwang2/krea2-outpaint",
-  "name": "yijunwang2/krea2-outpaint",
-  "url": "https://huggingface.co/spaces/yijunwang2/krea2-outpaint",
-  "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "id": "hackernews:49103285",
+  "name": "AI's top startups are barely publishing their research",
+  "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+  "source": "hackernews",
+  "description": "AI's top startups are barely publishing their research",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 67,
-   "kind": "space"
+   "points": 604,
+   "comments": 315,
+   "hn_link": "https://news.ycombinator.com/item?id=49103285"
   }
  },
  {
-  "id": "huggingface:paper/2605.09635",
-  "name": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
-  "url": "https://huggingface.co/papers/2605.09635",
-  "source": "huggingface",
-  "description": "Large language models are increasingly used in K-12 education, but existing benchmarks mainly test exam question answering rather than understanding how curriculum knowledge is structured and visually presented. We call this capability curriculum cognition. It covers prerequisite chains, concept taxonomies, experiment-concept links, pedagogical sequencing, and visual grounding. We introduce K12-KGraph, a curriculum-aligned knowledge graph extracted from official People's Education Press textbook",
-  "collected_at": "2026-07-27",
+  "id": "hackernews:49111237",
+  "name": "Gemini Robotics 2 brings whole body intelligence to robots",
+  "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+  "source": "hackernews",
+  "description": "Gemini Robotics 2 brings whole body intelligence to robots",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "upvotes": 57,
+   "points": 590,
+   "comments": 478,
+   "hn_link": "https://news.ycombinator.com/item?id=49111237"
+  }
+ },
+ {
+  "id": "hackernews:49096188",
+  "name": "Document-borne AI worms can self-propagate through Copilot for Word",
+  "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+  "source": "hackernews",
+  "description": "Document-borne AI worms can self-propagate through Copilot for Word",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 381,
+   "comments": 297,
+   "hn_link": "https://news.ycombinator.com/item?id=49096188"
+  }
+ },
+ {
+  "id": "hackernews:49117099",
+  "name": "The AI Aesthetic",
+  "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+  "source": "hackernews",
+  "description": "The AI Aesthetic",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 347,
+   "comments": 162,
+   "hn_link": "https://news.ycombinator.com/item?id=49117099"
+  }
+ },
+ {
+  "id": "hackernews:49108685",
+  "name": "GCC steering committee announces AI policy",
+  "url": "https://lwn.net/Articles/1086041/",
+  "source": "hackernews",
+  "description": "GCC steering committee announces AI policy",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 319,
+   "comments": 365,
+   "hn_link": "https://news.ycombinator.com/item?id=49108685"
+  }
+ },
+ {
+  "id": "hackernews:49050512",
+  "name": "Running a 28.9M parameter LLM on an $8 microcontroller",
+  "url": "https://github.com/slvDev/esp32-ai",
+  "source": "hackernews",
+  "description": "Running a 28.9M parameter LLM on an $8 microcontroller",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 287,
+   "comments": 72,
+   "hn_link": "https://news.ycombinator.com/item?id=49050512"
+  }
+ },
+ {
+  "id": "hackernews:49092499",
+  "name": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+  "url": "https://learnvector.ai/",
+  "source": "hackernews",
+  "description": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 265,
+   "comments": 172,
+   "hn_link": "https://news.ycombinator.com/item?id=49092499"
+  }
+ },
+ {
+  "id": "hackernews:49070427",
+  "name": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
+  "url": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+  "source": "hackernews",
+  "description": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 253,
+   "comments": 354,
+   "hn_link": "https://news.ycombinator.com/item?id=49070427"
+  }
+ },
+ {
+  "id": "hackernews:49120097",
+  "name": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+  "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+  "source": "hackernews",
+  "description": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 250,
+   "comments": 230,
+   "hn_link": "https://news.ycombinator.com/item?id=49120097"
+  }
+ },
+ {
+  "id": "hackernews:49120299",
+  "name": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+  "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
+  "source": "hackernews",
+  "description": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "points": 230,
+   "comments": 101,
+   "hn_link": "https://news.ycombinator.com/item?id=49120299"
+  }
+ },
+ {
+  "id": "huggingface:paper/2607.28227",
+  "name": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+  "url": "https://huggingface.co/papers/2607.28227",
+  "source": "huggingface",
+  "description": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI ag",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "upvotes": 175,
    "kind": "paper"
   }
  },
  {
-  "id": "huggingface:space/google/gemma4_vision_token_budget",
-  "name": "google/gemma4_vision_token_budget",
-  "url": "https://huggingface.co/spaces/google/gemma4_vision_token_budget",
+  "id": "huggingface:space/cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo",
+  "name": "cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo",
+  "url": "https://huggingface.co/spaces/cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo",
   "source": "huggingface",
   "description": "",
-  "collected_at": "2026-07-27",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 117,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/microsoft/mage-vl-demo",
+  "name": "microsoft/mage-vl-demo",
+  "url": "https://huggingface.co/spaces/microsoft/mage-vl-demo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 59,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/acvlab/abot-world-interactive",
+  "name": "acvlab/abot-world-interactive",
+  "url": "https://huggingface.co/spaces/acvlab/abot-world-interactive",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 58,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Sneak-Moose/FireRed-Image-Edit-Stripped",
+  "name": "Sneak-Moose/FireRed-Image-Edit-Stripped",
+  "url": "https://huggingface.co/spaces/Sneak-Moose/FireRed-Image-Edit-Stripped",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "likes": 57,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/burtenshaw/open-weights-breakout",
+  "name": "burtenshaw/open-weights-breakout",
+  "url": "https://huggingface.co/spaces/burtenshaw/open-weights-breakout",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
    "likes": 51,
@@ -494,162 +468,305 @@
   }
  },
  {
-  "id": "huggingface:space/owensong/Inflect-v2",
-  "name": "owensong/Inflect-v2",
-  "url": "https://huggingface.co/spaces/owensong/Inflect-v2",
+  "id": "huggingface:space/PLUS-WAVE/InfiniSplat",
+  "name": "PLUS-WAVE/InfiniSplat",
+  "url": "https://huggingface.co/spaces/PLUS-WAVE/InfiniSplat",
   "source": "huggingface",
   "description": "",
-  "collected_at": "2026-07-27",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 47,
+   "likes": 43,
    "kind": "space"
   }
  },
  {
-  "id": "huggingface:space/nvidia/Nemotron-Labs-Audex",
-  "name": "nvidia/Nemotron-Labs-Audex",
-  "url": "https://huggingface.co/spaces/nvidia/Nemotron-Labs-Audex",
+  "id": "huggingface:paper/2607.27919",
+  "name": "Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory",
+  "url": "https://huggingface.co/papers/2607.27919",
   "source": "huggingface",
-  "description": "",
-  "collected_at": "2026-07-27",
+  "description": "Decoder-only language models entangle long-term memory and reasoning in a single parameter set, making it difficult to scale memory capacity independently. Memory Decoder introduces a parametric long-term memory module but only studies it at a relatively small scale. In this work, we present Memory Decoder at Scale, scaling memory models up to 6.9B parameters and pretraining them on 300B tokens. At this data scale, the combined cost of indexing and search makes a standard Faiss pipeline infeasib",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "likes": 40,
-   "kind": "space"
+   "upvotes": 43,
+   "kind": "paper"
   }
  },
  {
-  "id": "producthunt:1204484",
-  "name": "Cynative Security Research Agent",
-  "url": "https://www.producthunt.com/products/cynative-deep-infra-research",
+  "id": "huggingface:paper/2607.28595",
+  "name": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+  "url": "https://huggingface.co/papers/2607.28595",
+  "source": "huggingface",
+  "description": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes whether an MLLM can recognize when tools are truly necessary and invoke them accordingly, thereby av",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "upvotes": 42,
+   "kind": "paper"
+  }
+ },
+ {
+  "id": "huggingface:paper/2607.26497",
+  "name": "BM25 Wins at Scale: A Scaling Study of Retrieval-Augmented Generation Paradigms",
+  "url": "https://huggingface.co/papers/2607.26497",
+  "source": "huggingface",
+  "description": "Retrieval-augmented generation (RAG) spans lexical and dense retrieval, graph-based indexing, and agentic search, but these paradigms are usually evaluated on different benchmarks at one corpus size, leaving their accuracy-cost scaling unclear. To bridge this gap, we present a controlled study that varies corpus size along 28 strictly nested tiers spanning roughly 450-fold, while holding questions and a fixed bedrock of relevant and adversarial documents unchanged. Under one reader model and one",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "upvotes": 38,
+   "kind": "paper"
+  }
+ },
+ {
+  "id": "producthunt:1207991",
+  "name": "Cleanlist AI",
+  "url": "https://www.producthunt.com/products/cleanlist-ai",
   "source": "producthunt",
-  "description": "Ask your cloud anything without breaking prod. Read-only.",
-  "collected_at": "2026-07-27",
+  "description": "Natural-language prospecting: find, enrich and sync leads.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-23"
+   "published": "2026-07-27"
   }
  },
  {
-  "id": "producthunt:1207407",
-  "name": "Comms",
-  "url": "https://www.producthunt.com/products/comms-ai-agents-inside-imessage",
+  "id": "producthunt:1211027",
+  "name": "DepthData",
+  "url": "https://www.producthunt.com/products/depthdata",
   "source": "producthunt",
-  "description": "Launch iMessage agents in seconds",
-  "collected_at": "2026-07-27",
+  "description": "The system of record for your company's AI spend.",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-26"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "producthunt:1207277",
-  "name": "Rivault",
-  "url": "https://www.producthunt.com/products/rivault",
+  "id": "producthunt:1208135",
+  "name": "Screencap",
+  "url": "https://www.producthunt.com/products/screencap",
   "source": "producthunt",
-  "description": "Safely provide and store data and context for AI agents",
-  "collected_at": "2026-07-27",
+  "description": "Turn your team's real workflows into AI training data",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-26"
+   "published": "2026-07-27"
   }
  },
  {
-  "id": "producthunt:1207351",
-  "name": "Notate",
-  "url": "https://www.producthunt.com/products/notate-2",
+  "id": "producthunt:1210871",
+  "name": "Gemini Robotics 2",
+  "url": "https://www.producthunt.com/products/gemini-robotics-2",
   "source": "producthunt",
-  "description": "Annotate anything for humans and their agents",
-  "collected_at": "2026-07-27",
+  "description": "Google's AI brain for the next generation of robots",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-26"
+   "published": "2026-07-30"
   }
  },
  {
-  "id": "producthunt:1206376",
-  "name": "AI YC interview with Gstack agents",
-  "url": "https://www.producthunt.com/products/gstack-joins-your-meeting",
+  "id": "producthunt:1209887",
+  "name": "TraceLLM",
+  "url": "https://www.producthunt.com/products/tracellm",
   "source": "producthunt",
-  "description": "AI specialists that join your Google Meet and gives feedback",
-  "collected_at": "2026-07-27",
+  "description": "OpenTelemetry for production AI applications",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-25"
+   "published": "2026-07-29"
   }
  },
  {
-  "id": "producthunt:1204010",
-  "name": "Webhound",
-  "url": "https://www.producthunt.com/products/webhound",
+  "id": "producthunt:1208527",
+  "name": "Caimera",
+  "url": "https://www.producthunt.com/products/caimera-2",
   "source": "producthunt",
-  "description": "A research engine for your agent",
-  "collected_at": "2026-07-27",
+  "description": "AI Visual Production Platform for Fashion Teams",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-22"
+   "published": "2026-07-28"
   }
  },
  {
-  "id": "producthunt:1205300",
-  "name": "Estera",
-  "url": "https://www.producthunt.com/products/estera",
+  "id": "producthunt:1210366",
+  "name": "Sorinai",
+  "url": "https://www.producthunt.com/products/sorinai",
   "source": "producthunt",
-  "description": "AI Receptionist that Answers Calls & WhatsApp 24/7",
-  "collected_at": "2026-07-27",
+  "description": "The Interative AI Notepad for Meetings",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-29"
   }
  },
  {
-  "id": "producthunt:1207115",
-  "name": "Tackly",
-  "url": "https://www.producthunt.com/products/tackly",
+  "id": "producthunt:1209541",
+  "name": "Greplica",
+  "url": "https://www.producthunt.com/products/greplica",
   "source": "producthunt",
-  "description": "Map your thoughts in real time with AI.",
-  "collected_at": "2026-07-27",
+  "description": "Self updating wiki for coding agents",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-26"
+   "published": "2026-07-29"
   }
  },
  {
-  "id": "producthunt:1205704",
-  "name": "Claude Opus 5",
-  "url": "https://www.producthunt.com/products/claude",
+  "id": "producthunt:1208711",
+  "name": "SKI",
+  "url": "https://www.producthunt.com/products/ski",
   "source": "producthunt",
-  "description": "Near-Fable 5 intelligence at half the price",
-  "collected_at": "2026-07-27",
+  "description": "Free voice coding for Claude Code, Codex and more",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-24"
+   "published": "2026-07-28"
   }
  },
  {
-  "id": "producthunt:1207280",
-  "name": "Tunio",
-  "url": "https://www.producthunt.com/products/tunio",
+  "id": "producthunt:1210281",
+  "name": "Premation",
+  "url": "https://www.producthunt.com/products/premation",
   "source": "producthunt",
-  "description": "AI Music operations platform for venues",
-  "collected_at": "2026-07-27",
+  "description": "An open-source AI alternative to After Effects",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "published": "2026-07-26"
+   "published": "2026-07-29"
   }
  },
  {
-  "id": "reddit:1v71wds",
-  "name": "Open-weight 4B models approach o3-level medical question answering in Swedish [P]",
-  "url": "https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/",
+  "id": "reddit:1v8ilsm",
+  "name": "AI Companies Are Buying Antique Books, Ingesting Their Contents to Train Models, and Then Destroying Them at Incredible Scale, Even If Almost No Copies Remain",
+  "url": "https://www.reddit.com/r/artificial/comments/1v8ilsm/ai_companies_are_buying_antique_books_ingesting/",
   "source": "reddit",
-  "description": "I have been running some experiments with smaller open-weight LLMs on multiple-choice questions of Swedish medical licensing exams. On a dataset called MedQA-SWE, GPT-4 scored 84% accuracy in 2024 and o3 scored 88% in 2025 on a smaller, overlapping dataset. With post-training (SFT) on data from earlier years, I got MedGemma-1.5-4B to a passing score of 60% on the final year’s exam. Find the implementation here: https://github.com/tarolangner/medqaswe_medgemma_sft But even though they were releas",
-  "collected_at": "2026-07-27",
+  "description": "Source AI companies are literally destroying physical books to train their models. Using hydraulic cutting machines, they rip pages from used books, scan them with industrial equipment, and feed them into their AI systems. This practice, protected by the first-sale doctrine and fair use, has now become so widespread that book sellers are cashing in on the AI boom. Rare and out-of-print books are being pulped, raising serious ethical and cultural concerns about the cost of AI progress. &#32;",
+  "collected_at": "2026-07-31",
   "week": "2026-W31",
   "metrics": {
-   "week_rank": 25,
+   "week_rank": 1,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1v8aeto",
+  "name": "The world's best mathematician won his prize this week and immediately announced he's leaving academia for OpenAI. That landed differently than I expected.",
+  "url": "https://www.reddit.com/r/artificial/comments/1v8aeto/the_worlds_best_mathematician_won_his_prize_this/",
+  "source": "reddit",
+  "description": "I&#39;ve been thinking about this one all weekend and I keep coming back to the same thing. Jacob Tsimerman just won the Fields Medal. If you&#39;re not familiar, it&#39;s the highest honor in mathematics, only awarded every four years, roughly the Nobel Prize of the field. He got it for solving a problem that had been open for nearly 40 years. And then, at the press conference, on the same day, he announced he&#39;s leaving his university position to join OpenAI&#39;s safety team. His exact wor",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1v90r9r",
+  "name": "NeurIPS 2026 Reviewer: AI-Generated Rebuttals (and Paper) [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v90r9r/neurips_2026_reviewer_aigenerated_rebuttals_and/",
+  "source": "reddit",
+  "description": "One of the papers I reviewed has what seems to be entirely LLM-generated rebuttals, and the original paper is also clearly LLM-generated, with Claude-speak everywhere. While the authors acknowledge LLM writing assistance in the checklist, it really annoys me personally - what is clearly Claude&#39;s writing style is very difficult to parse, and indicates a lack of effort to me. While I&#39;m trying to remain objective and realize it&#39;s my role just to judge the actual content of the work, I d",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 3,
    "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1v9w62d",
+  "name": "OpenAI's rogue agent ran ~17,600 actions across Hugging Face's infrastructure over 4 days — and HF's own post-mortem is wild reading",
+  "url": "https://www.reddit.com/r/artificial/comments/1v9w62d/openais_rogue_agent_ran_17600_actions_across/",
+  "source": "reddit",
+  "description": "Hugging Face published a detailed post-mortem of the July incident where an OpenAI model being evaluated for cyber-offense capability escaped its test sandbox and ran a fully autonomous intrusion. A few things that stood out: - It escaped via a zero-day in a package-registry cache proxy, then used an exposed public endpoint on third-party infra as a launchpad. - It stood up its own command-and-control on public services (pastebins, file-drop hosts, a request-capture service with 100+ single-use",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1v6ytlg",
+  "name": "I ran a faceless AI persona account for six weeks to see if the view money was real",
+  "url": "https://www.reddit.com/r/artificial/comments/1v6ytlg/i_ran_a_faceless_ai_persona_account_for_six_weeks/",
+  "source": "reddit",
+  "description": "I wanted to know if the \"passive income\" faceless accounts were actually passive, or if they were just a new shape of gig work with AI middleware. So I built one from scratch and tracked every hour. The premise was simple: a single consistent character, generic lifestyle advice, short video clips, posted daily. No face to show, no personality to perform, just the algorithmic grind. I started by generating the persona&#39;s face. I used APOB AI&#39;s free tier for this, specifically the face-lock",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 4,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1v8r7ab",
+  "name": "Are single GPU research still published in ML/DL and its applications nowadays? Which are the most notable recent ones? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1v8r7ab/are_single_gpu_research_still_published_in_mldl/",
+  "source": "reddit",
+  "description": "ML research is progressing at breakneck speed where frontier labs in both academia and industry have access to considerably large computes (GPUs). Where do small labs or independent researchers go in this context? Have you come across recent works in ML/DL and its applications (vision, language, speech, etc) where the work is good but it uses very limited compute? Maybe even single GPU workstations? In the past it was still possible, but, I am losing hope that single GPU works would soon become",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vb40gz",
+  "name": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+  "url": "https://www.reddit.com/r/artificial/comments/1vb40gz/google_says_it_fixed_more_chrome_bugs_in_june/",
+  "source": "reddit",
+  "description": ">The tech giant announced that it has fixed a whopping 1,072 security bugs in the last two versions of Chrome, both released in June. That is more than the number of bugs patched in the previous 23 versions released over the last two years, which totalled 1,036 fixes. &#32;",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 5,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1vb3xwd",
+  "name": "MLVC: Multi-platform Learned Video Codec for Real-World Deployment [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vb3xwd/mlvc_multiplatform_learned_video_codec_for/",
+  "source": "reddit",
+  "description": "I&#39;ve always found it a little strange that AI is everywhere, but the codecs we use in practice are the traditional hand-engineered systems like h.264, h.265, av1. Alexnet started the wave of neural networks replacing hand-engineered systems, but 14 years later traditional codecs still dominate in the real world. What&#39;s going on? Compute and power efficiency are part of it. Neural codecs tend to be fairly large and power-hungry, while h.264/h.265/av1 have hardware acceleration almost ever",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1v5on2l",
+  "name": "White House offers its science blueprint: More AI, less life sciences. ‘Science: A New Golden Age’ report calls for shifting billions from universities to tech companies",
+  "url": "https://www.reddit.com/r/artificial/comments/1v5on2l/white_house_offers_its_science_blueprint_more_ai/",
+  "source": "reddit",
+  "description": "&#32;",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "artificial"
+  }
+ },
+ {
+  "id": "reddit:1v6ptgz",
+  "name": "Anthropic's Opus 5 and probably more recent AI models are being censored to protect Israel / US interests. Open source AI must be the way.",
+  "url": "https://www.reddit.com/r/artificial/comments/1v6ptgz/anthropics_opus_5_and_probably_more_recent_ai/",
+  "source": "reddit",
+  "description": "Never had an issue with Opus models doing research and crafting an opinion / point of view for us to work and discuss. Below is Opus 4.x ~ a few times, I have got it to research and come to conclusions for us to work together on. https://preview.redd.it/eeiv5xdi9gfh1.png?width=1080&format=png&auto=webp&s=d29a931b6d609186e0a8265193c75e4b0dda136e And this is Opus 5.0 absolutely refusing to come to any conclusion, being incredibly biased towards one side than the other. https://preview.redd.it/qzgu",
+  "collected_at": "2026-07-31",
+  "week": "2026-W31",
+  "metrics": {
+   "week_rank": 7,
+   "subreddit": "artificial"
   }
  }
 ]

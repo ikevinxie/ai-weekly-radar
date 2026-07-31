@@ -1,18 +1,18 @@
 {
   "week": "2026-W31",
   "overview": {
-    "zh": "本周，AI 建设者们讨论了 AI 在日常工作中的应用、信任问题以及其对企业的影响。他们还强调了开放权重的重要性，并探讨了未来发展的方向。",
-    "en": "This week, AI builders discussed the practical applications of AI in daily work, trust issues, and its impact on businesses. They also emphasized the importance of open weights and explored future directions."
+    "zh": "本周，AI 建设者们分享了关于 AI 在实际应用中的进展、安全性和未来潜力的观点。从产品开发到企业采用，再到个人生产力的提升，AI 正在逐步改变我们的工作和生活方式。",
+    "en": "This week, AI builders shared insights on the progress, security, and future potential of AI in real-world applications. From product development to enterprise adoption and personal productivity, AI is gradually transforming how we work and live."
   },
   "themes": [
     {
       "title": {
-        "zh": "AI 的实际应用",
-        "en": "Practical Applications of AI"
+        "zh": "AI 的实际应用与影响",
+        "en": "Real-World Applications and Impact of AI"
       },
       "summary": {
-        "zh": "多位专家分享了 AI 如何在日常生活中提供帮助，从处理琐事到规划旅行，展示了 AI 的广泛用途。",
-        "en": "Several experts shared how AI can help in daily life, from handling mundane tasks to planning trips, showcasing its wide-ranging applications."
+        "zh": "本周讨论集中在 AI 如何在日常生活中发挥作用，特别是在提高工作效率和个人生产力方面。此外，还探讨了 AI 在不同行业中的应用以及对企业的潜在影响。",
+        "en": "This week's discussions focused on how AI can be used in daily life, particularly in enhancing work efficiency and personal productivity. Additionally, there was a focus on AI applications across various industries and their potential impact on businesses."
       },
       "quotes": [
         {
@@ -25,26 +25,14 @@
         {
           "author": "Sam Altman",
           "handle": "@sama",
-          "text": "chatgpt work is remarkable, and \"work\" undersells it. from my phone i sent: \"use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready.\" it...just worked.",
+          "text": "chatgpt work is remarkable, and \"work\" undersells it. from my phone i sent: 'use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready.' it...just worked.",
           "url": "https://x.com/sama/status/2081396796174282900",
           "date": "2026-07-26"
-        }
-      ]
-    },
-    {
-      "title": {
-        "zh": "企业中的 AI 应用",
-        "en": "AI in Enterprises"
-      },
-      "summary": {
-        "zh": "讨论了企业在采用 AI 技术时面临的挑战和机会，特别是在与现有系统集成和满足合规要求方面。",
-        "en": "Discussed the challenges and opportunities enterprises face when adopting AI, particularly in integrating with existing systems and meeting compliance requirements."
-      },
-      "quotes": [
+        },
         {
           "author": "Aaron Levie",
           "handle": "@levie",
-          "text": "There’s still so much opportunity in the diffusion of AI into the real world. Most enterprises are going to need a ton of support to be able to apply the model breakthroughs to their workflows. Intelligence alone is not enough to transform most processes because you need to bridge that intelligence with real world feedback loops. That requires connecting to various enterprise systems, getting the right data to the AI, enabling humans to make decisions at different steps in a process through the right UX, having workflows that improve the underlying data and models over time, dealing with regulatory and compliance challenges, and more.",
+          "text": "There’s still so much opportunity in the diffusion of AI into the real world. Most enterprises are going to need a ton of support to be able to apply the model breakthroughs to their workflows.",
           "url": "https://x.com/levie/status/2081491621162668207",
           "date": "2026-07-26"
         }
@@ -52,39 +40,67 @@
     },
     {
       "title": {
-        "zh": "AI 的信任与安全",
-        "en": "Trust and Security in AI"
+        "zh": "AI 的安全性与信任",
+        "en": "Security and Trust in AI"
       },
       "summary": {
-        "zh": "提到了用户对 AI 的信任问题，特别是关于数据隐私和安全的担忧。",
-        "en": "Mentioned the issue of user trust in AI, especially concerning data privacy and security."
+        "zh": "本周提到了 AI 安全性的重要性，尤其是在企业环境中。讨论了如何确保 AI 代理的安全运行，以及用户对 AI 工具的信任问题。",
+        "en": "This week highlighted the importance of AI security, especially in enterprise environments. Discussions included ensuring the safe operation of AI agents and addressing user trust in AI tools."
       },
       "quotes": [
         {
           "author": "Peter Yang",
           "handle": "@petergyang",
-          "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's \"do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.\"",
+          "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's 'do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.'",
           "url": "https://x.com/petergyang/status/2081555286817648738",
           "date": "2026-07-27"
+        },
+        {
+          "author": "Guillermo Rauch",
+          "handle": "@rauchg",
+          "text": "Kimi's paper underlines the importance of the right security boundary for agents to run in. tl:DR: container-level isolation is not enough. In their experiments, agents crashed the underlying machine (via kernel panics). Firecracker microVMs (as in Vercel Sandbox) are safe.",
+          "url": "https://x.com/rauchg/status/2081842439304995169",
+          "date": "2026-07-27"
+        },
+        {
+          "author": "Aaron Levie",
+          "handle": "@levie",
+          "text": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.",
+          "url": "https://x.com/levie/status/2082514776392175844",
+          "date": "2026-07-29"
         }
       ]
     },
     {
       "title": {
-        "zh": "开放权重的重要性",
-        "en": "Importance of Open Weights"
+        "zh": "AI 的未来趋势",
+        "en": "Future Trends in AI"
       },
       "summary": {
-        "zh": "强调了开放权重对于推动技术创新和发展的重要性。",
-        "en": "Emphasized the importance of open weights in driving technological innovation and development."
+        "zh": "本周讨论了 AI 的未来发展，包括新的技术突破、模型能力的提升以及对社会的影响。一些发言者强调了 AI 在科学发现和创新方面的潜力。",
+        "en": "This week's discussions covered the future of AI, including new technological breakthroughs, increased model capabilities, and their societal impact. Some speakers emphasized the potential of AI in scientific discovery and innovation."
       },
       "quotes": [
         {
-          "author": "Guillermo Rauch",
-          "handle": "@rauchg",
-          "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. Open source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world. Open weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
-          "url": "https://x.com/rauchg/status/2081546513885622760",
-          "date": "2026-07-27"
+          "author": "Amjad Masad",
+          "handle": "@amasad",
+          "text": "We’re entering a new era of exploration. Our ancestors mapped the Earth. Then they explored space. Our generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search.",
+          "url": "https://x.com/amasad/status/2082000490066592127",
+          "date": "2026-07-28"
+        },
+        {
+          "author": "Sam Altman",
+          "handle": "@sama",
+          "text": "so excited for this. very close to models that will significantly accelerate scientific discovery; the best way to do this is for us to empower scientists, not to try to figure out everything ourselves. we all deserve the benefits.",
+          "url": "https://x.com/sama/status/2082628413769003269",
+          "date": "2026-07-30"
+        },
+        {
+          "author": "Zara Zhang",
+          "handle": "@zarazhangrui",
+          "text": "If you both have deep domain expertise & experience AND you’re AI-native and constantly reinventing yourself to adopt the new ways that work get done, you’re basically invincible",
+          "url": "https://x.com/zarazhangrui/status/2082705944782520462",
+          "date": "2026-07-30"
         }
       ]
     }
