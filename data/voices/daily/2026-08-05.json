@@ -1,0 +1,282 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "smol aha moment at @_chenglou’s @midjourney meetup today - \n\none reason that ontologies and graph knowledge are finally trending now rather than 3 years ago is  that “good enough” intelligence is finally too cheap to meter\n\nthis is why talks like @coyle_frankp and @emileifrem’s are on fire.  the hardest part of KGs is cheap now. intelligence is commoditized so complements are increasing in value",
+  "url": "https://x.com/swyx/status/2084832553895444570",
+  "date": "2026-08-05",
+  "likes": 23
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "confirmation here https://t.co/gTKw1zNLzd",
+  "url": "https://x.com/swyx/status/2084738591109038187",
+  "date": "2026-08-04",
+  "likes": 3
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "yes https://t.co/yWb8PQwaxS https://t.co/dQwnFxZxqO",
+  "url": "https://x.com/swyx/status/2084698630653641092",
+  "date": "2026-08-04",
+  "likes": 89
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "Notebook is built for thinking, not toggling.\n\nWhile others add more modes, Notebook keeps everything in a single, unified prompt bar and just does the things you want.\n\nUltra and Pro subscribers can jump in now, rolling out to everyone next. https://t.co/X02sfCEnCI",
+  "url": "https://x.com/joshwoodward/status/2084746170576892342",
+  "date": "2026-08-04",
+  "likes": 341
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "Nice use case! https://t.co/EZlX8axJt0",
+  "url": "https://x.com/joshwoodward/status/2084698846609682675",
+  "date": "2026-08-04",
+  "likes": 145
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Better Cyber. Excited to welcome Halvar Flake to the team soon. https://t.co/5ZWQ6yydY4",
+  "url": "https://x.com/thsottiaux/status/2084859308165271658",
+  "date": "2026-08-05",
+  "likes": 467
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "What is my title at OpenAI",
+  "url": "https://x.com/thsottiaux/status/2084738022650892544",
+  "date": "2026-08-04",
+  "likes": 1464
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I think if you vibe code a SaaS these days it can just be a self-serve funnel into a more expensive services offering vs. trying to make alot of money with the SaaS itself.\n\nBut the only thing about services is it feels like consulting and selling \"time for money\" again.",
+  "url": "https://x.com/petergyang/status/2084855632029774167",
+  "date": "2026-08-05",
+  "likes": 49
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Hearing that GPT 5.6 Luna High is much cheaper and basically unlimited usage and I'm running low on Sol :P \n\nCan it do complex browser automation tasks? That's 50% of my Codex usage. https://t.co/v6nEn0z9Rc",
+  "url": "https://x.com/petergyang/status/2084849701351035182",
+  "date": "2026-08-05",
+  "likes": 58
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Easier to make more money from @X payouts than from a micro SaaS these days",
+  "url": "https://x.com/petergyang/status/2084846191456751725",
+  "date": "2026-08-05",
+  "likes": 25
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Old heads remember Will Smith eating noodles https://t.co/ay1A5ahaEV",
+  "url": "https://x.com/thenanyu/status/2084800235474178138",
+  "date": "2026-08-05",
+  "likes": 11
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "The real ones remember https://t.co/uKcctkLFNK",
+  "url": "https://x.com/thenanyu/status/2084772618314428627",
+  "date": "2026-08-04",
+  "likes": 6
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Ok builders, here’s your playbook. \n\nPrototype your product with the best frontier model. Cost be damned. \nValidate the user experience.\n\nThen, 6-8 weeks later when open-weight models catch up - move your production workloads there, and to smaller models where possible.\n\nIn that order. Don’t start with the cheapest model.",
+  "url": "https://x.com/realmadhuguru/status/2084809416105472070",
+  "date": "2026-08-05",
+  "likes": 17
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "The best model for early product validation is almost never the best model for production.\n\nTalked to a bunch of founders this weekend. There’s a standard playbook emerging :\n\n1/ Prototype with the best frontier models. Max quality. Ignore cost and latency.\nLearn what users actually want and iterate. \n\n2/ Once the workflow and UX is validated, optimize like crazy for cost and latency - prompt eng, model routing, harnesses, smaller models, fine tuning. \n\nI see most teams get stuck in step 1.",
+  "url": "https://x.com/realmadhuguru/status/2084667443046502631",
+  "date": "2026-08-04",
+  "likes": 40
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "One might say, the investigation was Bari’d. https://t.co/YhdfHFSB2j",
+  "url": "https://x.com/amasad/status/2084843512496034002",
+  "date": "2026-08-05",
+  "likes": 168
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Vercel is the Vercel for backends.\n\n@FactoryAI powers their API services with Fluid compute, with billions of requests per month. https://t.co/Xmgrgd3qjz",
+  "url": "https://x.com/rauchg/status/2084804138169446449",
+  "date": "2026-08-05",
+  "likes": 188
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "1 line of code in @aisdk saves you 90% or more in DeepSeek v4 Flash AI Gateway tokens https://t.co/bcT8sqF120",
+  "url": "https://x.com/rauchg/status/2084779435866398801",
+  "date": "2026-08-04",
+  "likes": 238
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "𝟸𝟶𝟸𝟼 𝟷,𝟶𝟿𝟹,𝟷𝟿𝟿,𝟿𝟾𝟽+ https://t.co/RG3Lv9rURD",
+  "url": "https://x.com/rauchg/status/2084682618927558811",
+  "date": "2026-08-04",
+  "likes": 398
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "One fun benefit of spending so much time with enterprises is you get to see the array of AI implementation strategies that exist in companies right now. \n\nUnlike the early innings of cloud where there were really only a couple deployment patterns available -including being limited by only a couple infra vendors existing- AI actually has a much wider range of approaches in the enterprise.\n\nIf you ask 10 IT leaders what their coding agent strategy looks like, you get at least 5 different answers. If you ask about their end-user productivity agents, some have standardized on ChatGPT or Claude, others offer a choice of multiple solutions, and many have built their own orchestration layers for employees to use any model. \n\nFor models, we know the big ones, but increasingly enterprises are experimenting with OSS models, or are at least immensely curious about OSS and would jump at the right offering that felt safe. And increasingly there’s a set of vertical models and agents that equally show up in enterprises for a range of tailored use-cases.\n\nFor accessing data, some enterprises just have agents take on the role of the user, and others are setting up agent users that have their own identities. Some companies are setting up substantial guardrails on what agents can do, and others are putting responsibility on the user.\n\nGiven this heterogeneity this early on at the start, it means we’re in for years of landscape changes. Anyone who’s predicting ultimate market outcomes already probably will be wrong as nothing has formally settled in yet. Lots of opportunity ahead.",
+  "url": "https://x.com/levie/status/2084828773808239080",
+  "date": "2026-08-05",
+  "likes": 145
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "It's insane that the CA Dem Party is endorsing yes on Prop 40, the asset seizure tax that will destroy the California tax base https://t.co/17m33X6WmK",
+  "url": "https://x.com/garrytan/status/2084704793432588435",
+  "date": "2026-08-04",
+  "likes": 1140
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "If you want housing prices to go down, you build more housing. Markets work. \n\nIf you want housing prices to go up, you try to abolish rent and foment mass asset seizure and expropriation. The revolution only serves those who foment it. https://t.co/1CTz9fsHV3 https://t.co/dWY6o46A6C",
+  "url": "https://x.com/garrytan/status/2084650011288375751",
+  "date": "2026-08-04",
+  "likes": 241
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "Everyone on X: \"damn, Airtable sold for so low!\"\n\nMany SaaS founders, secretly: \"damn, I'd take that any day, at least they had an exit\"",
+  "url": "https://x.com/mattturck/status/2084759190195536202",
+  "date": "2026-08-04",
+  "likes": 117
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "What the world              What Europeans \nthinks Europeans            in tech actually in tech do in the               do in the \nSummer.                             Summer. https://t.co/q1xFKyBwdt",
+  "url": "https://x.com/mattturck/status/2084635916480450888",
+  "date": "2026-08-04",
+  "likes": 110
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Contrary to popular perception, most people will not adopt a new technology just because it makes them more efficient.\n\nInstead, they’ll adopt new technology because:\n- Someone they know who’s similar to them on some dimension adopted the technology, and got positive results (eg became cooler, richer, more popular/respected), and they wanna become like that person \n- They feel like everyone around them has adopted the technology, and if they don’t, they’ll be left behind\n\nNotice that it’s not entirely a rational decision. It’s more of an EMOTIONAL decision.\n\nSo if you’re trying to make someone adopt a new technology, the messaging shouldn’t be “this will make you 10x more efficient!” It should be “So-and-so, someone you can relate to, has adopted this and look how much better their life has become; wouldn’t it be nice to be like them?”\n\nThis book reminds you of that. It can be distilled in one sentence: “The diffusion of technology is a SOCIAL process”",
+  "url": "https://x.com/zarazhangrui/status/2084828855404294266",
+  "date": "2026-08-05",
+  "likes": 90
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "The best AI training isn't a course. It's pulling an agent into your team's group chat &amp; letting people watch it work\n\nEvery company rolling out \"AI enablement programs\" should try that first https://t.co/L1jub0HgYw",
+  "url": "https://x.com/zarazhangrui/status/2084635984164237792",
+  "date": "2026-08-04",
+  "likes": 44
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "How to judge if a meeting is efficient:\n\nAn efficient meeting has no to-do list left behind, because all the actions are done DURING the meeting (either by agents who listen to the meeting in real time or by humans)\n\nThe gap between saying and doing should be zero, and meetings become work sessions where things actually get DONE",
+  "url": "https://x.com/zarazhangrui/status/2084601752817729811",
+  "date": "2026-08-04",
+  "likes": 74
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "the best vibey, air conditioned, quiet coffee shop to meet founders discretely does not exi- https://t.co/wRvjeA9096",
+  "url": "https://x.com/nikunj/status/2084687833516691844",
+  "date": "2026-08-04",
+  "likes": 221
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "My SF brain shudders at the thought of how much collective time is lost waiting for New York elevators.. \n\nHotel elevators are simply the worst. Who designed two elevators for 30+ floors? I spent 12 mins recently just trying to get down from my room 😅",
+  "url": "https://x.com/nikunj/status/2084625658173415726",
+  "date": "2026-08-04",
+  "likes": 22
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "the best founders know there is no spoon https://t.co/2RRfeYCxnR https://t.co/VhBI2g7CdQ",
+  "url": "https://x.com/danshipper/status/2084719029575647660",
+  "date": "2026-08-04",
+  "likes": 97
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "so freaking cool https://t.co/1UoApZ2C2O",
+  "url": "https://x.com/danshipper/status/2084692896696111243",
+  "date": "2026-08-04",
+  "likes": 189
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "agree except they’ll still be heroes\n\nonce the agency rupture heals and the AI goes back to being invisible, we’ll think only about the humans and what they’ve done. AI use will be assumed and unimportant \n\nhttps://t.co/rbs7OcBLqV https://t.co/dRD6hGl59G",
+  "url": "https://x.com/danshipper/status/2084634391079469390",
+  "date": "2026-08-04",
+  "likes": 70
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "More on why we invested: https://t.co/tdLh5WXW7e",
+  "url": "https://x.com/adityaag/status/2084691249332649995",
+  "date": "2026-08-04",
+  "likes": 3
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": ".@TryRivo is building self-driving finance.\n\nAgents connect to the checking account you already have, learn your cash flow, sweep dollars into Treasury-backed yield, and bring them back before your bills hit.\n\nEvery dollar earns until the moment you spend it.\n\nWhy is this hard? Prediction under asymmetric cost.\n\nMoney returned a day early costs you a little yield. \n\nMoney returned a day late bounces a bill and destroys trust.\n\n@AmbrishTweets is one of the few people who has shipped this class of system before. \n\nPhD in AI, 7,000+ citations, built consumer AI at Amazon, and led the L4 autonomy work at Cruise that launched robotaxis, before he came through @spc as a Founder Fellow.\n\nSelf-driving cars took two decades because the last edge cases were the hard ones.\n\nSelf-driving money is the same problem with a friendlier failure mode, and the founder building it has already solved the harder version once.",
+  "url": "https://x.com/adityaag/status/2084691244496625793",
+  "date": "2026-08-04",
+  "likes": 13
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "The right way to deploy AI at scale is to be able to understand how it works.\n\nIt does NOT need to be a black box.\n\nThis is a key step in helping us understand what is going in these LLMs. https://t.co/waRRR1WmTS",
+  "url": "https://x.com/adityaag/status/2084676740924764625",
+  "date": "2026-08-04",
+  "likes": 27
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "i would rather be an optimist and work hard than a pessimist posting about why things won't work.\n\nit's much more difficult and the most likely path is failure, but society fails if people don't try.\n\nno amount of \"it will never work\" essays will drive society forward. https://t.co/951QDCikV2",
+  "url": "https://x.com/sama/status/2084663673570971990",
+  "date": "2026-08-04",
+  "likes": 10148
+ }
+]
