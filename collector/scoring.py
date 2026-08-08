@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 
-from .schema import validate_scores
+from .schema import SCORE_KEYS, validate_scores
 
 TOP_BADGE_COUNT = 10
 DEEP_DIVE_KEYS = ("what", "why", "biz")
@@ -191,20 +191,25 @@ def _validate_tags(tags, ident: str) -> list[str]:
 def sanitize_scored(scored, candidates: list[dict] | None = None) -> tuple[object, list[str]]:
     """LLM 输出的统一规范化层：把"概率模型必然发生的偏差"在 validate 之前消化掉。
 
-    处理三类偏差：
+    处理的偏差：
     1. ID 幻觉：entry.id 不在 candidates 列表里 → 整条丢弃（LLM 抄错 id / 编造 id）。
     2. tag 漂移：丢未知 tag、丢清洗后 tags 为空的 entry、去重、截断到 MAX_TAGS。
     3. 必填字段漏写 / 空字符串：reason / analysis.{zh,en} /
        deep_dive.{zh,en}.{what,why,biz} / trend.{zh,en,deep.*} 自动填占位符。
+    4. scores 漂移：维度分非 0-10 整数（字符串 / 浮点 / 超界）→ 强转并 clamp；
+       total 不等于三维之和 → 重算（LLM 算错 total 是高频事件）。
+    5. 整条漏写：候选 id 在 entries 里完全缺失（LLM 分批评分时概率性漏写、
+       或被 1/2 丢弃）→ 生成占位条目（零分、placeholder=True），让 validate 的
+       全量覆盖检查通过；merge_scored 跳过占位条目，不入库、不上站。
+    6. 结构垃圾：entries 不是数组 → 重置为空；条目不是对象 / 重复 id → 整条丢弃。
 
     就地修改 scored，返回 (scored, warnings)。warnings 非空时调用方应打印，
     便于运维观察 LLM 偏差频率；但 pipeline 不会因为这些偏差挂掉。
 
-    candidates 为 None 时跳过 ID 检查（兼容旧调用 / 单测）。
+    candidates 为 None 时跳过 ID 检查与漏写兜底（兼容旧调用 / 单测）。
 
-    校验仍由 validate_scored 兜底——sanitize 之后 validate 应该 0 错；
-    如果还有错，说明出现了 sanitize 没覆盖到的结构性问题（比如 scores 不是 dict），
-    那才是真该硬卡的。
+    传了 candidates 时，sanitize 之后对全量 candidates 跑 validate_scored 应该
+    0 错——覆盖率由占位条目兜底，validate 只兜真正的结构性硬错。
     """
     warnings: list[str] = []
     if not isinstance(scored, dict):
@@ -225,19 +230,24 @@ def sanitize_scored(scored, candidates: list[dict] | None = None) -> tuple[objec
     # ---- entries 兜底 ----
     entries = scored.get("entries")
     if not isinstance(entries, list):
-        return scored, warnings
+        warnings.append(f"entries 不是数组（{type(entries).__name__}），重置为空")
+        entries = scored["entries"] = []
     candidate_ids = {c.get("id") for c in (candidates or []) if c.get("id")}
     tag_set = set(TAGS)
     kept: list = []
+    kept_ids: set = set()
     for e in entries:
         if not isinstance(e, dict):
-            kept.append(e)
+            warnings.append(f"条目不是对象（{type(e).__name__}），整条丢弃")
             continue
         ident = e.get("id", "?")
 
         # ID 幻觉检查：LLM 抄错 / 编造 id 时整条丢，避免 validate 硬错
         if candidate_ids and ident not in candidate_ids:
             warnings.append(f"{ident}: 不在候选列表（疑似 LLM 抄错 id），整条丢弃")
+            continue
+        if ident in kept_ids:
+            warnings.append(f"{ident}: 重复评分，整条丢弃")
             continue
 
         # tag 规范化
@@ -261,6 +271,9 @@ def sanitize_scored(scored, candidates: list[dict] | None = None) -> tuple[objec
             else:
                 warnings.append(f"{ident}: 去除重复 tag {t!r}")
         e["tags"] = deduped[:MAX_TAGS]
+
+        # scores 规范化：LLM 算错 total / 写字符串 / 超界都会让 validate 硬错
+        _normalize_scores(e, ident, warnings)
 
         # reason 兜底
         reason = e.get("reason")
@@ -291,6 +304,14 @@ def sanitize_scored(scored, candidates: list[dict] | None = None) -> tuple[objec
                     warnings.append(f"{ident}: deep_dive.{lang}.{key} 缺失，已填占位符")
 
         kept.append(e)
+        kept_ids.add(ident)
+
+    # ---- 整条漏写兜底 ----
+    # 占位条目让 validate 的全量覆盖检查通过；merge_scored 跳过它们，不入库。
+    if candidate_ids:
+        for cid in sorted(candidate_ids - kept_ids):
+            kept.append(_placeholder_entry(cid))
+            warnings.append(f"{cid}: 整条漏写，已生成占位条目（零分，不入库）")
     scored["entries"] = kept
     return scored, warnings
 
@@ -313,9 +334,59 @@ _DEEP_DIVE_PLACEHOLDER = {
 }
 
 
+def _coerce_score(value) -> int:
+    """把 LLM 写的维度分强转成 0-10 整数；转不了给 0。"""
+    if isinstance(value, bool):
+        return 0
+    try:
+        n = int(round(float(value)))
+    except (TypeError, ValueError):
+        return 0
+    return max(0, min(10, n))
+
+
+def _normalize_scores(entry: dict, ident: str, warnings: list[str]) -> None:
+    """维度分 clamp 到 0-10 整数、total 重算为三维之和。"""
+    scores = entry.get("scores")
+    if not isinstance(scores, dict):
+        entry["scores"] = {key: 0 for key in SCORE_KEYS} | {"total": 0}
+        warnings.append(f"{ident}: scores 缺失，已填零分")
+        return
+    for key in SCORE_KEYS:
+        value = scores.get(key)
+        if isinstance(value, int) and not isinstance(value, bool) and 0 <= value <= 10:
+            continue
+        fixed = _coerce_score(value)
+        scores[key] = fixed
+        warnings.append(f"{ident}: scores.{key} 非法（{value!r}），已修正为 {fixed}")
+    total = sum(scores[key] for key in SCORE_KEYS)
+    if scores.get("total") != total:
+        warnings.append(f"{ident}: scores.total 应为三维之和 {total}，"
+                        f"实际 {scores.get('total')!r}，已修正")
+        scores["total"] = total
+
+
+def _placeholder_entry(cid: str) -> dict:
+    """整条漏写候选的占位条目：结构合法能通过 validate，但 placeholder=True，
+    merge_scored 会跳过，不入库、不上站、不进飞书卡片。"""
+    return {
+        "id": cid,
+        "placeholder": True,
+        "scores": {key: 0 for key in SCORE_KEYS} | {"total": 0},
+        "reason": "（本周该候选被 LLM 漏评，占位条目，不入库）",
+        "analysis": {"zh": "（中文简读暂缺）", "en": "(Brief analysis unavailable.)"},
+        "deep_dive": {lang: dict(_DEEP_DIVE_PLACEHOLDER[lang]) for lang in LANGS},
+        "tags": ["创意"],
+    }
+
+
 def merge_scored(candidates: list[dict], scored) -> list[dict]:
-    """把评分条目合并回候选，返回完整 project 列表（按总分降序）。兼容 v1/v2。"""
-    by_id = {e["id"]: e for e in _entries_of(scored) if isinstance(e, dict) and e.get("id")}
+    """把评分条目合并回候选，返回完整 project 列表（按总分降序）。兼容 v1/v2。
+
+    占位条目（placeholder=True，sanitize 为漏写候选生成的零分条目）不合并。
+    """
+    by_id = {e["id"]: e for e in _entries_of(scored)
+             if isinstance(e, dict) and e.get("id") and not e.get("placeholder")}
     merged = []
     for p in candidates:
         entry = by_id.get(p["id"])

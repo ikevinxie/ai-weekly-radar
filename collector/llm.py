@@ -160,8 +160,8 @@ def _format_candidates(candidates: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def score_candidates(candidates: list[dict], week: str) -> dict:
-    """对全部候选评分，返回 v3 scored 文档。候选多时自动分批。
+def _score_batches(candidates: list[dict], *, label: str) -> list[dict]:
+    """把候选分批送给 LLM 评分，返回 entries 列表。
 
     每个 batch 解析失败时，把错误和原文喂回 LLM 重试，最多 PARSE_RETRIES 次。
     """
@@ -169,28 +169,44 @@ def score_candidates(candidates: list[dict], week: str) -> dict:
     batches = [candidates[i:i + BATCH_SIZE] for i in range(0, len(candidates), BATCH_SIZE)]
     for idx, batch in enumerate(batches):
         if len(batches) > 1:
-            print(f"  评分批次 {idx + 1}/{len(batches)}（{len(batch)} 个项目）…")
+            print(f"  {label} {idx + 1}/{len(batches)}（{len(batch)} 个项目）…")
         prompt = _BATCH_TEMPLATE.format(count=len(batch),
                                         tags=" ".join(_TAGS),
                                         candidates=_format_candidates(batch))
         parsed = _chat_json_with_retry(prompt, _SCORE_SYSTEM,
-                                       label=f"批次 {idx + 1}/{len(batches)}")
+                                       label=f"{label} {idx + 1}/{len(batches)}")
         if isinstance(parsed, dict) and "entries" in parsed:
             parsed = parsed["entries"]
         if not isinstance(parsed, list):
-            raise ValueError(f"批次 {idx + 1}: 期望 JSON 数组，得到 {type(parsed).__name__}")
+            raise ValueError(f"{label} {idx + 1}: 期望 JSON 数组，得到 {type(parsed).__name__}")
         all_entries.extend(parsed)
+    return all_entries
+
+
+def score_candidates(candidates: list[dict], week: str) -> dict:
+    """对全部候选评分，返回 v3 scored 文档。候选多时自动分批。"""
+    all_entries = _score_batches(candidates, label="评分批次")
 
     # trend
     print("  生成本周风向…")
-    proj_lines = "\n".join(f"- {e['id']}  total={e['scores']['total']}" for e in all_entries)
-    trend_prompt = _TREND_TEMPLATE.format(week=week, count=len(all_entries),
-                                          projects=proj_lines)
+    scored_lines = [f"- {e['id']}  total={(e.get('scores') or {}).get('total', '?')}"
+                    for e in all_entries if isinstance(e, dict) and e.get("id")]
+    trend_prompt = _TREND_TEMPLATE.format(week=week, count=len(scored_lines),
+                                          projects="\n".join(scored_lines))
     trend = _chat_json_with_retry(trend_prompt, _SCORE_SYSTEM, label="trend")
     if not isinstance(trend, dict):
         raise ValueError("trend: 期望 JSON 对象")
 
     return {"week": week, "trend": trend, "entries": all_entries}
+
+
+def score_backfill(candidates: list[dict]) -> list[dict]:
+    """对分批评分时 LLM 整条漏写的候选定向补评，只返回 entries 数组。
+
+    漏写是概率事件，补评批次小（通常只有几条），LLM 几乎必然全量返回。
+    不生成 trend——trend 由 score_candidates 基于全量 entries 统一生成。
+    """
+    return _score_batches(candidates, label="补评批次")
 
 
 def _chat_json_with_retry(prompt: str, system: str, *, label: str):

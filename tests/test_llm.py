@@ -4,8 +4,8 @@ from unittest import mock
 
 import pytest
 
-from collector.llm import (BATCH_SIZE, extract_json, score_candidates,
-                           summarize_voices, chat)
+from collector.llm import (BATCH_SIZE, extract_json, score_backfill,
+                           score_candidates, summarize_voices, chat)
 
 
 # ---------------------------------------------------------------------------
@@ -182,6 +182,25 @@ class TestScoreCandidates:
             assert tag in rendered, f"prompt 缺词表项 {tag!r}"
         # 反向断言：prompt 里不应再硬编码旧词表（如果硬编码，加新词后会缺）
         assert "开源" in rendered
+
+
+class TestScoreBackfill:
+    def test_returns_entries_without_trend_call(self):
+        # 补评只评漏写的候选，不生成 trend（trend 由 score_candidates 统一生成）
+        cands = _make_candidates(2)
+        entries = [_fake_entry(c["id"]) for c in cands]
+        with mock.patch("collector.llm.chat",
+                        return_value=json.dumps(entries)) as m:
+            result = score_backfill(cands)
+        assert result == entries
+        assert m.call_count == 1
+
+    def test_unwraps_entries_object(self):
+        cands = _make_candidates(1)
+        entries = [_fake_entry(c["id"]) for c in cands]
+        with mock.patch("collector.llm.chat",
+                        return_value=json.dumps({"entries": entries})):
+            assert score_backfill(cands) == entries
 
 
 # ---------------------------------------------------------------------------

@@ -241,6 +241,22 @@ def cmd_score(args: list[str]) -> int:
     candidates, _, scored_path = _load_week(week)
     print(f"调用百炼 API 为 {len(candidates)} 个候选评分…", flush=True)
     scored = llm.score_candidates(candidates, week)
+    # 整条漏写补评：LLM 分批评分时概率性漏写候选（W32 曾漏 2 条 hackernews
+    # 直接熔断 Validate 步骤）。漏写的 id 单独定向补评，小批次几乎必然全返回；
+    # 补评仍失败的极端情况由 sanitize 的占位条目兜底。
+    present = {e.get("id") for e in scored.get("entries", []) if isinstance(e, dict)}
+    missing = [c for c in candidates if c.get("id") not in present]
+    if missing:
+        print(f"  ⚠ LLM 整条漏写 {len(missing)} 个候选，定向补评："
+              f"{[m['id'] for m in missing]}", flush=True)
+        try:
+            extra = llm.score_backfill(missing)
+            if not isinstance(scored.get("entries"), list):
+                scored["entries"] = []
+            scored["entries"].extend(extra)
+        except Exception as e:
+            print(f"  ⚠ 补评失败，交由 sanitize 占位兜底：{e}",
+                  file=sys.stderr, flush=True)
     scored, warnings = scoring.sanitize_scored(scored, candidates=candidates)
     if warnings:
         print(f"sanitize: 自动修正 {len(warnings)} 处 LLM 输出偏差：",
@@ -249,12 +265,9 @@ def cmd_score(args: list[str]) -> int:
             print(f"  - {w}", file=sys.stderr, flush=True)
     store.save(scored, scored_path)
     print(f"评分完成 → {scored_path}", flush=True)
-    # validate 只看 sanitize 留下的 entry：tag 漂移被 sanitize 消化的那些
-    # 不应再被 validate 当成「缺少评分」硬错。
-    surviving_ids = {e.get("id") for e in scored.get("entries", [])
-                     if isinstance(e, dict)}
-    scored_candidates = [c for c in candidates if c.get("id") in surviving_ids]
-    errors = scoring.validate_scored(scored_candidates, scored)
+    # sanitize 已用占位条目兜底全量覆盖，这里对全量 candidates 校验，
+    # 与 workflow 独立 Validate 步骤同口径。
+    errors = scoring.validate_scored(candidates, scored)
     if errors:
         print(f"校验失败，共 {len(errors)} 处：", file=sys.stderr, flush=True)
         for e in errors:

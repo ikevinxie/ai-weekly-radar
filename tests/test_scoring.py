@@ -273,12 +273,76 @@ class TestSanitizeScored:
         cands = [cand("a"), cand("b")]   # 注意：candidates 里没有 zzz
         sanitized, warns = sanitize_scored(doc, candidates=cands)
         assert any("zzz_does_not_exist" in w and "不在候选列表" in w for w in warns)
-        assert [e["id"] for e in sanitized["entries"]] == ["github:a"]
-        # cmd_score 会把 cands 过滤到 surviving ids 再 validate
-        surviving = {e["id"] for e in sanitized["entries"]}
-        scored_cands = [c for c in cands if c["id"] in surviving]
-        errors = validate_scored(scored_cands, sanitized)
+        # b 没有评分 → 占位条目兜底，validate 对全量 candidates 0 错
+        assert [e["id"] for e in sanitized["entries"]] == ["github:a", "github:b"]
+        assert sanitized["entries"][1].get("placeholder") is True
+        errors = validate_scored(cands, sanitized)
         assert errors == []
+
+    def test_missing_entry_placeholder_synthesized(self):
+        # 根因回归（W32 事故）：LLM 分批评分概率性整条漏写候选，
+        # Validate 步骤按全量候选报「缺少评分」熔断整周发布。
+        # sanitize 必须为漏写候选生成占位条目，让全量 validate 通过。
+        doc = scored_doc([entry("a")])
+        cands = [cand("a"), cand("b")]
+        sanitized, warns = sanitize_scored(doc, candidates=cands)
+        assert any("github:b" in w and "整条漏写" in w for w in warns)
+        ph = [e for e in sanitized["entries"] if e["id"] == "github:b"]
+        assert len(ph) == 1 and ph[0]["placeholder"] is True
+        assert ph[0]["scores"]["total"] == 0
+        assert validate_scored(cands, sanitized) == []
+
+    def test_placeholder_not_merged_into_history(self):
+        # 占位条目不入库：历史库 / 站点 / 飞书卡片不出现零分垃圾条目
+        doc = scored_doc([entry("a"), entry("b")])
+        cands = [cand("a"), cand("b"), cand("c")]
+        sanitized, _ = sanitize_scored(doc, candidates=cands)
+        merged = merge_scored(cands, sanitized)
+        assert [p["id"] for p in merged] == ["github:a", "github:b"]
+
+    def test_scores_normalized(self):
+        # LLM 算错 total / 写字符串 / 超界都是高频事件，sanitize 必须规范化
+        e = entry("a")
+        e["scores"] = {"whimsy": 15, "fun": "7", "money": 6.4, "total": 99}
+        doc = scored_doc([e])
+        sanitized, warns = sanitize_scored(doc)
+        s = sanitized["entries"][0]["scores"]
+        assert s["whimsy"] == 10      # clamp
+        assert s["fun"] == 7          # 字符串强转
+        assert s["money"] == 6        # 浮点四舍五入
+        assert s["total"] == 23       # 重算
+        assert any("total" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_scores_missing_filled_zero(self):
+        e = entry("a")
+        del e["scores"]
+        doc = scored_doc([e])
+        sanitized, warns = sanitize_scored(doc)
+        assert sanitized["entries"][0]["scores"]["total"] == 0
+        assert any("scores 缺失" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_duplicate_entry_dropped(self):
+        doc = scored_doc([entry("a"), entry("a")])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert any("重复评分" in w for w in warns)
+        assert [e["id"] for e in sanitized["entries"]] == ["github:a"]
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_non_dict_entry_dropped(self):
+        doc = scored_doc([entry("a"), "垃圾条目"])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert any("不是对象" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_entries_not_list_reset_and_filled(self):
+        doc = {"week": "2026-W31", "trend": scored_doc([])["trend"], "entries": "垃圾"}
+        cands = [cand("a")]
+        sanitized, warns = sanitize_scored(doc, candidates=cands)
+        assert any("entries 不是数组" in w for w in warns)
+        assert any("整条漏写" in w for w in warns)
+        assert validate_scored(cands, sanitized) == []
 
     def test_sanitize_without_candidates_skips_id_check(self):
         # 兼容旧调用 / 单测：不传 candidates 时不做 ID 检查
