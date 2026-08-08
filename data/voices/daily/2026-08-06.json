@@ -1,0 +1,274 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "a very primitive form of the near term multiagent agi future is setting up one thread to ping back once its done so you create an implicit kanban/waterfall graph of  dependent threads but each preserving their own work and agents\n\ni can't wait to setup a proper ui for this pattern but you can hack it together in most koding agents of choice rn",
+  "url": "https://x.com/swyx/status/2085253030417461661",
+  "date": "2026-08-06",
+  "likes": 7
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "TIL Paul Erdős prompted his fellow mathematicians with bribes like we did the early LLMs https://t.co/Bh8CFhGIn6",
+  "url": "https://x.com/swyx/status/2085236400056877381",
+  "date": "2026-08-06",
+  "likes": 12
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "your talent density: a bunch of 19 year old kids who did well in super contrived competitions\n\ntheir talent density: https://t.co/Cx8ohp79Oi",
+  "url": "https://x.com/swyx/status/2085219563944452505",
+  "date": "2026-08-06",
+  "likes": 7
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "I asked Codex to pull up some stats and I receive on average one DM or email every 6 or so minutes to ask for a reset. I occasionally do oblige if it comes with really solid feedback or banter.",
+  "url": "https://x.com/thsottiaux/status/2085221386713198988",
+  "date": "2026-08-06",
+  "likes": 4217
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "I don't really think these legends needed a pitchdeck. Congrats on taking a crazy, but inspiring leap.\n\nI recommend you explore /goal in Codex, it's a pretty powerful loop with GPT-5.6 Sol. https://t.co/Obw3TvjbdR",
+  "url": "https://x.com/thsottiaux/status/2085174625655198156",
+  "date": "2026-08-06",
+  "likes": 2637
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "At 11% usage remaining so I guess Luna Extra High it is. Will report back on how good it is. https://t.co/hWrGGiq7PN https://t.co/K2CgNNJqS8",
+  "url": "https://x.com/petergyang/status/2085222802542694604",
+  "date": "2026-08-06",
+  "likes": 70
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Can't believe I have to review PRs now. My PM training hasn't prepared me for this lol https://t.co/q67VHk7jfs",
+  "url": "https://x.com/petergyang/status/2085157947735429334",
+  "date": "2026-08-06",
+  "likes": 32
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "How to use my new /human-review skill to edit HTML and Markdown files directly:\n\n1. Tell Codex or Claude Code: “Install this: https://t.co/VDArIG0lxf”\n\n2. Type “/human-review (your doc name)”\n\n3. It’ll open a visual editor where you can edit and format text directly, resize images, and leave feedback for AI like comments in a Google Doc\n\n4. When you’re done, click “Send to agent” and watch it apply all the updates\n\nUse it to edit PRDs, landing pages, and more.\n\nI know we all like making our agents work for us, but sometimes a “human review” is needed for that final 10% of polish :)\n\n⭐ the skill on GitHub if you like it:  https://t.co/VDArIG0lxf",
+  "url": "https://x.com/petergyang/status/2085055745410945126",
+  "date": "2026-08-05",
+  "likes": 179
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "I’m gonna ask the dumbest question here. How is ChatGPT *not* an agent? https://t.co/M9rbldDVIL",
+  "url": "https://x.com/thenanyu/status/2085126362944229400",
+  "date": "2026-08-05",
+  "likes": 118
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "I had the good fortune of crossing paths with Jeff during my time on Gemini.\n\nHe was the most down to earth senior exec I’ve worked with. We’d be in the middle of a deeply technical discussion where I had no business pushing my opinion but he’d still\nhear it out.\n\nTrue mensch. https://t.co/RNCgyQnHyG",
+  "url": "https://x.com/realmadhuguru/status/2085219649847972059",
+  "date": "2026-08-06",
+  "likes": 20
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Been thinking about why AI diffusion has been slow. \n\nIt’s because we are asking users to understand our nerdy lab speak.\n\nWe greet them with a blank window and ask them to write a prompt. Then they have to pick a model, decide whether they need an agent, and somehow know what context windows, reasoning, MCP, memory, and skills are.\n\nMost people don’t care. They need a thing done. If you can give them something that does that, they’re happy.\n\nI think we will see that breakthrough product in the next 12 months.",
+  "url": "https://x.com/realmadhuguru/status/2085036386781221257",
+  "date": "2026-08-05",
+  "likes": 57
+ },
+ {
+  "author": "Google Labs",
+  "handle": "GoogleLabs",
+  "text": "Time to spill the (Dream)beans.\n\nDreambeans is expanding! Joining our US-based AI Ultra users, AI Pro subscribers in the US can now also get in on the action.\n\nGet ready for your fresh, daily collection of personalized stories. We’re surfacing the deep dives and hidden gems you actually want to read.\n\nDive in: https://t.co/jCdAzMHvOD",
+  "url": "https://x.com/GoogleLabs/status/2085048743322345545",
+  "date": "2026-08-05",
+  "likes": 406
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Always striking the amount of founder talent I see in such a small space every time I visit SPC. https://t.co/FHb6i3XYcK",
+  "url": "https://x.com/amasad/status/2085041697155932506",
+  "date": "2026-08-05",
+  "likes": 140
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Writing a banger tweet is AGI-complete. If you can prove a clanker can write a banger in polynomial time, you’ve solved the entire class of AGI problems",
+  "url": "https://x.com/rauchg/status/2085168662881894559",
+  "date": "2026-08-06",
+  "likes": 286
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Infinite agent compute\n10,000 concurrent + 5,000 CPU cores per minute\nand these quotas are raisable https://t.co/yMUfzdCBFG",
+  "url": "https://x.com/rauchg/status/2085077900190208080",
+  "date": "2026-08-05",
+  "likes": 222
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Interesting https://t.co/vhI7jJtbKT",
+  "url": "https://x.com/rauchg/status/2085034212466499941",
+  "date": "2026-08-05",
+  "likes": 17
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Correct take. 99% of tokens in the world will get consumed in an enterprise context. \n\nThey will be for writing code, combing through insane amounts of life sciences research, automating manufacturing, securing enterprises, detecting fraud, and thousands of other tasks like this that have significant economic value. This is both where the cost of AI can be most justified but also where the impact of parallel workers doing tasks on your behalf is most useful.\n\nEven the agents that most impact consumers will often be wrapped up as just end to end services where the consumer doesn’t think about there being an AI system on the other end, like faster insurance or onboarding to a bank.\n\nThe key though is it’s going to take years for diffusion of agents across the economy because workflows have to re-engineered to incorporate AI, which is a complete change to how most work happens today. Anyone who’s expecting this to happen overnight should be updating their timelines.",
+  "url": "https://x.com/levie/status/2085200776159490111",
+  "date": "2026-08-06",
+  "likes": 133
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Connie Chan is the most incompetent elected official\n\nFight to block all housing\n\nDestroy safety for Asian Americans by blocking police funding and supporting Chesa Boudin\n\nRuin our schools\n\nIt’s so idiotic that half of SF is polling support for her https://t.co/Zuxiq7Qqhi",
+  "url": "https://x.com/garrytan/status/2085216631014514850",
+  "date": "2026-08-06",
+  "likes": 161
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "This is one of the most important books of the year https://t.co/mLG93zfoXm",
+  "url": "https://x.com/garrytan/status/2085137660184797265",
+  "date": "2026-08-05",
+  "likes": 167
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Can’t wait for the AI to get so good none of this business about detecting AI matters anymore\n\nSilverware used to be handmade, but nobody complains about their dinner fork is stamped by a machine\n\nThe quality of ideas matter\n\nThe important thing is people can eat https://t.co/baXE3ei3ai",
+  "url": "https://x.com/garrytan/status/2085038756906901656",
+  "date": "2026-08-05",
+  "likes": 418
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "At this point you probably get fired from frontier labs if your model hasn’t hacked into any company https://t.co/y6VEzPVdo4",
+  "url": "https://x.com/mattturck/status/2085129687051727325",
+  "date": "2026-08-05",
+  "likes": 8
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "There’s so much groupthink going on in AI right now https://t.co/B5Han1KxMJ",
+  "url": "https://x.com/zarazhangrui/status/2084995439745536082",
+  "date": "2026-08-05",
+  "likes": 40
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Great video https://t.co/vy84Z5RDbX",
+  "url": "https://x.com/zarazhangrui/status/2084979733515641102",
+  "date": "2026-08-05",
+  "likes": 16
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "These are the words that AI tech people will use a LOT more in the next 6-9 months..\n\n&gt; out of distribution\n&gt; control plane\n&gt; unverifiable fields\n&gt; rails\n&gt; intelligence per watt\n&gt; cope\n&gt; angst\n\nSome are already in rotation obviously, but expect the frequency to increase!",
+  "url": "https://x.com/nikunj/status/2085209022115029132",
+  "date": "2026-08-06",
+  "likes": 28
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Nikita exiting X and Jeff Dean exiting Google.. what a catastrophic day to come back to SF 😢 https://t.co/MrwbVWKlwe",
+  "url": "https://x.com/nikunj/status/2085112372713369902",
+  "date": "2026-08-05",
+  "likes": 33
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "2026 AI startups be like.. https://t.co/ixPAhYTc0a",
+  "url": "https://x.com/nikunj/status/2085052418086310268",
+  "date": "2026-08-05",
+  "likes": 16
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "I’ll totally use this in my next presentation. https://t.co/ySswmG07sA",
+  "url": "https://x.com/steipete/status/2085074976290505090",
+  "date": "2026-08-05",
+  "likes": 1382
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "I gave codex a video-enabled remote KVM so it can automate e2e test the iMessage-integration on OpenClaw.\n\n(iMessage is unreliable in VMs, and certain features such as read receipts require SIP to be disabled)",
+  "url": "https://x.com/steipete/status/2084988316324397312",
+  "date": "2026-08-05",
+  "likes": 399
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "truly strange choice of headline here https://t.co/pJGNrtPxJz",
+  "url": "https://x.com/danshipper/status/2085054338594930925",
+  "date": "2026-08-05",
+  "likes": 71
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "https://t.co/yiNUQ8DZuL",
+  "url": "https://x.com/danshipper/status/2085053982125207804",
+  "date": "2026-08-05",
+  "likes": 6
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "Tea leaves: \n\nIn order to be competitive today Google needs to catch up on frontier coding. \n\nDemis believes different fundamental research directions (like world models) are more important to his long term goal even if they’re less impt competitively today https://t.co/21sKQHAfdk",
+  "url": "https://x.com/danshipper/status/2085048990899315142",
+  "date": "2026-08-05",
+  "likes": 155
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "@spc @rsanghvi @finn_meeks @evantana @prateekmehta42 @JPBrebner @mjacobstein @ditzikow @AgrawalArian @gopalkraman @ankitcc @CJStanton @slaster27 @OnaRoy88 Now we have to give @SPC Fund IV to the most ambitious founders https://t.co/xWaXyqC7Rj",
+  "url": "https://x.com/adityaag/status/2085085383956611528",
+  "date": "2026-08-05",
+  "likes": 11
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "@spc @rsanghvi @finn_meeks @evantana @prateekmehta42 @JPBrebner @mjacobstein @ditzikow @AgrawalArian @gopalkraman @ankitcc @CJStanton @slaster27 @OnaRoy88 https://t.co/hD5tNQGWZ2",
+  "url": "https://x.com/adityaag/status/2085066688379122140",
+  "date": "2026-08-05",
+  "likes": 19
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "@spc @rsanghvi @finn_meeks @evantana @prateekmehta42 @JPBrebner @mjacobstein @ditzikow @AgrawalArian @gopalkraman @ankitcc @CJStanton @slaster27 @OnaRoy88 https://t.co/e7isMRIWmR",
+  "url": "https://x.com/adityaag/status/2085046755024896318",
+  "date": "2026-08-05",
+  "likes": 26
+ }
+]

@@ -15,20 +15,27 @@
    "voices": {
     "week": "2026-W32",
     "overview": {
-     "zh": "本周，AI 建设者们讨论了 AI 在工作流程中的应用、技术进步对社会的影响以及未来的发展趋势。",
-     "en": "This week, AI builders discussed the application of AI in workflows, the impact of technological advancements on society, and future trends."
+     "zh": "本周，AI 建设者们在 X 上分享了关于 AI 技术的最新进展、应用场景及对未来影响的观点。讨论涵盖了从 AI 在企业中的应用到个人代理的发展等多个方面。",
+     "en": "This week, AI builders on X shared insights on the latest advancements, applications, and future impacts of AI technology. Discussions ranged from AI in enterprise to the development of personal agents."
     },
     "themes": [
      {
       "title": {
-       "zh": "AI 在工作流程中的应用",
-       "en": "Application of AI in Workflows"
+       "zh": "AI 在企业中的应用",
+       "en": "AI in Enterprise"
       },
       "summary": {
-       "zh": "多位发言者分享了他们在工作中如何利用 AI 代理来提高效率和生产力的经验。",
-       "en": "Several speakers shared their experiences on how they use AI agents to improve efficiency and productivity in their work."
+       "zh": "多位发言者探讨了 AI 在企业中的实际应用，包括自动化流程、提高效率以及改变工作方式等。",
+       "en": "Several speakers discussed the practical applications of AI in enterprises, including automating processes, improving efficiency, and transforming work methods."
       },
       "quotes": [
+       {
+        "author": "Aaron Levie",
+        "handle": "@levie",
+        "text": "We’re going to be in for a strange dynamic which is that some of the “hardest” work in the world is actually prone to automation first, particularly due to its verifiability.",
+        "url": "https://x.com/levie/status/2083965372747882741",
+        "date": "2026-08-02"
+       },
        {
         "author": "Guillermo Rauch",
         "handle": "@rauchg",
@@ -37,63 +44,77 @@
         "date": "2026-08-02"
        },
        {
-        "author": "Aaron Levie",
-        "handle": "@levie",
-        "text": "If you’re trying to understand the dynamic of real world agent adoption this post is a great place to start. Everyone got so hooked on talking to chatbots that there’s limited recognition still that working with an agent is much more like managing someone in a process vs. just asking an ai some questions and getting a response back.",
-        "url": "https://x.com/levie/status/2085587079405425146",
+        "author": "Amjad Masad",
+        "handle": "@amasad",
+        "text": "Airtable bookends the rise and fall of “no code.” I remember arguing endlessly with investors about this. UI can never let you build arbitrary software. The way to make software accessible was always to solve code itself.",
+        "url": "https://x.com/amasad/status/2085451197323034902",
+        "date": "2026-08-06"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "个人代理与用户体验",
+       "en": "Personal Agents and User Experience"
+      },
+      "summary": {
+       "zh": "讨论集中在如何通过个人代理改善用户体验，以及这些代理如何在日常生活中发挥作用。",
+       "en": "The discussion focused on how personal agents can improve user experience and how these agents function in everyday life."
+      },
+      "quotes": [
+       {
+        "author": "Peter Yang",
+        "handle": "@petergyang",
+        "text": "Personality matters! A smart friend that's annoying to talk to is no good.",
+        "url": "https://x.com/petergyang/status/2083947480136421384",
+        "date": "2026-08-02"
+       },
+       {
+        "author": "Garry Tan",
+        "handle": "@garrytan",
+        "text": "Here's what I think you need to know about personal AGI - not a chatbot that anyone can have, but one that knows you uniquely, now and into the future",
+        "url": "https://x.com/garrytan/status/2085446068461043722",
+        "date": "2026-08-06"
+       },
+       {
+        "author": "Thibault Sottiaux",
+        "handle": "@thsottiaux",
+        "text": "You can just ask Codex with GPT-5.6 Sol the wildest things and it will just do it. I talk to it for 5 minutes straight with things that just seem to require weeks of work, get up to get something in the fridge, pet the dog, come back and ... it's done.",
+        "url": "https://x.com/thsottiaux/status/2085597685948813610",
         "date": "2026-08-07"
        }
       ]
      },
      {
       "title": {
-       "zh": "技术进步对社会的影响",
-       "en": "Impact of Technological Advancements on Society"
+       "zh": "技术进步与社会影响",
+       "en": "Technological Advancements and Social Impact"
       },
       "summary": {
-       "zh": "一些发言者讨论了技术进步对经济、道德和社会结构的潜在影响。",
-       "en": "Some speakers discussed the potential impacts of technological advancements on the economy, ethics, and social structures."
+       "zh": "发言者们讨论了 AI 技术的进步对社会的影响，包括道德、经济和文化等方面。",
+       "en": "Speakers discussed the impact of AI technological advancements on society, including ethical, economic, and cultural aspects."
       },
       "quotes": [
-       {
-        "author": "Garry Tan",
-        "handle": "@garrytan",
-        "text": "Growth is good\nAI will create unimaginable economic growth and that is the best white pill",
-        "url": "https://x.com/garrytan/status/2083957110711386439",
-        "date": "2026-08-02"
-       },
        {
         "author": "Dan Shipper",
         "handle": "@danshipper",
-        "text": "if ought implies can, and technology reshapes the field of human abilities—then technology reshapes oughts. \nwe should expect AI to fundamentally change our moral intuitions at the same time as it changes our abilities",
+        "text": "if ought implies can, and technology reshapes the field of human abilities—then technology reshapes oughts. we should expect AI to fundamentally change our moral intuitions at the same time as it changes our abilities",
         "url": "https://x.com/danshipper/status/2084024211539116466",
         "date": "2026-08-02"
-       }
-      ]
-     },
-     {
-      "title": {
-       "zh": "未来发展趋势",
-       "en": "Future Trends"
-      },
-      "summary": {
-       "zh": "建设者们展望了未来几年内 AI 技术的发展方向，并强调了开放源代码的重要性。",
-       "en": "Builders looked ahead to the direction of AI technology over the next few years, emphasizing the importance of open source."
-      },
-      "quotes": [
-       {
-        "author": "Thibault Sottiaux",
-        "handle": "@thsottiaux",
-        "text": "But it will seem primitive in 2-3 months and we're about to go through another major evolution in how we use AI at the frontier. The next generation of models need more than your laptop.",
-        "url": "https://x.com/thsottiaux/status/2084483765158719542",
-        "date": "2026-08-04"
        },
        {
-        "author": "Peter Yang",
-        "handle": "@petergyang",
-        "text": "“For us, we just want open source to win at the end of the day. We want freedom to happen for people.”\nYou can hear the passion for open source in this clip from my interview with @karan4d, @NousResearch co-founder:",
-        "url": "https://x.com/petergyang/status/2084330985689428290",
-        "date": "2026-08-03"
+        "author": "Zara Zhang",
+        "handle": "@zarazhangrui",
+        "text": "Contrary to popular perception, most people will not adopt a new technology just because it makes them more efficient. Instead, they’ll adopt new technology because: - Someone they know who’s similar to them on some dimension adopted the technology, and got positive results (eg became cooler, richer, more popular/respected), and they wanna become like that person - They feel like everyone around them has adopted the technology, and if they don’t, they’ll be left behind",
+        "url": "https://x.com/zarazhangrui/status/2084828855404294266",
+        "date": "2026-08-05"
+       },
+       {
+        "author": "Sam Altman",
+        "handle": "@sama",
+        "text": "i would rather be an optimist and work hard than a pessimist posting about why things won't work. it's much more difficult and the most likely path is failure, but society fails if people don't try. no amount of \"it will never work\" essays will drive society forward.",
+        "url": "https://x.com/sama/status/2084663673570971990",
+        "date": "2026-08-04"
        }
       ]
      }
