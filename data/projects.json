@@ -9144,5 +9144,2258 @@
    "文本",
    "安全"
   ]
+ },
+ {
+  "id": "hackernews:49150470",
+  "name": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+  "url": "https://qwen.ai/blog?id=qwen3.8",
+  "source": "hackernews",
+  "description": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 1118,
+   "comments": 613,
+   "hn_link": "https://news.ycombinator.com/item?id=49150470"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 8,
+   "money": 9,
+   "total": 23
+  },
+  "reason": "Qwen3.8-Max 提供了更高效的编程和协作体验，适合团队合作。",
+  "analysis": {
+   "zh": "Qwen3.8-Max 在编码和协作方面设定了新标准，提升了开发效率。",
+   "en": "Qwen3.8-Max sets a new bar for coding and collaboration, improving development efficiency."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Qwen3.8-Max 是一个强大的 AI 模型，旨在提升程序员的生产力。",
+    "why": "它通过提供智能代码建议、自动完成等功能，使开发者可以更快地编写高质量代码。",
+    "biz": "该模型在商业上具有巨大潜力，特别是在软件开发领域。"
+   },
+   "en": {
+    "what": "Qwen3.8-Max is a powerful AI model designed to boost programmer productivity.",
+    "why": "It provides intelligent code suggestions, auto-completion, and other features to help developers write high-quality code faster.",
+    "biz": "The model has significant commercial potential, especially in the software development industry."
+   }
+  },
+  "tags": [
+   "agent",
+   "文本",
+   "效率"
+  ]
+ },
+ {
+  "id": "hackernews:49158333",
+  "name": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "url": "https://github.com/leonickson1/Swiftlet",
+  "source": "hackernews",
+  "description": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 310,
+   "comments": 141,
+   "hn_link": "https://news.ycombinator.com/item?id=49158333"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 8,
+   "money": 7,
+   "total": 22
+  },
+  "reason": "在 Mac 上只需 4.3GB RAM 就可以运行 80B 参数的 Qwen，在 iPhone 上则可以运行 35B 参数的 Qwen。",
+  "analysis": {
+   "zh": "该项目展示了一种方法，可以在 Mac 和 iPhone 上运行大参数量的 Qwen 模型。",
+   "en": "The project demonstrates a method to run large-parameter Qwen models on both Mac and iPhone."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目展示了一种在 Mac 和 iPhone 上运行大参数量 Qwen 模型的方法。",
+    "why": "这使得大型 AI 模型能够在资源有限的设备上运行，提高了可访问性。",
+    "biz": "这种技术在移动设备上的应用具有巨大的商业潜力，尤其是在边缘计算领域。"
+   },
+   "en": {
+    "what": "The project demonstrates a method to run large-parameter Qwen models on both Mac and iPhone.",
+    "why": "This allows large AI models to run on resource-constrained devices, increasing accessibility.",
+    "biz": "This technology has significant commercial potential in mobile devices, particularly in edge computing."
+   }
+  },
+  "tags": [
+   "硬件",
+   "文本",
+   "效率"
+  ]
+ },
+ {
+  "id": "hackernews:49198069",
+  "name": "Software development with AI is starting to feel like cooking steak",
+  "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+  "source": "hackernews",
+  "description": "Software development with AI is starting to feel like cooking steak",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 400,
+   "comments": 415,
+   "hn_link": "https://news.ycombinator.com/item?id=49198069"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 8,
+   "total": 21
+  },
+  "reason": "AI 在软件开发中的应用让编程变得像烹饪牛排一样简单。",
+  "analysis": {
+   "zh": "文章将 AI 在软件开发中的应用比作烹饪牛排，简化了开发过程。",
+   "en": "The article compares the use of AI in software development to cooking steak, simplifying the development process."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "文章探讨了 AI 如何使软件开发变得更加简单和高效。",
+    "why": "通过自动化和智能化工具，AI 可以帮助开发者快速完成任务。",
+    "biz": "这种趋势有助于降低开发成本，提高生产力，为公司带来更多的商业机会。"
+   },
+   "en": {
+    "what": "The article explores how AI makes software development simpler and more efficient.",
+    "why": "With automation and intelligent tools, AI helps developers complete tasks quickly.",
+    "biz": "This trend can reduce development costs, increase productivity, and create more business opportunities for companies."
+   }
+  },
+  "tags": [
+   "效率",
+   "文本",
+   "编码"
+  ]
+ },
+ {
+  "id": "huggingface:space/FrameAI4687/Omni-Video-Factory",
+  "name": "FrameAI4687/Omni-Video-Factory",
+  "url": "https://huggingface.co/spaces/FrameAI4687/Omni-Video-Factory",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 1357,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 8,
+   "money": 6,
+   "total": 21
+  },
+  "reason": "Omni-Video-Factory 是一个多功能的视频生成工具。",
+  "analysis": {
+   "zh": "Omni-Video-Factory 是一个多功能的视频生成工具，支持多种输入和输出格式。",
+   "en": "Omni-Video-Factory is a versatile video generation tool that supports various input and output formats."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Omni-Video-Factory 是一个多功能的视频生成工具，可以处理多种类型的视频内容。",
+    "why": "它支持多种输入和输出格式，使用户能够灵活地创建和编辑视频。",
+    "biz": "这个工具在视频制作和内容创作领域具有很大的商业潜力。"
+   },
+   "en": {
+    "what": "Omni-Video-Factory is a versatile video generation tool that can handle various types of video content.",
+    "why": "It supports multiple input and output formats, allowing users to flexibly create and edit videos.",
+    "biz": "This tool has significant commercial potential in video production and content creation."
+   }
+  },
+  "tags": [
+   "视频",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "producthunt:1217044",
+  "name": "Kitesurf",
+  "url": "https://www.producthunt.com/products/cloudflare",
+  "source": "producthunt",
+  "description": "Browser built for agents, running on Cloudflare Workers",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 7,
+   "total": 20
+  },
+  "reason": "Kitesurf 是一个基于Cloudflare Workers构建的浏览器，专为代理设计，提供了强大的性能和安全性。",
+  "analysis": {
+   "zh": "Kitesurf 是一个专门为代理设计的浏览器，运行在Cloudflare Workers上，提供了卓越的性能和安全性。",
+   "en": "Kitesurf is a browser built for agents, running on Cloudflare Workers, offering exceptional performance and security."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Kitesurf 是一个创新的浏览器项目，专门针对代理需求设计，利用Cloudflare Workers的强大能力来提供高性能和安全保障。",
+    "why": "随着Web技术的发展，对浏览器的要求越来越高。Kitesurf 通过使用Cloudflare Workers，能够在边缘计算环境中运行，大大提高了响应速度和数据处理能力。",
+    "biz": "随着云计算和边缘计算的兴起，Kitesurf 这样的浏览器将有很大的商业潜力。它不仅能满足企业和个人用户的需求，还能为企业提供定制化的解决方案。"
+   },
+   "en": {
+    "what": "Kitesurf is an innovative browser project specifically designed for agent needs, leveraging the power of Cloudflare Workers to provide high performance and security.",
+    "why": "As web technologies evolve, the demands on browsers are increasing. Kitesurf, by using Cloudflare Workers, runs in an edge computing environment, significantly improving response times and data processing capabilities.",
+    "biz": "With the rise of cloud and edge computing, a browser like Kitesurf has great commercial potential. It not only meets the needs of both enterprise and individual users but also offers customized solutions for businesses."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "producthunt:1212911",
+  "name": "ShootClip",
+  "url": "https://www.producthunt.com/products/shootclip",
+  "source": "producthunt",
+  "description": "Edit videos 10x faster with AI",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-02"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 7,
+   "total": 20
+  },
+  "reason": "ShootClip 利用AI技术，可以将视频编辑速度提高10倍，极大地提升了工作效率。",
+  "analysis": {
+   "zh": "ShootClip 是一个基于AI的视频编辑工具，可以将视频编辑速度提高10倍，极大地提升了工作效率。",
+   "en": "ShootClip is an AI-based video editing tool that can increase video editing speed by 10 times, significantly boosting productivity."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "ShootClip 是一个基于AI的视频编辑工具，它可以通过智能算法快速处理视频剪辑，将编辑速度提高10倍。",
+    "why": "视频编辑是一项耗时且复杂的工作，特别是对于需要频繁编辑的创作者来说。ShootClip 通过AI技术，大大简化了这一过程，使得视频编辑变得更加高效。",
+    "biz": "随着视频内容的快速增长，对高效视频编辑工具的需求也在增加。ShootClip 作为一个创新的解决方案，具有很大的市场潜力。"
+   },
+   "en": {
+    "what": "ShootClip is an AI-based video editing tool that uses intelligent algorithms to quickly process video clips, increasing editing speed by 10 times.",
+    "why": "Video editing is a time-consuming and complex task, especially for creators who need to edit frequently. ShootClip, by using AI technology, greatly simplifies this process, making video editing much more efficient.",
+    "biz": "With the rapid growth of video content, the demand for efficient video editing tools is increasing. ShootClip, as an innovative solution, has great market potential."
+   }
+  },
+  "tags": [
+   "视频"
+  ]
+ },
+ {
+  "id": "github:thebuggeddev/anatomy",
+  "name": "thebuggeddev/anatomy",
+  "url": "https://github.com/thebuggeddev/anatomy",
+  "source": "github",
+  "description": "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1991,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 8,
+   "money": 5,
+   "total": 19
+  },
+  "reason": "一个基于Three.js和GPT 5.6构建的互动3D人体解剖探索器。",
+  "analysis": {
+   "zh": "该项目是一个使用Three.js和GPT 5.6构建的互动3D人体解剖探索器，用户可以通过直观的界面学习人体结构。",
+   "en": "This project is an interactive 3D human anatomy explorer built using Three.js and GPT 5.6, allowing users to learn about human anatomy through an intuitive interface."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个基于Three.js和GPT 5.6构建的互动3D人体解剖探索器，用户可以通过三维模型和自然语言交互来学习人体结构。",
+    "why": "传统的解剖学学习方式往往枯燥乏味，而这个项目通过可视化和互动的方式，使学习变得更加有趣和直观。",
+    "biz": "这种互动的学习工具可以应用于教育和培训领域，提高学生的学习兴趣和效果，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is an interactive 3D human anatomy explorer built using Three.js and GPT 5.6, allowing users to learn about human anatomy through 3D models and natural language interaction.",
+    "why": "Traditional anatomy learning methods can be dry and unengaging, while this project makes learning more interesting and intuitive through visualization and interactivity.",
+    "biz": "This interactive learning tool can be applied in education and training, enhancing student engagement and learning outcomes, with high commercial value."
+   }
+  },
+  "tags": [
+   "教育"
+  ]
+ },
+ {
+  "id": "hackernews:49200652",
+  "name": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+  "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+  "source": "hackernews",
+  "description": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 533,
+   "comments": 341,
+   "hn_link": "https://news.ycombinator.com/item?id=49200652"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 8,
+   "total": 19
+  },
+  "reason": "Qwen3.8 Max 被评为最佳整体模型，显示了其在多个任务上的卓越表现。",
+  "analysis": {
+   "zh": "Qwen3.8 Max 在 agentic index 评估中被评为最佳整体模型。",
+   "en": "Qwen3.8 Max is ranked as the best overall model by the agentic index evaluation."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Qwen3.8 Max 在多个任务上表现出色，被 agentic index 评为最佳整体模型。",
+    "why": "该模型在各种任务中的性能都非常出色，展示了其广泛的应用潜力。",
+    "biz": "这种认可增强了 Qwen3.8 Max 的市场竞争力，并为其商业化铺平了道路。"
+   },
+   "en": {
+    "what": "Qwen3.8 Max performs exceptionally well across multiple tasks, earning it the top ranking by the agentic index.",
+    "why": "The model excels in a variety of tasks, demonstrating its broad application potential.",
+    "biz": "This recognition enhances Qwen3.8 Max's market competitiveness and paves the way for its commercialization."
+   }
+  },
+  "tags": [
+   "agent",
+   "文本",
+   "数据"
+  ]
+ },
+ {
+  "id": "hackernews:49139102",
+  "name": "AI financial advice is surprisingly good, especially if you ask right questions",
+  "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+  "source": "hackernews",
+  "description": "AI financial advice is surprisingly good, especially if you ask right questions",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 350,
+   "comments": 403,
+   "hn_link": "https://news.ycombinator.com/item?id=49139102"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 8,
+   "total": 19
+  },
+  "reason": "AI 提供的财务建议非常有用，尤其是当你问对问题时。",
+  "analysis": {
+   "zh": "MIT 的研究表明，AI 提供的财务建议非常有用，特别是当用户提出正确的问题时。",
+   "en": "MIT research shows that AI financial advice is very useful, especially when users ask the right questions."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "MIT 的研究发现，AI 提供的财务建议在很多情况下都非常准确和实用。",
+    "why": "用户需要提出具体且相关的问题，才能获得最有价值的建议。",
+    "biz": "这一发现为金融行业的 AI 应用提供了新的机会，尤其是在个人理财咨询方面。"
+   },
+   "en": {
+    "what": "MIT research found that AI-provided financial advice is often accurate and practical.",
+    "why": "Users need to ask specific and relevant questions to get the most valuable advice.",
+    "biz": "This finding opens new opportunities for AI applications in the finance industry, particularly in personal financial advising."
+   }
+  },
+  "tags": [
+   "金融",
+   "文本",
+   "数据"
+  ]
+ },
+ {
+  "id": "huggingface:space/multimodalart/minimax-h3",
+  "name": "multimodalart/minimax-h3",
+  "url": "https://huggingface.co/spaces/multimodalart/minimax-h3",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 174,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 6,
+   "total": 19
+  },
+  "reason": "minimax-h3 是一个多模态艺术生成工具。",
+  "analysis": {
+   "zh": "minimax-h3 是一个多模态艺术生成工具，可以创建独特的艺术作品。",
+   "en": "minimax-h3 is a multimodal art generation tool that can create unique artworks."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "minimax-h3 是一个多模态艺术生成工具，可以结合多种媒体形式创建独特的艺术作品。",
+    "why": "它利用先进的 AI 技术，使用户能够轻松地创作出富有创意的艺术作品。",
+    "biz": "这个工具在艺术创作和设计领域具有很大的商业潜力。"
+   },
+   "en": {
+    "what": "minimax-h3 is a multimodal art generation tool that combines various media forms to create unique artworks.",
+    "why": "It leverages advanced AI technology to allow users to easily create creative artworks.",
+    "biz": "This tool has significant commercial potential in the fields of art creation and design."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "reddit:1vfrco1",
+  "name": "I Compressed Bad Apple into a 3MB Neural Network [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vfrco1/i_compressed_bad_apple_into_a_3mb_neural_network_p/",
+  "source": "reddit",
+  "description": "I trained a small MLP to memorize the classic Bad Apple animation, ~2.7 billion pixels of video compressed into 790k parameters (3.2 MB float32, 1.6 MB float16). The network takes a 3D coordinate (t, y, x)- frame index and pixel position- and outputs a grayscale value between 0 and 1. To \"play\" the video, you can evaluate the function over the full grid. The \"video\" is stored implicitly in 5 linear layers of sine activations (Sitzmann et al.&#39;s SIREN) with 512 hidden units, ω₀ = 30, and sigmo",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 8,
+   "fun": 7,
+   "money": 4,
+   "total": 19
+  },
+  "reason": "将经典动画《Bad Apple》压缩成3MB的神经网络，展示了AI在图像压缩方面的潜力。",
+  "analysis": {
+   "zh": "该项目训练了一个小型MLP来记忆经典动画《Bad Apple》，将约27亿像素的视频压缩成79万个参数，存储在一个3.2MB的浮点数模型中。",
+   "en": "This project trained a small MLP to memorize the classic Bad Apple animation, compressing about 2.7 billion pixels of video into 790k parameters, stored in a 3.2 MB float32 model."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该项目通过训练一个小型MLP来记忆经典动画《Bad Apple》，将约27亿像素的视频压缩成79万个参数，存储在一个3.2MB的浮点数模型中。",
+    "why": "这项研究展示了AI在图像和视频压缩方面的巨大潜力。通过使用SIREN架构，研究人员成功地将庞大的视频数据压缩到极小的模型中，同时保持了较高的图像质量。",
+    "biz": "虽然该项目目前还处于研究阶段，但它展示了AI在图像和视频压缩方面的巨大潜力。未来，这种技术可以应用于视频流媒体、移动设备等领域，提高传输效率和存储空间利用率。"
+   },
+   "en": {
+    "what": "This project trained a small MLP to memorize the classic Bad Apple animation, compressing about 2.7 billion pixels of video into 790k parameters, stored in a 3.2 MB float32 model.",
+    "why": "This research demonstrates the significant potential of AI in image and video compression. By using the SIREN architecture, researchers successfully compressed a large amount of video data into a very small model while maintaining high image quality.",
+    "biz": "While this project is currently in the research phase, it shows the significant potential of AI in image and video compression. In the future, this technology could be applied to video streaming, mobile devices, and other areas to improve transmission efficiency and storage space utilization."
+   }
+  },
+  "tags": [
+   "图像"
+  ]
+ },
+ {
+  "id": "github:Binaryify/open-kimi-ppt-skill",
+  "name": "Binaryify/open-kimi-ppt-skill",
+  "url": "https://github.com/Binaryify/open-kimi-ppt-skill",
+  "source": "github",
+  "description": "非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1586,
+   "language": ""
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 7,
+   "total": 18
+  },
+  "reason": "非官方Kimi Slides Skill：让AI代理生成可编辑PPTD + PPTX，并附带本地浏览器编辑器。",
+  "analysis": {
+   "zh": "该项目是一个非官方的Kimi Slides技能，允许AI代理生成可编辑的PPTD和PPTX文件，并提供本地浏览器编辑器。",
+   "en": "This project is an unofficial Kimi Slides skill that allows AI agents to generate editable PPTD and PPTX files, with a local browser editor provided."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个非官方的Kimi Slides技能，允许AI代理生成可编辑的PPTD和PPTX文件，并提供本地浏览器编辑器。",
+    "why": "传统的PPT制作往往耗时且繁琐，而这个项目通过AI代理自动生成PPT，大大提高了工作效率。",
+    "biz": "这种自动化PPT生成工具可以广泛应用于商务和教育领域，提高文档制作效率，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is an unofficial Kimi Slides skill that allows AI agents to generate editable PPTD and PPTX files, with a local browser editor provided.",
+    "why": "Traditional PPT creation can be time-consuming and tedious, while this project automates the process through AI agents, significantly improving efficiency.",
+    "biz": "This automated PPT generation tool can be widely applied in business and education, enhancing document creation efficiency, with high commercial value."
+   }
+  },
+  "tags": [
+   "商业"
+  ]
+ },
+ {
+  "id": "github:jd-opensource/JoyAI-Video-Edit",
+  "name": "jd-opensource/JoyAI-Video-Edit",
+  "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+  "source": "github",
+  "description": "[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 424,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 7,
+   "total": 18
+  },
+  "reason": "JoyAI-Video-Edit：实时开放式视频编辑，支持自回归扩散。",
+  "analysis": {
+   "zh": "该项目是一个开源的实时开放式视频编辑工具，支持自回归扩散，可以实现高质量的视频编辑。",
+   "en": "This project is an open-source real-time open-ended video editing tool that supports autoregressive diffusion, enabling high-quality video editing."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "JoyAI-Video-Edit是一个开源的实时开放式视频编辑工具，支持自回归扩散，可以实现高质量的视频编辑。",
+    "why": "传统的视频编辑工具往往功能有限且操作复杂，而这个项目通过自回归扩散技术，提供了更灵活和高效的编辑体验。",
+    "biz": "这种视频编辑工具可以广泛应用于内容创作和媒体制作中，提高编辑效率和作品质量，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "JoyAI-Video-Edit is an open-source real-time open-ended video editing tool that supports autoregressive diffusion, enabling high-quality video editing.",
+    "why": "Traditional video editing tools often have limited functionality and are complex to use, while this project provides a more flexible and efficient editing experience through autoregressive diffusion technology.",
+    "biz": "This video editing tool can be widely applied in content creation and media production, enhancing editing efficiency and work quality, with high commercial value."
+   }
+  },
+  "tags": [
+   "视频"
+  ]
+ },
+ {
+  "id": "hackernews:49171268",
+  "name": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+  "url": "https://mistral.ai/news/shieldstral/",
+  "source": "hackernews",
+  "description": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 481,
+   "comments": 133,
+   "hn_link": "https://news.ycombinator.com/item?id=49171268"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 7,
+   "total": 18
+  },
+  "reason": "Shieldstral 是一款用于多模态内容审核的开源模型。",
+  "analysis": {
+   "zh": "Mistral 发布了 Shieldstral，一个用于多模态内容审核的 3B 开源模型。",
+   "en": "Mistral released Shieldstral, a 3B open-weights model for multimodal moderation."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Shieldstral 是一个 3B 参数的多模态内容审核模型。",
+    "why": "它可以帮助平台更有效地检测和处理违规内容，提高审核效率。",
+    "biz": "该模型的开源性质使其在商业应用中具有广泛的潜力。"
+   },
+   "en": {
+    "what": "Shieldstral is a 3B parameter multimodal content moderation model.",
+    "why": "It helps platforms detect and handle inappropriate content more efficiently, enhancing moderation efforts.",
+    "biz": "The open-source nature of the model gives it broad potential in commercial applications."
+   }
+  },
+  "tags": [
+   "安全",
+   "图像",
+   "视频"
+  ]
+ },
+ {
+  "id": "huggingface:space/Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "name": "Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "url": "https://huggingface.co/spaces/Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 274,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 5,
+   "total": 18
+  },
+  "reason": "Qwen-Image-Edit-2509-LoRAs-Fast2 是一个快速的图像编辑工具。",
+  "analysis": {
+   "zh": "Qwen-Image-Edit-2509-LoRAs-Fast2 是一个快速且功能强大的图像编辑工具。",
+   "en": "Qwen-Image-Edit-2509-LoRAs-Fast2 is a fast and powerful image editing tool."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Qwen-Image-Edit-2509-LoRAs-Fast2 是一个快速且功能强大的图像编辑工具。",
+    "why": "它利用 LoRA 技术，提供高效的图像编辑功能。",
+    "biz": "该工具在图像处理和设计领域具有较大的商业潜力。"
+   },
+   "en": {
+    "what": "Qwen-Image-Edit-2509-LoRAs-Fast2 is a fast and powerful image editing tool.",
+    "why": "It leverages LoRA technology to provide efficient image editing capabilities.",
+    "biz": "This tool has significant commercial potential in the fields of image processing and design."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "huggingface:space/Alissonerdx/charactersheet-lora-demo",
+  "name": "Alissonerdx/charactersheet-lora-demo",
+  "url": "https://huggingface.co/spaces/Alissonerdx/charactersheet-lora-demo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 85,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 5,
+   "total": 18
+  },
+  "reason": "charactersheet-lora-demo 是一个角色表生成工具。",
+  "analysis": {
+   "zh": "charactersheet-lora-demo 是一个基于 LoRA 技术的角色表生成工具。",
+   "en": "charactersheet-lora-demo is a character sheet generation tool based on LoRA technology."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "charactersheet-lora-demo 是一个基于 LoRA 技术的角色表生成工具，可以创建详细的角色表。",
+    "why": "它利用 LoRA 技术，使用户能够轻松地创建和管理角色表。",
+    "biz": "这个工具在角色设计和游戏开发领域具有一定的商业潜力。"
+   },
+   "en": {
+    "what": "charactersheet-lora-demo is a character sheet generation tool based on LoRA technology, creating detailed character sheets.",
+    "why": "It leverages LoRA technology to allow users to easily create and manage character sheets.",
+    "biz": "This tool has some commercial potential in the fields of character design and game development."
+   }
+  },
+  "tags": [
+   "游戏",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "huggingface:space/SeedOfEvil/Pro-Realism-Edit-Studio",
+  "name": "SeedOfEvil/Pro-Realism-Edit-Studio",
+  "url": "https://huggingface.co/spaces/SeedOfEvil/Pro-Realism-Edit-Studio",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 80,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 7,
+   "money": 5,
+   "total": 18
+  },
+  "reason": "Pro-Realism-Edit-Studio 是一个专业的现实主义编辑工作室。",
+  "analysis": {
+   "zh": "Pro-Realism-Edit-Studio 是一个专业的现实主义编辑工作室，提供高质量的图像编辑功能。",
+   "en": "Pro-Realism-Edit-Studio is a professional realism editing studio that offers high-quality image editing capabilities."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Pro-Realism-Edit-Studio 是一个专业的现实主义编辑工作室，提供高质量的图像编辑功能。",
+    "why": "它利用先进的图像处理技术，使用户能够创建逼真的图像。",
+    "biz": "这个工具在图像处理和设计领域具有较大的商业潜力。"
+   },
+   "en": {
+    "what": "Pro-Realism-Edit-Studio is a professional realism editing studio that offers high-quality image editing capabilities.",
+    "why": "It leverages advanced image processing technology to enable users to create realistic images.",
+    "biz": "This tool has significant commercial potential in the fields of image processing and design."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "huggingface:paper/2608.05987",
+  "name": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+  "url": "https://huggingface.co/papers/2608.05987",
+  "source": "huggingface",
+  "description": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "upvotes": 72,
+   "kind": "paper"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 5,
+   "money": 6,
+   "total": 18
+  },
+  "reason": "AgentOPSD 是一种递归自蒸馏方法，用于代理强化学习中的信用分配。",
+  "analysis": {
+   "zh": "论文介绍了一种名为 AgentOPSD 的递归自蒸馏方法，用于代理强化学习中的信用分配。",
+   "en": "The paper introduces AgentOPSD, a recursive self-distillation method for credit assignment in agentic reinforcement learning."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "论文介绍了一种名为 AgentOPSD 的递归自蒸馏方法，用于代理强化学习中的信用分配。",
+    "why": "这种方法通过递归自蒸馏来提供更密集的监督信号，从而改善信用分配。",
+    "biz": "这项研究在强化学习领域具有重要的学术价值，并可能在未来有商业应用。"
+   },
+   "en": {
+    "what": "The paper introduces AgentOPSD, a recursive self-distillation method for credit assignment in agentic reinforcement learning.",
+    "why": "This method provides denser supervision signals through recursive self-distillation, improving credit assignment.",
+    "biz": "This research has significant academic value in the field of reinforcement learning and may have future commercial applications."
+   }
+  },
+  "tags": [
+   "论文",
+   "数据",
+   "效率"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06377v1",
+  "name": "Learning When to Trust via Selective Context Preference Optimization",
+  "url": "https://arxiv.org/abs/2608.06377v1",
+  "source": "arxiv",
+  "description": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides a failure mode: a model that ignores all context looks robust yet is useless when the context is worth trusting. We recast the problem as selective trust and introduce MIST, a human-annotated benchmark that renders each reasoning item under four matched conditions (clean, misleading, correct-contex",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 8,
+   "total": 17
+  },
+  "reason": "通过选择性信任优化解决语言模型对误导信息的敏感问题，提高模型实用性。",
+  "analysis": {
+   "zh": "本文提出了MIST基准来测试模型在不同条件下的表现，并提出了一种选择性信任的方法以增强模型的鲁棒性和准确性。",
+   "en": "This paper introduces the MIST benchmark to test model performance under various conditions and proposes a selective trust approach to enhance robustness and accuracy."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究主要探讨了如何让语言模型在面对外部信号时能够做出更合理的判断，特别是当这些信号可能是错误的情况下。",
+    "why": "随着语言模型越来越多地依赖于外部信息，它们也更容易受到误导。本研究旨在找到一种方法，使模型能够智能地区分哪些信息是值得信赖的，从而避免被误导。",
+    "biz": "这项技术可以广泛应用于各种基于语言模型的应用中，提高其可靠性和用户体验，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "The study mainly explores how to enable language models to make more reasonable judgments when facing external signals, especially when these signals may be incorrect.",
+    "why": "As language models increasingly rely on external information, they are also more susceptible to being misled. This research aims to find a way for the model to intelligently distinguish which information is trustworthy, thus avoiding misinformation.",
+    "biz": "This technology can be widely applied in various language model-based applications, enhancing their reliability and user experience, with high commercial value."
+   }
+  },
+  "tags": [
+   "文本"
+  ]
+ },
+ {
+  "id": "hackernews:49167113",
+  "name": "AI-Generated Images Discourage Me from Reading Your Blog",
+  "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+  "source": "hackernews",
+  "description": "AI-Generated Images Discourage Me from Reading Your Blog",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 793,
+   "comments": 465,
+   "hn_link": "https://news.ycombinator.com/item?id=49167113"
+  },
+  "scores": {
+   "whimsy": 7,
+   "fun": 6,
+   "money": 4,
+   "total": 17
+  },
+  "reason": "AI 生成的图片可能会影响读者对博客内容的兴趣。",
+  "analysis": {
+   "zh": "文章讨论了 AI 生成的图片如何影响读者对博客的兴趣。",
+   "en": "The article discusses how AI-generated images can affect reader interest in blogs."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这篇文章探讨了 AI 生成的图片如何让读者失去阅读兴趣。",
+    "why": "这些图片有时看起来不自然或不符合预期，从而分散了读者的注意力。",
+    "biz": "虽然这个问题降低了用户体验，但它也为改进图像生成技术提供了机会。"
+   },
+   "en": {
+    "what": "The article explores how AI-generated images can discourage readers from reading blog content.",
+    "why": "These images sometimes look unnatural or unexpected, which can distract readers.",
+    "biz": "While this issue reduces user experience, it also presents an opportunity to improve image generation technology."
+   }
+  },
+  "tags": [
+   "创意",
+   "图像",
+   "社区"
+  ]
+ },
+ {
+  "id": "huggingface:space/victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "name": "victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "url": "https://huggingface.co/spaces/victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 87,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 6,
+   "total": 17
+  },
+  "reason": "DeepSeek-V4-Flash-0731-free-endpoint 是一个免费的深度搜索端点。",
+  "analysis": {
+   "zh": "DeepSeek-V4-Flash-0731-free-endpoint 是一个免费的深度搜索端点，提供了强大的搜索功能。",
+   "en": "DeepSeek-V4-Flash-0731-free-endpoint is a free deep search endpoint that offers powerful search capabilities."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "DeepSeek-V4-Flash-0731-free-endpoint 是一个免费的深度搜索端点，提供了强大的搜索功能。",
+    "why": "它利用先进的搜索算法，使用户能够快速找到所需的信息。",
+    "biz": "这个工具在信息检索和数据分析领域具有较大的商业潜力。"
+   },
+   "en": {
+    "what": "DeepSeek-V4-Flash-0731-free-endpoint is a free deep search endpoint that offers powerful search capabilities.",
+    "why": "It leverages advanced search algorithms to enable users to quickly find the information they need.",
+    "biz": "This tool has significant commercial potential in the fields of information retrieval and data analysis."
+   }
+  },
+  "tags": [
+   "数据",
+   "效率",
+   "社区"
+  ]
+ },
+ {
+  "id": "producthunt:1217026",
+  "name": "AgentOne Desktop",
+  "url": "https://www.producthunt.com/products/agentone-desktop",
+  "source": "producthunt",
+  "description": "Automate boring work. Extensible and free desktop AI agent.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 6,
+   "total": 17
+  },
+  "reason": "AgentOne Desktop 是一个免费且可扩展的桌面AI代理，可以自动化处理繁琐的工作任务。",
+  "analysis": {
+   "zh": "AgentOne Desktop 是一个免费且可扩展的桌面AI代理，它可以帮助用户自动化处理各种繁琐的工作任务。",
+   "en": "AgentOne Desktop is a free and extensible desktop AI agent that can help users automate various tedious work tasks."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "AgentOne Desktop 是一个桌面AI代理，旨在帮助用户自动化处理日常工作中的一些繁琐任务。它支持多种插件和扩展，可以根据用户的需求进行定制。",
+    "why": "许多日常工作中的任务都是重复性的，而且耗时耗力。AgentOne Desktop 通过自动化这些任务，可以让用户节省大量时间和精力，提高工作效率。",
+    "biz": "随着人们对工作效率要求的提高，像AgentOne Desktop这样的工具将有很大的市场需求。它可以帮助个人和企业提高生产力，降低成本。"
+   },
+   "en": {
+    "what": "AgentOne Desktop is a desktop AI agent designed to help users automate routine and tedious tasks in their daily work. It supports multiple plugins and extensions, allowing for customization based on user needs.",
+    "why": "Many tasks in daily work are repetitive and time-consuming. AgentOne Desktop, by automating these tasks, can save users a lot of time and effort, improving work efficiency.",
+    "biz": "As the demand for work efficiency increases, tools like AgentOne Desktop will see significant market demand. It can help individuals and businesses increase productivity and reduce costs."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "github:criptogus/HermesOffice",
+  "name": "criptogus/HermesOffice",
+  "url": "https://github.com/criptogus/HermesOffice",
+  "source": "github",
+  "description": "HermesOffice — AI-native office suite forked from GenOffice (Apache-2.0), with native Hermes Agent AI",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 415,
+   "language": "TypeScript"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 4,
+   "money": 8,
+   "total": 16
+  },
+  "reason": "HermesOffice：一个基于GenOffice的AI原生办公套件，内置Hermes Agent AI。",
+  "analysis": {
+   "zh": "该项目是一个基于GenOffice的AI原生办公套件，内置Hermes Agent AI，提供智能化的办公体验。",
+   "en": "This project is an AI-native office suite based on GenOffice, featuring built-in Hermes Agent AI for intelligent office experiences."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "HermesOffice是一个基于GenOffice的AI原生办公套件，内置Hermes Agent AI，提供智能化的办公体验。",
+    "why": "传统的办公套件往往缺乏智能化功能，而这个项目通过集成AI代理，提供了更高效和便捷的办公体验。",
+    "biz": "这种AI原生办公套件可以广泛应用于企业和个人办公中，提高工作效率和用户体验，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "HermesOffice is an AI-native office suite based on GenOffice, featuring built-in Hermes Agent AI for intelligent office experiences.",
+    "why": "Traditional office suites often lack intelligent features, and this project enhances the office experience by integrating AI agents, providing more efficient and convenient functionalities.",
+    "biz": "This AI-native office suite can be widely applied in enterprise and personal office settings, enhancing productivity and user experience, with high commercial value."
+   }
+  },
+  "tags": [
+   "商业"
+  ]
+ },
+ {
+  "id": "hackernews:49195468",
+  "name": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+  "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+  "source": "hackernews",
+  "description": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 330,
+   "comments": 244,
+   "hn_link": "https://news.ycombinator.com/item?id=49195468"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 7,
+   "total": 16
+  },
+  "reason": "人类在批准 AI 代理命令时错过了三分之一的威胁。",
+  "analysis": {
+   "zh": "研究表明，在 40000 次游戏运行中，人类错过了三分之一的威胁。",
+   "en": "Research shows that humans missed one in three threats when approving AI agent commands across 40,000 game runs."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "研究发现，在 40000 次游戏运行中，人类在批准 AI 代理命令时忽略了三分之一的威胁。",
+    "why": "这表明人类在监控 AI 行为时可能存在盲点。",
+    "biz": "这一发现对于改进 AI 监控系统和提高安全性具有重要意义。"
+   },
+   "en": {
+    "what": "The study found that humans missed one in three threats when approving AI agent commands across 40,000 game runs.",
+    "why": "This suggests that there may be blind spots in human monitoring of AI behavior.",
+    "biz": "This finding is significant for improving AI monitoring systems and enhancing security."
+   }
+  },
+  "tags": [
+   "安全",
+   "游戏",
+   "数据"
+  ]
+ },
+ {
+  "id": "huggingface:space/Danny-Lynote/humanizer-lite",
+  "name": "Danny-Lynote/humanizer-lite",
+  "url": "https://huggingface.co/spaces/Danny-Lynote/humanizer-lite",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 105,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 5,
+   "total": 16
+  },
+  "reason": "humanizer-lite 是一个轻量级的人类化文本生成工具。",
+  "analysis": {
+   "zh": "humanizer-lite 是一个轻量级的人类化文本生成工具，可以生成自然流畅的文本。",
+   "en": "humanizer-lite is a lightweight text humanization tool that generates natural and fluent text."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "humanizer-lite 是一个轻量级的人类化文本生成工具，可以生成自然流畅的文本。",
+    "why": "它利用先进的 NLP 技术，使机器生成的文本更加人性化。",
+    "biz": "这个工具在内容创作和文本生成领域具有一定的商业潜力。"
+   },
+   "en": {
+    "what": "humanizer-lite is a lightweight text humanization tool that generates natural and fluent text.",
+    "why": "It leverages advanced NLP technology to make machine-generated text more human-like.",
+    "biz": "This tool has some commercial potential in the fields of content creation and text generation."
+   }
+  },
+  "tags": [
+   "文本",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "producthunt:1215451",
+  "name": "StepShot",
+  "url": "https://www.producthunt.com/products/stepshot-2",
+  "source": "producthunt",
+  "description": "AI that turns real workflows into step-by-step guides",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 5,
+   "total": 16
+  },
+  "reason": "StepShot 可以将真实的工作流程转化为分步指南，帮助用户更好地理解和执行任务。",
+  "analysis": {
+   "zh": "StepShot 是一个AI工具，可以将真实的工作流程转化为详细的分步指南，帮助用户更好地理解和执行任务。",
+   "en": "StepShot is an AI tool that can turn real workflows into detailed step-by-step guides, helping users better understand and execute tasks."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "StepShot 是一个AI工具，它可以将实际的工作流程转化为详细的分步指南。这对于新员工培训和复杂任务的执行非常有帮助。",
+    "why": "在很多情况下，详细的工作指南可以帮助人们更快地掌握新技能或完成复杂任务。StepShot 通过自动化这一过程，使得创建分步指南变得更加简单和高效。",
+    "biz": "随着远程工作和在线学习的兴起，对高质量工作指南的需求也在增加。StepShot 作为一个高效的工具，具有很大的市场潜力。"
+   },
+   "en": {
+    "what": "StepShot is an AI tool that can convert actual workflows into detailed step-by-step guides. This is particularly helpful for new employee training and executing complex tasks.",
+    "why": "In many cases, detailed work guides can help people quickly acquire new skills or complete complex tasks. StepShot, by automating this process, makes creating step-by-step guides simpler and more efficient.",
+    "biz": "With the rise of remote work and online learning, the demand for high-quality work guides is increasing. StepShot, as an efficient tool, has great market potential."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "reddit:1vh2gn1",
+  "name": "Round-Trip Consistency: Bidirectional Diffusion Models Can Predict Their Own Rollout Errors [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vh2gn1/roundtrip_consistency_bidirectional_diffusion/",
+  "source": "reddit",
+  "description": "Whether generating CELEBV-HQ videos or turbulent plasma fields (digital twins), autoregressive models (such as latent diffusion or flow models) accumulate error over long rollouts, yet at deployment there is no ground truth to measure against. I train a single conditional latent diffusion model that steps a dynamical system forward or backward in time via a direction flag, and show that this bidirectionality supplies a measurement-free test-time error signal: rolling forward steps and then backw",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 4,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 6,
+   "fun": 5,
+   "money": 5,
+   "total": 16
+  },
+  "reason": "双向扩散模型可以在没有地面真值的情况下预测自身的展开误差，展示了AI在预测和纠错方面的潜力。",
+  "analysis": {
+   "zh": "该研究展示了一个双向扩散模型，可以在没有地面真值的情况下预测自身的展开误差，从而提高AI代理的稳定性和准确性。",
+   "en": "This research showcases a bidirectional diffusion model that can predict its own rollout errors without ground truth, thereby improving the stability and accuracy of AI agents."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究展示了一个双向扩散模型，可以在没有地面真值的情况下预测自身的展开误差。通过这种方式，模型可以在没有参考数据的情况下自我纠正。",
+    "why": "在实际应用中，AI代理经常需要在没有地面真值的情况下进行长时间的预测和决策。双向扩散模型通过自我纠错机制，提高了模型的稳定性和准确性。",
+    "biz": "这项研究展示了AI在预测和纠错方面的巨大潜力。未来，这种技术可以应用于自动驾驶、机器人等领域，提高系统的可靠性和稳定性。"
+   },
+   "en": {
+    "what": "This research showcases a bidirectional diffusion model that can predict its own rollout errors without ground truth. By doing so, the model can self-correct even without reference data.",
+    "why": "In practical applications, AI agents often need to make long-term predictions and decisions without ground truth. The bidirectional diffusion model improves the stability and accuracy of the model through a self-correction mechanism.",
+    "biz": "This research demonstrates the significant potential of AI in prediction and error correction. In the future, this technology could be applied to autonomous driving, robotics, and other areas to improve system reliability and stability."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06366v1",
+  "name": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+  "url": "https://arxiv.org/abs/2608.06366v1",
+  "source": "arxiv",
+  "description": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific, guideline-based clinical reasoning. Existing rule-based and large language model (LLM)-based approaches offer only partial automation with limited maintainability and evidence tra",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 9,
+   "total": 15
+  },
+  "reason": "通过自动化管道改进心脏病特征工程，加速临床研究和AI应用。",
+  "analysis": {
+   "zh": "本研究提出了一种新的证据链接管道，用于心脏病特征工程，旨在减少数据科学家的工作量并提高研究效率。",
+   "en": "This research presents a new evidence-linked pipeline for heart failure feature engineering, aimed at reducing the workload of data scientists and improving research efficiency."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "针对电子健康记录中的心脏病数据，该研究开发了一套自动化处理流程，能够更好地整合碎片化的医疗数据。",
+    "why": "当前心脏病特征工程耗时且复杂，本研究通过引入自动化工具来简化这一过程，使得医生和研究人员能够更快地获取有价值的洞察。",
+    "biz": "这种自动化的特征工程解决方案有望大幅降低医疗机构的成本，并加速新治疗方法的研发。"
+   },
+   "en": {
+    "what": "Focusing on heart disease data in electronic health records, this research develops an automated processing workflow that better integrates fragmented medical data.",
+    "why": "Current heart failure feature engineering is time-consuming and complex, and this research simplifies the process through automation, allowing doctors and researchers to gain valuable insights more quickly.",
+    "biz": "This automated feature engineering solution has the potential to significantly reduce costs for healthcare institutions and accelerate the development of new treatment methods."
+   }
+  },
+  "tags": [
+   "医疗"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06361v1",
+  "name": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+  "url": "https://arxiv.org/abs/2608.06361v1",
+  "source": "arxiv",
+  "description": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic benchmarks offer better control, they score only the final answer rather than auditing reported events against executable ground truth. To bridge this gap, we introduce trace-grounded parametric profiling for event counting in three controlled video tasks: bouncing-ball wall contacts, visual blinks",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 6,
+   "total": 15
+  },
+  "reason": "揭示视频语言模型在简单事件计数上的低频陷阱，提高模型性能。",
+  "analysis": {
+   "zh": "本文通过一系列受控实验，展示了视频语言模型在简单事件计数上的不足，并提出了一种新的参数化分析方法。",
+   "en": "This paper demonstrates the shortcomings of video language models in simple event counting through a series of controlled experiments and proposes a new parametric analysis method."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究揭示了视频语言模型在处理简单事件计数时存在的问题，并通过受控实验进行了验证。",
+    "why": "现有的视频基准测试难以隔离特定的失败模式，而本研究通过引入参数化分析方法，更好地理解了模型在不同条件下的表现。",
+    "biz": "这种新的分析方法可以帮助改进视频语言模型的设计，提高其在各种应用场景中的性能，具有重要的商业价值。"
+   },
+   "en": {
+    "what": "The research reveals the issues of video language models in handling simple event counting and validates them through controlled experiments.",
+    "why": "Existing video benchmarks struggle to isolate specific failure modes, and this research introduces a parametric analysis method to better understand model performance under different conditions.",
+    "biz": "This new analysis method can help improve the design of video language models, enhancing their performance in various application scenarios, with significant commercial value."
+   }
+  },
+  "tags": [
+   "视频"
+  ]
+ },
+ {
+  "id": "github:alikon-art/DeterminFlow",
+  "name": "alikon-art/DeterminFlow",
+  "url": "https://github.com/alikon-art/DeterminFlow",
+  "source": "github",
+  "description": "A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 253,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 8,
+   "total": 15
+  },
+  "reason": "面向生产的AI工作流运行时：快速开发、验证和恢复复杂AI工作流，并将其稳定交付为服务。",
+  "analysis": {
+   "zh": "该项目是一个面向生产的AI工作流运行时，旨在快速开发、验证和恢复复杂AI工作流，并将其稳定交付为服务。",
+   "en": "This project is a production-oriented AI workflow runtime designed for rapid development, validation, and recovery of complex AI workflows, delivering them as dependable services."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "DeterminFlow是一个面向生产的AI工作流运行时，旨在快速开发、验证和恢复复杂AI工作流，并将其稳定交付为服务。",
+    "why": "复杂的AI工作流往往难以管理和维护，而这个项目通过提供一个统一的运行时环境，简化了工作流的开发和部署。",
+    "biz": "这种运行时工具可以广泛应用于各种复杂的AI工作流中，提高其稳定性和可靠性，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "DeterminFlow is a production-oriented AI workflow runtime designed for rapid development, validation, and recovery of complex AI workflows, delivering them as dependable services.",
+    "why": "Complex AI workflows can be difficult to manage and maintain, and this project simplifies their development and deployment by providing a unified runtime environment.",
+    "biz": "This runtime tool can be widely applied in various complex AI workflows, enhancing their stability and reliability, with high commercial value."
+   }
+  },
+  "tags": [
+   "基建"
+  ]
+ },
+ {
+  "id": "huggingface:space/obsxrver/wan22-i2v-omni-lora",
+  "name": "obsxrver/wan22-i2v-omni-lora",
+  "url": "https://huggingface.co/spaces/obsxrver/wan22-i2v-omni-lora",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 190,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "wan22-i2v-omni-lora 是一个多功能的图像转换工具。",
+  "analysis": {
+   "zh": "wan22-i2v-omni-lora 是一个多功能的图像转换工具，支持多种输入和输出格式。",
+   "en": "wan22-i2v-omni-lora is a versatile image conversion tool that supports various input and output formats."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "wan22-i2v-omni-lora 是一个多功能的图像转换工具，可以处理多种类型的图像内容。",
+    "why": "它支持多种输入和输出格式，使用户能够灵活地进行图像转换。",
+    "biz": "这个工具在图像处理和内容创作领域有一定的商业潜力。"
+   },
+   "en": {
+    "what": "wan22-i2v-omni-lora is a versatile image conversion tool that can handle various types of image content.",
+    "why": "It supports multiple input and output formats, allowing users to flexibly convert images.",
+    "biz": "This tool has some commercial potential in the fields of image processing and content creation."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "huggingface:space/multimodalart/minimax-h3-reference",
+  "name": "multimodalart/minimax-h3-reference",
+  "url": "https://huggingface.co/spaces/multimodalart/minimax-h3-reference",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 59,
+   "kind": "space"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 6,
+   "money": 4,
+   "total": 15
+  },
+  "reason": "minimax-h3-reference 是一个多模态艺术生成工具的参考实现。",
+  "analysis": {
+   "zh": "minimax-h3-reference 是一个多模态艺术生成工具的参考实现，提供了详细的示例和文档。",
+   "en": "minimax-h3-reference is a reference implementation of a multimodal art generation tool, providing detailed examples and documentation."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "minimax-h3-reference 是一个多模态艺术生成工具的参考实现，提供了详细的示例和文档。",
+    "why": "它可以帮助开发者更好地理解和使用该工具，促进创新。",
+    "biz": "这个参考实现对于推广多模态艺术生成工具具有一定的商业价值。"
+   },
+   "en": {
+    "what": "minimax-h3-reference is a reference implementation of a multimodal art generation tool, providing detailed examples and documentation.",
+    "why": "It helps developers better understand and use the tool, fostering innovation.",
+    "biz": "This reference implementation has some commercial value in promoting multimodal art generation tools."
+   }
+  },
+  "tags": [
+   "图像",
+   "创意",
+   "社区"
+  ]
+ },
+ {
+  "id": "producthunt:1216472",
+  "name": "Soloop",
+  "url": "https://www.producthunt.com/products/soloop",
+  "source": "producthunt",
+  "description": "Approval-first Agent OS for solo founders",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 6,
+   "total": 15
+  },
+  "reason": "专为独立创始人设计的审批优先代理操作系统，简化了单打独斗者的开发流程。",
+  "analysis": {
+   "zh": "Soloop 是一款专为独立创始人设计的操作系统，它通过审批优先的方式来管理AI代理，从而帮助他们更高效地工作。",
+   "en": "Soloop is an operating system designed for solo founders, which manages AI agents through an approval-first approach to help them work more efficiently."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Soloop是一个专门为独立创始人打造的操作系统，它采用了一种审批优先的方式来管理AI代理，确保只有经过批准的任务才能被执行。",
+    "why": "对于独立创始人来说，时间就是金钱。Soloop通过减少不必要的干扰和错误，让创始人能够专注于真正重要的任务上。",
+    "biz": "随着越来越多的人选择独立创业，像Soloop这样的工具将会有很大的市场需求。它可以帮助创业者提高工作效率，降低运营成本。"
+   },
+   "en": {
+    "what": "Soloop is an operating system specifically designed for solo founders, adopting an approval-first method to manage AI agents, ensuring only approved tasks are executed.",
+    "why": "For independent entrepreneurs, time is money. Soloop reduces unnecessary distractions and errors, allowing founders to focus on truly important tasks.",
+    "biz": "As more people choose to start their own ventures, tools like Soloop will see a significant market demand. It can help entrepreneurs increase productivity and reduce operational costs."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "producthunt:1215770",
+  "name": "Progress AI Observability",
+  "url": "https://www.producthunt.com/products/progress-ai-observability",
+  "source": "producthunt",
+  "description": "Trace, evaluate, and improve AI agents in production",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 6,
+   "total": 15
+  },
+  "reason": "Progress AI Observability 可以追踪、评估和改进生产环境中的AI代理，提高系统的透明度和可靠性。",
+  "analysis": {
+   "zh": "Progress AI Observability 是一个工具，可以追踪、评估和改进生产环境中的AI代理，从而提高系统的透明度和可靠性。",
+   "en": "Progress AI Observability is a tool that can trace, evaluate, and improve AI agents in production, thereby enhancing system transparency and reliability."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Progress AI Observability 是一个专门用于监控和优化生产环境中AI代理的工具。它可以帮助开发者追踪代理的行为，评估其性能，并进行必要的调整。",
+    "why": "在复杂的AI系统中，监控和调试是非常重要的。Progress AI Observability 通过提供详细的跟踪和评估功能，使得开发者能够更好地理解和改进他们的AI代理。",
+    "biz": "随着AI在各个领域的广泛应用，对AI系统的监控和优化需求也在不断增加。Progress AI Observability 作为一个专业的工具，具有很大的市场潜力。"
+   },
+   "en": {
+    "what": "Progress AI Observability is a tool specifically designed for monitoring and optimizing AI agents in production environments. It helps developers track agent behavior, evaluate performance, and make necessary adjustments.",
+    "why": "In complex AI systems, monitoring and debugging are crucial. Progress AI Observability, by providing detailed tracing and evaluation features, enables developers to better understand and improve their AI agents.",
+    "biz": "As AI becomes more widely used across various fields, the need for monitoring and optimizing AI systems is growing. Progress AI Observability, as a specialized tool, has great market potential."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06362v1",
+  "name": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+  "url": "https://arxiv.org/abs/2608.06362v1",
+  "source": "arxiv",
+  "description": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while naive optional stopping with an ordinary confidence interval invalidates the stated level. We make such an evaluation stop as soon as its evidence suffices, with the guarantee intact",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 7,
+   "total": 14
+  },
+  "reason": "通过AV-AIVAT实现更经济的代理评估，在不完全信息游戏中提供认证的即时有效停止。",
+  "analysis": {
+   "zh": "本文提出了一种新的代理评估方法AV-AIVAT，可以在不完全信息游戏中实现更经济、更有效的评估。",
+   "en": "This paper presents a new agent evaluation method, AV-AIVAT, which enables more cost-effective and efficient evaluations in imperfect-information games."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "AV-AIVAT是一种新的代理评估方法，它能够在不完全信息游戏中实现更经济的评估，并确保结果的有效性。",
+    "why": "传统的代理评估方法通常需要大量游戏来区分两个代理的能力，而AV-AIVAT通过动态调整评估过程，显著减少了所需的资源。",
+    "biz": "这种方法可以广泛应用于各种游戏和竞技环境中，提高评估效率，降低成本，具有很强的商业潜力。"
+   },
+   "en": {
+    "what": "AV-AIVAT is a new agent evaluation method that enables more economical assessments in imperfect-information games while ensuring the validity of the results.",
+    "why": "Traditional agent evaluation methods often require a large number of games to differentiate between two agents, while AV-AIVAT dynamically adjusts the evaluation process, significantly reducing the required resources.",
+    "biz": "This method can be widely applied in various gaming and competitive environments, improving evaluation efficiency and reducing costs, with strong commercial potential."
+   }
+  },
+  "tags": [
+   "游戏"
+  ]
+ },
+ {
+  "id": "github:Accio-org/RealReplicaBench",
+  "name": "Accio-org/RealReplicaBench",
+  "url": "https://github.com/Accio-org/RealReplicaBench",
+  "source": "github",
+  "description": "RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1040,
+   "language": "HTML"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 8,
+   "total": 14
+  },
+  "reason": "高保真、有状态和可重现的真实在线服务副本中长周期代理的基准测试。",
+  "analysis": {
+   "zh": "该项目提供了一个高保真、有状态和可重现的真实在线服务副本，用于长周期代理的基准测试。",
+   "en": "This project provides a high-fidelity, stateful, and reproducible replica of real online services for benchmarking long-horizon agents."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "RealReplicaBench是一个高保真、有状态和可重现的真实在线服务副本，用于长周期代理的基准测试。",
+    "why": "长周期代理在复杂环境中的表现难以评估，而这个项目通过创建真实服务的副本，提供了一个可靠的测试平台。",
+    "biz": "这种基准测试工具可以广泛应用于各种代理系统的开发和优化中，提高其性能和可靠性，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "RealReplicaBench is a high-fidelity, stateful, and reproducible replica of real online services for benchmarking long-horizon agents.",
+    "why": "Evaluating long-horizon agents in complex environments is challenging, and this project provides a reliable testing platform by creating replicas of real services.",
+    "biz": "This benchmarking tool can be widely applied in the development and optimization of various agent systems, enhancing their performance and reliability, with high commercial value."
+   }
+  },
+  "tags": [
+   "基建"
+  ]
+ },
+ {
+  "id": "github:disler/super-simple-software-factory",
+  "name": "disler/super-simple-software-factory",
+  "url": "https://github.com/disler/super-simple-software-factory",
+  "source": "github",
+  "description": "Repeatable agents-plus-code workflows, packaged as one skill, stamped into any repo. Deterministic Python owns the graph; coding agents are bounded nodes inside it.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 497,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 7,
+   "total": 14
+  },
+  "reason": "可重复的代理加代码工作流，打包成一个技能，可以轻松集成到任何仓库中。",
+  "analysis": {
+   "zh": "该项目提供了一种可重复的代理加代码工作流，打包成一个技能，可以轻松集成到任何仓库中。",
+   "en": "This project offers a repeatable agent-plus-code workflow, packaged as one skill, easily integrated into any repository."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个可重复的代理加代码工作流，打包成一个技能，可以轻松集成到任何仓库中。",
+    "why": "传统的软件开发流程往往复杂且难以复用，而这个项目通过将代理和代码打包成一个技能，简化了开发流程。",
+    "biz": "这种工作流工具可以广泛应用于各种软件开发项目中，提高开发效率和代码质量，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is a repeatable agent-plus-code workflow, packaged as one skill, easily integrated into any repository.",
+    "why": "Traditional software development processes can be complex and hard to reuse, and this project simplifies the development flow by packaging agents and code into one skill.",
+    "biz": "This workflow tool can be widely applied in various software development projects, enhancing development efficiency and code quality, with high commercial value."
+   }
+  },
+  "tags": [
+   "基建"
+  ]
+ },
+ {
+  "id": "github:AMAP-ML/LongHorizon-Harness",
+  "name": "AMAP-ML/LongHorizon-Harness",
+  "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+  "source": "github",
+  "description": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making reliable progress on complex workflows. Features fresh-context execution, durable verified state, independent auditing, recoverable progress, and native Claude Code / Codex / OpenClaw integration.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 393,
+   "language": "Python"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 7,
+   "total": 14
+  },
+  "reason": "长周期计算机使用框架，运行AI代理跨桌面应用和CLI，保持任务状态并可靠推进复杂工作流。",
+  "analysis": {
+   "zh": "该项目提供了一个长周期计算机使用框架，可以在桌面应用和CLI中运行AI代理，保持任务状态并可靠推进复杂工作流。",
+   "en": "This project offers a long-horizon computer-use harness, allowing AI agents to run across desktop applications and the CLI, preserving task state and reliably advancing complex workflows."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个长周期计算机使用框架，可以在桌面应用和CLI中运行AI代理，保持任务状态并可靠推进复杂工作流。",
+    "why": "传统的长周期任务管理往往复杂且容易出错，而这个项目通过提供一个统一的框架，简化了任务管理和执行。",
+    "biz": "这种框架可以广泛应用于各种复杂的任务管理场景中，提高任务执行的可靠性和效率，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is a long-horizon computer-use harness that allows AI agents to run across desktop applications and the CLI, preserving task state and reliably advancing complex workflows.",
+    "why": "Traditional long-horizon task management can be complex and error-prone, and this project simplifies task management and execution by providing a unified framework.",
+    "biz": "This framework can be widely applied in various complex task management scenarios, enhancing the reliability and efficiency of task execution, with high commercial value."
+   }
+  },
+  "tags": [
+   "基建"
+  ]
+ },
+ {
+  "id": "producthunt:1215309",
+  "name": "Reference",
+  "url": "https://www.producthunt.com/products/reference-2",
+  "source": "producthunt",
+  "description": "Local semantic search for AI agents",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-04"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 5,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "Reference 是一个本地语义搜索工具，专为AI代理设计，可以在本地环境中进行高效的搜索。",
+  "analysis": {
+   "zh": "Reference 是一个专为AI代理设计的本地语义搜索工具，它可以在本地环境中进行高效的搜索，提高数据处理的速度和准确性。",
+   "en": "Reference is a local semantic search tool designed for AI agents, enabling efficient searching within a local environment, improving data processing speed and accuracy."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Reference 是一个本地语义搜索工具，专为AI代理设计。它可以在本地环境中进行高效的搜索，提供快速准确的数据检索服务。",
+    "why": "在大数据时代，快速准确的数据检索变得尤为重要。Reference 通过本地化搜索，避免了网络延迟和数据隐私问题，同时提高了搜索效率。",
+    "biz": "随着数据量的不断增长，对高效搜索工具的需求也在增加。Reference 作为一款专为AI代理设计的本地搜索工具，具有很大的市场潜力。"
+   },
+   "en": {
+    "what": "Reference is a local semantic search tool designed for AI agents. It enables efficient searching within a local environment, providing fast and accurate data retrieval services.",
+    "why": "In the era of big data, fast and accurate data retrieval is becoming increasingly important. Reference, by performing local searches, avoids network latency and data privacy issues while improving search efficiency.",
+    "biz": "As the volume of data continues to grow, the demand for efficient search tools is also increasing. Reference, as a local search tool designed for AI agents, has great market potential."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "producthunt:1216668",
+  "name": "HAR",
+  "url": "https://www.producthunt.com/products/har",
+  "source": "producthunt",
+  "description": "Open Source harness for multi-agent coding workflows",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 5,
+   "fun": 4,
+   "money": 5,
+   "total": 14
+  },
+  "reason": "HAR 是一个开源的多代理编码工作流套件，可以简化多代理编程的复杂性。",
+  "analysis": {
+   "zh": "HAR 是一个开源的多代理编码工作流套件，它可以帮助开发者简化多代理编程的复杂性。",
+   "en": "HAR is an open-source multi-agent coding workflow harness that helps developers simplify the complexity of multi-agent programming."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "HAR 是一个开源的多代理编码工作流套件，它提供了一系列工具和框架，帮助开发者更轻松地管理和协调多个代理。",
+    "why": "在多代理系统中，管理和协调多个代理是非常复杂的。HAR 通过提供一系列工具和框架，简化了这一过程，使得开发者可以更专注于核心逻辑的实现。",
+    "biz": "随着分布式系统和多代理技术的广泛应用，像HAR这样的工具将有很大的市场需求。它可以帮助企业和开发者提高开发效率，降低复杂性。"
+   },
+   "en": {
+    "what": "HAR is an open-source multi-agent coding workflow harness that provides a set of tools and frameworks to help developers more easily manage and coordinate multiple agents.",
+    "why": "In multi-agent systems, managing and coordinating multiple agents is very complex. HAR simplifies this process by providing a set of tools and frameworks, allowing developers to focus more on core logic implementation.",
+    "biz": "With the widespread use of distributed systems and multi-agent technologies, tools like HAR will see significant market demand. It can help businesses and developers increase development efficiency and reduce complexity."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06353v1",
+  "name": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+  "url": "https://arxiv.org/abs/2608.06353v1",
+  "source": "arxiv",
+  "description": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the Safe AI paradigm that compute is an effective governance lever. We situate our work as a compliance or commons overlay on a deployer. One governance period is an extensive form gam",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 7,
+   "total": 13
+  },
+  "reason": "提出了一种基于资源分配的机制设计模型，用于已部署AI代理的参与式治理。",
+  "analysis": {
+   "zh": "本文介绍了一种新的机制设计模型，通过资源分配来控制已部署的AI代理，实现自我执行的授权管理。",
+   "en": "This paper introduces a new mechanism design model that controls deployed AI agents through resource allocation, enabling self-enforcing authorization management."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究提出了一种新的机制设计模型，旨在通过资源分配来实现对已部署AI代理的有效治理。",
+    "why": "随着AI系统的广泛应用，如何对其进行有效的管理和控制成为一个重要问题。本研究通过资源分配的方式，实现了对AI代理的自我执行授权。",
+    "biz": "这种机制设计模型可以应用于各种AI系统中，提高其安全性和可控性，具有重要的商业价值。"
+   },
+   "en": {
+    "what": "The research proposes a new mechanism design model aimed at effectively governing deployed AI agents through resource allocation.",
+    "why": "With the widespread use of AI systems, effective management and control have become critical. This research achieves self-enforcing authorization of AI agents through resource allocation.",
+    "biz": "This mechanism design model can be applied to various AI systems, enhancing their security and controllability, with significant commercial value."
+   }
+  },
+  "tags": [
+   "社区"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06346v1",
+  "name": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+  "url": "https://arxiv.org/abs/2608.06346v1",
+  "source": "arxiv",
+  "description": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challenges. First, long trajectories make it difficult to identify individual errors, since the evidence for judging a step may be scattered across distant instructions, observations, and p",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 2,
+   "money": 7,
+   "total": 13
+  },
+  "reason": "通过追踪错误生命周期来识别长周期代理轨迹中的关键故障。",
+  "analysis": {
+   "zh": "本文介绍了一种新的方法TRAJDEBUG，用于识别长周期代理轨迹中的关键错误。",
+   "en": "This paper introduces TRAJDEBUG, a new method for identifying critical errors in long-horizon agent trajectories."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "TRAJDEBUG是一种新的方法，旨在通过追踪错误生命周期来识别长周期代理轨迹中的关键故障。",
+    "why": "长周期代理系统在复杂领域表现出色，但容易出现级联错误，调试困难。TRAJDEBUG通过追踪错误生命周期，帮助定位最早的关键错误步骤。",
+    "biz": "这种方法可以广泛应用于各种复杂的代理系统中，提高其可靠性和稳定性，具有重要的商业价值。"
+   },
+   "en": {
+    "what": "TRAJDEBUG is a new method aimed at identifying critical failures in long-horizon agent trajectories by tracing the error lifecycle.",
+    "why": "Long-horizon agent systems perform well in complex domains but are prone to cascading errors and difficult debugging. TRAJDEBUG helps locate the earliest critical error step by tracing the error lifecycle.",
+    "biz": "This method can be widely applied in various complex agent systems, enhancing their reliability and stability, with significant commercial value."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "github:mikiarlo3/awesome-growth-hacking-skills",
+  "name": "mikiarlo3/awesome-growth-hacking-skills",
+  "url": "https://github.com/mikiarlo3/awesome-growth-hacking-skills",
+  "source": "github",
+  "description": "Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 727,
+   "language": "Shell"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 3,
+   "money": 7,
+   "total": 13
+  },
+  "reason": "收集了适用于Claude、ChatGPT和Manus等AI代理的增长黑客技能。",
+  "analysis": {
+   "zh": "该项目收集了一系列适用于Claude、ChatGPT和Manus等AI代理的增长黑客技能，帮助开发者快速掌握相关技巧。",
+   "en": "This project collects a set of growth hacking skills for AI agents like Claude, ChatGPT, and Manus, helping developers quickly master relevant techniques."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个收集了适用于Claude、ChatGPT和Manus等AI代理的增长黑客技能的项目，旨在帮助开发者快速掌握相关技巧。",
+    "why": "增长黑客技能对于提高AI代理的性能和用户满意度至关重要，而这个项目提供了一个全面的资源库。",
+    "biz": "这种资源库可以广泛应用于各种AI代理的开发和优化中，提高其市场竞争力，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is a project that collects growth hacking skills for AI agents like Claude, ChatGPT, and Manus, aimed at helping developers quickly master relevant techniques.",
+    "why": "Growth hacking skills are crucial for improving the performance and user satisfaction of AI agents, and this project provides a comprehensive resource library.",
+    "biz": "This resource library can be widely applied in the development and optimization of various AI agents, enhancing their market competitiveness, with high commercial value."
+   }
+  },
+  "tags": [
+   "商业"
+  ]
+ },
+ {
+  "id": "hackernews:49213754",
+  "name": "Oracle bans AI-generated code from OpenJDK",
+  "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+  "source": "hackernews",
+  "description": "Oracle bans AI-generated code from OpenJDK",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 410,
+   "comments": 279,
+   "hn_link": "https://news.ycombinator.com/item?id=49213754"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 4,
+   "money": 6,
+   "total": 13
+  },
+  "reason": "Oracle 禁止在 OpenJDK 中使用 AI 生成的代码。",
+  "analysis": {
+   "zh": "Oracle 宣布禁止在 OpenJDK 中使用 AI 生成的代码。",
+   "en": "Oracle announced a ban on AI-generated code in OpenJDK."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Oracle 决定禁止在 OpenJDK 中使用 AI 生成的代码。",
+    "why": "此举可能是为了确保代码质量和安全性。",
+    "biz": "尽管这一决定可能会限制 AI 在开发中的应用，但也有助于维护项目的稳定性和可靠性。"
+   },
+   "en": {
+    "what": "Oracle has decided to ban AI-generated code in OpenJDK.",
+    "why": "This move is likely to ensure code quality and security.",
+    "biz": "While this decision may limit the use of AI in development, it also helps maintain the stability and reliability of the project."
+   }
+  },
+  "tags": [
+   "开源",
+   "编码",
+   "安全"
+  ]
+ },
+ {
+  "id": "producthunt:1214599",
+  "name": "Troopr AI Scrum Master",
+  "url": "https://www.producthunt.com/products/troopr",
+  "source": "producthunt",
+  "description": "Writes your standup from real work. Remembers your team.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-04"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 5,
+   "money": 5,
+   "total": 13
+  },
+  "reason": "Troopr AI Scrum Master 可以自动生成站会内容，记住团队成员，减轻团队管理负担。",
+  "analysis": {
+   "zh": "Troopr AI Scrum Master 能够根据实际工作情况生成每日站会的内容，并且能记住团队成员，从而减轻团队管理的压力。",
+   "en": "Troopr AI Scrum Master can generate daily standup content based on actual work and remember team members, thereby reducing the burden of team management."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "Troopr AI Scrum Master 是一个基于人工智能的工具，它可以自动编写每日站会内容，并且能够记住团队成员及其工作进展。",
+    "why": "在敏捷开发过程中，站会是不可或缺的一部分，但手动准备站会内容可能会耗费大量时间。Troopr AI Scrum Master 通过自动化这一过程，使团队能够更专注于实际工作。",
+    "biz": "随着敏捷开发方法的普及，像Troopr AI Scrum Master这样的工具将有很大的市场需求。它可以帮助团队提高效率，减少管理工作量。"
+   },
+   "en": {
+    "what": "Troopr AI Scrum Master is an AI-based tool that can automatically write daily standup content and remember team members and their progress.",
+    "why": "In agile development, standups are an essential part, but manually preparing standup content can be time-consuming. Troopr AI Scrum Master automates this process, allowing teams to focus more on actual work.",
+    "biz": "As agile development methods become more widespread, tools like Troopr AI Scrum Master will see significant market demand. It can help teams increase efficiency and reduce management workload."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06364v1",
+  "name": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+  "url": "https://arxiv.org/abs/2608.06364v1",
+  "source": "arxiv",
+  "description": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about digital sovereignty. This research examines how Artificial Intelligence (AI) in Nigerian mobile applications affects digital sovereignty, examined through platform transparency as a key indicator of user awareness and control. Using an interpretive approach, the research combines the forensic analysis",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 3,
+   "money": 6,
+   "total": 12
+  },
+  "reason": "研究尼日利亚移动购物应用中的人工智能数字主权问题，提升用户控制权。",
+  "analysis": {
+   "zh": "该研究调查了尼日利亚移动购物应用中的人工智能如何影响用户的数字主权，并通过平台透明度作为关键指标进行评估。",
+   "en": "This research examines how AI in Nigerian mobile shopping apps affects digital sovereignty, evaluated through platform transparency as a key indicator."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "研究关注的是尼日利亚移动购物应用程序中人工智能的使用情况及其对用户数字主权的影响。",
+    "why": "随着电子商务应用的普及，用户对自身数据的控制变得越来越重要。本研究旨在通过提高平台透明度来增强用户的知情权和控制权。",
+    "biz": "通过改善用户对个人数据的控制，可以增加用户对这些应用的信任度，从而促进其在市场上的广泛应用。"
+   },
+   "en": {
+    "what": "The study focuses on the use of AI in Nigerian mobile shopping applications and its impact on users' digital sovereignty.",
+    "why": "As e-commerce apps become more prevalent, user control over personal data becomes increasingly important. This research aims to enhance users' awareness and control by improving platform transparency.",
+    "biz": "By improving user control over personal data, it can increase user trust in these applications, thereby promoting their widespread adoption in the market."
+   }
+  },
+  "tags": [
+   "商业"
+  ]
+ },
+ {
+  "id": "producthunt:1216087",
+  "name": "The new Firecrawl MCP",
+  "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+  "source": "producthunt",
+  "description": "Agent-ready web context for any MCP client.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 3,
+   "money": 5,
+   "total": 12
+  },
+  "reason": "Firecrawl MCP 提供了一个即插即用的网络环境，适用于任何MCP客户端，让代理轻松接入。",
+  "analysis": {
+   "zh": "The new Firecrawl MCP 为任何MCP客户端提供了一个即插即用的网络环境，使得代理可以轻松接入并运行。",
+   "en": "The new Firecrawl MCP provides a plug-and-play web context for any MCP client, making it easy for agents to connect and run."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "新的Firecrawl MCP是一个专门为多控制点（MCP）客户端设计的解决方案，它提供了一个即插即用的网络环境，允许代理快速接入并开始工作。",
+    "why": "在现代应用程序中，快速部署和集成变得越来越重要。Firecrawl MCP简化了这一过程，使得开发者可以更加专注于核心功能的实现。",
+    "biz": "随着云原生应用和服务的增长，像Firecrawl MCP这样易于集成的解决方案将受到市场的欢迎。它可以帮助企业加速产品上市时间，并提高整体效率。"
+   },
+   "en": {
+    "what": "The new Firecrawl MCP is a solution designed specifically for multi-control point (MCP) clients, providing a plug-and-play web context that allows agents to quickly connect and get to work.",
+    "why": "In modern applications, rapid deployment and integration have become increasingly important. Firecrawl MCP simplifies this process, enabling developers to focus more on core functionality implementation.",
+    "biz": "With the growth of cloud-native applications and services, easily integrable solutions like Firecrawl MCP will be well-received in the market. It can help businesses accelerate time-to-market and improve overall efficiency."
+   }
+  },
+  "tags": [
+   "agent"
+  ]
+ },
+ {
+  "id": "reddit:1vcrki2",
+  "name": "How Symmetric Are the Insides of a Go Network? [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vcrki2/how_symmetric_are_the_insides_of_a_go_network_r/",
+  "source": "reddit",
+  "description": "I just now posted a small research / ML interp study on symmetries inside the neural nets for an open source Go-playing program that I maintain (\"KataGo\"). The rules of Go are completely symmetric under rotation/reflection, but such symmetry is not enforced in the models - the only thing we do for that is stochastic 8-fold data augmentation during training, randomizing the spatial orientation of each batch. To what degree do superhuman-strength Go-playing neural nets automatically learn to repre",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 25,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 4,
+   "fun": 4,
+   "money": 4,
+   "total": 12
+  },
+  "reason": "研究了围棋网络内部的对称性，探讨了模型如何自动学习表示对称性。",
+  "analysis": {
+   "zh": "该研究探讨了围棋网络内部的对称性，展示了模型如何在训练过程中自动学习表示对称性。",
+   "en": "This research explores the symmetry inside Go networks, showing how models automatically learn to represent symmetry during training."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究探讨了围棋网络内部的对称性。作者发现，尽管围棋规则本身是对称的，但在模型训练过程中并没有强制要求对称性。然而，模型在训练过程中仍然能够自动学习表示对称性。",
+    "why": "对称性是围棋的一个重要特征，但如何在模型中表示对称性一直是一个挑战。该研究展示了模型在训练过程中能够自动学习表示对称性，这对理解模型的内部机制非常有帮助。",
+    "biz": "虽然这个研究主要关注的是学术问题，但它也展示了AI在理解和表示复杂模式方面的潜力。未来，这种技术可以应用于其他领域，如图像识别和自然语言处理。"
+   },
+   "en": {
+    "what": "This research explores the symmetry inside Go networks. The author found that although the rules of Go are symmetric, symmetry is not enforced during model training. However, the model still learns to represent symmetry automatically during training.",
+    "why": "Symmetry is an important feature of Go, but representing symmetry in models has always been a challenge. This research shows that models can automatically learn to represent symmetry during training, which is very helpful for understanding the internal mechanisms of the models.",
+    "biz": "While this research mainly focuses on academic issues, it also demonstrates the potential of AI in understanding and representing complex patterns. In the future, this technology could be applied to other areas such as image recognition and natural language processing."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06352v1",
+  "name": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+  "url": "https://arxiv.org/abs/2608.06352v1",
+  "source": "arxiv",
+  "description": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not reveal how a task behaves relative to a given solver setting. In this paper, we present CalibForge, an autonomous terminal-task synthesis system that uses verified solver behavior to revise candidate tasks through adversarial solver calibration. Multi-solver calibration targets disagreement within a",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "通过对抗求解器校准扩展可学习终端任务的规模。",
+  "analysis": {
+   "zh": "本文介绍了一种新的终端任务合成系统CalibForge，通过对抗求解器校准来生成和修订终端任务。",
+   "en": "This paper introduces CalibForge, a new terminal-task synthesis system that generates and revises terminal tasks through adversarial solver calibration."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "CalibForge是一个新的终端任务合成系统，旨在通过对抗求解器校准来生成和修订终端任务。",
+    "why": "传统的终端任务生成方法往往无法准确反映任务的实际难度，而CalibForge通过与多个求解器的交互，生成更合适的任务。",
+    "biz": "这种新的任务生成方法可以应用于各种学习系统中，提高其训练效率和效果，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "CalibForge is a new terminal-task synthesis system designed to generate and revise terminal tasks through adversarial solver calibration.",
+    "why": "Traditional terminal task generation methods often fail to accurately reflect the actual difficulty of tasks, while CalibForge generates more appropriate tasks through interaction with multiple solvers.",
+    "biz": "This new task generation method can be applied to various learning systems, improving training efficiency and effectiveness, with high commercial value."
+   }
+  },
+  "tags": [
+   "创意"
+  ]
+ },
+ {
+  "id": "github:patchy631/time-to-first-token",
+  "name": "patchy631/time-to-first-token",
+  "url": "https://github.com/patchy631/time-to-first-token",
+  "source": "github",
+  "description": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 343,
+   "language": "HTML"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 6,
+   "total": 11
+  },
+  "reason": "（推荐语暂缺，详见深度解读）",
+  "analysis": {
+   "zh": "该项目提供了一个为期10周、每天30分钟的大规模语言模型推理服务和优化路线图。",
+   "en": "This project provides a 10-week, 30-minutes-a-day roadmap for large-scale language model inference serving and optimization."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "这是一个为期10周、每天30分钟的大规模语言模型推理服务和优化路线图，旨在帮助开发者快速掌握相关技术和最佳实践。",
+    "why": "大规模语言模型的推理服务和优化是一个复杂的过程，而这个项目通过提供详细的路线图，帮助开发者系统地学习和应用。",
+    "biz": "这种路线图可以广泛应用于各种大规模语言模型的开发和优化中，提高开发效率和模型性能，具有很高的商业价值。"
+   },
+   "en": {
+    "what": "This is a 10-week, 30-minutes-a-day roadmap for large-scale language model inference serving and optimization, aimed at helping developers quickly master relevant technologies and best practices.",
+    "why": "Inference serving and optimization for large-scale language models is a complex process, and this project provides a detailed roadmap to help developers systematically learn and apply the knowledge.",
+    "biz": "This roadmap can be widely applied in the development and optimization of various large-scale language models, enhancing development efficiency and model performance, with high commercial value."
+   }
+  },
+  "tags": [
+   "文本"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06351v1",
+  "name": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+  "url": "https://arxiv.org/abs/2608.06351v1",
+  "source": "arxiv",
+  "description": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias detection and concept unlearning. Then, an example of a human-grounded evaluation of methods for explaining image classification is presented. The paper further explores methods for adapting explanations to evolving data streams with concept drift. Experiences with adapting counterfactuals for this pr",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 5,
+   "total": 10
+  },
+  "reason": "探讨了解释方法在静态和演化数据中的评估挑战。",
+  "analysis": {
+   "zh": "本文讨论了XAI在解释方法评估方面的局限性，并通过实例展示了如何适应不断变化的数据流。",
+   "en": "This paper discusses the limitations of XAI in evaluating explanation methods and demonstrates how to adapt to evolving data streams through examples."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究探讨了XAI在解释方法评估方面的局限性，并通过DetoxAI图像识别系统进行了说明。",
+    "why": "现有的解释方法评估往往不够充分，本研究通过人类基础的评估方法和适应数据流的概念漂移，提高了评估的有效性。",
+    "biz": "这种改进的评估方法可以应用于各种XAI系统中，提高其可靠性和可信度，具有一定的商业价值。"
+   },
+   "en": {
+    "what": "The research explores the limitations of XAI in evaluating explanation methods, illustrated through the DetoxAI image recognition system.",
+    "why": "Current evaluation methods for explanation methods are often insufficient, and this research improves their effectiveness through human-grounded evaluation and adaptation to concept drift in data streams.",
+    "biz": "This improved evaluation method can be applied to various XAI systems, enhancing their reliability and trustworthiness, with some commercial value."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "hackernews:49187977",
+  "name": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+  "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+  "source": "hackernews",
+  "description": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 322,
+   "comments": 265,
+   "hn_link": "https://news.ycombinator.com/item?id=49187977"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 2,
+   "money": 5,
+   "total": 9
+  },
+  "reason": "Meta 广告中出现了 AI 生成的儿童色情图像。",
+  "analysis": {
+   "zh": "报道指出 Meta 的广告中包含了 AI 生成的儿童色情图像。",
+   "en": "The report states that Meta's ads contained AI-generated child sexual abuse imagery."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "报道揭示了 Meta 广告中出现了 AI 生成的儿童色情图像。",
+    "why": "这引发了对 AI 生成内容监管的担忧。",
+    "biz": "这一事件对 Meta 的声誉造成了负面影响，并强调了加强内容审核的重要性。"
+   },
+   "en": {
+    "what": "The report reveals that Meta's ads contained AI-generated child sexual abuse imagery.",
+    "why": "This raises concerns about the regulation of AI-generated content.",
+    "biz": "This incident negatively impacts Meta's reputation and highlights the importance of enhanced content moderation."
+   }
+  },
+  "tags": [
+   "安全",
+   "图像",
+   "社区"
+  ]
+ },
+ {
+  "id": "reddit:1vf4zjz",
+  "name": "The Downsides of LLM-Generated Peer Reviews [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vf4zjz/the_downsides_of_llmgenerated_peer_reviews_d/",
+  "source": "reddit",
+  "description": "Having used LLMs to assist with reviews, and also having received reviews that appear to rely heavily on LLM-generated text, I have noticed two recurring problems. 1. The endless search for uncontrolled variables LLMs are very good at identifying additional variables that were not explicitly controlled. The problem is that many of these variables have little realistic chance of changing the paper’s main conclusion. For any experiment, it is possible to generate an almost unlimited list of potent",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 11,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 3,
+   "money": 3,
+   "total": 9
+  },
+  "reason": "讨论了大语言模型生成同行评审的缺点，指出了其中存在的问题。",
+  "analysis": {
+   "zh": "该帖子讨论了大语言模型生成同行评审的缺点，指出了其中存在的问题，引发了对AI辅助评审的讨论。",
+   "en": "This post discusses the downsides of LLM-generated peer reviews, highlighting the issues, sparking a discussion on AI-assisted reviewing."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该帖子讨论了大语言模型生成同行评审的缺点。作者指出了两个主要问题：一是模型过度寻找未控制的变量，二是评审结果的不可靠性。",
+    "why": "大语言模型在辅助评审方面具有一定的优势，但同时也存在一些问题。这些问题可能会影响评审结果的准确性和公正性。",
+    "biz": "虽然这个帖子主要关注的是学术界的问题，但它也反映了AI辅助评审面临的挑战。解决这些问题将有助于提高评审的可靠性和公正性。"
+   },
+   "en": {
+    "what": "This post discusses the downsides of LLM-generated peer reviews. The author highlights two main issues: the model's excessive search for uncontrolled variables and the unreliability of the review results.",
+    "why": "While large language models have certain advantages in assisting with reviews, they also have some issues. These issues may affect the accuracy and fairness of the review results.",
+    "biz": "While this post mainly focuses on academic issues, it also reflects the challenges faced by AI-assisted reviewing. Addressing these issues will help improve the reliability and fairness of the reviews."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "arxiv:2608.06363v1",
+  "name": "An Optimal Agnostic PAC Algorithm",
+  "url": "https://arxiv.org/abs/2608.06363v1",
+  "source": "arxiv",
+  "description": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk bound: from an i.i.d.\\ sample of size $n$, for every $0<δ\\le 1/2$, with probability at least $1-δ$, \\[ L(\\widehat h) \\le L^*+ 7\\cdot10^8\\left( \\sqrt{\\frac{L^*(d+\\log(1/δ))}{n}} +\\frac{d+\\log(1/δ)}{n} \\right). \\] This settles the sample complexity of agnostic PAC learning up to universal constants at eve",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 1,
+   "money": 5,
+   "total": 8
+  },
+  "reason": "提出了一种统计上最优的PAC学习算法，解决了样本复杂度问题。",
+  "analysis": {
+   "zh": "本文介绍了一种新的PAC学习算法，能够在统计意义上达到最优的风险界。",
+   "en": "This paper introduces a new PAC learning algorithm that achieves statistically optimal risk bounds."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该研究提出了一种新的PAC学习算法，旨在最小化学习过程中所需的数据样本数量。",
+    "why": "传统的PAC学习理论虽然提供了理论上的保证，但在实际应用中往往需要大量的数据才能达到预期的效果。本研究通过改进算法设计，显著减少了所需的样本数量。",
+    "biz": "这种高效的PAC学习算法可以应用于各种机器学习任务中，特别是在数据获取成本较高的场景下，具有很大的商业潜力。"
+   },
+   "en": {
+    "what": "The research proposes a new PAC learning algorithm designed to minimize the number of data samples required during the learning process.",
+    "why": "While traditional PAC learning theory provides theoretical guarantees, it often requires a large amount of data in practical applications. This research significantly reduces the required sample size through improved algorithm design.",
+    "biz": "This efficient PAC learning algorithm can be applied to various machine learning tasks, particularly in scenarios where data acquisition costs are high, offering significant commercial potential."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "reddit:1ve7chh",
+  "name": "Is it too late regain some coherence in the ML research space in our life time? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ve7chh/is_it_too_late_regain_some_coherence_in_the_ml/",
+  "source": "reddit",
+  "description": "Was just looking at the list of preprints on Arxiv cs.LG https://arxiv.org/list/cs.LG/recent?skip=0&show=500 Everyday 100 - 400 new machine learning papers gets uploaded on this server. Looking at this unending list of preprints is as if you stepped into a crowded room, like the stock trading floor on wall st. in the 1980s. Everyone is shouting over each other. Nobody is talking to each other. Everyone&#39;s trying to prove something, to someone, to themselves, to build some credentials in the M",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 3,
+   "fun": 2,
+   "money": 2,
+   "total": 7
+  },
+  "reason": "讨论了机器学习研究领域是否能在我们的有生之年恢复一些连贯性。",
+  "analysis": {
+   "zh": "该帖子讨论了机器学习研究领域是否能在我们的有生之年恢复一些连贯性，指出了当前研究的混乱状态。",
+   "en": "This post discusses whether the machine learning research field can regain some coherence in our lifetime, pointing out the current chaotic state of research."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该帖子讨论了机器学习研究领域是否能在我们的有生之年恢复一些连贯性。作者指出，每天都有大量的新论文上传到Arxiv，这导致了研究领域的混乱。",
+    "why": "机器学习领域的快速发展导致了大量的研究成果，但同时也带来了信息过载和研究方向的分散。作者呼吁研究者们共同努力，恢复研究的连贯性和一致性。",
+    "biz": "虽然这个帖子主要关注的是学术界的问题，但它也反映了机器学习领域面临的挑战。解决这些问题将有助于推动整个领域的发展。"
+   },
+   "en": {
+    "what": "This post discusses whether the machine learning research field can regain some coherence in our lifetime. The author points out that a large number of new papers are uploaded to Arxiv every day, leading to chaos in the research field.",
+    "why": "The rapid development of the machine learning field has led to a large number of research results, but it has also caused information overload and dispersion of research directions. The author calls for researchers to work together to restore coherence and consistency in research.",
+    "biz": "While this post mainly focuses on academic issues, it also reflects the challenges faced by the machine learning field. Addressing these issues will help drive the development of the entire field."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "reddit:1veg84o",
+  "name": "Bad but typical NeurIPS experience? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1veg84o/bad_but_typical_neurips_experience_d/",
+  "source": "reddit",
+  "description": "I tried to do all my NeurIPS reviews responsibly, even for the papers I suspected to be AI slop. I even gave what apparently were very nice scores compared to the scores I ended up getting. (I don&#39;t just mean the absolute number for my scores were higher, but that they were calibrated differently--I only rejected for severe issues, while I had a reviewer who only raised very minor issues but gave a reject, with a 1 for all the subscores.) I got shockingly bad reviews for my own paper; two of",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 8,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 2,
+   "money": 2,
+   "total": 6
+  },
+  "reason": "分享了一次典型的NeurIPS会议经历，指出了评审过程中的不公平现象。",
+  "analysis": {
+   "zh": "该帖子分享了一次典型的NeurIPS会议经历，指出了评审过程中的不公平现象，引发了对学术评审制度的讨论。",
+   "en": "This post shares a typical NeurIPS conference experience, highlighting unfairness in the review process, sparking a discussion on the academic review system."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该帖子分享了一次典型的NeurIPS会议经历，作者指出了评审过程中的不公平现象。他认真完成了所有评审任务，但却收到了非常糟糕的评审结果。",
+    "why": "学术评审制度的公平性和透明度一直是学术界关注的问题。该帖子揭示了评审过程中的不公平现象，引发了对现有评审制度的反思。",
+    "biz": "虽然这个帖子主要关注的是学术界的问题，但它也反映了学术评审制度面临的挑战。改善评审制度将有助于提高学术研究的质量和可信度。"
+   },
+   "en": {
+    "what": "This post shares a typical NeurIPS conference experience, where the author highlights unfairness in the review process. He completed all his review tasks diligently but received very poor reviews for his own paper.",
+    "why": "Fairness and transparency in the academic review system have always been a concern in the academic community. This post reveals unfairness in the review process, sparking reflection on the existing review system.",
+    "biz": "While this post mainly focuses on academic issues, it also reflects the challenges faced by the academic review system. Improving the review system will help enhance the quality and credibility of academic research."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
+ },
+ {
+  "id": "reddit:1vfi23r",
+  "name": "NeurIPS 2026 post-rebuttal score distribution poll [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vfi23r/neurips_2026_postrebuttal_score_distribution_poll/",
+  "source": "reddit",
+  "description": "As the title suggests, because there&#39;s no data on Papercopilot yet, and people have been talking about the scores being lower in general than last year, I thought it could be interesting to survey the average score distribution after the rebuttal phase (not considering confidence weights). Very rough and simple poll (I also realize there&#39;s a self-selection bias in there). Cast your vote here: https://loppy.be/poll/yczuv8yo Thanks! Edit: the trolls have taken over, ignore the 5.50-6.00 bi",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 17,
+   "subreddit": "MachineLearning"
+  },
+  "scores": {
+   "whimsy": 2,
+   "fun": 2,
+   "money": 2,
+   "total": 6
+  },
+  "reason": "发起了一项关于NeurIPS 2026会议评审分数分布的调查，引发了对评审标准的讨论。",
+  "analysis": {
+   "zh": "该帖子发起了一项关于NeurIPS 2026会议评审分数分布的调查，引发了对评审标准和评分机制的讨论。",
+   "en": "This post initiates a survey on the score distribution of NeurIPS 2026 reviews, sparking a discussion on review standards and scoring mechanisms."
+  },
+  "deep_dive": {
+   "zh": {
+    "what": "该帖子发起了一项关于NeurIPS 2026会议评审分数分布的调查。作者希望通过这项调查了解评审分数的整体分布情况。",
+    "why": "评审分数的分布情况可以反映评审标准的一致性和公平性。这项调查有助于揭示评审过程中存在的问题，并提出改进建议。",
+    "biz": "虽然这个帖子主要关注的是学术界的问题，但它也反映了学术评审制度面临的挑战。改善评审制度将有助于提高学术研究的质量和可信度。"
+   },
+   "en": {
+    "what": "This post initiates a survey on the score distribution of NeurIPS 2026 reviews. The author aims to understand the overall distribution of review scores through this survey.",
+    "why": "The distribution of review scores can reflect the consistency and fairness of review standards. This survey helps reveal issues in the review process and suggests improvements.",
+    "biz": "While this post mainly focuses on academic issues, it also reflects the challenges faced by the academic review system. Improving the review system will help enhance the quality and credibility of academic research."
+   }
+  },
+  "tags": [
+   "论文"
+  ]
  }
 ]

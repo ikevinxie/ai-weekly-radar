@@ -1,0 +1,733 @@
+[
+ {
+  "id": "arxiv:2608.06377v1",
+  "name": "Learning When to Trust via Selective Context Preference Optimization",
+  "url": "https://arxiv.org/abs/2608.06377v1",
+  "source": "arxiv",
+  "description": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides a failure mode: a model that ignores all context looks robust yet is useless when the context is worth trusting. We recast the problem as selective trust and introduce MIST, a human-annotated benchmark that renders each reasoning item under four matched conditions (clean, misleading, correct-contex",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06366v1",
+  "name": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+  "url": "https://arxiv.org/abs/2608.06366v1",
+  "source": "arxiv",
+  "description": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific, guideline-based clinical reasoning. Existing rule-based and large language model (LLM)-based approaches offer only partial automation with limited maintainability and evidence tra",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06364v1",
+  "name": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+  "url": "https://arxiv.org/abs/2608.06364v1",
+  "source": "arxiv",
+  "description": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about digital sovereignty. This research examines how Artificial Intelligence (AI) in Nigerian mobile applications affects digital sovereignty, examined through platform transparency as a key indicator of user awareness and control. Using an interpretive approach, the research combines the forensic analysis",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06363v1",
+  "name": "An Optimal Agnostic PAC Algorithm",
+  "url": "https://arxiv.org/abs/2608.06363v1",
+  "source": "arxiv",
+  "description": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk bound: from an i.i.d.\\ sample of size $n$, for every $0<δ\\le 1/2$, with probability at least $1-δ$, \\[ L(\\widehat h) \\le L^*+ 7\\cdot10^8\\left( \\sqrt{\\frac{L^*(d+\\log(1/δ))}{n}} +\\frac{d+\\log(1/δ)}{n} \\right). \\] This settles the sample complexity of agnostic PAC learning up to universal constants at eve",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06362v1",
+  "name": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+  "url": "https://arxiv.org/abs/2608.06362v1",
+  "source": "arxiv",
+  "description": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while naive optional stopping with an ordinary confidence interval invalidates the stated level. We make such an evaluation stop as soon as its evidence suffices, with the guarantee intact",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06361v1",
+  "name": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+  "url": "https://arxiv.org/abs/2608.06361v1",
+  "source": "arxiv",
+  "description": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic benchmarks offer better control, they score only the final answer rather than auditing reported events against executable ground truth. To bridge this gap, we introduce trace-grounded parametric profiling for event counting in three controlled video tasks: bouncing-ball wall contacts, visual blinks",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06353v1",
+  "name": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+  "url": "https://arxiv.org/abs/2608.06353v1",
+  "source": "arxiv",
+  "description": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the Safe AI paradigm that compute is an effective governance lever. We situate our work as a compliance or commons overlay on a deployer. One governance period is an extensive form gam",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06352v1",
+  "name": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+  "url": "https://arxiv.org/abs/2608.06352v1",
+  "source": "arxiv",
+  "description": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not reveal how a task behaves relative to a given solver setting. In this paper, we present CalibForge, an autonomous terminal-task synthesis system that uses verified solver behavior to revise candidate tasks through adversarial solver calibration. Multi-solver calibration targets disagreement within a",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06351v1",
+  "name": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+  "url": "https://arxiv.org/abs/2608.06351v1",
+  "source": "arxiv",
+  "description": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias detection and concept unlearning. Then, an example of a human-grounded evaluation of methods for explaining image classification is presented. The paper further explores methods for adapting explanations to evolving data streams with concept drift. Experiences with adapting counterfactuals for this pr",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "arxiv:2608.06346v1",
+  "name": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+  "url": "https://arxiv.org/abs/2608.06346v1",
+  "source": "arxiv",
+  "description": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challenges. First, long trajectories make it difficult to identify individual errors, since the evidence for judging a step may be scattered across distant instructions, observations, and p",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "github:thebuggeddev/anatomy",
+  "name": "thebuggeddev/anatomy",
+  "url": "https://github.com/thebuggeddev/anatomy",
+  "source": "github",
+  "description": "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1991,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:Binaryify/open-kimi-ppt-skill",
+  "name": "Binaryify/open-kimi-ppt-skill",
+  "url": "https://github.com/Binaryify/open-kimi-ppt-skill",
+  "source": "github",
+  "description": "非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1586,
+   "language": ""
+  }
+ },
+ {
+  "id": "github:Accio-org/RealReplicaBench",
+  "name": "Accio-org/RealReplicaBench",
+  "url": "https://github.com/Accio-org/RealReplicaBench",
+  "source": "github",
+  "description": "RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 1040,
+   "language": "HTML"
+  }
+ },
+ {
+  "id": "github:mikiarlo3/awesome-growth-hacking-skills",
+  "name": "mikiarlo3/awesome-growth-hacking-skills",
+  "url": "https://github.com/mikiarlo3/awesome-growth-hacking-skills",
+  "source": "github",
+  "description": "Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 727,
+   "language": "Shell"
+  }
+ },
+ {
+  "id": "github:disler/super-simple-software-factory",
+  "name": "disler/super-simple-software-factory",
+  "url": "https://github.com/disler/super-simple-software-factory",
+  "source": "github",
+  "description": "Repeatable agents-plus-code workflows, packaged as one skill, stamped into any repo. Deterministic Python owns the graph; coding agents are bounded nodes inside it.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 497,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:jd-opensource/JoyAI-Video-Edit",
+  "name": "jd-opensource/JoyAI-Video-Edit",
+  "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+  "source": "github",
+  "description": "[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 424,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:criptogus/HermesOffice",
+  "name": "criptogus/HermesOffice",
+  "url": "https://github.com/criptogus/HermesOffice",
+  "source": "github",
+  "description": "HermesOffice — AI-native office suite forked from GenOffice (Apache-2.0), with native Hermes Agent AI",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 415,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:AMAP-ML/LongHorizon-Harness",
+  "name": "AMAP-ML/LongHorizon-Harness",
+  "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+  "source": "github",
+  "description": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making reliable progress on complex workflows. Features fresh-context execution, durable verified state, independent auditing, recoverable progress, and native Claude Code / Codex / OpenClaw integration.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 393,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:patchy631/time-to-first-token",
+  "name": "patchy631/time-to-first-token",
+  "url": "https://github.com/patchy631/time-to-first-token",
+  "source": "github",
+  "description": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 343,
+   "language": "HTML"
+  }
+ },
+ {
+  "id": "github:alikon-art/DeterminFlow",
+  "name": "alikon-art/DeterminFlow",
+  "url": "https://github.com/alikon-art/DeterminFlow",
+  "source": "github",
+  "description": "A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "stars": 253,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "hackernews:49150470",
+  "name": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+  "url": "https://qwen.ai/blog?id=qwen3.8",
+  "source": "hackernews",
+  "description": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 1118,
+   "comments": 613,
+   "hn_link": "https://news.ycombinator.com/item?id=49150470"
+  }
+ },
+ {
+  "id": "hackernews:49167113",
+  "name": "AI-Generated Images Discourage Me from Reading Your Blog",
+  "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+  "source": "hackernews",
+  "description": "AI-Generated Images Discourage Me from Reading Your Blog",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 793,
+   "comments": 465,
+   "hn_link": "https://news.ycombinator.com/item?id=49167113"
+  }
+ },
+ {
+  "id": "hackernews:49200652",
+  "name": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+  "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+  "source": "hackernews",
+  "description": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 533,
+   "comments": 341,
+   "hn_link": "https://news.ycombinator.com/item?id=49200652"
+  }
+ },
+ {
+  "id": "hackernews:49171268",
+  "name": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+  "url": "https://mistral.ai/news/shieldstral/",
+  "source": "hackernews",
+  "description": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 481,
+   "comments": 133,
+   "hn_link": "https://news.ycombinator.com/item?id=49171268"
+  }
+ },
+ {
+  "id": "hackernews:49213754",
+  "name": "Oracle bans AI-generated code from OpenJDK",
+  "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+  "source": "hackernews",
+  "description": "Oracle bans AI-generated code from OpenJDK",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 410,
+   "comments": 279,
+   "hn_link": "https://news.ycombinator.com/item?id=49213754"
+  }
+ },
+ {
+  "id": "hackernews:49198069",
+  "name": "Software development with AI is starting to feel like cooking steak",
+  "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+  "source": "hackernews",
+  "description": "Software development with AI is starting to feel like cooking steak",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 400,
+   "comments": 415,
+   "hn_link": "https://news.ycombinator.com/item?id=49198069"
+  }
+ },
+ {
+  "id": "hackernews:49139102",
+  "name": "AI financial advice is surprisingly good, especially if you ask right questions",
+  "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+  "source": "hackernews",
+  "description": "AI financial advice is surprisingly good, especially if you ask right questions",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 350,
+   "comments": 403,
+   "hn_link": "https://news.ycombinator.com/item?id=49139102"
+  }
+ },
+ {
+  "id": "hackernews:49195468",
+  "name": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+  "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+  "source": "hackernews",
+  "description": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 330,
+   "comments": 244,
+   "hn_link": "https://news.ycombinator.com/item?id=49195468"
+  }
+ },
+ {
+  "id": "hackernews:49187977",
+  "name": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+  "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+  "source": "hackernews",
+  "description": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 322,
+   "comments": 265,
+   "hn_link": "https://news.ycombinator.com/item?id=49187977"
+  }
+ },
+ {
+  "id": "hackernews:49158333",
+  "name": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "url": "https://github.com/leonickson1/Swiftlet",
+  "source": "hackernews",
+  "description": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "points": 310,
+   "comments": 141,
+   "hn_link": "https://news.ycombinator.com/item?id=49158333"
+  }
+ },
+ {
+  "id": "huggingface:space/FrameAI4687/Omni-Video-Factory",
+  "name": "FrameAI4687/Omni-Video-Factory",
+  "url": "https://huggingface.co/spaces/FrameAI4687/Omni-Video-Factory",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 1357,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "name": "Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "url": "https://huggingface.co/spaces/Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 274,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/obsxrver/wan22-i2v-omni-lora",
+  "name": "obsxrver/wan22-i2v-omni-lora",
+  "url": "https://huggingface.co/spaces/obsxrver/wan22-i2v-omni-lora",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 190,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/multimodalart/minimax-h3",
+  "name": "multimodalart/minimax-h3",
+  "url": "https://huggingface.co/spaces/multimodalart/minimax-h3",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 174,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Danny-Lynote/humanizer-lite",
+  "name": "Danny-Lynote/humanizer-lite",
+  "url": "https://huggingface.co/spaces/Danny-Lynote/humanizer-lite",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 105,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "name": "victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "url": "https://huggingface.co/spaces/victor/DeepSeek-V4-Flash-0731-free-endpoint",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 87,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Alissonerdx/charactersheet-lora-demo",
+  "name": "Alissonerdx/charactersheet-lora-demo",
+  "url": "https://huggingface.co/spaces/Alissonerdx/charactersheet-lora-demo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 85,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/SeedOfEvil/Pro-Realism-Edit-Studio",
+  "name": "SeedOfEvil/Pro-Realism-Edit-Studio",
+  "url": "https://huggingface.co/spaces/SeedOfEvil/Pro-Realism-Edit-Studio",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 80,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:paper/2608.05987",
+  "name": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+  "url": "https://huggingface.co/papers/2608.05987",
+  "source": "huggingface",
+  "description": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "upvotes": 72,
+   "kind": "paper"
+  }
+ },
+ {
+  "id": "huggingface:space/multimodalart/minimax-h3-reference",
+  "name": "multimodalart/minimax-h3-reference",
+  "url": "https://huggingface.co/spaces/multimodalart/minimax-h3-reference",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "likes": 59,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "producthunt:1216472",
+  "name": "Soloop",
+  "url": "https://www.producthunt.com/products/soloop",
+  "source": "producthunt",
+  "description": "Approval-first Agent OS for solo founders",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "producthunt:1216087",
+  "name": "The new Firecrawl MCP",
+  "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+  "source": "producthunt",
+  "description": "Agent-ready web context for any MCP client.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  }
+ },
+ {
+  "id": "producthunt:1214599",
+  "name": "Troopr AI Scrum Master",
+  "url": "https://www.producthunt.com/products/troopr",
+  "source": "producthunt",
+  "description": "Writes your standup from real work. Remembers your team.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-04"
+  }
+ },
+ {
+  "id": "producthunt:1217044",
+  "name": "Kitesurf",
+  "url": "https://www.producthunt.com/products/cloudflare",
+  "source": "producthunt",
+  "description": "Browser built for agents, running on Cloudflare Workers",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "producthunt:1215770",
+  "name": "Progress AI Observability",
+  "url": "https://www.producthunt.com/products/progress-ai-observability",
+  "source": "producthunt",
+  "description": "Trace, evaluate, and improve AI agents in production",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  }
+ },
+ {
+  "id": "producthunt:1215309",
+  "name": "Reference",
+  "url": "https://www.producthunt.com/products/reference-2",
+  "source": "producthunt",
+  "description": "Local semantic search for AI agents",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-04"
+  }
+ },
+ {
+  "id": "producthunt:1217026",
+  "name": "AgentOne Desktop",
+  "url": "https://www.producthunt.com/products/agentone-desktop",
+  "source": "producthunt",
+  "description": "Automate boring work. Extensible and free desktop AI agent.",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "producthunt:1215451",
+  "name": "StepShot",
+  "url": "https://www.producthunt.com/products/stepshot-2",
+  "source": "producthunt",
+  "description": "AI that turns real workflows into step-by-step guides",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-05"
+  }
+ },
+ {
+  "id": "producthunt:1212911",
+  "name": "ShootClip",
+  "url": "https://www.producthunt.com/products/shootclip",
+  "source": "producthunt",
+  "description": "Edit videos 10x faster with AI",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-02"
+  }
+ },
+ {
+  "id": "producthunt:1216668",
+  "name": "HAR",
+  "url": "https://www.producthunt.com/products/har",
+  "source": "producthunt",
+  "description": "Open Source harness for multi-agent coding workflows",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "published": "2026-08-06"
+  }
+ },
+ {
+  "id": "reddit:1vfrco1",
+  "name": "I Compressed Bad Apple into a 3MB Neural Network [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vfrco1/i_compressed_bad_apple_into_a_3mb_neural_network_p/",
+  "source": "reddit",
+  "description": "I trained a small MLP to memorize the classic Bad Apple animation, ~2.7 billion pixels of video compressed into 790k parameters (3.2 MB float32, 1.6 MB float16). The network takes a 3D coordinate (t, y, x)- frame index and pixel position- and outputs a grayscale value between 0 and 1. To \"play\" the video, you can evaluate the function over the full grid. The \"video\" is stored implicitly in 5 linear layers of sine activations (Sitzmann et al.&#39;s SIREN) with 512 hidden units, ω₀ = 30, and sigmo",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1ve7chh",
+  "name": "Is it too late regain some coherence in the ML research space in our life time? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ve7chh/is_it_too_late_regain_some_coherence_in_the_ml/",
+  "source": "reddit",
+  "description": "Was just looking at the list of preprints on Arxiv cs.LG https://arxiv.org/list/cs.LG/recent?skip=0&show=500 Everyday 100 - 400 new machine learning papers gets uploaded on this server. Looking at this unending list of preprints is as if you stepped into a crowded room, like the stock trading floor on wall st. in the 1980s. Everyone is shouting over each other. Nobody is talking to each other. Everyone&#39;s trying to prove something, to someone, to themselves, to build some credentials in the M",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vh2gn1",
+  "name": "Round-Trip Consistency: Bidirectional Diffusion Models Can Predict Their Own Rollout Errors [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vh2gn1/roundtrip_consistency_bidirectional_diffusion/",
+  "source": "reddit",
+  "description": "Whether generating CELEBV-HQ videos or turbulent plasma fields (digital twins), autoregressive models (such as latent diffusion or flow models) accumulate error over long rollouts, yet at deployment there is no ground truth to measure against. I train a single conditional latent diffusion model that steps a dynamical system forward or backward in time via a direction flag, and show that this bidirectionality supplies a measurement-free test-time error signal: rolling forward steps and then backw",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 4,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1veg84o",
+  "name": "Bad but typical NeurIPS experience? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1veg84o/bad_but_typical_neurips_experience_d/",
+  "source": "reddit",
+  "description": "I tried to do all my NeurIPS reviews responsibly, even for the papers I suspected to be AI slop. I even gave what apparently were very nice scores compared to the scores I ended up getting. (I don&#39;t just mean the absolute number for my scores were higher, but that they were calibrated differently--I only rejected for severe issues, while I had a reviewer who only raised very minor issues but gave a reject, with a 1 for all the subscores.) I got shockingly bad reviews for my own paper; two of",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 8,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vf4zjz",
+  "name": "The Downsides of LLM-Generated Peer Reviews [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vf4zjz/the_downsides_of_llmgenerated_peer_reviews_d/",
+  "source": "reddit",
+  "description": "Having used LLMs to assist with reviews, and also having received reviews that appear to rely heavily on LLM-generated text, I have noticed two recurring problems. 1. The endless search for uncontrolled variables LLMs are very good at identifying additional variables that were not explicitly controlled. The problem is that many of these variables have little realistic chance of changing the paper’s main conclusion. For any experiment, it is possible to generate an almost unlimited list of potent",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 11,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vfi23r",
+  "name": "NeurIPS 2026 post-rebuttal score distribution poll [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vfi23r/neurips_2026_postrebuttal_score_distribution_poll/",
+  "source": "reddit",
+  "description": "As the title suggests, because there&#39;s no data on Papercopilot yet, and people have been talking about the scores being lower in general than last year, I thought it could be interesting to survey the average score distribution after the rebuttal phase (not considering confidence weights). Very rough and simple poll (I also realize there&#39;s a self-selection bias in there). Cast your vote here: https://loppy.be/poll/yczuv8yo Thanks! Edit: the trolls have taken over, ignore the 5.50-6.00 bi",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 17,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vcrki2",
+  "name": "How Symmetric Are the Insides of a Go Network? [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vcrki2/how_symmetric_are_the_insides_of_a_go_network_r/",
+  "source": "reddit",
+  "description": "I just now posted a small research / ML interp study on symmetries inside the neural nets for an open source Go-playing program that I maintain (\"KataGo\"). The rules of Go are completely symmetric under rotation/reflection, but such symmetry is not enforced in the models - the only thing we do for that is stochastic 8-fold data augmentation during training, randomizing the spatial orientation of each batch. To what degree do superhuman-strength Go-playing neural nets automatically learn to repre",
+  "collected_at": "2026-08-08",
+  "week": "2026-W32",
+  "metrics": {
+   "week_rank": 25,
+   "subreddit": "MachineLearning"
+  }
+ }
+]

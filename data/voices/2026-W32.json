@@ -1,0 +1,87 @@
+{
+  "week": "2026-W32",
+  "overview": {
+    "zh": "本周，AI 建设者们讨论了 AI 在工作流程中的应用、技术进步对社会的影响以及未来的发展趋势。",
+    "en": "This week, AI builders discussed the application of AI in workflows, the impact of technological advancements on society, and future trends."
+  },
+  "themes": [
+    {
+      "title": {
+        "zh": "AI 在工作流程中的应用",
+        "en": "Application of AI in Workflows"
+      },
+      "summary": {
+        "zh": "多位发言者分享了他们在工作中如何利用 AI 代理来提高效率和生产力的经验。",
+        "en": "Several speakers shared their experiences on how they use AI agents to improve efficiency and productivity in their work."
+      },
+      "quotes": [
+        {
+          "author": "Guillermo Rauch",
+          "handle": "@rauchg",
+          "text": "We built an agent that powers our company's internal operations called @𝚟. Every day-to-day job at Vercel now involves @𝚟. It's growing exponentially both in daily interactions and token use.",
+          "url": "https://x.com/rauchg/status/2084042561690456157",
+          "date": "2026-08-02"
+        },
+        {
+          "author": "Aaron Levie",
+          "handle": "@levie",
+          "text": "If you’re trying to understand the dynamic of real world agent adoption this post is a great place to start. Everyone got so hooked on talking to chatbots that there’s limited recognition still that working with an agent is much more like managing someone in a process vs. just asking an ai some questions and getting a response back.",
+          "url": "https://x.com/levie/status/2085587079405425146",
+          "date": "2026-08-07"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "技术进步对社会的影响",
+        "en": "Impact of Technological Advancements on Society"
+      },
+      "summary": {
+        "zh": "一些发言者讨论了技术进步对经济、道德和社会结构的潜在影响。",
+        "en": "Some speakers discussed the potential impacts of technological advancements on the economy, ethics, and social structures."
+      },
+      "quotes": [
+        {
+          "author": "Garry Tan",
+          "handle": "@garrytan",
+          "text": "Growth is good\nAI will create unimaginable economic growth and that is the best white pill",
+          "url": "https://x.com/garrytan/status/2083957110711386439",
+          "date": "2026-08-02"
+        },
+        {
+          "author": "Dan Shipper",
+          "handle": "@danshipper",
+          "text": "if ought implies can, and technology reshapes the field of human abilities—then technology reshapes oughts. \nwe should expect AI to fundamentally change our moral intuitions at the same time as it changes our abilities",
+          "url": "https://x.com/danshipper/status/2084024211539116466",
+          "date": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "未来发展趋势",
+        "en": "Future Trends"
+      },
+      "summary": {
+        "zh": "建设者们展望了未来几年内 AI 技术的发展方向，并强调了开放源代码的重要性。",
+        "en": "Builders looked ahead to the direction of AI technology over the next few years, emphasizing the importance of open source."
+      },
+      "quotes": [
+        {
+          "author": "Thibault Sottiaux",
+          "handle": "@thsottiaux",
+          "text": "But it will seem primitive in 2-3 months and we're about to go through another major evolution in how we use AI at the frontier. The next generation of models need more than your laptop.",
+          "url": "https://x.com/thsottiaux/status/2084483765158719542",
+          "date": "2026-08-04"
+        },
+        {
+          "author": "Peter Yang",
+          "handle": "@petergyang",
+          "text": "“For us, we just want open source to win at the end of the day. We want freedom to happen for people.”\nYou can hear the passion for open source in this clip from my interview with @karan4d, @NousResearch co-founder:",
+          "url": "https://x.com/petergyang/status/2084330985689428290",
+          "date": "2026-08-03"
+        }
+      ]
+    }
+  ]
+}
