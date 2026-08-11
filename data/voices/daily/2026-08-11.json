@@ -1,0 +1,306 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "gpt luna max vs claude fable ultracode \n\nsent \"pls build a mostly faithful clone of grok imagine with open models via fal\"\n\ni woke up to these two and assumed fable was left and luna was right\n\ni was wrong... it was the other way!!\n\nobjectively, fable did the better visual clone. but luna somehow understood intent better and created the more USABLE clone given my open model bent.",
+  "url": "https://x.com/swyx/status/2087045848022843451",
+  "date": "2026-08-11",
+  "likes": 35
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "btw pdb envs have an experimental AFS clone support that basically does what all of you are suggesting but runtime agnostic and language agnostic\n\nhttps://t.co/SiFupvsIm8\n\nwe shall replace git by making every single command \"agent native\"",
+  "url": "https://x.com/swyx/status/2087017780617126075",
+  "date": "2026-08-11",
+  "likes": 11
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "worktrees must die\n\nthis is 20GB of repeated node_modules lol https://t.co/tyvbt1WVJm",
+  "url": "https://x.com/swyx/status/2086962980235939920",
+  "date": "2026-08-10",
+  "likes": 1252
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Usage limits have been reset for all paid ChatGPT Work and Codex users. Happy Monday you all. Hope it is a fantastic week.",
+  "url": "https://x.com/thsottiaux/status/2086972933566857393",
+  "date": "2026-08-11",
+  "likes": 6699
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Hi.\n\nIt is done. https://t.co/JRYltKvT0v",
+  "url": "https://x.com/thsottiaux/status/2086972802457063486",
+  "date": "2026-08-11",
+  "likes": 9781
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Cybersecurity is changing rapidly. \n\nTo help accelerate defense, we are broadening access to frontier cyber capabilities through the new Daybreak Blue & Red access tiers and are introducing a new model GPT-5.6-Cyber.\n\nIf you don't know where to start, a good step is to contact one of our partners who can use our latest cyber models to help you find issues, patch them quickly, do pentesting, etc.",
+  "url": "https://x.com/thsottiaux/status/2086874565909815403",
+  "date": "2026-08-10",
+  "likes": 2564
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Ok here's a more specific request - anyone follow me who works at @BCCancer? https://t.co/iFSoMqLVB2",
+  "url": "https://x.com/petergyang/status/2086928383884353700",
+  "date": "2026-08-10",
+  "likes": 5
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "My 5 biggest takeaways from @thenanyu and @delashum from @Linear on how to build a great production agent end to end:\n\n1. The first step is to map the actual workflow.\n\nIdentify where work starts, which systems hold context, what actions complete the job, what “done” means, and where a person needs to review. For example, if work starts in Slack, make Slack the on-ramp instead of forcing users to use a separate chatbot.\n\n2. Give agents tools to find context instead of stuffing context into the prompt.\n\nFrom Jacob: “Give it as little instruction as possible. Give it the tools to load context. Don’t give it context.” Start small, then let the agent pull only the instructions and data it needs for the current task.\n\n3. Start with one frequent job, then expand based on real usage.\n\nLinear’s first production workflow turned sales notes and Slack discussions into issues. The team launched it quietly, watched how people used it, and built the next workflows based on real user behavior instead of a grand spec that covered all possible use cases.\n\n4. Start with the strongest model until the workflow works.\n\nJacob: “We tend to throw the biggest model on it until we know that it’s working well.” Once you have clear success criteria and evals, test smaller models on narrow jobs. Cost optimization should come after a quality baseline.\n\n5. Turn every real failure into either an eval or a product task.\n\nLinear created two feedback loops from real usage. If the agent had the right tools but behaved badly, the team added that exact case to its evals. If the agent lacked the required tool, it reported the gap so the system could add it to an existing issue for the team to investigate.\n\n📌 Watch the full episode for the complete walkthrough: https://t.co/wmw8vvjvv0",
+  "url": "https://x.com/petergyang/status/2086824976800436676",
+  "date": "2026-08-10",
+  "likes": 43
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "bruh, you’re like a dude wearing full camo in downtown nyc. you are the watermark.\n\nthat’s the load-bearing part and is worth sitting with. https://t.co/hXh8jQNEGu",
+  "url": "https://x.com/realmadhuguru/status/2086980465534345677",
+  "date": "2026-08-11",
+  "likes": 15
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "been deep down this rabbit hole at the intersection of AI and consumer experiences recently:\n\nHow do you develop a theory of why someone did something, rather than just a history of what they did?\n\nConsumer products have a mix of explicit signals from search/chat and implicit signals from what you watch, skip, linger on, revisit.\n\nunderstanding what those signals actually mean requires reasoning about context - what’s happening in someone’s life, what’s happening in the world, and how their interests are evolving over time.\n\nand doing this in a near real-time manner for billion user consumer experiences is a whole other challenge.",
+  "url": "https://x.com/realmadhuguru/status/2086909974668784113",
+  "date": "2026-08-10",
+  "likes": 50
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "bought everyone on my team a Wispr mic. \n\nthe cacophony of clickety-clacks from mechanical keyboards has now been replaced by an opera of creepy whispers. \n\nI don’t know which is worse. https://t.co/J8AMVv50To",
+  "url": "https://x.com/realmadhuguru/status/2086897516289909034",
+  "date": "2026-08-10",
+  "likes": 21
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "I see parallels with game design, it's nice that anyone can make a basic game, but I am most excited for expert game designers to be able to make a game more quickly than once every 5-10 years",
+  "url": "https://x.com/trq212/status/2086931649938522329",
+  "date": "2026-08-10",
+  "likes": 53
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "both of these skills require deep technical expertise and intuition\n\nI hope the end result is that we remain deeply technical but make faster progress on important problems",
+  "url": "https://x.com/trq212/status/2086931648898342914",
+  "date": "2026-08-10",
+  "likes": 38
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "I think this shows 2 key skills w/ AI\n\n1) compute allocation - for most jobs there's not a list of \"X most important problems\", you have to decide what problems are worth it\n\n2) thought partnership - @__alpoge__ had to really dig into and understand the proof to know it was real https://t.co/rft0EKhr0u",
+  "url": "https://x.com/trq212/status/2086931647468097932",
+  "date": "2026-08-10",
+  "likes": 292
+ },
+ {
+  "author": "Google Labs",
+  "handle": "GoogleLabs",
+  "text": "We love to test new ideas, get quick feedback from you, and learn. With this, we've gathered so many great insights from our Portraits experiment and are concluding it on September 14.\n\nWe’ll be taking what we learned about expert-grounded AI and weaving it into other Google products.\n\nThank you for experimenting with us. Stay tuned for what's next and keep trying out our other experiments at https://t.co/TcBfiPohNK",
+  "url": "https://x.com/GoogleLabs/status/2086936798710923603",
+  "date": "2026-08-10",
+  "likes": 178
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "This tool has become so valuable for cybersecurity defensive work, that it’s become a verb within Vercel.\n\n“Did you deepsec it?”\n“@𝚟 can you deepsec”\n“/𝚍𝚎𝚎𝚙𝚜𝚎𝚌”\n\nIt’s a bit like /𝚝𝚑𝚎𝚛𝚖𝚘-𝚗𝚞𝚌𝚕𝚎𝚊𝚛-𝚌𝚘𝚍𝚎-𝚚𝚞𝚊𝚕𝚒𝚝𝚢-𝚛𝚎𝚟𝚒𝚎𝚠 but for the security of your code. Must have in your software factory.",
+  "url": "https://x.com/rauchg/status/2086965425968148806",
+  "date": "2026-08-10",
+  "likes": 348
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Was so fun to speak to the @speedrun @a16z startups while enjoying ▲ 🍵. Great founders and great vibes https://t.co/09k8SXGOxe",
+  "url": "https://x.com/rauchg/status/2086962743111016840",
+  "date": "2026-08-10",
+  "likes": 188
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Vercel Sandbox isolates both ① compute and ② network.\n\nKimi's paper shows container-based isolation is not enough for frontier models. Vercel Sandbox uses strong microVM isolation to address ①.\n\nOpenAI's escape was on ② the network path to Artifactory. Our egress firewall is now free so everyone can constrain misbehaving agents' network activity further.\n\n¹ \"in our early experiments with traditional container-based sandbox runtimes, we observed several kernel\npanics and deadlocks caused by unintended agent operations.\" \n🔗 github⁠.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\n\n² \"to gain Internet access, the models identified and exploited a previously unknown zero-day vulnerability in Artifactory⁠, a package registry cache proxy\"\n🔗 openai⁠.com/index/hugging-face-model-evaluation-security-incident/",
+  "url": "https://x.com/rauchg/status/2086946535716393209",
+  "date": "2026-08-10",
+  "likes": 160
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "If you told someone 3 months ago that a model released by a US company with frontier-class capability would be available as open weights they wouldn’t believe it. \n\nThis is very important because it opens up AI adoption in a range of scenarios that weren’t viable before. Models can be deployed on prem or in the cloud on private infra, which means use-cases in highly regulated domains can be opened up.\n\nYou can also now post-train a frontier class model on specific vertical use-cases that need extra levels of performance for their tasks, like in legal, healthcare, and other spaces. You also ensure sovereignty in case any models ever get pulled from the marketplace, which gives users more confidence in deploying in certain mission critical areas.\n\nAll of this is great news for the applied AI layer, because this is where you can route work to different model families based on the task at hand. Great time to building at the harness layer given the options available now.\n\nAnd closed frontier models will still be heavily used both due to simplicity and because you tend to need a mix of capability level for any hard problem, but having open weights in the mix helps defray costs and provides more flexibility. Great news all around.",
+  "url": "https://x.com/levie/status/2087009941806797206",
+  "date": "2026-08-11",
+  "likes": 204
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Meta releasing Muse Spark 1.2 as open weights is a *very* big deal. America now finally has its response to the open weights AI race. \n\nThis will continue to help drive down the cost of intelligence, it allows companies to run models as they see fit, as well as allows them to post train their own models for specific use-cases to get better performance gains in their domain. And provides a realistic option for those previously closed off from OSS models.\n\nThis is broadly net positive for AI - even frontier closed models - because it helps drive further diffusion of AI. Big moment in the AI race.",
+  "url": "https://x.com/levie/status/2086802472950239618",
+  "date": "2026-08-10",
+  "likes": 887
+ },
+ {
+  "author": "Ryo Lu",
+  "handle": "ryolu_",
+  "text": "i left Cursor.\n\nafter 10 years inside the tech bubble in San Francisco, Cursor felt like the sharpest version of that world – fast, intense, ambitious, full of people trying to pull the future closer.\n\ni’m leaving with gratitude, but also with the feeling that i need a different rhythm.\n\nslower time. different weather. more culture, aliveness, and humans in the everyday.\n\nAsia feels like the right place to begin again.\n\nto stay grounded, experience life more fully, and build freely.\n\ni’ll share what i find along the way!",
+  "url": "https://x.com/ryolu_/status/2086854498639822942",
+  "date": "2026-08-10",
+  "likes": 12341
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Are they going to send this to China too? https://t.co/uDui5DGmMD",
+  "url": "https://x.com/garrytan/status/2087015462014197906",
+  "date": "2026-08-11",
+  "likes": 720
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "YC is the YC for hard tech https://t.co/95jkBHwVLG",
+  "url": "https://x.com/garrytan/status/2086855369972937106",
+  "date": "2026-08-10",
+  "likes": 341
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Vote overwhelmingly in favor of people who want to build housing and the politicians will fix the policy really quickly\n\nYIMBY was invented in SF https://t.co/WUsUtZCo0y",
+  "url": "https://x.com/garrytan/status/2086835963331060181",
+  "date": "2026-08-10",
+  "likes": 99
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "Big Data era: \"our data science models work great, the problem is the underlying data\"\n\nModern data stack era:  \"our dashboards work great, the problem is the underlying data\"\n\nGen AI era: our chatbot works great, the problem is the underlying data\n\nAgentic AI era: \"our agents work great, the problem is the underlying data\"",
+  "url": "https://x.com/mattturck/status/2086882606638153882",
+  "date": "2026-08-10",
+  "likes": 33
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "At the AGI Bar in Beijing, you can get free, unlimited DeepSeek tokens. Customers vibe code while sipping on beers with names like “AGI bubble”\n\nYou can also buy a “Drinking Plan” which gives you free beer for the whole year \n\nA screen displays job roles at AI companies https://t.co/Wlcu6lYc1q",
+  "url": "https://x.com/zarazhangrui/status/2086838277701882031",
+  "date": "2026-08-10",
+  "likes": 227
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "A great way to learn design:\nGive Codex a well-designed website, ask it to analyze what makes the design great, then ask it to take a complete screenshot of the website & add annotations on the image that breaks down why the design works\n\nLearning from examples is always better than learning from theory!\n\nAnd using the annotation method means you don't have to constantly switch between reading the analysis and viewing the artifact",
+  "url": "https://x.com/zarazhangrui/status/2086758509979316423",
+  "date": "2026-08-10",
+  "likes": 1087
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "https://t.co/MEKI8f3uah",
+  "url": "https://x.com/nikunj/status/2086945175709114841",
+  "date": "2026-08-10",
+  "likes": 438
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "Funny how that headline is about OpenClaw and not Claude. As if the harness could meaningfully prevent a determined user. https://t.co/aMbeif6Bhy",
+  "url": "https://x.com/steipete/status/2087006417509405084",
+  "date": "2026-08-11",
+  "likes": 589
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "Must be load-bearing. https://t.co/9Jq3gslbx7",
+  "url": "https://x.com/steipete/status/2086938582825173277",
+  "date": "2026-08-10",
+  "likes": 1317
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "co-sign https://t.co/zMA6WgGz1N",
+  "url": "https://x.com/danshipper/status/2086957346576626116",
+  "date": "2026-08-10",
+  "likes": 96
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "putting this in fable’s context next time i give it a hard task https://t.co/ztMaw8p9u3",
+  "url": "https://x.com/danshipper/status/2086892614628811143",
+  "date": "2026-08-10",
+  "likes": 75
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "prompting pro tip: gas up your unreleased frontier model and it may accomplish heretofore impossible tasks https://t.co/ek28ga0xsl",
+  "url": "https://x.com/danshipper/status/2086892203918381388",
+  "date": "2026-08-10",
+  "likes": 32
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "https://t.co/xWaXyqC7Rj",
+  "url": "https://x.com/adityaag/status/2086886467855396940",
+  "date": "2026-08-10",
+  "likes": 4
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "https://t.co/SA7fayDwBu",
+  "url": "https://x.com/adityaag/status/2086886466303463849",
+  "date": "2026-08-10",
+  "likes": 8
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "The most ambitious founders are building bigger than ever before.\n\nMy conversation with @tbpn on what's next for @spc https://t.co/MKfPUCkqmQ",
+  "url": "https://x.com/adityaag/status/2086886464281788518",
+  "date": "2026-08-10",
+  "likes": 90
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "please consider using our models to help defend your systems https://t.co/oqs3qfWmtN",
+  "url": "https://x.com/sama/status/2086881528282587524",
+  "date": "2026-08-10",
+  "likes": 6384
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "We're making Claude Sonnet 5's introductory pricing permanent.\n\nWe launched Sonnet 5 in June at $2 per million input tokens and $10 per million output tokens through August 31, and that price will remain unchanged. https://t.co/9IpRB4Y4ZD",
+  "url": "https://x.com/claudeai/status/2086891169217122586",
+  "date": "2026-08-10",
+  "likes": 8642
+ }
+]
