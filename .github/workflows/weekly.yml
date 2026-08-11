@@ -15,7 +15,8 @@ permissions:
 jobs:
   weekly:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # v6 起批量 20→10 + 新增确定性项目通道，批次数翻倍，评分耗时显著增加，放宽超时
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
