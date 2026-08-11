@@ -20,8 +20,8 @@
 ```
 collector/
   sources/      6 个免费数据源：github hackernews producthunt(RSS) arxiv huggingface reddit(RSS)
-  filter.py     规则粗筛（关键词/阈值/去重/每源Top10）   store.py   data/projects.json 累积库
-  scoring.py    评分prompt+校验（v3格式）               awards.py  7个彩蛋奖(纯规则)
+  filter.py     规则粗筛（关键词/阈值/去重/每源Top10）   store.py   data/projects.json 累积库(仅项目)
+  scoring.py    分类+评分prompt+校验（v4：entries/news/skipped） awards.py  7个彩蛋奖(纯规则)
   report.py     生成 docs/ 全套站点(fetch式dashboard+RSS) qr.py     纯标准库二维码(已交叉验证)
   feishu.py     Top10卡片(标题必含关键词「AI项目」)      tracking.py 月度star增长快照
   voices.py     大佬之声：follow-builders feed 日采+周汇总
@@ -29,9 +29,9 @@ collector/
 ```
 
 - 纯 Python 标准库运行时，pytest 仅开发用；**测试全离线**（fixtures 录制真实响应）
-- 评分/解读由定时任务里的 Claude 完成，零 API 成本；量大时拆组并行 subagent 再合并
+- 评分/解读由百炼 API 完成（`collector/llm.py`，10 个/批）；本地 LLM 手工评分仍可用（`prompt` 子命令）
 - `docs/` 全部是生成产物，改样式去 `collector/report.py` 的 `_TEMPLATE`
-- 评分文件 v3 结构、标签词表、奖项规则、粗筛阈值 → 一切以 SPEC.md 为准
+- 评分文件 v4 结构、标签词表、奖项规则、粗筛阈值、项目/新闻口径 → 一切以 SPEC.md 为准
 
 ## 定时任务（Claude Code scheduled tasks）
 
@@ -49,16 +49,17 @@ collector/
 - **v4.1**：修奖项徽章条排版——单枚徽章限 max-width 260px，奖项名全显、项目名过长时省略号截断（完整文案进 title 悬浮提示），修复长论文标题（如硬核奖 VEXAIoT…）撑爆整行的问题。奖项条由「单行横向滚动」改为「flex-wrap 自动换行多行铺满」（桌面 2 行、移动端每枚一行），所有奖项一屏看全无需滚动
 - **v4**：大佬之声（follow-builders 公开 feed，日采不发布、周汇总渐进式呈现+融入风向）；象限图改默认收起；奖项点击定位加脉冲动画(card-locate)；卡片降密度（analysis 收进深度解读折叠区）；🥇🥈🥉 Top3 徽章；周导航 ◀▶；trend.deep 加深(8-12句可分段)；本 HANDOFF 机制确立
 - **v5**：云端自动化——新增 `collector/llm.py`（百炼 DashScope OpenAI 兼容接口，纯标准库 urllib）；新增 `score` / `voices-sum` CLI 子命令（自动评分+汇总，分批策略 >20 个/批，JSON 围栏提取，指数退避重试）；新增 `.github/workflows/weekly.yml`（周五 20:00 CST 周报 + 每月 1 日起飞追踪 + workflow_dispatch）；SPEC.md 核心决策表更新（调度方式→GitHub Actions，评分→百炼 API）；16 个新离线测试
+- **v6（2026-08-11）**：口径收紧 + AI 新闻板块（评分文件 v4）——项目区只收**实际做出来/在做的 AI 项目**，模型发布/行业新闻/观点讨论改入新增 📰 AI 新闻板块（每周 Top 10、按新闻价值排序，大模型更新不必然入选）；项目展示 Top 30（原 60）。**确定性项目通道**：arXiv / HF paper / Product Hunt / HF space 按来源免三分类、直接按项目评分（W32 四轮实证 LLM 分类会系统性误归，prompt 规则修不住）；**批量 20→10**（20/批实测网关断连 + 输出截断两种故障）；英文 tag 别名软映射。新闻不进累积库、不参与去重/奖项/起飞。飞书卡片加新闻区（W33 起全流程生效）。W32 已按新规则重评分重发站点（**飞书未重发**，用户明确不发）
 
 ## 当前状态（每次迭代更新此节）
 
-- 最新周报：**2026-W31**（59 项目全解读；大佬之声无数据自动隐藏）
-- 累积库：119 条（W29 + W31）
-- 测试：**187 个全绿**（含 16 个 llm.py 新测试）
-- 起飞追踪：data/tracking.json 有首批快照；起飞榜已渲染（榜首 gpt-5.6-instruct）
-- 飞书：webhook 已配置并实推验证过（W31 卡片已送达）
-- 大佬之声：daily 采集已跑通；W31 无每日数据（区块自动隐藏）
-- 云端自动化：`collector/llm.py` + `.github/workflows/weekly.yml` 已就绪；**待用户在 GitHub 仓库 Settings → Secrets 中配置 `DASHSCOPE_API_KEY`（必需）和 `FEISHU_WEBHOOK_URL`（可选）后生效**
+- 最新周报：**2026-W32**（2026-08-11 按新口径重评分重发布：Top 30 项目 + 7 条新闻；Qwen3.8-Max 等发布类新闻已移出项目区）
+- 口径（评分文件 v4）：项目 Top 30（实际做出来/在做的）+ 📰 新闻 Top 10（新闻价值）；论文/PH/HF space 走确定性项目通道
+- 累积库：260 条（W29 + W31 + W32 新 Top30）；**新闻不入库**，历史周无新闻区块（前端自动隐藏）
+- 测试：**260 个全绿**
+- 云端：GitHub Actions weekly.yml + 百炼 qwen-max 已稳定运行（W32 起批量 10/批）；daily voices 由上游 follow-builders 仓库每日提交
+- 飞书：W32 更新**未重发飞书**（原卡片 8 月初已送达）；卡片新增新闻区，W33 全流程生效
+- 起飞追踪：tracking.json 快照持续累积
 
 ## Backlog（提过但未做，可作为新点子候选）
 
