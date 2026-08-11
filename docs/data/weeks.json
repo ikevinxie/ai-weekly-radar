@@ -3,15 +3,157 @@
   {
    "week": "2026-W32",
    "date": "2026-08-07",
-   "count": 57,
+   "count": 30,
    "trend": {
-    "zh": "本周AI项目主要集中在视频编辑、多模态应用和自动化工具上。其中，JoyAI-Video-Edit和DeepSeek-V4-Flash-0731-free-endpoint等项目表现突出。下周可以重点关注这些领域的进一步发展。",
-    "en": "This week, AI projects mainly focused on video editing, multimodal applications, and automation tools. Notable projects include JoyAI-Video-Edit and DeepSeek-V4-Flash-0731-free-endpoint. Next week, it's worth keeping an eye on further developments in these areas.",
+    "zh": "本周AI项目集中在视频编辑、图像处理及软件开发自动化领域，体现了AI技术在这些领域的深入应用。Qwen3.8-Max的发布为编码与协作树立了新标准，同时也有研究表明AI能够提供高质量的财务建议。",
+    "en": "This week, AI projects are clustered around video editing, image processing, and software development automation, reflecting deeper integration of AI in these fields. The release of Qwen3.8-Max sets a new standard for coding and collaboration, while studies also show that AI can provide high-quality financial advice.",
     "deep": {
-     "zh": "本周的AI项目中，视频编辑和多模态应用占据了很大比例。例如，JoyAI-Video-Edit（github:jd-opensource/JoyAI-Video-Edit）在视频编辑方面表现出色，提供了强大的自动化剪辑功能。\n\n另一个值得关注的项目是DeepSeek-V4-Flash-0731-free-endpoint（huggingface:space/victor/DeepSeek-V4-Flash-0731-free-endpoint），它在多模态处理方面取得了显著进展，能够高效地处理图像和文本数据。\n\n此外，还有一些自动化工具也获得了较高评分。例如，super-simple-software-factory（github:disler/super-simple-software-factory）提供了一种简化软件开发流程的方法，受到了开发者的欢迎。\n\n整体来看，这些项目的成功表明了当前AI技术在实际应用中的强大潜力。未来几周，可以继续关注这些领域的新动向，特别是视频编辑和多模态应用方面的创新。",
-     "en": "This week, a significant portion of AI projects were focused on video editing and multimodal applications. For example, JoyAI-Video-Edit (github:jd-opensource/JoyAI-Video-Edit) stood out in the video editing space, offering powerful automated editing features.\n\nAnother notable project is DeepSeek-V4-Flash-0731-free-endpoint (huggingface:space/victor/DeepSeek-V4-Flash-0731-free-endpoint), which made significant progress in multimodal processing, efficiently handling both image and text data.\n\nAdditionally, several automation tools also received high scores. For instance, super-simple-software-factory (github:disler/super-simple-software-factory) provides a simplified approach to software development processes, gaining popularity among developers.\n\nOverall, the success of these projects highlights the strong potential of current AI technologies in practical applications. In the coming weeks, it will be interesting to keep an eye on new developments, particularly in the areas of video editing and multimodal applications."
+     "zh": "本周AI项目的趋势明显指向了创意工具和生产力增强方向。在视频编辑方面，如JoyAI-Video-Edit等项目展现了通过AI简化复杂编辑任务的能力；图像处理上，多个Hugging Face空间项目如Onise/Qwen-Image-Edit-2509-LoRAs-Fast2提供了强大的图像生成与修改功能。软件开发自动化则成为另一大热点，诸如Binaryify/open-kimi-ppt-skill这样的项目致力于通过AI提高开发效率。值得注意的是，尽管AI在许多正面应用中展现出巨大潜力，但也暴露出一些问题，比如Meta投放含有不当内容的广告事件提醒我们在利用AI时必须保持警惕，并确保其使用符合伦理规范。此外，随着Oracle禁止OpenJDK使用AI生成代码的规定出台，未来如何平衡技术创新与版权保护将成为一个重要议题。下周值得关注的是更多关于AI安全性和责任性的讨论，以及是否有新的创新解决方案出现来解决当前面临的挑战。",
+     "en": "The trend this week clearly points towards creative tools and productivity enhancement. In video editing, projects like JoyAI-Video-Edit demonstrate the ability to simplify complex editing tasks through AI; in image processing, several Hugging Face spaces such as Onise/Qwen-Image-Edit-2509-LoRAs-Fast2 offer powerful image generation and modification capabilities. Software development automation has become another major focus, with projects like Binaryify/open-kimi-ppt-skill aiming to increase development efficiency through AI. It's worth noting that while AI shows great potential in many positive applications, it also exposes some issues - the incident of Meta placing ads containing inappropriate content serves as a reminder that we must remain vigilant and ensure its use is ethical. Furthermore, with Oracle's ban on using AI-generated code in OpenJDK, balancing technological innovation with copyright protection will be an important topic moving forward. Next week, more discussions about AI safety and accountability, as well as any new innovative solutions addressing current challenges, are worth watching."
     }
    },
+   "news": [
+    {
+     "id": "hackernews:49187977",
+     "title": {
+      "zh": "Meta投放了包含AI生成儿童性虐待图像的广告",
+      "en": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery"
+     },
+     "newsworthy": 10,
+     "summary": {
+      "zh": "据报道，Meta在其平台上投放了一些包含AI生成的儿童性虐待图像的广告，引发了广泛的争议和批评。",
+      "en": "It was reported that Meta ran ads on its platform containing AI-generated child sexual abuse imagery, sparking widespread controversy and criticism."
+     },
+     "name": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+     "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+     "source": "hackernews",
+     "metrics": {
+      "points": 322,
+      "comments": 265,
+      "hn_link": "https://news.ycombinator.com/item?id=49187977"
+     }
+    },
+    {
+     "id": "hackernews:49213754",
+     "title": {
+      "zh": "Oracle禁止OpenJDK使用AI生成的代码",
+      "en": "Oracle Bans AI-Generated Code from OpenJDK"
+     },
+     "newsworthy": 9,
+     "summary": {
+      "zh": "尽管Ellison声称Oracle不会自己编写代码，但该公司已决定禁止在其开源Java开发套件中使用AI生成的代码。",
+      "en": "Despite Ellison's claim that Oracle isn't writing its own code, the company has decided to ban the use of AI-generated code in its open-source Java Development Kit."
+     },
+     "name": "Oracle bans AI-generated code from OpenJDK",
+     "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "source": "hackernews",
+     "metrics": {
+      "points": 410,
+      "comments": 279,
+      "hn_link": "https://news.ycombinator.com/item?id=49213754"
+     }
+    },
+    {
+     "id": "hackernews:49150470",
+     "title": {
+      "zh": "Qwen3.8-Max：编码与协作的新标准",
+      "en": "Qwen3.8-Max: A New Bar for Coding and Cowork"
+     },
+     "newsworthy": 8,
+     "summary": {
+      "zh": "阿里云发布了Qwen3.8-Max，这是一个新的大语言模型，特别针对编程和团队合作进行了优化。",
+      "en": "Alibaba Cloud has released Qwen3.8-Max, a new large language model optimized for coding and teamwork."
+     },
+     "name": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+     "url": "https://qwen.ai/blog?id=qwen3.8",
+     "source": "hackernews",
+     "metrics": {
+      "points": 1118,
+      "comments": 613,
+      "hn_link": "https://news.ycombinator.com/item?id=49150470"
+     }
+    },
+    {
+     "id": "hackernews:49195468",
+     "title": {
+      "zh": "人类在4万次游戏运行中错过了三分之一的威胁批准AI代理命令",
+      "en": "Humans Missed 1 in 3 Threats Approving AI Agent Commands Across 40k Game Runs"
+     },
+     "newsworthy": 8,
+     "summary": {
+      "zh": "一项研究显示，在4万次游戏运行过程中，人类玩家在批准AI代理命令时错过了大约三分之一的潜在威胁。",
+      "en": "A study revealed that during 40,000 game runs, human players missed about one-third of the potential threats when approving AI agent commands."
+     },
+     "name": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+     "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+     "source": "hackernews",
+     "metrics": {
+      "points": 330,
+      "comments": 244,
+      "hn_link": "https://news.ycombinator.com/item?id=49195468"
+     }
+    },
+    {
+     "id": "hackernews:49139102",
+     "title": {
+      "zh": "如果问对问题，AI提供的财务建议非常出色",
+      "en": "AI Financial Advice Surprisingly Good, Especially if You Ask Right Questions"
+     },
+     "newsworthy": 7,
+     "summary": {
+      "zh": "麻省理工学院的研究发现，当用户提出正确的问题时，AI提供的财务建议出乎意料地好。",
+      "en": "MIT research found that AI-provided financial advice is surprisingly good, especially when users ask the right questions."
+     },
+     "name": "AI financial advice is surprisingly good, especially if you ask right questions",
+     "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+     "source": "hackernews",
+     "metrics": {
+      "points": 350,
+      "comments": 403,
+      "hn_link": "https://news.ycombinator.com/item?id=49139102"
+     }
+    },
+    {
+     "id": "hackernews:49200652",
+     "title": {
+      "zh": "Qwen3.8 Max被Agentic指数评为最佳整体模型",
+      "en": "Qwen3.8 Max Ranked as the Best Overall Model by Agentic Index"
+     },
+     "newsworthy": 7,
+     "summary": {
+      "zh": "根据Agentic指数的评估，Qwen3.8 Max被评为最佳的整体模型，这表明它在多个关键指标上表现出色。",
+      "en": "According to the Agentic Index, Qwen3.8 Max has been ranked as the best overall model, indicating its excellent performance across multiple key metrics."
+     },
+     "name": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+     "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+     "source": "hackernews",
+     "metrics": {
+      "points": 533,
+      "comments": 341,
+      "hn_link": "https://news.ycombinator.com/item?id=49200652"
+     }
+    },
+    {
+     "id": "hackernews:49198069",
+     "title": {
+      "zh": "借助AI，软件开发开始感觉像烹饪牛排一样简单",
+      "en": "Software Development with AI Starting to Feel Like Cooking Steak"
+     },
+     "newsworthy": 6,
+     "summary": {
+      "zh": "一篇博客文章探讨了AI如何使软件开发变得更加简单，类似于烹饪牛排的过程。",
+      "en": "A blog post discusses how AI is making software development simpler, akin to the process of cooking steak."
+     },
+     "name": "Software development with AI is starting to feel like cooking steak",
+     "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+     "source": "hackernews",
+     "metrics": {
+      "points": 400,
+      "comments": 415,
+      "hn_link": "https://news.ycombinator.com/item?id=49198069"
+     }
+    }
+   ],
    "voices": {
     "week": "2026-W32",
     "overview": {
@@ -128,8 +270,8 @@
       "zh": "本周最佳",
       "en": "Best of the Week"
      },
-     "project_id": "hackernews:49150470",
-     "project_name": "Qwen3.8-Max: A New Bar for Coding and Cowork"
+     "project_id": "hackernews:49158333",
+     "project_name": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone"
     },
     {
      "key": "wildest",
@@ -148,8 +290,8 @@
       "zh": "闷声发财奖",
       "en": "Quiet Money Maker"
      },
-     "project_id": "arxiv:2608.06366v1",
-     "project_name": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering"
+     "project_id": "github:criptogus/HermesOffice",
+     "project_name": "criptogus/HermesOffice"
     },
     {
      "key": "dark_horse",
@@ -158,8 +300,8 @@
       "zh": "黑马奖",
       "en": "Dark Horse"
      },
-     "project_id": "huggingface:paper/2608.05987",
-     "project_name": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning"
+     "project_id": "huggingface:space/Onise/Qwen-Image-Edit-2509-LoRAs-Fast2",
+     "project_name": "Onise/Qwen-Image-Edit-2509-LoRAs-Fast2"
     },
     {
      "key": "hardcore",
@@ -168,8 +310,8 @@
       "zh": "硬核奖",
       "en": "Hardcore Research"
      },
-     "project_id": "huggingface:paper/2608.05987",
-     "project_name": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning"
+     "project_id": "arxiv:2608.06362v1",
+     "project_name": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games"
     },
     {
      "key": "funnest",
@@ -178,8 +320,8 @@
       "zh": "最好玩奖",
       "en": "Most Fun"
      },
-     "project_id": "hackernews:49150470",
-     "project_name": "Qwen3.8-Max: A New Bar for Coding and Cowork"
+     "project_id": "hackernews:49158333",
+     "project_name": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone"
     },
     {
      "key": "polarized",
@@ -188,25 +330,25 @@
       "zh": "两极分化奖",
       "en": "Most Polarizing"
      },
-     "project_id": "arxiv:2608.06366v1",
-     "project_name": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering"
+     "project_id": "reddit:1vfrco1",
+     "project_name": "I Compressed Bad Apple into a 3MB Neural Network [P]"
     }
    ],
    "top3": [
     {
-     "id": "hackernews:49150470",
-     "name": "Qwen3.8-Max: A New Bar for Coding and Cowork",
-     "total": 23
-    },
-    {
      "id": "hackernews:49158333",
      "name": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
-     "total": 22
+     "total": 21
     },
     {
-     "id": "hackernews:49198069",
-     "name": "Software development with AI is starting to feel like cooking steak",
-     "total": 21
+     "id": "huggingface:space/FrameAI4687/Omni-Video-Factory",
+     "name": "FrameAI4687/Omni-Video-Factory",
+     "total": 20
+    },
+    {
+     "id": "github:jd-opensource/JoyAI-Video-Edit",
+     "name": "jd-opensource/JoyAI-Video-Edit",
+     "total": 19
     }
    ],
    "qr": [
@@ -257,6 +399,7 @@
      "en": "Overall, this week's trend in AI projects is concentrated on the application of visual technologies, particularly in image editing, generation, and augmented reality. Among them, QwenAudio/qwen-audio-agent demonstrates a new approach to combining audio processing with AI, while Ayin1412/ForzaHorizon6-VisionAI explores the possibilities of in-game visual AI. In the field of natural language processing, although there were no particularly outstanding projects, it still maintained a certain level of attention overall. Financial analysis projects, such as yaoleifly/ai-stock-pool, attracted investor interest by using machine learning to predict stock market trends.\n\nIt's worth noting that although many high-quality projects emerged this week, they seemed somewhat less innovative and impactful compared to previous weeks. This might indicate that researchers are currently focusing more on improving existing technologies rather than pioneering entirely new areas. In the coming week, it will be interesting to see if any breakthroughs occur, especially in cross-modal understanding and the development of applications for more complex scenarios."
     }
    },
+   "news": null,
    "voices": {
     "week": "2026-W31",
     "overview": {
@@ -502,6 +645,7 @@
      "en": "Laid out across all 60 projects, three clear storylines run through the week. First, an agent-infrastructure boom: Microsoft's Flint gives agents a visual expression language, AgentKey builds an agent data marketplace, NoMac.app a headless iOS pipeline for agents, homerail a voice-first local orchestrator, Osaurus a fully local Mac agent — expression, data, publishing, and runtime layers of a full agent supply chain all forming in one week. \n\nSecond, the rise of an 'AI backlash economy': a $10k-a-week service to delete AI slop code, kill-ai-slop that scans and strips the 'AI look' from products, and Playground that pays $100k bounties for hacking agents — AI oversupply is now feeding reverse businesses. \n\nThird, red-hot generative consumption: Hugging Face trending is dominated by Wan2.2 video mirrors, Qwen3-TTS, and image editors, showing free generative demand for video/voice/image is far from saturated. On security, the GitLost prompt-injection incident is a warning shot for every agent product. \n\nWorth watching next week: whether 'agent expression standards' like Flint get followed, and whether local agents (homerail/Osaurus) can differentiate on privacy anxiety."
     }
    },
+   "news": null,
    "voices": {
     "week": "2026-W29",
     "overview": {

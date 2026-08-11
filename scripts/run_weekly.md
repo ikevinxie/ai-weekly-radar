@@ -6,10 +6,12 @@
 
 1. **收集**：运行 `python3 -m collector collect`。个别数据源失败（警告）可接受；若全部失败则停止并报告。
 2. **大佬之声汇总**：运行 `python3 -m collector voices-prompt <本周>`。若有本周每日采集数据，按输出的 prompt 写渐进式周汇总（overview + 3-6 个主题 + 精选原文引用，保留原链接）到 `data/voices/<本周>.json`；若无数据则跳过（区块自动隐藏）。
-3. **评分与解读**：运行 `python3 -m collector prompt <本周>`（collect 的输出里有周编号），按输出的 prompt 要求产出：
-   - 每个候选：三维分（whimsy / fun / money，各 0–10 整数）+ 中文一句话 reason + **中英双语 analysis（各 2-3 句）** + **中英双语 deep_dive（what / why / biz 各 3-5 句）** + **1-3 个 tags**（只能取 SPEC.md「标签词表」内的值）
+3. **分类 + 评分 + 解读**：运行 `python3 -m collector prompt <本周>`（collect 的输出里有周编号），按输出的 prompt 要求产出：
+   - **每个候选先分类**（见 SPEC.md「AI 项目 vs AI 新闻」）：项目（有具体产物）→ entries；模型发布/行业新闻/有新闻价值的事件 → news；纯讨论无价值 → skipped。三个列表恰好覆盖全部候选 id
+   - 每个**项目**：三维分（whimsy / fun / money，各 0–10 整数）+ 中文一句话 reason + **中英双语 analysis（各 2-3 句）** + **中英双语 deep_dive（what / why / biz 各 3-5 句）** + **1-3 个 tags**（只能取 SPEC.md「标签词表」内的值）
+   - 每条**新闻**：双语 title + newsworthy（0–10 整数，按新闻价值，大模型更新不必然入选）+ 双语 summary（各 2-3 句）
    - **本周风向 trend**：概览 zh/en（各 3-5 句）+ deep.zh/deep.en 深度版（各 8-12 句，可用空行分段，站点按段渲染）。**撰写时必须融入本周大佬发言的信号**（见上一步的汇总）
-   结果写入 `data/scored/<本周>.json`（v3 对象格式）。
+   结果写入 `data/scored/<本周>.json`（v4 对象格式：entries/news/skipped）。
    - 评分口径参考 `tests/scoring_cases/cases.json` 里的样例区间，保持跨周一致。
    - 项目多、解读量大时，可拆分成几组并行撰写深度解读，再合并成一个评分文件。
 4. **校验**：运行 `python3 -m collector validate <本周>`。若报错，修正评分文件后重跑，直到通过。

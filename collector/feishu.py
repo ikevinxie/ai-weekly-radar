@@ -48,8 +48,20 @@ def _item_md(rank: int, p: dict, medals: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
+def _news_md(rank: int, n: dict, max_summary: int = 110) -> str:
+    title = (n.get("title") or {}).get("zh") or (n.get("title") or {}).get("en") \
+        or n.get("name") or n.get("id", "")
+    summary = ((n.get("summary") or {}).get("zh") or "").strip()
+    if len(summary) > max_summary:
+        summary = summary[:max_summary].rstrip("，。,;； ") + "…"
+    lines = [f"**{rank}. [{title}]({n.get('url', '')})** 📰 新闻价值 {n.get('newsworthy', 0)}/10"]
+    if summary:
+        lines.append(summary)
+    return "\n".join(lines)
+
+
 def build_card(week: str, trend_zh: str, top10: list[dict], awards: list[dict],
-               site_url: str = SITE_URL) -> dict:
+               news: list[dict] | None = None, site_url: str = SITE_URL) -> dict:
     medals = {}
     for a in awards:
         medals.setdefault(a["project_id"], "")
@@ -62,6 +74,12 @@ def build_card(week: str, trend_zh: str, top10: list[dict], awards: list[dict],
     for rank, p in enumerate(top10, 1):
         elements.append({"tag": "div",
                          "text": {"tag": "lark_md", "content": _item_md(rank, p, medals)}})
+    if news:
+        news_lines = "\n".join(_news_md(i, n) for i, n in enumerate(news[:10], 1))
+        elements.append({"tag": "hr"})
+        elements.append({"tag": "div",
+                         "text": {"tag": "lark_md",
+                                  "content": f"📰 **本周 AI 新闻 Top {len(news[:10])}**\n{news_lines}"}})
     if awards:
         awards_md = " ".join(f"{a['emoji']} {a['title']['zh']}" for a in awards)
         elements.append({"tag": "hr"})

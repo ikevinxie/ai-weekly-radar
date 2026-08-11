@@ -3,25 +3,31 @@
  <channel>
   <title>AI 周报 — 天马行空 · 有趣 · 有钱途</title>
   <link>https://ikevinxie.github.io/ai-weekly-radar</link>
-  <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
+  <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目（Top 30）与本周最有价值的 AI 新闻（Top 10），LLM 评分与双语解读。</description>
   <language>zh-cn</language>
   <item>
-   <title>AI 周报 2026-W32：本周AI项目主要集中在视频编辑、多模态应用和自动化工具上。</title>
+   <title>AI 周报 2026-W32：本周AI项目集中在视频编辑、图像处理及软件开发自动化领域，体现了AI技术在这些领域的深入应用。</title>
    <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W32</link>
    <guid isPermaLink="false">2026-W32</guid>
    <pubDate>Fri, 07 Aug 2026 20:00:00 +0000</pubDate>
-   <description>本周AI项目主要集中在视频编辑、多模态应用和自动化工具上。其中，JoyAI-Video-Edit和DeepSeek-V4-Flash-0731-free-endpoint等项目表现突出。下周可以重点关注这些领域的进一步发展。
+   <description>本周AI项目集中在视频编辑、图像处理及软件开发自动化领域，体现了AI技术在这些领域的深入应用。Qwen3.8-Max的发布为编码与协作树立了新标准，同时也有研究表明AI能够提供高质量的财务建议。
 
-1. Qwen3.8-Max: A New Bar for Coding and Cowork（23分）— Qwen3.8-Max 提供了更高效的编程和协作体验，适合团队合作。
-2. Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone（22分）— 在 Mac 上只需 4.3GB RAM 就可以运行 80B 参数的 Qwen，在 iPhone 上则可以运行 35B 参数的 Qwen。
-3. Software development with AI is starting to feel like cooking steak（21分）— AI 在软件开发中的应用让编程变得像烹饪牛排一样简单。
-4. FrameAI4687/Omni-Video-Factory（21分）— Omni-Video-Factory 是一个多功能的视频生成工具。
-5. ShootClip（20分）— ShootClip 利用AI技术，可以将视频编辑速度提高10倍，极大地提升了工作效率。
-6. Kitesurf（20分）— Kitesurf 是一个基于Cloudflare Workers构建的浏览器，专为代理设计，提供了强大的性能和安全性。
-7. thebuggeddev/anatomy（19分）— 一个基于Three.js和GPT 5.6构建的互动3D人体解剖探索器。
-8. AI financial advice is surprisingly good, especially if you ask right questions（19分）— AI 提供的财务建议非常有用，尤其是当你问对问题时。
-9. Qwen3.8 Max now ranked as the best overall model by agentic index（19分）— Qwen3.8 Max 被评为最佳整体模型，显示了其在多个任务上的卓越表现。
-10. multimodalart/minimax-h3（19分）— minimax-h3 是一个多模态艺术生成工具。</description>
+1. Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone（21分）— 在Mac上仅用4.3GB内存运行80B的Qwen模型，iPhone也能运行35B模型，展示了高效的资源利用和创新技术。
+2. FrameAI4687/Omni-Video-Factory（20分）— 一个多功能视频生成工具，能够处理多种视频编辑需求。
+3. jd-opensource/JoyAI-Video-Edit（19分）— 实时开放式视频编辑工具，支持自动回归扩散算法。
+4. Binaryify/open-kimi-ppt-skill（18分）— 让AI代理生成可编辑PPT并附带本地浏览器编辑器，提高工作效率。
+5. criptogus/HermesOffice（18分）— 集成原生Hermes Agent AI的办公套件，提升生产力。
+6. thebuggeddev/anatomy（18分）— 交互式3D人体解剖学探索器，结合GPT实现智能解答。
+7. Mistral's Shieldstral: 3B open-weights model for multimodal moderation（18分）— Mistral发布了Shieldstral，一个专为多模态内容审核设计的开源模型，有助于提高在线平台的安全性和用户体验。
+8. Onise/Qwen-Image-Edit-2509-LoRAs-Fast2（18分）— 快速且高效的图像编辑工具，支持LoRA技术。
+9. ShootClip（18分）— 使用 AI 技术将视频编辑速度提高 10 倍。
+10. Kitesurf（18分）— 基于 Cloudflare Workers 的浏览器，专为代理设计。
+
+📰 Meta投放了包含AI生成儿童性虐待图像的广告
+📰 Oracle禁止OpenJDK使用AI生成的代码
+📰 Qwen3.8-Max：编码与协作的新标准
+📰 人类在4万次游戏运行中错过了三分之一的威胁批准AI代理命令
+📰 如果问对问题，AI提供的财务建议非常出色</description>
   </item>
   <item>
    <title>AI 周报 2026-W31：本周AI项目中，图像处理与生成、自然语言处理和金融分析成为热门主题。</title>

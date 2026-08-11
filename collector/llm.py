@@ -19,7 +19,12 @@ from .scoring import TAGS as _TAGS
 
 API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 DEFAULT_MODEL = "qwen-max"
-BATCH_SIZE = 20
+# 批量上限：输出大小与每批被评项目数成正比（deep_dive 双语是输出大头）。
+# W32 实测 20 个/批会触发两种故障：响应过大被网关断连、输出超 max tokens
+# 导致 JSON 截断解析失败。降到 10 后每批输出规模可控。
+BATCH_SIZE = 10
+# 项目批次批量（确定性项目通道，全是重输出）
+PROJECT_BATCH_SIZE = 10
 MAX_RETRIES = 2
 PARSE_RETRIES = 2   # LLM 返回畸形 JSON 时，把错误喂回去让它修，最多额外试这么多次
 TIMEOUT = 300
@@ -95,7 +100,9 @@ def extract_json(text: str) -> dict | list:
                 return json.loads(text[start:end + 1])
             except json.JSONDecodeError:
                 continue
-    raise ValueError(f"无法从 LLM 回复中提取 JSON（前 200 字符: {text[:200]}）")
+    # 尾部信息对诊断「输出截断」更有用：截断的回复尾巴通常是半截字符串
+    raise ValueError(f"无法从 LLM 回复中提取 JSON"
+                     f"（前 200 字符: {text[:200]} … 末 120 字符: {text[-120:]}）")
 
 
 # ---------------------------------------------------------------------------
@@ -109,29 +116,48 @@ _SCORE_SYSTEM = (
     "字符串值内部如需引号请用 \\\" 转义，不要直接换行打断 JSON 结构。")
 
 _BATCH_TEMPLATE = """\
-请对下面 {count} 个候选项目逐一评分并撰写双语解读。
+请对下面 {count} 个候选逐一**分类**并处理。
 
-## 评分：三个维度，各 0-10 整数
+## 分类（每个候选三选一，projects / news / skipped 的 id 合起来恰好覆盖全部候选，不增不减）
+
+- **项目（projects）**：已经做出来或正在做的 AI 项目，有具体产物——工具、产品、开源库、模型权重、demo/space、论文。
+  **论文就是项目（研究产物）**：arXiv / Hugging Face 论文、Reddit [R] 研究帖一律归项目，不是新闻，也不要跳过。
+  HF space / demo / 能跑起来的代码仓库同理，都是项目。
+- **新闻（news）**：本周发生的 AI **事件**——模型发布/升级、公司动态、榜单、政策、融资、事故、丑闻、争议。
+  **模型发布/升级公告是新闻，不是项目**（即使标题像产品介绍、即使你想给它打高分）。
+  例：候选「Qwen3.8-Max: A New Bar for Coding」是模型发布通稿 → news；「某模型登顶榜单」也是 news。
+  候选名称是新闻标题式（含 发布/开源了/ranked/a new bar/now available 等）时，通常是新闻。
+  研究论文不是新闻。
+- **跳过（skipped）**：**慎用**！只用于纯观点/吐槽/闲聊、毫无信息量与展示价值的帖子。
+  **有新闻价值的事件严禁跳过**——公司动态、丑闻、政策、重大发布哪怕内容敏感也必须归 news。
+  拿不准时宁可归项目。给一句理由。
+
+## 项目：三维评分，各 0-10 整数
 
 - whimsy（天马行空）：想法的新奇、大胆、跳出常规程度。抄袭常见套路 0-3，有新意 4-6，让人眼前一亮 7-8，疯狂而迷人 9-10
 - fun（有趣）：普通人看到会觉得好玩、想立刻试试的程度
 - money（有钱途）：商业化潜力、市场空间、变现路径清晰度。论文类通常 money 偏低，除非应用前景明确
 - total = whimsy + fun + money
 
-## 每个项目必写
-
+每个项目必写：
 1. reason：一句中文推荐钩子（20-60 字，说人话，突出它为什么值得看）
 2. analysis：双语简读，zh 和 en 各 2-3 句
 3. deep_dive：双语深度解读，中英各三段（what / why / biz 各 3-5 句）
 4. tags：1-3 个主题标签，只能从这个词表里选（**严禁使用词表外的词，如「开源/通信/音频/云/编程/AI」等都不允许，开源项目请用「社区」或主题词代替**）：
    {tags}
 
+## 新闻：按新闻价值评分（newsworthy 0-10 整数）
+
+看影响面、新鲜度、对从业者的实际意义。大模型更新可以入选但不保证入选——
+只给真正有价值的新闻高分。每条必写：title（双语标题，zh/en）、
+summary（双语摘要各 2-3 句：发生了什么、为什么重要）。
+
 ## 输出
 
-严格输出 JSON 数组（不要包裹在对象中），每个元素：
-{{"id": "<候选id>", "scores": {{"whimsy": 0, "fun": 0, "money": 0, "total": 0}}, "reason": "...", "analysis": {{"zh": "...", "en": "..."}}, "deep_dive": {{"zh": {{"what": "...", "why": "...", "biz": "..."}}, "en": {{"what": "...", "why": "...", "biz": "..."}}}}, "tags": ["agent"]}}
+严格输出 JSON 对象：
+{{"projects": [{{"id": "<候选id>", "scores": {{"whimsy": 0, "fun": 0, "money": 0, "total": 0}}, "reason": "...", "analysis": {{"zh": "...", "en": "..."}}, "deep_dive": {{"zh": {{"what": "...", "why": "...", "biz": "..."}}, "en": {{"what": "...", "why": "...", "biz": "..."}}}}, "tags": ["agent"]}}], "news": [{{"id": "<候选id>", "title": {{"zh": "...", "en": "..."}}, "newsworthy": 0, "summary": {{"zh": "...", "en": "..."}}}}], "skipped": [{{"id": "<候选id>", "reason": "..."}}]}}
 
-## 候选项目
+## 候选
 
 {candidates}
 """
@@ -143,11 +169,47 @@ _TREND_TEMPLATE = """\
 {{"zh": "概览 3-5 句", "en": "overview 3-5 sentences", "deep": {{"zh": "深度 8-12 句，可用空行分段", "en": "deep 8-12 sentences"}}}}
 
 要求：哪些主题扎堆、风往哪吹、代表项目串讲、下周值得盯什么。
-
+{news_section}
 ## 项目列表
 
 {projects}
 """
+
+_TREND_NEWS_SECTION = """\
+本周主要新闻（背景参考，可融入风向叙述）：
+{news_lines}
+
+"""
+
+# 项目批次的前置护栏：确定性项目一律走项目通道，LLM 没有机会把它们归成
+# 新闻或跳过（W32 评分先后出现 arXiv 论文被误归 news、Product Hunt 发布
+# 的产品被误归 news 的系统性偏差）。
+_FORCE_PROJECTS_NOTE = """\
+【重要】本批候选全部是有具体产物的项目（论文 / Product Hunt 发布的产品 /
+Hugging Face space demo）。一律放入 projects 按项目评分，严禁放入 news 或
+skipped，skipped 必须输出空数组 []。产品发布本身就是项目，不是新闻。
+
+"""
+
+
+def _is_paper(p: dict) -> bool:
+    """arXiv 与 HF paper 候选（论文=研究产物）。"""
+    return p.get("source") == "arxiv" or str(p.get("id", "")).startswith("huggingface:paper/")
+
+
+def _is_definite_project(p: dict) -> bool:
+    """确定性项目：按来源/形态即可判定有具体产物，不参与三分类。
+
+    - 论文：arXiv / Hugging Face paper（研究产物）
+    - Product Hunt：只收录发布的产品
+    - HF space：能跑的 demo
+    （W32 实证：这些候选交给 LLM 分类会被系统性误归 news/skipped。）
+    """
+    if _is_paper(p):
+        return True
+    if p.get("source") == "producthunt":
+        return True
+    return str(p.get("id", "")).startswith("huggingface:space/")
 
 
 def _format_candidates(candidates: list[dict]) -> str:
@@ -160,53 +222,117 @@ def _format_candidates(candidates: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def _score_batches(candidates: list[dict], *, label: str) -> list[dict]:
-    """把候选分批送给 LLM 评分，返回 entries 列表。
+def _empty_buckets() -> dict:
+    return {"projects": [], "news": [], "skipped": []}
 
+
+def _split_batch_reply(parsed, label: str) -> dict:
+    """把单批分类输出拆成 projects / news / skipped 三个列表。
+
+    兼容保守回退：LLM 退回旧格式（纯数组或 {"entries": [...]}）时按全项目处理，
+    漏掉分类由 sanitize 的占位兜底 + 补评机制兜住，不当场熔断。
+    """
+    buckets = _empty_buckets()
+    if isinstance(parsed, list):
+        buckets["projects"] = parsed
+        return buckets
+    if not isinstance(parsed, dict):
+        raise ValueError(f"{label}: 期望 JSON 对象，得到 {type(parsed).__name__}")
+    projects = parsed.get("projects")
+    if projects is None:
+        projects = parsed.get("entries") or []
+    for key, value in (("projects", projects), ("news", parsed.get("news") or []),
+                       ("skipped", parsed.get("skipped") or [])):
+        if not isinstance(value, list):
+            raise ValueError(f"{label}: {key} 必须是数组，得到 {type(value).__name__}")
+        buckets[key] = value
+    return buckets
+
+
+def _score_batches(candidates: list[dict], *, label: str,
+                   force_projects: bool = False) -> dict:
+    """把候选分批送给 LLM 分类+评分，返回 {"projects", "news", "skipped"}。
+
+    force_projects=True（项目批次）：在 prompt 前置护栏，要求全部按项目评分；
+    批量用 PROJECT_BATCH_SIZE（重输出批次大批量会被网关断连）。
     每个 batch 解析失败时，把错误和原文喂回 LLM 重试，最多 PARSE_RETRIES 次。
     """
-    all_entries: list[dict] = []
-    batches = [candidates[i:i + BATCH_SIZE] for i in range(0, len(candidates), BATCH_SIZE)]
+    merged = _empty_buckets()
+    size = PROJECT_BATCH_SIZE if force_projects else BATCH_SIZE
+    batches = [candidates[i:i + size] for i in range(0, len(candidates), size)]
     for idx, batch in enumerate(batches):
         if len(batches) > 1:
-            print(f"  {label} {idx + 1}/{len(batches)}（{len(batch)} 个项目）…")
+            print(f"  {label} {idx + 1}/{len(batches)}（{len(batch)} 个候选）…")
         prompt = _BATCH_TEMPLATE.format(count=len(batch),
                                         tags=" ".join(_TAGS),
                                         candidates=_format_candidates(batch))
+        if force_projects:
+            prompt = _FORCE_PROJECTS_NOTE + prompt
         parsed = _chat_json_with_retry(prompt, _SCORE_SYSTEM,
                                        label=f"{label} {idx + 1}/{len(batches)}")
-        if isinstance(parsed, dict) and "entries" in parsed:
-            parsed = parsed["entries"]
-        if not isinstance(parsed, list):
-            raise ValueError(f"{label} {idx + 1}: 期望 JSON 数组，得到 {type(parsed).__name__}")
-        all_entries.extend(parsed)
-    return all_entries
+        buckets = _split_batch_reply(parsed, f"{label} {idx + 1}")
+        for key in merged:
+            merged[key].extend(buckets[key])
+    return merged
+
+
+def _merge_buckets(dst: dict, src: dict) -> None:
+    for key in dst:
+        dst[key].extend(src.get(key, []))
 
 
 def score_candidates(candidates: list[dict], week: str) -> dict:
-    """对全部候选评分，返回 v3 scored 文档。候选多时自动分批。"""
-    all_entries = _score_batches(candidates, label="评分批次")
+    """对全部候选分类+评分，返回 v4 scored 文档。候选多时自动分批。
 
-    # trend
+    确定性项目（论文 / PH 产品 / HF space）走项目通道，不参与三分类。
+    """
+    definite = [p for p in candidates if _is_definite_project(p)]
+    rest = [p for p in candidates if not _is_definite_project(p)]
+    buckets = _score_batches(rest, label="评分批次")
+    if definite:
+        print(f"  项目批次（{len(definite)} 个确定性项目，直接按项目评分）…")
+        _merge_buckets(buckets, _score_batches(definite, label="项目批次",
+                                               force_projects=True))
+
+    # trend：项目列表为主，新闻标题作背景
     print("  生成本周风向…")
     scored_lines = [f"- {e['id']}  total={(e.get('scores') or {}).get('total', '?')}"
-                    for e in all_entries if isinstance(e, dict) and e.get("id")]
+                    for e in buckets["projects"] if isinstance(e, dict) and e.get("id")]
+    news_lines = []
+    for n in buckets["news"]:
+        if isinstance(n, dict) and n.get("id"):
+            title = n.get("title") if isinstance(n.get("title"), dict) else {}
+            news_lines.append(f"- {title.get('zh') or title.get('en') or n['id']}")
+    news_section = (_TREND_NEWS_SECTION.format(news_lines="\n".join(news_lines))
+                    if news_lines else "")
     trend_prompt = _TREND_TEMPLATE.format(week=week, count=len(scored_lines),
+                                          news_section=news_section,
                                           projects="\n".join(scored_lines))
     trend = _chat_json_with_retry(trend_prompt, _SCORE_SYSTEM, label="trend")
     if not isinstance(trend, dict):
         raise ValueError("trend: 期望 JSON 对象")
 
-    return {"week": week, "trend": trend, "entries": all_entries}
+    return {"week": week, "trend": trend, "entries": buckets["projects"],
+            "news": buckets["news"], "skipped": buckets["skipped"]}
 
 
-def score_backfill(candidates: list[dict]) -> list[dict]:
-    """对分批评分时 LLM 整条漏写的候选定向补评，只返回 entries 数组。
+def score_backfill(candidates: list[dict]) -> dict:
+    """对分批评分时 LLM 整条漏写的候选定向补分类+补评。
 
-    漏写是概率事件，补评批次小（通常只有几条），LLM 几乎必然全量返回。
-    不生成 trend——trend 由 score_candidates 基于全量 entries 统一生成。
+    返回 {"projects", "news", "skipped"}。漏写是概率事件，补评批次小
+    （通常只有几条），LLM 几乎必然全量返回。
+    不生成 trend——trend 由 score_candidates 基于全量条目统一生成。
+    与 score_candidates 一致：确定性项目走项目通道。
     """
-    return _score_batches(candidates, label="补评批次")
+    definite = [p for p in candidates if _is_definite_project(p)]
+    rest = [p for p in candidates if not _is_definite_project(p)]
+    buckets = _empty_buckets()
+    if rest:
+        _merge_buckets(buckets, _score_batches(rest, label="补评批次"))
+    if definite:
+        _merge_buckets(buckets, _score_batches(definite, label="项目补评批次",
+                                               force_projects=True))
+    return buckets
 
 
 def _chat_json_with_retry(prompt: str, system: str, *, label: str):

@@ -116,6 +116,11 @@ def _fake_entry(pid, total=20):
             "tags": ["agent"]}
 
 
+def _fake_news(pid, worth=8):
+    return {"id": pid, "title": {"zh": "中文标题", "en": "English title"},
+            "newsworthy": worth, "summary": {"zh": "中文摘要", "en": "English summary"}}
+
+
 class TestScoreCandidates:
     def test_single_batch(self):
         cands = _make_candidates(3)
@@ -183,16 +188,120 @@ class TestScoreCandidates:
         # 反向断言：prompt 里不应再硬编码旧词表（如果硬编码，加新词后会缺）
         assert "开源" in rendered
 
+    def test_prompt_contains_classification_and_news_rules(self):
+        # 回归锁死：batch prompt 必须包含三分类定义与新闻口径
+        # （收紧项目定义的核心：模型发布是新闻不是项目，含具体反例）
+        from collector.llm import _BATCH_TEMPLATE, _TAGS
+        rendered = _BATCH_TEMPLATE.format(count=1, tags=" ".join(_TAGS),
+                                          candidates="- id: x\n  名称: X\n  来源: github\n  链接: u\n  描述: d")
+        for token in ("projects", "news", "skipped", "newsworthy",
+                      "模型发布/升级公告是新闻，不是项目", "Qwen3.8-Max",
+                      "有新闻价值的事件严禁跳过"):
+            assert token in rendered, token
+
+    def test_definite_projects_bypass_classification(self):
+        # 论文 / PH 产品 / HF space 走确定性项目通道，不进分类批次——
+        # 回归 W32：arXiv 论文两次被误归 news、PH 产品一次被误归 news
+        definite = [{"id": "arxiv:1.1", "name": "Paper One", "source": "arxiv",
+                     "url": "u1", "description": "d", "metrics": {}},
+                    {"id": "huggingface:paper/2601.1", "name": "HF Paper",
+                     "source": "huggingface", "url": "u2", "description": "d",
+                     "metrics": {}},
+                    {"id": "producthunt:77", "name": "PH Product",
+                     "source": "producthunt", "url": "u3", "description": "d",
+                     "metrics": {}},
+                    {"id": "huggingface:space/x/demo", "name": "HF Space",
+                     "source": "huggingface", "url": "u4", "description": "d",
+                     "metrics": {}}]
+        rest = _make_candidates(2)
+        replies = [
+            json.dumps({"projects": [_fake_entry(c["id"]) for c in rest],
+                        "news": [], "skipped": []}),
+            json.dumps({"projects": [_fake_entry(p["id"]) for p in definite],
+                        "news": [], "skipped": []}),
+            json.dumps({"zh": "z", "en": "e", "deep": {"zh": "dz", "en": "de"}}),
+        ]
+        prompts = []
+
+        def fake_chat(prompt, *, system=None):
+            prompts.append(prompt)
+            return replies.pop(0)
+
+        with mock.patch("collector.llm.chat", side_effect=fake_chat):
+            result = score_candidates(definite + rest, "2026-W32")
+        assert len(result["entries"]) == 6
+        # 分类批次不含确定性项目 id；项目批次带强制护栏
+        for pid in ("arxiv:1.1", "producthunt:77", "huggingface:space/x/demo"):
+            assert pid not in prompts[0]
+            assert pid in prompts[1]
+        assert "一律放入 projects" in prompts[1]
+
+    def test_backfill_routes_papers_to_project_channel(self):
+        cands = [{"id": "arxiv:9.9", "name": "P", "source": "arxiv",
+                  "url": "u", "description": "d", "metrics": {}}]
+        with mock.patch("collector.llm.chat",
+                        return_value=json.dumps(
+                            {"projects": [_fake_entry("arxiv:9.9")],
+                             "news": [], "skipped": []})) as m:
+            result = score_backfill(cands)
+        assert result["projects"][0]["id"] == "arxiv:9.9"
+        assert "一律放入 projects" in m.call_args[0][0]
+
+    def test_classification_reply_split_into_buckets(self):
+        # v4 分类输出：projects / news / skipped 三个列表各自归位
+        cands = _make_candidates(3)
+        reply = {"projects": [_fake_entry(cands[0]["id"]), _fake_entry(cands[1]["id"])],
+                 "news": [_fake_news(cands[2]["id"])], "skipped": []}
+        trend = {"zh": "z", "en": "e", "deep": {"zh": "dz", "en": "de"}}
+        replies = [json.dumps(reply), json.dumps(trend)]
+        with mock.patch("collector.llm.chat", side_effect=replies):
+            result = score_candidates(cands, "2026-W32")
+        assert [e["id"] for e in result["entries"]] == [cands[0]["id"], cands[1]["id"]]
+        assert [n["id"] for n in result["news"]] == [cands[2]["id"]]
+        assert result["skipped"] == []
+
+    def test_multi_batch_merges_news_and_skipped(self):
+        cands = _make_candidates(BATCH_SIZE + 2)
+        batch1 = {"projects": [_fake_entry(c["id"]) for c in cands[:BATCH_SIZE]],
+                  "news": [_fake_news("news:ext1", 9)], "skipped": []}
+        batch2 = {"projects": [], "news": [],
+                  "skipped": [{"id": cands[BATCH_SIZE]["id"], "reason": "纯讨论"}]}
+        trend = {"zh": "z", "en": "e", "deep": {"zh": "dz", "en": "de"}}
+        replies = [json.dumps(batch1), json.dumps(batch2), json.dumps(trend)]
+        with mock.patch("collector.llm.chat", side_effect=replies):
+            result = score_candidates(cands, "2026-W32")
+        assert len(result["entries"]) == BATCH_SIZE
+        assert [n["id"] for n in result["news"]] == ["news:ext1"]
+        assert [s["id"] for s in result["skipped"]] == [cands[BATCH_SIZE]["id"]]
+
+    def test_trend_prompt_includes_news_titles(self):
+        # 风向生成时新闻标题作为背景输入
+        cands = _make_candidates(2)
+        reply = {"projects": [_fake_entry(cands[0]["id"])],
+                 "news": [_fake_news(cands[1]["id"])], "skipped": []}
+        trend = {"zh": "z", "en": "e", "deep": {"zh": "dz", "en": "de"}}
+        prompts = []
+        replies = [json.dumps(reply), json.dumps(trend)]
+
+        def fake_chat(prompt, *, system=None):
+            prompts.append(prompt)
+            return replies.pop(0)
+
+        with mock.patch("collector.llm.chat", side_effect=fake_chat):
+            score_candidates(cands, "2026-W32")
+        assert "中文标题" in prompts[1]          # 新闻标题进了 trend prompt
+
 
 class TestScoreBackfill:
-    def test_returns_entries_without_trend_call(self):
-        # 补评只评漏写的候选，不生成 trend（trend 由 score_candidates 统一生成）
+    def test_returns_buckets_without_trend_call(self):
+        # 补评只评漏写的候选，不生成 trend（trend 由 score_candidates 统一生成）；
+        # 旧格式（纯数组）回退为全项目
         cands = _make_candidates(2)
         entries = [_fake_entry(c["id"]) for c in cands]
         with mock.patch("collector.llm.chat",
                         return_value=json.dumps(entries)) as m:
             result = score_backfill(cands)
-        assert result == entries
+        assert result == {"projects": entries, "news": [], "skipped": []}
         assert m.call_count == 1
 
     def test_unwraps_entries_object(self):
@@ -200,7 +309,17 @@ class TestScoreBackfill:
         entries = [_fake_entry(c["id"]) for c in cands]
         with mock.patch("collector.llm.chat",
                         return_value=json.dumps({"entries": entries})):
-            assert score_backfill(cands) == entries
+            result = score_backfill(cands)
+        assert result["projects"] == entries and result["news"] == []
+
+    def test_classification_reply(self):
+        cands = _make_candidates(2)
+        reply = {"projects": [_fake_entry(cands[0]["id"])],
+                 "news": [_fake_news(cands[1]["id"])], "skipped": []}
+        with mock.patch("collector.llm.chat", return_value=json.dumps(reply)):
+            result = score_backfill(cands)
+        assert result["projects"][0]["id"] == cands[0]["id"]
+        assert result["news"][0]["id"] == cands[1]["id"]
 
 
 # ---------------------------------------------------------------------------

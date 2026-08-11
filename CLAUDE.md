@@ -19,7 +19,7 @@
 python3 -m collector collect          # 抓取 + 粗筛 → data/candidates/<week>.json
 python3 -m collector prompt <week>    # 输出评分 prompt（本地 LLM 按此评分+双语解读）
 python3 -m collector score <week>     # 百炼 API 自动评分（需 DASHSCOPE_API_KEY）
-python3 -m collector validate <week>  # 校验 data/scored/<week>.json（v3 结构）
+python3 -m collector validate <week>  # 校验 data/scored/<week>.json（v4 结构：entries/news/skipped）
 python3 -m collector report           # 合并入库 + 生成 docs/ 全套站点
 python3 -m collector feishu <week> [--dry-run]  # 推送 Top 10 卡片到飞书
 python3 -m collector track [--limit N]          # 月度起飞追踪快照

@@ -34,6 +34,11 @@ def _first_sentence(text: str) -> str:
     return text
 
 
+def _news_title_zh(n: dict) -> str:
+    title = n.get("title") or {}
+    return title.get("zh") or title.get("en") or n.get("name") or n.get("id", "")
+
+
 def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
                site_url: str = SITE_URL) -> str:
     items = []
@@ -44,6 +49,11 @@ def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
         top_lines = "\n".join(
             f"{i}. {p['name']}（{p['scores']['total']}分）— {p.get('reason', '')}"
             for i, p in enumerate(top, 1))
+        news = (info.get("news") or [])[:5]
+        news_lines = "\n".join(f"📰 {_news_title_zh(n)}" for n in news)
+        body = trend_zh + chr(10) + chr(10) + top_lines
+        if news_lines:
+            body += chr(10) + chr(10) + news_lines
         title = f"AI 周报 {week}"
         if trend_zh:
             title += f"：{_first_sentence(trend_zh)}"
@@ -54,7 +64,7 @@ def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
    <link>{escape(f"{site_url}/#{week}")}</link>
    <guid isPermaLink="false">{escape(week)}</guid>
    <pubDate>{pub}</pubDate>
-   <description>{escape((trend_zh + chr(10) + chr(10) + top_lines).strip())}</description>
+   <description>{escape(body.strip())}</description>
   </item>""")
     newline = "\n"
     return f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -62,7 +72,7 @@ def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
  <channel>
   <title>{escape(SITE_TITLE)}</title>
   <link>{escape(site_url)}</link>
-  <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目，Claude 评分与双语解读。</description>
+  <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目（Top 30）与本周最有价值的 AI 新闻（Top 10），LLM 评分与双语解读。</description>
   <language>zh-cn</language>
 {newline.join(items)}
  </channel>
@@ -73,9 +83,11 @@ def build_feed(weeks_index: list[dict], week_projects: dict[str, list[dict]],
 def generate(history: list[dict], trends: dict[str, dict] | None = None,
              liftoff: list[dict] | None = None,
              voices: dict[str, dict] | None = None,
+             news: dict[str, list[dict]] | None = None,
              out_dir: pathlib.Path = DOCS_DIR) -> pathlib.Path:
     trends = trends or {}
     voices = voices or {}
+    news = news or {}
     scored = [p for p in history if isinstance(p.get("scores"), dict)]
     data_dir = out_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -96,6 +108,7 @@ def generate(history: list[dict], trends: dict[str, dict] | None = None,
             "date": _week_friday(week).isoformat(),
             "count": len(projects),
             "trend": trends.get(week),
+            "news": news.get(week),
             "voices": voices.get(week),
             "awards": awards,
             "top3": [{"id": p["id"], "name": p["name"], "total": p["scores"]["total"]}
@@ -199,6 +212,18 @@ h1 { font-size: 22px; font-weight: 700; }
 .quote .q-text { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; white-space: pre-line; }
 .quote .q-link { font-size: 11.5px; }
 .quote .q-link a { color: var(--whimsy); text-decoration: none; }
+/* AI 新闻 */
+.news { margin-top: 10px; padding: 12px 16px; background: var(--surface);
+        border: 1px solid var(--border); border-radius: 12px; }
+.news .label { font-weight: 700; font-size: 14px; }
+.news-item { border-top: 1px dashed var(--grid); margin-top: 8px; padding-top: 8px; }
+.news-item:first-child { border-top: 0; margin-top: 4px; padding-top: 0; }
+.news-head { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.news-rank { flex: none; font-size: 11px; font-weight: 700; color: var(--page);
+             background: var(--ink-2); border-radius: 999px; padding: 0 7px; }
+.news-worth { flex: none; font-size: 11px; color: var(--money);
+              border: 1px solid var(--grid); border-radius: 999px; padding: 1px 8px; }
+.news-summary { font-size: 12.5px; color: var(--ink-2); margin-top: 3px; }
 section.fold { margin-top: 10px; }
 section.fold > details > summary { cursor: pointer; font-size: 13.5px; font-weight: 650; padding: 4px 0; }
 .liftoff table { border-collapse: collapse; margin-top: 8px; font-size: 13px; width: 100%; max-width: 860px; }
@@ -344,6 +369,10 @@ input[type="search"] { min-width: 160px; flex: 1; }
     <div id="trend-deep" hidden></div>
     <div class="awards" id="awards"></div>
   </div>
+  <div class="news" id="news" hidden>
+    <span class="label">📰 <span data-ui="news"></span></span>
+    <div id="news-list"></div>
+  </div>
   <div class="voices" id="voices" hidden>
     <span class="label">🎙️ <span data-ui="voices"></span></span>
     <div class="voices-overview" id="voices-overview"></div>
@@ -402,6 +431,7 @@ const UI = {
     quadrant:"🎯 本周象限图 — 天马行空 × 有钱途", liftoff:"🚀 起飞榜 — 历史高分项目 star 增长追踪",
     week:"周", source:"来源", tag:"标签", sort:"排序", all:"全部", allWeeks:"全部周",
     search:"搜索名称 / 描述 / 解读…", items:"个项目", totalOf:"总分", deep:"深度解读",
+    news:"AI 新闻 — 本周最值得关注", newsValue:"新闻价值",
     voices:"大佬之声 — 本周他们在说什么", quotesN:"条原文",
     top10:"Top 10", noMatch:"没有匹配的项目", noData:"还没有数据", copyLink:"复制链接",
     copied:"已复制 ✓", scanQr:"扫码打开当前页面", discuss:"讨论", weekRank:"周榜",
@@ -416,7 +446,8 @@ const UI = {
     liftoff:"🚀 Liftoff Board — star growth of past high scorers",
     week:"Week", source:"Source", tag:"Tag", sort:"Sort", all:"All", allWeeks:"All weeks",
     search:"Search name / description / analysis…", items:"projects", totalOf:"Total",
-    deep:"Deep dive", voices:"Builder Voices — what they said this week", quotesN:"quotes",
+    deep:"Deep dive", news:"AI News — this week's top stories", newsValue:"News value",
+    voices:"Builder Voices — what they said this week", quotesN:"quotes",
     top10:"Top 10", noMatch:"No matching projects", noData:"No data yet",
     copyLink:"Copy link", copied:"Copied ✓", scanQr:"Scan to open this page", discuss:"discuss",
     weekRank:"rank", dims:{whimsy:"Whimsy", fun:"Fun", money:"Money"},
@@ -527,7 +558,8 @@ function scrollToCard(pid) {
 }
 
 function renderBanner(info) {
-  if (!info) { $("trend").hidden = true; $("voices").hidden = true; return; }
+  if (!info) { $("trend").hidden = true; $("news").hidden = true;
+               $("voices").hidden = true; return; }
   const trend = (info.trend || {})[LANG] || (info.trend || {}).zh;
   const deep = ((info.trend || {}).deep || {})[LANG] || ((info.trend || {}).deep || {}).zh;
   const awardsHtml = (info.awards || []).map(a => {
@@ -549,7 +581,26 @@ function renderBanner(info) {
   document.querySelectorAll("#awards .award").forEach(el =>
     el.onclick = () => scrollToCard(el.dataset.pid));
   $("trend").hidden = !trend && !awardsHtml;
+  renderNews(info.news);
   renderVoices(info.voices);
+}
+
+function renderNews(items) {
+  if (!items || !items.length) { $("news").hidden = true; return; }
+  $("news").hidden = false;
+  $("news-list").innerHTML = items.map((n, i) => {
+    const title = (n.title || {})[LANG] || (n.title || {}).zh || n.name || n.id;
+    const summary = (n.summary || {})[LANG] || (n.summary || {}).zh || "";
+    return `<div class="news-item">
+      <div class="news-head">
+        <span class="news-rank">${i + 1}</span>
+        <a class="name" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(title)}</a>
+        <span class="news-worth">${t().newsValue} ${n.newsworthy ?? "?"}/10</span>
+        ${n.source ? `<span class="tag">${SOURCE_LABELS[n.source] || esc(n.source)}</span>` : ""}
+      </div>
+      ${summary ? `<p class="news-summary">${esc(summary)}</p>` : ""}
+    </div>`;
+  }).join("");
 }
 
 function renderVoices(v) {

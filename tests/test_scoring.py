@@ -1,7 +1,8 @@
 import datetime
 
 from collector.schema import make_project
-from collector.scoring import (MAX_TAGS, TAGS, build_prompt, merge_scored, sanitize_scored,
+from collector.scoring import (MAX_TAGS, NEWS_DISPLAY_LIMIT, PROJECTS_DISPLAY_LIMIT, TAGS,
+                               build_prompt, merge_news, merge_scored, sanitize_scored,
                                top_ids, validate_scored)
 
 
@@ -27,12 +28,24 @@ def entry(pid, whimsy=8, fun=7, money=5, reason="脑洞大且能落地", tags=("
     }
 
 
-def scored_doc(entries, week="2026-W29"):
-    return {"week": week,
-            "trend": {"zh": "本周智能体基建扎堆。", "en": "Agent infra everywhere this week.",
-                      "deep": {"zh": "深度：基建、反噬经济、视频白嫖三条线。",
-                               "en": "Deep: infra, backlash economy, free video."}},
-            "entries": entries}
+def scored_doc(entries, week="2026-W29", news=None, skipped=None):
+    doc = {"week": week,
+           "trend": {"zh": "本周智能体基建扎堆。", "en": "Agent infra everywhere this week.",
+                     "deep": {"zh": "深度：基建、反噬经济、视频白嫖三条线。",
+                              "en": "Deep: infra, backlash economy, free video."}},
+           "entries": entries}
+    if news is not None:
+        doc["news"] = news
+    if skipped is not None:
+        doc["skipped"] = skipped
+    return doc
+
+
+def news_item(pid, worth=8, title_zh="某模型发布", title_en="Some model released"):
+    return {"id": f"github:{pid}",
+            "title": {"zh": title_zh, "en": title_en},
+            "newsworthy": worth,
+            "summary": {"zh": "发布了某物，影响面广。", "en": "Something released, wide impact."}}
 
 
 class TestBuildPrompt:
@@ -143,6 +156,75 @@ class TestValidateScored:
         assert any("tags 必须是数组" in e for e in errors)
 
 
+class TestValidateScoredV4:
+    """v4：entries / news / skipped 三分类覆盖校验。"""
+
+    def test_valid_v4_full_coverage(self):
+        doc = scored_doc([entry("a")], news=[news_item("b")],
+                         skipped=[{"id": "github:c", "reason": "纯讨论帖"}])
+        cands = [cand("a"), cand("b"), cand("c")]
+        assert validate_scored(cands, doc) == []
+
+    def test_v3_without_news_still_passes(self):
+        # 历史周（W29/W31）是 v3 格式，缺 news/skipped 按空处理
+        assert validate_scored([cand("a")], scored_doc([entry("a")])) == []
+
+    def test_news_bad_newsworthy(self):
+        bad = news_item("b")
+        bad["newsworthy"] = "8"
+        errors = validate_scored([cand("a"), cand("b")],
+                                 scored_doc([entry("a")], news=[bad]))
+        assert any("newsworthy" in e for e in errors)
+
+    def test_news_missing_summary_lang(self):
+        bad = news_item("b")
+        bad["summary"] = {"zh": "只有中文"}
+        errors = validate_scored([cand("a"), cand("b")],
+                                 scored_doc([entry("a")], news=[bad]))
+        assert any("summary.en" in e for e in errors)
+
+    def test_news_missing_title(self):
+        bad = news_item("b")
+        del bad["title"]
+        errors = validate_scored([cand("a"), cand("b")],
+                                 scored_doc([entry("a")], news=[bad]))
+        assert any("title" in e for e in errors)
+
+    def test_news_unknown_id(self):
+        errors = validate_scored([cand("a")],
+                                 scored_doc([entry("a")], news=[news_item("ghost")]))
+        assert any("不在候选列表" in e for e in errors)
+
+    def test_id_in_both_entries_and_news_rejected(self):
+        doc = scored_doc([entry("a")], news=[news_item("a")])
+        errors = validate_scored([cand("a")], doc)
+        assert any("同时出现在多个分类" in e for e in errors)
+
+    def test_id_in_both_news_and_skipped_rejected(self):
+        doc = scored_doc([], news=[news_item("a")],
+                         skipped=[{"id": "github:a", "reason": "r"}])
+        errors = validate_scored([cand("a")], doc)
+        assert any("同时出现在多个分类" in e for e in errors)
+
+    def test_skipped_missing_reason(self):
+        doc = scored_doc([entry("a")], skipped=[{"id": "github:b"}])
+        errors = validate_scored([cand("a"), cand("b")], doc)
+        assert any("reason" in e for e in errors)
+
+    def test_news_not_list(self):
+        doc = scored_doc([entry("a")], news="垃圾")
+        errors = validate_scored([cand("a")], doc)
+        assert any("news 必须是数组" in e for e in errors)
+
+    def test_coverage_counts_all_buckets(self):
+        # b 在 news、c 在 skipped，都不算「缺少评分」；d 缺席才报
+        doc = scored_doc([entry("a")], news=[news_item("b")],
+                         skipped=[{"id": "github:c", "reason": "r"}])
+        cands = [cand("a"), cand("b"), cand("c"), cand("d")]
+        errors = validate_scored(cands, doc)
+        assert errors == ["github:d: 缺少评分"]
+
+
 class TestSanitizeScored:
     def test_drops_unknown_tags_keeps_valid(self):
         e = entry("a", tags=("创意", "开源", "区块链"))
@@ -201,7 +283,7 @@ class TestSanitizeScored:
         # sanitize + validate 组合都不应让 cmd_score 返回 1。
         # 模拟 LLM 写了一堆词表外的 tag（科研 / 多模态 / RAG / LLM / 区块链 / 元宇宙）
         drift_entries = [
-            entry("a", tags=("科研", "多模态")),         # 全未知 → sanitize 丢整条
+            entry("a", tags=("科研", "多模态")),         # 科研命中别名→论文，存活
             entry("b", tags=("RAG", "agent")),           # 部分未知 → sanitize 留 agent
             entry("c", tags=("LLM", "区块链", "元宇宙")), # 全未知 → sanitize 丢整条
             entry("d", tags=("创意",)),                  # 合规 → 原样保留
@@ -216,9 +298,19 @@ class TestSanitizeScored:
         scored_cands = [c for c in all_cands if c["id"] in surviving]
         errors = validate_scored(scored_cands, sanitized)
         assert errors == [], f"sanitize 后 validate 不应再报错: {errors}"
-        # 留下的 entry 是 b 和 d
-        assert [e["id"] for e in sanitized["entries"]] == ["github:b", "github:d"]
-        assert sanitized["entries"][0]["tags"] == ["agent"]
+        # a 靠别名映射存活，c 全未知被丢
+        assert [e["id"] for e in sanitized["entries"]] == ["github:a", "github:b", "github:d"]
+        assert sanitized["entries"][0]["tags"] == ["论文"]
+        assert sanitized["entries"][1]["tags"] == ["agent"]
+
+    def test_english_tag_aliases_mapped(self):
+        # 回归（W32 重评曾出现 video / community 英文 tag）：常见英文 tag
+        # 软映射到词表规范值，不再整条丢弃项目
+        e = entry("a", tags=("video", "Community", "AGENT"))
+        doc = scored_doc([e])
+        out, warns = sanitize_scored(doc)
+        assert out["entries"][0]["tags"] == ["视频", "社区", "agent"]
+        assert any("映射" in w for w in warns)
 
     def test_missing_required_fields_auto_filled(self):
         # 根因回归：LLM 漏写 reason / analysis / deep_dive 也是必然事件。
@@ -352,6 +444,91 @@ class TestSanitizeScored:
         assert [e["id"] for e in sanitized["entries"]] == ["github:ghost"]
 
 
+class TestSanitizeNewsSkipped:
+    """sanitize 对 news / skipped 桶与分类重叠的规范化。"""
+
+    def test_clean_v4_doc_passes_validate(self):
+        doc = scored_doc([entry("a")], news=[news_item("b")],
+                         skipped=[{"id": "github:c", "reason": "纯讨论"}])
+        cands = [cand("a"), cand("b"), cand("c")]
+        sanitized, warns = sanitize_scored(doc, candidates=cands)
+        assert warns == []
+        assert validate_scored(cands, sanitized) == []
+
+    def test_news_newsworthy_normalized(self):
+        bad = news_item("b")
+        bad["newsworthy"] = "9.6"
+        doc = scored_doc([entry("a")], news=[bad])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a"), cand("b")])
+        assert sanitized["news"][0]["newsworthy"] == 10
+        assert any("newsworthy" in w for w in warns)
+        assert validate_scored([cand("a"), cand("b")], sanitized) == []
+
+    def test_news_missing_fields_filled_with_candidate_name(self):
+        bare = {"id": "github:b"}                     # LLM 只写了 id
+        doc = scored_doc([entry("a")], news=[bare])
+        cands = [cand("a"), cand("b", name="Qwen3.8-Max released")]
+        sanitized, warns = sanitize_scored(doc, candidates=cands)
+        n = sanitized["news"][0]
+        assert n["title"]["zh"] == "Qwen3.8-Max released"   # 用候选原名兜底
+        assert n["summary"]["zh"] and n["summary"]["en"]
+        assert n["newsworthy"] == 0
+        assert validate_scored(cands, sanitized) == []
+
+    def test_news_hallucinated_id_dropped(self):
+        doc = scored_doc([entry("a")], news=[news_item("zzz")])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["news"] == []
+        assert any("zzz" in w and "不在候选列表" for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_entry_also_in_news_kept_as_news(self):
+        # 收紧项目口径：模型发布类候选被 LLM 同时写进两个桶时按新闻处理
+        doc = scored_doc([entry("a")], news=[news_item("a")])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["entries"] == []
+        assert [n["id"] for n in sanitized["news"]] == ["github:a"]
+        assert any("按新闻处理" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_skipped_overlapping_data_bucket_dropped(self):
+        doc = scored_doc([entry("a")], skipped=[{"id": "github:a", "reason": "r"}])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["skipped"] == []
+        assert [e["id"] for e in sanitized["entries"]] == ["github:a"]
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_skipped_reason_filled(self):
+        doc = scored_doc([entry("a")], skipped=[{"id": "github:b"}])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a"), cand("b")])
+        assert sanitized["skipped"][0]["reason"]
+        assert any("reason 缺失" in w for w in warns)
+        assert validate_scored([cand("a"), cand("b")], sanitized) == []
+
+    def test_missing_candidate_covered_by_news_not_placeholder(self):
+        # 候选被分进 news 后不应再生成占位条目
+        doc = scored_doc([], news=[news_item("a")])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["entries"] == []
+        assert not any("整条漏写" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_news_garbage_structure_reset(self):
+        doc = scored_doc([entry("a")], news="垃圾", skipped={"x": 1})
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["news"] == [] and sanitized["skipped"] == []
+        assert any("news 不是数组" in w for w in warns)
+        assert any("skipped 不是数组" in w for w in warns)
+        assert validate_scored([cand("a")], sanitized) == []
+
+    def test_v3_doc_gains_empty_news_buckets_silently(self):
+        # 旧格式（无 news/skipped 键）sanitize 后补齐空列表、无 warning
+        doc = scored_doc([entry("a")])
+        sanitized, warns = sanitize_scored(doc, candidates=[cand("a")])
+        assert sanitized["news"] == [] and sanitized["skipped"] == []
+        assert warns == []
+
+
 class TestMergeScored:
     def test_merges_v3_fields(self):
         candidates = [cand("low"), cand("high")]
@@ -374,3 +551,66 @@ class TestMergeScored:
         c = cand("a")
         merge_scored([c], scored_doc([entry("a")]))
         assert "scores" not in c
+
+    def test_caps_at_projects_display_limit(self):
+        # 收紧展示：每周只合并总分 Top 30，其余不进累积库/站点/飞书
+        assert PROJECTS_DISPLAY_LIMIT == 30
+        n = PROJECTS_DISPLAY_LIMIT + 5
+        candidates, entries = [], []
+        for i in range(n):
+            candidates.append(cand(f"p{i:02d}"))
+            entries.append(entry(f"p{i:02d}", whimsy=i % 10, fun=5, money=5))
+        merged = merge_scored(candidates, scored_doc(entries))
+        assert len(merged) == PROJECTS_DISPLAY_LIMIT
+        totals = [p["scores"]["total"] for p in merged]
+        assert totals == sorted(totals, reverse=True)   # 截断的是低分尾部
+
+    def test_cap_does_not_touch_small_weeks(self):
+        merged = merge_scored([cand("a"), cand("b")],
+                              scored_doc([entry("a"), entry("b")]))
+        assert len(merged) == 2
+
+
+class TestMergeNews:
+    """merge_news：新闻价值排序截断 + 从候选补齐展示字段。"""
+
+    def test_sorts_by_newsworthy_and_caps(self):
+        assert NEWS_DISPLAY_LIMIT == 10
+        cands, news = [], []
+        for i in range(NEWS_DISPLAY_LIMIT + 3):
+            cands.append(cand(f"n{i:02d}"))
+            news.append(news_item(f"n{i:02d}", worth=i))
+        merged = merge_news(cands, scored_doc([], news=news))
+        assert len(merged) == NEWS_DISPLAY_LIMIT
+        worths = [n["newsworthy"] for n in merged]
+        assert worths == sorted(worths, reverse=True)
+        assert worths[0] == NEWS_DISPLAY_LIMIT + 2
+
+    def test_enriches_from_candidate_not_llm(self):
+        # url / source / metrics 必须取候选原值（LLM 不写链接，杜绝幻觉 url）
+        c = cand("big-news", name="Qwen3.8-Max released")
+        c["metrics"] = {"points": 900}
+        item = news_item("big-news", worth=9)
+        item["url"] = "https://hallucinated.example/xxx"   # LLM 偷写的链接必须被忽略
+        merged = merge_news([c], scored_doc([], news=[item]))
+        assert merged[0]["url"] == "https://github.com/big-news"
+        assert merged[0]["source"] == "github"
+        assert merged[0]["metrics"] == {"points": 900}
+        assert merged[0]["name"] == "Qwen3.8-Max released"
+        assert merged[0]["title"]["zh"] == "某模型发布"
+
+    def test_title_falls_back_to_candidate_name(self):
+        c = cand("n1", name="Original headline")
+        merged = merge_news([c], scored_doc([], news=[{"id": "github:n1",
+                                                       "newsworthy": 5}]))
+        assert merged[0]["title"] == {"zh": "Original headline",
+                                      "en": "Original headline"}
+
+    def test_v3_doc_without_news_returns_empty(self):
+        assert merge_news([cand("a")], scored_doc([entry("a")])) == []
+
+    def test_tie_broken_by_id(self):
+        cands = [cand("b"), cand("a")]
+        news = [news_item("b", worth=7), news_item("a", worth=7)]
+        merged = merge_news(cands, scored_doc([], news=news))
+        assert [n["id"] for n in merged] == ["github:a", "github:b"]

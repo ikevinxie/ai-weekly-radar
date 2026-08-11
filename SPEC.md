@@ -4,7 +4,7 @@
 
 ## 目标
 
-每周五 20:00 自动收集全球「天马行空 / 有趣 / 有钱途」的 AI 项目，经规则粗筛和 LLM 三维评分 + 中英双语解读后，发布到公开 GitHub Pages 周报站点，推送 Top 10 到飞书群，并累积历史数据用于跨周去重与「起飞追踪」。
+每周五 20:00 自动收集全球「天马行空 / 有趣 / 有钱途」的 AI 项目，经规则粗筛和 LLM 分类（项目 / 新闻 / 跳过）后，对**项目**做三维评分 + 中英双语解读，取总分 Top 30 发布；另从候选中选出**本周 10 条最有价值的 AI 新闻**单独成板块。周报发布到公开 GitHub Pages 站点，推送 Top 10 项目 + Top 10 新闻到飞书群，并累积历史数据用于跨周去重与「起飞追踪」。
 
 ## 核心决策
 
@@ -12,11 +12,35 @@
 |---|---|
 | 调度方式 | **GitHub Actions**（`.github/workflows/weekly.yml`）：每周五 20:00 CST 周报 + 起飞追踪；每天 21:30 CST 大佬发言抓取；支持手动 `workflow_dispatch`。本地 Claude Code / Qwen Code 定时任务作为备选 |
 | 数据源 | 全部免费、无需付费 API |
-| 筛选评分 | 规则粗筛 + **百炼 DashScope API**（`collector/llm.py`）三维评分与双语解读；本地 LLM（Claude Code / Qwen Code）亦可完成（`prompt` 子命令输出模板） |
-| 解读深度 | **全部项目**：中英双语简读（analysis）+ 结构化深度解读（deep_dive）+ 主题标签（tags）；Top 10 徽章按当周总分排名标记 |
+| 筛选评分 | 规则粗筛 + **百炼 DashScope API**（`collector/llm.py`）分类（项目/新闻/跳过）+ 三维评分与双语解读；本地 LLM（Claude Code / Qwen Code）亦可完成（`prompt` 子命令输出模板） |
+| 收录口径 | 只收**实际做出来的/正在做的 AI 项目**；模型发布、行业新闻、观点讨论不进项目区（见「AI 项目 vs AI 新闻」） |
+| 展示规模 | 项目每周只展示总分 **Top 30**；新闻每周只展示新闻价值 **Top 10** |
+| 解读深度 | **全部被分类为项目的候选**：中英双语简读（analysis）+ 结构化深度解读（deep_dive）+ 主题标签（tags）；Top 10 徽章按当周总分排名标记 |
 | 产出形式 | GitHub Pages 公开站点（`docs/`，仓库 ikevinxie/ai-weekly-radar）+ RSS + 飞书推送 + 累积库（`data/projects.json`） |
 | 秘密管理 | 飞书 webhook、百炼 API key 等秘密只放 GitHub Actions Secrets 或环境变量或 `~/.config/ai-weekly-radar/`，**绝不进入仓库** |
 | 技术栈 | Python 3（纯标准库，无第三方运行时依赖）+ pytest |
+
+## AI 项目 vs AI 新闻（收录定义）
+
+周报有两个内容桶，LLM 评分环节对每个候选做三分类（项目 / 新闻 / 跳过），
+`entries ∪ news ∪ skipped` 必须恰好覆盖全部候选 id。
+
+**AI 项目（entries）**：已经做出来或正在做的东西，有**具体产物**——工具、产品、
+开源库、模型权重、demo / space、论文（研究产物）。只有项目参与三维评分、
+进累积库、进站点项目卡片流、进飞书 Top 10。每周只合并/展示总分 Top 30。
+
+**不算项目（即使来自 AI 领域）**：
+- 模型发布 / 升级公告（如「Qwen3.8-Max 发布」）→ 归**新闻**
+- 行业新闻事件（公司动态、政策、融资、事故、榜单）→ 归**新闻**
+- 纯观点 / 讨论 / 吐槽 / 经验帖（无具体产物）→ 有新闻价值归**新闻**，否则**跳过**
+
+**AI 新闻（news）**：本周发生的 AI 相关事件，每条打 `newsworthy` 0–10
+（影响面、新鲜度、对从业者的实际意义），每周只展示 Top 10。
+大模型更新**可以**入选但**不保证**入选——一切以新闻价值为准，
+不为了覆盖而覆盖。新闻不入库（`data/projects.json` 只装项目）、不参与三维评分与奖项。
+
+**跳过（skipped）**：既无产物也无新闻价值的候选（纯灌水讨论等），
+记录 id 与理由，仅用于审计与覆盖率校验，不发布。
 
 ## 数据源
 
@@ -54,7 +78,7 @@
 - `metrics`：各源原始热度指标（stars / points / upvotes / likes 等），键名不强制
 - `scores`：三维各 0–10 整数，`total` = 三者之和；候选阶段无此字段
 - `reason` / `analysis`：评分时由 Claude 撰写，analysis 双语各 2-3 句；候选阶段无
-- `deep_dive`：**全部项目必须有**，六个子字段均非空
+- `deep_dive`：**全部被分类为项目的条目必须有**，六个子字段均非空
 - `tags`：1–3 个主题标签，取值限定于下方词表
 
 ## 标签词表（tags）
@@ -63,20 +87,28 @@
 
 中文为规范值（`agent` 除外）；EN 显示映射放前端。新增词表条目先改 SPEC。
 
-## 评分文件格式（data/scored/\<week\>.json）
+## 评分文件格式（data/scored/\<week\>.json，v4）
 
 ```json
 {
-  "week": "2026-W29",
+  "week": "2026-W32",
   "trend": {"zh": "本周风向 3-5 句", "en": "...",
             "deep": {"zh": "风向深度解读 5-8 句", "en": "..."}},
   "entries": [{"id": "...", "scores": {...}, "reason": "...", "analysis": {...},
-               "deep_dive": {...}, "tags": ["agent", "安全"]}]
+               "deep_dive": {...}, "tags": ["agent", "安全"]}],
+  "news": [{"id": "...", "title": {"zh": "...", "en": "..."},
+            "newsworthy": 8, "summary": {"zh": "...", "en": "..."}}],
+  "skipped": [{"id": "...", "reason": "..."}]
 }
 ```
 
-`trend`（本周风向）：Claude 评分时对当周项目做主题归纳，双语；`trend.deep` 是点击展开的深度版（主题展开、代表项目串讲、下周值得盯什么）。用于站点横幅、RSS、飞书推送开头。
-（v1/v2 旧格式仅在合并历史数据时兼容读取。）
+- `entries`：被分类为**项目**的候选，三维评分 + 双语解读；report 合并时只取总分 Top 30 入库
+- `news`：被分类为**新闻**的候选；`newsworthy` 0–10 整数；url / source / metrics 合并时从候选补齐（LLM 不写，避免幻觉链接）；站点与飞书只展示 Top 10
+- `skipped`：既非项目也无新闻价值的候选，仅审计用
+- 覆盖率要求：三个列表的 id 合起来恰好等于全部候选 id（sanitize 用占位条目兜底 LLM 漏写）
+
+`trend`（本周风向）：评分时对当周**项目**做主题归纳，双语；`trend.deep` 是点击展开的深度版（主题展开、代表项目串讲、下周值得盯什么）。用于站点横幅、RSS、飞书推送开头。
+（v1/v2/v3 旧格式仅在合并历史数据时兼容读取：缺 news/skipped 按空处理。）
 
 ## 彩蛋奖（awards，实时计算不入库）
 
@@ -95,12 +127,12 @@
 ## 每周流水线
 
 1. `python3 -m collector collect` — 抓取全部源 → 归一化 → 规则粗筛 → 与 `data/projects.json` 历史去重 → 写 `data/candidates/<week>.json`
-2. **评分与解读**（二选一）：
-   - **云端 API**：`python3 -m collector score <week>` — 调用百炼 DashScope API 自动评分，写 `data/scored/<week>.json`（见下方「LLM API 评分」）
+2. **分类 + 评分 + 解读**（二选一）：
+   - **云端 API**：`python3 -m collector score <week>` — 调用百炼 DashScope API 自动分类（项目/新闻/跳过）并评分，写 `data/scored/<week>.json`（见下方「LLM API 评分」）
    - **本地 LLM**：按 `python3 -m collector prompt <week>` 输出的模板，由 Claude Code / Qwen Code 手动产出
-3. `python3 -m collector validate <week>` — 校验 v3 结构（分数、双语字段、deep_dive 全覆盖），失败则退出码非 0
-4. `python3 -m collector report` — 合并入累积库，生成 `docs/` 全套站点文件
-5. `python3 -m collector feishu <week>` — 推送 Top 10 卡片到飞书群（webhook 未配置时跳过并提示）
+3. `python3 -m collector validate <week>` — 校验 v4 结构（分数、双语字段、deep_dive、news 结构、候选全覆盖），失败则退出码非 0
+4. `python3 -m collector report` — 项目 Top 30 合并入累积库，新闻随站点渲染，生成 `docs/` 全套站点文件
+5. `python3 -m collector feishu <week>` — 推送 Top 10 项目 + Top 10 新闻卡片到飞书群（webhook 未配置时跳过并提示）
 6. `git add -A && git commit && git push` — 发布到 GitHub Pages
 
 大佬之声（若本周有每日采集数据）：
@@ -112,9 +144,9 @@
 | 文件 | 内容 |
 |---|---|
 | `docs/index.html` | Dashboard，全部资源内嵌无外链；界面文案随中/EN 切换完整双语，`<html lang>` 同步 |
-| `docs/data/<week>.json` | 每周全量已合并项目（含解读、tags），按 total 降序并带 `rank` 字段 |
-| `docs/data/weeks.json` | 周索引：各周 trend（含 deep）、awards、top3、count、该周 URL 二维码矩阵 `qr`；顶层 `qr_site`、`liftoff` |
-| `docs/feed.xml` | RSS 2.0，每周一条 item：标题含风向首句，描述含 Top 10 |
+| `docs/data/<week>.json` | 每周全量已合并项目（Top 30，含解读、tags），按 total 降序并带 `rank` 字段 |
+| `docs/data/weeks.json` | 周索引：各周 trend（含 deep）、`news`（Top 10 新闻）、awards、top3、count、该周 URL 二维码矩阵 `qr`；顶层 `qr_site`、`liftoff` |
+| `docs/feed.xml` | RSS 2.0，每周一条 item：标题含风向首句，描述含 Top 10 项目与新闻摘要 |
 
 ### Dashboard 功能
 
@@ -123,10 +155,11 @@
 - **周报视图**（`#<week>`），自上而下：
   1. 风向横幅：概览常显 +「展开深度分析」显示 trend.deep（**按空行分段渲染**）
   2. 奖项徽章条：**自动换行多行铺满**（不横向滚动，所有奖项一屏看全）。每枚徽章限定最大宽度，奖项名全显、**项目名过长时省略号截断**（完整文案见 title 悬浮提示，点击可定位到卡片），避免单枚超长论文标题撑爆整行；点击平滑滚动并**闪烁定位**到项目卡片（keyframes 脉冲光环 ≈2.4s，读者能明确看到是哪块）
-  3. 🎙️ 大佬之声：overview 常显，主题折叠条展开见归纳与原文引用
-  4. 🎯 本周象限图：**默认收起**，手动展开（whimsy×money SVG 散点、hover tooltip、点击滚动定位、四象限角标）
-  5. 🚀 起飞榜：默认收起，行内含项目介绍（随语言切）
-  6. 筛选行（周选择 + ◀▶ 上一周/下一周、来源/标签/排序/中英/搜索）与项目卡片流
+  3. 📰 AI 新闻：Top 10 平铺列表（序号 + 双语标题外链 + 新闻价值分 + 来源 + 双语摘要）；该周无 news 数据时自动隐藏（历史周）
+  4. 🎙️ 大佬之声：overview 常显，主题折叠条展开见归纳与原文引用
+  5. 🎯 本周象限图：**默认收起**，手动展开（whimsy×money SVG 散点、hover tooltip、点击滚动定位、四象限角标）
+  6. 🚀 起飞榜：默认收起，行内含项目介绍（随语言切）
+  7. 筛选行（周选择 + ◀▶ 上一周/下一周、来源/标签/排序/中英/搜索）与项目卡片流（Top 30）
 - **归档视图**（`#archive`）：竖向时间线，每周一卡（周编号、周五日期、项目数、风向首句、奖项得主、Top 3 链接），点击进入该周
 - **项目卡片（降密度）**：默认只显示 名称+徽章+来源、reason 钩子、标签 chips、三维分数条与总分；**双语 analysis 收进「深度解读」折叠区作为导语**，其后接 what/why/biz。排名 1-3 显示 🥇🥈🥉，4-10 显示 🔥 Top 10。hover 上浮+边框高亮+阴影（prefers-reduced-motion 降级）
 - **分享**：右下角悬浮按钮（随滚动固定），面板含当前周二维码（canvas 渲染 weeks.json 内嵌矩阵）、复制链接、微博/X/Telegram/LinkedIn 分享链接
@@ -140,7 +173,7 @@
 ## 飞书推送（collector/feishu.py）
 
 - 群自定义机器人 webhook；URL 读取顺序：环境变量 `FEISHU_WEBHOOK_URL` → `~/.config/ai-weekly-radar/feishu_webhook` 文件；都缺失时报配置指引并跳过（不算失败）
-- 交互式卡片：标题「AI项目周报 {week} · 最值得看的 10 个项目」+ 风向（中文）+ Top 10（名称链接、三维分、reason + analysis.zh）+ 彩蛋奖 + 站点深度解读链接；卡片 JSON < 30KB
+- 交互式卡片：标题「AI项目周报 {week} · 最值得看的 {n} 个项目」+ 风向（中文）+ Top 10（名称链接、三维分、reason + analysis.zh）+ 📰 本周 AI 新闻 Top 10（中文标题链接 + 新闻价值 + 摘要节选）+ 彩蛋奖 + 站点深度解读链接；卡片 JSON < 30KB
 - **卡片标题必须含字面量「AI项目」**：机器人配置了关键词安全校验，缺关键词消息会被拒收（有回归测试锁死）
 
 ## 大佬之声（collector/voices.py）
@@ -180,7 +213,7 @@
 - AI 相关性：名称/描述命中 AI 关键词表（对 GitHub/HN/PH/Reddit 生效；arXiv/HF 天然 AI 相关，跳过）
 - 热度阈值（每源不同）：GitHub ≥ 50 stars；HN ≥ 50 points；HF space ≥ 20 likes / paper ≥ 10 upvotes；PH/arXiv/Reddit（RSS 无票数）不设阈值
 - 跨周去重：`id` 已存在于累积库则丢弃
-- 每源截断 Top N（默认 10），6 源共计上限 60，总候选控制在约 20–60 个/周
+- 每源截断 Top N（默认 10），6 源共计上限 60，总候选控制在约 20–60 个/周。候选池不区分项目/新闻（新闻主要来自 HN / Reddit），分类在评分环节由 LLM 完成
 
 ## 评分维度
 
@@ -209,10 +242,11 @@
 - **模型**：默认 `qwen-max`，可通过环境变量 `DASHSCOPE_MODEL` 覆盖
 - **纯标准库**：复用 `collector/net.py` 的 `post_json` + SSL 回退链，不引入第三方依赖
 - **子命令**：
-  - `python3 -m collector score <week>` — 读取候选 → 构建 prompt → 调 API → 解析 JSON → 写 `data/scored/<week>.json` → 自动 validate
+  - `python3 -m collector score <week>` — 读取候选 → 构建分类+评分 prompt → 调 API → 解析 JSON → 写 `data/scored/<week>.json`（v4：entries/news/skipped）→ 自动 validate
   - `python3 -m collector voices-sum <week>` — 读取每日发言 → 构建 prompt → 调 API → 写 `data/voices/<week>.json`
-- **分批策略**：候选 > 20 个时按 20 个一组拆分，每组独立调 API，最后合并 entries；trend 在全部 entries 就绪后单独生成
-- **JSON 提取**：LLM 回复可能包裹在 markdown 代码块中，需健壮解析（去 ```json 围栏、截断修复）
+- **分批策略**：按 10 个一组拆分（W32 实测 20/批会因输出过大被网关断连或 JSON 截断），每组独立调 API 做分类与评分，最后合并 projects/news/skipped 三个列表；trend 在全部条目就绪后单独生成（项目列表为主、新闻标题作背景）
+- **确定性项目通道**：论文（arXiv / HF paper）、Product Hunt 产品、HF space 按来源即判定为项目，走 10 个/批的项目批次直接评分，不参与三分类（W32 实证这些候选交给分类会被系统性误归新闻/跳过；项目批次批量小是因为全重输出大批量会被网关断连）
+- **JSON 提取**：LLM 回复可能包裹在 markdown 代码块中，需健壮解析（去 ```json 围栏、取首个 `{`/`[` 到末个 `}`/`]` 子串）；解析失败把错误回喂 LLM 修正（PARSE_RETRIES 次）。输出截断类故障主要靠缩小批量预防，不靠事后修复
 - **重试**：API 调用失败（超时、限流）自动重试 2 次，指数退避
 - **超时**：单次 API 调用 300 秒（评分输出量大）
 

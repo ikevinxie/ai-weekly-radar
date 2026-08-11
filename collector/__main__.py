@@ -82,7 +82,7 @@ def cmd_report(args: list[str]) -> int:
     from . import report, tracking, voices as voices_mod
 
     history = store.load()
-    merged_weeks, trends = [], {}
+    merged_weeks, trends, news_by_week = [], {}, {}
     for scored_path in sorted(store.SCORED_DIR.glob("*.json")):
         week = scored_path.stem
         candidates_path = store.CANDIDATES_DIR / f"{week}.json"
@@ -92,11 +92,13 @@ def cmd_report(args: list[str]) -> int:
         scored = json.loads(scored_path.read_text(encoding="utf-8"))
         if isinstance(scored, dict) and isinstance(scored.get("trend"), dict):
             trends[week] = scored["trend"]
-        # v1 数组是历史遗留，直接合并；v2 对象需通过校验
+        # v1 数组是历史遗留，直接合并；v2+ 对象需通过校验
         if isinstance(scored, dict) and scoring.validate_scored(candidates, scored):
             print(f"警告: {week} 评分未通过校验，跳过合并", file=sys.stderr)
             continue
         history = store.merge(history, scoring.merge_scored(candidates, scored))
+        if isinstance(scored, dict) and scored.get("news"):
+            news_by_week[week] = scoring.merge_news(candidates, scored)
         merged_weeks.append(week)
 
     store.save(history)
@@ -112,7 +114,8 @@ def cmd_report(args: list[str]) -> int:
                 all_voices[week] = doc
         except ValueError as e:
             print(f"警告: {week} 大佬之声未通过校验，跳过 — {e}", file=sys.stderr)
-    html_path = report.generate(history, trends=trends, liftoff=liftoff, voices=all_voices)
+    html_path = report.generate(history, trends=trends, liftoff=liftoff,
+                                voices=all_voices, news=news_by_week)
     print(f"已合并周: {', '.join(merged_weeks) or '(无新增)'}；累积 {len(history)} 条")
     print(f"站点 → {html_path}（线上 {report.SITE_URL}）")
     return 0
@@ -142,13 +145,18 @@ def cmd_feishu(args: list[str]) -> int:
         return 1
     scored_path = store.SCORED_DIR / f"{week}.json"
     trend_zh = ""
+    news_items: list = []
     if scored_path.exists():
         scored = json.loads(scored_path.read_text(encoding="utf-8"))
         if isinstance(scored, dict):
             trend_zh = (scored.get("trend") or {}).get("zh", "")
+            if scored.get("news"):
+                candidates_path = store.CANDIDATES_DIR / f"{week}.json"
+                candidates = store.load(candidates_path) if candidates_path.exists() else []
+                news_items = scoring.merge_news(candidates, scored)
 
     card = feishu.build_card(week, trend_zh, week_projects[:10],
-                             compute_awards(week_projects))
+                             compute_awards(week_projects), news=news_items)
     if dry_run:
         print(json.dumps(card, ensure_ascii=False, indent=1))
         return 0
@@ -239,21 +247,25 @@ def cmd_score(args: list[str]) -> int:
     except Exception as e:
         print(f"[score] 版本自检跳过: {e}", file=sys.stderr, flush=True)
     candidates, _, scored_path = _load_week(week)
-    print(f"调用百炼 API 为 {len(candidates)} 个候选评分…", flush=True)
+    print(f"调用百炼 API 为 {len(candidates)} 个候选分类+评分…", flush=True)
     scored = llm.score_candidates(candidates, week)
+    for key in ("entries", "news", "skipped"):
+        if not isinstance(scored.get(key), list):
+            scored[key] = []
     # 整条漏写补评：LLM 分批评分时概率性漏写候选（W32 曾漏 2 条 hackernews
-    # 直接熔断 Validate 步骤）。漏写的 id 单独定向补评，小批次几乎必然全返回；
-    # 补评仍失败的极端情况由 sanitize 的占位条目兜底。
-    present = {e.get("id") for e in scored.get("entries", []) if isinstance(e, dict)}
+    # 直接熔断 Validate 步骤）。漏写的 id 单独定向补分类+补评，小批次几乎必然
+    # 全返回；补评仍失败的极端情况由 sanitize 的占位条目兜底。
+    present = {x.get("id") for key in ("entries", "news", "skipped")
+               for x in scored[key] if isinstance(x, dict)}
     missing = [c for c in candidates if c.get("id") not in present]
     if missing:
         print(f"  ⚠ LLM 整条漏写 {len(missing)} 个候选，定向补评："
               f"{[m['id'] for m in missing]}", flush=True)
         try:
             extra = llm.score_backfill(missing)
-            if not isinstance(scored.get("entries"), list):
-                scored["entries"] = []
-            scored["entries"].extend(extra)
+            scored["entries"].extend(extra.get("projects", []))
+            scored["news"].extend(extra.get("news", []))
+            scored["skipped"].extend(extra.get("skipped", []))
         except Exception as e:
             print(f"  ⚠ 补评失败，交由 sanitize 占位兜底：{e}",
                   file=sys.stderr, flush=True)

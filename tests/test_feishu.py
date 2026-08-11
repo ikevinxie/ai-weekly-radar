@@ -18,6 +18,15 @@ AWARDS = [{"key": "best", "emoji": "🏆", "title": {"zh": "本周最佳", "en":
            "project_id": "github:p0"}]
 
 
+def news(pid, title_zh="某模型发布", worth=8, summary_zh="发布了新模型，影响面广。"):
+    return {"id": f"hackernews:{pid}",
+            "title": {"zh": title_zh, "en": f"News {pid}"},
+            "newsworthy": worth,
+            "summary": {"zh": summary_zh, "en": "Summary."},
+            "name": f"News {pid}", "url": f"https://news.ycombinator.com/item?id={pid}",
+            "source": "hackernews", "metrics": {"points": 500}}
+
+
 def card_text(card):
     return json.dumps(card, ensure_ascii=False)
 
@@ -62,8 +71,29 @@ class TestBuildCard:
         top10 = [proj(f"p{i}", f"project-{i}/repo-name-{i}") for i in range(10)]
         for p in top10:
             p["analysis"]["zh"] = "这是一段比较长的中文简读，" * 5
-        card = feishu.build_card("2026-W29", "风向" * 100, top10, AWARDS)
+        card = feishu.build_card("2026-W29", "风向" * 100, top10, AWARDS,
+                                 news=[news(str(i)) for i in range(10)])
         assert len(card_text(card).encode("utf-8")) < feishu.MAX_CARD_BYTES
+
+    def test_news_section_in_card(self):
+        items = [news("1", title_zh="Qwen3.8-Max 发布", worth=9), news("2")]
+        card = feishu.build_card("2026-W29", "", [proj("p0", "X")], [], news=items)
+        text = card_text(card)
+        assert "本周 AI 新闻 Top 2" in text
+        assert "Qwen3.8-Max 发布" in text and "新闻价值 9/10" in text
+        assert "news.ycombinator.com" in text
+
+    def test_no_news_no_section(self):
+        card = feishu.build_card("2026-W29", "", [proj("p0", "X")], [])
+        assert "本周 AI 新闻" not in card_text(card)
+
+    def test_news_summary_truncated_in_card(self):
+        # 卡片空间金贵：长摘要节选，避免撞 30KB 上限
+        long_news = news("1", summary_zh="长" * 500)
+        card = feishu.build_card("2026-W29", "", [proj("p0", "X")], [], news=[long_news])
+        text = card_text(card)
+        assert "长" * 500 not in text
+        assert "…" in text
 
 
 class TestWebhookConfig:

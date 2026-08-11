@@ -37,6 +37,14 @@ VOICES = {"week": "2026-W29",
                       "quotes": [{"author": "Swyx", "handle": "swyx", "text": "agents!",
                                   "url": "https://x.com/swyx/status/1", "date": "2026-07-14"}]}]}
 
+NEWS = [{"id": "hackernews:1",
+         "title": {"zh": "某旗舰模型发布", "en": "Flagship model released"},
+         "newsworthy": 9,
+         "summary": {"zh": "发布了一个模型。", "en": "A model was released."},
+         "name": "Flagship model released",
+         "url": "https://news.ycombinator.com/item?id=1",
+         "source": "hackernews", "metrics": {"points": 900}}]
+
 
 @pytest.fixture
 def site(tmp_path):
@@ -49,7 +57,7 @@ def site(tmp_path):
                 "week": "2026-W29", "stars_then": 99, "stars_now": 500, "ratio": 5.1,
                 "reason": "毫无用处但让人想要", "analysis": {"zh": "简读", "en": "brief"}}]
     generate(history, trends={"2026-W29": TREND}, liftoff=liftoff,
-             voices={"2026-W29": VOICES}, out_dir=tmp_path)
+             voices={"2026-W29": VOICES}, news={"2026-W29": NEWS}, out_dir=tmp_path)
     return tmp_path
 
 
@@ -106,6 +114,20 @@ class TestGenerate:
         assert weeks["2026-W29"]["voices"]["themes"][0]["quotes"][0]["url"].startswith("https://x.com/")
         assert weeks["2026-W28"]["voices"] is None       # 无数据的周为空
 
+    def test_news_embedded_per_week(self, site):
+        meta = json.loads((site / "data" / "weeks.json").read_text(encoding="utf-8"))
+        weeks = {w["week"]: w for w in meta["weeks"]}
+        assert weeks["2026-W29"]["news"][0]["title"]["zh"] == "某旗舰模型发布"
+        assert weeks["2026-W29"]["news"][0]["newsworthy"] == 9
+        assert weeks["2026-W29"]["news"][0]["url"] == "https://news.ycombinator.com/item?id=1"
+        assert weeks["2026-W28"]["news"] is None         # v3 历史周无新闻区块
+
+    def test_news_section_markup_present(self, site):
+        html = (site / "index.html").read_text(encoding="utf-8")
+        assert 'id="news"' in html and "renderNews" in html
+        # 渐进披露：新闻区块有 hidden 属性，数据缺失时不显示
+        assert re.search(r'<div class="news" id="news" hidden>', html)
+
     def test_quadrant_collapsed_by_default(self, site):
         # 回归：象限图默认收起（用户要求手动展开）
         html = (site / "index.html").read_text(encoding="utf-8")
@@ -154,6 +176,7 @@ class TestFeed:
         assert "本周智能体基建扎堆出现。" in first.findtext("title")   # 风向首句进标题
         desc = first.findtext("description")
         assert "AI Pet Rock" in desc and "毫无用处但让人想要" in desc
+        assert "📰 某旗舰模型发布" in desc                              # 新闻进 RSS 摘要
         assert first.findtext("link").endswith("#2026-W29")
 
     def test_feed_escapes_xml_specials(self):
