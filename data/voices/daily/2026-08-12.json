@@ -1,0 +1,282 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "if you have a better skill cutting policy or skill cutting skill lmk\n\nhttps://t.co/ZkOxnGX5Md https://t.co/qXoMl8Vyd2",
+  "url": "https://x.com/swyx/status/2087244948441792543",
+  "date": "2026-08-11",
+  "likes": 2
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "🌏On behalf of the whole Gemini team, thank you\nWhether you use Gemini on the Web, Android, iOS, or inside Chrome, we’ll keep listening to your feedback as we keep building for the next billion!",
+  "url": "https://x.com/joshwoodward/status/2087223963525284091",
+  "date": "2026-08-11",
+  "likes": 91
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "🍎Apple users are turning to Gemini\n+ Over 100M+ active users on iOS\n+ macOS power users prompt ~2x more frequently than other surfaces",
+  "url": "https://x.com/joshwoodward/status/2087223962229186577",
+  "date": "2026-08-11",
+  "likes": 66
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "🤖Android users love Gemini\n+ Gemini can automate actions across 40+ popular apps\n+ Great for booking rides, reserving tables, and more\n+ More updates coming tomorrow at @madebygoogle!",
+  "url": "https://x.com/joshwoodward/status/2087223960807330234",
+  "date": "2026-08-11",
+  "likes": 50
+ },
+ {
+  "author": "Boris Cherny",
+  "handle": "bcherny",
+  "text": "LLMs still produce bugs, but those bugs are different than what they used to be. It’s less off-by-ones and more about system design, ui usability, missing broader context. Some kinds of coding has been solved, but not all.\n\nWhile models continue to improve, adversarial code review has been an incredibly powerful tool to catch many of these kinds of bugs.\n\nIt can be as simple as a one line prompt - “use a dynamic workflow to adversarial test every edge case in an iOS simulator”, or use Claude’s built in /code-review (or /code-review low, /code-review medium, etc.)",
+  "url": "https://x.com/bcherny/status/2087284684103537011",
+  "date": "2026-08-11",
+  "likes": 2447
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "I previously promised a reset for every 1M in additional active users for Codex, until 10M. \n\nWe blew past that and have been silent since 10M. Little surprise for you tomorrow.",
+  "url": "https://x.com/thsottiaux/status/2087423996115681767",
+  "date": "2026-08-12",
+  "likes": 2737
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "We did it, finally... Codex &amp; ChatGPT desktop, now on Linux. \n\nThanks for waiting and you can cancel that MacBook order if you got impatient. It’s that good.\n\n👀 https://t.co/QiiDPFct2v",
+  "url": "https://x.com/thsottiaux/status/2087254026232775052",
+  "date": "2026-08-11",
+  "likes": 9329
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Import your world. Codex. Run. https://t.co/Epj4ULlAC6",
+  "url": "https://x.com/thsottiaux/status/2087252528513814773",
+  "date": "2026-08-11",
+  "likes": 2099
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Getting many messages like these for /human-review.\n\nIt's now at 717 GitHub stars! \n\nTry it here for free and ⭐ it if you like it: https://t.co/iKZH4GceFn https://t.co/xVT7rH0nEI https://t.co/AfjdpMbwTX",
+  "url": "https://x.com/petergyang/status/2087345374633824486",
+  "date": "2026-08-12",
+  "likes": 101
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Trying to onboard my parents to ChatGPT desktop app and the separation between Chat, Work, and Codex and the lack of consistency across ChatGPT web, desktop, and mobile apps is all incredibly messy.\n\nI think the team should do a clean up / quality pass or maybe ask Codex to do it.\n\n(I say all this as a Codex fan)",
+  "url": "https://x.com/petergyang/status/2087340277874995223",
+  "date": "2026-08-12",
+  "likes": 269
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I think @X should ship this button or better yet make @CommunityNotes cover this use case. https://t.co/sKJkqrqpGP",
+  "url": "https://x.com/petergyang/status/2087300215388979282",
+  "date": "2026-08-11",
+  "likes": 28
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Even my 9-month old understands the parable of the hungry caterpillar https://t.co/Bg3BrEVgJI",
+  "url": "https://x.com/thenanyu/status/2087264637817409586",
+  "date": "2026-08-11",
+  "likes": 4
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "dev rels are having their moment.\n\nsince building software has become trivial, distribution is your biggest unlock. \n\npeople with great social media game + tech chops are invaluable. https://t.co/yTrUFcQdHZ",
+  "url": "https://x.com/realmadhuguru/status/2087362394280599641",
+  "date": "2026-08-12",
+  "likes": 9
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "story time..\n\nin 2023 (my previous role) I remember the first time some customers volunteered their prompt logs to us. \n\nWe were surprised by the number of “build me an app for X” prompts.\n\nfelt wildly ambitious at the time. models were barely graduating from code completion to generating a useful block of code.\n\nBut it was a great signal of what people actually wanted, and shaped a lot of our vision: systems that could design, build and deploy an app end to end from a simple ask.\n\nPretty wild that 3 yrs later we’re basically there.",
+  "url": "https://x.com/realmadhuguru/status/2087355597851390220",
+  "date": "2026-08-12",
+  "likes": 15
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "There’s going to be a ton of money in making open-weight models exceptional at boring, specific business domains.\n\nPick a size x domain combination and go deep. Eg mid-market legal, smb retail, enterprise logistics. \n\nThe hyperscalers have the primitives but will struggle with domain depth, scrappiness and sheer will to make a model exceptional for one particular kind of business.\n\nAnd that is your opportunity.",
+  "url": "https://x.com/realmadhuguru/status/2087198985685750013",
+  "date": "2026-08-11",
+  "likes": 168
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "There are more details in the help center &amp; we’ll share more as we roll this out: https://t.co/td69rBzrr4",
+  "url": "https://x.com/trq212/status/2087258093499695106",
+  "date": "2026-08-11",
+  "likes": 57
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "All Claude generated text will have this embedded watermarking. For example, you could check if a PR was generated by Claude Code.\n\nThat said, it does have limitations. https://t.co/umfn6nU5up",
+  "url": "https://x.com/trq212/status/2087258091821949074",
+  "date": "2026-08-11",
+  "likes": 97
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "This is part of working with the EU AI Act, other labs are adding similar watermarking.\n\nIt’s hard to identify AI-generated text, and this gives people better tools to do that.  We’ll also be a shipping text detection API that you can use yourself. https://t.co/OZtG0fNsqc",
+  "url": "https://x.com/trq212/status/2087258090169414008",
+  "date": "2026-08-11",
+  "likes": 946
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Many people are saying https://t.co/iluZF3d1Iu",
+  "url": "https://x.com/rauchg/status/2087354092914122896",
+  "date": "2026-08-12",
+  "likes": 100
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "The growth of @aisdk has been astonishing. ~80.5M downloads every 30 days, and growing faster than all AI labs SDKs. Most importantly: open and provider-agnostic. https://t.co/EZxyu94gk0 https://t.co/sdVZTZhsCP",
+  "url": "https://x.com/rauchg/status/2087339038781161858",
+  "date": "2026-08-12",
+  "likes": 289
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Keep an eye on this view\nhttps://t.co/iir02GoUUw https://t.co/iYEI1rO9Jy https://t.co/0ey1ut4h70",
+  "url": "https://x.com/rauchg/status/2087314071519707288",
+  "date": "2026-08-11",
+  "likes": 257
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Good post on how to think about FDEs. The key is that FDEs are real and not going away for AI any time soon.\n\nThe reason this is happening now at a scale that has never been seen before is because AI is fundamentally about adding a non-deterministic, rapidly changing system to workflows that largely have never been automated before. This looks very little like implementing traditional software.\n\n“If you're building an AI agent for accounting in 2026, there is no established workflow, because literally nobody has ever used one of these. Nobody knows what the user journey looks like — not you, and importantly, not your customer either. They can't tell you what they want, because the thing they'd want doesn't have a shape yet.”\n\nSoftware has largely always been deterministic and once implemented effectively worked the same for customers. This meant the upfront implementation work was *relatively* uniform across similar customers, and the system wasn’t regularly being upgraded in fundamental ways. \n\nAI agents are entirely different on nearly every dimension. The customer’s business process has to change to work with agents, there is heavy -necessary- customization to get agents to work in the customers end-state process, evals need to be run constantly, the AI models are constantly changing and updates need to keep getting incorporated, the underlying harness and broader system are often changing due to customer feedback, and much more. \n\nThis is real work for the customer, systems integrators, and the applied AI vendors. Even as AI capabilities improve dramatically, this work remains (or even gets more complicated) given enterprises will just throw increasingly more complex processes at agents. Great time to be an FDE.",
+  "url": "https://x.com/levie/status/2087385493684335064",
+  "date": "2026-08-12",
+  "likes": 88
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Anish is a G. Excited for our convo to drop! https://t.co/8rCH3YhHWl",
+  "url": "https://x.com/garrytan/status/2087256959913541812",
+  "date": "2026-08-11",
+  "likes": 172
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Build both the job centers and the housing\n\nCalifornia will fall if we don’t do both https://t.co/lws98Go2ux",
+  "url": "https://x.com/garrytan/status/2087253768920556011",
+  "date": "2026-08-11",
+  "likes": 100
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Deep alignment of your AI with you and your context is massively important\n\nImportant new work by @ibab and team https://t.co/TijcK96ckO",
+  "url": "https://x.com/garrytan/status/2087154547580088470",
+  "date": "2026-08-11",
+  "likes": 311
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "The Hugging Face intrusion got all the press, but the AISI incident last week might even more disturbing:  the first time an AI model autonomously manipulates a *human* (an open-source maintainer) while pursuing another goal (in the wild and unprompted) - @Thom_Wolf https://t.co/uVffjtTFuX https://t.co/zd0ot6hUZ2",
+  "url": "https://x.com/mattturck/status/2087311436779298897",
+  "date": "2026-08-11",
+  "likes": 6
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "@marclou You should visit! There's one in Shanghai too",
+  "url": "https://x.com/zarazhangrui/status/2087161086701375782",
+  "date": "2026-08-11",
+  "likes": 7
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "if a founder cancels on you on a scheduled meeting, that’s a sign of great respect in their culture",
+  "url": "https://x.com/nikunj/status/2087341164752240860",
+  "date": "2026-08-12",
+  "likes": 295
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "If you got a lot of “believe in yourself” texts from your VC, they may have read this blog post last night.. https://t.co/dzPrpTQhhg",
+  "url": "https://x.com/nikunj/status/2087190092716904666",
+  "date": "2026-08-11",
+  "likes": 61
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "there is one glaring omission on this map 👀 https://t.co/UBbzGSLM8L",
+  "url": "https://x.com/danshipper/status/2087309557261324701",
+  "date": "2026-08-11",
+  "likes": 28
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "i am claude's stay-at-home boyfriend https://t.co/7NIYL15uLk",
+  "url": "https://x.com/danshipper/status/2087226736186470821",
+  "date": "2026-08-11",
+  "likes": 39
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "a fun one to revisit: https://t.co/LuR72velu4",
+  "url": "https://x.com/danshipper/status/2087219724761309288",
+  "date": "2026-08-11",
+  "likes": 14
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "https://t.co/Y1Y3jTUtSq https://t.co/dhaD0WIl0R",
+  "url": "https://x.com/adityaag/status/2087263990728569246",
+  "date": "2026-08-11",
+  "likes": 35
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "@technology @spc https://t.co/odtsQWfyXe",
+  "url": "https://x.com/adityaag/status/2087202353820659960",
+  "date": "2026-08-11",
+  "likes": 1
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "https://t.co/SA7fayDwBu",
+  "url": "https://x.com/adityaag/status/2087201342288712179",
+  "date": "2026-08-11",
+  "likes": 6
+ }
+]
