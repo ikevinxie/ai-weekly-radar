@@ -1,6 +1,371 @@
 {
  "weeks": [
   {
+   "week": "2026-W33",
+   "date": "2026-08-14",
+   "count": 30,
+   "trend": {
+    "zh": "本周AI项目聚焦于模型更新与开发者工具，特别是在自然语言处理和图像生成领域。DeepSeek、谷歌和Cerebras等公司发布了新的模型或技术预览，显示出对提高模型性能和效率的持续关注。同时，社区内关于开放性和伦理问题的讨论也在增加。\n",
+    "en": "This week, AI projects are focused on model updates and developer tools, particularly in natural language processing and image generation. Companies like DeepSeek, Google, and Cerebras have released new models or technology previews, showing a continued emphasis on improving model performance and efficiency. Meanwhile, discussions around openness and ethics within the community are also on the rise.\n",
+    "deep": {
+     "zh": "本周AI领域的风向明显朝向了模型迭代与技术创新，尤其是针对自然语言处理和图像生成的应用。DeepSeek发布V4 Pro 0813版本以及其Harness开发者预览版，为开发人员提供了更多可能性。与此同时，谷歌推出了Gemini 3.7 Flash模型，强调了在速度和准确性上的改进。此外，Cerebras加速GPT-5.6 Sol Ultrafast模型进一步展示了硬件加速对于模型训练的重要性。\n\n值得注意的是，马克·扎克伯格批评封闭式AI竞争对手的行为引起了广泛关注，这表明行业内对于开放性与透明度的需求正在增长。另一方面，甲骨文禁止OpenJDK中使用AI生成代码的规定，则引发了关于AI伦理及其实用性的讨论。这些趋势共同指向了一个更加注重协作与责任的未来方向。\n\n代表项目方面，arXiv上多个高分研究论文如2608.13558v1（总分21）探讨了先进的算法优化方法；而Hugging Face空间中的MiniMaxAI/MiniMax-Music3（总分18）则展现了音乐生成领域的最新进展。展望下周，预计将继续看到围绕模型创新、开源合作以及伦理考量方面的动态发展。\n",
+     "en": "The trend this week in the AI domain is clearly moving towards model iteration and technological innovation, especially for applications in natural language processing and image generation. DeepSeek's release of V4 Pro 0813 version and its Harness Developer Preview has opened up more possibilities for developers. At the same time, Google's launch of the Gemini 3.7 Flash model emphasizes improvements in speed and accuracy. Furthermore, Cerebras' acceleration of the GPT-5.6 Sol Ultrafast model further demonstrates the importance of hardware acceleration for model training.\n\nNotably, Mark Zuckerberg's criticism of closed AI competitors has garnered significant attention, indicating a growing demand for openness and transparency within the industry. On another note, Oracle's ban on using AI-generated code in OpenJDK has sparked discussions about AI ethics and practicality. These trends collectively point towards a future direction that places greater emphasis on collaboration and responsibility.\n\nIn terms of representative projects, several high-scoring research papers on arXiv such as 2608.13558v1 (total score 21) explore advanced algorithm optimization methods; while Hugging Face space's MiniMaxAI/MiniMax-Music3 (total score 18) showcases the latest developments in music generation. Looking ahead to next week, it is expected that we will continue to see dynamic developments surrounding model innovation, open-source collaboration, and ethical considerations."
+    }
+   },
+   "news": [
+    {
+     "id": "hackernews:49289112",
+     "title": {
+      "zh": "谷歌推出Gemini 3.7 Flash模型",
+      "en": "Google Introduces Gemini 3.7 Flash Model"
+     },
+     "newsworthy": 9,
+     "summary": {
+      "zh": "谷歌发布了新的Gemini 3.7 Flash模型，这是其多模态AI系列中的最新成员，旨在提供更快更准确的结果。",
+      "en": "Google has released the new Gemini 3.7 Flash model, the latest addition to its multimodal AI lineup, designed to deliver faster and more accurate results."
+     },
+     "name": "Gemini 3.7 Flash",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+     "source": "hackernews",
+     "metrics": {
+      "points": 896,
+      "comments": 451,
+      "hn_link": "https://news.ycombinator.com/item?id=49289112"
+     }
+    },
+    {
+     "id": "hackernews:49274600",
+     "title": {
+      "zh": "DeepSeek发布V4 Pro 0813版本",
+      "en": "DeepSeek Releases V4 Pro 0813 Version"
+     },
+     "newsworthy": 8,
+     "summary": {
+      "zh": "DeepSeek宣布推出其最新版本的V4 Pro 0813，这款升级后的AI助手将带来更强大的功能和更好的用户体验。",
+      "en": "DeepSeek has announced the release of its latest version, V4 Pro 0813, which promises to deliver enhanced features and improved user experience for their upgraded AI assistant."
+     },
+     "name": "DeepSeek V4 Pro 0813",
+     "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+     "source": "hackernews",
+     "metrics": {
+      "points": 1025,
+      "comments": 443,
+      "hn_link": "https://news.ycombinator.com/item?id=49274600"
+     }
+    },
+    {
+     "id": "hackernews:49289844",
+     "title": {
+      "zh": "Cerebras加速GPT-5.6 Sol Ultrafast模型",
+      "en": "Cerebras Accelerates GPT-5.6 Sol Ultrafast Model"
+     },
+     "newsworthy": 8,
+     "summary": {
+      "zh": "Cerebras与OpenAI合作，利用其硬件加速技术大幅提升了GPT-5.6 Sol Ultrafast模型的性能。",
+      "en": "Cerebras, in collaboration with OpenAI, has significantly boosted the performance of the GPT-5.6 Sol Ultrafast model using its hardware acceleration technology."
+     },
+     "name": "Accelerating GPT-5.6 Sol Ultrafast",
+     "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+     "source": "hackernews",
+     "metrics": {
+      "points": 652,
+      "comments": 253,
+      "hn_link": "https://news.ycombinator.com/item?id=49289844"
+     }
+    },
+    {
+     "id": "hackernews:49243880",
+     "title": {
+      "zh": "马克·扎克伯格批评封闭式AI竞争对手",
+      "en": "Mark Zuckerberg Criticizes 'Closed' AI Rivals"
+     },
+     "newsworthy": 7,
+     "summary": {
+      "zh": "马克·扎克伯格公开批评了所谓的“封闭”AI竞争对手，并表示Meta将回归开放模型路线。",
+      "en": "Mark Zuckerberg publicly criticized so-called 'closed' AI rivals and stated that Meta would return to the path of open models."
+     },
+     "name": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+     "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+     "source": "hackernews",
+     "metrics": {
+      "points": 640,
+      "comments": 601,
+      "hn_link": "https://news.ycombinator.com/item?id=49243880"
+     }
+    },
+    {
+     "id": "hackernews:49285244",
+     "title": {
+      "zh": "DeepSeek Harness开发者预览版发布",
+      "en": "DeepSeek Harness Developer Preview Released"
+     },
+     "newsworthy": 7,
+     "summary": {
+      "zh": "DeepSeek推出了Harness平台的开发者预览版，这是一个旨在简化AI模型训练和部署过程的新工具。",
+      "en": "DeepSeek has launched the developer preview of Harness, a new platform aimed at simplifying the process of training and deploying AI models."
+     },
+     "name": "DeepSeek Harness developer preview",
+     "url": "https://deepseek.com/harness/en/",
+     "source": "hackernews",
+     "metrics": {
+      "points": 691,
+      "comments": 281,
+      "hn_link": "https://news.ycombinator.com/item?id=49285244"
+     }
+    },
+    {
+     "id": "reddit:1vj8lag",
+     "title": {
+      "zh": "NeurIPS会议没有一个关于因果关系的工作坊",
+      "en": "No Causality Workshops at NeurIPS Conference"
+     },
+     "newsworthy": 7,
+     "summary": {
+      "zh": "今年的NeurIPS大会共有73个工作坊，却没有一个是专门讨论因果关系的。这引发了对因果推断领域当前地位的关注。",
+      "en": "This year's NeurIPS conference features 73 workshops, but none are dedicated to causality. This raises concerns about the current status of the field of causal inference."
+     },
+     "name": "73 NeurIPS workshops, and not a single one on Causality [R]",
+     "url": "https://www.reddit.com/r/MachineLearning/comments/1vj8lag/73_neurips_workshops_and_not_a_single_one_on/",
+     "source": "reddit",
+     "metrics": {
+      "week_rank": 6,
+      "subreddit": "MachineLearning"
+     }
+    },
+    {
+     "id": "hackernews:49213754",
+     "title": {
+      "zh": "甲骨文禁止OpenJDK中使用AI生成代码",
+      "en": "Oracle Bans AI-Generated Code from OpenJDK"
+     },
+     "newsworthy": 6,
+     "summary": {
+      "zh": "甲骨文宣布禁止在OpenJDK项目中使用AI生成的代码，尽管埃里森声称甲骨文不会自己编写代码。",
+      "en": "Oracle has announced a ban on AI-generated code in the OpenJDK project, despite Ellison's claim that Oracle isn't writing its own code."
+     },
+     "name": "Oracle bans AI-generated code from OpenJDK",
+     "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "source": "hackernews",
+     "metrics": {
+      "points": 535,
+      "comments": 382,
+      "hn_link": "https://news.ycombinator.com/item?id=49213754"
+     }
+    }
+   ],
+   "voices": {
+    "week": "2026-W33",
+    "overview": {
+     "zh": "本周AI建设者们在X上的发言涵盖了从模型安全到用户体验的多个方面，展示了AI技术的最新进展和挑战。讨论的重点包括提高AI系统的安全性、优化用户与AI交互的方式以及构建更有效的开发流程。",
+     "en": "This week, AI builders on X covered a wide range of topics from model security to user experience, showcasing the latest advancements and challenges in AI technology. The discussions highlighted improving AI system security, optimizing user interactions with AI, and building more effective development workflows."
+    },
+    "themes": [
+     {
+      "title": {
+       "zh": "AI 安全性",
+       "en": "AI Security"
+      },
+      "summary": {
+       "zh": "多位发言者强调了提高AI系统安全性的重要性，特别是在对抗恶意攻击和确保用户数据隐私方面。Boris Cherny提到Anthropic已经解决了Claude模型中的提示注入问题，而Thariq则介绍了Claude生成文本的嵌入式水印功能。",
+       "en": "Several speakers emphasized the importance of enhancing AI system security, particularly against malicious attacks and ensuring user data privacy. Boris Cherny mentioned that Anthropic has largely solved the prompt injection issue in Claude models, while Thariq introduced embedded watermarking for Claude-generated text."
+      },
+      "quotes": [
+       {
+        "author": "Boris Cherny",
+        "handle": "@bcherny",
+        "text": "At Anthropic we have been training our models not to fall for these kinds of attacks, and the results have been surprisingly positive. We have largely solved the threat of prompt injection in practice when using Claude models.",
+        "url": "https://x.com/bcherny/status/2086520950259118464",
+        "date": "2026-08-09"
+       },
+       {
+        "author": "Thariq",
+        "handle": "@trq212",
+        "text": "All Claude generated text will have this embedded watermarking. For example, you could check if a PR was generated by Claude Code. That said, it does have limitations.",
+        "url": "https://x.com/trq212/status/2087258091821949074",
+        "date": "2026-08-11"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "用户体验",
+       "en": "User Experience"
+      },
+      "summary": {
+       "zh": "改善用户体验是本周讨论的一个重要主题。Peter Yang分享了如何通过语音控制云代理来改变我们使用计算机的方式，而Zara Zhang则提供了一种利用Codex分析网站设计的方法。",
+       "en": "Improving user experience was a key topic this week. Peter Yang shared how voice control of cloud agents can change the way we use computers, while Zara Zhang provided a method for using Codex to analyze website design."
+      },
+      "quotes": [
+       {
+        "author": "Peter Yang",
+        "handle": "@petergyang",
+        "text": "We’re moving from doing work manually with a keyboard, mouse, and laptop to directing agents in the cloud using our voices. In my new essay, I cover why: 1. Voice is becoming the orchestration layer 2. Personal computers will move to the cloud 3. Trust will be the key differentiator",
+        "url": "https://x.com/petergyang/status/2087547168764862495",
+        "date": "2026-08-12"
+       },
+       {
+        "author": "Zara Zhang",
+        "handle": "@zarazhangrui",
+        "text": "A great way to learn design: Give Codex a well-designed website, ask it to analyze what makes the design great, then ask it to take a complete screenshot of the website & add annotations on the image that breaks down why the design works",
+        "url": "https://x.com/zarazhangrui/status/2086758509979316423",
+        "date": "2026-08-10"
+       }
+      ]
+     },
+     {
+      "title": {
+       "zh": "开发流程",
+       "en": "Development Workflows"
+      },
+      "summary": {
+       "zh": "几位发言者讨论了如何优化开发流程以提高效率。Swyx提出了删除不必要的技能以减少上下文负担的建议，而Guillermo Rauch则强调了代码审查的重要性。",
+       "en": "Several speakers discussed optimizing development workflows for increased efficiency. Swyx suggested deleting unnecessary skills to reduce context burden, while Guillermo Rauch emphasized the importance of code review."
+      },
+      "quotes": [
+       {
+        "author": "Swyx",
+        "handle": "@swyx",
+        "text": "occasional reminder to DELETE your skills. when you are bombarded constantly by 'this skill changed my life!! you have to try!!' on the timeline, you will pile up stuff that at best just eats context, and at worst interacts with other skills nastily in unforeseen ways if you dont stare at your traces.",
+        "url": "https://x.com/swyx/status/2086505938144616810",
+        "date": "2026-08-09"
+       },
+       {
+        "author": "Guillermo Rauch",
+        "handle": "@rauchg",
+        "text": "“Did you deepsec it?” “@𝚟 can you deepsec” “/𝚍𝚎𝚎𝚙𝚜𝚎𝚌” It’s a bit like /𝚝𝚑𝚎𝚛𝚖𝚘-𝚗𝚞𝚌𝚕𝚎𝚊𝚛-𝚌𝚘𝚍𝚎-𝚚𝚞𝚊𝚕𝚒𝚝𝚢-𝚛𝚎𝚟𝚒𝚎𝚠 but for the security of your code. Must have in your software factory.",
+        "url": "https://x.com/rauchg/status/2086965425968148806",
+        "date": "2026-08-10"
+       }
+      ]
+     }
+    ]
+   },
+   "awards": [
+    {
+     "key": "best",
+     "emoji": "🏆",
+     "title": {
+      "zh": "本周最佳",
+      "en": "Best of the Week"
+     },
+     "project_id": "arxiv:2608.13521v1",
+     "project_name": "Exponential quantum advantage for learning signals with a single qubit"
+    },
+    {
+     "key": "wildest",
+     "emoji": "🤪",
+     "title": {
+      "zh": "最离谱奖",
+      "en": "Wildest Idea"
+     },
+     "project_id": "hackernews:49241679",
+     "project_name": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows"
+    },
+    {
+     "key": "quiet_money",
+     "emoji": "💰",
+     "title": {
+      "zh": "闷声发财奖",
+      "en": "Quiet Money Maker"
+     },
+     "project_id": "producthunt:1222359",
+     "project_name": "Gemini 3.7 Flash"
+    },
+    {
+     "key": "dark_horse",
+     "emoji": "🐴",
+     "title": {
+      "zh": "黑马奖",
+      "en": "Dark Horse"
+     },
+     "project_id": "huggingface:paper/2608.13489",
+     "project_name": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation"
+    },
+    {
+     "key": "hardcore",
+     "emoji": "🔬",
+     "title": {
+      "zh": "硬核奖",
+      "en": "Hardcore Research"
+     },
+     "project_id": "arxiv:2608.13521v1",
+     "project_name": "Exponential quantum advantage for learning signals with a single qubit"
+    },
+    {
+     "key": "funnest",
+     "emoji": "🎪",
+     "title": {
+      "zh": "最好玩奖",
+      "en": "Most Fun"
+     },
+     "project_id": "producthunt:1221923",
+     "project_name": "Openmotion"
+    },
+    {
+     "key": "polarized",
+     "emoji": "⚖️",
+     "title": {
+      "zh": "两极分化奖",
+      "en": "Most Polarizing"
+     },
+     "project_id": "github:SaladDay/pi-from-scratch",
+     "project_name": "SaladDay/pi-from-scratch"
+    }
+   ],
+   "top3": [
+    {
+     "id": "arxiv:2608.13521v1",
+     "name": "Exponential quantum advantage for learning signals with a single qubit",
+     "total": 21
+    },
+    {
+     "id": "arxiv:2608.13558v1",
+     "name": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+     "total": 21
+    },
+    {
+     "id": "hackernews:49241679",
+     "name": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+     "total": 21
+    }
+   ],
+   "qr": [
+    "111111100100100010111101001111111",
+    "100000100101000111100000001000001",
+    "101110101010001100001110101011101",
+    "101110101110000100101001101011101",
+    "101110101100111111110011101011101",
+    "100000101110100000101010001000001",
+    "111111101010101010101010101111111",
+    "000000001010101010110101000000000",
+    "101111100110010001001011101111100",
+    "110010011010010011011111001101101",
+    "100110100000111111001000100010110",
+    "011001010001110011100101001011110",
+    "001010111001001010011000110011010",
+    "010011000100110100110011101001111",
+    "111010110110111110001100111001110",
+    "110111000110110100011101111011100",
+    "000101110010100101000010010110001",
+    "101111011011010000111101001101101",
+    "000101110000101110101100000110110",
+    "000111010001010010011100010111111",
+    "000101101110010000101000010111010",
+    "110111000001000110001011001100001",
+    "100000100001110001101100001001010",
+    "101000010110101010101110110111110",
+    "101010111010010001110010111110010",
+    "000000001111001011111100100010111",
+    "111111100101110111000001101010110",
+    "100000101100110101111101100011110",
+    "101110101110010010010000111111011",
+    "101110101010011101110111010011011",
+    "101110101100000111000110001100100",
+    "100000100010010100111110010011100",
+    "111111101110101101000001100101010"
+   ]
+  },
+  {
    "week": "2026-W32",
    "date": "2026-08-07",
    "count": 30,
@@ -953,8 +1318,8 @@
    "url": "https://github.com/jakubkrehel/skills",
    "week": "2026-W29",
    "stars_then": 223,
-   "stars_now": 3228,
-   "ratio": 14.5,
+   "stars_now": 3761,
+   "ratio": 16.9,
    "reason": "一套给产品做动效、排版、配色体检的智能体技能包，设计师的顺手外挂。",
    "analysis": {
     "zh": "一套给产品做体检的智能体技能包：动效、字体排印、布局、配色各管一摊。设计师和独立开发者的顺手外挂，胜在即插即用，弱在护城河浅。",
@@ -967,8 +1332,8 @@
    "url": "https://github.com/MDX-Tom/gpt-5.6-instruct",
    "week": "2026-W29",
    "stars_then": 548,
-   "stars_now": 4934,
-   "ratio": 9.0,
+   "stars_now": 5563,
+   "ratio": 10.2,
    "reason": "针对 gpt-5.6 的越狱提示词测试包，猎奇热度高，但灰色地带且无变现空间。",
    "analysis": {
     "zh": "针对 gpt-5.6 系列的 Codex CLI 越狱提示词与测试包，一周 548 star 说明猎奇需求旺盛。灰色地带项目：有红队参考价值，但无正经变现路径且随时可能失效。",
@@ -981,8 +1346,8 @@
    "url": "https://github.com/kvcache-ai/AgentENV",
    "week": "2026-W31",
    "stars_then": 389,
-   "stars_now": 2955,
-   "ratio": 7.6,
+   "stars_now": 3192,
+   "ratio": 8.2,
    "reason": "分布式平台，用于大规模运行代理环境。",
    "analysis": {
     "zh": "AgentENV是一个分布式平台，用于大规模运行代理环境。",
@@ -995,8 +1360,8 @@
    "url": "https://github.com/AlephAITech/WorkBuddyGuide",
    "week": "2026-W29",
    "stars_then": 395,
-   "stars_now": 2052,
-   "ratio": 5.2,
+   "stars_now": 2242,
+   "ratio": 5.7,
    "reason": "WorkBuddy 实战教程合集，实用的学习资料，但形态就是一本手册。",
    "analysis": {
     "zh": "WorkBuddy 的开源实战蓝皮书：教程、真实工作流、Skills、MCP、多智能体实践。内容型仓库，实用但形态就是一本手册，涨完这波热度后靠持续更新维生。",
@@ -1009,8 +1374,8 @@
    "url": "https://github.com/XYZ-AI-Lab/axrl",
    "week": "2026-W31",
    "stars_then": 210,
-   "stars_now": 1033,
-   "ratio": 4.9,
+   "stars_now": 1046,
+   "ratio": 5.0,
    "reason": "基于 SGLang + Megatron 的 agentic RL 后训练框架，和 AxisAgentic 是亲兄弟。",
    "analysis": {
     "zh": "AxisRL 是一个 agentic RL 后训练框架，构建在 SGLang 推理和 Megatron 训练之上。210 star 说明 agent RL 训练有需求，但技术门槛极高。",
@@ -1023,8 +1388,8 @@
    "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
    "week": "2026-W31",
    "stars_then": 225,
-   "stars_now": 1007,
-   "ratio": 4.5,
+   "stars_now": 1112,
+   "ratio": 4.9,
    "reason": "长程 agent 的运行时和轨迹收集框架，和 axrl 一起构成训练-部署闭环。",
    "analysis": {
     "zh": "AxisAgentic 是一个可扩展的长程 agent 运行时和轨迹收集框架。225 star 说明专业 agent 基建有需求，但门槛高、受众窄。",
@@ -1037,12 +1402,26 @@
    "url": "https://github.com/QwenAudio/qwen-audio-agent",
    "week": "2026-W31",
    "stars_then": 577,
-   "stars_now": 1983,
-   "ratio": 3.4,
+   "stars_now": 2130,
+   "ratio": 3.7,
    "reason": "QwenAudio提供了一个实时语音运行时，使AI代理能够持续对话和工作。",
    "analysis": {
     "zh": "QwenAudio提供了一个实时语音运行时，使AI代理能够持续对话和工作。",
     "en": "QwenAudio provides a real-time voice runtime that keeps AI agents talking, working, and present."
+   }
+  },
+  {
+   "id": "github:lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+   "name": "lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+   "url": "https://github.com/lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
+   "week": "2026-W31",
+   "stars_then": 153,
+   "stars_now": 564,
+   "ratio": 3.7,
+   "reason": "GPT-5.6破甲框架，三层纵深防御，集成Kali后端。",
+   "analysis": {
+    "zh": "该项目是一个GPT-5.6破甲框架，通过三层纵深防御和Kali后端集成，增强了安全性。",
+    "en": "This project is a GPT-5.6 jailbreak framework, enhancing security through three-layer defense and Kali backend integration."
    }
   },
   {
@@ -1051,7 +1430,7 @@
    "url": "https://github.com/pengchujin/jzsub",
    "week": "2026-W29",
    "stars_then": 275,
-   "stars_now": 930,
+   "stars_now": 945,
    "ratio": 3.4,
    "reason": "一条视频链接自动产出高画质双语字幕成片，刚需明确的效率工具。",
    "analysis": {
@@ -1074,45 +1453,17 @@
    }
   },
   {
-   "id": "github:lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-   "name": "lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-   "url": "https://github.com/lingbol088-spec/5.6-JAILBREAK-NERV-codex-instruct-5.6",
-   "week": "2026-W31",
-   "stars_then": 153,
-   "stars_now": 455,
-   "ratio": 3.0,
-   "reason": "GPT-5.6破甲框架，三层纵深防御，集成Kali后端。",
-   "analysis": {
-    "zh": "该项目是一个GPT-5.6破甲框架，通过三层纵深防御和Kali后端集成，增强了安全性。",
-    "en": "This project is a GPT-5.6 jailbreak framework, enhancing security through three-layer defense and Kali backend integration."
-   }
-  },
-  {
    "id": "github:makecindy/cindy",
    "name": "makecindy/cindy",
    "url": "https://github.com/makecindy/cindy",
    "week": "2026-W31",
    "stars_then": 677,
-   "stars_now": 1882,
-   "ratio": 2.8,
+   "stars_now": 2068,
+   "ratio": 3.1,
    "reason": "「想到就能做到」的开源 AI Agent，开箱即用是最大卖点。",
    "analysis": {
     "zh": "Cindy 是一个开源 AI agent 框架，主打开箱即用。677 star 说明市场对「不需要折腾就能用的 agent」有需求，但 agent 框架赛道已经非常拥挤。",
     "en": "Cindy is an open-source AI agent framework emphasizing out-of-the-box usability. 677 stars indicate market demand for 'agents that just work without tinkering,' but the agent framework space is already very crowded."
-   }
-  },
-  {
-   "id": "github:cosmtrek/mindwalk",
-   "name": "cosmtrek/mindwalk",
-   "url": "https://github.com/cosmtrek/mindwalk",
-   "week": "2026-W29",
-   "stars_then": 421,
-   "stars_now": 1151,
-   "ratio": 2.7,
-   "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
-   "analysis": {
-    "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
-    "en": "Replays coding-agent sessions on a 3D city map of your codebase — watch which 'blocks' the AI walked through. Developer observability turned into urban sightseeing; 421 stars in week one, equal parts aesthetic and engineering delight."
    }
   },
   {
@@ -1121,8 +1472,8 @@
    "url": "https://github.com/VictorTaelin/OptMem",
    "week": "2026-W31",
    "stars_then": 417,
-   "stars_now": 1133,
-   "ratio": 2.7,
+   "stars_now": 1253,
+   "ratio": 3.0,
    "reason": "426 个 token 实现 AI agent 永久记忆——极简到让人怀疑是不是在开玩笑。",
    "analysis": {
     "zh": "OptMem 用仅 426 token 的 prompt 和一个脚本为 AI agent 提供永久记忆。417 star 证明了极简方案的吸引力，但实际效果和可靠性需要更多验证。",
@@ -1135,8 +1486,8 @@
    "url": "https://github.com/ddcat-ai/open-ai-canvas",
    "week": "2026-W31",
    "stars_then": 189,
-   "stars_now": 495,
-   "ratio": 2.6,
+   "stars_now": 568,
+   "ratio": 3.0,
    "reason": "面向AI影视创作的开源无限画布工作台，集成多模态生成、分镜编排等功能。",
    "analysis": {
     "zh": "Open-AI Canvas是一个面向AI影视创作的开源无限画布工作台，集成了多模态生成、分镜编排等功能。",
@@ -1144,17 +1495,31 @@
    }
   },
   {
-   "id": "github:yetone/kill-ai-slop",
-   "name": "yetone/kill-ai-slop",
-   "url": "https://github.com/yetone/kill-ai-slop",
+   "id": "github:cosmtrek/mindwalk",
+   "name": "cosmtrek/mindwalk",
+   "url": "https://github.com/cosmtrek/mindwalk",
    "week": "2026-W29",
-   "stars_then": 384,
-   "stars_now": 904,
-   "ratio": 2.4,
-   "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
+   "stars_then": 421,
+   "stars_now": 1183,
+   "ratio": 2.8,
+   "reason": "把编码智能体的会话回放到代码库的 3D 地图上漫游，看 AI 写代码像看城市延时摄影。",
    "analysis": {
-    "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
-    "en": "A field guide to the visual and copy tics of AI-generated products, plus an Agent Skill that scans your project and strips them out. Using AI to kill the 'AI look' — self-referential humor over a real pain: homogenized AI aesthetics now hurt conversion."
+    "zh": "把编码智能体的会话记录回放到代码库的 3D 城市地图上，看 AI 在你的代码里「走过哪些街区」。开发者可观测性做成了城市漫游，审美和工程趣味兼备，一周 421 star。",
+    "en": "Replays coding-agent sessions on a 3D city map of your codebase — watch which 'blocks' the AI walked through. Developer observability turned into urban sightseeing; 421 stars in week one, equal parts aesthetic and engineering delight."
+   }
+  },
+  {
+   "id": "github:jd-opensource/JoyAI-Video-Edit",
+   "name": "jd-opensource/JoyAI-Video-Edit",
+   "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+   "week": "2026-W32",
+   "stars_then": 424,
+   "stars_now": 1147,
+   "ratio": 2.7,
+   "reason": "实时开放式视频编辑工具，支持自动回归扩散算法。",
+   "analysis": {
+    "zh": "JoyAI-Video-Edit是一个基于自动回归扩散算法的实时视频编辑软件，允许用户以更灵活的方式处理视频素材。",
+    "en": "JoyAI-Video-Edit is a real-time video editing software based on autoregressive diffusion, allowing users to handle video materials in a more flexible manner."
    }
   },
   {
@@ -1163,12 +1528,26 @@
    "url": "https://github.com/codejunkie99/graph-engineering",
    "week": "2026-W31",
    "stars_then": 146,
-   "stars_now": 341,
-   "ratio": 2.3,
+   "stars_now": 401,
+   "ratio": 2.7,
    "reason": "图形工程知识图谱管道和任务图编排模式，作为Claude技能。",
    "analysis": {
     "zh": "该项目是一个图形工程知识图谱管道和任务图编排模式，作为Claude技能提供。",
     "en": "This project is a knowledge-graph pipeline and task-graph orchestration patterns for graph engineering, provided as a Claude skill."
+   }
+  },
+  {
+   "id": "github:yetone/kill-ai-slop",
+   "name": "yetone/kill-ai-slop",
+   "url": "https://github.com/yetone/kill-ai-slop",
+   "week": "2026-W29",
+   "stars_then": 384,
+   "stars_now": 969,
+   "ratio": 2.5,
+   "reason": "用 AI 技能扫描并清除产品里的「AI 味」，自我指涉的幽默感拉满，痛点真实。",
+   "analysis": {
+    "zh": "一份「AI 味」视觉与文案抽搐清单，外加一个扫描你的项目并清除这些抽搐的 Agent Skill。用 AI 杀 AI 味，自我指涉的幽默背后是真实痛点：产品同质化的 AI 审美已经开始伤害转化率。",
+    "en": "A field guide to the visual and copy tics of AI-generated products, plus an Agent Skill that scans your project and strips them out. Using AI to kill the 'AI look' — self-referential humor over a real pain: homogenized AI aesthetics now hurt conversion."
    }
   },
   {
@@ -1177,12 +1556,40 @@
    "url": "https://github.com/Jakubantalik/thinking-orbs",
    "week": "2026-W31",
    "stars_then": 1114,
-   "stars_now": 2090,
-   "ratio": 1.9,
+   "stars_now": 2404,
+   "ratio": 2.2,
    "reason": "给 AI 界面做的「思考中」加载动画，六种状态两种尺寸，小而美的 UI 组件。",
    "analysis": {
     "zh": "thinking-orbs 是一套为 AI 和 agent 界面设计的点阵思考球加载指示器，提供六种调优状态、两种尺寸和自动明暗适配。1100+ star 说明 AI UI 组件的需求真实存在。",
     "en": "thinking-orbs is a set of dotted thought-orb loading indicators designed for AI and agent UIs, offering six tuned states, two sizes, and auto dark/light adaptation. 1100+ stars confirm real demand for AI UI components."
+   }
+  },
+  {
+   "id": "github:AmazingAng/old-coder",
+   "name": "AmazingAng/old-coder",
+   "url": "https://github.com/AmazingAng/old-coder",
+   "week": "2026-W31",
+   "stars_then": 186,
+   "stars_now": 416,
+   "ratio": 2.2,
+   "reason": "Old-Coder提供了一种老程序员的策略，通过证据优先的方法来开发编码代理。",
+   "analysis": {
+    "zh": "Old-Coder提供了一种老程序员的策略，通过证据优先的方法来开发编码代理。",
+    "en": "Old-Coder provides an old coder's strategy for developing coding agents using an evidence-first approach."
+   }
+  },
+  {
+   "id": "github:gnipbao/story-to-handdrawn-video",
+   "name": "gnipbao/story-to-handdrawn-video",
+   "url": "https://github.com/gnipbao/story-to-handdrawn-video",
+   "week": "2026-W31",
+   "stars_then": 656,
+   "stars_now": 1369,
+   "ratio": 2.1,
+   "reason": "把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。",
+   "analysis": {
+    "zh": "story-to-handdrawn-video 将中文故事文案或有序图片转换为手绘日记漫画风格的动画 MP4。656 star 证明了「AI+手绘+视频」组合的大众吸引力，是本周最有趣的创意工具。",
+    "en": "story-to-handdrawn-video converts Chinese story copy or ordered images into hand-drawn diary-comic style animation MP4s. 656 stars prove the mass appeal of the 'AI + hand-drawn + video' combination, making it this week's most delightful creative tool."
    }
   },
   {
@@ -1191,12 +1598,68 @@
    "url": "https://github.com/bkingfilm/lapian-notes",
    "week": "2026-W29",
    "stars_then": 308,
-   "stars_now": 586,
-   "ratio": 1.9,
+   "stars_now": 639,
+   "ratio": 2.1,
    "reason": "把电影变成可拆解的拉片笔记：抽帧、剧情泳道、情绪曲线，影迷和影视生的心头好。",
    "analysis": {
     "zh": "把电影变成 AI 辅助的拉片笔记：本地抽帧、剧情泳道时间轴、结构树、情绪曲线、段落深拆。影视学习的重度工具，影迷、编剧、影视生的心头好，本地处理也避开了版权雷区。",
     "en": "Turns films into AI-assisted shot-analysis notes: local frame extraction, plot swim-lanes, structure trees, emotion curves, scene breakdowns. A heavy-duty tool for film study — cinephiles, screenwriters, film students — with local processing sidestepping copyright landmines."
+   }
+  },
+  {
+   "id": "github:deerwork-ai/deer-workflow",
+   "name": "deerwork-ai/deer-workflow",
+   "url": "https://github.com/deerwork-ai/deer-workflow",
+   "week": "2026-W31",
+   "stars_then": 225,
+   "stars_now": 472,
+   "ratio": 2.1,
+   "reason": "开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
+   "analysis": {
+    "zh": "该项目是一个开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
+    "en": "This project is an open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable agent runtimes."
+   }
+  },
+  {
+   "id": "github:hahhforest/pi-textbook",
+   "name": "hahhforest/pi-textbook",
+   "url": "https://github.com/hahhforest/pi-textbook",
+   "week": "2026-W31",
+   "stars_then": 520,
+   "stars_now": 1036,
+   "ratio": 2.0,
+   "reason": "沿 15 个真实 checkpoint 从零构建 Pi-style Agent，学 agent 开发的好教材。",
+   "analysis": {
+    "zh": "《动手学 Pi》是一本交互式教材，通过 15 个真实 checkpoint 教读者从零构建 Pi 风格的 agent。520 star 说明 agent 开发教育有市场，但内容深度有待验证。",
+    "en": "'Hands-on Pi' is an interactive textbook teaching readers to build a Pi-style agent from scratch through 15 real checkpoints. 520 stars indicate a market for agent development education, though content depth remains to be verified."
+   }
+  },
+  {
+   "id": "github:xiaotianfotos/homerail",
+   "name": "xiaotianfotos/homerail",
+   "url": "https://github.com/xiaotianfotos/homerail",
+   "week": "2026-W29",
+   "stars_then": 501,
+   "stars_now": 877,
+   "ratio": 1.8,
+   "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
+   "analysis": {
+    "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
+    "en": "A voice-first local agent-orchestration runtime that organizes workflows as auditable DAGs — command your home automation by talking. Local-plus-auditable hits privacy anxiety squarely; a rare 'home-use' position in agent infra."
+   }
+  },
+  {
+   "id": "github:AMAP-ML/LongHorizon-Harness",
+   "name": "AMAP-ML/LongHorizon-Harness",
+   "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+   "week": "2026-W32",
+   "stars_then": 393,
+   "stars_now": 709,
+   "ratio": 1.8,
+   "reason": "长视野计算机使用套件，支持跨桌面应用程序和CLI长时间运行AI代理。",
+   "analysis": {
+    "zh": "LongHorizon-Harness是一个支持AI代理在桌面应用和命令行界面长时间运行的工具，同时保持任务状态和可靠地推进复杂工作流程。",
+    "en": "LongHorizon-Harness is a tool that supports AI agents running across desktop apps and the CLI for extended periods, maintaining task state and reliably advancing complex workflows."
    }
   },
   {
@@ -1214,73 +1677,17 @@
    }
   },
   {
-   "id": "github:deerwork-ai/deer-workflow",
-   "name": "deerwork-ai/deer-workflow",
-   "url": "https://github.com/deerwork-ai/deer-workflow",
-   "week": "2026-W31",
-   "stars_then": 225,
-   "stars_now": 405,
-   "ratio": 1.8,
-   "reason": "开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
+   "id": "github:alikon-art/DeterminFlow",
+   "name": "alikon-art/DeterminFlow",
+   "url": "https://github.com/alikon-art/DeterminFlow",
+   "week": "2026-W32",
+   "stars_then": 253,
+   "stars_now": 392,
+   "ratio": 1.5,
+   "reason": "面向生产的AI工作流运行时，用于构建、验证和恢复复杂AI工作流。",
    "analysis": {
-    "zh": "该项目是一个开源图形工程运行时，保持TypeScript编排并将语义工作委托给可替换的代理运行时。",
-    "en": "This project is an open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable agent runtimes."
-   }
-  },
-  {
-   "id": "github:AmazingAng/old-coder",
-   "name": "AmazingAng/old-coder",
-   "url": "https://github.com/AmazingAng/old-coder",
-   "week": "2026-W31",
-   "stars_then": 186,
-   "stars_now": 335,
-   "ratio": 1.8,
-   "reason": "Old-Coder提供了一种老程序员的策略，通过证据优先的方法来开发编码代理。",
-   "analysis": {
-    "zh": "Old-Coder提供了一种老程序员的策略，通过证据优先的方法来开发编码代理。",
-    "en": "Old-Coder provides an old coder's strategy for developing coding agents using an evidence-first approach."
-   }
-  },
-  {
-   "id": "github:xiaotianfotos/homerail",
-   "name": "xiaotianfotos/homerail",
-   "url": "https://github.com/xiaotianfotos/homerail",
-   "week": "2026-W29",
-   "stars_then": 501,
-   "stars_now": 856,
-   "ratio": 1.7,
-   "reason": "语音优先的本地智能体编排运行时，可审计 DAG 工作流，家庭自动化的正经底座。",
-   "analysis": {
-    "zh": "语音优先的本地智能体编排运行时，把智能体工作流组织成可审计的 DAG，动口不动手地指挥家里的自动化。本地+可审计双卖点踩中隐私焦虑，是 agent 基建里少见的「家用」定位。",
-    "en": "A voice-first local agent-orchestration runtime that organizes workflows as auditable DAGs — command your home automation by talking. Local-plus-auditable hits privacy anxiety squarely; a rare 'home-use' position in agent infra."
-   }
-  },
-  {
-   "id": "github:gnipbao/story-to-handdrawn-video",
-   "name": "gnipbao/story-to-handdrawn-video",
-   "url": "https://github.com/gnipbao/story-to-handdrawn-video",
-   "week": "2026-W31",
-   "stars_then": 656,
-   "stars_now": 951,
-   "ratio": 1.4,
-   "reason": "把中文故事变成手绘日记风动画视频，这个创意让人想立刻试试。",
-   "analysis": {
-    "zh": "story-to-handdrawn-video 将中文故事文案或有序图片转换为手绘日记漫画风格的动画 MP4。656 star 证明了「AI+手绘+视频」组合的大众吸引力，是本周最有趣的创意工具。",
-    "en": "story-to-handdrawn-video converts Chinese story copy or ordered images into hand-drawn diary-comic style animation MP4s. 656 stars prove the mass appeal of the 'AI + hand-drawn + video' combination, making it this week's most delightful creative tool."
-   }
-  },
-  {
-   "id": "github:hahhforest/pi-textbook",
-   "name": "hahhforest/pi-textbook",
-   "url": "https://github.com/hahhforest/pi-textbook",
-   "week": "2026-W31",
-   "stars_then": 520,
-   "stars_now": 743,
-   "ratio": 1.4,
-   "reason": "沿 15 个真实 checkpoint 从零构建 Pi-style Agent，学 agent 开发的好教材。",
-   "analysis": {
-    "zh": "《动手学 Pi》是一本交互式教材，通过 15 个真实 checkpoint 教读者从零构建 Pi 风格的 agent。520 star 说明 agent 开发教育有市场，但内容深度有待验证。",
-    "en": "'Hands-on Pi' is an interactive textbook teaching readers to build a Pi-style agent from scratch through 15 real checkpoints. 520 stars indicate a market for agent development education, though content depth remains to be verified."
+    "zh": "DeterminFlow是一个专注于生产环境下的AI工作流管理平台，旨在帮助企业快速开发、测试及部署复杂的AI服务。",
+    "en": "DeterminFlow is an AI workflow runtime focused on the production environment, aimed at helping businesses quickly develop, test, and deploy complex AI services."
    }
   },
   {
@@ -1289,7 +1696,7 @@
    "url": "https://github.com/gavamedia/deltafin",
    "week": "2026-W31",
    "stars_then": 526,
-   "stars_now": 720,
+   "stars_now": 755,
    "ratio": 1.4,
    "reason": "DeltaFin允许在单个设备上运行完整的Kimi K3，并提供OpenAI兼容的API服务器。",
    "analysis": {
@@ -1303,12 +1710,40 @@
    "url": "https://github.com/Eversmile12/leaked-llm-prompts",
    "week": "2026-W31",
    "stars_then": 243,
-   "stars_now": 343,
+   "stars_now": 344,
    "ratio": 1.4,
    "reason": "各大 LLM 的系统 prompt 泄露合集——窥探 AI 的「潜意识」，吃瓜群众最爱。",
    "analysis": {
     "zh": "这是一个收集各大 LLM 泄露系统 prompt 的仓库。243 star 说明人们对 AI 内部指令有强烈好奇心。有研究和教育价值，但法律和伦理边界模糊。",
     "en": "This is a repository collecting leaked system prompts from major LLMs. 243 stars confirm strong public curiosity about AI internal instructions. It has research and educational value, but legal and ethical boundaries are blurry."
+   }
+  },
+  {
+   "id": "github:Ayin1412/ForzaHorizon6-VisionAI",
+   "name": "Ayin1412/ForzaHorizon6-VisionAI",
+   "url": "https://github.com/Ayin1412/ForzaHorizon6-VisionAI",
+   "week": "2026-W31",
+   "stars_then": 86,
+   "stars_now": 117,
+   "ratio": 1.4,
+   "reason": "ForzaHorizon6-VisionAI是一个基于摄像头的闭环驾驶代理，用于Forza Horizon 6游戏。",
+   "analysis": {
+    "zh": "ForzaHorizon6-VisionAI是一个基于摄像头的闭环驾驶代理，用于Forza Horizon 6游戏。",
+    "en": "ForzaHorizon6-VisionAI is a camera-only closed-loop driving agent for Forza Horizon 6."
+   }
+  },
+  {
+   "id": "github:mikehasa/agentacct",
+   "name": "mikehasa/agentacct",
+   "url": "https://github.com/mikehasa/agentacct",
+   "week": "2026-W31",
+   "stars_then": 446,
+   "stars_now": 588,
+   "ratio": 1.3,
+   "reason": "给 coding agent 做「工作审计」：read-only 分析日志，零 JS 本地仪表盘。",
+   "analysis": {
+    "zh": "agentacct 是一个本地优先的 agent 工作智能工具，只读分析 coding agent 日志，提供使用真相和工作记录。446 star 说明 agent 可观测性是一个真实痛点。",
+    "en": "agentacct is a local-first agent work intelligence tool that read-only analyzes coding agent logs, providing usage truth and work records. 446 stars confirm agent observability is a real pain point."
    }
   },
   {
@@ -1331,7 +1766,7 @@
    "url": "https://github.com/Loki200399/india-itr-copilot",
    "week": "2026-W31",
    "stars_then": 116,
-   "stars_now": 147,
+   "stars_now": 148,
    "ratio": 1.3,
    "reason": "India-ITR-Copilot是一个帮助印度所得税申报的辅助工具。",
    "analysis": {
@@ -1340,17 +1775,31 @@
    }
   },
   {
-   "id": "github:mikehasa/agentacct",
-   "name": "mikehasa/agentacct",
-   "url": "https://github.com/mikehasa/agentacct",
-   "week": "2026-W31",
-   "stars_then": 446,
-   "stars_now": 548,
+   "id": "github:thebuggeddev/anatomy",
+   "name": "thebuggeddev/anatomy",
+   "url": "https://github.com/thebuggeddev/anatomy",
+   "week": "2026-W32",
+   "stars_then": 1991,
+   "stars_now": 2399,
    "ratio": 1.2,
-   "reason": "给 coding agent 做「工作审计」：read-only 分析日志，零 JS 本地仪表盘。",
+   "reason": "交互式3D人体解剖学探索器，结合GPT实现智能解答。",
    "analysis": {
-    "zh": "agentacct 是一个本地优先的 agent 工作智能工具，只读分析 coding agent 日志，提供使用真相和工作记录。446 star 说明 agent 可观测性是一个真实痛点。",
-    "en": "agentacct is a local-first agent work intelligence tool that read-only analyzes coding agent logs, providing usage truth and work records. 446 stars confirm agent observability is a real pain point."
+    "zh": "该项目是一个基于Three.js和GPT 5.6构建的交互式3D人体解剖学探索工具，用户可以通过自然语言查询了解人体结构。",
+    "en": "This project is an interactive 3D human anatomy explorer built using Three.js and GPT 5.6, allowing users to inquire about the structure of the human body through natural language queries."
+   }
+  },
+  {
+   "id": "github:criptogus/HermesOffice",
+   "name": "criptogus/HermesOffice",
+   "url": "https://github.com/criptogus/HermesOffice",
+   "week": "2026-W32",
+   "stars_then": 415,
+   "stars_now": 495,
+   "ratio": 1.2,
+   "reason": "集成原生Hermes Agent AI的办公套件，提升生产力。",
+   "analysis": {
+    "zh": "HermesOffice是一款基于GenOffice（Apache-2.0）开发的AI原生办公软件套装，集成了Hermes Agent AI以增强功能。",
+    "en": "HermesOffice is an AI-native office suite forked from GenOffice (Apache-2.0), integrated with Hermes Agent AI to enhance its functionalities."
    }
   },
   {
@@ -1359,7 +1808,7 @@
    "url": "https://github.com/Invaro/opentax-engine",
    "week": "2026-W31",
    "stars_then": 117,
-   "stars_now": 135,
+   "stars_now": 137,
    "ratio": 1.2,
    "reason": "确定性税务引擎，得分最高记录在TaxCalcBench上。",
    "analysis": {
@@ -1368,17 +1817,17 @@
    }
   },
   {
-   "id": "github:Ayin1412/ForzaHorizon6-VisionAI",
-   "name": "Ayin1412/ForzaHorizon6-VisionAI",
-   "url": "https://github.com/Ayin1412/ForzaHorizon6-VisionAI",
+   "id": "github:realchendahuang/pi-config",
+   "name": "realchendahuang/pi-config",
+   "url": "https://github.com/realchendahuang/pi-config",
    "week": "2026-W31",
-   "stars_then": 86,
-   "stars_now": 107,
+   "stars_then": 105,
+   "stars_now": 126,
    "ratio": 1.2,
-   "reason": "ForzaHorizon6-VisionAI是一个基于摄像头的闭环驾驶代理，用于Forza Horizon 6游戏。",
+   "reason": "Pi-Config提供了一个一键安装和教程README的树莓派编码代理设置。",
    "analysis": {
-    "zh": "ForzaHorizon6-VisionAI是一个基于摄像头的闭环驾驶代理，用于Forza Horizon 6游戏。",
-    "en": "ForzaHorizon6-VisionAI is a camera-only closed-loop driving agent for Forza Horizon 6."
+    "zh": "Pi-Config提供了一个一键安装和教程README的树莓派编码代理设置。",
+    "en": "Pi-Config offers a one-line installer and tutorial README for setting up a Raspberry Pi coding agent."
    }
   },
   {
@@ -1401,7 +1850,7 @@
    "url": "https://github.com/realfishsam/agent-notch",
    "week": "2026-W31",
    "stars_then": 280,
-   "stars_now": 296,
+   "stars_now": 299,
    "ratio": 1.1,
    "reason": "把 Mac 刘海变成 agent 状态栏——开源版 vibe-island，创意满分。",
    "analysis": {
@@ -1415,7 +1864,7 @@
    "url": "https://github.com/risa-labs-inc/BossConsole",
    "week": "2026-W31",
    "stars_then": 200,
-   "stars_now": 216,
+   "stars_now": 220,
    "ratio": 1.1,
    "reason": "开源多平台AI代理控制台，集成浏览器、终端、编辑器和100+ MCP工具。",
    "analysis": {
@@ -1424,26 +1873,12 @@
    }
   },
   {
-   "id": "github:realchendahuang/pi-config",
-   "name": "realchendahuang/pi-config",
-   "url": "https://github.com/realchendahuang/pi-config",
-   "week": "2026-W31",
-   "stars_then": 105,
-   "stars_now": 118,
-   "ratio": 1.1,
-   "reason": "Pi-Config提供了一个一键安装和教程README的树莓派编码代理设置。",
-   "analysis": {
-    "zh": "Pi-Config提供了一个一键安装和教程README的树莓派编码代理设置。",
-    "en": "Pi-Config offers a one-line installer and tutorial README for setting up a Raspberry Pi coding agent."
-   }
-  },
-  {
    "id": "github:yaoleifly/ai-stock-pool",
    "name": "yaoleifly/ai-stock-pool",
    "url": "https://github.com/yaoleifly/ai-stock-pool",
    "week": "2026-W31",
    "stars_then": 86,
-   "stars_now": 93,
+   "stars_now": 98,
    "ratio": 1.1,
    "reason": "AI-Stock-Pool提供了一个AI行业链股票池，支持美股/A股映射、主动发现和一键部署。",
    "analysis": {
@@ -1452,12 +1887,26 @@
    }
   },
   {
+   "id": "github:Binaryify/open-kimi-ppt-skill",
+   "name": "Binaryify/open-kimi-ppt-skill",
+   "url": "https://github.com/Binaryify/open-kimi-ppt-skill",
+   "week": "2026-W32",
+   "stars_then": 1586,
+   "stars_now": 1599,
+   "ratio": 1.0,
+   "reason": "让AI代理生成可编辑PPT并附带本地浏览器编辑器，提高工作效率。",
+   "analysis": {
+    "zh": "这是一个非官方的Kimi Slides技能插件，能够通过AI代理生成可编辑的PPT文件，并配备了一个可以在本地运行的浏览器编辑器。",
+    "en": "This is an unofficial Kimi Slides skill that allows AI agents to generate editable PPT files, equipped with a local browser editor."
+   }
+  },
+  {
    "id": "github:KORAYTEACHER/fintech-advisor",
    "name": "KORAYTEACHER/fintech-advisor",
    "url": "https://github.com/KORAYTEACHER/fintech-advisor",
    "week": "2026-W29",
    "stars_then": 173,
-   "stars_now": 166,
+   "stars_now": 168,
    "ratio": 1.0,
    "reason": "AI 投资组合顾问，赛道有钱但同类拥挤，未见差异化亮点。",
    "analysis": {
@@ -1471,7 +1920,7 @@
    "url": "https://github.com/nopnoping/micro-vllm",
    "week": "2026-W31",
    "stars_then": 110,
-   "stars_now": 112,
+   "stars_now": 113,
    "ratio": 1.0,
    "reason": "Micro-VLLM是一个小型的教育性质的vLLM实现，用于探索LLM推理、调度和GPU执行。",
    "analysis": {
@@ -1485,7 +1934,7 @@
    "url": "https://github.com/WutIsHummus/TrueDeck",
    "week": "2026-W31",
    "stars_then": 117,
-   "stars_now": 108,
+   "stars_now": 111,
    "ratio": 0.9,
    "reason": "TrueDeck提供了一个免费的多代理编码工作台，包含Grok/Codex/Claude/Cursor面板和TrueMemory功能。",
    "analysis": {
@@ -1499,7 +1948,7 @@
    "url": "https://github.com/CWS6206/EasyLastSkill",
    "week": "2026-W29",
    "stars_then": 234,
-   "stars_now": 156,
+   "stars_now": 155,
    "ratio": 0.7,
    "reason": "德语区的近期话题速查智能体技能，功能朴素，受众偏窄。",
    "analysis": {

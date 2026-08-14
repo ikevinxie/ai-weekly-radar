@@ -1,0 +1,772 @@
+[
+ {
+  "id": "arxiv:2608.13560v1",
+  "name": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+  "url": "https://arxiv.org/abs/2608.13560v1",
+  "source": "arxiv",
+  "description": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to drive recursive self-improvement, existing paradigms remain static and fall short of this capability. In this paper, we present AutoDesign, a framework that aligns with human design",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13558v1",
+  "name": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+  "url": "https://arxiv.org/abs/2608.13558v1",
+  "source": "arxiv",
+  "description": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the ag",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13555v1",
+  "name": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+  "url": "https://arxiv.org/abs/2608.13555v1",
+  "source": "arxiv",
+  "description": "Humanoid motion tracking is central to teleoperation and whole-body imitation, yet evaluation often disagrees with what people perceive in videos. Kinematic errors average per-frame pose differences but miss the physical artifacts that matter most, particularly unstable support and incorrect contacts such as foot skating and mistimed touch-downs. Meanwhile, widely used test suites are small and lack the diversity needed to stress contact-rich, long-horizon behaviors. We introduce HumanTracker to",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13554v1",
+  "name": "Defensive Boosting for Online Probabilistic Forecasting",
+  "url": "https://arxiv.org/abs/2608.13554v1",
+  "source": "arxiv",
+  "description": "We study online probabilistic forecasting of binary outcomes chosen by an adaptive adversary. Given an online learning algorithm for a weak hypothesis class $H$, we would like to efficiently obtain two incomparable guarantees that existing online boosting techniques provide separately. Online gradient boosting competes in Brier score with the best predictor induced by the span of $H$ on every sequence, but promises nothing when the span does not contain an accurate predictor. Online weak-to-stro",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13549v1",
+  "name": "Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure",
+  "url": "https://arxiv.org/abs/2608.13549v1",
+  "source": "arxiv",
+  "description": "The per-instance Jaccard score, or intersection over union (IoU), is standard in multi-label classification and binary segmentation. With $s$ labels, its loss matrix has $2^s$ outcomes and reports. Under the convention $\\mathrm{Jac}(\\varnothing,\\varnothing)=1$, we prove that the Jaccard score, shifted-loss, and ordinary loss matrices are nonsingular and that the loss columns have affine dimension $2^s-1$. The proof combines a finite MinHash Gram representation with Boolean Möbius inversion. For",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13547v1",
+  "name": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+  "url": "https://arxiv.org/abs/2608.13547v1",
+  "source": "arxiv",
+  "description": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point re",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13545v1",
+  "name": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+  "url": "https://arxiv.org/abs/2608.13545v1",
+  "source": "arxiv",
+  "description": "Modern language models are trained on heterogeneous web-scale text corpora. Consequently, studying knowledge and skill acquisition is difficult, as prior exposure to related content is hard to characterize. To address this challenge, we introduce LITTLECURRICULUM, a curated 88B-token pretraining corpus tailored to U.S. elementary school material, explicitly excluding concepts, facts, and vocabulary taught above Grade 5. Training a 5B-parameter LLM from scratch on LITTLECURRICULUM yields LITTLELE",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13524v1",
+  "name": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+  "url": "https://arxiv.org/abs/2608.13524v1",
+  "source": "arxiv",
+  "description": "Speculative decoding losslessly accelerates autoregressive language models by verifying multiple draft tokens in parallel. Diffusion-based drafters further reduce proposal latency by predicting an entire token block in parallel, but their position-wise distributions are marginal rather than conditioned on tokens selected along each draft path. Existing recurrent correction incorporates causal information along a single draft chain, whereas diffusion-based tree construction broadens candidate cov",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13522v1",
+  "name": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+  "url": "https://arxiv.org/abs/2608.13522v1",
+  "source": "arxiv",
+  "description": "AI agents are increasingly used for programming, but do not provide any guarantee on the correctness of generated code. Verified code generation, in which an agent produces both an implementation and a machine-checked proof of its specification, offers a stronger path toward trustworthy AI-generated software. Existing benchmarks in this direction either focus on individual functions or only evaluate proof generation with provided implementations. It is still an open question whether agents can m",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "arxiv:2608.13521v1",
+  "name": "Exponential quantum advantage for learning signals with a single qubit",
+  "url": "https://arxiv.org/abs/2608.13521v1",
+  "source": "arxiv",
+  "description": "Quantum technology has the potential to transform scientific discovery, but quantum advantages often require processing capabilities well beyond the reach of experimental platforms. We show that coupling a single controllable qubit to an otherwise conventional sensor can exponentially reduce the number of measurements required to learn classical signals. These rigorous quantum advantages apply to fundamental sensing tasks, including learning Fourier coefficients, extracting temporal correlations",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "github:guillaumemeyer/watermarks-remover",
+  "name": "guillaumemeyer/watermarks-remover",
+  "url": "https://github.com/guillaumemeyer/watermarks-remover",
+  "source": "github",
+  "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 6752,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:Leutenegger/book-to-skill",
+  "name": "Leutenegger/book-to-skill",
+  "url": "https://github.com/Leutenegger/book-to-skill",
+  "source": "github",
+  "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 1054,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:SaladDay/pi-from-scratch",
+  "name": "SaladDay/pi-from-scratch",
+  "url": "https://github.com/SaladDay/pi-from-scratch",
+  "source": "github",
+  "description": "600 行 TypeScript 写成的超级迷你版 pi，让你轻松从 0 写出属于你的 pi-agent",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 958,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:ayi-ai/nie-grassroots-logic",
+  "name": "ayi-ai/nie-grassroots-logic",
+  "url": "https://github.com/ayi-ai/nie-grassroots-logic",
+  "source": "github",
+  "description": "聂·基层运行逻辑 · Agent Skill：基于聂辉华《基层中国的运行逻辑》的方法论工具箱（不含原书全文）",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 465,
+   "language": "HTML"
+  }
+ },
+ {
+  "id": "github:i3T4AN/KADATH",
+  "name": "i3T4AN/KADATH",
+  "url": "https://github.com/i3T4AN/KADATH",
+  "source": "github",
+  "description": "Evolutionary multi-agent runtime that breeds, evaluates, and improves autonomous agents across reproducible epochs to converge on optimization of a goal.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 351,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:0xsline/awesome-deepseek-harness",
+  "name": "0xsline/awesome-deepseek-harness",
+  "url": "https://github.com/0xsline/awesome-deepseek-harness",
+  "source": "github",
+  "description": "DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 348,
+   "language": "Python"
+  }
+ },
+ {
+  "id": "github:Anionex/dsh-vision-toolkit",
+  "name": "Anionex/dsh-vision-toolkit",
+  "url": "https://github.com/Anionex/dsh-vision-toolkit",
+  "source": "github",
+  "description": "让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, long-screenshot OCR, UI restoration, grounding, pixel diff, Artifacts, and Web UI.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 300,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:DrHazemAli/enterprise-system-design",
+  "name": "DrHazemAli/enterprise-system-design",
+  "url": "https://github.com/DrHazemAli/enterprise-system-design",
+  "source": "github",
+  "description": "A source-grounded course & reference for engineers designing systems that must survive real traffic, partial failure, security review, and changing requirements, spanning enterprise system design, distributed systems, AI systems, cybersecurity, reliability, cloud, HPC, edge, and mission-critical infrastructure.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 294,
+   "language": ""
+  }
+ },
+ {
+  "id": "github:decionis/agent-safe-pipeline",
+  "name": "decionis/agent-safe-pipeline",
+  "url": "https://github.com/decionis/agent-safe-pipeline",
+  "source": "github",
+  "description": "Reference architecture for AI agents that propose actions but cannot authorize them — immutable intent capture, an independent Decionis policy verdict (ALLOW/ESCALATE/BLOCK), verified human approval, and a SafeExecutor that consumes a single-use intent-bound grant.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 285,
+   "language": "TypeScript"
+  }
+ },
+ {
+  "id": "github:NousResearch/Hermes-Bot-Mode",
+  "name": "NousResearch/Hermes-Bot-Mode",
+  "url": "https://github.com/NousResearch/Hermes-Bot-Mode",
+  "source": "github",
+  "description": "Bot Mode for the Hermes desktop: a roster of named agents with their own chats, avatars, routines, and bot-to-bot messaging. Desktop plugin, no core patches.",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "stars": 282,
+   "language": "JavaScript"
+  }
+ },
+ {
+  "id": "hackernews:49241679",
+  "name": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+  "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+  "source": "hackernews",
+  "description": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 1202,
+   "comments": 637,
+   "hn_link": "https://news.ycombinator.com/item?id=49241679"
+  }
+ },
+ {
+  "id": "hackernews:49274600",
+  "name": "DeepSeek V4 Pro 0813",
+  "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+  "source": "hackernews",
+  "description": "DeepSeek V4 Pro 0813",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 1025,
+   "comments": 443,
+   "hn_link": "https://news.ycombinator.com/item?id=49274600"
+  }
+ },
+ {
+  "id": "hackernews:49271994",
+  "name": "AI is removing the middle class of software engineering?",
+  "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+  "source": "hackernews",
+  "description": "AI is removing the middle class of software engineering?",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 976,
+   "comments": 904,
+   "hn_link": "https://news.ycombinator.com/item?id=49271994"
+  }
+ },
+ {
+  "id": "hackernews:49250836",
+  "name": "As AI eats the web, the internet’s collective memory is disappearing",
+  "url": "https://thewalrus.ca/google-search-is-dying/",
+  "source": "hackernews",
+  "description": "As AI eats the web, the internet’s collective memory is disappearing",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 933,
+   "comments": 976,
+   "hn_link": "https://news.ycombinator.com/item?id=49250836"
+  }
+ },
+ {
+  "id": "hackernews:49289112",
+  "name": "Gemini 3.7 Flash",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+  "source": "hackernews",
+  "description": "Gemini 3.7 Flash",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 896,
+   "comments": 451,
+   "hn_link": "https://news.ycombinator.com/item?id=49289112"
+  }
+ },
+ {
+  "id": "hackernews:49239751",
+  "name": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+  "url": "https://www.docker.com/products/docker-sandboxes/",
+  "source": "hackernews",
+  "description": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 692,
+   "comments": 396,
+   "hn_link": "https://news.ycombinator.com/item?id=49239751"
+  }
+ },
+ {
+  "id": "hackernews:49285244",
+  "name": "DeepSeek Harness developer preview",
+  "url": "https://deepseek.com/harness/en/",
+  "source": "hackernews",
+  "description": "DeepSeek Harness developer preview",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 691,
+   "comments": 281,
+   "hn_link": "https://news.ycombinator.com/item?id=49285244"
+  }
+ },
+ {
+  "id": "hackernews:49289844",
+  "name": "Accelerating GPT-5.6 Sol Ultrafast",
+  "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+  "source": "hackernews",
+  "description": "Accelerating GPT-5.6 Sol Ultrafast",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 652,
+   "comments": 253,
+   "hn_link": "https://news.ycombinator.com/item?id=49289844"
+  }
+ },
+ {
+  "id": "hackernews:49243880",
+  "name": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+  "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+  "source": "hackernews",
+  "description": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 640,
+   "comments": 601,
+   "hn_link": "https://news.ycombinator.com/item?id=49243880"
+  }
+ },
+ {
+  "id": "hackernews:49213754",
+  "name": "Oracle bans AI-generated code from OpenJDK",
+  "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+  "source": "hackernews",
+  "description": "Oracle bans AI-generated code from OpenJDK",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "points": 535,
+   "comments": 382,
+   "hn_link": "https://news.ycombinator.com/item?id=49213754"
+  }
+ },
+ {
+  "id": "huggingface:space/Lynote/free-ai-detector",
+  "name": "Lynote/free-ai-detector",
+  "url": "https://huggingface.co/spaces/Lynote/free-ai-detector",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 218,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/agent-memory-leaderboard/leaderboard",
+  "name": "agent-memory-leaderboard/leaderboard",
+  "url": "https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 215,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/Alissonerdx/charactersheet-lora-demo",
+  "name": "Alissonerdx/charactersheet-lora-demo",
+  "url": "https://huggingface.co/spaces/Alissonerdx/charactersheet-lora-demo",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 133,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/shootstuff/flux-img2img-uncensored",
+  "name": "shootstuff/flux-img2img-uncensored",
+  "url": "https://huggingface.co/spaces/shootstuff/flux-img2img-uncensored",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 123,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+  "name": "MiniMaxAI/MiniMax-H3-Turbo-Lora",
+  "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 108,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/mrfakename/minimax-h3-ultra-fast",
+  "name": "mrfakename/minimax-h3-ultra-fast",
+  "url": "https://huggingface.co/spaces/mrfakename/minimax-h3-ultra-fast",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 98,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:space/LiquidAI/prompt-routing",
+  "name": "LiquidAI/prompt-routing",
+  "url": "https://huggingface.co/spaces/LiquidAI/prompt-routing",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 86,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "huggingface:paper/2608.13489",
+  "name": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+  "url": "https://huggingface.co/papers/2608.13489",
+  "source": "huggingface",
+  "description": "We present DreamX-Phi 1.0, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm SE(3) transfor",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "upvotes": 77,
+   "kind": "paper"
+  }
+ },
+ {
+  "id": "huggingface:paper/2608.13546",
+  "name": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+  "url": "https://huggingface.co/papers/2608.13546",
+  "source": "huggingface",
+  "description": "Interactive world models must support persistent memory, responsive interaction, and long-horizon generation, yet these requirements place conflicting demands on the model. Maintaining history in the denoiser context or key-value cache incurs growing cost, forcing a trade-off between session length and retained memory, while low-latency interaction relies on few-step generation whose capabilities are bounded by its teacher. Evoke addresses both limitations by externalizing persistent world state",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "upvotes": 75,
+   "kind": "paper"
+  }
+ },
+ {
+  "id": "huggingface:space/MiniMaxAI/MiniMax-Music3",
+  "name": "MiniMaxAI/MiniMax-Music3",
+  "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3",
+  "source": "huggingface",
+  "description": "",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "likes": 58,
+   "kind": "space"
+  }
+ },
+ {
+  "id": "producthunt:1221923",
+  "name": "Openmotion",
+  "url": "https://www.producthunt.com/products/openmotion",
+  "source": "producthunt",
+  "description": "Turn product screenshots and prompts into motion videos",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1222442",
+  "name": "Suno Studio 2.0",
+  "url": "https://www.producthunt.com/products/suno",
+  "source": "producthunt",
+  "description": "Browser-based generative DAW",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1222359",
+  "name": "Gemini 3.7 Flash",
+  "url": "https://www.producthunt.com/products/gemini-3-7-flash",
+  "source": "producthunt",
+  "description": "Google's smartest workhorse yet for coding & agents",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1222324",
+  "name": "Freebuff",
+  "url": "https://www.producthunt.com/products/freebuff-2",
+  "source": "producthunt",
+  "description": "Free coding agents to kill Claude, Cursor, Replit, and Devin",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1222175",
+  "name": "Port22",
+  "url": "https://www.producthunt.com/products/port22",
+  "source": "producthunt",
+  "description": "Claude Code, Codex & more on your phone",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1221363",
+  "name": "Munder Difflin",
+  "url": "https://www.producthunt.com/products/munder-difflin",
+  "source": "producthunt",
+  "description": "Make clones with Claude Code and Codex to do your work",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-12"
+  }
+ },
+ {
+  "id": "producthunt:1217183",
+  "name": "BrowserAct Cloud",
+  "url": "https://www.producthunt.com/products/browseract",
+  "source": "producthunt",
+  "description": "Scrape any data from any website with one prompt",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-07"
+  }
+ },
+ {
+  "id": "producthunt:1222158",
+  "name": "DeepSeek Harness",
+  "url": "https://www.producthunt.com/products/deepseek",
+  "source": "producthunt",
+  "description": "Composable agent harness where everything is a plugin",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-13"
+  }
+ },
+ {
+  "id": "producthunt:1221610",
+  "name": "ThreadPort",
+  "url": "https://www.producthunt.com/products/threadport",
+  "source": "producthunt",
+  "description": "Move AI chats between ChatGPT, Claude & Gemini in one click",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-12"
+  }
+ },
+ {
+  "id": "producthunt:1220712",
+  "name": "apra-fleet",
+  "url": "https://www.producthunt.com/products/apra-fleet",
+  "source": "producthunt",
+  "description": "Run a fleet of AI agents across your machines",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "published": "2026-08-11"
+  }
+ },
+ {
+  "id": "reddit:1vn8oya",
+  "name": "City2Graph: A Python library for Heterogeneous Graph Neural Networks and spatial analysis in urban systems [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vn8oya/city2graph_a_python_library_for_heterogeneous/",
+  "source": "reddit",
+  "description": "City2Graph is a Python library I built that turns geospatial data into analysis-ready graphs (for spatial analysis, network analysis, and Graph Neural Networks as GeoAI), and the paper describing it has just been published, so I wanted to share it here. Repository: https://github.com/c2g-dev/city2graph import city2graph as c2g # buildings + street segments -> heterogeneous morphological graph nodes, edges = c2g.morphological_graph(buildings, segments) # straight into PyTorch Geometric data = c2g",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 1,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vkrnb5",
+  "name": "Transformers are famously bad at arithmetic, so I set one's weights by hand (no training) and it multiplies with 100% accuracy [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vkrnb5/transformers_are_famously_bad_at_arithmetic_so_i/",
+  "source": "reddit",
+  "description": "Obviously nobody needs a transformer that&#39;s good at multiplication. I wanted to know whether a stock transformer could do exact arithmetic if I chose its weights directly. I implemented the grade-school algorithm as a computation graph and compiled it into an ordinary Phi-3 Hugging Face checkpoint using Torchwright, a compiler I wrote. No training. The three-digit calculator gets all 3,000,000 supported expressions right. I&#39;ve published checkpoints to Hugging Face that support up to 12 d",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 2,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vmhks7",
+  "name": "Would you choose a PhD advisor who gives you complete freedom but almost no guidance? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vmhks7/would_you_choose_a_phd_advisor_who_gives_you/",
+  "source": "reddit",
+  "description": "It’s an ML PhD with secure funding for 4–5 years and a senior, respected advisor. You get almost complete freedom to choose your own topics, projects, and collaborations, with very little micromanagement. The downside is that the advisor is also very hands-off. You should expect little guidance, feedback, or technical input. In practice, you would mostly be on your own. Would you see that as a dream setup because of the freedom, or as a dealbreaker because of the lack of mentorship? &#32;",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 3,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vj8lag",
+  "name": "73 NeurIPS workshops, and not a single one on Causality [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vj8lag/73_neurips_workshops_and_not_a_single_one_on/",
+  "source": "reddit",
+  "description": "Is this it for Causal Inference? Looks like the field continues to be of interest only at UAI/AISTATS/CLeaR. All good venues, but LLMs/Agents/etc seem to have eaten much of the lunch of several other subfields at the top 3 conferences. God help us all. **p.s.** the list: https://danyaljj.github.io/neurips2026-workshops/ &#32;",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 6,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vlu1se",
+  "name": "Decoupled Descent: Enforcing Exact Train-Test Error Tracking Via AMP Onsager Corrections [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/",
+  "source": "reddit",
+  "description": "Link: https://arxiv.org/pdf/2604.27883 Hi, Most of use are familiar with the headache of training a neural network using gradient descent where the training error may go to zero but the test error may stay the same as initialization or even increases. My paper treats this phenomena as a consequence of data reuse bias and can be isolated by studying full batch gradient descent on a set of stylize Gaussian mixture models. I turns out that this fundamental issue can be avoided using some clever tri",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 9,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vlfjy3",
+  "name": "Prospects of Finding a ML Engineering Job [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vlfjy3/prospects_of_finding_a_ml_engineering_job_d/",
+  "source": "reddit",
+  "description": "Hello all, I am wondering if a transition from a Ph.D. in electrical engineering (Quantum optics/photonics) to a job in ML is a reasonable aspiration. Personally, I have extensive software development experience competing and winning numerous coding competitions over the years, but most importantly my undergraduate research project was ML based (ML for SiC grating design optimization), I placed third in our universities \"Agri-AI\" competition which was basically just a big data project for the ag",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 10,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vj3oqr",
+  "name": "NeurIPS AI Assisted Review authors/reviewers? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vj3oqr/neurips_ai_assisted_review_authorsreviewers_d/",
+  "source": "reddit",
+  "description": "Out of curiosity, if you were a reviewer or author, how did the review period go? For me, it was weird, because I gave reviews with specific details (what specifically could have been better, how to fix it), but realized other reviewers gave similar superficial reviews. Even the paper which was a control for me (no LLM), I gave specific comments, but other reviewers focused on minor things. During the discussion period for one paper, one reviewer broke the double blindness condition, and gave sp",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 14,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vmvl4w",
+  "name": "chessformer_lens demo: ablating 1 of a chess transformer's 128 attention heads makes the model stop finding Morphy's queen sacrifice [P]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vmvl4w/chessformer_lens_demo_ablating_1_of_a_chess/",
+  "source": "reddit",
+  "description": "https://i.redd.it/ipz7i6ife1jh1.gif Notebooks to replicate on github! &#32;",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 15,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vkh1ul",
+  "name": "Comparing embedding models with synthetic query probing [R]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vkh1ul/comparing_embedding_models_with_synthetic_query/",
+  "source": "reddit",
+  "description": "Say you want to swap out your embedding models, for instance from ADA to Titan. Are these embedding models comparable? How do similarity score ranges compare? Where to put a threshold for minimum match when doing retrieval? Or more from a research point of view how can we relate and fundamentally understand these embedding spaces better? This is what we aim to solve with Synthetic Query Probing (SQP), a fancy name for essentially (and intentionally) a very simple approach: embedding spaces are n",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 16,
+   "subreddit": "MachineLearning"
+  }
+ },
+ {
+  "id": "reddit:1vi6im4",
+  "name": "What is currently considered the theoretically optimal quantization bit-width for LLMs? [D]",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1vi6im4/what_is_currently_considered_the_theoretically/",
+  "source": "reddit",
+  "description": "I’m curious whether there is now a theoretical or empirical “sweet spot” for LLM quantization, preferably research done using open-source formats like GGUF Suppose you have a fixed memory/compute budget and can choose the model size freely. For example, instead of a smaller model at 8-bit or 4-bit, you could fit a progressively larger model at 3-bit, 2-bit, 1.5-bit, etc. A few years ago, I remember 4-bit often being described as roughly the practical sweet spot because it preserved most model qu",
+  "collected_at": "2026-08-14",
+  "week": "2026-W33",
+  "metrics": {
+   "week_rank": 17,
+   "subreddit": "MachineLearning"
+  }
+ }
+]

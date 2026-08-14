@@ -1,0 +1,1463 @@
+{
+ "week": "2026-W33",
+ "trend": {
+  "zh": "本周AI项目聚焦于模型更新与开发者工具，特别是在自然语言处理和图像生成领域。DeepSeek、谷歌和Cerebras等公司发布了新的模型或技术预览，显示出对提高模型性能和效率的持续关注。同时，社区内关于开放性和伦理问题的讨论也在增加。\n",
+  "en": "This week, AI projects are focused on model updates and developer tools, particularly in natural language processing and image generation. Companies like DeepSeek, Google, and Cerebras have released new models or technology previews, showing a continued emphasis on improving model performance and efficiency. Meanwhile, discussions around openness and ethics within the community are also on the rise.\n",
+  "deep": {
+   "zh": "本周AI领域的风向明显朝向了模型迭代与技术创新，尤其是针对自然语言处理和图像生成的应用。DeepSeek发布V4 Pro 0813版本以及其Harness开发者预览版，为开发人员提供了更多可能性。与此同时，谷歌推出了Gemini 3.7 Flash模型，强调了在速度和准确性上的改进。此外，Cerebras加速GPT-5.6 Sol Ultrafast模型进一步展示了硬件加速对于模型训练的重要性。\n\n值得注意的是，马克·扎克伯格批评封闭式AI竞争对手的行为引起了广泛关注，这表明行业内对于开放性与透明度的需求正在增长。另一方面，甲骨文禁止OpenJDK中使用AI生成代码的规定，则引发了关于AI伦理及其实用性的讨论。这些趋势共同指向了一个更加注重协作与责任的未来方向。\n\n代表项目方面，arXiv上多个高分研究论文如2608.13558v1（总分21）探讨了先进的算法优化方法；而Hugging Face空间中的MiniMaxAI/MiniMax-Music3（总分18）则展现了音乐生成领域的最新进展。展望下周，预计将继续看到围绕模型创新、开源合作以及伦理考量方面的动态发展。\n",
+   "en": "The trend this week in the AI domain is clearly moving towards model iteration and technological innovation, especially for applications in natural language processing and image generation. DeepSeek's release of V4 Pro 0813 version and its Harness Developer Preview has opened up more possibilities for developers. At the same time, Google's launch of the Gemini 3.7 Flash model emphasizes improvements in speed and accuracy. Furthermore, Cerebras' acceleration of the GPT-5.6 Sol Ultrafast model further demonstrates the importance of hardware acceleration for model training.\n\nNotably, Mark Zuckerberg's criticism of closed AI competitors has garnered significant attention, indicating a growing demand for openness and transparency within the industry. On another note, Oracle's ban on using AI-generated code in OpenJDK has sparked discussions about AI ethics and practicality. These trends collectively point towards a future direction that places greater emphasis on collaboration and responsibility.\n\nIn terms of representative projects, several high-scoring research papers on arXiv such as 2608.13558v1 (total score 21) explore advanced algorithm optimization methods; while Hugging Face space's MiniMaxAI/MiniMax-Music3 (total score 18) showcases the latest developments in music generation. Looking ahead to next week, it is expected that we will continue to see dynamic developments surrounding model innovation, open-source collaboration, and ethical considerations."
+  }
+ },
+ "entries": [
+  {
+   "id": "github:guillaumemeyer/watermarks-remover",
+   "scores": {
+    "whimsy": 4,
+    "fun": 5,
+    "money": 6,
+    "total": 15
+   },
+   "reason": "去除多种AI水印，保护隐私和版权，适用于多种文件格式。",
+   "analysis": {
+    "zh": "该项目可以帮助用户去除图片、文档等多种文件中的AI水印，支持Unicode文本清理、统计重写钩子以及C2PA/元数据处理。",
+    "en": "This project helps users remove AI watermarks from various file types, supporting Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata processing."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Watermarks-Remover是一个开源工具，旨在帮助用户从PNG/JPEG/SVG/PDF/DOCX/HTML/MD等文件中去除多供应商的AI来源标记。",
+     "why": "随着AI生成内容越来越多地被使用，确保这些内容的合法性和隐私性变得尤为重要。该工具通过提供一个简便的方法来清理各种类型的文件，从而满足了这一需求。",
+     "biz": "对于需要频繁处理多媒体内容的企业和个人来说，这个工具具有很高的实用价值。它不仅能够提高工作效率，还能在一定程度上防止版权纠纷。"
+    },
+    "en": {
+     "what": "Watermarks-Remover is an open-source tool aimed at helping users remove multi-vendor AI provenance marks from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files.",
+     "why": "As the use of AI-generated content increases, ensuring its legality and privacy has become increasingly important. This tool meets this need by providing a simple way to clean up various types of files.",
+     "biz": "For businesses and individuals who frequently handle multimedia content, this tool holds high practical value. It not only improves work efficiency but also helps prevent copyright disputes to some extent."
+    }
+   },
+   "tags": [
+    "安全"
+   ]
+  },
+  {
+   "id": "github:Leutenegger/book-to-skill",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "将技术书籍转化为可直接使用的Claude Code技能，方便学习和参考。",
+   "analysis": {
+    "zh": "此项目可以将任何技术书籍PDF转换为Claude Code技能，便于学习、参考和工作中使用。",
+    "en": "This project can convert any technical book PDF into a Claude Code skill, making it easy for learning, reference, and use while working."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Book-to-Skill是一个Python编写的工具，它可以将技术书籍的内容转换成可以直接使用的Claude Code技能。",
+     "why": "对于技术人员来说，快速掌握新知识并将其应用到实际工作中是非常重要的。Book-to-Skill通过将书籍内容转化为可执行代码，极大地简化了学习过程。",
+     "biz": "该工具特别适合于那些希望提升团队技能水平或个人能力的技术公司和个人开发者。它能够显著减少培训成本，并加快新技术的应用速度。"
+    },
+    "en": {
+     "what": "Book-to-Skill is a Python-based tool that converts the content of technical books into directly usable Claude Code skills.",
+     "why": "For technical professionals, quickly mastering new knowledge and applying it to real work is crucial. Book-to-Skill greatly simplifies the learning process by converting book content into executable code.",
+     "biz": "This tool is particularly suitable for tech companies and individual developers looking to enhance their team's skill levels or personal capabilities. It can significantly reduce training costs and speed up the adoption of new technologies."
+    }
+   },
+   "tags": [
+    "教育"
+   ]
+  },
+  {
+   "id": "github:SaladDay/pi-from-scratch",
+   "scores": {
+    "whimsy": 5,
+    "fun": 7,
+    "money": 4,
+    "total": 16
+   },
+   "reason": "用600行TypeScript实现超级迷你版pi-agent，适合初学者学习。",
+   "analysis": {
+    "zh": "这是一个用600行TypeScript编写的超级迷你版pi-agent，旨在让初学者轻松从零开始编写自己的pi-agent。",
+    "en": "This is a super mini version of pi-agent written in 600 lines of TypeScript, designed to make it easy for beginners to start writing their own pi-agent from scratch."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Pi-from-scratch是一个简洁的TypeScript项目，展示了如何用最少的代码创建一个基本的pi-agent。",
+     "why": "对于想要入门AI开发但又不知道从哪里开始的新手来说，该项目提供了一个很好的起点。它不仅易于理解，而且非常实用。",
+     "biz": "虽然商业潜力有限，但对于教育领域而言，这种简化的学习资源非常有价值。它可以作为教材的一部分，帮助学生更好地理解和实践AI编程。"
+    },
+    "en": {
+     "what": "Pi-from-scratch is a concise TypeScript project demonstrating how to create a basic pi-agent with minimal code.",
+     "why": "For beginners who want to get started with AI development but don't know where to begin, this project provides a great starting point. It is not only easy to understand but also very practical.",
+     "biz": "While its commercial potential is limited, as an educational resource, this simplified learning material is extremely valuable. It can be part of a textbook, helping students better understand and practice AI programming."
+    }
+   },
+   "tags": [
+    "教育"
+   ]
+  },
+  {
+   "id": "github:ayi-ai/nie-grassroots-logic",
+   "scores": {
+    "whimsy": 4,
+    "fun": 3,
+    "money": 2,
+    "total": 9
+   },
+   "reason": "基于《基层中国的运行逻辑》的方法论工具箱，适合社会科学研究者。",
+   "analysis": {
+    "zh": "该项目是基于聂辉华《基层中国的运行逻辑》一书的方法论工具箱，不含原书全文，主要面向社会科学研究者。",
+    "en": "This project is a methodology toolkit based on Nie Huihua's book 'The Logic of Grassroots China,' without the full text of the book, primarily targeting social science researchers."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Nie-Grassroots-Logic是一个基于《基层中国的运行逻辑》的方法论工具箱，旨在帮助研究者更好地理解和应用书中的理论。",
+     "why": "对于从事中国基层治理研究的社会科学家来说，这本书提供了宝贵的见解。而这个工具箱则进一步将这些理论具体化，使其更易于操作。",
+     "biz": "尽管其商业潜力较小，但对于学术界尤其是对中国基层治理感兴趣的学者来说，这仍然是一个非常有用的资源。"
+    },
+    "en": {
+     "what": "Nie-Grassroots-Logic is a methodology toolkit based on 'The Logic of Grassroots China,' designed to help researchers better understand and apply the theories presented in the book.",
+     "why": "For social scientists studying grassroots governance in China, this book offers valuable insights. The toolkit further concretizes these theories, making them more operational.",
+     "biz": "Although its commercial potential is limited, it remains a very useful resource for academia, especially for scholars interested in grassroots governance in China."
+    }
+   },
+   "tags": [
+    "社区"
+   ]
+  },
+  {
+   "id": "github:i3T4AN/KADATH",
+   "scores": {
+    "whimsy": 5,
+    "fun": 5,
+    "money": 3,
+    "total": 13
+   },
+   "reason": "一个多智能体进化系统，通过多个可重复周期优化目标。",
+   "analysis": {
+    "zh": "KADATH是一个多智能体进化系统，通过繁殖、评估和改进自主代理来优化特定目标。",
+    "en": "KADATH is a multi-agent evolutionary system that breeds, evaluates, and improves autonomous agents to optimize a specific goal through multiple reproducible epochs."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "KADATH是一个用于多智能体进化的运行时环境，通过一系列可重复的周期来优化目标。",
+     "why": "多智能体系统在许多领域都有广泛的应用，例如游戏、机器人和复杂系统的模拟。KADATH通过进化算法，使得这些系统能够自我优化和改进。",
+     "biz": "尽管目前商业应用尚不明确，但这类技术在未来可能会在自动化和优化方面发挥重要作用。"
+    },
+    "en": {
+     "what": "KADATH is a runtime environment for multi-agent evolution, optimizing goals through a series of reproducible epochs.",
+     "why": "Multi-agent systems have wide applications in many fields, such as gaming, robotics, and complex system simulations. KADATH uses evolutionary algorithms to enable these systems to self-optimize and improve.",
+     "biz": "While current commercial applications are not clear, this type of technology may play a significant role in automation and optimization in the future."
+    }
+   },
+   "tags": [
+    "agent"
+   ]
+  },
+  {
+   "id": "github:0xsline/awesome-deepseek-harness",
+   "scores": {
+    "whimsy": 4,
+    "fun": 4,
+    "money": 5,
+    "total": 13
+   },
+   "reason": "DeepSeek Harness生态系统插件集合，涵盖多种工具和基础设施。",
+   "analysis": {
+    "zh": "该项目是一个精心策划的DeepSeek Harness生态系统插件集合，包括来自dsh-external/hub和公共dsh-plugin主题的各种工具和基础设施。",
+    "en": "This project is a curated collection of plugins, tools, and infrastructure for the DeepSeek Harness ecosystem, including various resources from dsh-external/hub and the public dsh-plugin topic."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Awesome-DeepSeek-Harness是一个汇集了DeepSeek Harness生态系统的精选插件、工具和基础设施的项目。",
+     "why": "对于使用DeepSeek Harness的开发者来说，这个项目提供了一个集中的资源库，使得他们可以更容易地找到和使用所需的工具。",
+     "biz": "随着DeepSeek Harness的普及，这个项目的商业潜力也在逐渐增加。它可以帮助企业更快地构建和部署复杂的AI系统。"
+    },
+    "en": {
+     "what": "Awesome-DeepSeek-Harness is a project that aggregates a curated collection of plugins, tools, and infrastructure for the DeepSeek Harness ecosystem.",
+     "why": "For developers using DeepSeek Harness, this project provides a centralized repository, making it easier for them to find and use the necessary tools.",
+     "biz": "As DeepSeek Harness becomes more popular, the commercial potential of this project is also increasing. It can help businesses build and deploy complex AI systems more quickly."
+    }
+   },
+   "tags": [
+    "社区"
+   ]
+  },
+  {
+   "id": "github:Anionex/dsh-vision-toolkit",
+   "scores": {
+    "whimsy": 5,
+    "fun": 5,
+    "money": 6,
+    "total": 16
+   },
+   "reason": "增强纯文本模型的视觉任务能力，包括带意图的图片问答、长截图OCR等。",
+   "analysis": {
+    "zh": "这个DeepSeek Harness插件可以让纯文本模型更好地处理视觉任务，如带意图的图片问答、长截图OCR、UI还原等。",
+    "en": "This DeepSeek Harness plugin enhances the visual task capabilities of pure text models, including intent-driven image Q&A, long-screenshot OCR, UI restoration, and more."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "DSH-Vision-Toolkit是一个DeepSeek Harness插件，旨在让纯文本模型能够更好地处理视觉任务。",
+     "why": "随着AI技术的发展，纯文本模型在处理图像和视频等视觉内容方面的需求越来越大。这个工具包通过提供多种视觉任务功能，填补了这一空白。",
+     "biz": "对于需要处理大量视觉内容的企业来说，这个工具包具有很高的商业价值。它不仅可以提高工作效率，还可以扩展现有文本模型的功能。"
+    },
+    "en": {
+     "what": "DSH-Vision-Toolkit is a DeepSeek Harness plugin designed to enable pure text models to handle visual tasks better.",
+     "why": "As AI technology advances, there is a growing demand for pure text models to handle visual content such as images and videos. This toolkit fills this gap by providing various visual task functionalities.",
+     "biz": "For businesses that need to process a large amount of visual content, this toolkit has high commercial value. It can not only improve work efficiency but also extend the capabilities of existing text models."
+    }
+   },
+   "tags": [
+    "图像"
+   ]
+  },
+  {
+   "id": "github:decionis/agent-safe-pipeline",
+   "scores": {
+    "whimsy": 4,
+    "fun": 4,
+    "money": 5,
+    "total": 13
+   },
+   "reason": "提供一种安全的AI代理架构，确保只有经过验证的人类批准后才能执行动作。",
+   "analysis": {
+    "zh": "Agent-Safe-Pipeline是一种参考架构，确保AI代理提出的动作必须经过独立的Decionis策略裁决和验证的人类批准后才能执行。",
+    "en": "Agent-Safe-Pipeline is a reference architecture that ensures actions proposed by AI agents can only be executed after independent Decionis policy verdicts and verified human approval."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Agent-Safe-Pipeline是一种安全的AI代理架构，确保代理提出的动作在执行前必须经过严格的验证流程。",
+     "why": "随着AI代理在各个领域的广泛应用，确保这些代理的行为安全可靠变得至关重要。Agent-Safe-Pipeline通过引入不可变意图捕获、独立政策裁决和人类验证，提高了系统的安全性。",
+     "biz": "对于需要高度安全性的企业和应用场景（如金融、医疗等），这个架构具有很高的商业价值。它可以显著降低因AI代理行为不当带来的风险。"
+    },
+    "en": {
+     "what": "Agent-Safe-Pipeline is a secure AI agent architecture that ensures actions proposed by agents go through a strict verification process before execution.",
+     "why": "As AI agents are widely used in various fields, ensuring their behavior is safe and reliable has become critical. Agent-Safe-Pipeline enhances system security by introducing immutable intent capture, independent policy verdicts, and human verification.",
+     "biz": "For businesses and applications requiring high security (such as finance and healthcare), this architecture has high commercial value. It can significantly reduce the risks associated with improper AI agent behavior."
+    }
+   },
+   "tags": [
+    "安全"
+   ]
+  },
+  {
+   "id": "github:NousResearch/Hermes-Bot-Mode",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 4,
+    "total": 15
+   },
+   "reason": "为Hermes桌面添加Bot Mode，支持命名代理、聊天记录、头像等功能。",
+   "analysis": {
+    "zh": "Hermes-Bot-Mode是一个Hermes桌面插件，为用户提供了一组命名代理，每个代理都有自己的聊天记录、头像和例程。",
+    "en": "Hermes-Bot-Mode is a desktop plugin for Hermes that provides a roster of named agents, each with their own chat history, avatars, and routines."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Hermes-Bot-Mode是一个为Hermes桌面设计的插件，它允许用户创建和管理一组命名代理，每个代理都有自己的聊天记录、头像和例程。",
+     "why": "对于需要与多个AI代理进行交互的用户来说，这个插件提供了一个直观且易于管理的界面。它不仅提升了用户体验，还增强了代理之间的互动性。",
+     "biz": "尽管商业潜力有限，但对于那些需要高效管理和使用多个AI代理的用户来说，这个插件仍然非常有用。它可以提高工作效率，并提供更好的用户体验。"
+    },
+    "en": {
+     "what": "Hermes-Bot-Mode is a plugin designed for the Hermes desktop, allowing users to create and manage a roster of named agents, each with their own chat history, avatars, and routines.",
+     "why": "For users who need to interact with multiple AI agents, this plugin provides an intuitive and easy-to-manage interface. It not only enhances user experience but also improves interaction between agents.",
+     "biz": "While its commercial potential is limited, this plugin is still very useful for users who need to efficiently manage and use multiple AI agents. It can improve work efficiency and provide a better user experience."
+    }
+   },
+   "tags": [
+    "agent"
+   ]
+  },
+  {
+   "id": "hackernews:49241679",
+   "scores": {
+    "whimsy": 8,
+    "fun": 7,
+    "money": 6,
+    "total": 21
+   },
+   "reason": "Muse Glimmer是一款专为本地代理工作流优化的30亿参数模型，适用于始终在线的应用场景。",
+   "analysis": {
+    "zh": "Muse Glimmer是Meta发布的一款拥有30亿参数的AI模型，特别针对本地代理流程进行了优化，使其能够支持持续运行的应用场景。该模型在设计上注重了效率与性能之间的平衡，旨在为用户提供更加流畅、响应迅速的交互体验。",
+    "en": "Muse Glimmer is a 30-billion-parameter AI model released by Meta, specifically optimized for local agent workflows that need to run continuously. The design emphasizes a balance between efficiency and performance, aiming to provide users with a smoother, more responsive interaction experience."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Muse Glimmer是一个专为本地代理工作流而设计的AI模型，它通过减少延迟和提高处理速度来改善用户体验。",
+     "why": "随着AI技术的发展，越来越多的应用程序需要在设备端执行复杂的任务而不依赖云端服务。Muse Glimmer正是为了满足这一需求而生，它能够在保证高质量输出的同时显著降低功耗。",
+     "biz": "对于那些寻求构建高效能本地应用的企业来说，Muse Glimmer提供了强大的技术支持。此外，其开源性质也促进了社区内的创新活动。"
+    },
+    "en": {
+     "what": "Muse Glimmer is an AI model designed for local agent workflows, improving user experience by reducing latency and increasing processing speed.",
+     "why": "As AI technology advances, more applications require complex tasks to be executed on-device without relying on cloud services. Muse Glimmer was born to meet this need, providing high-quality output while significantly lowering power consumption.",
+     "biz": "For businesses looking to build high-performance local applications, Muse Glimmer offers robust technical support. Its open-source nature also fosters innovation within the community."
+    }
+   },
+   "tags": [
+    "agent"
+   ]
+  },
+  {
+   "id": "hackernews:49239751",
+   "scores": {
+    "whimsy": 6,
+    "fun": 5,
+    "money": 7,
+    "total": 18
+   },
+   "reason": "Docker Sandboxes提供了一种可丢弃且隔离的环境，专门用于测试AI代理。",
+   "analysis": {
+    "zh": "Docker Sandboxes为AI开发者提供了一个临时性的、完全隔离的测试环境，这有助于快速部署和测试各种AI代理而不影响主系统。",
+    "en": "Docker Sandboxes offer a temporary, fully isolated testing environment for AI developers, facilitating quick deployment and testing of various AI agents without affecting the main system."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Docker Sandboxes是一种轻量级容器解决方案，允许用户轻松创建、管理和销毁独立的AI开发环境。",
+     "why": "随着AI项目变得越来越复杂，确保代码质量和安全性的需求也在增加。Docker Sandboxes正好解决了这个问题，它让开发者可以在一个受控环境中自由实验。",
+     "biz": "对于任何希望提高生产力并减少错误风险的AI团队而言，Docker Sandboxes都是一个非常有用的工具。同时，它也促进了跨团队协作。"
+    },
+    "en": {
+     "what": "Docker Sandboxes is a lightweight container solution that allows users to easily create, manage, and dispose of independent AI development environments.",
+     "why": "As AI projects become more complex, so does the need for ensuring code quality and security. Docker Sandboxes addresses this by allowing developers to experiment freely in a controlled environment.",
+     "biz": "For any AI team looking to boost productivity and reduce the risk of errors, Docker Sandboxes is an incredibly useful tool. It also promotes cross-team collaboration."
+    }
+   },
+   "tags": [
+    "agent"
+   ]
+  },
+  {
+   "id": "reddit:1vn8oya",
+   "scores": {
+    "whimsy": 5,
+    "fun": 4,
+    "money": 6,
+    "total": 15
+   },
+   "reason": "将地理空间数据转换为可用于图神经网络分析的图形，有助于城市系统的深入研究。",
+   "analysis": {
+    "zh": "City2Graph 是一个 Python 库，可以将地理空间数据转换成适合进行空间分析、网络分析和图神经网络（GeoAI）的图形。它对于城市系统的研究非常有用。",
+    "en": "City2Graph is a Python library that turns geospatial data into graphs suitable for spatial analysis, network analysis, and Graph Neural Networks (GeoAI). It is very useful for urban systems research."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "City2Graph 是一个能够处理地理空间数据并将其转化为图结构的库，支持多种类型的城市系统分析。",
+     "why": "这个工具填补了从地理信息到图神经网络应用之间的空白，使得研究人员能够更方便地利用先进的机器学习技术来解决城市规划和管理中的问题。",
+     "biz": "随着智慧城市概念的普及，这种能够有效整合多源数据的技术有着广泛的应用前景，特别是在公共服务优化、交通管理和环境监测等领域。"
+    },
+    "en": {
+     "what": "City2Graph is a library that processes geospatial data and converts it into graph structures, supporting various types of urban system analyses.",
+     "why": "This tool bridges the gap between geographic information and graph neural network applications, making it easier for researchers to apply advanced machine learning techniques to urban planning and management issues.",
+     "biz": "With the increasing popularity of smart city concepts, this technology, which effectively integrates multi-source data, has broad application prospects, especially in public service optimization, traffic management, and environmental monitoring."
+    }
+   },
+   "tags": [
+    "基建",
+    "数据",
+    "效率"
+   ]
+  },
+  {
+   "id": "reddit:1vkrnb5",
+   "scores": {
+    "whimsy": 7,
+    "fun": 5,
+    "money": 3,
+    "total": 15
+   },
+   "reason": "通过手动设置权重使变压器在算术运算上达到100%准确率，探索了新的模型训练可能性。",
+   "analysis": {
+    "zh": "该项目展示了如何通过直接选择权重而非传统训练方式让一个标准变压器完成精确的算术运算。这为理解模型内部机制提供了新视角。",
+    "en": "The project demonstrates how to make a standard transformer perform exact arithmetic by directly choosing its weights instead of traditional training. This provides a new perspective on understanding the internal mechanisms of models."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "作者通过实现小学算法作为计算图，并使用自己编写的Torchwright编译器将其编译成普通的Hugging Face检查点，从而创建了一个无需训练就能执行乘法操作的变压器。",
+     "why": "这一实验挑战了关于模型能力和训练方法的传统观念，表明某些任务可能不需要复杂的训练过程即可完成。",
+     "biz": "虽然这项工作本身并不直接指向商业用途，但它启发了人们思考如何更高效地设计特定任务下的AI解决方案。"
+    },
+    "en": {
+     "what": "The author created a transformer capable of performing multiplication without training by implementing the grade-school algorithm as a computation graph and compiling it into an ordinary Hugging Face checkpoint using Torchwright, a compiler they wrote.",
+     "why": "This experiment challenges conventional notions about model capabilities and training methods, suggesting that some tasks might not require complex training processes.",
+     "biz": "While this work itself does not point directly to commercial use, it inspires thinking about more efficient ways to design AI solutions for specific tasks."
+    }
+   },
+   "tags": [
+    "创意",
+    "编码",
+    "教育"
+   ]
+  },
+  {
+   "id": "reddit:1vmvl4w",
+   "scores": {
+    "whimsy": 5,
+    "fun": 4,
+    "money": 3,
+    "total": 12
+   },
+   "reason": "通过移除棋盘变换器的一个注意力头，观察其对找到Morphy皇后牺牲的影响，揭示了模型内部工作的细节。",
+   "analysis": {
+    "zh": "此项目提供了一个演示，展示当删除国际象棋变换器128个注意力头之一时，该模型不再能找到著名的Morphy皇后牺牲策略。",
+    "en": "This project offers a demo showing that when one of the 128 attention heads in a chess transformer is removed, the model no longer finds the famous Morphy queen sacrifice strategy."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "chessformer_lens 演示了通过删除特定的注意力头，可以观察到模型性能的变化。",
+     "why": "这有助于我们更好地理解模型中各个组件的功能及其相互作用。",
+     "biz": "尽管这是一个针对特定领域的研究工具，但其背后的原理可应用于其他需要深入了解模型运作机制的情况。"
+    },
+    "en": {
+     "what": "chessformer_lens demonstrates how removing a specific attention head can lead to changes in model performance.",
+     "why": "This helps us better understand the functions and interactions of different components within the model.",
+     "biz": "Although this is a research tool for a specific domain, the principles behind it can be applied to other scenarios where a deeper understanding of model mechanics is needed."
+    }
+   },
+   "tags": [
+    "游戏",
+    "创意",
+    "社区"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13560v1",
+   "scores": {
+    "whimsy": 7,
+    "fun": 5,
+    "money": 6,
+    "total": 18
+   },
+   "reason": "AutoDesign 提出了一种新的设计框架，旨在通过模型-工具系统实现长期的自主设计。",
+   "analysis": {
+    "zh": "该项目提出了一种新的设计框架 AutoDesign，它能够将多模态源转换为简洁和结构化的媒体输出。",
+    "en": "This project introduces a new design framework, AutoDesign, which aims to transform multimodal sources into condensed and structured media outputs through a model-harness system."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "AutoDesign 是一种新的设计框架，用于将多模态源转换为简洁和结构化的媒体输出。",
+     "why": "该框架旨在与人类的设计先验保持一致，并通过经验积累来驱动递归自我改进。",
+     "biz": "这种框架可以应用于各种设计领域，提高设计效率和质量。"
+    },
+    "en": {
+     "what": "AutoDesign is a novel design framework that transforms multimodal sources into condensed and structured media outputs.",
+     "why": "The framework aims to align with human design priors and drive recursive self-improvement through experience accumulation.",
+     "biz": "This framework can be applied in various design fields, improving design efficiency and quality."
+    }
+   },
+   "tags": [
+    "创意"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13558v1",
+   "scores": {
+    "whimsy": 8,
+    "fun": 6,
+    "money": 7,
+    "total": 21
+   },
+   "reason": "OmniScientist 提出了一个全模式、全学科的人工智能科学家，能够自动化科学研究的全流程。",
+   "analysis": {
+    "zh": "OmniScientist 是一个全模式、全学科的人工智能科学家，能够自动化从假设生成到手稿准备的整个研究流程。",
+    "en": "OmniScientist is an omni-modal, omni-discipline AI scientist capable of automating the entire research workflow from hypothesis generation to manuscript preparation."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "OmniScientist 是一个全模式、全学科的人工智能科学家，能够自动化科学研究的全流程。",
+     "why": "现有的系统通常只处理文本、代码、标签或预先计算的摘要，而 OmniScientist 能够处理空间、时间、跨通道和程序关系。",
+     "biz": "这一系统可以广泛应用于科学研究，提高科研效率和准确性。"
+    },
+    "en": {
+     "what": "OmniScientist is an omni-modal, omni-discipline AI scientist that automates the full research workflow.",
+     "why": "While existing systems typically handle text, code, labels, or precomputed summaries, OmniScientist can process spatial, temporal, cross-channel, and procedural relations.",
+     "biz": "This system can be widely used in scientific research to improve research efficiency and accuracy."
+    }
+   },
+   "tags": [
+    "论文"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13555v1",
+   "scores": {
+    "whimsy": 6,
+    "fun": 4,
+    "money": 5,
+    "total": 15
+   },
+   "reason": "HumanTracker 提出了一种全面且符合人类认知的运动跟踪基准。",
+   "analysis": {
+    "zh": "HumanTracker 提出了一种全面且符合人类认知的运动跟踪基准，解决了现有评估方法与人类感知不一致的问题。",
+    "en": "HumanTracker introduces a comprehensive and human-aligned motion tracking benchmark, addressing the inconsistency between current evaluation methods and human perception."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "HumanTracker 是一种全面且符合人类认知的运动跟踪基准。",
+     "why": "现有的评估方法通常只关注每帧姿态差异，忽略了物理上的重要问题，如不稳定支撑和错误接触。",
+     "biz": "这一基准可以提高运动跟踪系统的准确性和可靠性。"
+    },
+    "en": {
+     "what": "HumanTracker is a comprehensive and human-aligned motion tracking benchmark.",
+     "why": "Existing evaluation methods often focus on per-frame pose differences, missing important physical issues such as unstable support and incorrect contacts.",
+     "biz": "This benchmark can improve the accuracy and reliability of motion tracking systems."
+    }
+   },
+   "tags": [
+    "视频"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13554v1",
+   "scores": {
+    "whimsy": 5,
+    "fun": 3,
+    "money": 4,
+    "total": 12
+   },
+   "reason": "Defensive Boosting 提出了一种在线概率预测的新方法，以应对自适应对手。",
+   "analysis": {
+    "zh": "Defensive Boosting 提出了一种新的在线概率预测方法，能够在自适应对手的情况下提供两个不可比较的保证。",
+    "en": "Defensive Boosting introduces a new approach to online probabilistic forecasting, providing two incomparable guarantees in the presence of an adaptive adversary."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Defensive Boosting 是一种新的在线概率预测方法。",
+     "why": "现有的在线提升技术分别提供了不同的保证，但没有同时提供这两个保证。",
+     "biz": "这一方法可以提高在线预测的准确性和鲁棒性。"
+    },
+    "en": {
+     "what": "Defensive Boosting is a new approach to online probabilistic forecasting.",
+     "why": "Existing online boosting techniques provide different guarantees separately, but not both simultaneously.",
+     "biz": "This method can improve the accuracy and robustness of online predictions."
+    }
+   },
+   "tags": [
+    "数据"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13549v1",
+   "scores": {
+    "whimsy": 4,
+    "fun": 2,
+    "money": 3,
+    "total": 9
+   },
+   "reason": "Exponential Convex Calibration Dimension 研究了多标签 Jaccard 度量的指数凸校准维度。",
+   "analysis": {
+    "zh": "Exponential Convex Calibration Dimension 研究了多标签 Jaccard 度量的指数凸校准维度，并证明了其损失矩阵的非奇异性和仿射维度。",
+    "en": "Exponential Convex Calibration Dimension studies the exponential convex calibration dimension for the multi-label Jaccard measure, proving the nonsingularity and affine dimension of its loss matrix."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Exponential Convex Calibration Dimension 研究了多标签 Jaccard 度量的指数凸校准维度。",
+     "why": "通过有限 MinHash Gram 表示和布尔 Möbius 反演证明了损失矩阵的非奇异性和仿射维度。",
+     "biz": "这一研究可以提高多标签分类和二值分割的性能。"
+    },
+    "en": {
+     "what": "Exponential Convex Calibration Dimension studies the exponential convex calibration dimension for the multi-label Jaccard measure.",
+     "why": "The proof uses a finite MinHash Gram representation and Boolean Möbius inversion to show the nonsingularity and affine dimension of the loss matrix.",
+     "biz": "This research can improve the performance of multi-label classification and binary segmentation."
+    }
+   },
+   "tags": [
+    "论文"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13547v1",
+   "scores": {
+    "whimsy": 6,
+    "fun": 4,
+    "money": 5,
+    "total": 15
+   },
+   "reason": "QuoteBench 提出了一种新的评估方法，用于测量命令路径失败。",
+   "analysis": {
+    "zh": "QuoteBench 提出了一种新的评估方法，通过精确的最终状态验证来测量命令路径失败。",
+    "en": "QuoteBench introduces a new evaluation method that measures command-path failures through exact final-state validation."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "QuoteBench 是一种新的评估方法，用于测量命令路径失败。",
+     "why": "现有的匹配执行分数无法区分命令生成错误和生成后引入的失败。",
+     "biz": "这一方法可以提高命令生成和执行的准确性和可靠性。"
+    },
+    "en": {
+     "what": "QuoteBench is a new evaluation method for measuring command-path failures.",
+     "why": "Existing matched execution scores cannot distinguish between command generation errors and failures introduced after generation.",
+     "biz": "This method can improve the accuracy and reliability of command generation and execution."
+    }
+   },
+   "tags": [
+    "编码"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13545v1",
+   "scores": {
+    "whimsy": 7,
+    "fun": 5,
+    "money": 6,
+    "total": 18
+   },
+   "reason": "LittleLearner 提出了一种在教育控制下暴露知识的语言模型。",
+   "analysis": {
+    "zh": "LittleLearner 提出了一种在教育控制下暴露知识的语言模型，使用了专门为美国小学材料定制的预训练语料库。",
+    "en": "LittleLearner introduces a language model under pedagogically controlled knowledge exposure, using a curated pretraining corpus tailored to U.S. elementary school material."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "LittleLearner 是一种在教育控制下暴露知识的语言模型。",
+     "why": "现代语言模型通常在异构的大规模文本语料库上进行训练，这使得研究知识和技能获取变得困难。",
+     "biz": "这一模型可以更好地研究语言模型的知识和技能获取过程。"
+    },
+    "en": {
+     "what": "LittleLearner is a language model under pedagogically controlled knowledge exposure.",
+     "why": "Modern language models are typically trained on heterogeneous web-scale text corpora, making it difficult to study knowledge and skill acquisition.",
+     "biz": "This model can better study the knowledge and skill acquisition process of language models."
+    }
+   },
+   "tags": [
+    "教育"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13524v1",
+   "scores": {
+    "whimsy": 6,
+    "fun": 4,
+    "money": 5,
+    "total": 15
+   },
+   "reason": "DARTree 提出了一种基于自回归草稿树的推测扩散解码方法。",
+   "analysis": {
+    "zh": "DARTree 提出了一种基于自回归草稿树的推测扩散解码方法，通过并行验证多个草稿令牌来加速自回归语言模型。",
+    "en": "DARTree introduces speculative diffusion decoding with autoregressive draft trees, accelerating autoregressive language models by verifying multiple draft tokens in parallel."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "DARTree 是一种基于自回归草稿树的推测扩散解码方法。",
+     "why": "现有的推测解码方法通常只沿单一草稿链包含因果信息，而 DARTree 扩展了候选覆盖范围。",
+     "biz": "这一方法可以提高语言模型的推理速度和准确性。"
+    },
+    "en": {
+     "what": "DARTree is a speculative diffusion decoding method based on autoregressive draft trees.",
+     "why": "Existing speculative decoding methods typically incorporate causal information along a single draft chain, whereas DARTree broadens candidate coverage.",
+     "biz": "This method can improve the inference speed and accuracy of language models."
+    }
+   },
+   "tags": [
+    "文本"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13522v1",
+   "scores": {
+    "whimsy": 7,
+    "fun": 5,
+    "money": 6,
+    "total": 18
+   },
+   "reason": "Vero 探讨了 AI 代理是否能够构建形式验证的软件仓库。",
+   "analysis": {
+    "zh": "Vero 探讨了 AI 代理是否能够构建形式验证的软件仓库，从而提供更强的信任度。",
+    "en": "Vero explores whether AI agents can build formally verified software repositories, offering a stronger path toward trustworthy AI-generated software."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Vero 探讨了 AI 代理是否能够构建形式验证的软件仓库。",
+     "why": "现有的基准测试要么专注于单个函数，要么仅评估提供的实现的证明生成。",
+     "biz": "这一研究可以提高 AI 生成软件的信任度和可靠性。"
+    },
+    "en": {
+     "what": "Vero explores whether AI agents can build formally verified software repositories.",
+     "why": "Existing benchmarks either focus on individual functions or only evaluate proof generation with provided implementations.",
+     "biz": "This research can enhance the trustworthiness and reliability of AI-generated software."
+    }
+   },
+   "tags": [
+    "安全"
+   ]
+  },
+  {
+   "id": "arxiv:2608.13521v1",
+   "scores": {
+    "whimsy": 8,
+    "fun": 6,
+    "money": 7,
+    "total": 21
+   },
+   "reason": "Exponential Quantum Advantage 研究了单量子比特在学习信号方面的指数级优势。",
+   "analysis": {
+    "zh": "Exponential Quantum Advantage 研究了单量子比特在学习经典信号方面的能力，展示了量子技术的潜力。",
+    "en": "Exponential Quantum Advantage studies the capability of a single qubit in learning classical signals, demonstrating the potential of quantum technology."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Exponential Quantum Advantage 研究了单量子比特在学习经典信号方面的指数级优势。",
+     "why": "通过将单个可控量子比特耦合到传统传感器上，可以显著减少学习经典信号所需的测量次数。",
+     "biz": "这一研究展示了量子技术在信号处理领域的巨大潜力。"
+    },
+    "en": {
+     "what": "Exponential Quantum Advantage studies the exponential advantage of a single qubit in learning classical signals.",
+     "why": "By coupling a single controllable qubit to a conventional sensor, the number of measurements required to learn classical signals can be significantly reduced.",
+     "biz": "This research demonstrates the great potential of quantum technology in signal processing."
+    }
+   },
+   "tags": [
+    "硬件"
+   ]
+  },
+  {
+   "id": "huggingface:space/Lynote/free-ai-detector",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 4,
+    "total": 15
+   },
+   "reason": "一个免费的AI检测工具，可以帮助用户识别文本是否由AI生成。",
+   "analysis": {
+    "zh": "该项目提供了一个简单易用的界面，用户可以输入文本并检查其是否由AI生成。它有助于提高人们对AI生成内容的认识。",
+    "en": "This project provides a simple and user-friendly interface where users can input text and check if it was generated by AI. It helps raise awareness about AI-generated content."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face平台的AI检测工具，用户可以输入任何文本并获取该文本是否由AI生成的概率。",
+     "why": "随着AI技术的发展，越来越多的内容可能由AI生成。这个工具可以帮助用户辨别内容的真实性和来源。",
+     "biz": "该工具可以应用于教育、新闻和社交媒体等领域，帮助用户识别虚假信息，具有一定的商业潜力。"
+    },
+    "en": {
+     "what": "This is an AI detection tool based on the Hugging Face platform, where users can input any text and get the probability of whether it was generated by AI.",
+     "why": "As AI technology advances, more and more content may be AI-generated. This tool can help users discern the authenticity and origin of the content.",
+     "biz": "The tool can be applied in fields such as education, news, and social media to help users identify misinformation, presenting some commercial potential."
+    }
+   },
+   "tags": [
+    "文本"
+   ]
+  },
+  {
+   "id": "huggingface:space/agent-memory-leaderboard/leaderboard",
+   "scores": {
+    "whimsy": 4,
+    "fun": 5,
+    "money": 3,
+    "total": 12
+   },
+   "reason": "一个展示不同代理记忆能力的排行榜，帮助研究人员了解当前模型的性能。",
+   "analysis": {
+    "zh": "该项目提供了一个排行榜，展示了不同代理在记忆任务上的表现。这对于研究者来说是一个有用的工具，可以比较不同模型的性能。",
+    "en": "This project provides a leaderboard that showcases the performance of different agents on memory tasks. It is a useful tool for researchers to compare the performance of different models."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的排行榜项目，展示了不同代理在记忆任务上的表现。",
+     "why": "通过这个排行榜，研究人员可以直观地看到哪些模型在记忆任务上表现更好，从而为改进模型提供参考。",
+     "biz": "虽然这个项目的直接商业价值有限，但它对于推动AI研究和开发具有重要意义。"
+    },
+    "en": {
+     "what": "This is a leaderboard project based on Hugging Face, showcasing the performance of different agents on memory tasks.",
+     "why": "Through this leaderboard, researchers can visually see which models perform better on memory tasks, providing a reference for model improvement.",
+     "biz": "While the direct commercial value of this project is limited, it is significant in advancing AI research and development."
+    }
+   },
+   "tags": [
+    "数据",
+    "效率"
+   ]
+  },
+  {
+   "id": "huggingface:space/Alissonerdx/charactersheet-lora-demo",
+   "scores": {
+    "whimsy": 6,
+    "fun": 7,
+    "money": 5,
+    "total": 18
+   },
+   "reason": "一个角色表生成器，可以根据描述生成详细的角色信息，适合游戏开发者和创作者。",
+   "analysis": {
+    "zh": "该项目提供了一个角色表生成器，用户可以输入角色描述，生成详细的角色信息。这为游戏开发者和创作者提供了便利。",
+    "en": "This project offers a character sheet generator where users can input character descriptions and generate detailed character information. It is convenient for game developers and creators."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的字符表生成器，用户可以输入角色描述，生成详细的角色信息。",
+     "why": "对于游戏开发者和创作者来说，创建详细的角色信息是一项繁琐的工作。这个工具可以简化这一过程，提高工作效率。",
+     "biz": "该工具可以应用于游戏开发、角色设计和创意写作等领域，具有一定的商业潜力。"
+    },
+    "en": {
+     "what": "This is a character sheet generator based on Hugging Face, where users can input character descriptions and generate detailed character information.",
+     "why": "For game developers and creators, creating detailed character information can be a tedious task. This tool simplifies the process and improves work efficiency.",
+     "biz": "The tool can be applied in fields such as game development, character design, and creative writing, presenting some commercial potential."
+    }
+   },
+   "tags": [
+    "创意",
+    "游戏"
+   ]
+  },
+  {
+   "id": "huggingface:space/shootstuff/flux-img2img-uncensored",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 4,
+    "total": 15
+   },
+   "reason": "一个图像到图像的转换工具，可以将一张图片转换成另一张风格相似的图片。",
+   "analysis": {
+    "zh": "该项目提供了一个图像到图像的转换工具，用户可以上传图片并将其转换成另一种风格的图片。这为创意工作者提供了新的可能性。",
+    "en": "This project offers an image-to-image conversion tool where users can upload images and convert them into another style. It provides new possibilities for creative workers."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的图像到图像转换工具，用户可以上传图片并将其转换成另一种风格的图片。",
+     "why": "图像风格转换是创意领域的一个重要应用，可以帮助设计师和艺术家快速生成多种风格的作品。",
+     "biz": "该工具可以应用于广告设计、艺术创作和社交媒体等领域，具有一定的商业潜力。"
+    },
+    "en": {
+     "what": "This is an image-to-image conversion tool based on Hugging Face, where users can upload images and convert them into another style.",
+     "why": "Image style transfer is an important application in the creative field, helping designers and artists quickly generate works in various styles.",
+     "biz": "The tool can be applied in fields such as ad design, artistic creation, and social media, presenting some commercial potential."
+    }
+   },
+   "tags": [
+    "图像",
+    "创意"
+   ]
+  },
+  {
+   "id": "huggingface:space/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "一个高效的LoRA微调工具，可以加速模型训练和推理过程。",
+   "analysis": {
+    "zh": "该项目提供了一个高效的LoRA微调工具，可以显著加速模型训练和推理过程。这对于需要快速迭代的开发者非常有用。",
+    "en": "This project offers an efficient LoRA fine-tuning tool that significantly accelerates the model training and inference process. It is very useful for developers who need to iterate quickly."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的高效LoRA微调工具，可以加速模型训练和推理过程。",
+     "why": "LoRA微调是一种有效的模型优化方法，可以减少训练时间和资源消耗。这个工具使得开发者能够更快地进行模型迭代。",
+     "biz": "该工具可以应用于各种AI开发场景，特别是需要快速迭代和优化的项目，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This is an efficient LoRA fine-tuning tool based on Hugging Face, accelerating the model training and inference process.",
+     "why": "LoRA fine-tuning is an effective model optimization method that reduces training time and resource consumption. This tool enables developers to iterate faster.",
+     "biz": "The tool can be applied in various AI development scenarios, especially projects that require rapid iteration and optimization, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "效率",
+    "开源"
+   ]
+  },
+  {
+   "id": "huggingface:space/mrfakename/minimax-h3-ultra-fast",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "一个超快的模型推理工具，可以显著提升模型的推理速度。",
+   "analysis": {
+    "zh": "该项目提供了一个超快的模型推理工具，可以显著提升模型的推理速度。这对于需要实时处理的应用非常有用。",
+    "en": "This project offers an ultra-fast model inference tool that significantly boosts the model's inference speed. It is very useful for applications requiring real-time processing."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的超快模型推理工具，可以显著提升模型的推理速度。",
+     "why": "在许多应用场景中，实时处理是非常重要的。这个工具通过优化模型推理过程，使得模型能够在更短的时间内完成任务。",
+     "biz": "该工具可以应用于实时数据分析、在线服务和自动化系统等领域，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This is an ultra-fast model inference tool based on Hugging Face, significantly boosting the model's inference speed.",
+     "why": "In many application scenarios, real-time processing is crucial. This tool optimizes the model inference process, enabling the model to complete tasks in a shorter time.",
+     "biz": "The tool can be applied in fields such as real-time data analysis, online services, and automation systems, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "效率",
+    "开源"
+   ]
+  },
+  {
+   "id": "huggingface:space/LiquidAI/prompt-routing",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "一个提示路由工具，可以根据不同的提示将请求分发到相应的模型。",
+   "analysis": {
+    "zh": "该项目提供了一个提示路由工具，可以根据不同的提示将请求分发到相应的模型。这有助于提高多模型系统的效率。",
+    "en": "This project offers a prompt routing tool that distributes requests to the appropriate models based on different prompts. It helps improve the efficiency of multi-model systems."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的提示路由工具，可以根据不同的提示将请求分发到相应的模型。",
+     "why": "在多模型系统中，根据不同的提示选择合适的模型非常重要。这个工具通过智能路由，提高了系统的响应速度和准确性。",
+     "biz": "该工具可以应用于多模型管理和优化，特别是在需要高效处理多个模型的应用场景中，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This is a prompt routing tool based on Hugging Face, distributing requests to the appropriate models based on different prompts.",
+     "why": "In multi-model systems, selecting the right model based on different prompts is crucial. This tool improves the system's response speed and accuracy through intelligent routing.",
+     "biz": "The tool can be applied in multi-model management and optimization, particularly in scenarios requiring efficient handling of multiple models, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "效率",
+    "开源"
+   ]
+  },
+  {
+   "id": "huggingface:paper/2608.13489",
+   "scores": {
+    "whimsy": 7,
+    "fun": 6,
+    "money": 5,
+    "total": 18
+   },
+   "reason": "一个动作条件视频世界模型，用于机器人操作，可以根据指令预测未来观察结果。",
+   "analysis": {
+    "zh": "这篇论文介绍了一个动作条件视频世界模型，用于机器人操作。该模型可以根据指令和动作序列预测未来的观察结果。",
+    "en": "This paper introduces an action-conditioned video world model for robotic manipulation. The model can predict future observations based on instructions and action sequences."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这篇论文介绍了一个动作条件视频世界模型DreamX-Phi 1.0，用于机器人操作。该模型可以根据指令和动作序列预测未来的观察结果。",
+     "why": "机器人操作需要精确的动作规划和预测。这个模型通过结合语言指令和动作序列，提高了预测的准确性和可靠性。",
+     "biz": "该模型可以应用于工业自动化、机器人手术和自主导航等领域，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This paper introduces an action-conditioned video world model, DreamX-Phi 1.0, for robotic manipulation. The model can predict future observations based on instructions and action sequences.",
+     "why": "Robotic manipulation requires precise action planning and prediction. This model improves the accuracy and reliability of predictions by combining language instructions and action sequences.",
+     "biz": "The model can be applied in fields such as industrial automation, robotic surgery, and autonomous navigation, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "论文",
+    "机器人"
+   ]
+  },
+  {
+   "id": "huggingface:paper/2608.13546",
+   "scores": {
+    "whimsy": 7,
+    "fun": 6,
+    "money": 5,
+    "total": 18
+   },
+   "reason": "一个持久记忆和交互式世界模型，支持长时序生成和低延迟交互。",
+   "analysis": {
+    "zh": "这篇论文介绍了一个持久记忆和交互式世界模型Alaya-EVOKE，支持长时序生成和低延迟交互。",
+    "en": "This paper introduces a persistent memory and interactive world model, Alaya-EVOKE, supporting long-horizon generation and low-latency interaction."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这篇论文介绍了一个持久记忆和交互式世界模型Alaya-EVOKE，支持长时序生成和低延迟交互。",
+     "why": "持久记忆和低延迟交互是交互式世界模型的重要需求。Alaya-EVOKE通过外部化持久世界状态解决了这些问题。",
+     "biz": "该模型可以应用于虚拟现实、游戏和模拟训练等领域，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This paper introduces a persistent memory and interactive world model, Alaya-EVOKE, supporting long-horizon generation and low-latency interaction.",
+     "why": "Persistent memory and low-latency interaction are important requirements for interactive world models. Alaya-EVOKE addresses these issues by externalizing persistent world state.",
+     "biz": "The model can be applied in fields such as virtual reality, gaming, and simulation training, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "论文",
+    "创意"
+   ]
+  },
+  {
+   "id": "huggingface:space/MiniMaxAI/MiniMax-Music3",
+   "scores": {
+    "whimsy": 6,
+    "fun": 7,
+    "money": 5,
+    "total": 18
+   },
+   "reason": "一个音乐生成工具，可以根据输入的参数生成高质量的音乐片段。",
+   "analysis": {
+    "zh": "该项目提供了一个音乐生成工具，用户可以输入参数生成高质量的音乐片段。这为音乐制作人和爱好者提供了新的创作方式。",
+    "en": "This project offers a music generation tool where users can input parameters to generate high-quality music clips. It provides a new way of creation for music producers and enthusiasts."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "这是一个基于Hugging Face的音乐生成工具，用户可以输入参数生成高质量的音乐片段。",
+     "why": "音乐生成是创意领域的一个重要应用，可以帮助音乐制作人和爱好者快速生成多样化的音乐作品。",
+     "biz": "该工具可以应用于音乐制作、影视配乐和音频内容生成等领域，具有较高的商业价值。"
+    },
+    "en": {
+     "what": "This is a music generation tool based on Hugging Face, where users can input parameters to generate high-quality music clips.",
+     "why": "Music generation is an important application in the creative field, helping music producers and enthusiasts quickly generate diverse musical works.",
+     "biz": "The tool can be applied in fields such as music production, film scoring, and audio content generation, presenting high commercial value."
+    }
+   },
+   "tags": [
+    "创意",
+    "语音"
+   ]
+  },
+  {
+   "id": "producthunt:1221923",
+   "scores": {
+    "whimsy": 7,
+    "fun": 8,
+    "money": 6,
+    "total": 21
+   },
+   "reason": "将产品截图和提示转化为动态视频，让演示更加生动直观。",
+   "analysis": {
+    "zh": "Openmotion 是一个创新工具，可以将静态的产品截图和文本提示转化为动态的视频，非常适合用于产品展示和推广。",
+    "en": "Openmotion is an innovative tool that converts static product screenshots and text prompts into dynamic videos, perfect for product demonstrations and promotions."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Openmotion 是一个在线工具，用户上传产品截图并提供一些提示，工具会自动生成一个动态的视频演示。",
+     "why": "它简化了创建产品演示的过程，使得非专业人员也能轻松制作高质量的演示视频。",
+     "biz": "适用于各种规模的企业，尤其是初创公司和小型企业，能够以低成本快速生成吸引人的产品演示。"
+    },
+    "en": {
+     "what": "Openmotion is an online tool where users upload product screenshots and provide some prompts, and the tool generates a dynamic video demonstration.",
+     "why": "It simplifies the process of creating product demonstrations, making it easy for non-professionals to produce high-quality demo videos.",
+     "biz": "Suitable for businesses of all sizes, especially startups and small businesses, it allows for the quick and cost-effective creation of engaging product demos."
+    }
+   },
+   "tags": [
+    "创意",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1222442",
+   "scores": {
+    "whimsy": 6,
+    "fun": 7,
+    "money": 5,
+    "total": 18
+   },
+   "reason": "基于浏览器的生成式数字音频工作站，让音乐创作更加便捷。",
+   "analysis": {
+    "zh": "Suno Studio 2.0 是一个基于浏览器的生成式数字音频工作站，为音乐创作者提供了强大的工具和灵活的工作环境。",
+    "en": "Suno Studio 2.0 is a browser-based generative digital audio workstation that provides powerful tools and a flexible working environment for music creators."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Suno Studio 2.0 是一个完全在浏览器中运行的数字音频工作站，支持多种音频处理功能。",
+     "why": "它消除了传统 DAW 的安装和配置复杂性，使得音乐创作更加便捷。",
+     "biz": "适合独立音乐人和小型工作室，提供了一个高效且易于使用的音乐创作平台。"
+    },
+    "en": {
+     "what": "Suno Studio 2.0 is a fully browser-based digital audio workstation that supports various audio processing functions.",
+     "why": "It eliminates the complexity of installation and configuration found in traditional DAWs, making music creation more accessible.",
+     "biz": "Ideal for independent musicians and small studios, it offers an efficient and user-friendly platform for music creation."
+    }
+   },
+   "tags": [
+    "创意"
+   ]
+  },
+  {
+   "id": "producthunt:1222359",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 7,
+    "total": 18
+   },
+   "reason": "Google 推出的新一代编码助手，提高编程效率。",
+   "analysis": {
+    "zh": "Gemini 3.7 Flash 是 Google 推出的一款新的编码助手，旨在提高开发者的编程效率。",
+    "en": "Gemini 3.7 Flash is a new coding assistant launched by Google, aimed at improving developers' coding efficiency."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Gemini 3.7 Flash 是一款智能编码助手，能够自动完成代码、提供代码建议，并帮助开发者更高效地编写代码。",
+     "why": "它集成了最新的 AI 技术，能够理解复杂的代码结构，并提供准确的代码建议。",
+     "biz": "适用于各种规模的开发团队，特别是那些需要提高开发效率的企业。"
+    },
+    "en": {
+     "what": "Gemini 3.7 Flash is a smart coding assistant that can auto-complete code, provide code suggestions, and help developers write code more efficiently.",
+     "why": "It integrates the latest AI technology to understand complex code structures and provide accurate code suggestions.",
+     "biz": "Suitable for development teams of all sizes, especially those looking to improve their development efficiency."
+    }
+   },
+   "tags": [
+    "编码",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1222324",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "免费的编码助手，替代 Claude、Cursor 等现有工具。",
+   "analysis": {
+    "zh": "Freebuff 是一个免费的编码助手，旨在替代现有的 Claude、Cursor 等工具，提供更高效的编码体验。",
+    "en": "Freebuff is a free coding assistant designed to replace existing tools like Claude and Cursor, offering a more efficient coding experience."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Freebuff 是一个免费的编码助手，可以帮助开发者自动完成代码、提供代码建议，并提高编码效率。",
+     "why": "它通过集成最新的 AI 技术，能够理解复杂的代码结构，并提供准确的代码建议。",
+     "biz": "适用于个人开发者和小型团队，提供了一个成本低廉且高效的编码解决方案。"
+    },
+    "en": {
+     "what": "Freebuff is a free coding assistant that helps developers with code completion, code suggestions, and improved coding efficiency.",
+     "why": "It leverages the latest AI technology to understand complex code structures and provide accurate code suggestions.",
+     "biz": "Suitable for individual developers and small teams, it offers a low-cost and efficient coding solution."
+    }
+   },
+   "tags": [
+    "编码",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1222175",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "在手机上使用 Claude Code 和 Codex 进行编码。",
+   "analysis": {
+    "zh": "Port22 是一个移动应用，允许用户在手机上使用 Claude Code 和 Codex 进行编码。",
+    "en": "Port22 is a mobile app that allows users to use Claude Code and Codex for coding on their phones."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Port22 是一个移动应用，使用户能够在手机上使用 Claude Code 和 Codex 进行编码。",
+     "why": "它为开发者提供了一种新的编码方式，使得随时随地进行编码成为可能。",
+     "biz": "适用于需要移动办公的开发者，提供了一个方便的移动编码解决方案。"
+    },
+    "en": {
+     "what": "Port22 is a mobile app that enables users to use Claude Code and Codex for coding on their phones.",
+     "why": "It offers developers a new way to code, making it possible to code anytime and anywhere.",
+     "biz": "Suitable for developers who need to work on the go, it provides a convenient mobile coding solution."
+    }
+   },
+   "tags": [
+    "编码",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1221363",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "使用 Claude Code 和 Codex 创建克隆体来完成工作。",
+   "analysis": {
+    "zh": "Munder Difflin 是一个工具，允许用户使用 Claude Code 和 Codex 创建克隆体来完成工作任务。",
+    "en": "Munder Difflin is a tool that allows users to create clones using Claude Code and Codex to complete work tasks."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "Munder Difflin 是一个工具，用户可以使用 Claude Code 和 Codex 创建克隆体来执行各种任务。",
+     "why": "它通过自动化重复性任务，提高了工作效率。",
+     "biz": "适用于需要处理大量重复性任务的企业和个人，提供了一个高效的自动化解决方案。"
+    },
+    "en": {
+     "what": "Munder Difflin is a tool where users can create clones using Claude Code and Codex to perform various tasks.",
+     "why": "It improves efficiency by automating repetitive tasks.",
+     "biz": "Suitable for businesses and individuals who need to handle a large volume of repetitive tasks, it provides an efficient automation solution."
+    }
+   },
+   "tags": [
+    "编码",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1217183",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 6,
+    "total": 17
+   },
+   "reason": "一键从任何网站抓取数据，简化数据收集过程。",
+   "analysis": {
+    "zh": "BrowserAct Cloud 是一个工具，允许用户通过简单的提示从任何网站抓取数据。",
+    "en": "BrowserAct Cloud is a tool that allows users to scrape data from any website with a simple prompt."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "BrowserAct Cloud 是一个基于云的数据抓取工具，用户可以通过简单的提示从任何网站抓取数据。",
+     "why": "它简化了数据收集过程，使得非技术人员也能轻松抓取所需数据。",
+     "biz": "适用于需要频繁抓取数据的企业和个人，提供了一个简单易用的数据抓取解决方案。"
+    },
+    "en": {
+     "what": "BrowserAct Cloud is a cloud-based data scraping tool that allows users to scrape data from any website with a simple prompt.",
+     "why": "It simplifies the data collection process, making it easy for non-technical users to scrape the data they need.",
+     "biz": "Suitable for businesses and individuals who need to frequently scrape data, it provides a simple and user-friendly data scraping solution."
+    }
+   },
+   "tags": [
+    "数据",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1222158",
+   "scores": {
+    "whimsy": 6,
+    "fun": 7,
+    "money": 6,
+    "total": 19
+   },
+   "reason": "可组合的代理框架，所有组件都是插件。",
+   "analysis": {
+    "zh": "DeepSeek Harness 是一个可组合的代理框架，其中所有组件都可以作为插件使用。",
+    "en": "DeepSeek Harness is a composable agent framework where all components can be used as plugins."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "DeepSeek Harness 是一个高度模块化的代理框架，用户可以根据需要组合不同的插件来构建自己的代理系统。",
+     "why": "它提供了极大的灵活性，使得用户可以根据具体需求定制代理系统。",
+     "biz": "适用于需要构建复杂代理系统的开发者和企业，提供了一个灵活且可扩展的解决方案。"
+    },
+    "en": {
+     "what": "DeepSeek Harness is a highly modular agent framework where users can combine different plugins to build their own agent systems.",
+     "why": "It offers great flexibility, allowing users to customize agent systems according to their specific needs.",
+     "biz": "Suitable for developers and businesses that need to build complex agent systems, it provides a flexible and scalable solution."
+    }
+   },
+   "tags": [
+    "agent",
+    "基建"
+   ]
+  },
+  {
+   "id": "producthunt:1221610",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "一键在 ChatGPT、Claude 和 Gemini 之间切换聊天记录。",
+   "analysis": {
+    "zh": "ThreadPort 是一个工具，允许用户在 ChatGPT、Claude 和 Gemini 之间一键切换聊天记录。",
+    "en": "ThreadPort is a tool that allows users to switch chat threads between ChatGPT, Claude, and Gemini with one click."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "ThreadPort 是一个工具，用户可以在 ChatGPT、Claude 和 Gemini 之间一键切换聊天记录，方便管理和迁移聊天历史。",
+     "why": "它简化了多平台聊天管理的过程，使得用户可以轻松在不同平台之间切换。",
+     "biz": "适用于需要在多个 AI 聊天平台之间切换的用户，提供了一个便捷的管理工具。"
+    },
+    "en": {
+     "what": "ThreadPort is a tool that allows users to switch chat threads between ChatGPT, Claude, and Gemini with one click, making it easy to manage and migrate chat history.",
+     "why": "It simplifies the process of managing chats across multiple platforms, making it easy for users to switch between them.",
+     "biz": "Suitable for users who need to switch between multiple AI chat platforms, it provides a convenient management tool."
+    }
+   },
+   "tags": [
+    "agent",
+    "效率"
+   ]
+  },
+  {
+   "id": "producthunt:1220712",
+   "scores": {
+    "whimsy": 5,
+    "fun": 6,
+    "money": 5,
+    "total": 16
+   },
+   "reason": "在一个平台上运行多个 AI 代理，提高机器利用率。",
+   "analysis": {
+    "zh": "apra-fleet 是一个工具，允许用户在一个平台上运行多个 AI 代理，提高机器利用率。",
+    "en": "apra-fleet is a tool that allows users to run multiple AI agents on a single platform, improving machine utilization."
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "apra-fleet 是一个工具，用户可以在一个平台上运行多个 AI 代理，从而提高机器的利用率。",
+     "why": "它通过集中管理多个 AI 代理，简化了资源分配和管理的过程。",
+     "biz": "适用于需要高效利用计算资源的企业和个人，提供了一个集中管理 AI 代理的解决方案。"
+    },
+    "en": {
+     "what": "apra-fleet is a tool that allows users to run multiple AI agents on a single platform, thereby improving machine utilization.",
+     "why": "It simplifies resource allocation and management by centralizing the management of multiple AI agents.",
+     "biz": "Suitable for businesses and individuals who need to efficiently utilize computing resources, it provides a centralized solution for managing AI agents."
+    }
+   },
+   "tags": [
+    "agent",
+    "效率"
+   ]
+  },
+  {
+   "id": "reddit:1vlu1se",
+   "placeholder": true,
+   "scores": {
+    "whimsy": 0,
+    "fun": 0,
+    "money": 0,
+    "total": 0
+   },
+   "reason": "（本周该候选被 LLM 漏评，占位条目，不入库）",
+   "analysis": {
+    "zh": "（中文简读暂缺）",
+    "en": "(Brief analysis unavailable.)"
+   },
+   "deep_dive": {
+    "zh": {
+     "what": "（项目内容暂缺）",
+     "why": "（关注理由暂缺）",
+     "biz": "（商业分析暂缺）"
+    },
+    "en": {
+     "what": "(What-it-is unavailable.)",
+     "why": "(Why-it-matters unavailable.)",
+     "biz": "(Business analysis unavailable.)"
+    }
+   },
+   "tags": [
+    "创意"
+   ]
+  }
+ ],
+ "news": [
+  {
+   "id": "hackernews:49274600",
+   "title": {
+    "zh": "DeepSeek发布V4 Pro 0813版本",
+    "en": "DeepSeek Releases V4 Pro 0813 Version"
+   },
+   "newsworthy": 8,
+   "summary": {
+    "zh": "DeepSeek宣布推出其最新版本的V4 Pro 0813，这款升级后的AI助手将带来更强大的功能和更好的用户体验。",
+    "en": "DeepSeek has announced the release of its latest version, V4 Pro 0813, which promises to deliver enhanced features and improved user experience for their upgraded AI assistant."
+   }
+  },
+  {
+   "id": "hackernews:49289112",
+   "title": {
+    "zh": "谷歌推出Gemini 3.7 Flash模型",
+    "en": "Google Introduces Gemini 3.7 Flash Model"
+   },
+   "newsworthy": 9,
+   "summary": {
+    "zh": "谷歌发布了新的Gemini 3.7 Flash模型，这是其多模态AI系列中的最新成员，旨在提供更快更准确的结果。",
+    "en": "Google has released the new Gemini 3.7 Flash model, the latest addition to its multimodal AI lineup, designed to deliver faster and more accurate results."
+   }
+  },
+  {
+   "id": "hackernews:49285244",
+   "title": {
+    "zh": "DeepSeek Harness开发者预览版发布",
+    "en": "DeepSeek Harness Developer Preview Released"
+   },
+   "newsworthy": 7,
+   "summary": {
+    "zh": "DeepSeek推出了Harness平台的开发者预览版，这是一个旨在简化AI模型训练和部署过程的新工具。",
+    "en": "DeepSeek has launched the developer preview of Harness, a new platform aimed at simplifying the process of training and deploying AI models."
+   }
+  },
+  {
+   "id": "hackernews:49289844",
+   "title": {
+    "zh": "Cerebras加速GPT-5.6 Sol Ultrafast模型",
+    "en": "Cerebras Accelerates GPT-5.6 Sol Ultrafast Model"
+   },
+   "newsworthy": 8,
+   "summary": {
+    "zh": "Cerebras与OpenAI合作，利用其硬件加速技术大幅提升了GPT-5.6 Sol Ultrafast模型的性能。",
+    "en": "Cerebras, in collaboration with OpenAI, has significantly boosted the performance of the GPT-5.6 Sol Ultrafast model using its hardware acceleration technology."
+   }
+  },
+  {
+   "id": "hackernews:49243880",
+   "title": {
+    "zh": "马克·扎克伯格批评封闭式AI竞争对手",
+    "en": "Mark Zuckerberg Criticizes 'Closed' AI Rivals"
+   },
+   "newsworthy": 7,
+   "summary": {
+    "zh": "马克·扎克伯格公开批评了所谓的“封闭”AI竞争对手，并表示Meta将回归开放模型路线。",
+    "en": "Mark Zuckerberg publicly criticized so-called 'closed' AI rivals and stated that Meta would return to the path of open models."
+   }
+  },
+  {
+   "id": "hackernews:49213754",
+   "title": {
+    "zh": "甲骨文禁止OpenJDK中使用AI生成代码",
+    "en": "Oracle Bans AI-Generated Code from OpenJDK"
+   },
+   "newsworthy": 6,
+   "summary": {
+    "zh": "甲骨文宣布禁止在OpenJDK项目中使用AI生成的代码，尽管埃里森声称甲骨文不会自己编写代码。",
+    "en": "Oracle has announced a ban on AI-generated code in the OpenJDK project, despite Ellison's claim that Oracle isn't writing its own code."
+   }
+  },
+  {
+   "id": "reddit:1vj8lag",
+   "title": {
+    "zh": "NeurIPS会议没有一个关于因果关系的工作坊",
+    "en": "No Causality Workshops at NeurIPS Conference"
+   },
+   "newsworthy": 7,
+   "summary": {
+    "zh": "今年的NeurIPS大会共有73个工作坊，却没有一个是专门讨论因果关系的。这引发了对因果推断领域当前地位的关注。",
+    "en": "This year's NeurIPS conference features 73 workshops, but none are dedicated to causality. This raises concerns about the current status of the field of causal inference."
+   }
+  }
+ ],
+ "skipped": [
+  {
+   "id": "github:DrHazemAli/enterprise-system-design",
+   "reason": "这是一个关于企业系统设计的课程和参考资料，内容较为广泛，不适合归类为具体的项目或新闻。"
+  },
+  {
+   "id": "hackernews:49271994",
+   "reason": "此条目讨论的是AI如何影响软件工程行业，并未提供具体的产品或研究成果。"
+  },
+  {
+   "id": "hackernews:49250836",
+   "reason": "此条目主要探讨了AI对网络信息存储的影响，属于观点性文章。"
+  },
+  {
+   "id": "reddit:1vmhks7",
+   "reason": "关于选择博士导师的观点讨论，不属于项目或新闻。"
+  },
+  {
+   "id": "reddit:1vlfjy3",
+   "reason": "个人职业转型咨询，不具备项目或新闻价值。"
+  },
+  {
+   "id": "reddit:1vj3oqr",
+   "reason": "对NeurIPS审稿过程的意见分享，无具体成果或重大事件报道。"
+  },
+  {
+   "id": "reddit:1vkh1ul",
+   "reason": "嵌入模型比较的方法介绍，缺乏具体的项目产出或新闻事件。"
+  },
+  {
+   "id": "reddit:1vi6im4",
+   "reason": "关于大语言模型量化位宽的理论探讨，未形成具体项目或新闻。"
+  }
+ ]
+}

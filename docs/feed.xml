@@ -6,6 +6,31 @@
   <description>每周五自动收集全球天马行空、有趣、有钱途的 AI 项目（Top 30）与本周最有价值的 AI 新闻（Top 10），LLM 评分与双语解读。</description>
   <language>zh-cn</language>
   <item>
+   <title>AI 周报 2026-W33：本周AI项目聚焦于模型更新与开发者工具，特别是在自然语言处理和图像生成领域。</title>
+   <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W33</link>
+   <guid isPermaLink="false">2026-W33</guid>
+   <pubDate>Fri, 14 Aug 2026 20:00:00 +0000</pubDate>
+   <description>本周AI项目聚焦于模型更新与开发者工具，特别是在自然语言处理和图像生成领域。DeepSeek、谷歌和Cerebras等公司发布了新的模型或技术预览，显示出对提高模型性能和效率的持续关注。同时，社区内关于开放性和伦理问题的讨论也在增加。
+
+
+1. Exponential quantum advantage for learning signals with a single qubit（21分）— Exponential Quantum Advantage 研究了单量子比特在学习信号方面的指数级优势。
+2. OmniScientist: An Omni-Modal Omni-Discipline AI Scientist（21分）— OmniScientist 提出了一个全模式、全学科的人工智能科学家，能够自动化科学研究的全流程。
+3. Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows（21分）— Muse Glimmer是一款专为本地代理工作流优化的30亿参数模型，适用于始终在线的应用场景。
+4. Openmotion（21分）— 将产品截图和提示转化为动态视频，让演示更加生动直观。
+5. DeepSeek Harness（19分）— 可组合的代理框架，所有组件都是插件。
+6. Vero: Can AI Agents Build Formally Verified Software Repositories?（18分）— Vero 探讨了 AI 代理是否能够构建形式验证的软件仓库。
+7. LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure（18分）— LittleLearner 提出了一种在教育控制下暴露知识的语言模型。
+8. AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design（18分）— AutoDesign 提出了一种新的设计框架，旨在通过模型-工具系统实现长期的自主设计。
+9. Docker Sandboxes – Disposable, isolated sandboxes for AI agents（18分）— Docker Sandboxes提供了一种可丢弃且隔离的环境，专门用于测试AI代理。
+10. DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation（18分）— 一个动作条件视频世界模型，用于机器人操作，可以根据指令预测未来观察结果。
+
+📰 谷歌推出Gemini 3.7 Flash模型
+📰 DeepSeek发布V4 Pro 0813版本
+📰 Cerebras加速GPT-5.6 Sol Ultrafast模型
+📰 马克·扎克伯格批评封闭式AI竞争对手
+📰 DeepSeek Harness开发者预览版发布</description>
+  </item>
+  <item>
    <title>AI 周报 2026-W32：本周AI项目集中在视频编辑、图像处理及软件开发自动化领域，体现了AI技术在这些领域的深入应用。</title>
    <link>https://ikevinxie.github.io/ai-weekly-radar/#2026-W32</link>
    <guid isPermaLink="false">2026-W32</guid>
