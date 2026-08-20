@@ -1,0 +1,242 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "HAHAHAHAHAHA\n\nnon technical people are so incredibly cooked they are burnt thru\n\ncan u imagine covering ai with zero context, zero reasoning, zero internal world model. it must be so delightfully joyful, everything is so amazing, face value is all you need,\n\nwhat a time to be alive",
+  "url": "https://x.com/swyx/status/2090314794456785263",
+  "date": "2026-08-20",
+  "likes": 128
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "positive UBB take if you view openrouter in that lens\n\nhttps://t.co/rOtLC5UkC5",
+  "url": "https://x.com/swyx/status/2090259930662211615",
+  "date": "2026-08-20",
+  "likes": 1
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "https://t.co/LSa5Oay6IK",
+  "url": "https://x.com/joshwoodward/status/2090166808213082234",
+  "date": "2026-08-19",
+  "likes": 75
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "University student plans are back!\n\nWe've gone global with this one. Over 140 countries will get higher limits, more storage, and new features like our dedicated student hub. It also comes with Notebook, Flow, and more. Sign up today ⬇️ https://t.co/Af43OUufrd",
+  "url": "https://x.com/joshwoodward/status/2090166806401228912",
+  "date": "2026-08-19",
+  "likes": 1224
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Today we’re previewing Private Safety Processing, designed to let us keep offering Zero Data Retention while improving our safeguards. Even when benefiting from frontier intelligence, customers shouldn’t have to give up control of sensitive data.\n\nFor ZDR deployments, content stays on infrastructure the customer controls. Automated systems look for patterns across related interactions and return limited safety signals, without exposing the underlying prompts or responses to OpenAI employees (even me!).\n\nWe’re also developing an OpenAI-hosted option encrypted with customer-controlled keys. We’re testing this with early customers now and plan to begin rolling it out in September.",
+  "url": "https://x.com/thsottiaux/status/2090173536010957128",
+  "date": "2026-08-19",
+  "likes": 2091
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Depiction of me receiving this very important item https://t.co/3Vyj8RYWDq",
+  "url": "https://x.com/thsottiaux/status/2090134827450421604",
+  "date": "2026-08-19",
+  "likes": 441
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "It has not been used yet, but would you look at that. Codex for scale. https://t.co/o1pulwoifd",
+  "url": "https://x.com/thsottiaux/status/2090116476414136830",
+  "date": "2026-08-19",
+  "likes": 4787
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "mRNA vaccines to treat cancer seems extremely promising although ChatGPT tells me there are no active mRNA trials for breast cancer.\n\nHow does this process work? It has to finish clinical trial for melanoma first then start another trial for another type of cancer? https://t.co/QSJyOuS37Z https://t.co/dnMYfuDO1r",
+  "url": "https://x.com/petergyang/status/2090211023798321435",
+  "date": "2026-08-19",
+  "likes": 43
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF",
+  "url": "https://x.com/petergyang/status/2090127742658568219",
+  "date": "2026-08-19",
+  "likes": 1
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I wrote about my mom, her battles with breast cancer, and how we’re using AI to navigate the healthcare system.\n\nI'm grateful to @MaorShlomo and the team at the Sijbrandij Foundation for sharing their time and advice.\n\n📌 Read my new essay here: https://t.co/bwbqW9s2oB",
+  "url": "https://x.com/petergyang/status/2090087911471644829",
+  "date": "2026-08-19",
+  "likes": 61
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "The best way to get good at evals - Part 3. \n\nLet’s talk failure modes taxonomy - that’s the first thing you should build once you have v1 of your evals.\n\nStart with your production traces - study the last 500 or 1,000 interactions and look at the failures. Cluster them and name the clusters.\n\nGet specific - “bad answer” isn’t a useful cluster name. \n\nSpecific failures - wrong document retrieved / right document but irrelevant section / failed to ground to context and hallucinated /  failed to punt on answer and instead made stuff up / question ambiguous  and made poor assumptions rather than asking clarifying questions etc.\n\nThose are very different problems.\n\nOnce you can name the failure precisely, you can build eval tests specifically designed to catch it.\n\nYou now have the bridge from evals to an improvement flywheel. More tomorrow…",
+  "url": "https://x.com/realmadhuguru/status/2090242427944833047",
+  "date": "2026-08-20",
+  "likes": 62
+ },
+ {
+  "author": "Cat Wu",
+  "handle": "_catwu",
+  "text": "We'd love to talk with Cowork users in Corporate Finance and Accounting roles!\n\nHave ideas on how we can improve? Sign up for a screen share with our team here: https://t.co/KjF5bGFX1x",
+  "url": "https://x.com/_catwu/status/2090249465844380154",
+  "date": "2026-08-20",
+  "likes": 63
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "I saw this demo last summer and told Sam he needed to ship it, so glad it’s out. It’s really fun.\n\nIt’s one of the first games that really uses AI capabilities to unlock new gameplay. https://t.co/V86CCDvvHp",
+  "url": "https://x.com/trq212/status/2090182422415716414",
+  "date": "2026-08-19",
+  "likes": 237
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "companies whose core competency is not software need software to be a reliable, predictable process\n\nbut I think building net new software products will continue to be an unreliable and risky, but profitable business",
+  "url": "https://x.com/trq212/status/2090134946598039646",
+  "date": "2026-08-19",
+  "likes": 114
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "for its entire existence, the creation of software has been an incredibly unreliable endeavor\n\nmost projects ran late, over budget, and still missed user needs\n\nif you were an SMB, you simply couldn't get good software built for you\n\nthis is the promise of the 'software factory'",
+  "url": "https://x.com/trq212/status/2090134945490678071",
+  "date": "2026-08-19",
+  "likes": 1026
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Excited for our partnership with OpenAI https://t.co/v5cgdOVaON",
+  "url": "https://x.com/amasad/status/2090104535112945906",
+  "date": "2026-08-19",
+  "likes": 674
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Agents made software cheaper but made coding expensive.\n\nToday, together with @OpenAI, we’re changing this: https://t.co/OI3eowMt5s",
+  "url": "https://x.com/amasad/status/2090079496124674377",
+  "date": "2026-08-19",
+  "likes": 3552
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "https://t.co/OL0LzGtvAw is 6.3mb. It starts up in 10µs¹. It's a Zig-compiled static ELF binary, or an even smaller 𝚕𝚒𝚋𝚏𝚡.𝚠𝚊𝚜𝚖² \n\nAI will make most infrastructure natively optimized. Case in point: fx can literally finish tasks faster than other agents can boot.\n\nFast is a one-way street.\n\n¹ that's microseconds\n² fun fact: the wasm build is actually *smaller*. A lot of binary weight comes from the TLS/HTTP stack. In WebAssembly, fx delegates 𝚏𝚎𝚝𝚌𝚑() to the JS runtime instead. You can try this on https://t.co/me7se5dvip",
+  "url": "https://x.com/rauchg/status/2090255740384751664",
+  "date": "2026-08-20",
+  "likes": 537
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "I love @𝚟𝚎𝚛𝚌𝚎𝚕 on Slack. Incredible ship https://t.co/qOtsbg5fta",
+  "url": "https://x.com/rauchg/status/2090174031203102813",
+  "date": "2026-08-19",
+  "likes": 148
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "SF has breathtaking views https://t.co/8WEwlQlxdl",
+  "url": "https://x.com/rauchg/status/2090119796784570872",
+  "date": "2026-08-19",
+  "likes": 1943
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "There tends to be a debate between being an expert or generalist in the era of AI. So far, the experts appear to have the upper hand, and that’s not slowing down.\n\nAI makes it 10X easier to get started with any kind of task. Coding, legal work, research, financial analysis, and so on. But having the right judgment for how to direct the agent onto the right work, how to veer it to course correct it, being able to review or test the output, and having the right sense of what “good” looks like all requires a high degree of skill depending on the field.\n\nThat skill can be developed far faster due to AI for anyone interested, which is amazing for uplifting anyone in their career. But there’s no replacement to needing judgment and many of the core skills that go into most domains of work. \n\nAnd if anything, AI will be a technology that exacerbates differences in skill levels because the experts have far more leverage than ever before. Net net: don’t give up on being an expert at something.",
+  "url": "https://x.com/levie/status/2090278256306229675",
+  "date": "2026-08-20",
+  "likes": 191
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Good details on the Stripe + OpenRouter deal here. For AI to diffuse more broadly, developers and enterprises will want ways of being able to mix and match intelligence from a variety of provers seamlessly and better manage costs. This will be an important part of that. https://t.co/AxnC8xsiy9",
+  "url": "https://x.com/levie/status/2090137914785280189",
+  "date": "2026-08-19",
+  "likes": 320
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "AI labs: give us billions, we’ll cure cancer \n\nModerna: https://t.co/JPiLCcPHbB",
+  "url": "https://x.com/mattturck/status/2090070949567574151",
+  "date": "2026-08-19",
+  "likes": 936
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "latest home project: \nrotating iconic patent drawings 📜\n\ndisplay: 13.3” spectra 6 e-ink\ncontroller: esp32-s3\nserver: @railway\nbattery powered (should last ~three months) https://t.co/fghBzPiZk4",
+  "url": "https://x.com/nikunj/status/2090307104146112534",
+  "date": "2026-08-20",
+  "likes": 54
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "People keep talking about AGI and yet 98/100 cold emails I get are pure garbage. \n\nStill a lot of alpha out there for being thoughtful, curious and using AI judiciously where needed!",
+  "url": "https://x.com/nikunj/status/2090105846810476644",
+  "date": "2026-08-19",
+  "likes": 136
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "Can’t wait to show you all what we been cookin’! https://t.co/P4Of1DHTL6",
+  "url": "https://x.com/steipete/status/2090162595257102731",
+  "date": "2026-08-19",
+  "likes": 625
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "we now have a frontier team! \n\na group of people inside of every explicitly dedicated to mapping and experimenting at the edge of ai https://t.co/Fr6mIuvRwt",
+  "url": "https://x.com/danshipper/status/2090122240025071907",
+  "date": "2026-08-19",
+  "likes": 56
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "Some have asked what this means.\n\nIt’s simple: Work on things that truly matter.\n\nNot just good product or business ideas.\n\nThings that matter. Make a dent in the universe. https://t.co/Oe5lhZdZRN",
+  "url": "https://x.com/adityaag/status/2090254727175115032",
+  "date": "2026-08-20",
+  "likes": 49
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "I was recently talking to a founder who had gone through a slog through hell. SaaS. Series B. Low growth. Stagnating company\n\nI asked him his biggest takeaway.....it wasn't to pick a bigger market. Or more growth\n\nIt was simply: Work on something consequential and meaningful.",
+  "url": "https://x.com/adityaag/status/2090174782633566473",
+  "date": "2026-08-19",
+  "likes": 287
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "we support business privacy!\n\nhttps://t.co/SJ6w5DeYTY",
+  "url": "https://x.com/sama/status/2090163991234453611",
+  "date": "2026-08-19",
+  "likes": 3302
+ }
+]
