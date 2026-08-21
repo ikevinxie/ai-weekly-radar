@@ -1,0 +1,250 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "@vibhuuuus more in ainews  https://t.co/hZVnWQKuMX",
+  "url": "https://x.com/swyx/status/2090678390575513991",
+  "date": "2026-08-21",
+  "likes": 1
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "proud that @vibhuuuus and i did the most recent pod with @eisokant on why NVIDIA just paid him $6B to buy the incredible model factory that is pumping out Thinky-beating models (actually not exaggeration, look at the numbers)\n\ntune in / subscribe / whatever https://t.co/EsgyFnhAIy \n\nonly on @latentspacepod",
+  "url": "https://x.com/swyx/status/2090577677916807429",
+  "date": "2026-08-20",
+  "likes": 60
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "by total views, matt’s now the top @aidotengineer speaker in our brief history, and arguably one of the best skills experts in the world — his /grill-me has reached all echelons up to @satyanadella (with some variations…)\n\n/wayfinder is @mattpocockuk’s /grill-me for /grill-me, when you are just navigating the fog of war and don’t yet know what you dont yet know, and need to orchestrate research and other grill sessions to get there. super glad to have @ricmac help launch our new Skills coverage with his course launch this week!\n\n👇exclusive interview, quick read",
+  "url": "https://x.com/swyx/status/2090550020496040266",
+  "date": "2026-08-20",
+  "likes": 87
+ },
+ {
+  "author": "Boris Cherny",
+  "handle": "bcherny",
+  "text": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It’s coming this fall. https://t.co/vH8CMhxhdB",
+  "url": "https://x.com/bcherny/status/2090537902912815536",
+  "date": "2026-08-20",
+  "likes": 1671
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "We've investigated a few messages about codex usage limits being different. That's not something we change without engaging the community and being transparent.\n\nWhat we did see is that when talking to affected users many were using sub2api. Converting a subscription into api traffic to then re-serve or share across many users is not something we support and this type of usage gets flagged by our fraud-prevention systems.\n\nYou are completely fine if you use your subscription through Sign in With ChatGPT, either through the official clients or through one of the many OSS clients (Pi, OpenCode, ...) that support signing in with your account and using your included usage.",
+  "url": "https://x.com/thsottiaux/status/2090675027670978569",
+  "date": "2026-08-21",
+  "likes": 2797
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Yay, you can now make transparent images in ChatGPT and through the API with GPT-Image-2. Here is a cactus cactus I am about to print and put on my laptop. https://t.co/1WZd2VSH8y https://t.co/tkFkC7NYpq",
+  "url": "https://x.com/thsottiaux/status/2090631723302469995",
+  "date": "2026-08-21",
+  "likes": 2503
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Create a ChatGPT Site, share it and create something together. I've been building little games and sites with others and it is so much fun. https://t.co/KrWSbWWTwl",
+  "url": "https://x.com/thsottiaux/status/2090518287532916854",
+  "date": "2026-08-20",
+  "likes": 1605
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "How dare it look me up 😅 https://t.co/t3IHhjeObV",
+  "url": "https://x.com/petergyang/status/2090660707968704888",
+  "date": "2026-08-21",
+  "likes": 30
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "I'm on my way back to Vancouver to be with my mom but wanted to take a moment to celebrate crossing 100K subs on YouTube.\n\nExcited to share a lot more practical interviews soon to answer your most burning AI questions:\n\n1. @HamelHusain and @sh_reya (AI evals experts) on how today's AI models have changed evals completely\n\n2. @amoljain_ (Head of Product Engineering at Replit) on which vibe-coded apps have actually become real businesses\n\n3. @ebloch (Product Lead at OpenAI) on how ChatGPT Finance can help you save both time and money\n\n4. @poteto and Roman (SpaceXAI) on how the Grok Bot team uses Grok @bot\n\n📌 Subscribe to get the episodes soon:\nhttps://t.co/NSTj7ijxE0",
+  "url": "https://x.com/petergyang/status/2090589731927282021",
+  "date": "2026-08-21",
+  "likes": 265
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "My gut is that alot of AI output can be improved just by building a loop where a manager agent negs the other worker agent with prompts like:\n\n\"Are you sure this is the best you can do?\"\n\"I think you can do better, try again\"\n\"Take a closer look, give me 11/10 output\"",
+  "url": "https://x.com/petergyang/status/2090564541499498919",
+  "date": "2026-08-20",
+  "likes": 484
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "*hill climbing evals (not ‘long’)",
+  "url": "https://x.com/realmadhuguru/status/2090635465120424067",
+  "date": "2026-08-21",
+  "likes": 0
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "How to build great evals - part 4\n\nThe reason enterprises struggle with building decent AI systems is the lack of an eval strategy.\n\nYou need a laddered eval strategy, for your unique use cases,\nwith multiple evals on the cost/realism spectrum.\n\nHere are the key kinds of evals you need:\n\nHill-climb long evals : this pushes the frontier of your product and you need to continually refresh this to improve quality and expand your feature base.\n\nRegression evals : Did we break the product of today while hill climbing?\n\nSmoke test evals: safety and the absolute basics that just can’t go wrong. Not necessarily hard questions, but important to not get wrong. Eg product identity.\n\nLaunch evals: often close to an online test with real-ish traffic. Less control, but the most realistic.\n\nMore in tomorrow’s post! \n\nShare with your teammates who will benefit!",
+  "url": "https://x.com/realmadhuguru/status/2090595384905113939",
+  "date": "2026-08-21",
+  "likes": 137
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall https://t.co/ZJF2q8NKcC",
+  "url": "https://x.com/trq212/status/2090569474139439335",
+  "date": "2026-08-20",
+  "likes": 543
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "This partnership with @OpenAI is long overdue.\n\nBefore Replit was in YC, PG asked Sam to recruit us.\n\nHere’s Sam telling the story of how we first met: https://t.co/qgrj1TJv5L https://t.co/IsiPoUBvOx",
+  "url": "https://x.com/amasad/status/2090514571513708874",
+  "date": "2026-08-20",
+  "likes": 938
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "One of the more underrated aspects of the new Free Mode is how fast it is.\n\nMaking coding interactive again! https://t.co/qwCBr2vBS2",
+  "url": "https://x.com/amasad/status/2090484698413740186",
+  "date": "2026-08-20",
+  "likes": 145
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "You can really build a TON with Free Mode on Replit! https://t.co/YBQQ4OfwiP",
+  "url": "https://x.com/amasad/status/2090434587075793146",
+  "date": "2026-08-20",
+  "likes": 146
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "https://t.co/3Z4NESzNKd 0.0.5 gets even smaller\nfits in 2 floppy disks 💾💾😁 (𝚡𝚣-compressed)\nshipping tomorrow with our most-asked feature! https://t.co/HhQ7HHIcUL",
+  "url": "https://x.com/rauchg/status/2090600467592266240",
+  "date": "2026-08-21",
+  "likes": 512
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "We’re building AWS for agents https://t.co/BdfqfqUMl4",
+  "url": "https://x.com/rauchg/status/2090520415336845595",
+  "date": "2026-08-20",
+  "likes": 387
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Bun’s pursuit of simple, fast &amp; open is the perfect match for Vercel and how we think about the world.\n\nCongrats @jarredsumner on shipping! https://t.co/cAJehCfYKN",
+  "url": "https://x.com/rauchg/status/2090470175674179695",
+  "date": "2026-08-20",
+  "likes": 463
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Great post on what post training looks like for applied AI use-cases to bring down costs and improve accuracy on certain tasks. This will increasingly be an approach that companies that can get closer to the underlying workflow in an enterprise will take.\n\nThe key is that once you understand a domain well enough and have enough volume on a set of similar tasks, it can start to make sense to purpose design models just for that work.\n\n“In post-training, we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance. This allowed us to co-optimize for both cost and quality, gaining significant performance while keeping cost stable.”\n\nNow, this won’t make sense in every domain, as general purpose frontier closed or open models will be good enough out of the box -or necessary- for the work at hand. But once you have deep enough vertical expertise, and either the costs are too high to do at scale *or* you have a unique enough task type not being trained on otherwise, this will make a ton of sense. \n\nVery compelling value proposition for being an applied AI company, and awesome to see multiple paths to winning in the market right now.",
+  "url": "https://x.com/levie/status/2090664811185205722",
+  "date": "2026-08-21",
+  "likes": 57
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "YC is the YC for AI Researchers https://t.co/xb9ZtXkoiT",
+  "url": "https://x.com/garrytan/status/2090471408996659339",
+  "date": "2026-08-20",
+  "likes": 210
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Interesting violation of “you should dogfood your own product” https://t.co/6S9pdYnHUc",
+  "url": "https://x.com/garrytan/status/2090470082053050655",
+  "date": "2026-08-20",
+  "likes": 400
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "YC is the YC for consumer hardware https://t.co/VpXRNETldF",
+  "url": "https://x.com/garrytan/status/2090469087722041567",
+  "date": "2026-08-20",
+  "likes": 537
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "The other day I was feeling unmotivated and talked to Claude about it. Claude said something that completely changed how I see motivation:\n\n\"Motivation follows action more than it precedes it\"\n\nBoom.",
+  "url": "https://x.com/zarazhangrui/status/2090399357145317837",
+  "date": "2026-08-20",
+  "likes": 295
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "My last post on ambition struck a nerve. Got a bunch of DMs from founders asking the same thing: why does ambition matter so much to investors? Let me try to explain the math.\n\nA couple of things have happened, right? Anthropic became the fastest company to go from zero to a trillion dollars in valuation, beating every revenue record you can think of. OpenAI did the same over a longer period. SpaceX went public at $1.77 trillion. And then the Cursor acquisition was the bellwether. You have a company going from zero to $60 billion in four years, returning so much DPI to its early funds that there's actual, meaningful dollar growth coming out. And we haven't even talked about OpenRouter and the IRR there.\n\nSo LPs are voting with their feet, giving money to these very, very large mega funds. Fund sizes have gotten way, way larger, and that almost justifies the behavior. When your fund is that big, each investment needs to be underwritten to an outcome that big. Small wins literally don't move the number.\n\nSo when those funds are evaluating deals, even a Series A, their underwriting needs to be: hey, does this company get to a trillion dollars? If they have that belief, the entry price almost doesn't matter. They're underwriting to a very large outcome and hoping the company kind of gets there. If you enter at 200, 300, 500, sometimes 1B, it really doesn't matter. Because that's how they return the fund.\n\nEven a prominent investor at one of the most disciplined firms says this. It sucks to not be at Anthropic or one of these foundational model companies. The value is just too big.\n\nSo what's happened in venture is that the error of omission is just too fudging high. They can't not invest. When something has a little bit of heat, price almost doesn't matter, because they can't go back to their LPs and say, hey, we didn't get into one of the biggest outcomes. They have to be in it.\n\nThe error of omission is way, way worse than the error of admission. And then power law kind of takes care of itself.\n\nThis is why ambition matters SO much when you're pitching.",
+  "url": "https://x.com/nikunj/status/2090585553947517298",
+  "date": "2026-08-20",
+  "likes": 112
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "The best founders are reductionists. https://t.co/QHv0dR5ZcJ https://t.co/coKzjpfqZ8",
+  "url": "https://x.com/adityaag/status/2090501112927223889",
+  "date": "2026-08-20",
+  "likes": 33
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "He scaled @Google ads from $1B to $100B. Now he's leading @Snowflake through the AI shift.\n\nWatch the full episode on Youtube: \nhttps://t.co/DiSoqgRUcc",
+  "url": "https://x.com/adityaag/status/2090478530513543631",
+  "date": "2026-08-20",
+  "likes": 9
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "One of the attributes that we look for the most @spc is Clarity.\n\nThe ability to be honest.\n\nTo cut through the fog of war.\n\nTo chart a path through murky waters.\n\n@RamaswmySridhar demonstrates this to the maximum degree.\n\nMinus One episode out now.\n\n(00:52) Choosing When to Take a Career Risk\n(05:01) Lessons From Google’s Founders\n(09:52) What Went Wrong at Neeva\n(13:39) The Future of AI Models\n(22:59) Snowflake’s Enduring Value in the AI Era\n(29:24) How to Keep Up With AI\n(32:24) Rapid Fire: Books, Search & Google",
+  "url": "https://x.com/adityaag/status/2090478527313252494",
+  "date": "2026-08-20",
+  "likes": 44
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "What are you building with Claude?",
+  "url": "https://x.com/claudeai/status/2090557653294383151",
+  "date": "2026-08-20",
+  "likes": 69
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "https://t.co/OgQ1IszMkZ",
+  "url": "https://x.com/claudeai/status/2090557651595722851",
+  "date": "2026-08-20",
+  "likes": 141
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "https://t.co/r9UeQv6zyb",
+  "url": "https://x.com/claudeai/status/2090557650056450058",
+  "date": "2026-08-20",
+  "likes": 115
+ }
+]
