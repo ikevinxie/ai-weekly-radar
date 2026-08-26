@@ -1,0 +1,258 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "PSA: do not use codex \"locked use\" capabilities right now. it is currently relying on unstable mac features and has completely locked me out of my macos keychain twice this week. \n\nthx @_chenglou for linking to apple developer forums acknowledging this is a \"known bug\". just avoid. ofc, would be nice to do everything in cloud, but cloud isn't there yet.",
+  "url": "https://x.com/swyx/status/2092492963435946494",
+  "date": "2026-08-26",
+  "likes": 5
+ },
+ {
+  "author": "Boris Cherny",
+  "handle": "bcherny",
+  "text": "A small improvement: memory is now simpler and more powerful. Enjoy! https://t.co/11wCkgPyfJ",
+  "url": "https://x.com/bcherny/status/2092355642363453943",
+  "date": "2026-08-25",
+  "likes": 1429
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Good products take time. At least 34 days.",
+  "url": "https://x.com/thsottiaux/status/2092487667426738179",
+  "date": "2026-08-26",
+  "likes": 2034
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "I want to see the polymarket",
+  "url": "https://x.com/thsottiaux/status/2092359619075314102",
+  "date": "2026-08-25",
+  "likes": 367
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "So much demand for this one. Works similar to the Pro $100 plan but designed for teams and small companies.\n\n✅ All ChatGPT, ChatGPT Work, and Codex features\n✅ Connect to Google Workspace, Slack, GitHub, Microsoft 365, and more\n✅ Secure workspace with SAML, SSO, and MFA\n✅ Centralized billing and administration\n✅ Usage analytics and spend controls\n✅ No 5h limits",
+  "url": "https://x.com/thsottiaux/status/2092345330272780499",
+  "date": "2026-08-25",
+  "likes": 2926
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Here's an example brief that the /fuck-cancer skill creates and updates.\n\nI’ve found it really useful to have a single source of truth doc with patient information, what to do next, what we know, definitions of medical terms, and an update log.\n\n📌 Get the free skill here:\nhttps://t.co/YUGoFbhnNc",
+  "url": "https://x.com/petergyang/status/2092311110871617915",
+  "date": "2026-08-25",
+  "likes": 101
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Very excited to attend @OpenAI Dev Day.\n\nChatGPT / Codex is basically the OS I use for everything I do on my computer.\n\nCan't wait to see what updates the team has in store. https://t.co/0mvJVeQqFa https://t.co/rhxpVhn7Ue",
+  "url": "https://x.com/petergyang/status/2092281120650047746",
+  "date": "2026-08-25",
+  "likes": 117
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Today, I’m open-sourcing /fuck-cancer, an AI skill that helps patients and caregivers navigate cancer diagnosis and treatment and advocate for themselves and their loved ones.\n\nHere’s what patients and caregivers have told me since I shared my mom’s story:\n\n“You have to be a huge patient advocate. Ask questions and push for answers, biopsies, and proper testing.”\n\n“I need help navigating difficult conversations and advocating for myself.”\n\n“The volume of doctors, documents, and insurance paperwork can quickly become overwhelming.”\n\nI built the skill to help with these problems. It creates and updates a practical brief with five sections:\n\n1. Patient and care-team information for easy reference during calls\n\n2. What to do next, limited to three specific actions\n\n3. What we know, separating confirmed facts from what remains unclear\n\n4. Medical terms explained in plain English\n\n5. A care log with recent updates and decisions\n\nIt builds this brief from documents, and context you provide. When research is needed, it uses trusted sources such as the National Cancer Institute and the ClinicalTrials gov API.\n\nI use it with ChatGPT/Codex and Claude Code to prepare for conversations and research. It can save the brief locally as a Markdown file or update a shareable Google Doc so the whole family can work from the same information.\n\n📌 Get the free, open-source skill here:\nhttps://t.co/YUGoFbhnNc\n\nIf you find it useful, please ⭐ the repo and share it with someone going through this BS disease.",
+  "url": "https://x.com/petergyang/status/2092249012913258946",
+  "date": "2026-08-25",
+  "likes": 1389
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Full eval series so far:\n\n1/ Getting started with evals\nhttps://t.co/fh4yQR64Ta\n\n2/ Quality first, then cost\nhttps://t.co/hqNaE2ykTQ\n\n3/ Failure modes taxonomy\nhttps://t.co/MM2wgiAnoF\n\n4/ Laddered eval strategy\nhttps://t.co/2ioAe4hvqb\n\n5/ Tyranny of the average\nhttps://t.co/QPiGbxxb72\n\n6/ Hill climbing on evals\nhttps://t.co/EtxbF1kqgD\n\n7/ The Goldilocks principle\nhttps://t.co/PXSX3jsLtk\n\n8/ Discriminatory power of evals\nhttps://t.co/epINGK6dGV\n\n9/ The Eval Roadmap Problem\nhttps://t.co/nw2U3R6U1Y",
+  "url": "https://x.com/realmadhuguru/status/2092461206783373758",
+  "date": "2026-08-26",
+  "likes": 0
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "How to build great evals — Part 9\n\nThe Eval Roadmap Problem \n\nMost evals fail because teams treat them as static artifacts while their users  expectations and behaviors have evolved.\n \nYour evals need a roadmap that evolves with your product and actual usage patterns.\n\nTake a financial research agent. Here is how use cases will evolve over time.\n\nEarly user: Summarize this 5-page earnings report.\n\n3 weeks later: review the last 5 earnings reports and explain their growth story.\n\n2 months later: Here are 15 filings, earnings transcripts and research reports. Build an investment thesis.\n\nEventually: Monitor my stock portfolio and tell send me alerts when something materially changes my thesis.\n\nEach stage requires different capabilities and hence different evals.\n\nYour evals should change with usage patterns:\n\nshort-context -> long-context\nsingle-turn QA -> multi-turn\npassage citations -> doc and line citations \nSimple QA -> complex synthesis\nreactive chat -> proactive agent\n\nIf your evals are stuck in week 1 while users are in week 3, it will show in your product and churn metrics.\n\nHere’s a practical way to build the roadmap:\n1/ Map the dimensions along which usage will evolve (eg # turns, document size, tool use, autonomy, journey coverage).\n2/ Prioritize the use cases and dimensions that matter most for your product.\n3/ Talk to your users, mine production traces to look for shifts.\n4/ Build P0 evals for the next stage of usage.\n5/ Run the evals, find failure modes (remember the taxonomy from Part 3), and hill-climb (from part 6).\n\nThe goal is to stay ahead of usage patterns. PM 101.\n\nDrop your questions and I will address in future posts.\n\nShare this with your teammates who think your evals are perfect.",
+  "url": "https://x.com/realmadhuguru/status/2092426017118028266",
+  "date": "2026-08-26",
+  "likes": 83
+ },
+ {
+  "author": "Cat Wu",
+  "handle": "_catwu",
+  "text": "Thanks to your feedback, we’ve unified memory across Chat and Cowork. Now, you can tell Claude to remember something once and it’ll have that context across surfaces!\n\nTell us what you’d like to see next :) https://t.co/0Vw2o4zeaB",
+  "url": "https://x.com/_catwu/status/2092337156455051345",
+  "date": "2026-08-25",
+  "likes": 588
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "excited to share more on how we’re making Claude Code more hackable soon https://t.co/liQ5rQG887",
+  "url": "https://x.com/trq212/status/2092303682616627311",
+  "date": "2026-08-25",
+  "likes": 1118
+ },
+ {
+  "author": "Google Labs",
+  "handle": "GoogleLabs",
+  "text": "🚨 NEW LABS EXPERIMENT 🚨\n\nGreat minds t̵h̵i̵n̵k̵  play alike!\n\nPlay with Putty is a collaborative vibe coding tool that lets you build tools and websites together in real time. 🫟\n\nReady for your imagination to go multiplayer? Join the waitlist at https://t.co/v4m5iiYt9T and share your feedback with us!\n\nUS only, ages 18+",
+  "url": "https://x.com/GoogleLabs/status/2092293667688173593",
+  "date": "2026-08-25",
+  "likes": 1234
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "(Not affiliated with Denny's)",
+  "url": "https://x.com/rauchg/status/2092383119248884043",
+  "date": "2026-08-25",
+  "likes": 31
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "We're introducing Run SDK: secure 𝚎𝚟𝚊𝚕 for dynamic Code Mode execution.\n\nWhen agents write code, you don't always need a full sandbox. You can 𝚛𝚞𝚗 their code in a lightweight QuickJS secure context. Faster and more cost-efficient.\n\n𝚗𝚙𝚖 𝚒 𝚛𝚞𝚗\nhttps://t.co/br24j8Qp4r https://t.co/ZLqpkwqTT5 https://t.co/6ElyxieLme",
+  "url": "https://x.com/rauchg/status/2092382653161107534",
+  "date": "2026-08-25",
+  "likes": 419
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "The hardest problem in building agents is secure connectivity to services and data.\n\nExcited for Vercel Connect to be GA. Run e.g: 𝚟𝚎𝚛𝚌𝚎𝚕 𝚌𝚘𝚗𝚗𝚎𝚌𝚝 𝚌𝚛𝚎𝚊𝚝𝚎 𝚗𝚘𝚝𝚒𝚘𝚗, then get an MCP client you can query on behalf of the authenticated user. https://t.co/UrQxaEDfHx",
+  "url": "https://x.com/rauchg/status/2092352411839193234",
+  "date": "2026-08-25",
+  "likes": 214
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Good post on what the applied AI strategy looks like at scale. It’s clear that there’s a wide gap between the AI models and the underlying workflows of an enterprise, which leaves a ton of opportunity for applied AI companies.\n\n“The world doesn’t just want raw models and agents; it wants problems resolved and outcomes achieved. The premium will sit with the companies that can diffuse this intelligence through every aspect of civilization, converting raw tokens into real world outcomes, transforming industries, and creating economies in the process.”\n\nThis requires understanding the context, driving the change management, having a harness that can route to various models, connecting to the critical business systems in that vertical, solving the UX challenges of connecting users to agents in the right way in a workflow, understanding the evals in the space, and so on.  \n\nThat’s a ton of value that goes beyond just the model intelligence itself. And there’s a window of opportunity right now to build the defining companies that can bring intelligence to the critical domains in an enterprise.",
+  "url": "https://x.com/levie/status/2092466424694649066",
+  "date": "2026-08-26",
+  "likes": 122
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Ok apparently this guy came up with it\n\nDon’t really care though\n\nClout chaser lmao he is the one who blocked me https://t.co/oltJDirXcZ",
+  "url": "https://x.com/garrytan/status/2092351492397383908",
+  "date": "2026-08-25",
+  "likes": 60
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "lmao https://t.co/y6BqsiuTQs",
+  "url": "https://x.com/garrytan/status/2092321194037195022",
+  "date": "2026-08-25",
+  "likes": 4686
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "You need to be cross-harness memory maxxing https://t.co/sauwBL6tYK",
+  "url": "https://x.com/garrytan/status/2092277912053657722",
+  "date": "2026-08-25",
+  "likes": 510
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "find someone who loves you as much as the VC who loves posting photos of an “exclusive” dinner 🙈",
+  "url": "https://x.com/nikunj/status/2092476274312933634",
+  "date": "2026-08-26",
+  "likes": 14
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Originally inspired by the @TheStalwart’s Odd Lots episode. \n\nBuilt using @ChatGPT codex and @Railway \n\nDesign polish courtesy of @emilkowalski skills and @itskasturiii generative loaders. \n\nDirect link here: https://t.co/L0zbiLPH55\n\nFeedback always welcome!",
+  "url": "https://x.com/nikunj/status/2092384774459674957",
+  "date": "2026-08-25",
+  "likes": 3
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Introducing the El Niño situation monitor (elneenyo dot com)..\n\n> real time updates, news and what’s happening straight from government sources\n> impact per region and costs\n> historical records and what’s the importance\n> glossary and FAQ on all the different readings\n\nIf this topic pops up in your group chat, you know where to go now!",
+  "url": "https://x.com/nikunj/status/2092383834470002922",
+  "date": "2026-08-25",
+  "likes": 8
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "This week. https://t.co/AM08qn6Zfd",
+  "url": "https://x.com/steipete/status/2092294123638362346",
+  "date": "2026-08-25",
+  "likes": 280
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "https://t.co/pQqzn5Ctfg https://t.co/pB0vQbF8yV",
+  "url": "https://x.com/danshipper/status/2092356580930945029",
+  "date": "2026-08-25",
+  "likes": 37
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "GET DOT https://t.co/EG90vQX7nR",
+  "url": "https://x.com/danshipper/status/2092279611988050181",
+  "date": "2026-08-25",
+  "likes": 51
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "I got one of these to test\n\n@every vibe check forthcoming! https://t.co/YvEcro1WLZ",
+  "url": "https://x.com/danshipper/status/2092277639591461056",
+  "date": "2026-08-25",
+  "likes": 71
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "It's totally unsurprising that the general population hates datacenter buildout. \n\nAI today primarily helps knowledge workers and the highest paid segments of the country. \n\nI suspect that the big change will happen when AI is able to find cures for diseases that ail everyone. We are starting to see light at the end of the tunnel here.\n\nAlso makes sense why some of the brightest minds now want to focus there.\n\nOur industry also hasn't done ourselves any favors by all our fear-mongering. Instead of painting a positive version of the future, we have instead talked about all the reasons why we should be afraid 🤦‍♂️.",
+  "url": "https://x.com/adityaag/status/2092290497826173186",
+  "date": "2026-08-25",
+  "likes": 18
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "we made a chip and it is fast",
+  "url": "https://x.com/sama/status/2092339694210040187",
+  "date": "2026-08-25",
+  "likes": 32803
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "Topics some consider sensitive, like health or religious beliefs, stay out of memory unless you turn them on in Settings.\n\nMemory is on by default on Free, Pro, and Max plans. Review yours anytime in Settings &gt; Memory.\n\nRead more: https://t.co/2y4B3am1RX",
+  "url": "https://x.com/claudeai/status/2092299710002319742",
+  "date": "2026-08-25",
+  "likes": 394
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "Everything Claude remembers is saved as a list of topics in Settings, where you can read, edit, or delete each one.\n\nMemory also updates on its own as you chat, saving new details as they come up. You can also say \"remember this\" to save something specific. https://t.co/ExpQAHkyhu",
+  "url": "https://x.com/claudeai/status/2092299707653439497",
+  "date": "2026-08-25",
+  "likes": 549
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "Claude now has one memory across chat and Claude Cowork, and you decide what's in it.\n\nHand Cowork a task and it starts from what Claude already knows from your chats: the project you talked through, your manager's preferences, or the client from last quarter. https://t.co/ViKapsT8K6",
+  "url": "https://x.com/claudeai/status/2092299704864284888",
+  "date": "2026-08-25",
+  "likes": 6846
+ }
+]
