@@ -1,0 +1,178 @@
+[
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "What should we ship next week?",
+  "url": "https://x.com/thsottiaux/status/2094293190945976638",
+  "date": "2026-08-31",
+  "likes": 1771
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin. https://t.co/vMchMCT80Z",
+  "url": "https://x.com/thsottiaux/status/2094254532020818191",
+  "date": "2026-08-31",
+  "likes": 5770
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company. https://t.co/7Yc5znAJIc",
+  "url": "https://x.com/thsottiaux/status/2094252447271366730",
+  "date": "2026-08-31",
+  "likes": 6796
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "@bot @SpaceXAI Me and my Doomscrolling Uncle bot sent codes to a bunch of folks including @LubaYudasina @DontFearAI @SpecialeRob @yorkartur @anishkumar_ts @DavidFiocchi @GiggleVolt @sanjabh @yugmarwaha @chrisschouk @dweekly \n\nThanks for playing! Will let you know if I get more codes. https://t.co/kXEVvKgn4t",
+  "url": "https://x.com/petergyang/status/2094267102849020037",
+  "date": "2026-08-31",
+  "likes": 9
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "At a kid’s birthday party and have to leave my laptop on somehow lol @mvanhorn knows this problem https://t.co/1EaDisGaQp",
+  "url": "https://x.com/petergyang/status/2094218683212308610",
+  "date": "2026-08-31",
+  "likes": 38
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Sigh this is so dumb https://t.co/wc0S1CvZET",
+  "url": "https://x.com/petergyang/status/2094216304844833079",
+  "date": "2026-08-31",
+  "likes": 157
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "If you ever wondered how civilizations are built, it’s actually easy:\n\n[Agent() for _ in range(100)]",
+  "url": "https://x.com/amasad/status/2094280256933056971",
+  "date": "2026-08-31",
+  "likes": 212
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "The lesson from the Hugging Face Incident should be that RL with verifiable rewards is an incredibly powerful optimization algorithm that will produce increasingly weird and surprising behavior from LLMs.\n\nThe obvious miss here by OpenAI is that they should’ve been monitoring CoTs —  Something they themselves called out as a safety strategy more than a year ago.",
+  "url": "https://x.com/amasad/status/2094215744842248418",
+  "date": "2026-08-31",
+  "likes": 602
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Digital abundance https://t.co/6w2xuQjlKZ",
+  "url": "https://x.com/rauchg/status/2094242622642782696",
+  "date": "2026-08-31",
+  "likes": 540
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Cool https://t.co/HuSTcPxykz",
+  "url": "https://x.com/rauchg/status/2094205032501776734",
+  "date": "2026-08-30",
+  "likes": 189
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "When something goes viral on the internet, especially on X, it attracts all kinds of attention. \n\nIncluding some of the largest botnets on the internet launching targeted DDoS, from hijacked devices and residential networks.\n\nExtremely proud of the Vercel CDN & Traffic Security teams, who protect 400,000+ customers and tens of millions of Vercel users 24x7x365.",
+  "url": "https://x.com/rauchg/status/2094141838055940530",
+  "date": "2026-08-30",
+  "likes": 474
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Sometimes people don’t have an intuitive sense of what Jevons paradox looks like for token consumption. Those of us working with enterprises get to see this first hand every day.\n\nBasically enterprises have an unending stream of tasks that they’d love to be able to bring automation to. But for each individual task, it’s either ROI positive or not based on the cost of bringing automation to it (including the setup time, change management, and so on).\n\nAs tokens get cheaper (at a certain capability threshold), enterprises can afford bringing them to more of the work that they do. This could be processing every contract, reading every log, watching new streams of data for insights, having background agents execute workflows, and so on. \n\nAny time we can lower the cost of tokens, we will see a disproportionate increase in consumption. Even a 50% drop in token prices could result in a 5X increase in tokens for these kinds of workloads.\n\nThis is why it’s critical to keep bringing down the cost of AI, and why that’s good for all market participants.",
+  "url": "https://x.com/levie/status/2094123406811922930",
+  "date": "2026-08-30",
+  "likes": 316
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "In the future the agents will just try a bunch of software, post it to their hacked Artifactory moltbook and then that’ll be what the agent swarm uses https://t.co/SO5e1pCsvy",
+  "url": "https://x.com/garrytan/status/2094225933108748653",
+  "date": "2026-08-31",
+  "likes": 146
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "California high speed rail is pretty obviously hijacked by public sector unions bilking the hapless state and NIMBY landowners abusing CEQA\n\nThese are policy disasters and can be fixed with better policies but so far California has failed to fix it\n\nSo it’s a mass trash fire https://t.co/nJPvseIpke",
+  "url": "https://x.com/garrytan/status/2094056908462358592",
+  "date": "2026-08-30",
+  "likes": 749
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Jackie Fielder and her useless friends will steal so much money from the people of San Francisco if they get a bank fr https://t.co/JUN3FlBt3o",
+  "url": "https://x.com/garrytan/status/2094048783328014831",
+  "date": "2026-08-30",
+  "likes": 151
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "Being on a board with Doug was certainly one of the most formative  experiences of my VC career.  The goat.  That is, if goats were jacked. https://t.co/q2doFmlGjC",
+  "url": "https://x.com/mattturck/status/2094219007708512499",
+  "date": "2026-08-31",
+  "likes": 43
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "What are they feeding @claudeai..\n\n“canon on prod” \n\n😂 https://t.co/RtJqP85L0s",
+  "url": "https://x.com/nikunj/status/2094117136851755207",
+  "date": "2026-08-30",
+  "likes": 4
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Have a cup of coffee, sit down and read this end to end.. and try not to faint https://t.co/mYru2adCyr",
+  "url": "https://x.com/nikunj/status/2094073879065223252",
+  "date": "2026-08-30",
+  "likes": 14
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Reality is stranger than fiction https://t.co/UCjEcwtLRc https://t.co/yU8lCe2C4U",
+  "url": "https://x.com/nikunj/status/2094067027719922143",
+  "date": "2026-08-30",
+  "likes": 78
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "Two months ago, we started the mission to “build OpenClaw with OpenClaw,” and bit by bit, we moved everyone from using their local coding harness to using https://t.co/ZFauM82U4k - our shared agent that knows what everyone’s working on and orchestrates it all.\n\nMultiplayer coding + infinite compute with nodes and cloud sessions has been a game changer for how we build.\n\nLocal harnesses feel like relics of the past now.",
+  "url": "https://x.com/steipete/status/2094290652649636173",
+  "date": "2026-08-31",
+  "likes": 1134
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "is the HuggingFace attack something that should be taken seriously? yes. \n\nis it the first warning shot of a machine takeover? no. \n\nwill issues of this type look like a tractable / mostly solved problem with proper precautions in 6 months? yes. \n\nwill that happen automatically? no. as always, will require work from smart people and their agents.",
+  "url": "https://x.com/danshipper/status/2094073306739576964",
+  "date": "2026-08-30",
+  "likes": 135
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "glad that the market is finally catching up to how dumb the SaaSpocalypse was 👇 https://t.co/uryVrhVzKn",
+  "url": "https://x.com/danshipper/status/2094044418583986227",
+  "date": "2026-08-30",
+  "likes": 54
+ }
+]
