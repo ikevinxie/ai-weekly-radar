@@ -1,0 +1,154 @@
+[
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "If you still haven't tried Codex but have considered it in the past, what's the one thing holding you back?",
+  "url": "https://x.com/thsottiaux/status/2094588317245509959",
+  "date": "2026-09-01",
+  "likes": 2344
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Btw @drhoeflinger I just watched your videos and wow they’re so good. Keep going and thanks for sharing your knowledge",
+  "url": "https://x.com/petergyang/status/2094648002656993704",
+  "date": "2026-09-01",
+  "likes": 0
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Trust is going to be the biggest barrier (and driver) of personal agent adoption.",
+  "url": "https://x.com/petergyang/status/2094639655258091792",
+  "date": "2026-09-01",
+  "likes": 28
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Great advice https://t.co/0jwmg8sFEC",
+  "url": "https://x.com/petergyang/status/2094529713524117596",
+  "date": "2026-08-31",
+  "likes": 1333
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Concerning\n\nhttps://t.co/EzMoXoilgR",
+  "url": "https://x.com/thenanyu/status/2094659984428867901",
+  "date": "2026-09-01",
+  "likes": 0
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "🤞🏻 https://t.co/pG71r0YZxw",
+  "url": "https://x.com/thenanyu/status/2094442960209539371",
+  "date": "2026-08-31",
+  "likes": 167
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Some personal news—I’m joining OpenAI to work on Codex and ChatGPT. \n\nI’m grateful to the Linear team for an incredible 4 years and proud of what we've built together. I look forward to bringing everything I've learned there about the craft of software into this next chapter.",
+  "url": "https://x.com/thenanyu/status/2094427243565269107",
+  "date": "2026-08-31",
+  "likes": 3062
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "If you’re a PM, there is immense alpha in understanding the model frontier for your specific product and use cases.\n\nYou should be able to answer the following better than most frontier lab researchers and PMs for your use cases:\n\n1/ What can models in each size category do well today?\n\n2/ Where does each model fail?\n\n3/ What workarounds can you use to overcome these failures ?\n\n4/ Given the trajectory, what will these models likely be able to do 2–3 months from now? How should your roadmap look given this?\n\nThis is a core part of the PM job now.",
+  "url": "https://x.com/realmadhuguru/status/2094591503981281503",
+  "date": "2026-09-01",
+  "likes": 140
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Good iOS interaction tips! https://t.co/Xs9awfK7WP",
+  "url": "https://x.com/amasad/status/2094642492125950394",
+  "date": "2026-09-01",
+  "likes": 30
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Your next design system is… Markdown.\n\nWe wrote about how 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍 is helping solve the hardest problem in AI today: slop.\n\nAnd how you can truly, finally scale design taste within a large organization. https://t.co/1boTl2fWyM https://t.co/yrHwa9fYUH",
+  "url": "https://x.com/rauchg/status/2094541309579235680",
+  "date": "2026-08-31",
+  "likes": 2443
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Coding tokens are basically infrastructure. Yet, the way companies have approached them amounts to:\n\n\"Hey all, here's an AWS key. It can spin up anything from a 𝚝𝟹.𝚗𝚊𝚗𝚘 (＄𝟹.𝟾𝟶/𝚖𝚘) to an 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎 (＄𝟺𝟶𝚔/𝚖𝚘). Go wild\"\n\nAnd obviously the reason companies don't do this for their core infra is that you need to govern, optimize, and observe usage and costs.\n\nThe intern might decide to host a static website in that 192 vCPU machine, and you won't be very happy about the bill.\n\nAI Gateway fixes this for all your tokens, with per-key, and now per-user budgets.",
+  "url": "https://x.com/rauchg/status/2094523399280435630",
+  "date": "2026-08-31",
+  "likes": 250
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Now that the base open weights AI models are getting far better, and post training infra is becoming more mature and commercialized, there are going to be all new plays for companies that have large amounts of data to have their own models.\n\nLicensing data for external model training was previously the only play if you had a large corpus of information, but you can now reasonably go and train your own models as well without incurring the cost and complexity of competing with the labs on research.\n\nThe general purpose frontier models will still have a leg up in broad areas due to the ability to handle the widest set of tasks, but you can absolutely see a future where we have far more models than today across every vertical and domain.",
+  "url": "https://x.com/levie/status/2094650992818274514",
+  "date": "2026-09-01",
+  "likes": 119
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "As AI security events pick up, it’s going to be critical that we have the most sophisticated AI agents for being able to detect and prevent security issues. Frontier models are clearly still ahead in cyber, but open models are catching up quickly. Wild times. https://t.co/F0eEZLe6tt",
+  "url": "https://x.com/levie/status/2094545525102235844",
+  "date": "2026-08-31",
+  "likes": 77
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Circleback is so much better than Granola, it's not even close\n\nGranola still doesn't even support multiple person disambiguation https://t.co/bus8bFOfec",
+  "url": "https://x.com/garrytan/status/2094465505142960443",
+  "date": "2026-08-31",
+  "likes": 603
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "I just made some new GBrain evals that help prove that my retrieval-for-AI-agent open source layer is SOTA for reading memory back without LLM-in-loop\n\nAnd I've also added evals for memory-save from agent transcript, which is the best way to enrich your brain\n\nReceipts at https://t.co/iRLJR9Vxto",
+  "url": "https://x.com/garrytan/status/2094462971598754010",
+  "date": "2026-08-31",
+  "likes": 403
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "https://t.co/gl6YBgEgAn",
+  "url": "https://x.com/nikunj/status/2094556598492631281",
+  "date": "2026-08-31",
+  "likes": 176
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "had me in the first half https://t.co/GRl9kFEWCN",
+  "url": "https://x.com/danshipper/status/2094584301966782794",
+  "date": "2026-09-01",
+  "likes": 27
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "Anthropomorphization of AI is good when it serves to help us use (understand, predict, etc) AI better. \n\nIt’s bad when it serves to sow panic, fear, and unrealistic / unwarranted comparisons to human beings. \n\nMost opponents of anthropomorphism are rightly reacting to its misuse to sow panic or alter the moral status of agents by claiming consciousness etc. \n\nIt’s possible to use anthropomorphism without doing that though",
+  "url": "https://x.com/danshipper/status/2094406185109647580",
+  "date": "2026-08-31",
+  "likes": 87
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "Pragmatists stay winning in the age of AI",
+  "url": "https://x.com/danshipper/status/2094397684186481057",
+  "date": "2026-08-31",
+  "likes": 22
+ }
+]
