@@ -1,0 +1,218 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "aie nyc tix will sell out this weekend - last call to join us to the biggest ever technical conf in New York and our first with a finance mainstage - in some ways the final unification of both my careers: from investment bank to hedgefund, from bigtech to nyc startup. cya monday! https://t.co/KIIGQgvWcZ https://t.co/sQwMDfGutk",
+  "url": "https://x.com/swyx/status/2108780918060036335",
+  "date": "2026-10-10",
+  "likes": 21
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "most of you are unfortunately not qualified but there is somewhat a path https://t.co/l29L1HJVej \n\nwrote down mine in @Coding_Career 6 years ago and you can now get it free or on amazon https://t.co/P0wqju1nsk \n\ndidnt intend to relaunch CC today but eh why not",
+  "url": "https://x.com/swyx/status/2108563331376124389",
+  "date": "2026-10-09",
+  "likes": 18
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Your ChatGPT subscription is now also a Devin subscription https://t.co/kJE3sbq2wP",
+  "url": "https://x.com/thsottiaux/status/2108777962053292398",
+  "date": "2026-10-10",
+  "likes": 2528
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Dots got a pretty big upgrade https://t.co/j54EmJMwLu",
+  "url": "https://x.com/thsottiaux/status/2108773703064657936",
+  "date": "2026-10-10",
+  "likes": 1470
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Send feedback to @keyanzhang and @sharifshameem !",
+  "url": "https://x.com/thsottiaux/status/2108650026671231468",
+  "date": "2026-10-09",
+  "likes": 259
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "How about let's stop building more personal assistants to manage our emails and more AI startups to manage and cure diseases",
+  "url": "https://x.com/petergyang/status/2108679515681722787",
+  "date": "2026-10-09",
+  "likes": 237
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Pro @bot tip:\n\nIf you want your Grok Bot as a chief of staff it doesn't actually make sense to register its email as your (your-name) because it's weird to copy in yourself.\n\ne.g., \"Let me copy in Peter to find a time for us\" doesn't make alot of sense.\n\nSo I suggest picking another name for your Grok Bot email - whatever you want your chief of staff to be called.",
+  "url": "https://x.com/petergyang/status/2108624122339287335",
+  "date": "2026-10-09",
+  "likes": 285
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Is this 🦋 recursive self-improvement?",
+  "url": "https://x.com/thenanyu/status/2108671887266246730",
+  "date": "2026-10-09",
+  "likes": 3
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "I cannot stress how much I’ve loved using this feature. \n\nFirst we wrote code by hand, then we tab-completed the code. \n\nThen we evolved to prompting agents…and now we tab-complete that too. https://t.co/xxBRKd6SxB",
+  "url": "https://x.com/thenanyu/status/2108671762984731037",
+  "date": "2026-10-09",
+  "likes": 75
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "Open-weight models did not start the drop in price per unit of intelligence. They are a tailwind on a trend that was already underway.\n\nFor the last few years, a few factors have driven price drops:\n\n1/ Model builders distilling their best models into smaller ones, with cheaper inference\n\n2/ Infra efficiency\n\n3/ Competition between model providers\n\nYou can see this pattern with every model company: Version x of the mid-size model = intelligence of version x-1 of the large model.  Same intelligence for less $.",
+  "url": "https://x.com/realmadhuguru/status/2108618266776387886",
+  "date": "2026-10-09",
+  "likes": 9
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "honestly pretty cool to have this on my new tab page \n\njust merged in some PRs by others too! https://t.co/OOzflxL3N7 https://t.co/3AE65z3VqK",
+  "url": "https://x.com/trq212/status/2108802833986552174",
+  "date": "2026-10-10",
+  "likes": 118
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "before I joined Anthropic, I spent about 2 weeks hacking on this as a side project with Opus 4. It used the Agent SDK so it needed a constantly running process &amp; didnt work that well\n\nbut one prompt to Opus 5.5 ported it to Claude Managed Agents &amp; made it way more reliable https://t.co/3AE65z3VqK",
+  "url": "https://x.com/trq212/status/2108689101503566319",
+  "date": "2026-10-09",
+  "likes": 852
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Some communities are excited by AI’s impact on their field. Others are petrified. What’s the deciding factor(s)?",
+  "url": "https://x.com/amasad/status/2108597112707686552",
+  "date": "2026-10-09",
+  "likes": 353
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Some interesting machine & agent Vercel traffic stats.\n\n• Across the entire Vercel network, 58.18% traffic is bot-originated (last 30d). This was 32% in Jan 2024.\n\n• 60%+ of deployments on Vercel are now agentic, up from ~3% in Jan 2026.\n\n• Up to 83% of pageviews are now coming from agents to Vercel's own documentation sites. The % reliably increases the more we optimize content for them.\n\nI expect 'direct' human internet traffic to basically become a rounding error in coming years. The web will thrive, but it will be built for and by agents.",
+  "url": "https://x.com/rauchg/status/2108733051283050964",
+  "date": "2026-10-10",
+  "likes": 277
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "It's incredible to watch a new kind of economy be born. Agents purchasing infrastructure products and services. We've been shocked by how often they buy from our marketplace via our CLI already. We're now extending this to domains.\n\nAgents can now go full stack, from idea to online business, with a banger domain name 😁",
+  "url": "https://x.com/rauchg/status/2108669027363295323",
+  "date": "2026-10-09",
+  "likes": 324
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Agents spawning other agents, agents operating in the background on every task, and agent swarms will consume 1,000X more tokens than people prompting agents 1 at a time. \n\nThe usage of AI as a chat system that can only work for you at the pace that you can prompt it will seem like a relic within a year or two. The vast, vast majority of tokens will be consumed by agents that are just doing continuous work for us in the background and in our workflows.\n\nThis is why we’re still so early in the curve of AI agent adoption right now, and how much more compute and infrastructure build out will be needed to sustain this.",
+  "url": "https://x.com/levie/status/2108750943680630893",
+  "date": "2026-10-10",
+  "likes": 530
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Action to take https://t.co/YhkXw8J62X",
+  "url": "https://x.com/garrytan/status/2108756559564242964",
+  "date": "2026-10-10",
+  "likes": 5
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Activism as journalism like what Eskenazi does day in and day out should be defunded\n\nThis is not c3 work. This is not journalism. This is political work. https://t.co/DtFRBIG1by",
+  "url": "https://x.com/garrytan/status/2108756335705907335",
+  "date": "2026-10-10",
+  "likes": 1
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Only Nancy Tung has done anything to prevent ongoing misconduct and now the hard left crazies and the captured legacy media are on a witch hunt\n\nThis is politics as usual but normal voters should know it is pure dishonesty https://t.co/6pL9ZGl3EC",
+  "url": "https://x.com/garrytan/status/2108756019132379586",
+  "date": "2026-10-10",
+  "likes": 35
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "One prompt to build a professional-level video for your company or product, in your style... this is 🤯  \n\nBtw, quite literally the vision that @synthesiaIO has been pursuing since the early days. Happening slowly, then all at once.  Available to everyone today. https://t.co/jxhbMOXPZ8",
+  "url": "https://x.com/mattturck/status/2108561284635480443",
+  "date": "2026-10-09",
+  "likes": 26
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Somehow Astra loves to use the Claude logo when designing websites 😂 https://t.co/uc3bMhU6u9",
+  "url": "https://x.com/zarazhangrui/status/2108711659846132092",
+  "date": "2026-10-10",
+  "likes": 26
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "This thread is GOLD\nNever underestimate people’s creativity https://t.co/jYeBPExlMV",
+  "url": "https://x.com/zarazhangrui/status/2108584212660129820",
+  "date": "2026-10-09",
+  "likes": 422
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Love this so so much. Basically how I have tried to emulate life, although Sunil’s father seems ultra special. \n\nBelieve in karma, universe finds a way to repay favors even if the people don’t. https://t.co/ajYawmSlYv",
+  "url": "https://x.com/nikunj/status/2108710061627588964",
+  "date": "2026-10-10",
+  "likes": 38
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "And definitely DO NOT follow it up with an email as well.. what is going on people?? 🤷‍♂️ https://t.co/Bg9RNKnMfM",
+  "url": "https://x.com/nikunj/status/2108620851130380610",
+  "date": "2026-10-09",
+  "likes": 4
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Founders, please ask your marketing team to exclude VCs if you decide to promote your product on X..\n\nI get 3 DMs a day asking to \"collab\" on this \"insane opportunity\" which is *cough cough* a paid partnership.\n\nShows really poor judgement and word spreads around that you are trying to buy eyeballs to cue a big raise.",
+  "url": "https://x.com/nikunj/status/2108616889605951834",
+  "date": "2026-10-09",
+  "likes": 35
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "Working With Agents in Slack https://t.co/QkNBc5wqIs",
+  "url": "https://x.com/danshipper/status/2108588611000275009",
+  "date": "2026-10-09",
+  "likes": 25
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "We hosted @svlevine at @spc this week. \n\nHe is perhaps the best example of clarity in action that I have seen in a long time.\n\nThank you for joining us, Sergey. https://t.co/QpBFTYyIhx",
+  "url": "https://x.com/adityaag/status/2108578813751791926",
+  "date": "2026-10-09",
+  "likes": 27
+ }
+]
