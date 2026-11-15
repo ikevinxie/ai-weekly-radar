@@ -1,0 +1,210 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "holy shit u guys like a lot of poteto https://t.co/vZn94FofDx https://t.co/39aoCIMcSK",
+  "url": "https://x.com/swyx/status/2121815348370612414",
+  "date": "2026-11-15",
+  "likes": 62
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "obviously correct, we are so suboptimal in AI UX rn it is crazy esp given existence of models too cheap to meter https://t.co/6S0eWejPXK",
+  "url": "https://x.com/swyx/status/2121757606801023085",
+  "date": "2026-11-15",
+  "likes": 225
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "there WILL be audience participation https://t.co/GqGaekFHtl",
+  "url": "https://x.com/swyx/status/2121738675705029005",
+  "date": "2026-11-14",
+  "likes": 2
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "Available to all Gemini app users in the USA to start\n\nhttps://t.co/LMhEmp58DA",
+  "url": "https://x.com/joshwoodward/status/2121755283785699376",
+  "date": "2026-11-15",
+  "likes": 24
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "New in Gemini: Connect Google Wallet for personal finance insights\n\nThis is powerful for things like:\n+ making instant charts to visualize your spend\n+ finding sneaky subscription price hikes\n+ making a holiday budget based on what you actually spent last year https://t.co/wzrBpwYpxm",
+  "url": "https://x.com/joshwoodward/status/2121755282326102417",
+  "date": "2026-11-15",
+  "likes": 462
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, red teaming &amp; defense factory... What can we do better or improve?",
+  "url": "https://x.com/thsottiaux/status/2121845965997101118",
+  "date": "2026-11-15",
+  "likes": 737
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Two very useful prompts to try with Fable 5.2:\n\n\"/doctor prompt-audit\": Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes.\n\n\"/claude-api prompt-audit [skill name]\": Audits one skill in depth.\n\nI wish Claude Code auto-suggested running these every time Anthropic releases a new model.\n\n📌 Watch my full tutorial on how I use Fable and Opus here: https://t.co/slyEbWvvqA",
+  "url": "https://x.com/petergyang/status/2121649295950762363",
+  "date": "2026-11-14",
+  "likes": 440
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "And please consider starring the repo to help more people discover it: https://t.co/gcEOz8a8sw",
+  "url": "https://x.com/petergyang/status/2121637240132735289",
+  "date": "2026-11-14",
+  "likes": 12
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Autonomous Businesses are here. https://t.co/4pISz57GP9",
+  "url": "https://x.com/amasad/status/2121765647168483589",
+  "date": "2026-11-15",
+  "likes": 298
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Technology is inherently recursively self-improving and the degree of autonomy has been going up overtime. AI is an accelerant but it didn’t not start this cycle.\n\nDouglas Engelbart understood this. https://t.co/J3Zp1YNFXC",
+  "url": "https://x.com/amasad/status/2121549054173757554",
+  "date": "2026-11-14",
+  "likes": 277
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "We’ve entered Murphy’s world. Anything that can go wrong will go wrong. With billions of things happening at once, recursively interdependent and accelerating rapidly, what’s once considered a rare failure is now a daily thing.",
+  "url": "https://x.com/amasad/status/2121519931741127144",
+  "date": "2026-11-14",
+  "likes": 1115
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "An awesome day for humanity\n\n✦        ·\n   ✧\n ·       ✦      ·\n      ✧        ✧\n         ·      ✦\n       ✧        ·    ✧ https://t.co/PFq6pBdxcS",
+  "url": "https://x.com/rauchg/status/2121825273373229134",
+  "date": "2026-11-15",
+  "likes": 404
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Got to experience the magic of @uisdk.\n\nTwo prompts of fx + Gemini Argon. Pure Web Components. No framework.\n\nThe agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching,  typeahead, roving toolbar focus, 10-band EQ sliders, scoped hotkeys, ARIA, and WebMCP agent control.\n\nhttps://t.co/1Ol3xqKWJz (source linked)\nMusic by @suno.",
+  "url": "https://x.com/rauchg/status/2121804295381377342",
+  "date": "2026-11-15",
+  "likes": 616
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Subagents on https://t.co/3Z4NESzNKd work so well… extremely delightful. Amazing how much goodness fits in 6.33mb 😁\n\nAll my projects are built by planning with the smartest model + delegating to fast model subagents. It's a 1-line instruction in ~/.𝚏𝚡/𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍. https://t.co/27S2By5smT",
+  "url": "https://x.com/rauchg/status/2121739228698886454",
+  "date": "2026-11-14",
+  "likes": 275
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "AI models are inevitably going to keep getting better and better at all coding, tool and computer use, math, and other coding-related tasks. As a result, agents that can use software to do their work, or generate code from scratch, will improve at a faster rate than all other domains of knowledge work.\n\nOn one hand that could mean that only a small subset of work can get automated. But probably what happens is that more and more work just becomes coding-shaped to adapt to what agents are good at.\n\nYou can see it in the most recent examples of model releases in the past couple of months, where agents can generate code that becomes animated videos, games, 3D models for products, and so on. We also know that tool use gives agents the ability to work with much of the same software that people already work with. This helps in cyber, life sciences, finance, and a number of other domains.\n\nOur mental model traditionally has been that the models have to be able to know everything about anything to generate value, but in reality they *really* have to know how to use or generate software effectively combined with deep domain expertise to make the right judgment calls inside of workflows. \n\nWhen you have that powerful combination, almost everything else gets unlocked. This is why the acceleration of agents in knowledge work is only going to increase from here.",
+  "url": "https://x.com/levie/status/2121686564078297461",
+  "date": "2026-11-14",
+  "likes": 206
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Aside Browser is a huge unlock for every AI agent https://t.co/lo8Tgqnu9J",
+  "url": "https://x.com/garrytan/status/2121824006819258485",
+  "date": "2026-11-15",
+  "likes": 120
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Do all this and use it with gbrain :-) https://t.co/WxlVS6Elf9",
+  "url": "https://x.com/garrytan/status/2121768476775989404",
+  "date": "2026-11-15",
+  "likes": 455
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "It turns out paper chart and copper wire and an antiquated system that is brittle and doesn’t have enough failsafe let alone any modern software is not serving the people of America properly. \n\nModernize the FAA. https://t.co/J4wbogmVSy",
+  "url": "https://x.com/garrytan/status/2121727702025765094",
+  "date": "2026-11-14",
+  "likes": 167
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "Great take.  NVIDIA is the one deep pocketed player that has a clear business interest in open weights AI, and was willing to make founder-type big bets. What happens now? https://t.co/bZF2QMkz5K",
+  "url": "https://x.com/mattturck/status/2121608999053492408",
+  "date": "2026-11-14",
+  "likes": 18
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "True https://t.co/9AdjpBTBzF",
+  "url": "https://x.com/zarazhangrui/status/2121654053453357342",
+  "date": "2026-11-14",
+  "likes": 60
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Eagerly looking forward to reading the incident reports from this week.. https://t.co/lBWP8PxXWU",
+  "url": "https://x.com/nikunj/status/2121832102182453518",
+  "date": "2026-11-15",
+  "likes": 9
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "2026 Startup Bookshelf 📕 https://t.co/HB7yBJg6dW",
+  "url": "https://x.com/nikunj/status/2121640157443215824",
+  "date": "2026-11-14",
+  "likes": 136
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "🍿 https://t.co/nKrqXP5ZWD",
+  "url": "https://x.com/steipete/status/2121706904917520875",
+  "date": "2026-11-14",
+  "likes": 485
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "live look of how Fable wrote an email for me this morning https://t.co/DfgwzjXHeG",
+  "url": "https://x.com/danshipper/status/2121652571211510094",
+  "date": "2026-11-14",
+  "likes": 93
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "experiment writeup + code here: https://t.co/T92y6fRzit",
+  "url": "https://x.com/danshipper/status/2121626458745639162",
+  "date": "2026-11-14",
+  "likes": 6
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "if you want all of the raw alpha from @every you should have your agent read our frontier feed\n\nwe publish all of our frontier team's experiments with AI including raw code and short writeups\n\nno faster way to get inspired 👇\nhttps://t.co/S9TTJQsfnB https://t.co/yN5rjLUWxr",
+  "url": "https://x.com/danshipper/status/2121620539655819305",
+  "date": "2026-11-14",
+  "likes": 199
+ }
+]
