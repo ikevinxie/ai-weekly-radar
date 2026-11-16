@@ -1,0 +1,154 @@
+[
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "apparently it is pretty normal\n\nhttps://t.co/br8TZ6oKOM",
+  "url": "https://x.com/swyx/status/2122066060769952161",
+  "date": "2026-11-15",
+  "likes": 4
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "clanker wrote up the talk https://t.co/hxZj0VaJV4",
+  "url": "https://x.com/swyx/status/2122032217430032548",
+  "date": "2026-11-15",
+  "likes": 0
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "clanker wrote up a short recap of the talk\nhttps://t.co/1tWf4s9R60",
+  "url": "https://x.com/swyx/status/2122031563961684032",
+  "date": "2026-11-15",
+  "likes": 8
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "Codex team might have actually fixed the \"model at capacity\" errors that have been pestering you. https://t.co/EgS0HkOATY",
+  "url": "https://x.com/thsottiaux/status/2122206990101536852",
+  "date": "2026-11-16",
+  "likes": 2500
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "\"When you ask Claude to create something, it's operating in a fresh context where it thinks: Oh my God, the user asked me to make an app. I'm going to invent the most brilliant visual style.\"\n\nFrom @nateparrott at Anthropic on how to get Claude to avoid the same designs:\n\n\"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original.\n\nSo in our Claude Design prompt, we tell Claude, 'For this particular model, you tend to overly bias toward these two fonts and colors. So don't use them unless the user asks you to.' That tends to help a lot.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX",
+  "url": "https://x.com/petergyang/status/2122132596352327816",
+  "date": "2026-11-16",
+  "likes": 51
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "\"Do you find being a designer more fun now that you can easily prototype everything?\"\n\nThat's the question I asked @nateparrott (Anthropic). His answer:\n\n\"I'm a little weird in that I have an engineering background. Before Anthropic, I worked at The Browser Company, where we made a browser called Arc.\n\nWe spent a year in pre-production before we released Arc. It took us a couple weeks to build out each idea and see which worked.\n\nNow at Anthropic, you can kind of do that in one to two days.\n\nSo you've really compressed the cycle of building. What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX",
+  "url": "https://x.com/petergyang/status/2122060856498524510",
+  "date": "2026-11-15",
+  "likes": 42
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Alright I can't help it:\n\nNYTimes published this article that \"US intelligence had believed\" Alice Huang was a spy: https://t.co/DQSjGBRsaE\n\nBut there's still no proof one way or another whether she was a spy or not, per CNN: https://t.co/c5lwbDl2R5\n\nSo where did this spy narrative come from? Show us the evidence?",
+  "url": "https://x.com/petergyang/status/2122039657001300125",
+  "date": "2026-11-15",
+  "likes": 109
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "What’s the best home automation hub out there if I just wanna use Codex to control everything?\n\nIdeally, something plug-and-play that my Codex just sees as another computer, more or less https://t.co/VEvCTzc1zi",
+  "url": "https://x.com/thenanyu/status/2122096965865664924",
+  "date": "2026-11-15",
+  "likes": 18
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "It’s cute that my Waymo turns on its windshield wipers in the rain",
+  "url": "https://x.com/thenanyu/status/2122096121946468451",
+  "date": "2026-11-15",
+  "likes": 57
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "a new arena and two new characters https://t.co/e8nHEldjoD https://t.co/hLIVplRPrW",
+  "url": "https://x.com/trq212/status/2122154124024381828",
+  "date": "2026-11-16",
+  "likes": 956
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "It’s been an interesting 48 hours. https://t.co/t4IOusuJn0",
+  "url": "https://x.com/amasad/status/2122185760799609017",
+  "date": "2026-11-16",
+  "likes": 491
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Good summary. https://t.co/KThCywHmZt",
+  "url": "https://x.com/amasad/status/2122062419010961439",
+  "date": "2026-11-15",
+  "likes": 336
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "Introducing 𝚡𝚎𝚎𝚝: https://t.co/YaLEMbmKwf.\n\nA hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁).\n\nX is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate.\n\nIt reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impractical, if not impossible, for a human engineer to pull off.\n\nExcept 𝚡𝚎𝚎𝚝 is structured as an \"autorepo.\" An oracle boots up Chrome, and verifies tens of thousands of text layout rules. A CI canary then watches the evolution of the original, and files signed PRs for agents to act on. It was conceived from the ground up around 'verification engineering', and the result speaks for itself.\n\nEnjoy!",
+  "url": "https://x.com/rauchg/status/2122184794209714368",
+  "date": "2026-11-16",
+  "likes": 629
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "AI models are getting really good at naming things. I created a little CLI to diagnose system slowdowns, and it named it 𝚑𝚘𝚐 🐖, which I love. Given they're already good at cache invalidation, maybe computer science's hardest problems are solved after all 😂",
+  "url": "https://x.com/rauchg/status/2122127120055034258",
+  "date": "2026-11-16",
+  "likes": 459
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Being good at LinkedIn probably makes you bad at X https://t.co/dFYRSQLn9V",
+  "url": "https://x.com/zarazhangrui/status/2122021380745290202",
+  "date": "2026-11-15",
+  "likes": 122
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "I love this store so much 😭 https://t.co/SNteDhX5uA",
+  "url": "https://x.com/zarazhangrui/status/2122021053442703852",
+  "date": "2026-11-15",
+  "likes": 21
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Next guest up in this weekly series is @kanavg1, cofounder of @coreauto on Friday, Nov 20th at noon. \n\nFor this session, we'll be chatting about all things RL (methods, synthetic data, loops, automation etc)\n\nFormat:\n> 60 minute sessions (IRL only) in SF\n> For the first 45 mins, I get to ask the guest spicy questions about their expertise\n> For the last 15 mins, they get to ask me anything they want to learn about venture\n> All off the record, chatham house rules\n> Open to 15 guests who listen in and can ask some of their own questions\n\nRegister here if you want to join, and subscribe to the Luma for future guests: https://t.co/gOHqA2XtZB",
+  "url": "https://x.com/nikunj/status/2122042319419609105",
+  "date": "2026-11-15",
+  "likes": 58
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "we've been working hard on compounding skills lately (skills that get better every time you use them) \n\nand i think @hammer_mt finally cracked it\n\nthis weekend i made a skill to help us write context window summaries, and used autoresearch to iterate until it hit 80% of my taste on summaries vs. a no-skill baseline\n\nfull writeup for your agnets on the @every frontier feed: https://t.co/2MT0NTucoK",
+  "url": "https://x.com/danshipper/status/2122091033001337134",
+  "date": "2026-11-15",
+  "likes": 143
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "One of our aerospace companies in India shared this with me today morning.\n\nThe journey to the stars starts with a single plane on a remote runway on an early Sunday morning. \n\nAd Astra.\n\n@shreepoorna365 @arctusaerospace https://t.co/XTdk1wVU5q",
+  "url": "https://x.com/adityaag/status/2122003237335343457",
+  "date": "2026-11-15",
+  "likes": 114
+ }
+]
