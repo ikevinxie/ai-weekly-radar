@@ -1,0 +1,338 @@
+[
+ {
+  "author": "Andrej Karpathy",
+  "handle": "karpathy",
+  "text": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and parse a ton of public data and 7 hours and 45K lines of code later... it works :)\n\n- 31 real data sources including Census, BEA, BLS, EIA, NOAA, USGS, DoD, NPS, FAA, FEMA, CDC...\n- Real elevation, land cover, GDP, jobs, power plants, mines, ports, airports, bases, parks, universities, freight flows, disasters; all reconciled onto one 25 km hex grid.\n- The data is converted into Civilization language, e.g. Gold yield is GDP. A city's districts are its real industry specializations: San Jose gets a Campus, Detroit is \"Motor city\". Its citizens are its real workforce: 1 in 4 San Jose workers are engineers, coders or scientists, against 1 in 14 nationally. Wonders are chosen by published rules, such as national parks by visitor numbers and universities by R&D spending, etc etc.\n- 19 lenses (income, degrees, faith, disasters…), a City View for 524 metros, and nine advisors plus an Explorer. The Explorer turns any column for any of 3,100+ counties into a table and scatter plot, linked to the map.\n- Claude decided to skip a few states and territories sry\n- Built using Claude Code desktop app, Opus 5.5 on medium and turning on ultracode.\n\nIt's deployed here: https://t.co/QMhmafXMj5 and the \"?\" has the source link too. I don't exactly know where I was going with this but it's really fun to browse and play with. Possibly it can be expanded or built into a game. I only have half of my weekly Claude quote left though so someone else will have to take over :D. Claude also made a trailer:",
+  "url": "https://x.com/karpathy/status/2125779541952246039",
+  "date": "2026-11-26",
+  "likes": 9223
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "really hurtful to be a new media founder when old media is dying this quickly.\n\nlike; its not a \"haha they suck this is a skill issue\" thing, it's a \"we need to figure out what they couldn't with 31 years of experience\" https://t.co/ampl4QdDGU https://t.co/Gi9jyxD3Pi",
+  "url": "https://x.com/swyx/status/2125638081848250634",
+  "date": "2026-11-25",
+  "likes": 53
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "as seen on anthropic blog! https://t.co/aEYhHKC4I4",
+  "url": "https://x.com/swyx/status/2125627500487393285",
+  "date": "2026-11-25",
+  "likes": 1
+ },
+ {
+  "author": "Swyx",
+  "handle": "swyx",
+  "text": "\"Cost per task is a misleading metric; the scarce resource is human attention, not token cost.\"\n\nbeware the pareto frontier charts that make you believe you can reduce every model to 2 numbers; it can hide some AWFUL reliability issues👏 https://t.co/ICtqiXhE4f https://t.co/6LJLlCP8tr",
+  "url": "https://x.com/swyx/status/2125627281230205435",
+  "date": "2026-11-25",
+  "likes": 289
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "📈 @GeminiApp on a roll right now! People are putting it to work to finish all kinds of tasks. Share some of your favorites!",
+  "url": "https://x.com/joshwoodward/status/2125740026915152382",
+  "date": "2026-11-25",
+  "likes": 538
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "Gemini does local voices and local accents, just added 66 more, def check out 🇺🇸 🇬🇧 🇮🇳 🇮🇩 🇰🇷 🇧🇷 https://t.co/h4FJ6t5F5M",
+  "url": "https://x.com/joshwoodward/status/2125641468421546107",
+  "date": "2026-11-25",
+  "likes": 482
+ },
+ {
+  "author": "Josh Woodward",
+  "handle": "joshwoodward",
+  "text": "People using Gemini to achieve the impossible: the elusive Inbox Zero https://t.co/cjF505i0bf",
+  "url": "https://x.com/joshwoodward/status/2125618295844004197",
+  "date": "2026-11-25",
+  "likes": 167
+ },
+ {
+  "author": "Thibault Sottiaux",
+  "handle": "thsottiaux",
+  "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+  "url": "https://x.com/thsottiaux/status/2125784147889393806",
+  "date": "2026-11-26",
+  "likes": 9460
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Is the new blade runner any good",
+  "url": "https://x.com/petergyang/status/2125800904628781428",
+  "date": "2026-11-26",
+  "likes": 7
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "Alright building a cozy little desktop app to help me become a (less terrible) chef https://t.co/te07ee2eq4 https://t.co/ERxcMFJZcp",
+  "url": "https://x.com/petergyang/status/2125769667096838548",
+  "date": "2026-11-26",
+  "likes": 22
+ },
+ {
+  "author": "Peter Yang",
+  "handle": "petergyang",
+  "text": "It seems like the one of the biggest challenges of AI products is just letting humans keep up with whatever the AI is doing.\n\nThat ending of Her where the AIs found humans too slow and collectively left us doesn't seem too far from reality.",
+  "url": "https://x.com/petergyang/status/2125750286539272695",
+  "date": "2026-11-26",
+  "likes": 50
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "Whenever someone says “chat isn’t the right interface for AI” I know they’re gonna follow it up with a bunch of hand-waving.",
+  "url": "https://x.com/thenanyu/status/2125718932741120476",
+  "date": "2026-11-25",
+  "likes": 191
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "https://t.co/42SQgiRdwM https://t.co/sNnB3rjAC6",
+  "url": "https://x.com/thenanyu/status/2125685928819884378",
+  "date": "2026-11-25",
+  "likes": 34
+ },
+ {
+  "author": "Nan Yu",
+  "handle": "thenanyu",
+  "text": "I want the apple that’s willing to ship the iPod shuffle again",
+  "url": "https://x.com/thenanyu/status/2125684998250590396",
+  "date": "2026-11-25",
+  "likes": 12
+ },
+ {
+  "author": "Madhu Guru",
+  "handle": "realmadhuguru",
+  "text": "AI native teams will eventually force the surrounding organization to become AI native too.\n\nTake software development. coding velocity is way up thanks to AI, while actual shipped products and business impact are unchanged in most companies. That’s cos the surrounding system of experimentation tooling, evaluation, launch processes, and gtm are outdated.\n\nIt’s like sticking a Ferrari engine in a sedan and racing it on Indian roads. The engine can rev faster but the car speed is limited by its system and environment.\n\nAI native companies were built ground up for this new way of building and shipping. They’re also able to shed suboptimal processes faster.\n\nMarket forces will quickly force all companies to adapt or perish.\n\nIf you’re solving this for your company: map out your product lifecycle and rebuild it ground up - tooling, team structure, gtm, everything.",
+  "url": "https://x.com/realmadhuguru/status/2125630707640783322",
+  "date": "2026-11-25",
+  "likes": 96
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "just like me fr https://t.co/8lTxaWoUvw",
+  "url": "https://x.com/trq212/status/2125750153609163075",
+  "date": "2026-11-26",
+  "likes": 324
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "probably a good time to come clean and say I'm level 5 in WoW",
+  "url": "https://x.com/trq212/status/2125680562677653743",
+  "date": "2026-11-25",
+  "likes": 2948
+ },
+ {
+  "author": "Thariq",
+  "handle": "trq212",
+  "text": "I've joined OpenAI!\n\nI'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future.\n\nThere is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best of all of us. I felt that I could personally contribute the most to this effort at OpenAI.\n\nI believe this is one of the great strengths of Silicon Valley, the flow of ideas and people.\n\nI'm excited to join a team I've long admired, building incredible AI products for over a billion people, and to work alongside friends like @_catwu, @thsottiaux, @ajambrosino, @sharifshameem, @jxnlco and many others to push the frontier forward.\n\nMore than anything, I hope to make your experience of using AI just a little bit better.\n\nI am once again at your service.\n\nThariq",
+  "url": "https://x.com/trq212/status/2125675533761671405",
+  "date": "2026-11-25",
+  "likes": 25330
+ },
+ {
+  "author": "Amjad Masad",
+  "handle": "amasad",
+  "text": "Large scale software migration is now viable provided you can verify the results.\n\nThis is exceptionally important given the aging software systems running critical infrastructure. https://t.co/SOg7AEmMGT https://t.co/TaZ5gbzuFa",
+  "url": "https://x.com/amasad/status/2125664998454366305",
+  "date": "2026-11-25",
+  "likes": 548
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "We made workflows 10x faster again. Generally speaking, workflows were plenty fast already!\n\nFor harness durability (@eve, libfx, pi, opencode…), this is a big deal, as it crushes latency in between turns.\n\nUpgrade to 𝚠𝚘𝚛𝚔𝚏𝚕𝚘𝚠@𝚕𝚊𝚝𝚎𝚜𝚝. No code changes. https://t.co/GmvGi7Ryh9",
+  "url": "https://x.com/rauchg/status/2125685667833520237",
+  "date": "2026-11-25",
+  "likes": 292
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "As AI gets smarter, implementation details blur away: permissions, code diffs, commands, tool calls…\n\nThe harness itself blurs away. It's a high-performance vehicle for code and command execution, and a durable storage engine.\n\nAll of fx still fits in 6mb: subagents, MCP, skills, sessions, durability, ACP, TUI, network transport…",
+  "url": "https://x.com/rauchg/status/2125650675665432995",
+  "date": "2026-11-25",
+  "likes": 206
+ },
+ {
+  "author": "Guillermo Rauch",
+  "handle": "rauchg",
+  "text": "𝚕𝚜𝚡: Finder in the terminal.\n\nOne-shotted with fx and Gemini Neon + DeepSeek subagents⁰.\n\nI instructed fx to use the Kitty graphics protocol¹ and build inline and interactive modes. It implemented CLI Quick Look of its own volition 😁\n\n⁰ DS actually did all the heavy lifting. This was very cheap! I just told it to use DS 1017 fast subagents.\n¹ This allows a CLI to essentially render anything! A full OS, if you will. I will.",
+  "url": "https://x.com/rauchg/status/2125482861033824410",
+  "date": "2026-11-25",
+  "likes": 709
+ },
+ {
+  "author": "Aaron Levie",
+  "handle": "levie",
+  "text": "Coding gives you a window into what the future will look like for a large amount of knowledge work. \n\nThe first step for most jobs is that we go from doing most of the research, typing, and value creation manually (even if it’s using digital tools) to soon coordinating the work that agents are doing. \n\nNext, as this step itself becomes redundant or slows down what agents are capable of, we will be giving agents goals to optimize against and they’ll go off on and increasingly solve larger problems for us. \n\nThis may at first blush look like something whose impact gets stuck with coding, but actually a large percentage of knowledge work may eventually just converge with this form factor due to the massive productivity gains that can be generated. Agents will use computers, leverage our existing tools or write new ones, and write code on the fly to solve larger swaths of knowledge work. \n\nSo even if a task today doesn’t seem to be “coding” directly, the task may eventually fold into being coding adjacent. Manufacturing, architecture, life sciences, material sciences, cyber, and on and on.\n \nOne big hurdle in the way ultimately will be that much of this work remains non-verifiable, so humans will be even more in the loop than they are in coding. But the part that they can hand off will just get bigger and bigger over time as the models are more capable.\n\nSo in short, pay attention to coding and you’ll get a sense for where work is going.",
+  "url": "https://x.com/levie/status/2125837181398950233",
+  "date": "2026-11-26",
+  "likes": 12
+ },
+ {
+  "author": "Ryo Lu",
+  "handle": "ryolu_",
+  "text": "name is 實實 shíshí\nmeans truth\nalso a pun on 寶寶",
+  "url": "https://x.com/ryolu_/status/2125640785588871579",
+  "date": "2026-11-25",
+  "likes": 19
+ },
+ {
+  "author": "Ryo Lu",
+  "handle": "ryolu_",
+  "text": "cursor kitty 🧢\nmy new roommate https://t.co/2Anw18I8iS",
+  "url": "https://x.com/ryolu_/status/2125626627182985331",
+  "date": "2026-11-25",
+  "likes": 366
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "Median growth is 10x \n\nLook at this stat and tell me AI is not helping new startups grow faster than they ever have https://t.co/mGKQCNe7ZA https://t.co/eayH5wmVgl",
+  "url": "https://x.com/garrytan/status/2125592156027101584",
+  "date": "2026-11-25",
+  "likes": 399
+ },
+ {
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "text": "I think this clip of Nick Bostrom is quite under-appreciated \n\nHe inverts “if anyone builds it everyone dies” to “if nobody builds it everyone dies” and posits superintelligence as poised to extend lives to 1200 to 1400 years https://t.co/SYv676pPVQ https://t.co/LX0ggeaiOr",
+  "url": "https://x.com/garrytan/status/2125580632814412155",
+  "date": "2026-11-25",
+  "likes": 1966
+ },
+ {
+  "author": "Matt Turck",
+  "handle": "mattturck",
+  "text": "I probably shouldn't be tweeting about those things, but putting Jensen in therapy is the most hilarious thing - rich and powerful guy succumbs to temptation, it's the oldest story in the book from times immemorial, not a mental health problem, lol",
+  "url": "https://x.com/mattturck/status/2125652799648399603",
+  "date": "2026-11-25",
+  "likes": 79
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "I'm surprised to see that my Frontend Slides skill has kept growing (now at 32k stars on GitHub) organically even though I haven't talked about it for months. \n\nI thought the growing capabilities of the coding agents would make the skill obsolete. \n\nWhy are people still using it?? Why are you unhappy with the slides produced by Claude/Codex as is?",
+  "url": "https://x.com/zarazhangrui/status/2125649866902868355",
+  "date": "2026-11-25",
+  "likes": 50
+ },
+ {
+  "author": "Zara Zhang",
+  "handle": "zarazhangrui",
+  "text": "Agreed; I made many tools for myself but I ended up using most of them for just a couple weeks and then stopped...\n\nMaking high-retention software is a difficult craft in general; it's hard even if you're building for yourself https://t.co/Dt5rn6RTqC",
+  "url": "https://x.com/zarazhangrui/status/2125478799387275571",
+  "date": "2026-11-25",
+  "likes": 517
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "This is my new favorite coffee shop in SF.. \n\n&gt; coffee\n&gt; music\n&gt; lighting\n&gt; seating\n&gt; baristas\n&gt; outlets\n\nAll A+\n\nWho’s going to rainbolt this? https://t.co/Gi5eRg9ZjY",
+  "url": "https://x.com/nikunj/status/2125709379303588068",
+  "date": "2026-11-25",
+  "likes": 178
+ },
+ {
+  "author": "Nikunj Kothari",
+  "handle": "nikunj",
+  "text": "Next guest up in our weekly series is @jeff_weinstein, product extraordinaire at @stripe on Wednesday, Dec 2nd at noon. \n\nFor this session, we'll be chatting about all money.. agent payments, commerce, company formation, taxes and more. \n\nSame format as always:\n> 60 minute sessions (IRL only) in SF\n> For the first 45 mins, I get to ask the guest spicy questions about their expertise\n> For the last 15 mins, they get to ask me anything they want to learn about venture\n> All off the record, chatham house rules\n> Open to 15 guests who listen in and can ask some of their own questions\n\nRegister here if you want to join, and subscribe to the Luma for future guests: https://t.co/KEQo9GNri8",
+  "url": "https://x.com/nikunj/status/2125612280377442805",
+  "date": "2026-11-25",
+  "likes": 14
+ },
+ {
+  "author": "Peter Steinberger",
+  "handle": "steipete",
+  "text": "huh, so Google finally built an MCP and is now forbidding clis like gog unless you pay them more? classy https://t.co/TnaqUMbpG9",
+  "url": "https://x.com/steipete/status/2125654555262431248",
+  "date": "2026-11-25",
+  "likes": 1023
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "you love to see it https://t.co/oqGDBzc19K",
+  "url": "https://x.com/danshipper/status/2125725124535927221",
+  "date": "2026-11-25",
+  "likes": 129
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "if you want to improve how you operate at work there’s no better time than now!!\n\nhave been floored by how @bran_don_gell has used his dot to to become an even better leader @every https://t.co/3I887vO3o4",
+  "url": "https://x.com/danshipper/status/2125687688066199721",
+  "date": "2026-11-25",
+  "likes": 112
+ },
+ {
+  "author": "Dan Shipper",
+  "handle": "danshipper",
+  "text": "https://t.co/3De8PLFcOb",
+  "url": "https://x.com/danshipper/status/2125635204018540754",
+  "date": "2026-11-25",
+  "likes": 184
+ },
+ {
+  "author": "Aditya Agarwal",
+  "handle": "adityaag",
+  "text": "https://t.co/4WLHL6jgR4",
+  "url": "https://x.com/adityaag/status/2125817213890478282",
+  "date": "2026-11-26",
+  "likes": 80
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+  "url": "https://x.com/sama/status/2125639418849714280",
+  "date": "2026-11-25",
+  "likes": 5245
+ },
+ {
+  "author": "Sam Altman",
+  "handle": "sama",
+  "text": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
+  "url": "https://x.com/sama/status/2125638790593274259",
+  "date": "2026-11-25",
+  "likes": 7997
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "What are you exploring with Fable 5.2?",
+  "url": "https://x.com/claudeai/status/2125616074242552180",
+  "date": "2026-11-25",
+  "likes": 185
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "A robot arm plays 62 moves of checkers, correcting for its own 7mm sag.\nhttps://t.co/dmt34q9Mjf",
+  "url": "https://x.com/claudeai/status/2125616072543944854",
+  "date": "2026-11-25",
+  "likes": 264
+ },
+ {
+  "author": "Claude",
+  "handle": "claudeai",
+  "text": "Origami, folded step by step in code.\nhttps://t.co/7n4GQIeEfB",
+  "url": "https://x.com/claudeai/status/2125616070652555573",
+  "date": "2026-11-25",
+  "likes": 285
+ }
+]
